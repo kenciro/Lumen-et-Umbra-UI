@@ -1,0 +1,2 @@
+return {{[ [[last_hp]] ] = 2283,[ [[fsPrivateChat]] ] = 6,[ [[fsMapCompass]] ] = 6,[ [[fsInventory]] ] = 6,[ [[page]] ] = [[a]],[ [[last_mana]] ] = 864,[ [[fsKeybind]] ] = 7,[ [[fsEquipment]] ] = 6,[ [[enablePugno]] ] = true,[ [[fsHelp]] ] = 8,[ [[fsPublicChat]] ] = 6,[ [[autoAttack]] ] = true,[ [[autoAttackArea]] ] = true,[ [[freeCast]] ] = false,},
+}

@@ -1,0 +1,4955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<TriggerPackage>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Communications</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>99</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Personal communications</name>
+				<script>uiDebug("[trig] Personal communications")
+--
+local from = copy2decho(matches[2])
+local to = copy2decho(matches[3])
+local message = copy2decho(matches[4])
+--
+if (matches[2] == "["..ui.variables.character_name.."]") then
+  from = string.gsub(from, ui.variables.character_name, "Tu")
+  from = string.gsub(from, "]\&lt;r\&gt;", "]")
+  from = from.." a "..matches[3].."\&lt;r\&gt;"
+elseif (matches[2] == "Mandi") or (matches[2] == "Tu") then
+  local color = string.gsub(from, matches[2].."\&lt;r\&gt;", "")
+  from = color.."[\&lt;255,255,255:0,0,0\&gt;"..matches[2] ..color.."]".." a \&lt;255,255,255:0,0,0\&gt;"..matches[3].."\&lt;r\&gt;"
+end
+--
+if (ui.lastFrom) and (ui.lastFrom == ansi2string(matches[2])) then
+  str = message.."\n"
+else
+  str = from.." &lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").."\n"..message.."\n"
+  ui.lastFrom = ansi2string(matches[2])
+end
+--
+str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
+GUI.Private.Console:decho (str)
+playSoundFile(ui.pathSnd..[[message.wav]], 10)
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(Mandi) a (.*) il (?:pensiero|messaggio) (\'.*\')</string>
+					<string>^(Tu) (?:chiedi|dici|sussurri) (?:a|ai|al|alla|alle|agli) (.*) (\'.*\')</string>
+					<string>^(\[.*\]) (ti) (?:manda il messaggio|manda il pensiero|chiede|dice|sussurra) (\'.*\')</string>
+					<string>^(\[.*\]) dice (?:a |ai |al |all'|alla |alle |agli )(.*) (\'.*\')</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Public  communication</name>
+				<script>uiDebug("[trig] Public communication")
+local str = copy2decho(matches[1])
+str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
+GUI.Public.Console:decho (str.."\n")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\[.*\] (grida|esclama|mormora|vi dice|dice|risuona) \'.*\'</string>
+					<string>^Tu (gridi|dici) \'.*\'</string>
+					<string>^\[.*\] \'.*\'</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Exits</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Exits</name>
+				<script>uiDebug("[trig] Exits")
+ui.strExits = matches[2]
+updateMap()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Uscite: (.*)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Room name</name>
+				<script>uiDebug("[trig] Room name")
+ui.roomName = matches[2]
+ui.roomType = matches[3]</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Teleport</name>
+				<script>uiDebug("[trig] Teleport")
+ui.dirFrom = ""
+ui.nCad = 0</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Chiudi gli occhi ed apri un passaggio nel quale entri velocemente.</string>
+					<string>Cerchi di attraversare l'acqua, ma la superfice sembra respingerti.</string>
+					<string>Cerchi di fuggire in tutta fretta.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Equipment</name>
+			<script>uiDebug("[trig] Equipment start")
+ui.equipment = {}
+clearWindow("GUI.Equip.Console")
+enableTrigger("equipment_valid")
+enableTrigger("equipment_end")</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>1</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^Stai usando:$</string>
+				<string>^(.*) sta usando:$</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+				<integer>1</integer>
+			</regexCodePropertyList>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>equipment_valid</name>
+				<script>uiDebug("[trig] Equipment_valid")
+-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
+local equipment = {}
+equipment.number   = matches[2]
+equipment.location = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
+equipment.level    = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":30,24,24&gt;")
+equipment.type     = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":30,24,24&gt;")
+equipment.name, equipment.statusColor, equipment.good, equipment.evil, equipment.bring, equipment.noisy, equipment.brittle = parsingText(copy2decho(matches[6]))
+equipment.name = string.gsub(equipment.name, ":0,0,0&gt;", ":30,24,24&gt;")
+if (equipment.good) then
+  equipment.name = equipment.name.."&lt;0,0,255:30,24,24&gt;*"
+end
+if (equipment.evil) then
+  equipment.name = equipment.name.."&lt;255,0,0:30,24,24&gt;*"
+end
+if (equipment.bright) then
+  equipment.name = equipment.name.."&lt;255,255,255:30,24,24&gt;*"
+end
+if (equipment.noisy) then
+  equipment.name = equipment.name.."&lt;128,128,128:30,24,24&gt;*"
+end
+if (equipment.brittle) then
+  equipment.name = equipment.name.."&lt;0,128,128:30,24,24&gt;*"
+end
+GUI.Equip.Console:decho(equipment.statusColor..equipment.number.."&lt;r&gt; "..equipment.level.." "..equipment.type.. " "..equipment.name.."\n")
+table.insert(ui.equipment, equipment)
+setTriggerStayOpen("Equipment", 1)
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>(?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] \|(.*)\| (.*)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>equipment_end</name>
+				<script>uiDebug("[trig] Equipment_end")
+disableTrigger("equipment_valid")
+disableTrigger("equipment_invalid")
+disableTrigger("equipment_end")
+GUI.Equip.B3:echo(getTime(true, "hh:mm"))</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Il livello di potenza medio del tuo equipaggiamento e' .*$</string>
+					<string>^    Nulla.$</string>
+					<string>^$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</Trigger>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Loot</name>
+			<script>uiDebug("[trig] Loot start")
+clearWindow("GUI.Inventory.Console")
+enableTrigger("loot_valid")
+enableTrigger("loot_invalid")
+enableTrigger("loot_end")</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>1</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^Stai trasportando:$</string>
+				<string>^Non stai trasportando nulla.</string>
+				<string>^Quando ci guardi dentro, vedi:</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+			</regexCodePropertyList>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>loot_valid</name>
+				<script>uiDebug("[trig] Loot_valid")
+-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
+local number   = matches[2]
+local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
+local name, statusColor, good, evil, bring, noisy, brittle = parsingText(copy2decho(matches[4]))
+name = string.gsub(name, ":0,0,0&gt;", ":30,24,24&gt;")
+if (good) then
+  name = name.."&lt;0,0,255:30,24,24&gt;*"
+end
+if (evil) then
+  name = name.."&lt;255,0,0:30,24,24&gt;*"
+end
+if (bright) then
+  name = name.."&lt;255,255,255:30,24,24&gt;*"
+end
+if (noisy) then
+  name = name.."&lt;128,128,128:30,24,24&gt;*"
+end
+if (brittle) then
+  name = name.."&lt;0,128,128:30,24,24&gt;*"
+end
+GUI.Inventory.Console:decho(statusColor..number.."&lt;r&gt; "..eqtype.. " "..name.."\n")
+setTriggerStayOpen("Loot", 1)
+</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>1</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\[(.*)\] \|(.*)\| (.*)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>loot_invalid</name>
+				<script>uiDebug("[trig] Loot_invalid")
+if (matches[2]) then
+  GUI.Inventory.Console:decho (matches[2]..":\n")
+end
+setTriggerStayOpen("Loot", 1)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>1</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Oggetti in inventario : .* su .*</string>
+					<string>^Peso trasportato\s+: .* su .* etti</string>
+					<string>^(.*) \(.*\)'*</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>loot_end</name>
+				<script>uiDebug("[trig] Loot_end")
+disableTrigger("loot_valid")
+disableTrigger("loot_invalid")
+disableTrigger("loot_end")
+GUI.Inventory.B3:echo(getTime(true, "hh:mm"))</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</Trigger>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Affects Capture</name>
+			<script>uiDebug("[trig] Affect start")
+ui.affects = {}
+enableTrigger("affects_invalid")
+enableTrigger("affects_valid")
+enableTrigger("affects_end")</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>1</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>+- Effetti Attivi -------------------------------------------------------------+</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>3</integer>
+			</regexCodePropertyList>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>affects_invalid</name>
+				<script>uiDebug("[trig] Affect_invalid")
+setTriggerStayOpen("Affects Capture", 1)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>1</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>| Non hai effetti attivi al momento...                                         |</string>
+					<string>+- Effetti Permanenti ---------------------------------------------------------+</string>
+					<string>| Non hai effetti permanenti attivi...                                         |</string>
+					<string>+- Altri Effetti --------------------------------------------------------------+</string>
+					<string>| Non hai altri effetti attivi...                                              |</string>
+					<string>+- Cooldown -------------------------------------------------------------------+</string>
+					<string>| Non hai cooldown attivi al momento...                                        |</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>affects_valid</name>
+				<script>uiDebug("[trig] Affect_valid")
+local name = string.trim(matches[2])
+local duraction = tonumber(string.trim(matches[3]))
+ui.affects[name] = duraction
+setTriggerStayOpen("Affects Capture", 1)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>1</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\|(.*)\| (.*) (ore|round)\s+\|</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>affects_end</name>
+				<script>uiDebug("[trig] Affect_end")
+disableTrigger("affects_invalid")
+disableTrigger("affects_valid")
+disableTrigger("affects_end")
+updateAffects()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>+------------------------------------------------------------------------------+</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</Trigger>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Group</name>
+			<script>uiDebug("[trig] Group start")
+ui.group = {}
+ui.totalMember = 0
+enableTrigger("group_valid")
+enableTrigger("group_end")</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>1</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^Ma non sei il membro di un gruppo!$</string>
+				<string>^I membri del tuo gruppo(.*)sono\:(.*)$</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+				<integer>1</integer>
+			</regexCodePropertyList>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>group_valid</name>
+				<script>uiDebug("[trig] group_valid")
+if (matches[2] ~= ui.variables.character_name) then
+  local member = {matches[2], (matches[3] == "(Capo)"), tonumber(matches[4]), tonumber(matches[5]), tonumber(matches[6])}
+  ui.totalMember = ui.totalMember + 1
+  ui.group[ui.totalMember] = member
+end
+setTriggerStayOpen("Group", 1)</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#00ff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\s+(\S+)\s+(.*) HP:\s+(\d+)\% MANA:\s+(\d+)\% MV:\s+(\d+)\%$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>group_end</name>
+				<script>uiDebug("[trig] group_end")
+disableTrigger("group_valid")
+disableTrigger("group_end")
+--
+updateGroup()</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>1</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#00ffff</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</Trigger>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Tick</name>
+			<script>increment_ticktimer(11)</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^Un[']altra ora della giornata si accinge a trascorrere[.]</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+			</regexCodePropertyList>
+		</Trigger>
+		<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Track</name>
+			<script>uiDebug("[trig] Track")
+ui.track = matches[2] or ""
+updateMap()</script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList>
+				<string>^Vedi una traccia della tua preda che va verso (?:l'|il )?(.*).$</string>
+				<string>^Vedi una debole traccia verso (?:l'|il )?(.*)$</string>
+				<string>^Cio' che cerchi e' gia' qui!$</string>
+				<string>^Non riesci a trovare tracce.$</string>
+				<string>^Hai trovato la tua preda!$</string>
+			</regexCodeList>
+			<regexCodePropertyList>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+			</regexCodePropertyList>
+		</Trigger>
+	</TriggerPackage>
+	<TimerPackage />
+	<AliasPackage>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Aliases</name>
+			<script>local alias = matches[2] or ""
+local value = matches[3] or ""
+-- Mostra tutti gli aliases
+if (alias == "") then
+  showAllAliases()
+-- Rimuove tutti gli aliases
+elseif (alias == "remove_all") then
+  removeAllAliases()
+  uiEcho2n("Tutti gli alias sono stati rimossi.")
+-- Mostra il singolo alias
+elseif (value == "") then
+  if (ui.aliases[alias]) then
+    uiEcho2n(getAliasFormattedText(alias))
+  else
+    uiError("L'alias "..getAliasNameFormattedText(alias).." non esiste.")
+  end
+-- Rimuove il singolo alias
+elseif value == "remove" then
+  if (removeAlias(alias)) then
+    uiEcho2n("L'alias "..getAliasNameFormattedText(alias).." e' stato rimosso.")
+  else
+    uiError("L'alias "..getAliasNameFormattedText(alias).." non esiste.")
+  end
+-- Crea o modifica l'alias
+else
+  local alreadyExist = ui.aliases[alias];
+  local result, output = addAlias(alias, value)
+  if (result == -1) then
+    uiError("L'alias "..getAliasNameFormattedText(alias).." non è stato creato/modificato. La variabile "..getVarNameFormattedText(output).." non esiste.")
+  elseif (result == 1) then
+    if (alreadyExist) then
+      uiEcho2n("L'alias "..getAliasNameFormattedText(alias).." è stato modificato: "..output..".")
+    else
+      uiEcho2n("L'alias "..getAliasNameFormattedText(alias).." è stato creato: "..output..".")
+    end
+  else
+    uiError("Errore non previsto.")
+  end
+end
+saveFileAliases()
+refreshAllAliasButton()
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uia(?:l(?:i(?:a(?:s(?:e(?:s)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Buttons (configurazione)</name>
+			<script>local button = matches[2] or ""
+local alias = matches[3] or ""
+-- Mostra tutti gli alias button
+if (button == "") then
+  showAllAliasButtons()
+-- Rimuove tutti gli alias buttons
+elseif (button == "remove_all") then
+  removeAllAliasButtons()
+  uiEcho2n("Tutti i pulsanti alias sono stati rimossi.")
+-- Mostra il singolo alias button
+elseif (alias == "") then
+  local type, number = expandButton(button)
+  if (type == "a") or (type == "b") or (type == "c") then
+    button = type..number
+    local alias = searchAliasButton(button)
+    if (alias) then
+      uiEcho2n(getAliasFormattedText(alias))
+    else
+      uiEcho2n("Nessun alias associato al pulsante "..getAliasButtonFormattedText(button)..".")
+    end
+  else
+      display(button)
+    uiError(getAliasButtonFormattedText(button).." non è un pulsante valido.")
+  end
+-- Rimuove il singolo alias button
+elseif (alias == "remove") then
+  local result = removeAliasButton(button)
+  if (result == -2) then
+    uiEcho2n("Nessun alias da rimuovere per il pulsante "..getAliasButtonFormattedText(button)..".")
+  elseif (result == -1) then
+    uiError(getAliasButtonFormattedText(button).." non è un pulsante valido.")
+  elseif (result == 1) then
+    uiEcho2n("L'alias associato al pulsante "..getAliasButtonFormattedText(button).." è stato rimosso.")
+  else
+    uiError("Errore non previsto.")
+  end
+-- Crea o modifica l'alias button
+else
+  local result = assignAliasButton(button, alias)
+  if (result == -2) then
+    uiError("L'alias "..getAliasNameFormattedText(alias).." non esiste.")
+  elseif (result == -1) then
+    uiError(getAliasButtonFormattedText(button).." non è un pulsante valido.")
+  elseif (result == 1) then
+    uiEcho2n("Il pulsante "..getAliasButtonFormattedText(button).." è stato associato all'alias "..getAliasNameFormattedText(alias)..".")
+  else
+    uiError("Errore non previsto.")
+  end
+end
+saveFileAliases()
+refreshAllAliasButton()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uib(?:u(?:t(?:t(?:o(?:n(?:s)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Buttons (esecuzione)</name>
+			<script>executeAliasButton(matches[2])</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)([abc]\d)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Colors</name>
+			<script>cecho(uiTitle("Colori disponibili:"))
+displayColors({justText = false, removeDupes = true})</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uic(?:o(?:l(?:o(?:r(?:s?)?)?)?)?)?)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Directiones</name>
+			<script>local dir = string.lower(matches[1]);
+-- Save direction from where arrive
+ui.dirFrom = ui.dirReverse[dir]
+-- Don't save path if retrace
+if (not ui.retrace) then
+  savePath(dir)
+end
+ui.retrace = false;
+-- Initi cadaver counter
+ui.nCad = 0
+--
+uiDebug("[alias] UI Directiones - Mem: "..ui.idxPath.."/"..ui.memPath.." - Dir: "..dir)
+send(dir, false)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)([neswud])$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Help</name>
+			<script>local helpselect = ""
+if matches[2] then
+  helpselect = string.lower(matches[2] or "")
+end
+--
+if (helpselect == "") then
+  uiHelp()
+elseif (rex.match(helpselect, [[(?i)(?:uia(?:l(?:i(?:a(?:s(?:e(?:s)?)?)?)?)?)?)$]])) then
+  uiHelp("alias")
+elseif (rex.match(helpselect, [[(?i)(uib(?:u(?:t(?:t(?:o(?:n(?:s)?)?)?)?)?)?)$]])) then
+  uiHelp("button")
+elseif (rex.match(helpselect, [[(?i)(?:uic(?:o(?:l(?:o(?:r(?:s?)?)?)?)?)?)$]])) then
+  uiHelp("color")
+elseif (rex.match(helpselect, [[(?i)(?:uisetf(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)$]])) then
+  uiHelp("fontsize")
+elseif (rex.match(helpselect, [[(?i)(?:uihi(?:g(?:h(?:l(?:i(?:g(?:h(?:t(?:s)?)?)?)?)?)?)?)?)$]])) then
+  uiHelp("highlight")
+elseif (rex.match(helpselect, [[(?i)(?:uik(?:e(?:y(?:b(?:i(?:n(?:d)?)?)?)?)?)?)$]])) then
+  uiHelp("keybind")
+elseif (rex.match(helpselect, [[(?i)(?:t(?:a(?:r(?:g(?:e(?:t(?:s)?)?)?)?)?)?)$]])) then
+  uiHelp("target")
+elseif (rex.match(helpselect, [[(?i)(?:uiv(?:a(?:r(?:i(?:a(?:b(?:l(?:e)?)?)?)?)?)?)?|@)$]])) then
+  uiHelp("variable")
+elseif (rex.match(helpselect, [[^\.(?:\.)?$]])) then
+  uiHelp("walk")
+else
+  uiHelp(helpselect)
+end</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uih(?:e(?:l(?:p?)?)?)?)(?:\s+(.*))?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Highlights</name>
+			<script>--
+local text = string.trim(matches[2] or "")
+local color = string.trim(matches[3] or "")
+--
+if (color ~= "") and (color ~= "remove") then
+  if (text == "") and (color == "remove_all") then
+    text = "remove_all"
+    color = ""
+  elseif (text == "") and (color ~= "") then
+    text = color
+    color = ""
+  elseif (text ~= "") and (not colorCheck(color)) then
+    text = text.." "..color
+    color = ""
+  end
+end
+-- Mostra tutti gli highlights
+if (text == "") and (color == "") then
+  showAllHighlights()
+-- Rimuove tutti gli highlights
+elseif (text == "remove_all") then
+  removeAllHighlights()
+  uiEcho2n("Tutti gli highlight sono stati eliminati.")
+-- Rimuove il singolo highlight
+elseif (color == "remove") then
+  if (removeHighlight(text)) then
+    uiEcho2n("L'highlight e' stato rimosso.")
+  else
+    uiError("L'highlight '"..text.."' non esiste.")
+  end
+-- Mostra il singolo highlight
+elseif (color == "") then
+  if (ui.highlights[text]) then
+    uiEcho2n(getHighlightFormattedText(text))
+  else
+    uiError("L'highlight '"..text.."' non esiste.")
+  end
+-- Crea o modifica l'Highlight
+else
+  local alreadyExist = ui.highlights[text];
+  local result = addHighlight(text, color)
+  if (result == -2) then
+    uiError("L'highlight '"..text.."' non è stato creato/modificato. Il colore '"..color.."' non è valido. Usare il comando "..getCommandFormattedText("uicolor").." per l'elenco dei colori disponibili.")
+  elseif (result == -1) then
+    uiError("L'highlight '"..text.."' non è stato creato/modificato. Specificare un testo valido.")
+  elseif (result == 1) then
+    if (alreadyExist) then
+      uiEcho2n("L'highlight &lt;"..color.."&gt;"..text.."&lt;reset&gt; è stato modificato.")
+    else
+      uiEcho2n("L'highlight &lt;"..color.."&gt;"..text.."&lt;reset&gt; è stato creato.")
+    end
+  else
+    uiError("Errore non previsto.")
+  end
+end
+--
+saveFileHighlights()</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uihi(?:g(?:h(?:l(?:i(?:g(?:h(?:t(?:s)?)?)?)?)?)?)?)?)(?:\s?(.*)\s?( \w+))?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Keybind</name>
+			<script>local element = matches[2] or ""
+local key1 = matches[3] or ""
+local key2 = matches[4] or ""
+local key3 = matches[5] or ""
+local isValid, mod1, mod2, key, keybind = getKeyb(key1, key2, key3)
+-- Mostra tutti i keybind associati a targetselement e aliases
+if (element == "") then
+  showAllKeyb()
+-- Rimuove tutti i keybind associati a argets e aliases
+elseif (element == "remove_all") then
+  removeAllKeyb()
+  uiEcho2n("Tutti i tasti rapidi sono stati rimossi.")
+-- Mostra il singolo keybind
+elseif (key1 == "") then
+  -- Target
+  if (ui.targets[element]) then
+    if (ui.targets[element].keybId) then
+      uiEcho2n(getTargetFormattedText(element))
+    else
+      uiEcho2n("Nessun tasto rapido è assegnato al target "..getTargetFormattedText(element)..".")
+    end
+  -- Alias
+  elseif (ui.aliases[element]) then
+    if (ui.aliases[element].keybId) then
+      uiEcho2n(getAliasFormattedText(element))
+    else
+      uiEcho2n("Nessun tasto rapido è assegnato all'alias "..getAliasNameFormattedText(element)..".")
+    end
+  else
+    uiError("L'alias "..getAliasNameFormattedText(element).." non esiste.")
+  end
+-- Rimuove il singolo keybind
+elseif key1 == "remove" then
+  local result
+  -- Target
+  if (ui.targets[element]) then
+    keybind = ui.targets[element].keybind
+    result = removeKeyb(ui.targets[element])
+    if (result == -2) then
+      uiError("Il target non esiste.")
+    elseif (result == -1) then
+      uiEcho2n("Nessun tasto rapido assegnato al target "..getTargetFormattedText(element).." da rimuovere.")
+    elseif (result == 1) then
+      uiEcho2n("Il tasto rapido "..getKeybFormattedText(keybind)..", associato al target "..getTargetFormattedText(element)..", e' stato rimosso.")
+    else
+      uiError("Errore non previsto.")
+    end
+  -- Alias
+  elseif (ui.aliases[element]) then
+    keybind = ui.aliases[element].keybind
+    result = removeKeyb(ui.aliases[element])
+    if (result == -2) then
+      uiError("L'alias non esiste.")
+    elseif (result == -1) then
+      uiEcho2n("Nessun tasto rapido assegnato all'alias "..getAliasNameFormattedText(element).." da rimuovere.")
+    elseif (result == 1) then
+      uiEcho2n("Il tasto rapido "..getKeybFormattedText(keybind)..", associato all'alias "..getAliasNameFormattedText(element)..", e' stato rimosso.")
+    else
+      uiError("Errore non previsto.")
+    end
+  else
+    uiError("L'alias "..getAliasNameFormattedText(element).." non esiste o non è associato a nessun tasto rapido.")
+  end
+-- Crea o modifica il keybind
+else
+  local result, keybind, isTarget
+  if (ui.targets[element]) then
+    isTarget = true
+    result, keybind = setKeyb(ui.targets, element, [[executeTargetButton("]]..element..[[")]], key1, key2, key3)
+  else
+    isTarget = false
+    result, keybind = setKeyb(ui.aliases, element, ui.aliases[element].code, key1, key2, key3)
+  end
+  if (result == -4) then
+    uiError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..getKeybFormattedText(keybind).." è già utilizzata in un alias.")
+  elseif (result == -3) then
+    uiError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..getKeybFormattedText(keybind).." è già utilizzata in un target.")
+  elseif (result == -2) then
+    uiError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..getKeybFormattedText(keybind).." non è valida.")
+  elseif (result == -1) then
+    uiError("Il tasto rapido non è stato assegnato. L'alias "..getAliasNameFormattedText(element).." non esiste.")
+  elseif (result == 1) and (isTarget) then
+    uiEcho2n("Il tasto rapido è stato assegnato al target "..getTargetFormattedText(element)..".")
+  elseif (result == 1) and (not isTarget) then
+    uiEcho2n("Il tasto rapido è stato assegnato all'alias "..getAliasFormattedText(element)..".")
+  elseif (result == 2) and (isTarget) then
+    uiEcho2n("Il tasto rapido associato al target "..getTargetFormattedText(element).." è stato rimosso.")
+  elseif (result == 2) and (not isTarget) then
+    uiEcho2n("Il tasto rapido associato all'alias "..getAliasNameFormattedText(element).." è stato rimosso.")
+  end
+end
+--
+saveFileAliases()
+refreshAllAliasButton()
+--
+saveFileTargets()
+refreshAllTargetButton()
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uik(?:e(?:y(?:b(?:i(?:n(?:d)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Reset</name>
+			<script>resetProfile()
+saveWindowLayout()
+uiEcho2n("Interfaccia riprisitnata... Riavviare il Mudlet.")
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uireset)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Save</name>
+			<script>saveWindowLayout()
+uiEcho2n("Interfaccia salvata. Digitare "..getCommandFormattedText("uireset").." per tornare alle impostazioni originali.")
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uisave)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Set font size</name>
+			<script>local windows = string.lower(matches[2] or "")
+local fontsize = tonumber(matches[3] or -1)
+if (matches[3]) then
+  if (fontsize &gt;= 1) and (fontsize &lt;= 30) then
+    if (windows == "contenitore") then
+      ui.parameters.fsinvent = fontsize
+      GUI.Inventory.Console:setFontSize(ui.parameters.fsinvent)
+    elseif (windows == "equipaggiamento") then
+      ui.parameters.fsequip = fontsize
+      GUI.Equip.Console:setFontSize(ui.parameters.fsequip)
+    elseif (windows == "mappa") then
+      ui.parameters.fsmap = fontsize
+      updateMap()
+    elseif (windows == "privato") then
+      ui.parameters.fsprivate = fontsize
+      GUI.Private.Console:setFontSize(ui.parameters.fsprivate)
+    elseif (windows == "pubblico") then
+      ui.parameters.fsPublic = fontsize
+      GUI.Public.Console:setFontSize(ui.parameters.fsPublic)
+    else
+      fontsize = 0
+      uiError("Nome finestra errato: Usare "..getCommandFormattedText("contenitore")..", "
+                                             ..getCommandFormattedText("equipaggiamento")..", "
+                                             ..getCommandFormattedText("mappa")..", "
+                                             ..getCommandFormattedText("privato").." o "
+                                             ..getCommandFormattedText("pubblico")..".")
+    end
+    --
+    if (fontsize &gt; 0) then
+      table.save(ui.pathTpl.."parameters.lua", ui.parameters)
+      uiEcho2n("La dimensione del font della finetra "..getCommandFormattedText(windows).." e' stato impostato a "..getCommandFormattedText(fontsize)..".")
+    end
+  else
+    uiError("La dimensione del font e' errata: Usare un valore compreso tra "..getCommandFormattedText("1").." e "..getCommandFormattedText("30")..".")
+  end
+else
+  uiEcho2n("Usare "..getCommandFormattedText("uifontsize &lt;nome_finestra&gt; &lt;dimensione_font&gt;"))
+end</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uisetf(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Speedwalk</name>
+			<script>uiDebug("[alias] UI Speedwalk")
+--
+local in_path = string.lower(matches[3] or "")
+local out_path = ""
+local backwards = (matches[2] == ".")
+--
+if (in_path == "") then
+  -- Retrace your steps back
+  if (backwards) then
+    if (ui.idxPath &gt;= 1) then
+      out_path = ui.dirReverse[ui.path[ui.idxPath]]
+      ui.idxPath = ui.idxPath - 1;
+      ui.retrace = true
+    else
+      uiEcho2n("Sei all'inizio del percorso memorizzato.")
+    end
+  -- Retrace your steps forward 
+  elseif (not backwards) then
+    if (ui.idxPath &lt; ui.memPath) then
+      ui.idxPath = ui.idxPath + 1
+      out_path = ui.path[ui.idxPath]
+      ui.retrace = true
+    else
+      uiEcho2n("Sei alla fine del percorso memorizzato.")
+    end
+  end
+else
+  -- Speedwalk
+  local number
+  local idx = 1
+  while (idx&lt;=in_path:len()) do
+    number, idx = getNextNumber(in_path, idx)
+    if (idx&lt;=in_path:len()) then
+      local char = string.lower(in_path:sub(idx, idx))
+      for j=1, number do
+        if (backwards) then
+          out_path = ui.dirReverse[char]..out_path
+        else
+          out_path = out_path..char
+        end
+      end
+      idx = idx + 1
+    end
+  end
+end
+--
+if (backwards) then
+  uiDebug("[alias] UI Speedwalk (Back) - in: "..in_path.." - out: "..out_path)
+else
+  uiDebug("[alias] UI Speedwalk (Forward) - in: "..in_path.." - out: "..out_path)
+end
+-- Execute out path
+for j=1, out_path:len() do
+  -- Execute Ui Direction alias
+  expandAlias(out_path:sub(j, j)); 
+end</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^\.(\.)?(?i)([nsewdu\d]+)?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Target</name>
+			<script>local button_type = string.upper(matches[2])
+local button_number = tonumber(matches[3])
+local value = matches[4] or ""
+local button = button_type..button_number
+
+-- G buttons
+if (button_type == "G") then
+  if (button_number&lt;0) or (button_number&gt;9) then
+    uiError(getTargetFormattedText(button).." non valido. Usare un target compreso tra "..getTargetFormattedText("G0").." e "..getTargetFormattedText("G9"))
+  elseif (value ~= "") then
+    uiError(getTargetFormattedText(button).." non è possibile assegnare o rimuovere un valore al target avversario "..getTargetFormattedText(button))
+  else
+    executeTargetButton(button)
+  end
+-- O button
+elseif (button_type == "O") then
+  if (button_number~=0)  then
+    uiError(getTargetFormattedText(button).." non valido. Usare "..getTargetFormattedText("T0"))
+  elseif (value ~= "") then
+    uiError(getTargetFormattedText(button).." non è possibile assegnare o rimuovere un valore al target di gruppo "..getTargetFormattedText(button))
+  else
+    executeTargetButton(button)
+  end
+-- T buttons
+elseif (button_type == "T") then
+  if (button_number&lt;1) or (button_number&gt;4) then
+    uiError(getTargetFormattedText(button).." non valido. Usare "..getTargetFormattedText("T1")..", "..getTargetFormattedText("T2")..", "..getTargetFormattedText("T3").." oppure "..getTargetFormattedText("T4"))
+  elseif (value == "") then
+    executeTargetButton(button)
+  elseif (value == "remove") then
+    if (assignTargetButton(button, nil)) then
+      uiEcho2n(getTargetFormattedText(button).." valore rimosso.")
+    else
+      uiError(getTargetFormattedText(button).." errore durante la rimozione del valore.")
+    end
+  else
+    if (assignTargetButton(button, value)) then
+      uiEcho2n(getTargetFormattedText(button).." valore impostato "..getVarValueFormattedText(value)..".")
+    else
+      uiError(getTargetFormattedText(button).." errore durante il cambio di valore.")
+    end
+  end
+end</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)([got])(\d)(?:\s+(.*))?$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>UI Variables</name>
+			<script>local variable = matches[2]
+local value = matches[3]
+-- Mostra tutte le variabili
+if variable == nil or variable == "" then
+  showAllVar()
+-- Rimuove tutte le variabili
+elseif variable == "remove_all" then
+  removeAllVariables();
+  uiEcho2n("Tutte le variabili sono state eliminate.")
+-- Mostra la singola variabile
+elseif value == nil or value == "" then
+  if ui.variables[variable] then
+    uiEcho2n(getVarFormattedText(variable))
+  else
+    uiEcho2n("La variabile "..getVarNameFormattedText(variable).." non esiste.")
+  end
+-- Rimuove la singola variabile
+elseif value == "remove" then
+  if not ui.variables[variable] then
+    uiEcho2n("La variabile "..getVarNameFormattedText(variable).." non esiste.")
+  elseif table.contains(ui.pre_defined_variables, variable) then
+    ui.variables[variable] = ""
+    uiEcho2n("La variabile predefinita "..getVarNameFormattedText(variable).." è stata pulita.")
+  else
+    ui.variables[variable] = nil
+    uiEcho2n("La variabile "..getVarNameFormattedText(variable).." e' stata rimossa.")
+  end
+-- Crea o modifica la variabile
+else
+  if (ui.variables[variable])then
+    ui.variables[variable] = value
+    uiEcho2n('La variabile è stata aggiornata: '..getVarFormattedText(variable))
+  else
+    ui.variables[variable] = value
+    uiEcho2n('La variabile è stata creata: '..getVarFormattedText(variable))
+  end
+end
+if (variable and variable == "target") then
+  refreshAllTargetButton()
+  refreshTarget()
+end
+table.save(ui.pathTpl.."variables.lua", ui.variables)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(?i)(?:uiv(?:a(?:r(?:i(?:a(?:b(?:l(?:e)?)?)?)?)?)?)?|@)(?:\s*@?(\w+)(?:\s*)?(.*))?$</regex>
+		</Alias>
+	</AliasPackage>
+	<ActionPackage />
+	<ScriptPackage>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>Functions</name>
+			<packageName></packageName>
+			<script></script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>Affects</name>
+				<packageName></packageName>
+				<script>--
+function updateAffects(event)
+  local x = 0
+  local y = 0
+  local i
+  -- Simulation (for debug)
+  if (ui.enDebug) then
+    for i=1, 20 do
+      if (ui.affects[i] == nil) then
+        ui.affects[i] = i*2
+      end
+    end
+  end
+  --
+  i = 0;
+  for affect in pairs(ui.affects) do
+    if (ui.affects[affect] &lt; 0) then
+      ui.affects[affect] = nil
+    elseif (i&lt;20) then
+      local color
+      -- Duration color
+      if (ui.affects[affect] == 0) then
+        color = "red"
+      elseif (ui.affects[affect] == 1) then
+        color = "orange"
+      elseif  (ui.affects[affect] == 2) then
+        color = "yellow"
+      else
+        color = "green"
+      end
+      i = i + 1
+      -- Duration
+      GUI["AffectIcon"..i].time:setFgColor(color)
+      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.affects[affect])
+      -- Icon
+      local CCS
+      if table.contains(ui.affect_icon, affect) and io.exists(ui.pathIcn..ui.affect_icon[affect]) then
+        CCS = GUI.CSS.AffectIcon..[[
+                border-image: url("]]..ui.pathIcn..ui.affect_icon[affect]..[[") 0px stretch;
+              ]]
+      else
+        CCS = GUI.CSS.AffectIcon
+      end
+      GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
+      -- Move
+      GUI["AffectIcon"..i]:move(x, y)
+      -- Show if inside box
+      if (y&lt;=GUI.Affect.Body:get_height() - 20) then
+        GUI["AffectIcon"..i]:show();
+      else
+        GUI["AffectIcon"..i]:hide();
+      end
+      --
+      if (x &gt; GUI.Affect.Body:get_width() - 50) then
+        x = 0
+        y = y + 30
+      else
+        x = x + 30
+      end
+    end
+  end
+  -- Hide not used affects
+  for i=i+1, 20 do
+    if (GUI["AffectIcon"..i]) then
+      GUI["AffectIcon"..i]:hide();
+    end
+  end
+end
+--
+function tickUpdateAffects()
+  uiDebug("tickUpdateAffects()");
+  for affect in pairs(ui.affects) do
+    ui.affects[affect] = ui.affects[affect] - 1
+  end
+  updateAffects()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Alias buttons</name>
+				<packageName></packageName>
+				<script>--
+function getAliasButtonFormattedText(button)
+  return ui.cAliasButton.."["..button.."]".."&lt;reset&gt;"
+end
+--
+function searchAliasButton(button)
+  local type, number = expandButton(button)
+  if (type == "a") or (type == "b") or (type == "c") then
+    button = type..number
+    for alias in pairs(ui.aliases) do
+      if (ui.aliases[alias].button) and (ui.aliases[alias].button==button) then
+        return alias
+      end
+    end
+  end
+  return nil
+end
+--
+-- List all alias buttons
+function showAllAliasButtons()
+  local i = 0
+  cecho(uiTitle("Pulsanti alias"))
+  for alias in orderedPairs(ui.aliases) do
+    if (ui.aliases[alias].button) then
+      i = i + 1
+      cecho(getNumberFormattedText(i).." "..getAliasFormattedText(alias).."\n")
+    end
+  end
+  if (i&gt;0) then
+    echo("\n")
+  else
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp buttons").."\n\n")
+  end
+end
+--
+-- Remove alias button
+function removeAliasButton(button)
+  local ret = 0;
+  local type, number = expandButton(button)
+  if (type == "a") or (type == "b") or (type == "c") then
+    button = type..number 
+    local alias = searchAliasButton(button)
+    if (alias) then
+      ui.aliases[alias].button = nil
+      return 1
+    end
+    return -2 -- Not alias assigned
+  end
+  return -1 -- Invaid button
+end
+--
+-- Remove all alias button
+function removeAllAliasButtons()
+  for alias in pairs(ui.aliases) do
+    if (ui.aliases[alias].button) then
+      ui.aliases[alias].button = nil
+    end
+  end
+end
+--
+-- Assign alias button
+function assignAliasButton(button, alias)
+  local ret = 0;
+  local type, number = expandButton(button)
+  if (type == "a") or (type == "b") or (type == "c") then
+    button = type..number
+    if (ui.aliases[alias]) then
+      removeAliasButton(button)
+      ui.aliases[alias].button = button
+      return 1
+    end
+    return -2 -- Alias not exist
+  end
+  return -1 -- Invaid button
+end
+--
+function executeAliasButton(button)
+  local alias = nil;
+  local type, number = expandButton(button)
+  if (type == "a") or (type == "b") or (type == "c") then
+    button = type..number
+    alias = searchAliasButton(button)
+    if (alias) then
+      expandAlias(alias, false)
+    else
+      uiEcho2n(getAliasButtonFormattedText(button).." non configurato. Usare il comanto "..getCommandFormattedText(button.." &lt;alias&gt;").." per configurare.")
+    end
+  end
+  return alias
+end
+--
+function refreshAliasButton(number)
+  local found = nil;
+  local bgColor
+  local title = ""
+  local keybind = ""
+  local button = ui.parameters.page..number
+  for alias in pairs(ui.aliases) do
+    if (ui.aliases[alias].button) and (ui.aliases[alias].button==button) then
+      found = alias
+      break
+    end
+  end
+  if (ui.parameters.page == "a") then
+    bgColor = "200,0,0"
+  elseif (ui.parameters.page == "b") then
+    bgColor = "0,200,0"
+  elseif (ui.parameters.page == "c") then
+    bgColor = "0,0,200"
+  end
+  if (found) then
+    title = found
+    keybind = ui.aliases[found].keybind or ""
+  end
+  GUI["Custom"..number].index:echo("&lt;center&gt;"..ui.parameters.page..number)
+  GUI["Custom"..number].icon:echo("&lt;center&gt;"..title)
+  GUI["Custom"..number].keybind:echo("&lt;center&gt;"..keybind)
+  GUI["Custom"..number]:setStyleSheet([[
+    QLabel{
+      background-color: rgba(]]..bgColor..[[,.5);
+      ]]..GUI.CSS.AliasButtons..[[
+    }
+    QLabel::hover{
+      background-color: rgba(]]..bgColor..[[,1);
+    }
+  ]])
+  GUI["Custom"..number].icon:setStyleSheet(GUI.CSS.ButtonsIcon)
+end
+--
+function refreshAllAliasButton()
+  for i = 0, 9 do
+    refreshAliasButton(i)
+  end
+end
+--
+function clickAliasButton(number)
+  local button = ui.parameters.page..number
+  executeAliasButton(button)
+end
+--
+-- Incrase page index
+function incraseButtonsPage()
+  ui.parameters.page = ui.parameters.page or "";
+  if (ui.parameters.page == "a") then
+    ui.parameters.page = "b"
+  elseif (ui.parameters.page == "b") then
+    ui.parameters.page = "c"
+  else
+    ui.parameters.page = "a"
+  end
+  table.save(ui.pathTpl.."parameters.lua", ui.parameters)
+  GUI.Navigator.Page:echo("&lt;center&gt;"..ui.parameters.page)
+  refreshAllAliasButton()
+end
+--
+-- Decrase page index
+function decraseButtonsPage()
+  ui.parameters.page = ui.parameters.page or "";
+  if (ui.parameters.page == "a") then
+    ui.parameters.page = "c"
+  elseif (ui.parameters.page == "c") then
+    ui.parameters.page = "b"
+  else
+    ui.parameters.page = "a"
+  end
+  table.save(ui.pathTpl.."parameters.lua", ui.parameters)
+  GUI.Navigator.Page:echo("&lt;center&gt;"..ui.parameters.page)
+  refreshAllAliasButton()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Aliases</name>
+				<packageName></packageName>
+				<script>--
+function getAliasNameFormattedText(alias)
+  return ui.cAliasName..alias.."&lt;reset&gt;"
+end
+--
+function getAliasOutputFormattedText(command, output)
+  if (command) then
+    output = output or ""
+    command = string.gsub(command, ui.varID.."(%a+)", function(str)
+                                                      if not ui.variables[str] then
+                                                        return getVarNameFormattedText(str)..getOperatorFormattedText("(")..ui.cError.."Variabile non trovata!"..getOperatorFormattedText(")")
+                                                      else
+                                                        return getVarFormattedText(str)..ui.cAliasOutput
+                                                      end
+                                                    end)
+    command = string.gsub(command, ";", ui.cSeparator..";"..ui.cAliasOutput)
+    command = string.gsub(command, "/", ui.cSeparator.."/"..ui.cAliasOutput)
+    command = string.gsub(command, "#", getInputFormattedText("#"..output)..ui.cAliasOutput)
+    return ui.cAliasOutput..command.."&lt;reset&gt;"
+  end
+  return ""
+end
+--
+function getAliasFormattedText(alias)
+  ret = ""
+  if (ui.aliases[alias]) then
+    ret = getAliasNameFormattedText(alias).." "..getOperatorFormattedText("»").." "..getAliasOutputFormattedText(ui.aliases[alias].text)
+    if (ui.aliases[alias].button) then
+      ret = getAliasButtonFormattedText(ui.aliases[alias].button).." "..ret
+    end
+    if (ui.aliases[alias].keybId) then
+      ret = getKeybFormattedText(ui.aliases[alias].keybind).." "..ret
+    end
+  end
+  return ret
+end
+--
+-- List all aliases
+function showAllAliases()
+  local i = 0
+  cecho(uiTitle("Aliases"))
+  for alias in orderedPairs(ui.aliases) do
+    i = i + 1
+    cecho(getNumberFormattedText(i).." "..getAliasFormattedText(alias).."\n")
+  end
+  if (i&gt;0) then
+    echo("\n")
+  else
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp alias").."\n\n")
+  end
+end
+--
+function removeAlias(alias)
+  if (ui.aliases[alias]) then
+    removeKeyb(ui.aliases[alias]);
+    if (ui.aliases[alias]["id"]) then
+      killAlias(ui.aliases[alias]["id"])
+    end
+    ui.aliases[alias] = nil
+    return true
+  end
+  return false
+end
+--
+function removeAllAliases()
+  for alias in pairs(ui.aliases) do
+    removeAlias(alias)
+  end
+  ui.aliases = {}
+end
+--
+function addAlias(alias, value)
+  local command
+  local commands, varNameError = expandVariables(value, true)
+  if (not varNameError) then
+    -- Init alias (if no exist)
+    ui.aliases[alias] = ui.aliases[alias] or {}
+    -- Remove old alias
+    if (ui.aliases[alias].id) then
+      killAlias(ui.aliases[alias].id)
+    end
+    -- Save value in text format
+    ui.aliases[alias].text = value
+    -- Generate alias code
+    local code = [[
+matches = matches or {}
+matches[2] = matches[2] or ""
+]]
+    commands = expandCommand(value)
+    if (#commands == 1) then                                         -- Single command
+      command = expandVariables(value, true)
+      if (string.match(command, "matches%[2%]")) then
+        code = code..[[
+-- Single command with #
+uiEchon(getAliasOutputFormattedText("]]..value..[[", matches[2]));
+expandAlias("]]..command..[[", false);
+]]
+      else
+        -- Search for variables in command
+        local last_variable = ""
+        local last_expanded_variable = ""
+        for variable in string.gfind(command, "ui.variables%.%a+") do
+          last_variable = string.gsub(variable, "ui.variables%.", "@")
+          last_expanded_variable = variable
+        end
+        if (last_variable == "") then
+          -- If not variables in comman, add matches[2]
+          code = code..[[
+-- Single command without # and without variables
+if (matches[2] == "") then
+  uiEchon(getAliasOutputFormattedText("]]..value..[["));
+  expandAlias("]]..command..[[", false);
+else
+  -- Append matches[2]
+  uiEchon(getAliasOutputFormattedText("]]..value..[[ #", matches[2]));
+  expandAlias("]]..command..[[".." "..matches[2], false);
+end
+]]
+        else
+          -- If variables in command, replace last variable with matches[2]
+          local command_matches = string.gsub(command, last_expanded_variable, "matches[2]")
+          code = code..[[
+-- Single command without # but with variables
+if (matches[2] == "") then
+  uiEchon(getAliasOutputFormattedText("]]..value..[["));
+  expandAlias("]]..command..[[", false);
+else
+  -- Replace last variable with matches[2]
+  uiEchon(getAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", matches[2]));
+  expandAlias("]]..command_matches..[[", false);
+end
+]]
+        end
+      end
+    else                                                             -- Multiple commands
+          code = code..[[
+-- Multiple commands
+]]
+      for _, cmd in ipairs(commands) do
+        command = expandVariables(cmd, true)
+        code = code..[[
+uiEchon(getAliasOutputFormattedText("]]..cmd..[[", matches[2]));
+expandAlias("]]..command..[[", false);
+]]
+      end
+    end
+    code = code..[[
+echo("\n");
+]]
+    -- Save alias code (for debug only)
+    ui.aliases[alias].code = code
+    -- Assign keybind
+    local mod1 = ui.aliases[alias].mod1 or "";
+    local mod2 = ui.aliases[alias].mod2 or "";
+    local key = ui.aliases[alias].key or "";
+    local result, keybind
+    if (mod2 ~= "") then
+      result, keybind = setKeyb(ui.aliases, alias, ui.aliases[alias].code, mod2, mod1, key)
+    elseif (mod1 ~= "") then
+      result, keybind = setKeyb(ui.aliases, alias, ui.aliases[alias].code, mod1, key)
+    elseif (key ~= "") then
+      result, keybind = setKeyb(ui.aliases, alias, ui.aliases[alias].code, key)
+    else
+      result, keybind = setKeyb(ui.aliases, alias, ui.aliases[alias].code)
+    end
+    -- Remove keybind if not valid (or already used)
+    if (result &lt;= 0) then
+      removeKeyb(ui.aliases[alias])
+    end
+    -- Create alias
+    ui.aliases[alias].id = tempAlias([[^]]..alias..[[(?: (.*))?$]], code)
+    return 1, getAliasFormattedText(alias)
+  end
+  return -1, varNameError  -- Variable not exist
+end
+--
+-- Save aliases data from file
+function saveFileAliases()
+  local aliasesDataToSave = {}
+  for alias in pairs(ui.aliases) do
+    aliasesDataToSave[alias] = {}
+    aliasesDataToSave[alias].text = ui.aliases[alias].text
+    aliasesDataToSave[alias].mod1 = ui.aliases[alias].mod1
+    aliasesDataToSave[alias].mod2 = ui.aliases[alias].mod2
+    aliasesDataToSave[alias].key = ui.aliases[alias].key
+    aliasesDataToSave[alias].button = ui.aliases[alias].button
+  end
+  table.save(ui.pathTpl.."aliases.lua", aliasesDataToSave)
+end
+--
+-- Read Aliases data from file
+function readFileAliases()
+  ui.aliases = ui.aliases or {}
+  removeAllAliases()
+  if (io.exists(ui.pathTpl.."aliases.lua")) then
+    table.load(ui.pathTpl.."aliases.lua", ui.aliases)
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Colors</name>
+				<packageName></packageName>
+				<script>--
+-- Coded by Mudlet community developer demonnic
+-- internal sorting function, sorts first by hue, then luminosity, then value
+local sortColorsByHue = function(lhs, rhs)
+  local lh, ll, lv = unpack(lhs.sort)
+  local rh, rl, rv = unpack(rhs.sort)
+  if lh &lt; rh then
+    return true
+  elseif lh &gt; rh then
+    return false
+  elseif ll &lt; rl then
+    return true
+  elseif ll &gt; rl then
+    return false
+  else
+    return lv &lt; rv
+  end
+end
+--
+-- Internal sorting function, removes _ from snake_case and compares to camelCase
+local sortColorsByName = function(a, b)
+  local aname = string.gsub(string.lower(a.name), "_", "")
+  local bname = string.gsub(string.lower(b.name), "_", "")
+  return aname &lt; bname
+end
+--
+-- Internal function used to turn sorted colors table into columns
+local chunkify = function(tbl, num_chunks)
+  local pop =
+    function(t)
+      return table.remove(t, 1)
+    end
+  local tbl = table.deepcopy(tbl)
+  local tblsize = #tbl
+  local base_chunk_size = tblsize / num_chunks
+  local chunky_chunks = tblsize % num_chunks
+  local chunks = {}
+  for i = 1, num_chunks do
+    local chunk_size = base_chunk_size
+    if i &lt;= chunky_chunks then
+      chunk_size = chunk_size + 1
+    end
+    local chunk = {}
+    for j = 1, chunk_size do
+      chunk[j] = pop(tbl)
+    end
+    chunks[i] = chunk
+  end
+  return chunks
+end
+--
+-- internal function, converts rgb to hsv
+-- found at https://github.com/EmmanuelOga/columns/blob/master/utils/color.lua#L89
+local rgbToHsv = function(r, g, b)
+  r, g, b = r / 255, g / 255, b / 255
+  local max, min = math.max(r, g, b), math.min(r, g, b)
+  local h, s, v
+  v = max
+  local d = max - min
+  if max == 0 then
+    s = 0
+  else
+    s = d / max
+  end
+  if max == min then
+    h = 0
+    -- achromatic
+  else
+    if max == r then
+      h = (g - b) / d
+      if g &lt; b then
+        h = h + 6
+      end
+    elseif max == g then
+      h = (b - r) / d + 2
+    elseif max == b then
+      h = (r - g) / d + 4
+    end
+    h = h / 6
+  end
+  return h, s, v
+end
+--
+-- internal stepping function, removes some of the noise for a more pleasing sort
+-- cribbed from the python on https://www.alanzucconi.com/2015/09/30/colour-sorting/
+local step = function(r, g, b)
+  local lum = math.sqrt(.241 * r + .691 * g + .068 * b)
+  local reps = 8
+  local h, s, v = rgbToHsv(r, g, b)
+  local h2 = math.floor(h * reps)
+  local lum2 = math.floor(lum * reps)
+  local v2 = math.floor(v * reps)
+  if h2 % 2 == 1 then
+    v2 = reps - v2
+    lum2 = reps - lum2
+  end
+  return h2, lum2, v2
+end
+--
+local function calc_luminosity(r, g, b)
+  r = r &lt; 11 and r / (255 * 12.92) or ((0.055 + r / 255) / 1.055) ^ 2.4
+  g = g &lt; 11 and g / (255 * 12.92) or ((0.055 + g / 255) / 1.055) ^ 2.4
+  b = b &lt; 11 and b / (255 * 12.92) or ((0.055 + b / 255) / 1.055) ^ 2.4
+  return (0.2126 * r) + (0.7152 * g) + (0.0722 * b)
+end
+--
+local function include(color, options)
+  if options.removeDupes then
+    if string.find(color, "_") or string.find(color:lower(), 'gray') then
+      return false
+    else
+      return true
+    end
+  else
+    if string.find(color, "ansi_%d%d%d") then
+      return false
+    else
+      return true
+    end
+  end
+end
+--
+local function echoColor(color, options)
+  local rgb = color.rgb
+  local fgc = "white"
+  if calc_luminosity(unpack(rgb)) &gt; 0.5 then
+    fgc = "black"
+  end
+  local colorString
+  if options.justText then
+    colorString = string.format('&lt;%s:%s&gt; %-23s&lt;reset&gt; ', color.name, 'black', color.name, spacer)
+  else
+    colorString = string.format('&lt;%s:%s&gt; %-23s&lt;reset&gt; ', fgc, color.name, color.name)
+  end
+  if options.window == "main" then
+    if options.echoOnly then
+      cecho(colorString)
+    else
+      cechoLink(
+        colorString, [[appendCmdLine("]]..color.name..[[")]], table.concat(rgb, ", "), true
+      )
+    end
+  else
+    if options.echoOnly then
+      cecho(options.window, colorString)
+    else
+      cechoLink(
+        options.window,
+        colorString,
+        [[appendCmdLine("]]..color.name..[[")]],
+        table.concat(rgb, ", "),
+        true
+      )
+    end
+  end
+end
+--
+function displayColors(options)
+  local options = options or {}
+  local optionsType = type(options)
+  assert(
+    optionsType == "table",
+    "displayColors(options) argument error: options as table expects, got "..optionsType
+  )
+  options.cols = options.cols or 4
+  options.search = options.search or ""
+  options.sort = options.sort or false
+  if options.removeDupes == nil then
+    options.removeDupes = true
+  end
+  if options.columnSort == nil then
+    options.columnSort = true
+  end
+  if type(options.window) == "table" then
+    options.window = options.window.name
+  end
+  options.window = options.window or "main"
+  local color_table = options.color_table or color_table
+  local cols, search, sort = options.cols, options.search, options.sort
+  local colors = {}
+  for k, v in pairs(color_table) do
+    local color = {}
+    color.rgb = v
+    color.name = k
+    color.sort = {step(unpack(v))}
+    if include(k, options) and k:lower():find(search) then
+      table.insert(colors, color)
+    end
+  end
+  if sort then
+    table.sort(colors, sortColorsByName)
+  else
+    table.sort(colors, sortColorsByHue)
+  end
+  if options.columnSort then
+    local columns_table = chunkify(colors, cols)
+    local lines = #columns_table[1]
+    for i = 1, lines do
+      for j = 1, cols do
+        local color = columns_table[j][i]
+        if color then
+          echoColor(color, options)
+        end
+      end
+      echo(options.window, "\n")
+    end
+  else
+    local i = 1
+    for _, k in ipairs(colors) do
+      echoColor(k, options)
+      if i == cols then
+        echo(options.window, "\n")
+        i = 1
+      else
+        i = i + 1
+      end
+    end
+    if i ~= 1 then
+      echo(options.window, "\n")
+    end
+  end
+end
+--
+-- Check color
+function colorCheck(color)
+  local color = color:lower()
+  color = color:gsub("_", "")
+  for color_name, _ in pairs(color_table) do
+    if color_name:lower() == color then
+      return color_name
+    end
+  end
+  return false
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Generic</name>
+				<packageName></packageName>
+				<script>--
+function clickTarget(sender)
+  if (sender) then
+    local type, number = expandButton(sender)
+    if (type == "g") or (type == "o") then
+      executeTargetButton(sender)
+    end
+  end
+end
+--
+function __genOrderedIndex( t )
+  local orderedIndex = {}
+  for key in pairs(t) do
+    table.insert(orderedIndex, key)
+  end
+  table.sort(orderedIndex)
+  return orderedIndex
+end
+--
+function orderedNext(t, state)
+  -- Equivalent of the next function, but returns the keys in the alphabetic
+  -- order. We use a temporary ordered key table that is stored in the
+  -- table being iterated.
+  local key = nil
+  if state == nil then
+    -- the first time, generate the index
+    t.__orderedIndex = __genOrderedIndex(t)
+    key = t.__orderedIndex[1]
+  else
+    -- Fetch the next value
+    for i = 1,table.getn(t.__orderedIndex) do
+      if t.__orderedIndex[i] == state then
+        key = t.__orderedIndex[i+1]
+      end
+    end
+  end
+  if key then
+    return key, t[key]
+  end
+  -- No more value to return, cleanup
+  t.__orderedIndex = nil
+  return
+end
+--
+function orderedPairs(t)
+  -- Equivalent of the pairs() function on tables. Allows to iterate in order
+  return orderedNext, t, nil
+end
+--
+function uiDebug(text)
+  if ui.enDebug then
+    uiEchon("&lt;orange&gt;- DEBUG - &lt;white&gt;("..getTime(true, "hh:mm:ss.zzz")..") "..ui.cText..text.."&lt;reset&gt;")
+  end
+end
+--
+function uiEcho(text)
+  text = ui.echo..ui.cText..text.."&lt;reset&gt;"
+  cecho(text)
+end
+--
+function uiEchon(text)
+  text = ui.echo..ui.cText..text.."&lt;reset&gt;\n"
+  cecho(text)
+end
+--
+function uiEcho2n(text)
+  text = ui.echo..ui.cText..text.."&lt;reset&gt;\n\n"
+  cecho(text)
+end
+--
+function uiError(text)
+  text = ui.echo..ui.cError.."[ERRORE] "..ui.cText..text.."&lt;reset&gt;\n\n"
+  cecho(text)
+end
+--
+function uiDecho(text)
+  text = copy2decho(ui.echo..ui.cText)..text..copy2decho("&lt;reset&gt;").."\n\n"
+  decho(text)
+end
+--
+function uiTitle(text)
+  local title = "\n"..ui.echo..ui.cTitle..text.."\n"
+  text = string.gsub(ui.echo..text, "\&lt;%a+\&gt;", "")
+  for i=1, text:len() do
+    title = title.."-"
+  end
+  title = title.."\n"
+  return title
+end
+--
+function getNumberFormattedText(number)
+  if (number &lt; 10) then
+    return "&lt;white&gt;[&lt;steel_blue&gt; "..number.."&lt;white&gt;]".."&lt;reset&gt;"
+  end
+  return "&lt;white&gt;[&lt;steel_blue&gt;"..number.."&lt;white&gt;]".."&lt;reset&gt;"
+end
+--
+function removeArticle(text)
+  text = " "..text.." "
+  text = string.gsub(text, "&gt;", "&gt; ")
+  text = string.gsub(text, " con ", " ")
+  text = string.gsub(text, " d'", " ")
+  text = string.gsub(text, " da ", " ")
+  text = string.gsub(text, " di ", " ")
+  text = string.gsub(text, " dei ", " ")
+  text = string.gsub(text, " del ", " ")
+  text = string.gsub(text, " dell'", " ")
+  text = string.gsub(text, " degli ", " ")
+  text = string.gsub(text, " della ", " ")
+  text = string.gsub(text, " delle ", " ")
+  text = string.gsub(text, " dello ", " ")
+  text = string.gsub(text, " gli ", " ")
+  text = string.gsub(text, " i ", " ")
+  text = string.gsub(text, " il ", " ")
+  text = string.gsub(text, " in ", " ")
+  text = string.gsub(text, " l'", " ")
+  text = string.gsub(text, " la ", " ")
+  text = string.gsub(text, " le ", " ")
+  text = string.gsub(text, " lo ", " ")
+  text = string.gsub(text, " un ", " ")
+  text = string.gsub(text, " un'", " ")
+  text = string.gsub(text, " una ", " ")
+  text = string.gsub(text, " uno ", " ")
+  text = string.gsub(text, "&gt; ", "&gt;")
+  text = string.trim(text)
+  return text
+end
+--
+function parsingText(text)
+  -- TODO: missing colors
+  local statusColor = "&lt;128,128,128:30,24,24&gt;"
+  if (string.find(text, "indistruttibil")) then
+    text = string.gsub(text, "...E` indistruttibile!", "")
+    text = string.gsub(text, "...Sono indistruttibili!", "")
+    statusColor = "&lt;255,255,255:30,24,24&gt;"
+  elseif (string.find(text, "in condizioni eccellenti")) then
+    text = string.gsub(text, "...E` in condizioni eccellenti", "")
+    text = string.gsub(text, "...Sono in condizioni eccellenti", "")
+    statusColor = "&lt;128,128,128:30,24,24&gt;"
+  elseif (string.find(text, "in ottime condizioni")) then
+    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,0:0,0,0&gt;E` in ottime condizioni&lt;r&gt;", "")
+    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,0:0,0,0&gt;Sono in ottime condizioni&lt;r&gt;", "")
+    statusColor = "&lt;0,255,0:30,24,24&gt;"
+  elseif (string.find(text, "danni superficiali")) then
+    text = string.gsub(text, "...&lt;r&gt;&lt;255,255,0:0,0,0&gt;Presenta danni superficiali&lt;r&gt;", "")
+    text = string.gsub(text, "...&lt;r&gt;&lt;255,255,0:0,0,0&gt;Presentano danni superficiali&lt;r&gt;", "")
+    statusColor = "&lt;255,255,0:30,24,24&gt;"
+  elseif (string.find(text, "danneggiat")) then
+    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,255:0,0,0&gt;E` danneggiato ed usurato&lt;r&gt;", "")
+    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,255:0,0,0&gt;Sono danneggiati ed usurati&lt;r&gt;", "")
+    statusColor = "&lt;0,255,255:30,24,24&gt;"
+  elseif (string.find(text, "in pessime condizioni")) then
+    text = string.gsub(text, "...&lt;255,255,0:0,0,0&gt;E` in pessime condizioni", "")
+    text = string.gsub(text, "...&lt;255,255,0:0,0,0&gt;Sono in pessime condizioni", "")
+    statusColor = "&lt;255,255,0:30,24,24&gt;"
+  elseif (string.find(text, "bisogno di essere riparat")) then
+    text = string.gsub(text, "...&lt;255,0,0:0,0,0&gt;Ha bisogno di essere riparato", "")
+    text = string.gsub(text, "...&lt;255,0,0:0,0,0&gt;Hanno bisogno di essere riparati", "")
+    statusColor = "&lt;255,0,0:30,24,24&gt;"
+  elseif (string.find(text, "per cadere in pezzi")) then
+    text = string.gsub(text, "...Sta per cadere in pezzi", "")
+    text = string.gsub(text, "...Stanno per cadere in pezzi", "")
+    statusColor = "-TO DO-"
+  elseif (string.find(text, "in frantumi. Inutilizzabil")) then
+    text = string.gsub(text, "...E` in frantumi. Inutilizzabile!", "")
+    text = string.gsub(text, "...Sono in frantumi. Inutilizzabili!", "")
+    statusColor = "-TO DO-"
+  end
+  local good = string.find(text, "luce blu")
+  if (good) then
+    text = string.gsub(text, "...Ha un alone di &lt;r&gt;&lt;0,0,255:0,0,0&gt;luce blu&lt;r&gt;", "")
+    text = string.gsub(text, "...Hanno un alone di &lt;r&gt;&lt;0,0,255:0,0,0&gt;luce blu&lt;r&gt;", "")
+  end
+  local evil = string.find(text, "luce rossa")
+  if (evil) then
+    text = string.gsub(text, "...Ha un alone di &lt;r&gt;&lt;255,0,0:0,0,0&gt;luce rossa&lt;r&gt;", "")
+    text = string.gsub(text, "...Hanno un alone di &lt;r&gt;&lt;255,0,0:0,0,0&gt;luce rossa&lt;r&gt;", "")
+  end
+  local bright = string.find(text, "alone luminoso")
+  if (bright) then
+    text = string.gsub(text, "...Ha un &lt;r&gt;&lt;255,255,255:0,0,0&gt;alone luminoso&lt;r&gt;", "")
+    text = string.gsub(text, "...Hanno un &lt;r&gt;&lt;255,255,255:0,0,0&gt;alone luminoso&lt;r&gt;", "")
+  end
+  local noisy = string.find(text, "forte ronzio")
+  if (noisy) then
+    text = string.gsub(text, "...Emette un &lt;r&gt;&lt;128,128,128:0,0,0&gt;forte ronzio&lt;r&gt;", "")
+    text = string.gsub(text, "...Emettono un &lt;r&gt;&lt;128,128,128:0,0,0&gt;forte ronzio&lt;r&gt;", "")
+  end
+  local brittle = string.find(text, "molto fragil")
+  if (brittle) then
+    text = string.gsub(text, "...&lt;0,128,128:0,0,0&gt;Sembra molto fragile", "")
+    text = string.gsub(text, "...&lt;0,128,128:0,0,0&gt;Sembrano molto fragili", "")
+  end
+  text = removeArticle(text)
+  return text, statusColor, good, evil, bring, noisy, brittle
+end
+--
+function expandVariables(value, toAlias)
+  if (toAlias) then
+    value = string.gsub(value, "#", '"..matches[2].."')
+    value = string.gsub(value, ui.varID.."(%a+)", '"..ui.variables.%1.."')
+  else
+    value = string.gsub(value, ui.varID.."(%a+)", "ui.variables.%1")
+  end
+  for varName in string.gfind(value, "ui.variables%.(%a+)") do
+    if (not ui.variables[varName]) then
+      return nil, varName
+    elseif (not toAlias) then
+      value = string.gsub(value, "ui.variables%.(%a+)", ui.variables[varName])
+    end
+  end
+  return value, nil
+end
+--
+function getCommandFormattedText(command)
+  return ui.cCommand..command.."&lt;reset&gt;"
+end
+--
+function getOperatorFormattedText(operator)
+  return ui.cOperator..operator.."&lt;reset&gt;"
+end
+--
+function getInputFormattedText(input)
+  return ui.cInput..input.."&lt;reset&gt;"
+end
+--
+function expandCommand(value)
+  if string.match(value, "/") then
+    return string.split(value, "%s*/%s*")
+  end
+  return string.split(value, "%s*;%s*")
+end
+--
+-- Expand button name. Es. expandButton("T5") -&gt; "t", 5
+function expandButton(button)
+  local val = 0
+  button = string.lower(button or "")
+  if (string.find(button, "^[abcgot]%d$")) then
+    return string.sub(button, 1, 1), tonumber(string.sub(button, 2, 2))
+  end
+  return nil, nil
+end
+--
+function titleCase(first, rest)
+   return first:upper()..rest:lower()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Group</name>
+				<packageName></packageName>
+				<script>--
+function updateGroup()
+  local nGroupMembers = ui.enDebug and 7 or ui.totalMember
+  if nGroupMembers &gt; 10 then
+    nGroupMembers = 10
+  end
+  --
+  for i = 1, 10 do
+    local mod = i % 10
+    if (i &gt; nGroupMembers) then
+      GUI["g"..mod]:hide();
+      assignTargetButton("g"..mod, nil)
+    else
+      local memberName = ui.enDebug and "Test "..i or (ui.group[i][1] or "")
+      local isLeader = ui.enDebug or (ui.group[i][2] or false)
+      local memberHp = ui.enDebug and 50 or (ui.group[i][3] or 0)
+      local memberMana = ui.enDebug and 25 or (ui.group[i][4] or 0)
+      local memberPow = ui.enDebug and 75 or (ui.group[i][5] or 0)
+      --
+      GUI["g"..mod].Health.front:echo(ansi2string(memberName))
+      GUI["g"..mod].Health:setValue(memberHp, 100, "&lt;p align=right&gt;"..memberHp.."%")
+      GUI["g"..mod].Mana:setValue(memberMana, 100)
+      GUI["g"..mod].Stamina:setValue(memberPow, 100)
+      if (isLeader) then
+        GUI["g"..mod].Gem:setStyleSheet([[
+          border-image: url("]]..ui.pathImg..[[gemBlue.png") 0px stretch;
+        ]]);
+      else
+        GUI["g"..mod].Gem:setStyleSheet([[
+          border-image: url("]]..ui.pathImg..[[gemEmpty.png") 0px stretch;
+        ]]);
+      end
+      GUI["g"..mod]:show();
+      assignTargetButton("g"..mod, memberName)
+    end
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Help</name>
+				<packageName></packageName>
+				<script>--
+local function parse_help_text(text)
+  --text = text:gsub("%$ROOM_NAME_STATUS", (map.currentName and map.currentName ~= "") and '✔️' or '❌')
+  --text = text:gsub("%$ROOM_NAME", map.currentName or '')
+  --text = text:gsub("%$ROOM_EXITS_STATUS", (not map.currentExits or table.is_empty(map.currentExits)) and '❌' or '✔️')
+  --text = text:gsub("%$ROOM_EXITS", map.currentExits and table.concat(map.currentExits, ' ') or '')
+  return text
+end
+--
+function uiHelp(cmd)
+  -- Command
+  if cmd and cmd ~= "" then
+    cmd = cmd:lower():gsub(" ","_")
+    if not ui.help[cmd] then
+      cmd = "error"
+    end
+  else
+    cmd = "help"
+  end
+  -- Pharse lines
+  for line in parse_help_text(ui.help[cmd]):gmatch("[^\n]*\n") do
+    -- Search tag
+    repeat
+      local before, tag, main, after = rex.match(line, [[(?&lt;before&gt;.*)&lt;(?&lt;tag&gt;[^&gt;]+)&gt;(?&lt;inside&gt;.*)&lt;\/\k&lt;tag&gt;&gt;(?&lt;after&gt;.*)]], 0, 'm')
+      -- Execute tag
+      if (tag) then
+        -- Tag
+        tag = tag:lower()
+        -- Main
+        if (tag == "title") then
+          main = uiTitle(main)
+        elseif (tag == "command") then
+          main = getCommandFormattedText(main)
+        elseif (tag == "aliasname") then
+          main = getAliasNameFormattedText(main)
+        elseif (tag == "aliasoutput") then
+          main = getAliasOutputFormattedText(main)
+        elseif (tag == "alias") then
+          main = getAliasFormattedText(main)          
+        elseif (tag == "input") then
+          main = getInputFormattedText(main)          
+        elseif (tag == "varname") then
+          main = getVarNameFormattedText(main)          
+        elseif (tag == "varvalue") then
+          main = getVarValueFormattedText(main)          
+        elseif (tag == "var") then
+          main = getVarFormattedText(main) 
+        end
+        -- After
+        if (tag ~= "title") then
+          after = after.."\n"
+        end
+        -- Final line
+        line = before..main..after
+      end
+    until (tag == nil)
+    cecho(line)
+  end
+end
+--
+function uiHelp_links(htext, hlinktext, hurl, hcaption)
+  if htext ~= nil and hlinktext ~= nil and hurl ~= nil and hcaption ~= nil then
+    cecho(ui.cText..htext.." ")
+    cechoLink(ui.cLink..hlinktext..ui.cText.."\n",
+              [[openWebPage("https://]]..hurl..[[")]],
+              hcaption,
+              true)
+  end
+end
+--
+function uiHelp_target()
+  uiTitle("Pulsanti target")
+  cecho([[Sintassi ]]..ui.cText..[[(con ]]..getCommandFormattedText("&lt;x&gt;")..[[ compreso tra 1 e 4):
+  ]]..getCommandFormattedText("t&lt;x&gt; &lt;testo&gt;")..[[   Per impostare un valore al pulsante target numero &lt;x&gt;
+  ]]..getCommandFormattedText("t&lt;x&gt;")..[[           Per eseguire il pulsante target numero &lt;x&gt;
+Tramite i comandi ]]..getCommandFormattedText("t&lt;x&gt;")..[[ è possibile assegnare un target alternativo ai pulsanti target presenti nella barra inferiore dell'interfaccia. Eseguendo il comando ]]..getCommandFormattedText("t&lt;x&gt;")..[[ senza parametri, oppure premendo il pulsante t&lt;x&gt; o il tasto rapito assegnato, la variabile predefinita ]]..getVarNameFormattedText("target")..[[ verrà impostata con il valore assegnato al pulsante t&lt;x&gt;.
+E' possibile associare, cambiare o rimuovere il tasto rapito associato ai pulsanti target con il comando ]]..getCommandFormattedText("uisetkeyb")..[[ (]]..getCommandFormattedText("uihelp uisetkeyb")..[[ per maggiori informazioni).
+]]..ui.cTitle..[[Esempio:
+  Stai gruppando con Pippo e Pluto che hai precedentemente impostato sui pulsanti target t1 e t2 con i comandi ]]..getCommandFormattedText("t1")..[[ Pippo e ]]..getCommandFormattedText("t2")..[[ Pluto. Premendo F1 o F2 puoi impostare velocemente la variabile ]]..getVarNameFormattedText("target")..[[ che potrebbe essere stata utilizzata a sua volta nell'alias ]]..getAliasNameFormattedText("h1")..[[ ]]..getAliasOutputFormattedText("cast 'heal'")..[[ ]]..getVarNameFormattedText("target")..[[.
+Per visualizzare l'help principale digitare ]])
+  cechoLink(getCommandFormattedText("uihelp")..".\n\n", [[uiHelp()]], "Help", true)
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Highlights</name>
+				<packageName></packageName>
+				<script>--
+function getHighlightFormattedText(highlight)
+  if (ui.highlights[highlight]) then
+    return "&lt;"..ui.highlights[highlight].color.."&gt;"..highlight.."&lt;reset&gt;"
+  end
+  return ""
+end
+--
+function showAllHighlights()
+  local i = 0
+  local num
+  cecho(uiTitle("Highlights"))
+  for highlight in pairs(ui.highlights) do
+    i = i + 1
+    cecho(getNumberFormattedText(i).." "..getHighlightFormattedText(highlight).."\n")
+  end
+  if (i&gt;0) then
+    echo("\n")
+  else
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp highlights").."\n\n")
+  end
+end
+--
+function removeHighlight(highlight)
+  if (ui.highlights[highlight]) then
+    if (ui.highlights[highlight].id) then
+      killTrigger(ui.highlights[highlight].id)
+    end
+    ui.highlights[highlight] = nil
+    return true
+  end
+  return false
+end
+--
+function removeAllHighlights()
+  for highlight in pairs(ui.highlights) do
+    removeHighlight(highlight)
+  end
+  ui.highlights = {}
+end
+--
+function addHighlight(highlight, color)
+  if colorCheck(color) then
+    highlight = highlight or "" 
+    if (highlight ~= "") then
+      -- Init highlight (if not exist)
+      ui.highlights[highlight] = ui.highlights[highlight] or {}
+      -- Remove old highlight
+      if (ui.highlights[highlight].id) then
+        killTrigger(ui.highlights[highlight].id)
+      end
+      -- Create trigger
+      ui.highlights[highlight].id = tempRegexTrigger([[(?i)(?:^|\W|\s)(]]..highlight..[[)(?:\W|$|\s)]], function()
+                                                                                                          selectString(matches[2], 1)
+                                                                                                          fg(color)
+                                                                                                          resetFormat()
+                                                                                                        end)
+      ui.highlights[highlight].color = color
+      return 1
+    end
+    return -1 -- Invaid text
+  end
+  return -2 -- Invalid color
+end
+--
+-- Save Highlights data from file
+function saveFileHighlights()
+  local highlightsDataToSave = {}
+  for highlight in pairs(ui.highlights) do
+    highlightsDataToSave[highlight] = {}
+    highlightsDataToSave[highlight].color = ui.highlights[highlight].color
+  end
+  table.save(ui.pathTpl.."highlights.lua", highlightsDataToSave)
+end
+--
+-- Read Highlights data from file
+function readFileHighlights()
+  ui.highlights = ui.highlights or {}
+  removeAllHighlights()
+  if (io.exists(ui.pathTpl.."highlights.lua")) then
+    table.load(ui.pathTpl.."highlights.lua", ui.highlights)
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Keybind</name>
+				<packageName></packageName>
+				<script>--
+function getKeybFormattedText(keybind)
+  if (keybind) then
+    return ui.cKeybind.."["..keybind.."]".."&lt;reset&gt;"
+  end
+  return ""
+end
+--
+-- Validate 3 keys for keybind (order: mod1 mod2 key)
+function getKeyb(key1, key2, key3)
+  local isValid = false;
+  local mod1 = "";
+  local mod2 = "";
+  local key = "";
+  local keybind = ""
+  key1 = string.upper(key1 or "")
+  key2 = string.upper(key2 or "")
+  key3 = string.upper(key3 or "")
+  if (key3 ~= "") then  -- es: key1=CTRL key2=ALT key3=F1
+    if (key1 ~= key2) and
+       (table.contains(ui.keyb_modifier, key1)) and
+       (table.contains(ui.keyb_modifier, key2)) and
+       (table.contains(ui.keyb_single,   key3)) then
+      local idx1 = table.index_of(table.keys(ui.keyb_modifier), key1)
+      local idx2 = table.index_of(table.keys(ui.keyb_modifier), key2)
+      mod1 = idx1 &lt; idx2 and key2 or key1
+      mod2 = idx1 &lt; idx2 and key1 or key2
+      key = key3
+      isValid = true
+    end
+  elseif (key2 ~= "") then  -- es: key1=CTRL key2=F1
+    if (table.contains(ui.keyb_modifier, key1) and table.contains(ui.keyb_single, key2))then
+      mod1 = key1
+      mod2 = ""
+      key = key2
+      isValid = true
+    end
+  elseif (key1~= "") then -- es: key1=F1
+    if (table.contains(ui.keyb_single, key1)) then
+      mod1 = ""
+      mod2 = ""
+      key = key1
+      isValid = true
+    end
+  else
+    mod1 = ""
+    mod2 = ""
+    key = ""
+    isValid = true
+  end
+  if (mod2 ~= "") then
+    keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", titleCase).."+"..
+               string.gsub(mod2 or "", "(%a)([%w_']*)", titleCase).."+"..
+               string.gsub(key or "", "(%a)([%w_']*)", titleCase)
+  elseif (mod1 ~= "") then
+    keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", titleCase).."+"..
+               string.gsub(key or "", "(%a)([%w_']*)", titleCase)
+  elseif (key ~= "") then
+    keybind = string.gsub(key or "", "(%a)([%w_']*)", titleCase)
+  end
+  return isValid, mod1, mod2, key, keybind
+end
+--
+function searchKeyb(table, keybind, excludeKey)
+  keybind = keybind or ""
+  excludeKey = excludeKey or ""
+  if (keybind ~= "") and (table) then
+    for key in pairs(table) do
+      if (key ~= excludeKey) and (table[key].keybind == keybind) then
+        return key
+      end
+    end
+  end
+  return nil
+end
+--
+function showAllKeyb()
+  local i = 0
+  cecho(uiTitle("Target keybind"))
+  for target in pairs(ui.targets) do
+    if (ui.targets[target].keybId) then
+      i = i + 1
+      cecho(getNumberFormattedText(i).." "..getTargetFormattedText(target).."\n")
+    end
+  end
+  if (i==0) then
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp keybind").."\n")
+  end
+  i = 0
+  cecho(uiTitle("Aliases keybind"))
+  table.sort(ui.aliases)
+  for alias in pairs(ui.aliases) do
+    if (ui.aliases[alias].keybId) then
+      i = i + 1
+      cecho(getNumberFormattedText(i).." "..getAliasFormattedText(alias).."\n")
+    end
+  end
+  if (i&gt;0) then
+    echo("\n")
+  else
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp keybind").."\n\n")
+  end
+end
+--
+-- Delete keybind from a table
+function removeKeyb(element)
+  if (element) then
+    if (element.mod1) then
+      element.mod1 = nil
+    end
+    if (element.mod2) then
+      element.mod2 = nil
+    end
+    if (element.key) then
+      element.key = nil
+    end
+    if (element.keybind) then
+      element.keybind = nil
+    end
+    if (element.keybId) then
+      killKey(element.keybId)
+      element.keybId = nil
+      return 1 -- keyb removed
+    end
+    return -1 -- Not keyb to remove
+  end
+  return -2 -- Invalid element
+end
+--
+function removeAllKeyb()
+  for element in pairs(ui.aliases) do
+    removeKeyb(ui.aliases[element])
+  end
+  for element in pairs(ui.targets) do
+    removeKeyb(ui.targets[element])
+  end
+end
+--
+-- Set, modify or delete a keybind
+function setKeyb(table, tKey, code, key1, key2, key3)
+  local isValid, mod1, mod2, key, keybind = getKeyb(key1, key2, key3)
+  if (table[tKey]) then
+    if (isValid) then
+      if (searchKeyb(ui.targets, keybind, tKey) == nil) then
+        if (searchKeyb(ui.aliases, keybind, tKey) == nil) then
+          -- Remove old keybind
+          removeKeyb(table[tKey]);
+          -- Create new keybind
+          if (mod2 ~= "") then
+            table[tKey].keybId = tempKey(ui.keyb_modifier[mod1] + ui.keyb_modifier[mod2], ui.keyb_single[key], code)
+          elseif (mod1 ~= "") then
+            table[tKey].keybId = tempKey(ui.keyb_modifier[mod1], ui.keyb_single[key], code)
+          elseif (key ~= "") then
+            table[tKey].keybId = tempKey(ui.keyb_single[key], code)
+          else
+            return 2, keybind -- keybind removed
+          end
+          -- Save data
+          table[tKey].mod1 = mod1
+          table[tKey].mod2 = mod2
+          table[tKey].key = key
+          table[tKey].keybind = keybind
+          return 1, keybind -- keybind changed or created
+        end
+        return -4, keybind -- keybind already used in an alias
+      end
+      return -3, keybind -- keybind already used in a target
+    end
+    return -2, keybind -- Not valid keys
+  end
+  return -1, keybind -- Alias not exist
+end
+--
+-- Save Targets data from file
+function saveFileTargets()
+  local targetsDataToSave = {}
+  for target in pairs(ui.targets) do
+    targetsDataToSave[target] = {}
+    targetsDataToSave[target].mod1 = ui.targets[target].mod1
+    targetsDataToSave[target].mod2 = ui.targets[target].mod2
+    targetsDataToSave[target].key = ui.targets[target].key
+    targetsDataToSave[target].target = ui.targets[target].target
+  end
+  table.save(ui.pathTpl.."target.lua", targetsDataToSave)
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Map/Compass</name>
+				<packageName></packageName>
+				<script>--
+function getToken(exits, token, index)
+  table.remove(exits, index)
+  if (exits[index]) and (exits[index] == "(chiuso)") then
+    token = "("..token..")"
+    table.remove(exits, index)
+  elseif (exits[index]) and (exits[index] == "(segreto)") then
+    token = ")"..token.."("
+    table.remove(exits, index)
+  else
+    token = " "..token.." "
+  end
+  return token
+end
+--
+function updateMap()
+  local spaces = ""
+  local token
+  local exits = {}
+  clearWindow("GUI.Compass.Exits")
+  clearWindow("GUI.Compass.OtherExits")
+  ui.exits = {}
+  for token in string.gmatch(ui.strExits, "[^%s]+") do
+    table.insert(exits, token);
+  end
+  -- Name
+  GUI.Compass:setTitle(ui.roomName)
+  -- Type
+  GUI.Compass.B2:echo("&lt;center&gt;"..ui.roomType)
+  --
+  if (ui.dirFrom == "u") then
+    GUI.Compass.Exits:setFgColor("cyan")
+    GUI.Compass.Exits:echo (spaces.." *");
+  elseif (ui.dirFrom == "n") then
+    GUI.Compass.Exits:setFgColor("green")
+    GUI.Compass.Exits:echo (spaces.."     *");
+  end
+  GUI.Compass.Exits:echo ("\n");
+  -- Up
+  if (table.contains(exits, "Up"))then
+    local index = table.index_of(exits, "Up")
+    token = getToken(exits,"↑", index)
+    GUI.Compass.Exits:setFgColor("cyan")
+    table.insert(ui.exits, "u");
+  else
+    token = " ↑ "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo (spaces..token);
+  -- North
+  if ( table.contains(exits, "North" ) ) then
+    local index = table.index_of(exits, "North")
+    token = getToken(exits, "▲", index)
+    GUI.Compass.Exits:setFgColor("green")
+    table.insert(ui.exits, "n");
+  else
+    token = " ▲ "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo(" "..token);
+  GUI.Compass.Exits:echo("\n");
+  -- West
+  if (ui.dirFrom == "w") then
+    GUI.Compass.Exits:setFgColor("magenta")
+    GUI.Compass.Exits:echo (spaces.." *");
+  else
+    GUI.Compass.Exits:echo (spaces.."  ");
+  end
+  if ( table.contains(exits, "West" ) ) then
+    local index = table.index_of(exits, "West")
+    token = getToken(exits, "◄", index)
+    GUI.Compass.Exits:setFgColor("magenta")
+    table.insert(ui.exits, "w");
+  else
+    token = " ◄ "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo (token);
+  -- Center - Track
+  if (ui.track == nil) or (ui.track == "") then
+    GUI.Compass.Exits:setFgColor("DimGray")
+    GUI.Compass.Exits:echo ("☼")
+  else
+    GUI.Compass.Exits:setFgColor("blue")
+    GUI.Compass.Exits:echo (ui.dirToken[ui.track])  
+  end
+  -- East
+  if ( table.contains(exits, "East" ) ) then
+    local index = table.index_of(exits, "East")
+    token = getToken(exits, "►", index)
+    GUI.Compass.Exits:setFgColor("yellow")
+    table.insert(ui.exits, "e");
+  else
+    token = " ► "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo (token)
+  if (ui.dirFrom == "e") then
+    GUI.Compass.Exits:setFgColor("yellow")
+    GUI.Compass.Exits:echo (spaces.."*");
+  end
+  GUI.Compass.Exits:echo ("\n")
+  -- Dowm
+  if ( table.contains(exits, "Down" ) ) then
+    local index = table.index_of(exits, "Down")
+    token = getToken(exits, "↓", index)
+    GUI.Compass.Exits:setFgColor("white")
+    table.insert(ui.exits, "d");
+  else
+    token = " ↓ "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo (spaces..token)
+  -- South
+  if ( table.contains(exits, "South" ) ) then
+    local index = table.index_of(exits, "South")
+    token = getToken(exits, "▼", index)
+    GUI.Compass.Exits:setFgColor("blue")
+    table.insert(ui.exits, "s");
+  else
+    token = " ▼ "
+    GUI.Compass.Exits:setFgColor("DimGray")
+  end
+  GUI.Compass.Exits:echo (" "..token.."\n")
+  if (ui.dirFrom == "d") then
+    GUI.Compass.Exits:setFgColor("white")
+    GUI.Compass.Exits:echo (spaces.." *\n");
+  elseif (ui.dirFrom == "s") then
+    GUI.Compass.Exits:setFgColor("blue")
+    GUI.Compass.Exits:echo (spaces.."     *\n");
+  end
+  -- Other exits
+  if ( table.size (exits) &gt; 0 ) then
+    GUI.Compass.OtherExits:setFgColor("white")
+    GUI.Compass.OtherExits:echo("Altre uscite:\n")
+    while (exits[1] ~= nil) do
+      token = exits[1]
+      token = getToken(exits, token, 1)
+      GUI.Compass.OtherExits:decho("- "..token.."\n")
+    end
+  end
+  --GUI.Compass.RoomName:setFontSize(ui.parameters.fsmap)
+  GUI.Compass.Exits:setFontSize(ui.parameters.fsmap)
+  GUI.Compass.OtherExits:setFontSize(ui.parameters.fsmap)
+  GUI.Compass.B2:setFontSize(ui.parameters.fsmap)    
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Opponent (GMCP)</name>
+				<packageName></packageName>
+				<script>--
+function updateOpponent()
+  if (ui.enDebug) then
+    ui.variables.opponent_health     = 70
+    ui.variables.opponent_health_max = 100
+    ui.variables.opponent_level      = 55
+    ui.variables.opponent_name       = "Cattivone"
+  else
+    ui.variables.opponent_health     = gmcp.MSDP.OPPONENT_HEALTH or ui.variables.opponent_health
+    ui.variables.opponent_health_max = gmcp.MSDP.OPPONENT_HEALTH_MAX or ui.variables.opponent_health_max
+    ui.variables.opponent_level      = gmcp.MSDP.OPPONENT_LEVEL or ui.variables.opponent_level
+    ui.variables.opponent_name       = gmcp.MSDP.OPPONENT_NAME or ui.variables.opponent_name
+  end
+  if (ui.variables.opponent_name ~= "") then
+    local hp = tonumber(ui.variables.opponent_health) or 0
+    local hpMax = tonumber(ui.variables.opponent_health_max) or 0
+    local hpPerc = 0
+    if hpMax ~= 0 then
+      hpPerc = math.floor(100 * hp / hpMax)
+    else
+      hpPerc = 0
+    end
+    local levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
+    local color = "white";
+    if (levDif &gt; 10) then
+      color = "white"
+    elseif (levDif &gt; -5) then
+      color = "green"
+    elseif (levDif &gt; -10) then
+      color = "yellow"
+    elseif (levDif &gt; -15) then
+      color = "orange"
+    else
+      color = "red"
+    end
+    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, "(\$c%d+)", "")
+    lastmob = ui.variables.opponent_name
+    GUI.Opponent:setTitle(ui.variables.opponent_name)
+    GUI.Opponent.Level:setFgColor(color)
+    GUI.Opponent.Level:echo("&lt;center&gt;"..ui.variables.opponent_level)
+    GUI.Opponent.Level:show()
+    GUI.Opponent.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..hpPerc.."%  ")
+    GUI.Opponent.Health.front:echo(ui.variables.opponent_name)
+    assignTargetButton("o0", ui.variables.opponent_name)
+  else
+    GUI.Opponent:setTitle("* Nessuno *")
+    GUI.Opponent.Level:setFgColor(color)
+    GUI.Opponent.Level:echo("")
+    GUI.Opponent.Level:hide()
+    GUI.Opponent.Health:setValue(0, 100,"")
+    GUI.Opponent.Health.front:echo("")
+    assignTargetButton("o0", nil)
+  end
+  table.save(ui.pathTpl.."variables.lua", ui.variables)
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Path</name>
+				<packageName></packageName>
+				<script>function getNextNumber(text, index)
+  local number = ""
+  index = tonumber(index or 1)
+  while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
+    number = number..string.lower(text:sub(index, index))
+    index = index + 1
+  end
+  if (number == "") then
+    number = "1"
+  end
+  number = tonumber(number)
+  return number, index
+end
+
+function savePath(dir)
+  if (ui.idxPath &lt; ui.maxPath) then
+    ui.idxPath = ui.idxPath + 1
+    ui.path[ui.idxPath] = dir
+  else
+    for i=1, ui.maxPath-1 do
+      ui.path[i] = ui.path[i+1]
+    end
+    ui.path[ui.maxPath] = dir    
+    ui.idxPath = ui.maxPath
+  end
+  ui.memPath = ui.idxPath
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Player (GMCP)</name>
+				<packageName></packageName>
+				<script>--
+function updatePlayer()
+  ui.variables.ac             = gmcp.MSDP.AC or ui.variables.ac
+  ui.variables.alignment      = gmcp.MSDP.ALIGNMENT or ui.variables.alignment
+  ui.variables.experience     = gmcp.MSDP.EXPERIENCE or ui.variables.experience
+  ui.variables.money          = gmcp.MSDP.MONEY or ui.variables.money
+  ui.variables.character_name = gmcp.MSDP.CHARACTER_NAME or ui.variables.character_name
+  if (ui.enDebug) then
+    ui.variables.health         = 50
+    ui.variables.health_max     = 100
+    ui.variables.level          = 99
+    ui.variables.mana           = 25
+    ui.variables.mana_max       = 100
+    ui.variables.movement       = 75
+    ui.variables.movement_max   = 100
+    ui.variables.character_name = "D3Bu4 M0D3"
+  else
+    ui.variables.health         = gmcp.MSDP.HEALTH or ui.variables.health
+    ui.variables.health_max     = gmcp.MSDP.HEALTH_MAX or ui.variables.health_max
+    ui.variables.level          = gmcp.MSDP.LEVEL or ui.variables.level
+    ui.variables.mana           = gmcp.MSDP.MANA or ui.variables.mana
+    ui.variables.mana_max       = gmcp.MSDP.MANA_MAX or ui.variables.mana_max
+    ui.variables.movement       = gmcp.MSDP.MOVEMENT or ui.variables.movement
+    ui.variables.movement_max   = gmcp.MSDP.MOVEMENT_MAX or ui.variables.movement_max
+    ui.variables.character_name = gmcp.MSDP.CHARACTER_NAME or ui.variables.character_name
+  end
+  --
+  -- HP
+  local hp = tonumber(ui.variables.health) or hp
+  local hpMax = tonumber(ui.variables.health_max) or hpMAx
+  local hpPerc = 0
+  if hpMax ~= 0 then hpPerc = math.floor(100 * hp / hpMax) end
+  last_hp = last_hp or 0;
+  if (hp &lt; last_hp) then
+    playSoundFile(ui.pathSnd..[[hurt.wav]], 10)
+  end
+  last_hp = hp
+  --
+  -- Mana
+  local mana = tonumber(ui.variables.mana)
+  local manaMax = tonumber(ui.variables.mana_max)
+  local manaPerc = 0
+  if manaMax ~= 0 then manaPerc = math.floor(100 * mana / manaMax) end
+  last_mana = last_mana or 0;
+  if (mana &lt; last_mana) then
+    playSoundFile(ui.pathSnd..[[cast.wav]], 10)
+  end
+  last_mana = mana
+  --
+  -- Stamina
+  local stamina = tonumber(ui.variables.movement)
+  local staminaMax = tonumber(ui.variables.movement_max)
+  local staminaPerc = 0
+  if staminaMax ~= 0 then staminaPerc = math.floor(100 * stamina / staminaMax) end
+  -- Redraw widget
+  GUI.Player:setTitle(ui.variables.character_name)
+  --GUI.Player.Name:echo("&lt;center&gt;"..ui.variables.character_name)
+  GUI.Player.Level:echo("&lt;center&gt;"..ui.variables.level)
+  GUI.Exp:setValue(ui.variables.experience, 300000000)
+  GUI.Exp.FGGrid:echo("&lt;center&gt;"..ui.variables.experience.."/300000000")
+  GUI.Player.Health:setValue(hpPerc, 100,"&lt;center&gt;"..hp.."/"..hpMax.." - "..hpPerc.."%")
+  GUI.Player.Mana:setValue(manaPerc, 100,"&lt;center&gt;"..mana.."/"..manaMax.." - "..manaPerc.."%")
+  GUI.Player.Stamina:setValue(staminaPerc, 100,"&lt;center&gt;"..stamina.."/"..staminaMax.." - "..staminaPerc.."%")
+  table.save(ui.pathTpl.."variables.lua", ui.variables)
+  --
+  if (ui.lastMoney) then
+    if (ui.variables.money &lt; ui.lastMoney) then
+      uiEcho2n("Il tuo portafoglio si allegerisce di &lt;gold&gt;"..(ui.lastMoney - ui.variables.money).."&lt;reset&gt; monete d'oro.\n")
+    end 
+    ui.lastMoney = ui.variables.money  
+  else
+    ui.lastMoney = ui.variables.money
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Targets</name>
+				<packageName></packageName>
+				<script>--
+function getTargetFormattedText(target)
+  local str = ui.cTarget.."["..target.."]".."&lt;reset&gt;"
+  if (ui.targets[target]) and (ui.targets[target].keybId) then
+    str = getKeybFormattedText(ui.targets[target].keybind).." "..str
+  end
+  return str
+end
+--
+-- Refresh target button
+function refreshTargetButton(button)
+  local type, number = expandButton(button)
+  if ((type == "g") or (type == "o") or (type == "t")) then
+    button = type..number 
+    if (ui.targets[button]) then
+      local mod1 = ui.targets[button].mod1 or "";
+      local mod2 = ui.targets[button].mod2 or "";
+      local key = ui.targets[button].key or "";
+      local result, keybind
+      local target
+      local CCS, bgColor
+      -- Target
+      if (ui.targets[button].target) and (ui.targets[button].target ~= "") then
+        target = ui.targets[button].target
+      else
+        target = "'"..button.."'";
+      end
+      -- Keybind
+      if (mod2 ~= "") then
+        result, keybind = setKeyb(ui.targets, button, [[executeTargetButton("]]..button..[[")]], mod2, mod1, key)
+      elseif (mod1 ~= "") then
+        result, keybind = setKeyb(ui.targets, button, [[executeTargetButton("]]..button..[[")]], mod1, key)
+      elseif (key ~= "") then
+        result, keybind = setKeyb(ui.targets, button, [[executeTargetButton("]]..button..[[")]], key)
+      else
+        result, keybind = setKeyb(ui.targets, button, [[executeTargetButton("]]..button..[[")]])
+      end
+      if (result &lt;= 0) then
+        removeKeyb(ui.targets[button])
+      end
+      -- Echo
+      GUI[button].keybind:echo("&lt;center&gt;"..keybind)
+      -- CCS
+      if (type == "g") then
+        CCS = GUI.CSS.Border3;
+        bgColor = "0,150,0"
+      elseif (type == "o") then
+        CCS = GUI.CSS.Border3;
+        bgColor = "150,0,0"
+      elseif (type == "t") then
+        GUI[button]:echo("&lt;center&gt;"..target)
+        CCS = GUI.CSS.Target;
+        bgColor = "150,0,0"
+      end
+      --
+      if (target == ui.variables["target"]) then
+        GUI[button]:setStyleSheet([[
+          QLabel{
+            ]]..CCS..[[
+            background-color: rgba(]]..bgColor..[[,1);
+          }
+        ]])
+      else
+        GUI[button]:setStyleSheet([[
+          QLabel{
+            ]]..CCS..[[
+            background-color: rgba(]]..bgColor..[[,.6);
+          }
+          QLabel::hover{
+            ]]..CCS..[[
+            background-color: rgba(]]..bgColor..[[,1);
+          }
+        ]])
+      end
+      return true
+    end
+  end
+  return false
+end
+-- 
+-- Refresh all target button
+function refreshAllTargetButton()
+  for i=0, 9 do
+    if (i &gt;= 1) and (i &lt;= 4) then
+      refreshTargetButton("t"..i)
+    end
+    refreshTargetButton("g"..i)
+  end
+  refreshTargetButton("o0")
+end
+--
+-- Refresh Target
+function refreshTarget()
+  if (not ui.variables.target) or (ui.variables.target == "") then
+    GUI.Target:setTitle("Target")
+  else
+    GUI.Target:setTitle("Target: "..ui.variables["target"])
+  end
+end
+--
+-- Assign Target button
+function assignTargetButton(button, value)
+  local ret = 0;
+  local type, number = expandButton(button)
+  if (type == "g") or (type == "o") or (type == "t") then
+    button = type..number
+    ui.targets[button] = ui.targets[button] or {}
+    ui.targets[button].target = value
+    refreshAllTargetButton()
+    refreshTarget()
+    saveFileTargetButtons()
+    return 1 -- Value assigned (can be nil)
+  end
+  return -1 -- Invaid button
+end
+--
+-- Execute Target button
+function executeTargetButton(button)
+  local type, number = expandButton(button)
+  if (type == "g") or (type == "o") or (type == "t") then
+    button = type..number
+    if (ui.targets[button]) and (ui.targets[button].target) then
+      if (ui.variables["target"] == ui.targets[button].target) then
+        ui.variables["target"] = ""
+        uiEcho2n(getTargetFormattedText(button).." nessun "..getVarNameFormattedText("target").." selezionato")
+      else
+        ui.variables["target"] = ui.targets[button].target
+        uiEcho2n(getTargetFormattedText(button).." "..getVarNameFormattedText("target").." impostato su "..getVarValueFormattedText(ui.variables.target).."&lt;reset&gt;.")
+      end
+      refreshTarget()
+    elseif (type == "g") then
+      uiEcho2n("Nessun componente del gruppo associato a "..getTargetFormattedText(button)..".")
+    elseif (type == "o") then
+      uiEcho2n("Nessun avversario ingaggiato associato a "..getTargetFormattedText(button)..".")
+    elseif (type == "t") then
+      uiEcho2n(getTargetFormattedText(button).." non configurato. Usare il comanto "..getCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
+    end
+    -- Save @target
+    table.save(ui.pathTpl.."variables.lua", ui.variables)
+    refreshAllTargetButton()
+  else
+    uiEcho2n(getTargetFormattedText(button).." pulsante non valido.")
+  end
+end
+--
+-- Save buttons data from file
+function saveFileTargetButtons()
+  local targetsDataToSave = {}
+  for button in pairs(ui.targets) do
+    targetsDataToSave[button] = {}
+    targetsDataToSave[button].target = ui.targets[button].target
+    targetsDataToSave[button].mod1 = ui.targets[button].mod1
+    targetsDataToSave[button].mod2 = ui.targets[button].mod2
+    targetsDataToSave[button].key = ui.targets[button].key
+  end
+  table.save(ui.pathTpl.."target.lua", targetsDataToSave)
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Tick</name>
+				<packageName></packageName>
+				<script>function increment_ticktimer(time_left)
+  if time_left - 1 &gt; 0 then
+    time_left = time_left - 1
+  else
+    if (ui.enDebug) then
+      time_left = 5      
+    else
+      time_left = 75
+    end
+    tickUpdateAffects()
+  end
+  if ui.ticktimer then
+    killTimer(ui.ticktimer)
+  end
+  ui.ticktimer = tempTimer(1, function() increment_ticktimer(time_left) end)
+  GUI.Tick:setValue(time_left, 75,"&lt;p align=right&gt;"..time_left.." s")
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Variables</name>
+				<packageName></packageName>
+				<script>--
+function getVarNameFormattedText(varName)
+  return ui.cVarID..ui.varID..ui.cVarName..varName.."&lt;reset&gt;"
+end
+--
+function getVarValueFormattedText(varValue)
+  return getOperatorFormattedText("(")..ui.cVarCont..varValue..getOperatorFormattedText(")")
+end
+--
+function getVarFormattedText(variable)
+  if (ui.variables[variable]) then
+    if (ui.variables[variable] == "") then
+      return getVarNameFormattedText(variable)
+    end
+    -- return getVarNameFormattedText(variable).." "..getOperatorFormattedText("«").." "..getVarValueFormattedText(ui.variables[variable])
+    return getVarNameFormattedText(variable)..getVarValueFormattedText(ui.variables[variable])
+  end
+  return ""
+end
+--
+function removeAllVariables()
+  ui.variables = {}
+  ui.variables = table.deepcopy(ui.pre_defined_variables)
+end
+--
+function showAllVar()
+  local app = {}
+  local numVar = 0
+  local numPreVar = 0
+  cecho(uiTitle("Variabili predefinite"))
+  for variable in pairs(ui.variables) do
+    if (ui.pre_defined_variables[variable] == nil) then
+      numVar = numVar + 1
+      table.insert(app, getNumberFormattedText(numVar).." "..getVarFormattedText(variable).."\n")
+    else
+      numPreVar = numPreVar + 1
+      cecho(getNumberFormattedText(numPreVar).." "..getVarFormattedText(variable).."\n")
+    end
+  end
+  cecho(uiTitle("Variabili"))
+  if (numVar&gt;0) then
+    for data in pairs(app) do
+      cecho(app[data])
+    end
+    echo("\n")
+  else
+    cecho("Per maggiori info "..getCommandFormattedText("uihelp variables").."\n\n")
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
+		<ScriptGroup isActive="yes" isFolder="yes">
+			<name>Frames</name>
+			<packageName></packageName>
+			<script>--
+ui = ui or {}
+ui.enDebug = false;
+ui.release = "1-220210";
+ui.autoUpdate = true
+ui.echo = "&lt;blue&gt;(&lt;DodgerBlue&gt;ui&lt;blue&gt;) "
+--
+-- Colors
+ui.cText = "&lt;grey&gt;"
+ui.cTitle = "&lt;white&gt;"
+ui.cError = "&lt;DarkOrange&gt;"
+ui.cLink = "&lt;blue&gt;"
+ui.cCommand = "&lt;steel_blue&gt;"
+ui.cKeybind = "&lt;cyan&gt;"
+ui.cSeparator = "&lt;orange_red&gt;" -- ; or /
+ui.cInput = "&lt;MediumSeaGreen&gt;" -- #
+ui.cOperator = "&lt;salmon&gt;"      -- » or «
+ui.cAliasName = "&lt;violet&gt;"
+ui.cAliasOutput = "&lt;PaleGoldenrod&gt;"
+ui.cAliasButton = "&lt;orange&gt;"
+ui.cVarID = "&lt;steel_blue&gt;"
+ui.cVarName = "&lt;DeepPink&gt;"
+ui.cVarCont = "&lt;LightBlue&gt;"
+ui.cTarget = "&lt;orange&gt;"
+--
+uiDebug("[init] Start init...")
+--
+-- Outpt file path
+ui.pathPkg = getMudletHomeDir().."/"
+ui.pathTpl = ui.pathPkg.."Lumen et Umbra UI/"
+ui.pathImg = ui.pathTpl.."images/"
+ui.pathSnd = ui.pathTpl.."sounds/"
+ui.pathIcn = ui.pathTpl.."icons/"
+ui.varID = "@"
+--
+-- Image file for affect icons
+ui.affect_icon = {
+  ["forza psichica"]            = "sacredslash.png",
+  ["individua il magico"]       = 'truesight.png',
+  ["individua il male"]         = 'truesight.png',
+  ["individua invisibile"]      = "truesight.png",
+  ["invisibilita"]              = "frightened.png",
+  ["levitazione"]               = "traveling.png",
+  ["mente oltre il corpo"]      = "elementalward.png",
+  ["percepisci vita"]           = "truesight.png",
+  ["potenziamento dello scudo"] = "fireshield.png",
+  ["scarica di adrenalina"]     = "mindscream.png",
+  ["scudo di fuoco"]            = "chosenenemy.png",
+  ["scudo psichico"]            = "shield.png",
+  ["vera vista"]                = "psionicblast.png",
+}
+--
+-- Modifier for keybind
+ui.keyb_modifier = {
+  CTRL = mudlet.keymodifier.Control,
+  ALT = mudlet.keymodifier.Alt,
+}
+--
+-- Keys for keybind
+ui.keyb_single = {
+  ["0"] = mudlet.key["0"],
+  ["1"] = mudlet.key["1"],
+  ["2"] = mudlet.key["2"],
+  ["3"] = mudlet.key["3"],
+  ["4"] = mudlet.key["4"],
+  ["5"] = mudlet.key["5"],
+  ["6"] = mudlet.key["6"],
+  ["7"] = mudlet.key["7"],
+  ["8"] = mudlet.key["8"],
+  ["9"] = mudlet.key["9"],
+  A = mudlet.key.A,
+  B = mudlet.key.B,
+  C = mudlet.key.C,
+  D = mudlet.key.D,
+  E = mudlet.key.E,
+  F = mudlet.key.F,
+  G = mudlet.key.G,
+  H = mudlet.key.H,
+  I = mudlet.key.I,
+  J = mudlet.key.J,
+  K = mudlet.key.k,
+  L = mudlet.key.L,
+  M = mudlet.key.M,
+  N = mudlet.key.N,
+  O = mudlet.key.O,
+  P = mudlet.key.P,
+  Q = mudlet.key.Q,
+  R = mudlet.key.R,
+  S = mudlet.key.S,
+  T = mudlet.key.T,
+  U = mudlet.key.U,
+  V = mudlet.key.V,
+  W = mudlet.key.W,
+  X = mudlet.key.X,
+  Y = mudlet.key.Y,
+  Z = mudlet.key.Z,
+  F1  = mudlet.key.F1,
+  F2  = mudlet.key.F2,
+  F3  = mudlet.key.F3,
+  F4  = mudlet.key.F4,
+  F5  = mudlet.key.F5,
+  F6  = mudlet.key.F6,
+  F7  = mudlet.key.F7,
+  F8  = mudlet.key.F8,
+  F9  = mudlet.key.F9,
+  F10 = mudlet.key.F10,
+  F11 = mudlet.key.F11,
+  F12 = mudlet.key.F12,
+}
+--
+ui.dirExpand = {
+  d = "basso",
+  e = "est",
+  n = "nord",
+  s = "sud",
+  u = "alto",
+  w = "ovest",
+}
+--
+ui.dirCompress = {
+  alto  = "u",
+  basso = "d",
+  est   = "e",
+  nord  = "n",
+  ovest = "w",
+  sud   = "s",
+}
+--
+ui.dirToken = {
+  alto  = "↑",
+  u     = "↑",
+  basso = "↓",
+  d     = "↓",
+  est   = "►",
+  e     = "►",
+  nord  = "▲",
+  n     = "▲",
+  ovest = "◄",
+  w     = "◄",
+  sud   = "▼",
+  s     = "▼",
+}
+--
+ui.dirReverse = {
+  alto  = "basso",
+  u     = "d",
+  basso = "alto",
+  d     = "u",
+  est   = "ovest",
+  e     = "w",
+  nord  = "sud",
+  n     = "s",
+  ovest = "est",
+  w     = "e",
+  sud   = "nord",
+  s     = "n",
+}
+--
+ui.lastFrom = ui.lastFrom or ""
+--
+ui.roomName = ui.roomName or ""
+ui.roomType = ui.roomType or ""
+--
+ui.strExits = ui.strExits or ""
+ui.exits = ui.exits or {}
+ui.track = ui.track or ""
+--
+-- Pre defined variables
+ui.pre_defined_variables = {
+  ac = 0,
+  alignment = 0,
+  character_name = "@character_name",
+  experience = 0,
+  health = 100,
+  health_max = 100,
+  level = 1,
+  mana = 70,
+  mana_max = 100,
+  money = 0,
+  movement = 30,
+  movement_max = 100,
+  opponent_health = 0,
+  opponent_health_max = 100,
+  opponent_level = 1,
+  opponent_name = "",
+  target = "",
+}
+--
+-- Pre defined target buttons
+ui.pre_defined_target_buttons = {
+  g0 = { mod1 = "CTRL", mod2 = "", key = "F10" },
+  g1 = { mod1 = "CTRL", mod2 = "", key = "F1" },
+  g2 = { mod1 = "CTRL", mod2 = "", key = "F2" },
+  g3 = { mod1 = "CTRL", mod2 = "", key = "F3" },
+  g4 = { mod1 = "CTRL", mod2 = "", key = "F4" },
+  g5 = { mod1 = "CTRL", mod2 = "", key = "F5" },
+  g6 = { mod1 = "CTRL", mod2 = "", key = "F6" },
+  g7 = { mod1 = "CTRL", mod2 = "", key = "F7" },
+  g8 = { mod1 = "CTRL", mod2 = "", key = "F8" },
+  g9 = { mod1 = "CTRL", mod2 = "", key = "F9" },
+  o0 = { mod1 = "CTRL", mod2 = "", key = "0" },
+  t1 = { mod1 = "CTRL", mod2 = "", key = "1" },
+  t2 = { mod1 = "CTRL", mod2 = "", key = "2" },
+  t3 = { mod1 = "CTRL", mod2 = "", key = "3" },
+  t4 = { mod1 = "CTRL", mod2 = "", key = "4" },
+}
+--
+-- Storico Path
+ui.idxPath = 0;
+ui.memPath = 0;
+ui.maxPath = 50;
+ui.path = {}
+--
+-- Group
+ui.group = ui.group or {}
+ui.totalMember = ui.totalMember or 0
+--
+-- Affects
+ui.affects = ui.affects or {}
+--
+-- General
+ui.pre_defined_parameters = {
+  fsmap = 8,
+  fsequip = 8,
+  fsinvent = 8,
+  fsprivate = 8,
+  fsPublic = 8,
+  fsalias = 8,
+  page = "a"
+}
+--
+-- Help
+ui.help = {}
+--
+ui.help.error = [[
+Non esiste aiuto per questa parola
+]]
+--
+ui.help.help = [[
+&lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt;
+Lumen et Umbra UI comprende un insieme di componenti grafici, script, trigger,
+etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra.
+
+Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; per avere informazioni sugli argomenti:
+
+Comandi:
+  - &lt;command&gt;uiv[ariables]&lt;/command&gt;   - Variabili
+  - &lt;command&gt;uia[liases]&lt;/command&gt;     - Aliases
+  - &lt;command&gt;uib[uttons]&lt;/command&gt;     - Pulsanti per alias (a0..a9, b0..b9, c0..c9)
+  - &lt;command&gt;uik[eibind]&lt;/command&gt;     - Tasti rapidi per aliases e targets
+  - &lt;command&gt;uihi[ghlights]&lt;/command&gt;  - Highlights
+
+Altri argomenti:
+  - &lt;command&gt;target&lt;/command&gt;          - Target (g0..g9, o0, t1..t4)
+
+Altri comandi:
+  - &lt;command&gt;uic[olors]&lt;/command&gt;      - Lista colori disponibili
+  - &lt;command&gt;uisetf[ontsize]&lt;/command&gt; - Dimensione font delle finestre
+  - &lt;command&gt;.&lt;/command&gt;/&lt;command&gt;..&lt;/command&gt;            - Walk e speedwalk
+
+]]
+--
+ui.help.alias = [[
+&lt;title&gt;Aliases&lt;/title&gt;
+Gli aliases permettono di eseguire lunghi comandi digitando poche lettere. E'
+possibile arricchire il comando associato all'alias utilizzando le variabili
+create con il comando &lt;command&gt;uivariable&lt;/command&gt;. E' possibile associare 
+più comandi ad un alias utilizzando gli appositi separatori.
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;uia[liases]&lt;/command&gt;                   Per visualizzare l'elenco degli aliases
+  &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;           Per visualizzare il singolo alias
+  &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;command&gt;&lt;comandi&gt;&lt;/command&gt; Per creare o modificare un alias
+  &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;command&gt;remove&lt;/command&gt;    Per eliminare un alias
+  &lt;command&gt;uia[liases] remove_all&lt;/command&gt;        Per eliminare tutti gli aliases
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;input&gt;[argomento]&lt;/input&gt;           Per eseguire l'alias
+
+&lt;white&gt;Caratteri speciali:&lt;reset&gt; &lt;input&gt;#&lt;/input&gt; Parametro - ]]..ui.cVarID..ui.varID..[[&lt;reset&gt; Variabile - ]]..ui.cSeparator..[[;&lt;reset&gt; o ]]..ui.cSeparator..[[/&lt;reset&gt; = Divisore comandi
+
+&lt;white&gt;Es. 1:&lt;reset&gt; &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;hl&lt;/aliasName&gt; &lt;aliasOutput&gt;cast 'heal'&lt;/aliasOutput&gt;       | &lt;white&gt;Es. 2:&lt;reset&gt; &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;bt&lt;/aliasName&gt; &lt;aliasOutput&gt;bash&lt;/aliasOutput&gt; &lt;varName&gt;target&lt;/varName&gt;   
+  &lt;aliasName&gt;hl&lt;/aliasName&gt;        : &lt;aliasOutput&gt;cast 'heal'&lt;/aliasOutput&gt;       |   &lt;varName&gt;target&lt;/varName&gt; &lt;varValue&gt;Pluto&lt;/varValue&gt;
+  &lt;aliasName&gt;hl&lt;/aliasName&gt; &lt;input&gt;Pippo&lt;/input&gt;  : &lt;aliasOutput&gt;cast 'heal'&lt;/aliasOutput&gt; &lt;input&gt;Pippo&lt;/input&gt; |   &lt;aliasName&gt;bt&lt;/aliasName&gt;          : &lt;aliasOutput&gt;bash&lt;/aliasOutput&gt; &lt;varValue&gt;Pluto&lt;/varValue&gt;
+                                |   &lt;aliasName&gt;bt&lt;/aliasName&gt; &lt;input&gt;Pippo&lt;/input&gt;  : &lt;aliasOutput&gt;bash&lt;/aliasOutput&gt; &lt;input&gt;Pippo&lt;/input&gt;
+-------------------------------- ----------------------------------
+&lt;white&gt;Es. 3:&lt;reset&gt; &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;aa&lt;/aliasName&gt; &lt;varName&gt;action&lt;/varName&gt; &lt;varName&gt;target&lt;/varName&gt;   | &lt;white&gt;Es. 4:&lt;reset&gt; &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;dd&lt;/aliasName&gt; &lt;aliasOutput&gt;get&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt;]]..ui.cSeparator..[[;&lt;reset&gt;&lt;aliasOutput&gt;drink&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt;]]..ui.cSeparator..[[;&lt;reset&gt;&lt;aliasOutput&gt;put&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt;
+  &lt;varName&gt;action&lt;/varName&gt; &lt;varValue&gt;kick&lt;/varValue&gt;                |   &lt;varName&gt;bag&lt;/varName&gt; &lt;varValue&gt;moltetasche&lt;/varValue&gt;
+  &lt;varName&gt;target&lt;/varName&gt; &lt;varValue&gt;Pluto&lt;/varValue&gt;               |   &lt;aliasName&gt;dd&lt;/aliasName&gt; &lt;input&gt;limonata&lt;/input&gt; : &lt;aliasOutput&gt;get&lt;/aliasOutput&gt; &lt;input&gt;limonata&lt;/input&gt; &lt;varValue&gt;moltetasche&lt;/varValue&gt;
+  &lt;aliasName&gt;aa&lt;/aliasName&gt;        : &lt;varValue&gt;kick&lt;/varValue&gt; &lt;varValue&gt;Pluto&lt;/varValue&gt;    |               : &lt;aliasOutput&gt;drink&lt;/aliasOutput&gt; &lt;input&gt;limonata&lt;/input&gt;
+  &lt;aliasName&gt;aa&lt;/aliasName&gt; &lt;input&gt;Pippo&lt;/input&gt;  : &lt;varValue&gt;kick&lt;/varValue&gt; &lt;input&gt;Pippo&lt;/input&gt;      |               : &lt;aliasOutput&gt;put&lt;/aliasOutput&gt; &lt;input&gt;limonata&lt;/input&gt; &lt;varValue&gt;moltetasche&lt;/varValue&gt;
+
+]]
+--
+ui.help.button = [[
+&lt;title&gt;Pulsanti per alias (a0..a9, b0..b9, c0..c9)&lt;/title&gt;
+I pulsanti degli alias sono i pulsanti che posso essere personalizzati 
+assonciandogli un alias. Sono identificati con una lettera (a, b oppure c) e un
+numero (da 0 a 9) per un totale di 30 pulsanti configurabili (da a0 a c9).
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;uib[uttons]&lt;/command&gt;                  Per visualizzare l'elenco dei pulsanti configurati
+  &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt;         Per visualizzare il singolo pulsante
+  &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;  Per associare un alias al pusante
+  &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt; &lt;command&gt;remove&lt;/command&gt;   Per eliminare l'alias associato al pulsante
+  &lt;command&gt;uib[uttons] remove_all&lt;/command&gt;       Per eliminare gli aliases associati a tutti i pulsanti
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;button&gt; o click             Per eseguire l'alias associato al pulsante
+
+]]
+--
+ui.help.color = [[
+&lt;title&gt;Colori&lt;/title&gt;
+E' possibile visualizzare l'elenco dei colori che si possono utilizzare negli
+uiHilights tramite il comando &lt;command&gt;uiColors&lt;/command&gt;.  
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;command&gt;uic[olors]&lt;/command&gt;    Per visualizzare l'elenco dei colori
+
+]]
+--
+ui.help.fontsize = [[
+&lt;title&gt;Impostare la dimensione del font delle finestre&lt;/title&gt;
+E' possibile cambiare la dimensione del font di alcune finestre dell'UI.
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;command&gt;uisetf[ontsize] &lt;nome_finetra&gt; &lt;dimensione_font&gt;&lt;/command&gt;
+
+I &lt;command&gt;&lt;nome_finetra&gt;&lt;/command&gt; disponibili sono: &lt;command&gt;contenitore&lt;/command&gt;, &lt;command&gt;equipaggiamento&lt;/command&gt;, &lt;command&gt;mappa&lt;/command&gt;, &lt;command&gt;privato&lt;/command&gt; o &lt;command&gt;pubblico&lt;/command&gt;.
+Le &lt;command&gt;&lt;dimensione_font&gt;&lt;/command&gt; devono essere un valore compreso tra &lt;command&gt;1&lt;/command&gt; e &lt;command&gt;30&lt;/command&gt;.
+
+]]
+--
+ui.help.highlight = [[
+&lt;title&gt;Highlights&lt;/title&gt;
+Gli Highlights permettono di evidenziare le parole e le frasi del mud 
+cambiandone il colore. Questo può semplificare la visualizzazione di elementi 
+importanti come, ad esempio, se si entra in una stanza con una cassa 
+(&lt;command&gt;uihighlights&lt;/command&gt; red cassa) nella descrizione.
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;uihi[lights]&lt;/command&gt;                   Per visualizzare l'elenco degli highlights
+  &lt;command&gt;uihi[lights]&lt;/command&gt; &lt;testo&gt;           Per visualizzare il colore del testo
+  &lt;command&gt;uihi[lights]&lt;/command&gt; &lt;testo&gt; &lt;colore&gt;  Per associare un colore a un testo
+  &lt;command&gt;uihi[lights]&lt;/command&gt; &lt;testo&gt; &lt;command&gt;remove&lt;/command&gt;    Per eliminare highlights associato al testo
+  &lt;command&gt;uihi[lights] remove_all&lt;/command&gt;        Per eliminare gli aliases associati a tutti i pulsanti
+
+Per un elenco completo dei colori disponibili, utilizzare il comando uicolors.
+
+]]
+--
+ui.help.keybind = [[
+&lt;title&gt;Tasti rapidi per aliases e target&lt;/title&gt;
+E' possibile associare una combinazione di tasti a un alias o a un target con
+il comando &lt;command&gt;uikeybind&lt;/command&gt;.
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;uik[eybind]&lt;/command&gt;                         Per visualizzare l'elenco dei tasti rapidi
+  &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;alias\target&gt;          Per visualizzare i tasti dell'alias\del target
+  &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;alias\target&gt; &lt;tasti&gt;  Per associare uun tasto all'alias\al target
+  &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;alias\target&gt; &lt;command&gt;remove&lt;/command&gt;   Per eliminare i tasti dell'alias\del target
+  &lt;command&gt;uik[eybind] remove_all&lt;/command&gt;              Per eliminare tutti i tasti rapidi
+
+I tasti utillizzabili sono i tasti funzione, i caratteri dell'alfabeto e i 
+numeri, singolarmente oppure preceduti da CTRL, ALT o entrambi.
+
+]]
+--
+ui.help.target = [[
+&lt;title&gt;Target (g0..g9, o0, t1..t4)&lt;/title&gt;
+La variable &lt;varName&gt;target&lt;/varName&gt; è una variabile predefinita dell'UI di Lumen et Umbra che è
+possibile impostare in modi differenti. Oltre ad essere trattata come una 
+variabile gestibile dal comando &lt;command&gt;uivariables&lt;/command&gt; è possibile impostarla utilizzando
+o i 4 tasti target (t1, t2, t3 e t4), oppure cliccando sul riquadro del nemico
+attualmente ingaggiato (o0) o ancora cliccando su uno dei componenti del gruppo
+di gioco (g0 .. g9).
+I tasti T1..T4 sono configurabili, mentre O0 e G0..G9 sono preimpostati in base
+all'avversario ingaggiato e la composizione dale gruppo (l'ultima aggiornata 
+con il comando &lt;white&gt;group&lt;reset&gt;.
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;t1..4&lt;/command&gt; &lt;valore&gt;        Per assegnare un valore a T1..T4
+  &lt;command&gt;t1..4 remove&lt;/command&gt;          Per rimuovere il valore aassegnato a T1..T4
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;g0..9&gt; o click             Per assegnare a &lt;varName&gt;target&lt;/varName&gt; un componente del gruppo
+  &lt;0o&gt; o click                Per assegnare a &lt;varName&gt;target&lt;/varName&gt; l'avversario ingaggiato
+  &lt;t1..4&gt; o click             Per assegnare a &lt;varName&gt;target&lt;/varName&gt; il valore assegnato a t1..4
+
+]]
+--
+ui.help.variable = [[
+&lt;title&gt;Variabili&lt;/title&gt;
+E' possibile definire delle variabili (retentive) da riutilizzare negli alias.
+E' possibile richiamare una variabile all'interno di un alias facendo precedere
+al nome della variabile il carattere speciale &lt;command&gt;@&lt;/command&gt;.
+Alcune delle variabili sono già dichiarate (variabili predefinite), e vengno
+utilizzate per gli elementi l'interfaccia.
+Le variabili sono utlizzabili nel codice dei vostri script facendo accesso alla
+tabella ui.variables[nomevariabile].
+
+&lt;white&gt;Configurazione:&lt;reset&gt;
+  &lt;command&gt;uiv[ariable]&lt;/command&gt;                        Per visualizzare l'elenco delle variabili
+  &lt;command&gt;uiv[ariable]&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt;                 Per visualizzare il valore di una variabile
+  &lt;command&gt;uiv[ariable]&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;valore&gt;        Per creare o modificare una variabile
+  &lt;command&gt;uiv[ariable]&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;command&gt;remove&lt;/command&gt;          Per rimuovere una variabile
+  &lt;command&gt;uiv[ariable] remove_all&lt;/command&gt;             Per rimuovere tutte le variabili
+
+]]
+--
+ui.help.walk = [[
+&lt;title&gt;Walk, Speedwalk e Backwalk&lt;/title&gt;
+Lumen et Umbra UI comprende uno strumento per la gestione dei movimenti del
+personaggio. Tramite i comandi "&lt;command&gt;.&lt;/command&gt;" e "&lt;command&gt;..&lt;/command&gt;" è possibile percorrere lunghi
+&lt;percorsi&gt; espressi, per esempio, nel formato "ee2w4suuu9n" oltre che 
+ripercorrere i propri passi. 
+
+&lt;white&gt;Utilizzo:&lt;reset&gt;
+  &lt;command&gt;.&lt;/command&gt;&lt;percorso&gt;   Per eseguire il percorso specificato
+  &lt;command&gt;..&lt;/command&gt;&lt;percorso&gt;  Per eseguire il percorso specificato all'indietro
+  &lt;command&gt;.&lt;/command&gt;             Per ripercorere i propri passi (massimo 50 locazioni)
+  &lt;command&gt;..&lt;/command&gt;            Per ripercorere i propri passi all'indietro (massimo 50 locazioni)
+
+&lt;white&gt;Attenzione:&lt;reset&gt;
+- Vengono memorizzate le direzioni inviate anche se il movimento nella locazione
+non dovesse avvenire a causa di un ostacolo.
+- Funziona solo con i comandi "d", "e", "n", "s", "u" e "w". 
+- Non funziona con il comando "enter".
+- Non funziona con il comando "run".
+
+]]
+--
+-- GMCP
+gmcp = gmcp or {}
+gmcp.MSDP = gmcp.MSDP or {}
+--
+-- Load parameters
+uiDebug("[init] Load 'Parameters' from file")
+ui.parameters = ui.parameters or {}
+if (io.exists(ui.pathTpl.."parameters.lua")) then
+  table.load(ui.pathTpl.."parameters.lua", ui.parameters)
+end
+ui.parameters = table.update(ui.pre_defined_parameters, ui.parameters)
+table.save(ui.pathTpl.."parameters.lua", ui.parameters)
+--
+-- Load variables
+uiDebug("[init] Load 'Variables' from file")
+ui.variables = ui.variables or {}
+if (io.exists(ui.pathTpl.."variables.lua")) then
+  table.load(ui.pathTpl.."variables.lua", ui.variables)
+end
+ui.variables = table.update(ui.pre_defined_variables, ui.variables)
+ui.variables.opponent_name = ""
+table.save(ui.pathTpl.."variables.lua", ui.variables)
+--
+-- Load targets
+uiDebug("[init] Load 'Targets' from file")
+ui.targets = ui.targets or {}
+if (io.exists(ui.pathTpl.."target.lua")) then
+  table.load(ui.pathTpl.."target.lua", ui.targets)
+else
+  -- Update only if file targets not esist otherwise it would reassign any removed keys
+  ui.targets = table.update(ui.pre_defined_target_buttons, ui.targets)
+end
+table.save(ui.pathTpl.."target.lua", ui.targets)
+--
+-- Read Aliases
+uiDebug("[init] readFileAliases() - Load 'Aliases' from file")
+readFileAliases()
+--
+-- Read Highlights
+uiDebug("[init] readFileHighlights() - Load 'Highlights' from file")
+readFileHighlights()
+--
+-- Create Aliases
+uiDebug("[init] addAlias(...)")
+for alias in pairs(ui.aliases) do
+  addAlias(alias, ui.aliases[alias].text)
+end
+--
+-- Create Highlights
+uiDebug("[init] addHighlight(...)")
+for highlight in pairs(ui.highlights) do
+  addHighlight(highlight, ui.highlights[highlight].color)
+end
+</script>
+			<eventHandlerList />
+			<Script isActive="yes" isFolder="no">
+				<name>CSS</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - CSS")
+--
+GUI = GUI or {}
+GUI.CSS = GUI.CSS or {}
+--
+-- User Windos TAB
+GUI.CSS.Tab = [[
+.QWidget{
+  background: rgba(30,24,24);
+}
+QDockWidget{
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 14px;
+}
+QDockWidget::title{ 
+  border-style: outset;
+  border-width: 2px;
+  border-color: "#996600";
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #4d0000;
+  margin-right: 1px;
+  margin-left: 1px;
+  text-align: center;
+}
+QDockWidget::title::hover{
+  background-color: #b30000;
+}
+QDockWidget::close-button{
+    subcontrol-position: top right;
+    subcontrol-origin: margin;
+    position: absolute;
+    top: 0px; 
+    right: 10px; 
+    bottom: 0px;
+    width: 15px;
+}
+QDockWidget::float-button {
+    subcontrol-position: top left;
+    subcontrol-origin: margin;
+    position: absolute;
+    top: 0px; 
+    left: 10px; 
+    bottom: 0px;
+    width: 15px;
+}
+]]
+--
+-- Affect
+GUI.CSS.Affect = [[
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: rgba(30, 24, 0);
+  border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;
+  qproperty-alignment: 'AlignRight | AlignBottom';
+]]
+--
+-- Affect Icon
+GUI.CSS.AffectIcon = [[
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: rgba(30, 24, 0);
+  qproperty-alignment: 'AlignRight | AlignBottom';
+]]
+--
+-- Target buttons
+GUI.CSS.Target = [[
+  margin: 5px;
+  border-style: outset;
+  border-width: 2px;
+  border-color: "#aa8822";
+  border-radius: 5px 10px;
+  font-family: 'IM Fell DW Pica', serif;
+  qproperty-wordWrap: true;
+]]
+--
+-- Group target buttons
+GUI.CSS.Border3 = [[
+  margin: 0;
+  border: 10px solid transparent;
+  border-image: url("]]..ui.pathImg..[[playerBG.png") 10px stretch;
+  background-color: rgba(30,24,24);
+]]
+--
+-- Alias buttons
+GUI.CSS.AliasButtons = [[
+  border: 10px solid transparent;
+  border-image: url("]]..ui.pathImg..[[buttonBorder.png") 10px stretch;
+  margin: 5px;
+]]
+--
+-- Buttons Icon
+GUI.CSS.ButtonsIcon = [[
+  background-color: rgba(0,0,0,0);
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 8px;
+  qproperty-wordWrap: true;
+]]
+--
+-- Gauge back
+GUI.CSS.GaugeBack = [[
+  border-style: inset;
+  border-color: gray;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.4);
+  margin: 1px;
+  font-size: 4;
+]]
+-- font-family: 'IM Fell DW Pica SC', serif;
+--
+-- Gauge front
+GUI.CSS.GaugeFront = [[
+  border-radius: 3px;
+  margin:  2px 0px 2px 0px;
+  font-size: 4;
+]]
+-- font-family: 'IM Fell DW Pica SC', serif;
+--
+-- Target Name
+GUI.CSS.Name = [[
+  background-color: rgba(0,0,0,.6);
+  opacity: 50;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 1px;
+  font-family: 'IM Fell DW Pica SC', serif;
+  qproperty-wordWrap: true;
+]]
+--
+-- Keybind
+GUI.CSS.Keybind = [[
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 4;
+]]
+--  font-family: 'IM Fell DW Pica', serif;
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Border</name>
+				<packageName></packageName>
+				<script>function addBorder(sender, border)
+  if (sender) then
+    border = border or 1
+    if (border == 1) then
+      sender.LT = sender.LT or Geyser.Label:new({ x = 0, y = 0, width = 20, height = 20 }, sender)
+      sender.LT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderLT.png")]]);
+      sender.T1 = sender.T1 or Geyser.Label:new({ x = 20, y = 0, width = 40, height = 20 }, sender)
+      sender.T1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT1.png")]]);
+      sender.T2 = sender.T2 or Geyser.Label:new({ x = 60, y = 0, width = -60, height = 20 }, sender)
+      sender.T2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT2.png")]]);
+      sender.T3 = sender.T3 or Geyser.Label:new({ x = -60, y = 0, width = 40, height = 20 }, sender)
+      sender.T3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT3.png")]]);
+      sender.RT = sender.RT or Geyser.Label:new({ x = -20, y = 0, width = 20, height = 20 }, sender)
+      sender.RT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderRT.png")]]);
+      sender.L1 = sender.L1 or Geyser.Label:new({ x = 0, y = 20, width = 20, height = 40 }, sender)
+      sender.L1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL1.png")]]);
+      sender.L2 = sender.L2 or Geyser.Label:new({ x = 0, y = 60, width = 20, height = -60 }, sender)
+      sender.L2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL2.png")]]);
+      sender.L3 = sender.L3 or Geyser.Label:new({ x = 0, y = -60, width = 20, height = 40 }, sender)
+      sender.L3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL3.png")]]);
+      sender.Body = sender.Body or Geyser.Label:new({ x = 20, y = 20, width = -20, height = -20}, sender)
+      sender.Body:setStyleSheet([[background-color: rgba(30, 24, 24, 100%)]]);
+      sender.R1 = sender.R1 or Geyser.Label:new({ x = -20, y = 20, width = 20, height = 40}, sender)
+      sender.R1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR1.png")]]);
+      sender.R2 = sender.R2 or Geyser.Label:new({ x = -20, y = 60, width = 20, height = -60 }, sender)
+      sender.R2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR2.png")]]);
+      sender.R3 = sender.R3 or Geyser.Label:new({ x = -20, y = -60, width = 20, height = 40 }, sender)
+      sender.R3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR3.png")]]);
+      sender.LB = sender.LB or Geyser.Label:new({ x = 0, y = -20, width = 20, height = 20}, sender)
+      sender.LB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderLB.png")]]);
+      sender.B1 = sender.B1 or Geyser.Label:new({ x = 20, y = -20, width = 40, height = 20}, sender)
+      sender.B1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB1.png")]]);
+      sender.B2 = sender.B2 or Geyser.Label:new({ x = 60, y = -20, width = -60, height = 20 }, sender)
+      sender.B2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB2.png")]]);
+      sender.B3 = sender.B3 or Geyser.Label:new({ x = -60, y = -20, width = 40, height = 20 }, sender)
+      sender.B3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB3.png")]]);
+      sender.RB = sender.RB or Geyser.Label:new({ x = -20, y = -20, width = 20, height = 20}, sender)
+      sender.RB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderRB.png")]]);
+    elseif (border == 2) then
+      sender.LT = sender.LT or Geyser.Label:new({x = 0, y = 0, width = 15, height = 15},sender)
+      sender.LT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderLT.png")]]);
+      sender.T = sender.T or Geyser.Label:new({x = 15, y = 0, width = -15, height = 15},sender)
+      sender.T:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderT.png")]]);
+      sender.RT = sender.RT or Geyser.Label:new({x = -15, y = 0, width = 15, height = 15},sender)
+      sender.RT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderRT.png")]]);
+      sender.L = sender.L or Geyser.Label:new({x = 0, y= 15, width = 15, height = -15},sender)
+      sender.L:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderL.png")]]);
+      sender.Body = sender.Boby or Geyser.Label:new({x = 15, y = 15, width = -15, height = -15},sender)
+      sender.Body:setStyleSheet([[background-image: url("]]..ui.pathImg..[[footerBody.png")]]);
+      sender.R = sender.R or Geyser.Label:new({x = -15, y = 15, width = 15, height = -15},sender)
+      sender.R:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderR.png")]]);
+      sender.LB = sender.LB or Geyser.Label:new({x = 0, y = -15, width = 15, height = 15},sender)
+      sender.LB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderLB.png")]]);
+      sender.B = sender.B or Geyser.Label:new({x = 15, y = -15, width = -15, height = 15},sender)
+      sender.B:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderB.png")]]);
+      sender.RB = sender.RB or Geyser.Label:new({x = -15, y = -15, width = 15, height = 15},sender)
+      sender.RB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderRB.png")]]);
+    elseif (border == 3) then
+      sender.Body = sender.Body or Geyser.Label:new({x = 0, y = 0, width = "100%", height = "100%"}, sender)
+      sender.Body:setStyleSheet(GUI.CSS.Border3);
+    end
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Affects</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Affects")
+--
+-- Alias buttons 
+GUI.Affect = GUI.Affect or Geyser.UserWindow:new({
+  name = "GUI.Affect",
+  titleText ="Effetti",
+  docked = true,
+})
+GUI.Affect:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Affect, 2)
+--
+-- Affect icon
+local i
+for i=1, 20 do
+  local col = (i-1) % 10;
+  local row = (i&lt;=10)and(0)or(1)
+  GUI["AffectIcon"..i] = GUI["AffectIcon"..i] or Geyser.Label:new({
+    name = "GUI.AffectIcon"..i,
+    x = 28*col,
+    y = 28*row,
+    width = 25,
+    height = 25,
+  }, GUI.Affect.Body)
+  GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
+  --
+  GUI["AffectIcon"..i].icon = GUI["AffectIcon"..i].icon or Geyser.Label:new({
+    name = "GUI.AffectIcon"..i..".icon",
+    x = 4, y = 4,
+    width = -4,
+    height = -4,
+  }, GUI["AffectIcon"..i])
+  GUI["AffectIcon"..i].icon:setStyleSheet([[
+    background-color: rgba(0, 0, 0, 0);
+  ]])
+  GUI["AffectIcon"..i].icon:enableClickthrough()
+  --
+  GUI["AffectIcon"..i].time = GUI["AffectIcon"..i].time or Geyser.Label:new({
+    name = "GUI.AffectIcon"..i..".time",
+    x = -20, y = -15,
+    width = 30,
+    height = 15,
+  }, GUI["AffectIcon"..i])
+  GUI["AffectIcon"..i].time:setStyleSheet([[
+    background-color: rgba(0, 0, 0, 0);
+  ]])
+  GUI["AffectIcon"..i]:hide()
+end
+</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Alias Buttons</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Alias buttons")
+--
+-- Alias buttons 
+GUI.AliasButtons = GUI.AliasButtons or Geyser.UserWindow:new({
+  name = "GUI.AliasButtons",
+  titleText ="Pulsanti alias",
+  docked = true,
+  dockPosition = "b"
+})
+GUI.AliasButtons:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.AliasButtons, 2)
+--
+-- Navigator box
+GUI.Navigator = GUI.Navigator or Geyser.VBox:new({
+  name = "GUI.Navigator",
+  x = 0, y = 0,
+  width = 25,
+  height = "100%",
+  h_policy = Geyser.Fixed,
+},GUI.AliasButtons.Body)
+--
+-- Up button
+GUI.Navigator.Up = GUI.Navigator.Up or Geyser.Label:new({
+  name = "GUI.Navigator.Up",
+  width = "100%",
+  height = 25,
+  v_policy = Geyser.Fixed,
+},GUI.Navigator)
+GUI.Navigator.Up:setStyleSheet([[border-image: url("]]..ui.pathImg..[[miniArrowUp.png")]]);
+GUI.Navigator.Up:setClickCallback("incraseButtonsPage")
+--
+-- Selected button page
+GUI.Navigator.Page = GUI.Navigator.Page or Geyser.Label:new({
+  name = "GUI.Navigator.Page",
+  width = 25,
+  height = "100%",
+},GUI.Navigator)
+GUI.Navigator.Page:setColor(0, 0, 0, 0)
+--
+-- Down button
+GUI.Navigator.Down = GUI.Navigator.Down or Geyser.Label:new({
+  name = "GUI.Navigator.Down",
+  width = "100%",
+  height = 25,
+  v_policy = Geyser.Fixed,
+},GUI.Navigator)
+GUI.Navigator.Down:setStyleSheet([[border-image: url("]]..ui.pathImg..[[miniArrowDown.png")]]);
+GUI.Navigator.Down:setClickCallback("decraseButtonsPage")
+--
+-- Alias Buttons Box
+GUI.CButtons = GUI.CButtons or Geyser.HBox:new({
+  name = "GUI.CButtons",
+  x = 25, y = 0,
+  width = "100%-25",
+  height = "100%",
+},GUI.AliasButtons.Body)
+--
+-- Buttons
+for order=1,10 do
+  local i = order % 10
+  --
+  -- Name
+  GUI["Custom"..i] = GUI["Custom"..i] or Geyser.Label:new({
+    name = "GUI.Custom"..i,
+  },GUI.CButtons)
+  GUI["Custom"..i]:setStyleSheet(GUI.CSS.AliasButtons);
+  GUI["Custom"..i]:setClickCallback("clickAliasButton", i, nil)
+  --
+  -- Icon
+  GUI["Custom"..i].icon = GUI["Custom"..i].icon or Geyser.Label:new({
+    name = "GUI.Custom"..i..".icon",
+    x = 10, y = 10,
+    width = -10,
+    height = -10,
+  }, GUI["Custom"..i])
+  GUI["Custom"..i].icon:enableClickthrough()
+  --
+  -- Index
+  GUI["Custom"..i].index = GUI["Custom"..i].index or Geyser.Label:new({
+    name = "GUI.Custom"..i..".index",
+    x = 0, y = 0,
+    width = 25,
+    height = 25,
+    fontSize = 8,
+  }, GUI["Custom"..i])
+  GUI["Custom"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+  GUI["Custom"..i].index:enableClickthrough()
+  --
+  -- Keybid
+  GUI["Custom"..i].keybind = GUI["Custom"..i].keybind or Geyser.Label:new({
+    name = "GUI.Custom"..i..".keybind",
+    x = 5, y = -15,
+    width = -5,
+    height = 15,
+  }, GUI["Custom"..i])
+  GUI["Custom"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
+  GUI["Custom"..i].keybind:enableClickthrough()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Equip</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Equipment")
+--
+-- Equip
+GUI.Equip = GUI.Equip or Geyser.UserWindow:new({
+  name = "GUI.Equip",
+  titleText ="Equipaggiamento",
+  docked = true,
+  dockPosition = "r",
+})
+GUI.Equip:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Equip, 1)
+GUI.Equip.B3:setFgColor("steel_blue")
+GUI.Equip.B3:echo('--:--')
+--
+-- Body
+GUI.Equip.Console = GUI.Equip.Console or Geyser.MiniConsole:new({
+  name = 'GUI.Equip.Console',
+  x=0, y=0,
+  width = "100%",
+  height = "100%",
+  autoWrap = true,
+  scrollBar = false,
+}, GUI.Equip.Body)
+GUI.Equip.Console:setColor(30,24,24)
+GUI.Equip.Console:setBgColor(30,24,24)</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Experience\Tick</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Experience/Tick")
+--
+-- Footer 
+GUI.ExpAndTick = GUI.ExpAndTick or Geyser.UserWindow:new({
+  name = "GUI.ExpAndTick",
+  titleText ="Esperienza e tick",
+  docked = true,
+  dockPosition = "t"
+})
+GUI.ExpAndTick:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.ExpAndTick, 2)
+--
+-- Experience 
+GUI.Exp = GUI.Exp or Geyser.Gauge:new({
+  name = "GUI.Exp",
+  x = 0, 
+  y = "10%",
+  width = "-30%-5",
+  height = "-10%",
+},GUI.ExpAndTick.Body)
+GUI.Exp:setValue(0, 100)
+GUI.Exp.front:echo("")
+--
+GUI.Exp.back:setStyleSheet(GUI.CSS.GaugeBack)
+GUI.Exp.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #884488, stop: 0.65 #441144, stop: 1 #662266)
+]])
+--
+GUI.Exp.FGGrid = GUI.Exp.FGGrid or Geyser.Label:new({
+  name = "GUI.Exp.FGGrid",
+  x = 0, 
+  y = 0,
+  width = "-30%-5",
+  height = "100%",
+}, GUI.ExpAndTick.Body)
+GUI.Exp.FGGrid:setColor(0,0,0,1.0)
+GUI.Exp.FGGrid:setStyleSheet([[border-image: url("]]..ui.pathImg..[[expBar.png");]]);
+--
+-- Tick
+GUI.Tick = GUI.Tick or Geyser.Gauge:new({
+  name = "GUI.Tick",
+  x = "70%", 
+  y = 0,
+  width = "-5",
+  height = "100%",
+}, GUI.ExpAndTick.Body)
+GUI.Tick:setValue(75, 75, "&lt;center&gt;...")
+--
+GUI.Tick.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  background-color: rgba(0, 0, 150, .2);
+]])
+--
+GUI.Tick.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #000099, stop: 0.65 #000077, stop: 1 #000044)
+]])
+GUI.Tick.front:echo("Tick")</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Group</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Group")
+--
+-- Group Members
+GUI.Group = GUI.Group or Geyser.UserWindow:new({
+  name = "GUI.Group",
+  titleText ="Gruppo",
+  docked = true,
+  dockPosition = "r"
+})
+GUI.Group:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Group, 2)
+--
+local i
+for i=1, 10 do
+  local mod = i % 10
+  local xDiff = (i &lt;= 5) and 0 or "50%"
+  local yDiff = ((i-1)%5) * 20
+  --
+  -- Member
+  GUI["g"..mod] = GUI["g"..mod] or Geyser.Label:new({
+    name = "GUI.g"..mod,
+    x = xDiff, y = yDiff.."%",
+    width = "50%",
+    height = "20%"
+  }, GUI.Group.Body)
+  GUI["g"..mod]:setClickCallback("clickTarget", "g"..mod)
+  --
+  -- Member Health Gauges
+  GUI["g"..mod].Health = GUI["g"..mod].Health or Geyser.Gauge:new({
+    name = "GUI.g"..mod..".Health",
+    x = 10,
+    y = 15,
+    width = -10,
+    height = "50%-15",
+  }, GUI["g"..mod])
+  GUI["g"..mod].Health:setValue(100, 50)
+  GUI["g"..mod].Health:enableClickthrough()
+  --
+  GUI["g"..mod].Health.back:setStyleSheet(GUI.CSS.GaugeBack)
+  GUI["g"..mod].Health.back:enableClickthrough()
+  --
+  GUI["g"..mod].Health.front:setStyleSheet(
+    GUI.CSS.GaugeFront..[[
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
+  ]])
+  GUI["g"..mod].Health.front:enableClickthrough()
+  --
+  -- Member Mana Gauges
+  GUI["g"..mod].Mana = GUI["g"..mod].Mana or Geyser.Gauge:new({
+    name = "GUI.g"..mod..".Mana",
+    x = 10,
+    y = "50%+1",
+    width = -10,
+    height = "25%-7",
+  }, GUI["g"..mod])
+  GUI["g"..mod].Mana:setValue(100, 25)
+  GUI["g"..mod].Mana:enableClickthrough()
+  --
+  GUI["g"..mod].Mana.back:setStyleSheet(GUI.CSS.GaugeBack)
+  GUI["g"..mod].Mana.back:enableClickthrough()
+  --
+  GUI["g"..mod].Mana.front:setStyleSheet(
+    GUI.CSS.GaugeFront..[[
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0000ee, stop: 0.65 #000099, stop: 1 #0000bb);
+  ]])
+  GUI["g"..mod].Mana.front:enableClickthrough()
+  --
+  -- Member Stamina Gauges
+  GUI["g"..mod].Stamina = GUI["g"..mod].Stamina or Geyser.Gauge:new({
+    name = "GUI.g"..mod..".Stamina",
+    x = 10,
+    y = "75%-5",
+    width = -10,
+    height = "25%-7",
+  }, GUI["g"..mod])
+  GUI["g"..mod].Stamina:setValue(100, 75)
+  GUI["g"..mod].Stamina:enableClickthrough()
+  --
+  GUI["g"..mod].Stamina.back:setStyleSheet(GUI.CSS.GaugeBack)
+  GUI["g"..mod].Stamina.back:enableClickthrough()
+  --
+  GUI["g"..mod].Stamina.front:setStyleSheet(
+    GUI.CSS.GaugeFront..[[
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
+  ]])
+  GUI["g"..mod].Stamina.front:enableClickthrough()
+  --
+  -- Member gem
+  GUI["g"..mod].Gem = GUI["g"..mod].Gem or Geyser.Label:new({
+    name = "GUI.g"..mod..".Gem",
+    x = 0, y = 0,
+    width = 30,
+    height = 30,
+  }, GUI["g"..mod])
+  GUI["g"..mod].Gem:setStyleSheet([[
+    border-image: url("]]..ui.pathImg..[[gemEmpty.png") 0px stretch;
+  ]]);
+  GUI["g"..mod].Gem:enableClickthrough()
+  --
+  -- Index
+  GUI["g"..mod].index = GUI["g"..mod].index or Geyser.Label:new({
+    name = "GUI.g"..mod..".index",
+    x = -25, y = 0,
+    width = 25,
+    height = 25,
+    fontSize = 8,
+  }, GUI["g"..mod])
+  GUI["g"..mod].index:echo("&lt;center&gt;g"..mod.."")
+  GUI["g"..mod].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+  GUI["g"..mod].index:enableClickthrough()
+  --
+  -- Keybid
+  GUI["g"..mod].keybind = GUI["g"..mod].keybind or Geyser.Label:new({
+    name = "GUI.g"..mod..".keybind",
+    x = 5, y = -15,
+    width = -5,
+    height = 15,
+  }, GUI["g"..mod])
+  GUI["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
+  GUI["g"..mod].keybind:echo("&lt;center&gt;keybind")
+  GUI["g"..mod].keybind:enableClickthrough()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Inventory</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Inventory")
+--
+-- Inventory
+GUI.Inventory = GUI.Inventory or Geyser.UserWindow:new({
+  name = "GUI.Inventory",
+  titleText ="Contenitore",
+  docked = true,
+  dockPosition = "l"
+})
+GUI.Inventory:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Inventory, 1)
+GUI.Inventory.B3:setFgColor("steel_blue")
+GUI.Inventory.B3:echo('--:--')
+--
+-- Body
+GUI.Inventory.Console = GUI.Inventory.Console or Geyser.MiniConsole:new({
+  name = 'GUI.Inventory.Console',
+  x=0, y=0,
+  width = "100%",
+  height = "100%",
+  autoWrap = true,
+  scrollBar = false,
+}, GUI.Inventory.Body)
+GUI.Inventory.Console:setColor(30,24,24)
+GUI.Inventory.Console:setBgColor(30,24,24)</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Map\Compass</name>
+				<packageName></packageName>
+				<script>---
+uiDebug("[init] FRAME - Map/Compass")
+--
+-- Compass
+GUI.Compass = GUI.Compass or Geyser.UserWindow:new({
+  name = "GUI.Compass",
+  titleText ="Mappa",
+  docked = true,
+  dockPosition = "b"
+})
+GUI.Compass:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Compass, 1)
+--
+-- Exits
+GUI.Compass.Exits = GUI.Compass.Exits or Geyser.MiniConsole:new({ 
+  name = 'GUI.Compass.Exits',
+  x = 0, y = 0,
+  width = "50%",
+  height = -10,
+  scrollBar = false,
+  fontSize = 10,
+}, GUI.Compass.Body)
+GUI.Compass.Exits:setColor(30,24,24)
+GUI.Compass.Exits:setBgColor(30,24,24)
+--
+-- Other Exits
+GUI.Compass.OtherExits = GUI.Compass.OtherExits or Geyser.MiniConsole:new({ 
+  name = 'GUI.Compass.OtherExits',
+  x = "50%", y = 0,
+  width = "50%",
+  height =-10,
+  scrollBar = false,
+  fontSize = 10,
+}, GUI.Compass.Body)
+GUI.Compass.OtherExits:setColor(30,24,24)
+GUI.Compass.OtherExits:setBgColor(30,24,24)</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Opponent</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Opponent")
+--
+-- Opponent
+GUI.Opponent = GUI.Opponent or Geyser.UserWindow:new({
+  name = "GUI.Opponent",
+  titleText ="Avversario",
+  docked = true,
+  dockPosition = "b"
+})
+GUI.Opponent:setStyleSheet(GUI.CSS.Tab)
+--
+--
+GUI.o0 = GUI.o0 or Geyser.Label:new({
+  name = "GUI.o0",
+  x = 0,
+  y = 0,
+  width = "100%",
+  height = "100%",
+}, GUI.Opponent)
+GUI.o0:setStyleSheet(GUI.CSS.Border3..[[
+  background-color: rgba(77, 0, 0);
+]]);
+GUI.o0:setClickCallback("clickTarget", "o0")
+
+--
+-- Opponent Health Gauges
+GUI.Opponent.Health = GUI.Opponent.Health or Geyser.Gauge:new({
+  name = "GUI.Opponent.Health",
+  x = 10,
+  y = 15,
+  width = -10,
+  height = -10,
+},GUI.o0)
+GUI.Opponent.Health:setValue(100, 100)
+GUI.Opponent.Health:enableClickthrough()
+--
+GUI.Opponent.Health.back:setStyleSheet(GUI.CSS.GaugeBack)
+GUI.Opponent.Health.back:enableClickthrough()
+--
+GUI.Opponent.Health.front:setStyleSheet(
+  GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
+]])
+GUI.Opponent.Health.front:enableClickthrough()
+--
+-- Opponent Gem
+GUI.Opponent.Gem = GUI.Opponent.Gem or Geyser.Label:new({
+  name = "GUI.Opponent.Gem",
+  x = 0, y = 0,
+  width = 30,
+  height = 30,
+}, GUI.o0)
+GUI.Opponent.Gem:setStyleSheet([[
+  margin: 0 0 0 0;
+  border-image: url("]]..ui.pathImg..[[gemRed.png") 0px stretch;
+]]);
+GUI.Opponent.Gem:enableClickthrough()
+--
+-- Opponent Level
+GUI.Opponent.Level = GUI.Opponent.Level or Geyser.Label:new({
+  name = "GUI.Opponent.Level",
+  x = -25, y = 0,
+  width = 25,
+  height = 25,
+  fontSize = 8,
+}, GUI.o0)
+GUI.Opponent.Level:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+GUI.Opponent.Level:enableClickthrough()
+--
+-- Keybid
+GUI["o0"].keybind = GUI["o0"].keybind or Geyser.Label:new({
+  name = "o0.keybind",
+  x = 5, y = -15,
+  width = -5,
+  height = 15,
+}, GUI["o0"])
+GUI["o0"].keybind:setStyleSheet(GUI.CSS.Keybind);
+GUI["o0"].keybind:enableClickthrough()
+--</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Pivate</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Private chat")
+--
+-- Private messages
+GUI.Private = GUI.Private or Geyser.UserWindow:new({
+  name = "GUI.Private",
+  titleText ="Canale privato",
+  docked = true,
+  dockPosition = "l"
+})
+GUI.Private:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Private, 1)
+--
+-- Body
+GUI.Private.Console = GUI.Private.Console or Geyser.MiniConsole:new({
+  name = 'GUI.Private.Console',
+  x=0, y=0,
+  width = "100%", 
+  height = "100%",
+  autoWrap = true,
+  scrollBar = false,
+}, GUI.Private.Body)
+GUI.Private.Console:setColor(30, 24, 24)
+GUI.Private.Console:setBgColor(30, 24, 24)</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Player</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Player")
+--
+-- Player 
+GUI.Player = GUI.Player or Geyser.UserWindow:new({
+  name = "GUI.Player",
+  titleText ="Player",
+  docked = true,
+  dockPosition = "b"
+})
+GUI.Player:setStyleSheet(GUI.CSS.Tab)
+--
+GUI.Player.Box = GUI.Player.Box or Geyser.Label:new({
+  name = "GUI.Player.Box",
+  x = 0,
+  y = 0,
+  width = "100%",
+  height = "100%",
+}, GUI.Player)
+GUI.Player.Box:setStyleSheet(GUI.CSS.Border3..[[
+  background-color: rgba(30,24,24);
+]]);
+--
+-- Player Health Gauges
+GUI.Player.Health = GUI.Player.Health or Geyser.Gauge:new({
+  name = "GUI.Player.Health",
+  x = 10,
+  y = 15,
+  width = -10,
+  height = "50%-15",
+},GUI.Player.Box)
+GUI.Player.Health:setValue(100, 100)
+--
+GUI.Player.Health.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  background-color: rgba(150, 0, 0, .2);
+]])
+--
+GUI.Player.Health.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
+]])
+GUI.Player.Health.front:echo("Vita")
+--
+-- Player Mana Gauges
+GUI.Player.Mana = GUI.Player.Mana or Geyser.Gauge:new({
+  name = "GUI.Player.Mana",
+  x = 10,
+  y = "50%+1",
+  width = -10,
+  height = "25%-7",
+},GUI.Player.Box)
+GUI.Player.Mana:setValue(100, 100)
+--
+GUI.Player.Mana.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  background-color: rgba(0, 0, 150, .2);
+]])
+--
+GUI.Player.Mana.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0000ee, stop: 0.65 #000099, stop: 1 #0000bb);
+]])
+GUI.Player.Mana.front:echo("Mana")
+--
+-- Player Stamina Gauges (used for moviment)
+GUI.Player.Stamina = GUI.Player.Stamina or Geyser.Gauge:new({
+  name = "GUI.Player.Stamina",
+  x = 10,
+  y = "75%-5",
+  width = -10,
+  height = "25%-7",
+},GUI.Player.Box)
+GUI.Player.Stamina:setValue(100, 100)
+--
+GUI.Player.Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  background-color: rgba(0, 150, 0, .2);
+]])
+--
+GUI.Player.Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
+]])
+GUI.Player.Stamina.front:echo("Movimento")
+--
+-- Player Gem
+GUI.Player.Gem = GUI.Player.Gem or Geyser.Label:new({
+  name = "GUI.Player.Gem",
+  x = 0,
+  y = 0,
+  width = 30,
+  height = 30,
+}, GUI.Player.Box)
+GUI.Player.Gem:setStyleSheet([[
+  background-image: url("]]..ui.pathImg..[[gemEmpty.png");
+  margin: 0 0 0 0;
+]]);
+--
+-- Player Level
+GUI.Player.Level = GUI.Player.Level or Geyser.Label:new({
+  name = "GUI.Player.Level",
+  x = -25, y = 0,
+  width = 25,
+  height = 25,
+  fontSize = 8,
+}, GUI.Player.Box)
+GUI.Player.Level:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Public</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Pubblic chat")
+--
+-- Public messages
+GUI.Public = GUI.Public or Geyser.UserWindow:new({
+  name = "GUI.Public",
+  titleText ="Canale pubblico",
+  docked = true,
+  dockPosition = "r"
+})
+GUI.Public:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Public, 1)
+--
+-- Body
+GUI.Public.Console = GUI.Public.Console or Geyser.MiniConsole:new({
+  name = 'GUI.Public.Console',
+  x=0, y=0,
+  width = "100%", 
+  height = "100%",
+  autoWrap = true,
+  scrollBar = false,
+}, GUI.Public.Body)
+GUI.Public.Console:setColor(30, 24, 24)
+GUI.Public.Console:setBgColor(30, 24, 24)</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Window Target Buttons</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Target buttons")
+--
+-- Target
+GUI.Target = GUI.Target or Geyser.UserWindow:new({
+  name = "GUI.Target",
+  titleText ="Target",
+  docked = true,
+  dockPosition = "b"
+})
+GUI.Target:setStyleSheet(GUI.CSS.Tab)
+--
+-- Border
+addBorder(GUI.Target, 2)
+--
+-- Target buttons
+GUI["t1"] = GUI["t1"] or Geyser.Label:new({
+  name = "GUI.t1",
+  x = 0,
+  y = 0,
+  width = "50%",
+  height = "50%",
+},GUI.Target.Body)
+--
+GUI["t2"] = GUI["t2"] or Geyser.Label:new({
+  name = "GUI.t2",
+  x = "50%",
+  y = 0,
+  width = "50%",
+  height = "50%",
+},GUI.Target.Body)
+--
+GUI["t3"] = GUI["t3"] or Geyser.Label:new({
+  name = "GUI.t3",
+  x = 0,
+  y = "50%",
+  width = "50%",
+  height = "50%",
+},GUI.Target.Body)
+--
+GUI["t4"] = GUI["t4"] or Geyser.Label:new({
+  name = "GUI.t4",
+  x = "50%",
+  y = "50%",
+  width = "50%",
+  height = "50%",
+},GUI.Target.Body)
+--
+for i=1,4 do
+  GUI["t"..i]:setFontSize(12)
+  GUI["t"..i]:setFgColor("LightGoldenrod")
+  GUI["t"..i]:setClickCallback("executeTargetButton", "t"..i, nil)
+  --
+  -- Index
+  GUI["t"..i].index = GUI["t"..i].index or Geyser.Label:new({
+    name = "GUI.t"..i..".index",
+    x = 0, y = 0,
+    width = 25,
+    height = 25,
+    fontSize = 8,
+  }, GUI["t"..i])
+  GUI["t"..i].index:echo("&lt;center&gt;t"..i.."")
+  GUI["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+  GUI["t"..i].index:enableClickthrough()
+  --
+  -- Keybid
+  GUI["t"..i].keybind = GUI["t"..i].keybind  or Geyser.Label:new({
+    name = "GUI.t"..i..".keybind",
+    x = 5, y = -15,
+    width = -5,
+    height = 15,
+  }, GUI["t"..i])
+  GUI["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
+  GUI["t"..i].keybind:enableClickthrough()
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Help button</name>
+				<packageName></packageName>
+				<script>--
+uiDebug("[init] FRAME - Help button")
+--
+-- Help button
+GUI.HelpButton = GUI.HelpButton or Geyser.Label:new({
+  name = "GUI.HelpButton",
+  x = -50, y = 2,
+  width = 30,
+  height = 30,
+})
+GUI.HelpButton:setStyleSheet([[border-image: url("]]..ui.pathImg..[[helpButton.png")]]);
+GUI.HelpButton:setClickCallback("uiHelp", nil)</script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
+		<Script isActive="yes" isFolder="no">
+			<name>Main</name>
+			<packageName></packageName>
+			<script>--
+uiDebug("[init] loadWindowLayout()")
+loadWindowLayout()
+--
+-- Target Button
+uiDebug("[init] refreshAllTargetButton(...)")
+refreshAllTargetButton()
+--
+-- Actual Target
+uiDebug("[init] refreshTarget(...)")
+refreshTarget()
+--
+-- Alias Button
+uiDebug("[init] refreshAllAliasButton()")
+refreshAllAliasButton()
+--
+-- Affects
+uiDebug("[init] updateAffects()")
+updateAffects()
+--
+-- Map/Compass
+uiDebug("[init] updateMap()")
+updateMap()
+--
+-- Group
+uiDebug("[init] updateGroup()")
+updateGroup() 
+--
+-- Opponent
+uiDebug("[init] updateOpponent()")
+updateOpponent()
+--
+-- Player
+uiDebug("[init] updatePlayer()")
+updatePlayer()
+--
+-- Conteiner
+uiDebug("[init] update 'Container' window")
+GUI.Inventory.Console:setFontSize(ui.parameters.fsinvent)
+GUI.Inventory.Console:setBgColor(30,24,24)
+GUI.Inventory.Console:setFgColor("steel_blue")
+GUI.Inventory.Console:echo('Usa il comando')
+GUI.Inventory.Console:setFgColor("white")
+GUI.Inventory.Console:echo(' INVENTARIO')
+GUI.Inventory.Console:setFgColor("steel_blue")
+GUI.Inventory.Console:echo(' per aggiornare questa pagina.\n')
+--
+-- Equip
+uiDebug("[init] update 'Equipment' window")
+GUI.Equip.Console:setFontSize(ui.parameters.fsequip)
+GUI.Equip.Console:setBgColor(30,24,24)
+GUI.Equip.Console:setFgColor("steel_blue")
+GUI.Equip.Console:echo('Usa il comando')
+GUI.Equip.Console:setFgColor("white")
+GUI.Equip.Console:echo(' EQUIPAGGIAMENTO')
+GUI.Equip.Console:setFgColor("steel_blue")
+GUI.Equip.Console:echo(' per aggiornare questa pagina.\n')
+--
+-- Private
+GUI.Private.Console:setFontSize(ui.parameters.fsprivate)
+--
+-- Public
+GUI.Public.Console:setFontSize(ui.parameters.fsPublic)
+--
+-- GMCP
+uiDebug("[init] setMergeTables()")
+setMergeTables("MSDP")
+--
+-- Events
+uiDebug("[init] Register events")
+registerAnonymousEventHandler("gmcp.MSDP","updateOpponent")
+registerAnonymousEventHandler("gmcp.MSDP","updatePlayer")
+--
+-- Debug
+if (ui.enDebug) then
+  -- Tick simulation
+  increment_ticktimer(75)
+end
+--
+uiDebug("[init] ... end UI init!")
+--
+uiEchon("&lt;orange&gt;- Lumen et Umbra UI v"..ui.release.." -&lt;white&gt; "..getCommandFormattedText("uih[elp]").."&lt;white&gt; per iniziare.")</script>
+			<eventHandlerList />
+		</Script>
+		<Script isActive="yes" isFolder="no">
+			<name>Note</name>
+			<packageName></packageName>
+			<script>--[[
+ver 0.3b
+--------
+- Rimossa gestione dei tab\frame ereditata da CS.
+- Rimossa gestine CCS ereditata da CS.
+- Implementata gestione frame con Geyser.UserWindow.
+- Sistemato il problema del riavvio obbligatorio di mudlet dopo l'installazione del pack 
+- Nuova getione dell'uihelp
+
+ver 0.2b
+--------
+Alias buttons:
+- I custom buttons sono diventati alias buttons
+--
+Comandi:
+- Aggiunti comandi uiResizeL(h, w) e uiResizeR(h, w) per ridimensionare (o nascondere) le barre laterali
+- Aggiunto comndo uiRepair per riparare automaticamente tutto l'equipaggiamento danneggiato
+--
+Interfaccia:
+- Rivista procedura di inizializzazione (presenta ancora alcune discrepanze)
+- Trasformati i box player, opponent, compass e group in widget che è possibile spostare, ridimensionare e nascondere
+- Snellita gestione Affects
+--
+Target buttons (g0..g9)
+- I componenti del gruppo sono diventati target selezionabili
+--
+Target buttons (o0)
+- Il widget dell'avversario è diventato un target selezionabile
+--
+uiAlias:
+- Nuova gestione con struttura semplificata
+- Aggiunta la possibilità di eseguire tramite UiAlias, un altro uiAlias o un alias definito in Mudlet.
+  Possibilità di esecuzione di codice lua chiamando la funzione lua() nel pattern dell'uiAlias 
+  Attenzione: può creare ricorsione incontrollata (stack overwlow)
+- Aggiunta la possibilità di associare una combinazione di tasti all'uiAlias
+--
+uiHighlights:
+- Nuova gestione con struttura semplificata
+- Definizione per nome (invece che per numero)
+- Riconoscimento per parola intera
+- Riconoscimento non più sensibili alle maiuscole\minuscole
+--
+uiKeybind:
+- Nuova gestione: keibind associati a target e alias
+--
+uiSpeedWalk
+- Memorizza lo storico della strada percorsa e permette di ripercorrela indeitro con il comando "..", e poi dinuovo in avanti con il comendo "."
+--
+ver 0.1b
+--------
+- primo rilascio
+]]</script>
+			<eventHandlerList />
+		</Script>
+	</ScriptPackage>
+	<KeyPackage>
+		<KeyGroup isActive="yes" isFolder="yes">
+			<name>Keypad</name>
+			<packageName></packageName>
+			<script></script>
+			<command></command>
+			<keyCode>-1</keyCode>
+			<keyModifier>0</keyModifier>
+			<KeyGroup isActive="yes" isFolder="yes">
+				<name>Look  (shift + keypad)</name>
+				<packageName></packageName>
+				<script></script>
+				<command></command>
+				<keyCode>-1</keyCode>
+				<keyModifier>0</keyModifier>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 1 (look d)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look down</command>
+					<keyCode>16777233</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 2 (look s)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look south</command>
+					<keyCode>16777237</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 4 (look w)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look west</command>
+					<keyCode>16777234</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 6 (look e)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look east</command>
+					<keyCode>16777236</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 8 (look n)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look north</command>
+					<keyCode>16777235</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>shift keypad 7 (look u)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look u</command>
+					<keyCode>16777232</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+			</KeyGroup>
+			<KeyGroup isActive="yes" isFolder="yes">
+				<name>Movement (keypad)</name>
+				<packageName></packageName>
+				<script></script>
+				<command></command>
+				<keyCode>-1</keyCode>
+				<keyModifier>0</keyModifier>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 0 (group)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>group</command>
+					<keyCode>48</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 1 (down)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>d</command>
+					<keyCode>49</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 2 (south)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>s</command>
+					<keyCode>50</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 3 (flee)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>flee</command>
+					<keyCode>51</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 4 (west)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>w</command>
+					<keyCode>52</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 5 (look)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>look</command>
+					<keyCode>53</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 6 (east)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>e</command>
+					<keyCode>54</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 7 (up)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>u</command>
+					<keyCode>55</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 8 (north)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>n</command>
+					<keyCode>56</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>keypad 9 (stand)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>stand</command>
+					<keyCode>57</keyCode>
+					<keyModifier>536870912</keyModifier>
+				</Key>
+			</KeyGroup>
+		</KeyGroup>
+	</KeyPackage>
+	<VariablePackage>
+		<HiddenVariables />
+	</VariablePackage>
+</MudletPackage>

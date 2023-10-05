@@ -1,0 +1,121 @@
+------------------------------------------------------------------------------------------------------------------------
+[ 1] <su di un dito>		[102] |L| l'anello degli Angeli			Fine sacchetti
+[ 2] <su di un dito>		[ 99] |L| l'anello degli Angeli			Fine sacchetti
+[ 3] <intorno al collo>	[ 48] |A| un pendente d'argento brillante
+[ 4] <intorno al collo>	[ 50] |A| un medaglione d'argento brillante
+[ 5] <sul corpo>		[106] |L| una corazza di scaglie di drago		Fine sacchetti
+[ 6] <in testa>		[106] |S| l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>		[ 59] |A| dei gambali decorati in oro
+[ 8] <ai piedi>		[107] |S| gli Stivali del Manipolatore dei Piani
+[ 9] <sulle mani>		[ 92] |L| i Guanti degli Inferi			Fine sacchetti
+[10] <sulle braccia>		[106] |S| gli Spallacci del Guaritore dei Piani
+[11] <come scudo>		[105] |S| il Pavese del Difensore dei Piani
+[12] <intorno al corpo>	[ 30] |U| una cappa di cristallo			Fine sacchetti
+[13] <intorno alla vita>	[ 98] |S| la Cintura del Guaritore dei Piani
+[14] <al polso>		[ 96] |L| il bracciale degli Angeli Astrali		Fine sacchetti
+[15] <al polso>		[ 96] |L| il bracciale degli Angeli Astrali		Fine sacchetti
+[16] <impugnato>		[ 95] |L| MoonLight, la Spada			Fine sacchetti
+[17] <sulla schiena>		[ 54] |A| un manto degli antichi tomi
+[18] <all'orecchio destro>	[ 42] |A| un gioiello d'oro massiccio
+[19] <all'orecchio sinistro>	[ 42] |A| un gioiello d'oro massiccio
+[20] <davanti agli occhi>	[ 64] |A| una maschera d'oro massiccio
+[21] <come aura>		[109] |L| Uno Strumento Misterioso Multifunzione	Fine sacchetti
+------------------------------------------------------------------------------------------------------------------------
+					Max
+01. Affilato	+1 a Tiro per Colpire		02
+02. Appuntito 	+1 a Danno Fisico 		01
+03. Brillante 	+1 a Colpire e Potere Magico 	01
+04. Concentrato 	+1% a Focus Magico		03
+05. Contundente 	+1 a Riduzione da Impatto 	02
+06. Flessibile 	+2 a Recupero Mana 	10
+07. Fluoroscente 	+6 a Punti Mana 		30
+08. Frastagliato 	+1 a Colpire e Danno Fisico 	01
+09. Irrequieto	+1% ad Attacco Extra	03
+10. Luminoso 	+1 a Potere Magico 		01
+11. Pungente 	+1 a Riduzione da Punta 	02
+12. Rigenerante 	+4 a Recupero Ferita 	20
+13. Robusto 	+3 a Punti Ferita 		45
+14. Tagliente	+1 a Riduzione da Taglio	02
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'anello angeli', Tipo: ARMATURA		A	B
+    Effetto:  +15% a Focus Magico		+3		... Completato su A
+    Effetto:  +12 a Potere Magico		+1	+1	... Completato su entrambi
+    Effetto:  +15 a Tiro per Colpire		+2	+2	... Completato su entrambi
+    Effetto:  +60 a Punti Ferita			+39	+30
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'simbolo sacro benem', Tipo: ARMATURA
+    Effetto:  +6 a Colpire e Potere Magico	+1	... completato
+    Effetto:  +4 a Riduzione da Impatto	-
+    Effetto:  +5 a Tiro per Colpire
+    Effetto:  +4 a Potere Magico		+1	... completato
+    Effetto:  +2 a Riduzione da Punta
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'simbolo sacro benem', Tipo: ARMATURA	(rollato 1 volta)
+    Effetto:  +6 a Colpire e Potere Magico	+1	... completato
+    Effetto:  +89 a Punti Ferita
+    Effetto:  +3 a Riduzione da Punta
+    Effetto:  +3 a Tiro per Colpire
+    Effetto:  +15% a Focus Magico		(TENERE)
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'bracciale angeli astrali', Tipo: ARMATURA	A	B
+    Effetto:  +15% a Focus Magico		
+    Effetto:  +5 a Colpire e Potere Magico		+1	+1	... Completato su entrambi
+    Effetto:  +35 a Punti Ferita			+30	+30
+    Effetto:  +20 a Recupero Mana		+10	+2	... Completato su A
+    Effetto:  -12 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'cappa cristallo craft cinque', Tipo: ARMATURA
+    Effetto:  +1 a Riduzione da Impatto
+    Effetto:  +3 a Riduzione da Punta
+    Effetto:  +45 a Punti Ferita		+30	... completato (sacchetti)
+    Effetto:  -7 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'moonshatter scettro', Tipo: ARMA	(rollato 4 volte)
+    Effetto:  +8 a Colpire e Potere Magico	+1	... completato
+    Effetto:  Incantesimo su Arma con colpo elettrico	(TENERE)
+    Effetto:  +85 a Punti Ferita
+    Effetto:  +3 a Riduzione da Taglio
+    Effetto:  +3 a Potere Magico
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'elmo manipolatore piani', Tipo: ARMATURA
+    Effetto:  +70 a Recupero Mana	+2
+    Effetto:  +7 a Potere Magico		+1	... completato
+    Effetto:  +12 a Tiro per Colpire
+    Effetto:  +18% a Focus Magico
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'stivali guaritore piani', Tipo: ARMATURA
+    Effetto:  +130 a Punti Ferita
+    Effetto:  +7 a Potere Magico		+1	... completato
+    Effetto:  +18% a Focus Magico
+    Effetto:  +18% a Focus Magico
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'spallacci manipolatore piani', Tipo: ARMATURA
+    Effetto:  +130 a Punti Ferita
+    Effetto:  +7 a Potere Magico		+1	... completato
+    Effetto:  +12 a Tiro per Colpire
+    Effetto:  +18% a Focus Magico
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'cintura guaritore piani', Tipo: ARMATURA
+    Effetto:  +130 a Punti Ferita
+    Effetto:  +7 a Potere Magico		+1	... completato
+    Effetto:  +12 a Tiro per Colpire
+    Effetto:  +18% a Focus Magico
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'pavese difensore piani', Tipo: ARMATURA
+    Effetto:  +227 a Punti Ferita
+    Effetto:  +7 a Danno Fisico		+1	.... completo
+    Effetto:  +6 a Riduzione da Impatto	+1
+    Effetto:  +6 a Riduzione da Impatto
+    Effetto:  -20 a Tutti i Tiri Salvezza
+------------------------------------------------------------------------------------------------------------------------
+Oggetto 'strumento misterioso multifunzione dikyrus', Tipo: ALTRO
+    Effetto:  +3 a Riduzione da Impatto	+2	... completato
+    Effetto:  +3 a Riduzione da Taglio	+2	... completato
+    Effetto:  +10% a Focus Magico
+    Effetto:  +90 a Punti Ferita		+30	... completato (sacchetti)
+    Effetto:  +6 a Potere Magico		+1	... completato
