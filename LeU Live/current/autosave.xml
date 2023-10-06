@@ -20,7 +20,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>305</borderLeftWidth>
-			<borderRightWidth>455</borderRightWidth>
+			<borderRightWidth>515</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -1446,7 +1446,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -1630,7 +1630,13 @@ end</script>
 				<script>local str = "";
 --
 -- scudo di fuoco
-if (matches[1] == "Convochi uno schermo di fiamme intorno a te stesso.") then
+if (matches[1] == "La tua pelle ha acquistato la consistenza del ghiaccio.") then
+  ui.actAffects["scudo di ghiaccio"] = 3 
+elseif (matches[1] == "La tua pelle ha perso la consistenza del ghiaccio.") then
+  ui.actAffects["scudo di ghiaccio"] = -1
+--
+-- scudo di fuoco
+elseif (matches[1] == "Convochi uno schermo di fiamme intorno a te stesso.") then
   ui.actAffects["scudo di fuoco"] = 26 
 elseif (matches[1] == "La tua aura fiammeggiante svanisce.") then
   ui.actAffects["scudo di fuoco"] = -1
@@ -1728,6 +1734,8 @@ ui.fUpdateAffects()</script>
 					<string>Senti di poter sferrare di nuovo un pugno cinetico.</string>
 					<string>Con ampi gesti crei un pugno di pura energia .*</string>
 					<string>Sulle tue lame non rimane piu' traccia di veleno.</string>
+					<string>La tua pelle ha perso la consistenza del ghiaccio.</string>
+					<string>La tua pelle ha acquistato la consistenza del ghiaccio.</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>3</integer>
@@ -1748,9 +1756,11 @@ ui.fUpdateAffects()</script>
 					<integer>3</integer>
 					<integer>1</integer>
 					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>GAG</name>
 				<script>deleteLine()
 --cecho ("\n&lt;white&gt;   - GAG -   "..matches[1].."\n")
@@ -1812,6 +1822,7 @@ ui.fUpdateAffects()</script>
 					<string>Il veleno non sembra sortire alcun effetto!</string>
 					<string>.* ti morde!</string>
 					<string>.* riesce a migliorare criticamente il suo incantesimo di guarigione!</string>
+					<string>Perdi la concentrazione e porti un colpo poco convinto.</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -1860,6 +1871,7 @@ ui.fUpdateAffects()</script>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -5077,7 +5089,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: green;
+    background-color: red;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -5278,13 +5290,11 @@ ver 0.1b
         end
       else
         local affectText = ui.fRemoveArticle(affect)
-
-        local R = (string.byte(affectText, 1) or 0x0) - 0x61-- Primo carattere o 0 se la frase è vuota
-        local G = (string.byte(affectText, 2) or 0x0) - 0x61-- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-        local B = (string.byte(affectText, 3) or 0x0) - 0x61-- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+        local R = 9 * ((string.byte(affectText, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+        local G = 9 * ((string.byte(affectText, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+        local B = 9 * ((string.byte(affectText, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
         local color = string.format("#%02X%02X%02X", R, G, B)
         local text = ""
-        display(color)
         --
         CCS = GUI.CSS.AffectIcon..[[
                 background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 ]]..color..[[);
@@ -5293,7 +5303,6 @@ ver 0.1b
         for word in affectText:gmatch("%S+") do
           text = text..string.sub(word, 1, 3).." "
         end
-        
         GUI["AffectIcon"..i].icon:echo(text)
       end
       -- StyleSheet
@@ -7104,13 +7113,12 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_o(time_left)
-  if ui.difTimer then
-    killTimer(ui.difTimer)
+  if ui.difTimer_o then
+    killTimer(ui.difTimer_o)
   end
   --
   if time_left &gt; 0 then
-    time_left = time_left - 1
-    ui.difTimer = tempTimer(1, function() ui.fIncrement_difTimer_o(time_left) end)
+    ui.difTimer_o = tempTimer(1, function() ui.fIncrement_difTimer_o(time_left - 1) end)
     GUI.Opponent.Main.Health.dif:show()
   else
     GUI.Opponent.Main.Health.dif:hide()
@@ -7118,7 +7126,15 @@ function ui.fIncrement_difTimer_o(time_left)
 end
 --
 function ui.fUpdateOpponent()
-  local title = "* Nessuno *";
+  local title
+  local hp
+  local hpMax
+  local levDif
+  local hpDif = GUI.Opponent.Main.Health.front:get_width()
+  --
+  -- init last hp
+  ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
+  --
   if (ui.enDebug) then
     ui.variables.opponent_health     = math.random(0, 100)
     ui.variables.opponent_health_max = 100
@@ -7131,19 +7147,24 @@ function ui.fUpdateOpponent()
     ui.variables.opponent_name       = gmcp.MSDP.OPPONENT_NAME or ui.variables.opponent_name
   end
   --
+  hp = tonumber(ui.variables.opponent_health) or 0
+  hpMax = tonumber(ui.variables.opponent_health_max) or 0
+  levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
+  --
   if (ui.variables.opponent_name ~= "") then
-    ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
-    local dif = GUI.Opponent.Main.Health.front:get_width()
-    local hp = tonumber(ui.variables.opponent_health) or 0
-    local hpMax = tonumber(ui.variables.opponent_health_max) or 0
-    local hpPerc = 0
-    if hpMax ~= 0 then
-      hpPerc = math.floor(100 * hp / hpMax)
-    else
-      hpPerc = 0
-    end
-    local levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
-    local color = "white";
+    --
+    -- Showed name
+    title = ui.variables.opponent_name;
+    --
+    -- Name
+    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, "(\$c%d+)", "")
+    ui.variables.opponent_name = ui.fRemoveArticle(ui.variables.opponent_name)
+    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, " ", "-")
+    --
+    GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
+    --
+    -- Level color
+    local color
     if (levDif &gt;= 5) then
       color = "white"
     elseif (levDif &gt;= 0) then
@@ -7153,63 +7174,68 @@ function ui.fUpdateOpponent()
     else
       color = "red"
     end
-    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, "(\$c%d+)", "")
-    ui.variables.opponent_name = ui.fRemoveArticle(ui.variables.opponent_name)
-    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, " ", "-")
     --
     GUI.Opponent.Level:setFgColor(color)
     GUI.Opponent.Level:echo("&lt;center&gt;"..ui.variables.opponent_level)
     GUI.Opponent.Level:show()
-    GUI.Opponent.Main.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..hpPerc.."%  &lt;/p&gt;")
-    GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
-    ui.fAssignTargetButton("o0", ui.variables.opponent_name)
     --
+    -- HP
+    GUI.Opponent.Main.Health:setValue(hp, hpMax,"&lt;p align=right&gt;"..hp.."%  &lt;/p&gt;")
     --
-    dif = GUI.Opponent.Main.Health.front:get_width() - dif
-    if (ui.parameters.last_hp_opponent ~= hp) then
-      if (dif &lt; 0) then
-        GUI.Opponent.Main.Health.dif = Geyser.Label:new2({
-          name = "GUI.Opponent.Main.Health.dif",
-          x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
-          y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y(),
-          width = -dif,
-          height = GUI.Opponent.Main.Health.front:get_height(),
-          message = [[- -]]
-        }, GUI.Opponent.Main)
-        GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-          qproperty-alignment: 'AlignRight';
-          border: 1px solid rgba(255, 0, 0, 0.8);
-          background-color: rgba(255, 0, 0, 0.4);
-        ]])
-      elseif (dif &gt; 0) then
-        GUI.Opponent.Main.Health.dif = Geyser.Label:new2({
-          name = "GUI.Opponent.Main.Health.dif",
-          x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - dif,
-          y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2,
-          width = dif-1,
-          height = GUI.Opponent.Main.Health.front:get_height() - 4,
-          message = [[++]]
-        }, GUI.Opponent.Main)
-        GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-          qproperty-alignment: 'AlignRight';
-          border: 1px solid rgba(0, 255, 0, 0.8);
-          background-color: rgba(0, 255, 0, 0.4);
-        ]])
-      end
-      ui.fIncrement_difTimer_o(2)
-      ui.parameters.last_hp_opponent = hp;
-    end
-    --
-    title = ui.variables.opponent_name;
+    -- Keybind
+    ui.fAssignTargetButton("o0", ui.variables.opponent_name)    
   else
-    GUI.Opponent.Level:setFgColor(color)
-    GUI.Opponent.Level:echo("")
-    GUI.Opponent.Level:hide()
-    --GUI.Opponent.Main.Health.dif:hide()
-    GUI.Opponent.Main.Health:setValue(0, 100,"")
+    --
+    -- reset showed name
+    title = "* nessuno *"    --
+    --
+    -- Remove name
     GUI.Opponent.Main.Health.front:echo("")
+    --
+    -- Hide level
+    GUI.Opponent.Level:hide()
+    --
+    -- Reset HP
+    GUI.Opponent.Main.Health:setValue(0, 100, "")
+    --
+    -- Remove Keybind
     ui.fAssignTargetButton("o0", nil)
   end
+  --
+  -- Diff. hp
+  hpDif = GUI.Opponent.Main.Health.front:get_width() - hpDif
+  if (hpDif ~= 0) then
+    if (hpDif &lt; 0) then
+      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
+                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
+      GUI.Opponent.Main.Health.dif:resize(-hpDif,
+                                          GUI.Opponent.Main.Health.front:get_height())
+      --
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+        qproperty-alignment: 'AlignRight';
+        border: 1px solid rgba(255, 0, 0, 0.8);
+        background-color: rgba(255, 0, 0, 0.4);
+      ]])
+      --
+      GUI.Opponent.Main.Health.dif:echo("--")
+    elseif (hpDif &gt; 0) then
+      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpDif,
+                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2)
+      GUI.Opponent.Main.Health.dif:resize(hpDif - 1,
+                                          GUI.Opponent.Main.Health.front:get_height() - 4)
+      --
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+        qproperty-alignment: 'AlignRight';
+        border: 1px solid rgba(0, 255, 0, 0.8);
+        background-color: rgba(0, 255, 0, 0.4);
+      ]])
+      --
+      GUI.Opponent.Main.Health.dif:echo("++")
+    end
+    ui.fIncrement_difTimer_o(2)
+  end
+  ui.parameters.last_hp_opponent = hp;
+  --
   -- Target on title
   if (ui.variables.target) and (ui.variables.target ~= "") then
     title = title.." (T:"..ui.variables.target..")"
@@ -7263,13 +7289,12 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_p(time_left)
-  if ui.difTimer then
-    killTimer(ui.difTimer)
+  if ui.difTimer_p then
+    killTimer(ui.difTimer_p)
   end
   --
   if time_left &gt; 0 then
-    time_left = time_left - 1
-    ui.difTimer = tempTimer(1, function() ui.fIncrement_difTimer_p(time_left) end)
+    ui.difTimer_p = tempTimer(1, function() ui.fIncrement_difTimer_p(time_left - 1) end)
     GUI.Player.Main.Health.dif:show()
   else
     GUI.Player.Main.Health.dif:hide()
@@ -7365,14 +7390,11 @@ function ui.fUpdatePlayer()
   --
   dif = GUI.Player.Main.Health.front:get_width() - dif
   if (dif &lt; 0) then
-    GUI.Player.Main.Health.dif = Geyser.Label:new2({
-      name = "GUI.Player.Main.Health.dif",
-      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width(),
-      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y(),
-      width = -dif,
-      height = GUI.Player.Main.Health.front:get_height(),
-      message = [[- -]]
-    }, GUI.Player.Main)
+    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width(),
+                                    GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y());
+    GUI.Player.Main.Health.dif:resize(-dif,
+                                      GUI.Player.Main.Health.front:get_height())
+    GUI.Player.Main.Health.dif:echo("- -")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
       qproperty-alignment: 'AlignRight';
       border: 1px solid rgba(255, 0, 0, 0.8);
@@ -7380,14 +7402,11 @@ function ui.fUpdatePlayer()
     ]])
     ui.fIncrement_difTimer_p(2)
   elseif (dif &gt; 0) then
-    GUI.Player.Main.Health.dif = Geyser.Label:new2({
-      name = "GUI.Player.Main.Health.dif",
-      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - dif,
-      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2,
-      width = dif-1,
-      height = GUI.Player.Main.Health.front:get_height() - 4,
-      message = [[++]]
-    }, GUI.Player.Main)
+    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - dif,
+                                    GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2)
+    GUI.Player.Main.Health.dif:resize(dif-1,
+                                      GUI.Player.Main.Health.front:get_height() - 4)
+    GUI.Player.Main.Health.dif:echo("++")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
       qproperty-alignment: 'AlignRight';
       border: 1px solid rgba(0, 255, 0, 0.8);
@@ -7684,9 +7703,9 @@ function ui.fExecuteTargetButton(button)
       end
       ui.fUpdateTarget()
     elseif (type == "g") then
-      ui.fEcho2n("Nessun componente del gruppo associato a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun componente del gruppo da associare a "..ui.fGetTargetFormattedText(button)..".")
     elseif (type == "o") then
-      ui.fEcho2n("Nessun avversario ingaggiato associato a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun avversario ingaggiato da associare a "..ui.fGetTargetFormattedText(button)..".")
     elseif (type == "t") then
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
     end
@@ -9068,25 +9087,25 @@ ui.varID = "@"
 --
 -- Icons for affect 
 ui.affects = {
-  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
-  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
-  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
-  ["chiaroveggenza"]            = {icon = nil,             color = "magenta", shortName = "Chiaro" },  
-  ["colpo psichico"]            = {icon = nil,             color = "magenta", shortName = "Colpo PSI" },  
-  ["forza psichica"]            = {icon = "skill_9.png",   color = "OrangeRed", shortName = "PSI Str" },
-  ["individua il magico"]       = {icon = 'Skill_322.png', color = "DarkOrchid", shortName = "Ind. mag." },
-  ["individua il male"]         = {icon = 'skill_72.png',  color = "DarkOrchid", shortName = "Ind. mal." },
-  ["individua invisibile"]      = {icon = "Skill_312.png", color = "DarkOrchid", shortName = "Ind. inv." },
-  ["levitazione"]               = {icon = "skill_156.png", color = "blue", shortName = "Lev" },
-  ["nuotare (cooldown)"]        = {icon = "skill_110.png", color = "blue", shortName = "Swim" },
-  ["percepisci vita"]           = {icon = "skill_44.png",  color = "DarkOrchid", shortName = "True Live" },
-  ["primo soccorso"]            = {icon = nil,             color = "green", shortName = "First AID" },  
-  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
-  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
-  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
-  ["scudo di fuoco"]            = {icon = "Skill_448.png", color = "firebrick", shortName = "PSI Fire" },
-  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
-  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
+--  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
+--  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
+--  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
+--  ["chiaroveggenza"]            = {icon = nil,             color = "magenta", shortName = "Chiaro" },  
+--  ["colpo psichico"]            = {icon = nil,             color = "magenta", shortName = "Colpo PSI" },  
+--  ["forza psichica"]            = {icon = "skill_9.png",   color = "OrangeRed", shortName = "PSI Str" },
+--  ["individua il magico"]       = {icon = 'Skill_322.png', color = "DarkOrchid", shortName = "Ind. mag." },
+--  ["individua il male"]         = {icon = 'skill_72.png',  color = "DarkOrchid", shortName = "Ind. mal." },
+--  ["individua invisibile"]      = {icon = "Skill_312.png", color = "DarkOrchid", shortName = "Ind. inv." },
+--  ["levitazione"]               = {icon = "skill_156.png", color = "blue", shortName = "Lev" },
+--  ["nuotare (cooldown)"]        = {icon = "skill_110.png", color = "blue", shortName = "Swim" },
+--  ["percepisci vita"]           = {icon = "skill_44.png",  color = "DarkOrchid", shortName = "True Live" },
+--  ["primo soccorso"]            = {icon = nil,             color = "green", shortName = "First AID" },  
+--  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
+--  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
+--  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
+--  ["scudo di fuoco"]            = {icon = "Skill_448.png", color = "firebrick", shortName = "PSI Fire" },
+--  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
+--  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
 }
 --
 -- Modifier for keybind
