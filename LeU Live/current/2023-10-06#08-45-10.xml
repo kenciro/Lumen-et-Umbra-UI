@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="" mEditorThemeFile="" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
 			<name>LeU Live</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,8 +19,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>313</borderLeftWidth>
-			<borderRightWidth>578</borderRightWidth>
+			<borderLeftWidth>334</borderLeftWidth>
+			<borderRightWidth>563</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -45,7 +45,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Courier New,12,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Noto Mono,8,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -1139,7 +1139,7 @@ enableTrigger("multi_loot_end")</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_valid</name>
 						<script>setTriggerStayOpen("multi_loot", 1)</script>
 						<triggerType>0</triggerType>
@@ -1163,7 +1163,7 @@ enableTrigger("multi_loot_end")</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_end</name>
 						<script>disableTrigger("multi_loot_valid")
 disableTrigger("multi_loot_end")
@@ -1446,7 +1446,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -1630,7 +1630,13 @@ end</script>
 				<script>local str = "";
 --
 -- scudo di fuoco
-if (matches[1] == "Convochi uno schermo di fiamme intorno a te stesso.") then
+if (matches[1] == "La tua pelle ha acquistato la consistenza del ghiaccio.") then
+  ui.actAffects["scudo di ghiaccio"] = 3 
+elseif (matches[1] == "La tua pelle ha perso la consistenza del ghiaccio.") then
+  ui.actAffects["scudo di ghiaccio"] = -1
+--
+-- scudo di fuoco
+elseif (matches[1] == "Convochi uno schermo di fiamme intorno a te stesso.") then
   ui.actAffects["scudo di fuoco"] = 26 
 elseif (matches[1] == "La tua aura fiammeggiante svanisce.") then
   ui.actAffects["scudo di fuoco"] = -1
@@ -1728,6 +1734,8 @@ ui.fUpdateAffects()</script>
 					<string>Senti di poter sferrare di nuovo un pugno cinetico.</string>
 					<string>Con ampi gesti crei un pugno di pura energia .*</string>
 					<string>Sulle tue lame non rimane piu' traccia di veleno.</string>
+					<string>La tua pelle ha perso la consistenza del ghiaccio.</string>
+					<string>La tua pelle ha acquistato la consistenza del ghiaccio.</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>3</integer>
@@ -1748,9 +1756,11 @@ ui.fUpdateAffects()</script>
 					<integer>3</integer>
 					<integer>1</integer>
 					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>GAG</name>
 				<script>deleteLine()
 --cecho ("\n&lt;white&gt;   - GAG -   "..matches[1].."\n")
@@ -1812,6 +1822,7 @@ ui.fUpdateAffects()</script>
 					<string>Il veleno non sembra sortire alcun effetto!</string>
 					<string>.* ti morde!</string>
 					<string>.* riesce a migliorare criticamente il suo incantesimo di guarigione!</string>
+					<string>Perdi la concentrazione e porti un colpo poco convinto.</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -1860,6 +1871,7 @@ ui.fUpdateAffects()</script>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -5077,7 +5089,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: green;
+    background-color: red;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -7101,13 +7113,12 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_o(time_left)
-  if ui.difTimer then
-    killTimer(ui.difTimer)
+  if ui.difTimer_o then
+    killTimer(ui.difTimer_o)
   end
   --
   if time_left &gt; 0 then
-    time_left = time_left - 1
-    ui.difTimer = tempTimer(1, function() ui.fIncrement_difTimer_o(time_left) end)
+    ui.difTimer_o = tempTimer(1, function() ui.fIncrement_difTimer_o(time_left - 1) end)
     GUI.Opponent.Main.Health.dif:show()
   else
     GUI.Opponent.Main.Health.dif:hide()
@@ -7115,7 +7126,15 @@ function ui.fIncrement_difTimer_o(time_left)
 end
 --
 function ui.fUpdateOpponent()
-  local title = "* Nessuno *";
+  local title
+  local hp
+  local hpMax
+  local levDif
+  local hpDif = GUI.Opponent.Main.Health.front:get_width()
+  --
+  -- init last hp
+  ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
+  --
   if (ui.enDebug) then
     ui.variables.opponent_health     = math.random(0, 100)
     ui.variables.opponent_health_max = 100
@@ -7128,19 +7147,24 @@ function ui.fUpdateOpponent()
     ui.variables.opponent_name       = gmcp.MSDP.OPPONENT_NAME or ui.variables.opponent_name
   end
   --
+  hp = tonumber(ui.variables.opponent_health) or 0
+  hpMax = tonumber(ui.variables.opponent_health_max) or 0
+  levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
+  --
   if (ui.variables.opponent_name ~= "") then
-    ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
-    local dif = GUI.Opponent.Main.Health.front:get_width()
-    local hp = tonumber(ui.variables.opponent_health) or 0
-    local hpMax = tonumber(ui.variables.opponent_health_max) or 0
-    local hpPerc = 0
-    if hpMax ~= 0 then
-      hpPerc = math.floor(100 * hp / hpMax)
-    else
-      hpPerc = 0
-    end
-    local levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
-    local color = "white";
+    --
+    -- Showed name
+    title = ui.variables.opponent_name;
+    --
+    -- Name
+    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, "(\$c%d+)", "")
+    ui.variables.opponent_name = ui.fRemoveArticle(ui.variables.opponent_name)
+    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, " ", "-")
+    --
+    GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
+    --
+    -- Level color
+    local color
     if (levDif &gt;= 5) then
       color = "white"
     elseif (levDif &gt;= 0) then
@@ -7150,63 +7174,67 @@ function ui.fUpdateOpponent()
     else
       color = "red"
     end
-    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, "(\$c%d+)", "")
-    ui.variables.opponent_name = ui.fRemoveArticle(ui.variables.opponent_name)
-    ui.variables.opponent_name = string.gsub(ui.variables.opponent_name, " ", "-")
     --
     GUI.Opponent.Level:setFgColor(color)
     GUI.Opponent.Level:echo("&lt;center&gt;"..ui.variables.opponent_level)
     GUI.Opponent.Level:show()
-    GUI.Opponent.Main.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..hpPerc.."%  &lt;/p&gt;")
-    GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
-    ui.fAssignTargetButton("o0", ui.variables.opponent_name)
     --
+    -- HP
+    GUI.Opponent.Main.Health:setValue(hp, hpMax,"&lt;p align=right&gt;"..hp.."%  &lt;/p&gt;")
     --
-    dif = GUI.Opponent.Main.Health.front:get_width() - dif
-    if (ui.parameters.last_hp_opponent ~= hp) then
-      if (dif &lt; 0) then
-        GUI.Opponent.Main.Health.dif = Geyser.Label:new2({
-          name = "GUI.Opponent.Main.Health.dif",
-          x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
-          y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y(),
-          width = -dif,
-          height = GUI.Opponent.Main.Health.front:get_height(),
-          message = [[- -]]
-        }, GUI.Opponent.Main)
-        GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-          qproperty-alignment: 'AlignRight';
-          border: 1px solid rgba(255, 0, 0, 0.8);
-          background-color: rgba(255, 0, 0, 0.4);
-        ]])
-      elseif (dif &gt; 0) then
-        GUI.Opponent.Main.Health.dif = Geyser.Label:new2({
-          name = "GUI.Opponent.Main.Health.dif",
-          x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - dif,
-          y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2,
-          width = dif-1,
-          height = GUI.Opponent.Main.Health.front:get_height() - 4,
-          message = [[++]]
-        }, GUI.Opponent.Main)
-        GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-          qproperty-alignment: 'AlignRight';
-          border: 1px solid rgba(0, 255, 0, 0.8);
-          background-color: rgba(0, 255, 0, 0.4);
-        ]])
-      end
-      ui.fIncrement_difTimer_o(2)
-      ui.parameters.last_hp_opponent = hp;
-    end
-    --
-    title = ui.variables.opponent_name;
+    -- Keybind
+    ui.fAssignTargetButton("o0", ui.variables.opponent_name)    
   else
-    GUI.Opponent.Level:setFgColor(color)
-    GUI.Opponent.Level:echo("")
-    GUI.Opponent.Level:hide()
-    --GUI.Opponent.Main.Health.dif:hide()
-    GUI.Opponent.Main.Health:setValue(0, 100,"")
+    --
+    -- reset showed name
+    title = "* nessuno *"    --
+    --
+    -- Remove name
     GUI.Opponent.Main.Health.front:echo("")
+    --
+    -- Hide level
+    GUI.Opponent.Level:hide()
+    --
+    -- Reset HP
+    GUI.Opponent.Main.Health:setValue(0, 100, "")
+    --
+    -- Remove Keybind
     ui.fAssignTargetButton("o0", nil)
   end
+  --
+  -- Diff. hp
+  hpDif = GUI.Opponent.Main.Health.front:get_width() - hpDif
+  if (hpDif &lt; 0) then
+    GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
+                                      GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
+    GUI.Opponent.Main.Health.dif:resize(-hpDif,
+                                        GUI.Opponent.Main.Health.front:get_height())
+    --
+    GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+      qproperty-alignment: 'AlignRight';
+      border: 1px solid rgba(255, 0, 0, 0.8);
+      background-color: rgba(255, 0, 0, 0.4);
+    ]])
+    --
+    GUI.Opponent.Main.Health.dif:echo("--")
+    ui.fIncrement_difTimer_o(2)
+  elseif (hpDif &gt; 0) then
+    GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpDif,
+                                      GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2)
+    GUI.Opponent.Main.Health.dif:resize(hpDif - 1,
+                                        GUI.Opponent.Main.Health.front:get_height() - 4)
+    --
+    GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+      qproperty-alignment: 'AlignRight';
+      border: 1px solid rgba(0, 255, 0, 0.8);
+      background-color: rgba(0, 255, 0, 0.4);
+    ]])
+    --
+    GUI.Opponent.Main.Health.dif:echo("++")
+    ui.fIncrement_difTimer_o(2)
+  end
+  ui.parameters.last_hp_opponent = hp;
+  --
   -- Target on title
   if (ui.variables.target) and (ui.variables.target ~= "") then
     title = title.." (T:"..ui.variables.target..")"
@@ -7260,13 +7288,12 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_p(time_left)
-  if ui.difTimer then
-    killTimer(ui.difTimer)
+  if ui.difTimer_p then
+    killTimer(ui.difTimer_p)
   end
   --
   if time_left &gt; 0 then
-    time_left = time_left - 1
-    ui.difTimer = tempTimer(1, function() ui.fIncrement_difTimer_p(time_left) end)
+    ui.difTimer_p = tempTimer(1, function() ui.fIncrement_difTimer_p(time_left - 1) end)
     GUI.Player.Main.Health.dif:show()
   else
     GUI.Player.Main.Health.dif:hide()
@@ -7362,14 +7389,11 @@ function ui.fUpdatePlayer()
   --
   dif = GUI.Player.Main.Health.front:get_width() - dif
   if (dif &lt; 0) then
-    GUI.Player.Main.Health.dif = Geyser.Label:new2({
-      name = "GUI.Player.Main.Health.dif",
-      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width(),
-      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y(),
-      width = -dif,
-      height = GUI.Player.Main.Health.front:get_height(),
-      message = [[- -]]
-    }, GUI.Player.Main)
+    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width(),
+                                    GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y());
+    GUI.Player.Main.Health.dif:resize(-dif,
+                                      GUI.Player.Main.Health.front:get_height())
+    GUI.Player.Main.Health.dif:echo("- -")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
       qproperty-alignment: 'AlignRight';
       border: 1px solid rgba(255, 0, 0, 0.8);
@@ -7377,14 +7401,11 @@ function ui.fUpdatePlayer()
     ]])
     ui.fIncrement_difTimer_p(2)
   elseif (dif &gt; 0) then
-    GUI.Player.Main.Health.dif = Geyser.Label:new2({
-      name = "GUI.Player.Main.Health.dif",
-      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - dif,
-      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2,
-      width = dif-1,
-      height = GUI.Player.Main.Health.front:get_height() - 4,
-      message = [[++]]
-    }, GUI.Player.Main)
+    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - dif,
+                                    GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2)
+    GUI.Player.Main.Health.dif:resize(dif-1,
+                                      GUI.Player.Main.Health.front:get_height() - 4)
+    GUI.Player.Main.Health.dif:echo("++")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
       qproperty-alignment: 'AlignRight';
       border: 1px solid rgba(0, 255, 0, 0.8);
@@ -7681,9 +7702,9 @@ function ui.fExecuteTargetButton(button)
       end
       ui.fUpdateTarget()
     elseif (type == "g") then
-      ui.fEcho2n("Nessun componente del gruppo associato a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun componente del gruppo da associare a "..ui.fGetTargetFormattedText(button)..".")
     elseif (type == "o") then
-      ui.fEcho2n("Nessun avversario ingaggiato associato a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun avversario ingaggiato da associare a "..ui.fGetTargetFormattedText(button)..".")
     elseif (type == "t") then
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
     end
@@ -9407,6 +9428,7 @@ GUI.CSS.Name = [[
 GUI.CSS.Keybind = [[
   background-color: rgba(0, 0, 0, 0);
 ]]
+--
 GUI.CSS.AC = [[
   border: 2px solid rgb(90,72,72); 
   border-top-left-radius: 10px;
