@@ -5265,7 +5265,7 @@ function ui.fUpdateAffects()
                          end )
   --
   i = 0;
-  for j,affect in ipairs(orderTable) do
+  for j, affect in ipairs(orderTable) do
     if (ui.actAffects[affect] &lt; 0) then
       ui.actAffects[affect] = nil
     elseif (i&lt;20) then
@@ -5310,7 +5310,7 @@ function ui.fUpdateAffects()
           shortName = shortName..string.sub(word, 1, 3).." "
         end
       end
-      GUI["AffectIcon"..i].icon:setFgColor(FGcolor)
+      GUI["AffectIcon"..i].icon:setFgColor(FGColor)
       GUI["AffectIcon"..i].icon:echo(shortName)
       --
       -- Icon
@@ -5335,7 +5335,7 @@ function ui.fUpdateAffects()
       GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
       --
       -- Duration
-      local durationColor = green
+      local durationColor = "grey"
       if (ui.actAffects[affect] == 0) then
         durationColor = "red"
       elseif (ui.actAffects[affect] == 1) then
@@ -5349,11 +5349,9 @@ function ui.fUpdateAffects()
       -- ToolTip
       GUI["AffectIcon"..i]:setToolTip(affect, 10)
       --
-      -- Position
-      GUI["AffectIcon"..i]:move(x, y)
-      --
       -- Show if inside box
       if (y&lt;=GUI.Affect.Main.Body:get_height() - 20) then
+        GUI["AffectIcon"..i]:move(x, y)
         GUI["AffectIcon"..i]:show();
       else
         GUI["AffectIcon"..i]:hide();
@@ -5368,6 +5366,7 @@ function ui.fUpdateAffects()
       end
     end
   end
+  --
   -- Hide not used affects
   for i=i+1, 20 do
     if (GUI["AffectIcon"..i]) then
@@ -7961,19 +7960,19 @@ end
     GUI["AffectIcon"..i].icon:enableClickthrough() -- for tooltip
     GUI["AffectIcon"..i].icon:setStyleSheet(GUI.CSS.AffectIcon)
     GUI["AffectIcon"..i].icon:setFgColor("black");
-    GUI["AffectIcon"..i].icon:setFontSize(5);
+    GUI["AffectIcon"..i].icon:setFontSize(7);
     --
     -- Time
     GUI["AffectIcon"..i].time = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".time",
       x = 0, y = -1,
       width = 30,
-      height = 10,
+      height = 8,
     }, GUI["AffectIcon"..i])
     GUI["AffectIcon"..i].time:setStyleSheet([[
       background-color: rgba(0, 0, 0, 0);
     ]])
-    GUI["AffectIcon"..i].time:setFontSize(6);
+    GUI["AffectIcon"..i].time:setFontSize(5);
     --
     GUI["AffectIcon"..i]:hide()
   end
@@ -9158,7 +9157,7 @@ ui.affects = {
 --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
 --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
 --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
-["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "white", shortName = "PSI Fire" },
+["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
 --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
 --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
 }

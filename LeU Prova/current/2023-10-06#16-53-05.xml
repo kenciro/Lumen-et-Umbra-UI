@@ -2,8 +2,8 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
-			<name>LeU Live</name>
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSP="yes" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="no" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300">
+			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
 				<string>Telegram Connector</string>
@@ -13,15 +13,15 @@
 				<string>Invasioni</string>
 				<string>generic_mapper</string>
 			</mInstalledPackages>
-			<url>mclmud.mclink.it</url>
+			<url>new-leu.leu.it</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>-1</serverPackageVersion>
-			<port>6000</port>
+			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>334</borderLeftWidth>
-			<borderRightWidth>563</borderRightWidth>
-			<wrapAt>120</wrapAt>
+			<borderLeftWidth>305</borderLeftWidth>
+			<borderRightWidth>605</borderRightWidth>
+			<wrapAt>150</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
 			<mBgColor>#000000</mBgColor>
@@ -127,7 +127,7 @@ local to = copy2decho(matches[3])
 local message = copy2decho(matches[4])
 --
 if (matches[2] == "["..ui.variables.character_name.."]") then
-  from = string.gsub(from, ui.variables.character_name, "Tu")
+  from = string.gsub(from, ui.variables.name, "Tu")
   from = string.gsub(from, "]\&lt;r\&gt;", "]")
   from = from.." a "..matches[3].."\&lt;r\&gt;"
 elseif (matches[2] == "Mandi") or (matches[2] == "Tu") then
@@ -228,126 +228,6 @@ GUI.PublicChat.Main.Body.Console:decho(str)</script>
 						<string>(^\[)(.*)\] (\'.*\')$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</TriggerGroup>
-			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Exits</name>
-				<script></script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList />
-				<regexCodePropertyList />
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Exits</name>
-					<script>ui.fDebug("[trig] Exits")
-ui.strExits = matches[2]
-ui.fUpdateMap()</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^Uscite: (.*)</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Room name</name>
-					<script>ui.fDebug("[trig] Room name")
-ui.roomName = matches[2]
-ui.roomType = matches[3]</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto|Prato)</string>
-						<string>^(.*) (\[Zona di Guerra\])</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Teleport</name>
-					<script>ui.fDebug("[trig] Teleport")
---
-ui.path = {}
-ui.memPath = 0
-ui.idxPath = 0
---
-ui.nCad = 0</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>Chiudi gli occhi ed apri un passaggio nel quale entri velocemente.</string>
-						<string>Cerchi di attraversare l'acqua, ma la superfice sembra respingerti.</string>
-						<string>Cerchi di fuggire in tutta fretta.</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Specchi di Astral</name>
-					<script>ui.fDebug("[trig] Specchi di Astral")
-ui.strExits = ui.strExits.." "..string.gsub(matches[2], " ", "-")
-ui.fUpdateMap()</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^Nell'avvicinarti vedi uno specchio d'acqua color (.*).</string>
-						<string>^Nell'avvicinarti vedi uno specchio d'acqua di colore (.*).</string>
-						<string>^Nell'avvicinarti vedi uno specchio d'acqua appiccicosa color (.*).</string>
-						<string>^Nell'avvicinarti vedi uno specchio d'acqua (.*).</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
@@ -1456,7 +1336,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -5099,7 +4979,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: red;
+    background-color: green;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -5124,8 +5004,12 @@ cecho("Trigger First AID (automatico) "..status.."\n")
 			<script>--[[
 ver [...leu prova... in corso...]
 ------------
+- Aggiunta lettura dati GMCP per i Widgets
+- Aggiunta gestione profili (uiprofile)
+- Aggiunto gouge Power in widget Player
+- Aggiunto lettura degli Effetti per il widget Affects
 --
-- Allineato all'UI di LeU Prova
+- Allineato all'UI di LeU Live
 - Unificata la funzione ui.fParsingItem(text) per Live e Prova
 - Corretto visuaizzazione perdita\recuper hp per player e opponent
 --
@@ -5242,18 +5126,71 @@ ver 0.1b
 					<name>Affects</name>
 					<packageName></packageName>
 					<script>--
+function ui.fGetColor(color)
+  tabColor = {
+    ["0000"] = "#080808", -- Nero 
+    ["0001"] = "#870000", -- Rosso scuro 
+    ["0002"] = "#008700", -- Verde scuro 
+    ["0003"] = "#878700", -- Marrone 
+    ["0004"] = "#000087", -- Blu 
+    ["0005"] = "#870087", -- Viola 
+    ["0006"] = "#008787", -- Cyan 
+    ["0007"] = "#a8a8a8", -- Grigio (default)        
+    ["0008"] = "#767676", -- Grigio scuro
+    ["0009"] = "#ff0000", -- Rosso chiaro
+    ["0010"] = "#00ff00", -- Verde chiaro
+    ["0011"] = "#ffff00", -- Giallo
+    ["0012"] = "#0000ff", -- Blu chiaro
+    ["0013"] = "#ff00ff", -- Viola chiaro
+    ["0014"] = "#00ffff", -- Celeste chiaro
+    ["0015"] = "#ffffff", -- Bianco
+  }
+  --
+  if (string.find(color, "$chf")) then
+    -- $chfRRGGBB
+    color = string.gsub(color, "$chf", "#")
+  elseif (string.find(color, "$c")) then
+    -- $cXXXX
+    color = string.gsub(color, "$c", "")
+    color = tabColor[color] or tabColor["0007"]
+  end
+  return color
+end
+--
 function ui.fUpdateAffects()
   local x = 0
   local y = 0
   local i
   local orderTable = {}
   --
+  ui.actAffects = {}
+  --
   -- Simulation (for debug)
   if (ui.enDebug) then
     for i=1, 20 do
-      if (ui.actAffects["affect_"..i] == nil) then
-        ui.actAffects["affect_"..i] = i*2
+      local name = "Af_"..i 
+      ui.actAffects[name] = {} 
+      ui.actAffects[name].duration = tonumber(i*2)
+      ui.actAffects[name].isRound  = false
+      if (i-1&lt;10)then
+        ui.actAffects[name].color    = "$c000"..(i-1)
+      else
+        ui.actAffects[name].color    = "$c00"..(i-1)
       end
+    end
+  elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
+    -- GMCP
+    for affect in pairs(gmcp.char.affects) do
+      local name = gmcp.char.affects[affect].name 
+      ui.actAffects[name] = {}
+      ui.actAffects[name].category         = gmcp.char.affects[affect].category
+      ui.actAffects[name].color            = gmcp.char.affects[affect].color
+      ui.actAffects[name].dispelResistance = gmcp.char.affects[affect].dispelResistance
+      ui.actAffects[name].duration         = gmcp.char.affects[affect].duration
+      ui.actAffects[name].isNegative       = gmcp.char.affects[affect].isNegative
+      ui.actAffects[name].isRound          = gmcp.char.affects[affect].isRound
+      ui.actAffects[name].stacks           = gmcp.char.affects[affect].stacks
+      ui.actAffects[name].type             = gmcp.char.affects[affect].type
     end
   end
   -- Order Affects
@@ -5261,14 +5198,18 @@ function ui.fUpdateAffects()
     orderTable[#orderTable+1] = affect
   end
   table.sort(orderTable, function (affect1, affect2)
-                           return ui.actAffects[affect1] &lt; ui.actAffects[affect2]
+                           if (ui.actAffects[affect1].isRound) and (not ui.actAffects[affect2].isRound) then
+                             return true
+                           elseif (not ui.actAffects[affect1].isRound) and (ui.actAffects[affect2].isRound) then
+                             return false
+                           else 
+                             return ui.actAffects[affect1].duration &lt; ui.actAffects[affect2].duration
+                           end
                          end )
   --
   i = 0;
-  for j,affect in ipairs(orderTable) do
-    if (ui.actAffects[affect] &lt; 0) then
-      ui.actAffects[affect] = nil
-    elseif (i&lt;20) then
+  for j, affect in ipairs(orderTable) do
+    if (i&lt;20) then
       local icon = nil
       local BGColor = nil
       local FGColor = "black"
@@ -5310,7 +5251,7 @@ function ui.fUpdateAffects()
           shortName = shortName..string.sub(word, 1, 3).." "
         end
       end
-      GUI["AffectIcon"..i].icon:setFgColor(FGcolor)
+      GUI["AffectIcon"..i].icon:setFgColor(FGColor)
       GUI["AffectIcon"..i].icon:echo(shortName)
       --
       -- Icon
@@ -5321,11 +5262,12 @@ function ui.fUpdateAffects()
       end
       --
       -- BG color
-      if (not BGColor) then
-        local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
-        local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-        local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
-        BGColor = string.format("#%02X%02X%02X", R, G, B)
+      if (not BGColor) then  
+        if (ui.actAffects[affect].color) then
+          BGColor = ui.fGetColor(ui.actAffects[affect].color)
+        else
+          BGColor = "rgba(27, 87, 141, 255)"
+        end
       end
       CCS = CCS..[[
               background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 ]]..BGColor..[[);
@@ -5335,25 +5277,26 @@ function ui.fUpdateAffects()
       GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
       --
       -- Duration
-      local durationColor = green
-      if (ui.actAffects[affect] == 0) then
+      local durationColor = "grey"
+      if (ui.actAffects[affect].duration &lt;= 0) then
         durationColor = "red"
-      elseif (ui.actAffects[affect] == 1) then
+      elseif (ui.actAffects[affect].duration == 1) then
         durationColor = "orange"
-      elseif  (ui.actAffects[affect] == 2) then
+      elseif  (ui.actAffects[affect].duration == 2) then
         durationColor = "yellow"
       end
+      if (ui.actAffects[affect].isRound) then
+        ui.actAffects[affect].duration = "("..ui.actAffects[affect].duration..")"
+      end
       GUI["AffectIcon"..i].time:setFgColor(durationColor)
-      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.actAffects[affect])
+      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.actAffects[affect].duration)
       --
       -- ToolTip
       GUI["AffectIcon"..i]:setToolTip(affect, 10)
       --
-      -- Position
-      GUI["AffectIcon"..i]:move(x, y)
-      --
       -- Show if inside box
       if (y&lt;=GUI.Affect.Main.Body:get_height() - 20) then
+        GUI["AffectIcon"..i]:move(x, y)
         GUI["AffectIcon"..i]:show();
       else
         GUI["AffectIcon"..i]:hide();
@@ -5368,6 +5311,7 @@ function ui.fUpdateAffects()
       end
     end
   end
+  --
   -- Hide not used affects
   for i=i+1, 20 do
     if (GUI["AffectIcon"..i]) then
@@ -5376,11 +5320,7 @@ function ui.fUpdateAffects()
   end
 end
 --
-function ui.fTickUpdateAffects()
-  ui.fDebug("ui.fTickUpdateAffects()");
-  for affect in pairs(ui.actAffects) do
-    ui.actAffects[affect] = ui.actAffects[affect] - 1
-  end
+if (ui.enDebug) then
   ui.fUpdateAffects()
 end</script>
 					<eventHandlerList />
@@ -6502,25 +6442,66 @@ end</script>
 					<script>--
 function ui.fUpdateGroup()
   -- Show 10 members max
-  local nGroupMembers = ui.enDebug and math.random(0, 12) or ui.totalMember
+  local nGroupMembers = 0
   local wndH = GUI.Group.Main.Body:get_height();
   local wndW = GUI.Group.Main.Body:get_width();
   local memberH = 55
   local memberW = 100;
   local nCol = 2;
   local nRow = 5;
-  local i = 1
+  local i = 0
   local mod
+  --
+  ui.group = {}
+  if (ui.enDebug) then
+    for member=1, 10 do
+      nGroupMembers = nGroupMembers + 1
+      ui.group[nGroupMembers]                = {}
+      ui.group[nGroupMembers].name           = "menber_"..member
+      ui.group[nGroupMembers].isLeader       = (member == 2)
+      ui.group[nGroupMembers].hp             = math.random(0, 100)
+      ui.group[nGroupMembers].maxhp          = 100
+      ui.group[nGroupMembers].mana           = math.random(0, 100)
+      ui.group[nGroupMembers].maxmana        = 100
+      ui.group[nGroupMembers].mov            = math.random(0, 100)
+      ui.group[nGroupMembers].maxmov         = 100
+      ui.group[nGroupMembers].pov            = math.random(0, 100)
+      ui.group[nGroupMembers].maxpov         = 100
+      ui.group[nGroupMembers].roomPos        = 5
+      
+    end
+  elseif (gmcp) and (gmcp.char) and (gmcp.char.group) then
+    for member in pairs(gmcp.char.group) do
+      local name = (gmcp.char.group[member].name or "")
+      if (name ~= ui.variables.name) then
+        nGroupMembers = nGroupMembers + 1
+        ui.group[nGroupMembers]                = {}
+        ui.group[nGroupMembers].name           = gmcp.char.group[member].name or ""
+        ui.group[nGroupMembers].isLeader       = gmcp.char.group[member].isLeader or false
+        ui.group[nGroupMembers].hp             = gmcp.char.group[member].hp or 0
+        ui.group[nGroupMembers].maxhp          = gmcp.char.group[member].maxhp or 0
+        ui.group[nGroupMembers].mana           = gmcp.char.group[member].mana or 0
+        ui.group[nGroupMembers].maxmana        = gmcp.char.group[member].maxmana or 0
+        ui.group[nGroupMembers].mov            = gmcp.char.group[member].mov or 0
+        ui.group[nGroupMembers].maxmov         = gmcp.char.group[member].maxmov or 0
+        ui.group[nGroupMembers].pow            = gmcp.char.group[member].pow or 0
+        ui.group[nGroupMembers].maxpow         = gmcp.char.group[member].maxpow or 0
+        ui.group[nGroupMembers].roomPos        = gmcp.char.group[member].roomPos or 0
+      else
+        ui.variables.leader        = gmcp.char.group[member].isLeader or false 
+      end
+    end
+  end
+  --
+  if nGroupMembers &gt; 10 then
+    nGroupMembers = 10
+  end
   --
   if (nGroupMembers &lt;= math.floor(wndH / memberH)) then
     nCol = 1;
   end
   nRow = math.min(10/nCol, math.floor(wndH / memberH));
   memberW = wndW / nCol;
-  --
-  if nGroupMembers &gt; 10 then
-    nGroupMembers = 10
-  end
   --
   for r = 1, nRow do
     for c = 1, nCol do
@@ -6533,33 +6514,34 @@ function ui.fUpdateGroup()
         GUI.Group.Main.Body["g"..mod]:hide();
         ui.fAssignTargetButton("g"..mod, nil)
       else
-        local memberName = ui.enDebug and "D3Bu4 G"..i or (ui.group[i][1] or "")
-        local isLeader = ui.enDebug and true or (ui.group[i][2] or false)
-        local memberHp = ui.enDebug and math.random(0, 100) or (ui.group[i][3] or 0)
-        local memberMana = ui.enDebug and math.random(0, 100) or (ui.group[i][4] or 0)
-        local memberPow = ui.enDebug and math.random(0, 100) or (ui.group[i][5] or 0)
+        local name     = ui.group[i].name
+        local isLeader = ui.group[i].isLeader
+        local hp       = ui.group[i].hp
+        local maxhp    = ui.group[i].maxhp
+        local mana     = ui.group[i].mana
+        local maxmana  = ui.group[i].maxmana
+        local mov      = ui.group[i].mov
+        local maxmov   = ui.group[i].maxmov
+        local pow      = ui.group[i].pow
+        local maxpow   = ui.group[i].maxpow
+        local roomPos  = ui.group[i].roomPos
         --
-        --GUI.Group.Main.Body["g"..mod].Health.front:echo(ansi2string(memberName))
-        GUI.Group.Main.Body["g"..mod].Health:setValue(memberHp, 100, memberHp.."% "..ansi2string(memberName))
-        GUI.Group.Main.Body["g"..mod].Mana:setValue(memberMana, 100)
-        GUI.Group.Main.Body["g"..mod].Stamina:setValue(memberPow, 100)
+        GUI.Group.Main.Body["g"..mod].Health:setValue(hp, maxhp, hp.."/"..maxhp.." "..ansi2string(name))
+        GUI.Group.Main.Body["g"..mod].Mana:setValue(mana, maxmana)
+        GUI.Group.Main.Body["g"..mod].Stamina:setValue(mov, maxmov)
         --
-        if (ui.enDebug) then
-          isLeader = (mod == nGroupMembers)
-        end
-        
         if (isLeader) then
           GUI.Group.Main.Body["g"..mod].Gem:show()
         else
           GUI.Group.Main.Body["g"..mod].Gem:hide()
         end
         GUI.Group.Main.Body["g"..mod]:show();
-        ui.fAssignTargetButton("g"..mod, memberName)
+        ui.fAssignTargetButton("g"..mod, name)
       end
     end
   end
   --
-  for g = i+1, 10 do
+  for g = nGroupMembers+1, 10 do
     mod = g % 10
     GUI.Group.Main.Body["g"..mod]:hide()
     ui.fAssignTargetButton("g"..mod, nil)
@@ -7079,84 +7061,169 @@ function ui.fGetToken(exits, dir)
 end
 --
 function ui.fUpdateMap()
+  local fontW,fontH = calcFontSize("GUI.MapCompass.Main.Body.Exits")
+  local blackCols
+  local blackRows
+  local spaces = ""
+  --
+  local name    = ""
+  local zone    = ""
+  local subzone = ""
+  local terrain = ""
+  local isOnMap = false
   local token
   local exits = {}
-  --
-  -- Generate directiones table
-  ui.exits = {}
-  for token in string.gmatch(ui.strExits, "[^%s]+") do
-    local dir = string.lower(token)
-    if (ui.dirCompress[dir]) then
-      table.insert(exits, ui.dirCompress[dir]);
-      table.insert(ui.exits, ui.dirCompress[dir]);
-    else
-      table.insert(exits, token);
-    end
-  end
   --
   clearWindow("GUI.MapCompass.Main.Body.Exits")
   clearWindow("GUI.MapCompass.Main.Body.OtherExits")
   --
-  -- Room name
-  GUI.MapCompass:setTitle(ui.roomName)
-  --
-  -- Exits and Position
-  GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;┌───"..ui.fGetToken(exits, "n").."───"..ui.fGetToken(exits, "u").."\n")
-  GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(1).."│\n")
-  GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(exits, "w")..ui.fGetPosition(2)..ui.fGetToken(exits, "e").."\n")
-  GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(3).."│".."\n")
-  GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(exits, "d").."───"..ui.fGetToken(exits, "s").."───┘\n")
-  --
-  -- Storico del percorso  
-  local str;
-  if (ui.idxPath == ui.memPath) then
-    str = ui.idxPath;
-  elseif (ui.memPath - ui.idxPath &lt;= 4) then 
-    str = ui.memPath;
-  elseif (ui.idxPath &gt; 4) then 
-    str = ui.idxPath + 4;
-  else
-    str = 8;
+  ui.exits = {}
+  ui.characters = {}
+  ui.objects = {}
+  --for token in string.gmatch(ui.strExits, "[^%s]+") do
+  if (gmcp) and (gmcp.room) and (gmcp.room.info) then
+    name    = gmcp.room.info.name or name
+    zone    = gmcp.room.info.zone or zone
+    subzone = gmcp.room.info.subzone or subzone
+    terrain = gmcp.room.info.terrain or terrain
+    isOnMap = gmcp.room.info.isOnMap or isOnMap
+    --  Exits
+    if (gmcp.room.info.exits) then
+      for token in pairs(gmcp.room.info.exits) do
+        local dir = string.lower(token)
+        if (ui.dirCompress[dir]) then
+          table.insert(exits, ui.dirCompress[dir]);
+          table.insert(ui.exits, ui.dirCompress[dir]);
+        else
+          table.insert(exits, token);
+        end
+      end
+    end
+    --  Characters
+    if (gmcp.room.info.characters) then
+      for _, character in pairs(gmcp.room.info.characters) do
+        table.insert(ui.characters, character);      
+      end
+    end
+    -- Objects
+    if (gmcp.room.info.objects) then
+      for _, object in pairs(gmcp.room.info.objects) do
+        table.insert(ui.objects, object);      
+      end
+    end    
   end
   --
-  for i=str, str-7, -1 do
-    if (ui.path[i]) then
-      local dir = ui.path[i]
+  if (isOnMap) then
+    -- Wildeness
+    if (gmcp.overland) and
+       (gmcp.overland.map) and
+       (gmcp.overland.map.size) then
+      local mapRows = tonumber(gmcp.overland.map.size)
+      local mapCols = mapRows -- tonumber(gmcp.overland.map.radius) * 4
       --
-      if (i&lt;=ui.idxPath) then
-        dir = ui.dirReverse[dir]
+      blackCols = math.floor( GUI.MapCompass.Main.Body.Exits:get_width() / fontW )
+      blackCols = blackCols - mapCols
+      blackCols = math.floor( blackCols / 2 ) 
+      --
+      for i=1, blackCols do
+        spaces = spaces.." "
+      end 
+      --
+      for i=0, mapRows-1 do
+        if gmcp.overland.map["r"..i] then
+          GUI.MapCompass.Main.Body.Exits:decho(spaces..ansi2decho(gmcp.overland.map["r"..i]).."\n")
+        end
       end
-      --      
-      if (i == ui.memPath) and (ui.idxPath == ui.memPath)then
-        dir = "⨂ "..dir
-      elseif (i == ui.idxPath) then
-        dir = " ⨂ "..dir
-      elseif (i == 1) and (ui.idxPath == 0) then
-        dir = dir.." ⨂"
-      end
-      GUI.MapCompass.Main.Body.Exits:decho(dir)
     end
+    --
+    -- Room name
+    GUI.MapCompass:setTitle(zone);
+    --
+    -- Room type
+    GUI.MapCompass.Main.B2:echo("&lt;center&gt;"..subzone.." - "..name);
+  else
+    --
+    -- Exits and Position
+    GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;┌───"..ui.fGetToken(exits, "n").."───"..ui.fGetToken(exits, "u").."\n")
+    GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(1).."│\n")
+    GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(exits, "w")..ui.fGetPosition(2)..ui.fGetToken(exits, "e").."\n")
+    GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(3).."│".."\n")
+    GUI.MapCompass.Main.Body.Exits:decho("&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(exits, "d").."───"..ui.fGetToken(exits, "s").."───┘\n")
+    --
+    -- Storico del percorso  
+    local str;
+    if (ui.idxPath == ui.memPath) then
+      str = ui.idxPath;
+    elseif (ui.memPath - ui.idxPath &lt;= 4) then 
+      str = ui.memPath;
+    elseif (ui.idxPath &gt; 4) then 
+      str = ui.idxPath + 4;
+    else
+      str = 8;
+    end
+    --
+    for i=str, str-7, -1 do
+      if (ui.path[i]) then
+        local dir = ui.path[i]
+        --
+        if (i&lt;=ui.idxPath) then
+          dir = ui.dirReverse[dir]
+        end
+        --      
+        if (i == ui.memPath) and (ui.idxPath == ui.memPath)then
+          dir = "⨂ "..dir
+        elseif (i == ui.idxPath) then
+          dir = " ⨂ "..dir
+        elseif (i == 1) and (ui.idxPath == 0) then
+          dir = dir.." ⨂"
+        end
+        GUI.MapCompass.Main.Body.Exits:decho(dir)
+      end
+    end
+    --
+    -- Other exits
+    if (table.size(exits) &gt; 0) then
+      GUI.MapCompass.Main.Body.OtherExits:setFgColor("white")
+      GUI.MapCompass.Main.Body.OtherExits:echo("Altre uscite:\n")
+      while (exits[1] ~= nil) do
+        token = exits[1]
+        if (exits[2] ~= nil) and (exits[2] == "(chiuso)") then
+          table.remove(exits, 2)
+          token = "("..token..")"
+        end
+        GUI.MapCompass.Main.Body.OtherExits:decho(ui.dirToken["e"].." "..token.."\n")
+        table.remove(exits, 1)
+        GUI.MapCompass.Main.Body.OtherExits:echo("\n")
+      end
+    end
+    --
+    -- Room name
+    GUI.MapCompass:setTitle(name.." - "..terrain)
+    --
+    -- Room type
+    GUI.MapCompass.Main.B2:echo("&lt;center&gt;"..zone)
   end
   --
-  -- Other exits
-  if (table.size (exits) &gt; 0) then
-    GUI.MapCompass.Main.Body.OtherExits:setFgColor("white")
-    GUI.MapCompass.Main.Body.OtherExits:echo("Altre uscite:\n")
-    while (exits[1] ~= nil) do
-      token = exits[1]
-      if (exits[2] ~= nil) and (exits[2] == "(chiuso)") then
-        table.remove(exits, 2)
-        token = "("..token..")"
-      end
-      GUI.MapCompass.Main.Body.OtherExits:decho(ui.dirToken["e"].." "..token.."\n")
-      table.remove(exits, 1)
+  -- Objects
+  if (table.size(ui.objects) &gt; 0) then
+    GUI.MapCompass.Main.Body.OtherExits:setFgColor("yellow")
+    GUI.MapCompass.Main.Body.OtherExits:echo("Oggetti:\n")
+    for _, object in pairs(ui.objects) do
+      GUI.MapCompass.Main.Body.OtherExits:decho("- "..object.desc.."\n")
     end
-  end
+    GUI.MapCompass.Main.Body.OtherExits:echo("\n")
+  end  
   --
-  -- Room type
-  GUI.MapCompass.Main.B2:echo("&lt;center&gt;"..ui.roomType)
-end
---</script>
+  -- Characters
+  if (table.size(ui.characters) &gt; 0) then
+    GUI.MapCompass.Main.Body.OtherExits:setFgColor("cyan")
+    GUI.MapCompass.Main.Body.OtherExits:echo("Personaggi:\n")
+    for _, character in pairs(ui.characters) do
+      GUI.MapCompass.Main.Body.OtherExits:decho("- ["..character.level.."] "..character.desc.."\n")
+    end
+    GUI.MapCompass.Main.Body.OtherExits:echo("\n")
+  end
+end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
@@ -7183,23 +7250,27 @@ function ui.fUpdateOpponent()
   local levDif
   local hpDif = GUI.Opponent.Main.Health.front:get_width()
   --
-  -- init last hp
+  -- init 
   ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
+  ui.variables.opponent_hp       = 0
+  ui.variables.opponent_level    = 0
+  ui.variables.opponent_name     = ""
+  ui.variables.opponent_desc     = ""
   --
   if (ui.enDebug) then
-    ui.variables.opponent_health     = math.random(0, 100)
-    ui.variables.opponent_health_max = 100
+    ui.variables.opponent_hp         = math.random(0, 100)
     ui.variables.opponent_level      = math.random(0, 99)
     ui.variables.opponent_name       = "C4tt1v0ne"
-  else
-    ui.variables.opponent_health     = gmcp.MSDP.OPPONENT_HEALTH or ui.variables.opponent_health
-    ui.variables.opponent_health_max = gmcp.MSDP.OPPONENT_HEALTH_MAX or ui.variables.opponent_health_max
-    ui.variables.opponent_level      = gmcp.MSDP.OPPONENT_LEVEL or ui.variables.opponent_level
-    ui.variables.opponent_name       = gmcp.MSDP.OPPONENT_NAME or ui.variables.opponent_name
+    ui.variables.opponent_desc       = "Il C4tt1v0ne di d3bug"
+  elseif (gmcp) and (gmcp.char) and (gmcp.char.vitals) and (gmcp.char.vitals.fighting) then
+    ui.variables.opponent_hp         = gmcp.char.vitals.fighting.hp or ui.variables.opponent_hp
+    ui.variables.opponent_level      = gmcp.char.vitals.fighting.level or ui.variables.opponent_level
+    ui.variables.opponent_name       = gmcp.char.vitals.fighting.name or ui.variables.opponent_name
+    ui.variables.opponent_desc       = gmcp.char.vitals.fighting.desc or ui.variables.opponent_desc
   end
   --
-  hp = tonumber(ui.variables.opponent_health) or 0
-  hpMax = tonumber(ui.variables.opponent_health_max) or 0
+  hp = tonumber(ui.variables.opponent_hp) or 0
+  hpMax = 100
   levDif = tonumber(ui.variables.level) - tonumber(ui.variables.opponent_level)
   --
   if (ui.variables.opponent_name ~= "") then
@@ -7215,15 +7286,13 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
     --
     -- Level color
-    local color
+    local color = "red"
     if (levDif &gt;= 5) then
       color = "white"
     elseif (levDif &gt;= 0) then
       color = "green"
     elseif (levDif &gt;= -5) then
       color = "orange"
-    else
-      color = "red"
     end
     --
     GUI.Opponent.Level:setFgColor(color)
@@ -7353,39 +7422,86 @@ function ui.fIncrement_difTimer_p(time_left)
 end
 --
 function ui.fUpdatePlayer()
-  ui.variables.ac             = gmcp.MSDP.AC or ui.variables.ac
-  ui.variables.alignment      = gmcp.MSDP.ALIGNMENT or ui.variables.alignment
-  ui.variables.experience     = gmcp.MSDP.EXPERIENCE or ui.variables.experience
-  ui.variables.money          = gmcp.MSDP.MONEY or ui.variables.money
-  ui.variables.character_name = gmcp.MSDP.CHARACTER_NAME or ui.variables.character_name
-  ui.variables.health         = gmcp.MSDP.HEALTH or ui.variables.health
-  ui.variables.health_max     = gmcp.MSDP.HEALTH_MAX or ui.variables.health_max
-  ui.variables.level          = gmcp.MSDP.LEVEL or ui.variables.level
-  ui.variables.mana           = gmcp.MSDP.MANA or ui.variables.mana
-  ui.variables.mana_max       = gmcp.MSDP.MANA_MAX or ui.variables.mana_max
-  ui.variables.movement       = gmcp.MSDP.MOVEMENT or ui.variables.movement
-  ui.variables.movement_max   = gmcp.MSDP.MOVEMENT_MAX or ui.variables.movement_max
-  ui.variables.character_name = gmcp.MSDP.CHARACTER_NAME or ui.variables.character_name
+  --
+  -- init vars
+  ui.variables.class          = ui.variables.class or ""
+  ui.variables.experience     = ui.variables.experience or 0
+  ui.variables.gold           = ui.variables.gold or 0
+  ui.variables.level          = ui.variables.level or 0
+  ui.variables.name           = ui.variables.name or ""
+  ui.variables.race           = ui.variables.race or ""
+  ui.variables.toNext         = ui.variables.toNext or 0
+
+  ui.variables.hp             = ui.variables.hp or 0
+  ui.variables.maxhp          = ui.variables.maxhp or 0
+  ui.variables.mana           = ui.variables.mana or 0
+  ui.variables.maxmana        = ui.variables.maxmana or 0
+  ui.variables.mov            = ui.variables.mov or 0
+  ui.variables.maxmov         = ui.variables.maxmov or 0
+  ui.variables.pow            = ui.variables.pow or 0
+  ui.variables.maxpow         = ui.variables.maxpow or 0
+  
+  ui.variables.roomPos        = ui.variables.roomPos or 0
+  ui.variables.roundMax       = ui.variables.roundMax or 0
+  ui.variables.roundTicker    = ui.variables.roundTicker or 0
   --
   -- for debug
   if (ui.enDebug) then
-    ui.variables.health         = math.random(0, 100)
-    ui.variables.health_max     = 100
+    ui.variables.class          = "debugger"
+    ui.variables.experience     = math.random(0, 100000000)
+    ui.variables.gold           = math.random(0, 100000000)
     ui.variables.level          = math.random(0, 60)
+    ui.variables.name           = "D3Bu4 M0D3"
+    ui.variables.race           = "bot"
+    ui.variables.toNext         = math.random(0, ui.variables.experience)
+  
+    ui.variables.hp             = math.random(0, 100)
+    ui.variables.maxhp          = 100
     ui.variables.mana           = math.random(0, 100)
-    ui.variables.mana_max       = 100
-    ui.variables.movement       = math.random(0, 100)
-    ui.variables.movement_max   = 100
-    ui.variables.character_name = "D3Bu4 M0D3"
+    ui.variables.maxmana        = 100
+    ui.variables.mov            = math.random(0, 100)
+    ui.variables.maxmov         = 100
+    ui.variables.pow            = math.random(0, 100)
+    ui.variables.maxpow         = 100
+    
+    ui.variables.roomPos        = math.random(1, 9)
+    ui.variables.roundMax       = 5
+    ui.variables.roundTicker    = math.random(0, 5)
+  elseif (gmcp) and (gmcp.char) and (gmcp.char.base) and (gmcp.char.vitals) then
+    ui.variables.class          = gmcp.char.base.class or ui.variables.class
+    ui.variables.experience     = gmcp.char.base.experience or ui.variables.experience
+    ui.variables.gold           = gmcp.char.base.gold or ui.variables.gold
+    ui.variables.level          = gmcp.char.base.level or ui.variables.level
+    ui.variables.name           = gmcp.char.base.name or ui.variables.name
+    ui.variables.race           = gmcp.char.base.race or ui.variables.race
+    ui.variables.toNext         = gmcp.char.base.toNext or ui.variables.toNext
+  
+    ui.variables.hp             = gmcp.char.vitals.hp or ui.variables.hp
+    ui.variables.maxhp          = gmcp.char.vitals.maxhp or ui.variables.maxhp
+    ui.variables.mana           = gmcp.char.vitals.mana or ui.variables.mana
+    ui.variables.maxmana        = gmcp.char.vitals.maxmana or ui.variables.maxmana
+    ui.variables.mov            = gmcp.char.vitals.mov or ui.variables.mov
+    ui.variables.maxmov         = gmcp.char.vitals.maxmov or ui.variables.maxmov
+    ui.variables.pow            = gmcp.char.vitals.pow or ui.variables.pow
+    ui.variables.maxpow         = gmcp.char.vitals.maxpow or ui.variables.maxpow
+    
+    ui.variables.roomPos        = gmcp.char.vitals.roomPos or ui.variables.roomPos
+    ui.variables.roundMax       = gmcp.char.vitals.roundMax or ui.variables.roundMax
+    ui.variables.roundTicker    = gmcp.char.vitals.roundTicker or ui.variables.roundTicker
   end
   --
   -- Experience
   local experience = ui.variables.experience or 0
-  local toNext = 300000000
+  local toNext = ui.variables.toNext or 0
+  if (toNext &lt; 0) then
+    toNext = 400000000
+  else
+    toNext = experience + toNext
+  end 
   --
   -- HP
-  local hp = tonumber(ui.variables.health)
-  local hpMax = tonumber(ui.variables.health_max)
+  local hp = tonumber(ui.variables.hp)
+  local hpMax = tonumber(ui.variables.maxhp)
   local hpPerc = 0
   local hpDif = GUI.Player.Main.Health.front:get_width()
   ui.parameters.last_hp = ui.parameters.last_hp or 0;
@@ -7399,9 +7515,13 @@ function ui.fUpdatePlayer()
   end
   ui.parameters.last_hp = hp
   --
+  -- Round Tick
+  local roundTicker = tonumber(ui.variables.roundTicker)
+  local roundMax = tonumber(ui.variables.roundMax)  
+  --
   -- Mana
   local mana = tonumber(ui.variables.mana)
-  local manaMax = tonumber(ui.variables.mana_max)
+  local manaMax = tonumber(ui.variables.maxmana)
   local manaPerc = 0
   ui.parameters.last_mana = ui.parameters.last_mana or 0;
   --
@@ -7415,33 +7535,43 @@ function ui.fUpdatePlayer()
   ui.parameters.last_mana = mana
   --
   -- Stamina
-  local stamina = tonumber(ui.variables.movement)
-  local staminaMax = tonumber(ui.variables.movement_max)
+  local stamina = tonumber(ui.variables.mov)
+  local staminaMax = tonumber(ui.variables.maxmov)
   local staminaPerc = 0
   --
   if (staminaMax ~= 0) then 
     staminaPerc = math.floor(100 * stamina / staminaMax) 
   end
   --
+  -- Power
+  local power = tonumber(ui.variables.pow)
+  local powerMax = tonumber(ui.variables.maxpow)
+  local powerPerc = 0
+  if powerMax ~= 0 then
+    powerPerc = math.floor(100 * power / powerMax) 
+  end
+  --
   -- Update variables
   table.save(ui.fileVariables, ui.variables)
   --
-  if (ui.lastMoney) then
-    if (ui.variables.money &lt; ui.lastMoney) then
-      ui.fLog("&lt;255,0,0:30,24,24&gt;Perdi "..(ui.variables.money - ui.lastMoney).." monete d'oro.")
-    elseif (ui.variables.money &gt; ui.lastMoney) then
-      ui.fLog("&lt;0,255,0:30,24,24&gt;Guadagni "..(ui.variables.money - ui.lastMoney).." monete d'oro.")    
+  if (ui.lastGold) then
+    if (ui.variables.gold &lt; ui.lastGold) then
+      ui.fLog("&lt;255,0,0:30,24,24&gt;Perdi "..(ui.variables.gold - ui.lastGold).." monete d'oro.")
+    elseif (ui.variables.gold &gt; ui.lastGold) then
+      ui.fLog("&lt;0,255,0:30,24,24&gt;Guadagni "..(ui.variables.gold - ui.lastGold).." monete d'oro.")    
     end 
   end
-  ui.lastMoney = ui.variables.money
+  ui.lastGold = ui.variables.gold
   --
   -- Redraw widget
-  GUI.Player:setTitle(ui.variables.character_name)
+  GUI.Player:setTitle(ui.variables.name..", "..ui.variables.race.." "..ui.variables.class)
   GUI.Player.Level:echo("&lt;center&gt;"..ui.variables.level)
   GUI.Player.Main.Experience:setValue(experience, toNext)
   GUI.Player.Main.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..hp.."/"..hpMax.." - "..hpPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Tick:setValue(roundTicker, roundMax)
   GUI.Player.Main.Mana:setValue(manaPerc, 100,"&lt;p align=right&gt;"..mana.."/"..manaMax.." - "..manaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Stamina:setValue(staminaPerc, 100,"&lt;p align=right&gt;"..stamina.."/"..staminaMax.." - "..staminaPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Power:setValue(powerPerc, 100,"&lt;center&gt;"..power.."/"..powerMax.." - "..powerPerc.."%")
   --
   hpDif = GUI.Player.Main.Health.front:get_width() - hpDif
   if (hpDif &lt; 0) then
@@ -7799,31 +7929,7 @@ function ui.fReadFileTargets()
   end
   -- Save
   table.save(ui.fileTargets, ui.targets)
-end
---</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
-					<name>Tick</name>
-					<packageName></packageName>
-					<script>function ui.fIncrementTickTimer(time_left)
-  if time_left + 1 &lt;= 75 then
-    time_left = time_left + 1
-  else
-    if (ui.enDebug) then
-      time_left = 70      
-    else
-      time_left = 1
-    end
-    ui.fTickUpdateAffects()
-  end
-  if ui.ticktimer then
-    killTimer(ui.ticktimer)
-  end
-  ui.ticktimer = tempTimer(1, function() ui.fIncrementTickTimer(time_left) end)
-  GUI.Player.Main.Tick:setValue(time_left, 75)
-end
-</script>
+end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
@@ -7961,19 +8067,19 @@ end
     GUI["AffectIcon"..i].icon:enableClickthrough() -- for tooltip
     GUI["AffectIcon"..i].icon:setStyleSheet(GUI.CSS.AffectIcon)
     GUI["AffectIcon"..i].icon:setFgColor("black");
-    GUI["AffectIcon"..i].icon:setFontSize(5);
+    GUI["AffectIcon"..i].icon:setFontSize(7);
     --
     -- Time
     GUI["AffectIcon"..i].time = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".time",
       x = 0, y = -1,
       width = 30,
-      height = 10,
+      height = 8,
     }, GUI["AffectIcon"..i])
     GUI["AffectIcon"..i].time:setStyleSheet([[
       background-color: rgba(0, 0, 0, 0);
     ]])
-    GUI["AffectIcon"..i].time:setFontSize(6);
+    GUI["AffectIcon"..i].time:setFontSize(5);
     --
     GUI["AffectIcon"..i]:hide()
   end
@@ -8807,7 +8913,7 @@ end</script>
     x = 8,
     y = 15,
     width = -5,
-    height = "50%-10",
+    height = "40%-10",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -8834,7 +8940,7 @@ end</script>
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Tick",
     x = 8,
-    y = "50%+4",
+    y = "40%+4",
     width = -5,
     height = 6,
   }, GUI.Player.Main)
@@ -8852,9 +8958,9 @@ end</script>
   GUI.Player.Main.Mana = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Mana",
     x = 8,
-    y = "50%+10",
+    y = "40%+10",
     width = -5,
-    height = "25%-6",
+    height = "20%-5",
   },GUI.Player.Main)
   GUI.Player.Main.Mana:setValue(0, 100)
   --
@@ -8871,9 +8977,9 @@ end</script>
   GUI.Player.Main.Stamina = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Stamina",
     x = 8,
-    y = "75%+3",
+    y = "60%+5",
     width = -5,
-    height = "25%-6",
+    height = "20%-5",
   },GUI.Player.Main)
   GUI.Player.Main.Stamina:setValue(0, 100)
   --
@@ -8885,6 +8991,25 @@ end</script>
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
   ]])
   GUI.Player.Main.Stamina.front:echo("Movimento")
+  --
+  -- Player Power Gauges
+  GUI.Player.Main.Power = Geyser.Gauge:new2({
+    name = "GUI.Player.Power",
+    x = 8,
+    y = "80%",
+    width = -5,
+    height = "20%-5",
+  },GUI.Player.Main)
+  GUI.Player.Main.Power:setValue(0, 100)
+  --
+  GUI.Player.Main.Power.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+    background-color: rgba(204, 85, 0, .2);
+  ]])
+  --
+  GUI.Player.Main.Power.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ffa500, stop: 0.65 #e86100, stop: 1 #ff8c00);
+  ]])
+  GUI.Player.Main.Power.front:echo("Potenza")
   --
   -- Player Gem
   GUI.Player.Main.Gem = Geyser.Label:new2({
@@ -9092,7 +9217,7 @@ end</script>
 				<script>--
 ui = ui or {}
 ui.enDebug = false
-ui.release = "1.23.10.06 in corso"
+ui.release = "2.23.10.06 in corso"
 ui.autoUpdate = true
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 --
@@ -9158,7 +9283,7 @@ ui.affects = {
 --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
 --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
 --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
-["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "white", shortName = "PSI Fire" },
+["mantello di fiamme"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
 --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
 --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
 }
@@ -9333,22 +9458,32 @@ ui.position = ui.position or "centro"
 --
 -- Pre defined variables
 ui.pre_defined_variables = {
-  ac = 0,
-  alignment = 0,
-  character_name = "@character_name",
-  experience = 0,
-  health = 100,
-  health_max = 100,
-  level = 1,
-  mana = 70,
-  mana_max = 100,
-  money = 0,
-  movement = 30,
-  movement_max = 100,
-  opponent_health = 0,
-  opponent_health_max = 100,
-  opponent_level = 1,
-  opponent_name = "",
+  name           = "",
+  race           = "",
+  class          = "",
+  level          = 0,
+  experience     = 0,
+  toNext         = 0,
+  gold           = 0,
+  --
+  hp             = 0,
+  maxhp          = 0,
+  mana           = 0,
+  maxmana        = 0,
+  mov            = 0,
+  maxmov         = 0,
+  pow            = 0,
+  maxpow         = 0,
+  --
+  roomPos        = 5,
+  roundMax       = 0,
+  roundTicker    = 0,
+  --
+  opponent_name       = "",
+  opponent_desc       = "",
+  opponent_level      = 0,
+  opponent_hp         = 0,
+  --
   target = "",
 }
 --
@@ -9877,18 +10012,15 @@ ui.fInitProfiles()
 --
 -- GMCP
 ui.fDebug("[init] setMergeTables()")
-setMergeTables("MSDP")
+setMergeTables("gmcp")
 --
 -- Events
 ui.fDebug("[init] Register events")
-registerAnonymousEventHandler("gmcp.MSDP","ui.fUpdateOpponent")
-registerAnonymousEventHandler("gmcp.MSDP","ui.fUpdatePlayer")
---
--- Debug
-if (ui.enDebug) then
-  -- Tick simulation
-  ui.fIncrementTickTimer(75)
-end
+registerAnonymousEventHandler("gmcp.char", "ui.fUpdatePlayer")
+registerAnonymousEventHandler("gmcp.char.affects", "ui.fUpdateAffects")
+registerAnonymousEventHandler("gmcp.char.vitals", "ui.fUpdateOpponent")
+registerAnonymousEventHandler("gmcp.room", "ui.fUpdateMap")
+registerAnonymousEventHandler("gmcp.char.group", "ui.fUpdateGroup")
 --
 ui.fDebug("[init] ... end UI init!")
 --
@@ -11021,8 +11153,17 @@ map.help.onvisionfail = [[
     &lt;cyan&gt;onVisionFail Event&lt;reset&gt;
 
         This event is raised to inform the script that some or all of the room
-        information was not able to be gathered, but the character still
-        successfully moved between rooms in the intended direction.
+        information was not able to be gathered but the character still
+        successfully moved between rooms in the intended direction. For example,
+        a character without a light moving into a dark room.
+
+        generic_mapper comes with two predefined triggers for when it is dark
+        which can be found in the Script Editor/Triggers.  These triggers raise
+        the onVisionFail event, which in turn forces the mapper to move in the
+        desired direction without trying to match the room titles and 
+        descriptions.
+
+        Add to these triggers with appropriate lines your game sends.
 ]]
 map.help.onprompt = [[
     &lt;cyan&gt;onPrompt Event&lt;reset&gt;
