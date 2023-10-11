@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
 			<name>LeU Live</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,8 +19,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>334</borderLeftWidth>
-			<borderRightWidth>563</borderRightWidth>
+			<borderLeftWidth>353</borderLeftWidth>
+			<borderRightWidth>562</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -356,15 +356,15 @@ ui.fUpdateMap()</script>
 			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Equipment</name>
-				<script>local m = matches[2]
+				<script>local other = matches[2]
 ui.fDebug("[trig] Equipment start")
 ui.equipment = {}
 clearWindow("GUI.Equipment.Main.Body.Console")
 enableTrigger("equipment_valid")
 enableTrigger("equipment_end")
 
-if (m) then
-  GUI.Equipment:setTitle("Eq. ("..ui.fRemoveArticle(m)..") "..getTime(true, "[hh:mm]"))
+if (other) then
+  GUI.Equipment:setTitle("Eq. ("..ui.fRemoveArticle(other)..") "..getTime(true, "[hh:mm]"))
 else
   GUI.Equipment:setTitle("Equipaggiamento "..getTime(true, "[hh:mm]"))
 end</script>
@@ -398,24 +398,29 @@ equipment.number   = matches[2]
 equipment.location = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
 equipment.level    = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":30,24,24&gt;")
 equipment.type     = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":30,24,24&gt;")
-equipment.name, equipment.statusColor, equipment.good, equipment.evil, equipment.bring, equipment.noisy, equipment.brittle = ui.fParsingItem(copy2decho(matches[6]))
+equipment.name, equipment.status, equipment.good, equipment.evil, equipment.bright, equipment.noisy, equipment.brittle = ui.fParsingItem(copy2decho(matches[6]))
 equipment.name = string.gsub(equipment.name, ":0,0,0&gt;", ":30,24,24&gt;")
 if (equipment.good) then
-  equipment.name = equipment.name.."&lt;0,0,255:30,24,24&gt;*"
+  equipment.name = equipment.name.." &lt;0,0,255:30,24,24&gt;*&lt;r&gt;"
 end
 if (equipment.evil) then
-  equipment.name = equipment.name.."&lt;255,0,0:30,24,24&gt;*"
+  equipment.name = equipment.name.." &lt;255,0,0:30,24,24&gt;*&lt;r&gt;"
 end
 if (equipment.bright) then
-  equipment.name = equipment.name.."&lt;255,255,255:30,24,24&gt;*"
+  equipment.name = equipment.name.." &lt;255,255,255:30,24,24&gt;*&lt;r&gt;"
 end
 if (equipment.noisy) then
-  equipment.name = equipment.name.."&lt;128,128,128:30,24,24&gt;*"
+  equipment.name = equipment.name.." &lt;128,128,128:30,24,24&gt;*&lt;r&gt;"
 end
 if (equipment.brittle) then
-  equipment.name = equipment.name.."&lt;0,128,128:30,24,24&gt;*"
+  equipment.name = equipment.name.." &lt;0,128,128:30,24,24&gt;*&lt;r&gt;"
 end
-GUI.Equipment.Main.Body.Console:decho(equipment.statusColor..equipment.number.."&lt;r&gt; "..equipment.level.." "..equipment.type.. " "..equipment.name.."\n")
+--
+if (equipment.status &lt; 8) then
+  GUI.Equipment.Main.Body.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:30,24,24&gt;["..equipment.status.."/8]&lt;r&gt;\n")
+else
+  GUI.Equipment.Main.Body.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.."\n")
+end
 table.insert(ui.equipment, equipment)
 setTriggerStayOpen("Equipment", 1)
 </script>
@@ -466,14 +471,14 @@ disableTrigger("equipment_end")</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Loot</name>
-				<script>local m = matches[2] or ""
+				<script>local inventory = matches[1] or ""
 ui.fDebug("[trig] Loot start")
 clearWindow("GUI.Inventory.Main.Body.Console")
 enableTrigger("loot_valid")
 enableTrigger("loot_invalid")
 enableTrigger("loot_end")
 
-if (m == "Stai trasportando:") or (m == "Non stai trasportando nulla.") then
+if (inventory == "Stai trasportando:") or (inventory == "Non stai trasportando nulla.") then
   GUI.Inventory:setTitle("Inventario "..getTime(true, "[hh:mm]"))
 else
   GUI.Inventory:setTitle("Contenitore "..getTime(true, "[hh:mm]"))
@@ -489,9 +494,9 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^(Stai trasportando:)$</string>
-					<string>^(Non stai trasportando nulla.)</string>
-					<string>^(Quando ci guardi dentro, vedi:)</string>
+					<string>^Stai trasportando:$</string>
+					<string>^Non stai trasportando nulla.$</string>
+					<string>^Quando ci guardi dentro, vedi:$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -507,24 +512,29 @@ if (matches[3]=="") then
 end
 local number   = matches[2]
 local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
-local name, statusColor, good, evil, bring, noisy, brittle = ui.fParsingItem(copy2decho(matches[4]))
+local name, status, good, evil, bright, noisy, brittle = ui.fParsingItem(copy2decho(matches[4]))
+
 name = string.gsub(name, ":0,0,0&gt;", ":30,24,24&gt;")
 if (good) then
-  name = name.."&lt;0,0,255:30,24,24&gt;*"
+  name = name.." &lt;0,0,255:30,24,24&gt;*&lt;r&gt;"
 end
 if (evil) then
-  name = name.."&lt;255,0,0:30,24,24&gt;*"
+  name = name.." &lt;255,0,0:30,24,24&gt;*&lt;r&gt;"
 end
 if (bright) then
-  name = name.."&lt;255,255,255:30,24,24&gt;*"
+  name = name.." &lt;255,255,255:30,24,24&gt;*&lt;r&gt;"
 end
 if (noisy) then
-  name = name.."&lt;128,128,128:30,24,24&gt;*"
+  name = name.." &lt;128,128,128:30,24,24&gt;*&lt;r&gt;"
 end
 if (brittle) then
-  name = name.."&lt;0,128,128:30,24,24&gt;*"
+  name = name.." &lt;0,128,128:30,24,24&gt;*&lt;r&gt;"
 end
-GUI.Inventory.Main.Body.Console:decho(statusColor..number.."&lt;r&gt; "..eqtype.. " "..name.."\n")
+if (status &lt; 8) then
+  GUI.Inventory.Main.Body.Console:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:30,24,24&gt;["..status.."/8]&lt;r&gt;\n")
+else
+  GUI.Inventory.Main.Body.Console:decho(number.." "..eqtype.. " "..name.."\n")
+end
 setTriggerStayOpen("Loot", 1)
 </script>
 					<triggerType>0</triggerType>
@@ -1446,7 +1456,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -4700,8 +4710,7 @@ end</script>
 local n = 0
 --
 for key, equipment in pairs(ui.equipment) do
-  if (equipment.statusColor ~= "&lt;128,128,128:30,24,24&gt;") and
-     (equipment.statusColor ~= "&lt;255,255,255:30,24,24&gt;") then
+  if (equipment.status) and (equipment.status &lt; 8) then
     send("remove "..equipment.number, false)
     send("give - "..f, false)
     if (equipment.location == "&lt;192,192,192:30,24,24&gt;impugnato&lt;r&gt;") then
@@ -5089,7 +5098,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: red;
+    background-color: green;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -5112,6 +5121,13 @@ cecho("Trigger First AID (automatico) "..status.."\n")
 			<name>Lumen et Umbra UI</name>
 			<packageName>Lumen et Umbra UI</packageName>
 			<script>--[[
+ver [...leu prova... in corso...]
+------------
+--
+- Allineato all'UI di LeU Prova
+- Unificata la funzione ui.fParsingItem(text) per Live e Prova
+- Corretto visuaizzazione perdita\recuper hp per player e opponent
+--
 ver 1.230921
 ------------
 - Aggiunto "ALL" come parametro del comando "uisetfontsize"
@@ -5224,11 +5240,13 @@ ver 0.1b
 				<Script isActive="yes" isFolder="no">
 					<name>Affects</name>
 					<packageName></packageName>
-					<script>function ui.fUpdateAffects()
+					<script>--
+function ui.fUpdateAffects()
   local x = 0
   local y = 0
   local i
   local orderTable = {}
+  --
   -- Simulation (for debug)
   if (ui.enDebug) then
     for i=1, 20 do
@@ -5241,91 +5259,115 @@ ver 0.1b
   for affect in pairs(ui.actAffects) do
     orderTable[#orderTable+1] = affect
   end
-  table.sort(orderTable, function (affect1, affect2) 
+  table.sort(orderTable, function (affect1, affect2)
                            return ui.actAffects[affect1] &lt; ui.actAffects[affect2]
                          end )
   --
   i = 0;
-  for j,affect in ipairs(orderTable) do
+  for j, affect in ipairs(orderTable) do
     if (ui.actAffects[affect] &lt; 0) then
       ui.actAffects[affect] = nil
     elseif (i&lt;20) then
-      local color
-      -- Duration color
-      if (ui.actAffects[affect] == 0) then
-        color = "red"
-      elseif (ui.actAffects[affect] == 1) then
-        color = "orange"
-      elseif  (ui.actAffects[affect] == 2) then
-        color = "yellow"
-      else
-        color = "green"
-      end
-      i = i + 1
-      -- Duration
-      GUI["AffectIcon"..i].time:setFgColor(color)
-      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.actAffects[affect])
+      local icon = nil
+      local BGColor = nil
+      local FGColor = "LightGoldenrod"
+      local shortName = nil
       local CCS = GUI.CSS.AffectIcon
+      --
+      i = i + 1
+      --
+      -- Pre-load icon, BG volor and short name form predefinited table (if exists)
       if table.contains(ui.affects, affect) then
-        -- Icon
-        if (ui.affects[affect].icon) and (io.exists(ui.pathIcn..ui.affects[affect].icon)) then
-          CCS = GUI.CSS.AffectIcon..[[
-                  border-image: url("]]..ui.pathIcn..ui.affects[affect].icon..[[") 0px stretch;
-                ]]
-        -- BG Color
-        elseif (ui.affects[affect].color) then
-          CCS = GUI.CSS.AffectIcon..[[
-                  background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 "]]..ui.affects[affect].color..[[");
-                ]]
-        else
-          CCS = GUI.CSS.AffectIcon..[[
-                  background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 rgba(61, 174, 219, 255), stop:1 rgba(27, 87, 141, 255));;
-                ]]
-        end
-        -- ShortName
+        --
+        -- Pre-ShortName
         if (ui.affects[affect].shortName) then
-          GUI["AffectIcon"..i].icon:echo(ui.affects[affect].shortName)
-        else
-          GUI["AffectIcon"..i].icon:echo(affect:sub(1, 5))
+          shortName = ui.affects[affect].shortName
         end
-      else
-        local affectText = ui.fRemoveArticle(affect)
-        local R = 9 * ((string.byte(affectText, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
-        local G = 9 * ((string.byte(affectText, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-        local B = 9 * ((string.byte(affectText, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
-        local color = string.format("#%02X%02X%02X", R, G, B)
-        local text = ""
         --
-        CCS = GUI.CSS.AffectIcon..[[
-                background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 ]]..color..[[);
-              ]]
-        --
-        for word in affectText:gmatch("%S+") do
-          text = text..string.sub(word, 1, 3).." "
+        -- Pre-FG Color
+        if (ui.affects[affect].FGcolor) then
+          FGColor = ui.affects[affect].FGcolor
         end
-        GUI["AffectIcon"..i].icon:echo(text)
+        --
+        -- Pre-Icon
+        if (ui.affects[affect].icon) and (io.exists(ui.pathIcn..ui.affects[affect].icon)) then
+          icon = ui.pathIcn..ui.affects[affect].icon;
+        end
+        --
+        -- Pre-BG Color
+        if (ui.affects[affect].BGcolor) then
+          BGColor = ui.affects[affect].BGcolor
+        end
       end
+      --
+      -- Short Name
+      if (not shortName) then
+        --local name = ui.fRemoveArticle(affect)
+        --shortName = ""
+        --
+        --for word in name:gmatch("%S+") do
+        --  shortName = shortName..string.sub(word, 1, 5).." "
+        --end
+        shortName = ui.fRemoveArticle(affect);
+      end
+      GUI["AffectIcon"..i].icon:setFgColor(FGColor)
+      GUI["AffectIcon"..i].icon:echo("&lt;center&gt;"..shortName)
+      --
+      -- Icon
+      if (icon) then
+        CCS = CCS..[[
+                border-image: url("]]..icon..[[") 0px stretch;
+              ]]
+      end
+      --
+      -- BG color
+      if (not BGColor) then
+        local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+        local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+        local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+        BGColor = string.format("#%02X%02X%02X", R, G, B)
+      end
+      CCS = CCS..[[
+              background-color: ]]..BGColor..[[;
+            ]]
+      -- background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0, stop:0 ]]..BGColor..[[, stop:1 moccasin);
+      --
       -- StyleSheet
       GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
+      --
+      -- Duration
+      local durationColor = "green"
+      if (ui.actAffects[affect] == 0) then
+        durationColor = "red"
+      elseif (ui.actAffects[affect] == 1) then
+        durationColor = "orange"
+      elseif  (ui.actAffects[affect] == 2) then
+        durationColor = "yellow"
+      end
+      GUI["AffectIcon"..i].time:setFgColor(durationColor)
+      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.actAffects[affect])
+      --
       -- ToolTip
       GUI["AffectIcon"..i]:setToolTip(affect, 10)
-      -- Position
-      GUI["AffectIcon"..i]:move(x, y)
+      --
       -- Show if inside box
       if (y&lt;=GUI.Affect.Main.Body:get_height() - 20) then
+        GUI["AffectIcon"..i]:move(x, y)
         GUI["AffectIcon"..i]:show();
       else
         GUI["AffectIcon"..i]:hide();
       end
       --
-      if (x &gt; GUI.Affect.Main.Body:get_width() - 60) then
+      --
+      if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 4 &gt; GUI.Affect.Main.Body:get_width()) then
         x = 0
-        y = y + 42
+        y = y + GUI["AffectIcon"..i]:get_height() + 4
       else
-        x = x + 32
+        x = x + GUI["AffectIcon"..i]:get_width() + 4
       end
     end
   end
+  --
   -- Hide not used affects
   for i=i+1, 20 do
     if (GUI["AffectIcon"..i]) then
@@ -5766,89 +5808,90 @@ end</script>
   if (sender) then
     border = border or 1
     if (border == 1) then
-      sender.LT = Geyser.Label:new2({name = sender.name .. "LT", x = 0, y = 0, width = 20, height = 20 }, sender)
+      sender.LT = Geyser.Label:new2({name = sender.name..".LT", x = 0, y = 0, width = 20, height = 20 }, sender)
       sender.LT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderLT.png")]]);
-      sender.LT:enableClickthrough()
-      sender.T1 = Geyser.Label:new2({name = sender.name .. "T1", x = 20, y = 0, width = 40, height = 20 }, sender)
+
+      sender.T1 = Geyser.Label:new2({name = sender.name..".T1", x = 20, y = 0, width = 40, height = 20 }, sender)
       sender.T1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT1.png")]]);
-      sender.T1:enableClickthrough()
-      sender.T2 = Geyser.Label:new2({name = sender.name .. "T2", x = 60, y = 0, width = -60, height = 20 }, sender)
+
+      sender.T2 = Geyser.Label:new2({name = sender.name..".T2", x = 60, y = 0, width = -60, height = 20 }, sender)
       sender.T2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT2.png")]]);
-      sender.T2:enableClickthrough()
-      sender.T3 = Geyser.Label:new2({name = sender.name .. "T3", x = -60, y = 0, width = 40, height = 20 }, sender)
+
+      sender.T3 = Geyser.Label:new2({name = sender.name..".T3", x = -60, y = 0, width = 40, height = 20 }, sender)
       sender.T3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderT3.png")]]);
-      sender.T3:enableClickthrough()
-      sender.RT = Geyser.Label:new2({name = sender.name .. "RT", x = -20, y = 0, width = 20, height = 20 }, sender)
+
+      sender.RT = Geyser.Label:new2({name = sender.name..".RT", x = -20, y = 0, width = 20, height = 20 }, sender)
       sender.RT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderRT.png")]]);
-      sender.RT:enableClickthrough()
-      sender.L1 = Geyser.Label:new2({name = sender.name .. "L1", x = 0, y = 20, width = 20, height = 40 }, sender)
+
+      sender.L1 = Geyser.Label:new2({name = sender.name..".L1", x = 0, y = 20, width = 20, height = 40 }, sender)
       sender.L1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL1.png")]]);
-      sender.L1:enableClickthrough()
-      sender.L2 = Geyser.Label:new2({name = sender.name .. "L2", x = 0, y = 60, width = 20, height = -60 }, sender)
+
+      sender.L2 = Geyser.Label:new2({name = sender.name..".L2", x = 0, y = 60, width = 20, height = -60 }, sender)
       sender.L2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL2.png")]]);
-      sender.L2:enableClickthrough()
-      sender.L3 = Geyser.Label:new2({name = sender.name .. "L3", x = 0, y = -60, width = 20, height = 40 }, sender)
+
+      sender.L3 = Geyser.Label:new2({name = sender.name..".L3", x = 0, y = -60, width = 20, height = 40 }, sender)
       sender.L3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderL3.png")]]);
-      sender.L3:enableClickthrough()
-      sender.Body = Geyser.Label:new2({name = sender.name .. "Body", x = 20, y = 20, width = -20, height = -20}, sender)
+
+      sender.Body = Geyser.Label:new2({name = sender.name..".Body", x = 20, y = 20, width = -20, height = -20}, sender)
       sender.Body:setStyleSheet([[background-color: rgba(30, 24, 24, 100%)]]);
-      sender.Body:enableClickthrough()
-      sender.R1 = Geyser.Label:new2({name = sender.name .. "R1", x = -20, y = 20, width = 20, height = 40}, sender)
+
+      sender.R1 = Geyser.Label:new2({name = sender.name..".R1", x = -20, y = 20, width = 20, height = 40}, sender)
       sender.R1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR1.png")]]);
-      sender.R1:enableClickthrough()
-      sender.R2 = Geyser.Label:new2({name = sender.name .. "R2", x = -20, y = 60, width = 20, height = -60 }, sender)
+
+      sender.R2 = Geyser.Label:new2({name = sender.name..".R2", x = -20, y = 60, width = 20, height = -60 }, sender)
       sender.R2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR2.png")]]);
-      sender.R2:enableClickthrough()
-      sender.R3 = Geyser.Label:new2({name = sender.name .. "R3", x = -20, y = -60, width = 20, height = 40 }, sender)
+
+      sender.R3 = Geyser.Label:new2({name = sender.name..".R3", x = -20, y = -60, width = 20, height = 40 }, sender)
       sender.R3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderR3.png")]]);
-      sender.R3:enableClickthrough()
-      sender.LB = Geyser.Label:new2({name = sender.name .. "LB", x = 0, y = -20, width = 20, height = 20}, sender)
+
+      sender.LB = Geyser.Label:new2({name = sender.name..".LB", x = 0, y = -20, width = 20, height = 20}, sender)
       sender.LB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderLB.png")]]);
-      sender.LB:enableClickthrough()
-      sender.B1 = Geyser.Label:new2({name = sender.name .. "B1", x = 20, y = -20, width = 40, height = 20}, sender)
+
+      sender.B1 = Geyser.Label:new2({name = sender.name..".B1", x = 20, y = -20, width = 40, height = 20}, sender)
       sender.B1:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB1.png")]]);
-      sender.B1:enableClickthrough()
-      sender.B2 = Geyser.Label:new2({name = sender.name .. "B2", x = 60, y = -20, width = -60, height = 20 }, sender)
+
+      sender.B2 = Geyser.Label:new2({name = sender.name..".B2", x = 60, y = -20, width = -60, height = 20 }, sender)
       sender.B2:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB2.png")]]);
-      sender.B2:enableClickthrough()
-      sender.B3 = Geyser.Label:new2({name = sender.name .. "B3", x = -60, y = -20, width = 40, height = 20 }, sender)
+
+      sender.B3 = Geyser.Label:new2({name = sender.name..".B3", x = -60, y = -20, width = 40, height = 20 }, sender)
       sender.B3:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderB3.png")]]);
-      sender.B3:enableClickthrough()
-      sender.RB = Geyser.Label:new2({name = sender.name .. "RB", x = -20, y = -20, width = 20, height = 20}, sender)
+
+      sender.RB = Geyser.Label:new2({name = sender.name..".RB", x = -20, y = -20, width = 20, height = 20}, sender)
       sender.RB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[frameBorderRB.png")]]);
-      sender.RB:enableClickthrough()
+
     elseif (border == 2) then
-      sender.LT = Geyser.Label:new2({name = sender.name .. "LT",x = 0, y = 0, width = 15, height = 15},sender)
-      sender.LT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderLT.png")]]);
-      sender.LT:enableClickthrough()
-      sender.T = Geyser.Label:new2({name = sender.name .. "T",x = 15, y = 0, width = -15, height = 15},sender)
-      sender.T:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderT.png")]]);
-      sender.T:enableClickthrough()
-      sender.RT = Geyser.Label:new2({name = sender.name .. "RT",x = -15, y = 0, width = 15, height = 15},sender)
-      sender.RT:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderRT.png")]]);
-      sender.RT:enableClickthrough()
-      sender.L = Geyser.Label:new2({name = sender.name .. "L",x = 0, y= 15, width = 15, height = -15},sender)
-      sender.L:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderL.png")]]);
-      sender.L:enableClickthrough()
-      sender.Body = Geyser.Label:new2({name = sender.name .. "Body",x = 15, y = 15, width = -15, height = -15},sender)
+      sender.LT = Geyser.Label:new2({name = sender.name..".LT",x = 0, y = 0, width = 10, height = 10},sender)
+      sender.LT = Geyser.Label:new2({name = sender.name..".LT",x = 0, y = 0, width = 15, height = 15},sender)
+      sender.LT:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderLT.png")]]);
+
+      sender.T = Geyser.Label:new2({name = sender.name..".T",x = 15, y = 0, width = -15, height = 15},sender)
+      sender.T:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderT.png")]]);
+
+      sender.RT = Geyser.Label:new2({name = sender.name..".RT",x = -15, y = 0, width = 15, height = 15},sender)
+      sender.RT:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderRT.png")]]);
+
+      sender.L = Geyser.Label:new2({name = sender.name..".L",x = 0, y= 15, width = 15, height = -15},sender)
+      sender.L:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderL.png")]]);
+
+      sender.Body = Geyser.Label:new2({name = sender.name..".Body",x = 15, y = 15, width = -15, height = -15},sender)
       sender.Body:setStyleSheet([[background-image: url("]]..ui.pathImg..[[footerBody.png")]]);
-      sender.Body:enableClickthrough()
-      sender.R = Geyser.Label:new2({name = sender.name .. "R",x = -15, y = 15, width = 15, height = -15},sender)
-      sender.R:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderR.png")]]);
-      sender.R:enableClickthrough()
-      sender.LB = Geyser.Label:new2({name = sender.name .. "LB",x = 0, y = -15, width = 15, height = 15},sender)
-      sender.LB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderLB.png")]]);
-      sender.LB:enableClickthrough()
-      sender.B = Geyser.Label:new2({name = sender.name .. "B",x = 15, y = -15, width = -15, height = 15},sender)
-      sender.B:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderB.png")]]);
-      sender.B:enableClickthrough()
-      sender.RB = Geyser.Label:new2({name = sender.name .. "RB",x = -15, y = -15, width = 15, height = 15},sender)
-      sender.RB:setStyleSheet([[background-color: rgba(30, 24, 24, 100%); background-image: url("]]..ui.pathImg..[[footerBorderRB.png")]]);
-      sender.RB:enableClickthrough()
+
+      sender.R = Geyser.Label:new2({name = sender.name..".R",x = -15, y = 15, width = 15, height = -15},sender)
+      sender.R:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderR.png")]]);
+
+      sender.LB = Geyser.Label:new2({name = sender.name..".LB",x = 0, y = -15, width = 15, height = 15},sender)
+      sender.LB:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderLB.png")]]);
+
+      sender.B = Geyser.Label:new2({name = sender.name..".B",x = 15, y = -15, width = -15, height = 15},sender)
+      sender.B:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderB.png")]]);
+
+      sender.RB = Geyser.Label:new2({name = sender.name..".RB",x = -15, y = -15, width = 15, height = 15},sender)
+      sender.RB:setStyleSheet([[background-color: rgba(30, 24, 24, 150%); background-image: url("]]..ui.pathImg..[[footerBorderRB.png")]]);
+
     elseif (border == 3) then
-      sender.Body = Geyser.Label:new2({name = sender.name .. "Body",x = 0, y = 0, width = "100%", height = "100%"}, sender)
+      sender.Body = Geyser.Label:new2({name = sender.name..".Body",x = 0, y = 0, width = "100%", height = "100%"}, sender)
       sender.Body:setStyleSheet(GUI.CSS.Border3);
-      sender.Body:enableClickthrough()
+
     end
   end
 end</script>
@@ -6241,76 +6284,84 @@ function ui.fRemoveArticle(text)
 end
 --
 function ui.fParsingItem(text)
-  -- TODO: missing colors
-  local statusColor = "&lt;128,128,128:30,24,24&gt;"
+  local status = 8
+  text = string.gsub(text, "%.%.%.", "")
   if (string.find(text, "indistruttibil")) then
-    text = string.gsub(text, "...E` indistruttibile!", "")
-    text = string.gsub(text, "...Sono indistruttibili!", "")
-    statusColor = "&lt;255,255,255:30,24,24&gt;"
+    text = string.gsub(text, "E` indistruttibile!", "")
+    text = string.gsub(text, "Sono indistruttibili!", "")
+    status = 9
   elseif (string.find(text, "in condizioni eccellenti")) then
-    text = string.gsub(text, "...E` in condizioni eccellenti", "")
-    text = string.gsub(text, "...Sono in condizioni eccellenti", "")
-    statusColor = "&lt;128,128,128:30,24,24&gt;"
+    text = string.gsub(text, "E` in condizioni eccellenti", "")
+    text = string.gsub(text, "Sono in condizioni eccellenti", "")
+    status = 8
   elseif (string.find(text, "in ottime condizioni")) then
-    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,0:0,0,0&gt;E` in ottime condizioni&lt;r&gt;", "")
-    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,0:0,0,0&gt;Sono in ottime condizioni&lt;r&gt;", "")
-    statusColor = "&lt;0,255,0:30,24,24&gt;"
+    text = string.gsub(text, "E` in ottime condizioni", "")
+    text = string.gsub(text, "Sono in ottime condizioni", "")
+    status = 7
   elseif (string.find(text, "danni superficiali")) then
-    text = string.gsub(text, "...&lt;r&gt;&lt;255,255,0:0,0,0&gt;Presenta danni superficiali&lt;r&gt;", "")
-    text = string.gsub(text, "...&lt;r&gt;&lt;255,255,0:0,0,0&gt;Presentano danni superficiali&lt;r&gt;", "")
-    statusColor = "&lt;255,255,0:30,24,24&gt;"
+    text = string.gsub(text, "Presenta danni superficiali", "")
+    text = string.gsub(text, "Presentano danni superficiali", "")
+    status = 6
   elseif (string.find(text, "danneggiat")) then
-    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,255:0,0,0&gt;E` danneggiato ed usurato&lt;r&gt;", "")
-    text = string.gsub(text, "...&lt;r&gt;&lt;0,255,255:0,0,0&gt;Sono danneggiati ed usurati&lt;r&gt;", "")
-    statusColor = "&lt;0,255,255:30,24,24&gt;"
+    text = string.gsub(text, "E` danneggiato ed usurato", "")
+    text = string.gsub(text, "Sono danneggiati ed usurati", "")
+    status = 5
   elseif (string.find(text, "in pessime condizioni")) then
-    text = string.gsub(text, "...&lt;255,255,0:0,0,0&gt;E` in pessime condizioni", "")
-    text = string.gsub(text, "...&lt;255,255,0:0,0,0&gt;Sono in pessime condizioni", "")
-    statusColor = "&lt;255,255,0:30,24,24&gt;"
+    text = string.gsub(text, "E` in pessime condizioni", "")
+    text = string.gsub(text, "Sono in pessime condizioni", "")
+    status = 4
   elseif (string.find(text, "bisogno di essere riparat")) then
-    text = string.gsub(text, "...&lt;255,0,0:0,0,0&gt;Ha bisogno di essere riparato", "")
-    text = string.gsub(text, "...&lt;255,0,0:0,0,0&gt;Hanno bisogno di essere riparati", "")
-    statusColor = "&lt;255,0,0:30,24,24&gt;"
+    text = string.gsub(text, "Ha bisogno di essere riparato", "")
+    text = string.gsub(text, "Hanno bisogno di essere riparati", "")
+    status = 3
   elseif (string.find(text, "per cadere in pezzi")) then
-    text = string.gsub(text, "...Sta per cadere in pezzi", "")
-    text = string.gsub(text, "...Stanno per cadere in pezzi", "")
-    statusColor = "-TO DO-"
+    text = string.gsub(text, "Sta per cadere in pezzi", "")
+    text = string.gsub(text, "Stanno per cadere in pezzi", "")
+    status = 2
   elseif (string.find(text, "rompersi da un momento all'altro")) then
-    text = string.gsub(text, "...Potrebbe rompersi da un momento all'altro!", "")
-    text = string.gsub(text, "...Potrebbero rompersi da un momento all'altro!", "")
-    statusColor = "&lt;128,0,0:30,24,24&gt;"
+    text = string.gsub(text, "Potrebbe rompersi da un momento all'altro!", "")
+    text = string.gsub(text, "Potrebbero rompersi da un momento all'altro!", "")
+    status = 1
   elseif (string.find(text, "in frantumi. Inutilizzabil")) then
-    text = string.gsub(text, "...E` in frantumi. Inutilizzabile!", "")
-    text = string.gsub(text, "...Sono in frantumi. Inutilizzabili!", "")
-    statusColor = "-TO DO-"
+    text = string.gsub(text, "E` in frantumi. Inutilizzabile!", "")
+    text = string.gsub(text, "Sono in frantumi. Inutilizzabili!", "")
+    status = 0
   end
+  --
   local good = string.find(text, "luce blu")
   if (good) then
-    text = string.gsub(text, "...Ha un alone di &lt;r&gt;&lt;0,0,255:0,0,0&gt;luce blu&lt;r&gt;", "")
-    text = string.gsub(text, "...Hanno un alone di &lt;r&gt;&lt;0,0,255:0,0,0&gt;luce blu&lt;r&gt;", "")
+    text = string.gsub(text, "Ha un alone di &lt;r&gt;&lt;[%d,:]+&gt;luce blu", "")
+    text = string.gsub(text, "Hanno un alone di &lt;r&gt;&lt;[%d,:]+&gt;luce blu", "")
   end
+  --
   local evil = string.find(text, "luce rossa")
   if (evil) then
-    text = string.gsub(text, "...Ha un alone di &lt;r&gt;&lt;255,0,0:0,0,0&gt;luce rossa&lt;r&gt;", "")
-    text = string.gsub(text, "...Hanno un alone di &lt;r&gt;&lt;255,0,0:0,0,0&gt;luce rossa&lt;r&gt;", "")
+    text = string.gsub(text, "Ha un alone di &lt;r&gt;&lt;[%d,:]+&gt;luce rossa", "")
+    text = string.gsub(text, "Hanno un alone di &lt;r&gt;&lt;[%d,:]+&gt;luce rossa", "")
   end
+  --
   local bright = string.find(text, "alone luminoso")
   if (bright) then
-    text = string.gsub(text, "...Ha un &lt;r&gt;&lt;255,255,255:0,0,0&gt;alone luminoso&lt;r&gt;", "")
-    text = string.gsub(text, "...Hanno un &lt;r&gt;&lt;255,255,255:0,0,0&gt;alone luminoso&lt;r&gt;", "")
+    text = string.gsub(text, "Ha un &lt;r&gt;&lt;[%d,:]+&gt;alone luminoso", "")
+    text = string.gsub(text, "Hanno un &lt;r&gt;&lt;[%d,:]+&gt;alone luminoso", "")
   end
+  --
   local noisy = string.find(text, "forte ronzio")
   if (noisy) then
-    text = string.gsub(text, "...Emette un &lt;r&gt;&lt;128,128,128:0,0,0&gt;forte ronzio&lt;r&gt;", "")
-    text = string.gsub(text, "...Emettono un &lt;r&gt;&lt;128,128,128:0,0,0&gt;forte ronzio&lt;r&gt;", "")
+    text = string.gsub(text, "Emette un &lt;r&gt;&lt;[%d,:]+&gt;forte ronzio", "")
+    text = string.gsub(text, "Emettono un &lt;r&gt;&lt;[%d,:]+&gt;forte ronzio", "")
   end
+  --
   local brittle = string.find(text, "molto fragil")
   if (brittle) then
-    text = string.gsub(text, "...&lt;0,128,128:0,0,0&gt;Sembra molto fragile", "")
-    text = string.gsub(text, "...&lt;0,128,128:0,0,0&gt;Sembrano molto fragili", "")
+    text = string.gsub(text, "Sembra molto fragile", "")
+    text = string.gsub(text, "Sembrano molto fragili", "")
   end
+  --
+  text = string.gsub(text, "&lt;[%d,:]+&gt;&lt;r&gt;", "")
   text = ui.fRemoveArticle(text)
-  return text, statusColor, good, evil, bring, noisy, brittle
+  --
+  return text, status, good, evil, bright, noisy, brittle
 end
 --
 function ui.fExpandVariables(value, toAlias)
@@ -7109,15 +7160,15 @@ end
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Opponent (GMCP)</name>
+					<name>Opponent</name>
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_o(time_left)
-  if ui.difTimer_o then
+  if (ui.difTimer_o) then
     killTimer(ui.difTimer_o)
   end
   --
-  if time_left &gt; 0 then
+  if (time_left &gt; 0) then
     ui.difTimer_o = tempTimer(1, function() ui.fIncrement_difTimer_o(time_left - 1) end)
     GUI.Opponent.Main.Health.dif:show()
   else
@@ -7164,15 +7215,13 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
     --
     -- Level color
-    local color
+    local color = "red"
     if (levDif &gt;= 5) then
       color = "white"
     elseif (levDif &gt;= 0) then
       color = "green"
     elseif (levDif &gt;= -5) then
       color = "orange"
-    else
-      color = "red"
     end
     --
     GUI.Opponent.Level:setFgColor(color)
@@ -7204,33 +7253,34 @@ function ui.fUpdateOpponent()
   --
   -- Diff. hp
   hpDif = GUI.Opponent.Main.Health.front:get_width() - hpDif
-  if (hpDif &lt; 0) then
-    GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
-                                      GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
-    GUI.Opponent.Main.Health.dif:resize(-hpDif,
-                                        GUI.Opponent.Main.Health.front:get_height())
-    --
-    GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-      qproperty-alignment: 'AlignRight';
-      border: 1px solid rgba(255, 0, 0, 0.8);
-      background-color: rgba(255, 0, 0, 0.4);
-    ]])
-    --
-    GUI.Opponent.Main.Health.dif:echo("--")
-    ui.fIncrement_difTimer_o(2)
-  elseif (hpDif &gt; 0) then
-    GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpDif,
-                                      GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2)
-    GUI.Opponent.Main.Health.dif:resize(hpDif - 1,
-                                        GUI.Opponent.Main.Health.front:get_height() - 4)
-    --
-    GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
-      qproperty-alignment: 'AlignRight';
-      border: 1px solid rgba(0, 255, 0, 0.8);
-      background-color: rgba(0, 255, 0, 0.4);
-    ]])
-    --
-    GUI.Opponent.Main.Health.dif:echo("++")
+  if (hpDif ~= 0) then
+    if (hpDif &lt; 0) then
+      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
+                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
+      GUI.Opponent.Main.Health.dif:resize(-hpDif,
+                                          GUI.Opponent.Main.Health.front:get_height())
+      --
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+        qproperty-alignment: 'AlignRight';
+        border: 1px solid rgba(255, 0, 0, 0.8);
+        background-color: rgba(255, 0, 0, 0.4);
+      ]])
+      --
+      GUI.Opponent.Main.Health.dif:echo("--")
+    elseif (hpDif &gt; 0) then
+      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpDif,
+                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2)
+      GUI.Opponent.Main.Health.dif:resize(hpDif - 1,
+                                          GUI.Opponent.Main.Health.front:get_height() - 4)
+      --
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+        qproperty-alignment: 'AlignRight';
+        border: 1px solid rgba(0, 255, 0, 0.8);
+        background-color: rgba(0, 255, 0, 0.4);
+      ]])
+      --
+      GUI.Opponent.Main.Health.dif:echo("++")
+    end
     ui.fIncrement_difTimer_o(2)
   end
   ui.parameters.last_hp_opponent = hp;
@@ -7284,15 +7334,15 @@ end
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Player (GMCP)</name>
+					<name>Player</name>
 					<packageName></packageName>
 					<script>--
 function ui.fIncrement_difTimer_p(time_left)
-  if ui.difTimer_p then
+  if (ui.difTimer_p) then
     killTimer(ui.difTimer_p)
   end
   --
-  if time_left &gt; 0 then
+  if (time_left &gt; 0) then
     ui.difTimer_p = tempTimer(1, function() ui.fIncrement_difTimer_p(time_left - 1) end)
     GUI.Player.Main.Health.dif:show()
   else
@@ -7327,11 +7377,15 @@ function ui.fUpdatePlayer()
     ui.variables.character_name = "D3Bu4 M0D3"
   end
   --
+  -- Experience
+  local experience = ui.variables.experience or 0
+  local toNext = 300000000
+  --
   -- HP
-  local hp = tonumber(ui.variables.health) or hp
-  local hpMax = tonumber(ui.variables.health_max) or hpMAx
+  local hp = tonumber(ui.variables.health)
+  local hpMax = tonumber(ui.variables.health_max)
   local hpPerc = 0
-  local dif = GUI.Player.Main.Health.front:get_width()
+  local hpDif = GUI.Player.Main.Health.front:get_width()
   ui.parameters.last_hp = ui.parameters.last_hp or 0;
   --
   if (hpMax ~= 0) then 
@@ -7382,16 +7436,16 @@ function ui.fUpdatePlayer()
   -- Redraw widget
   GUI.Player:setTitle(ui.variables.character_name)
   GUI.Player.Level:echo("&lt;center&gt;"..ui.variables.level)
-  GUI.Player.Main.Experience:setValue(ui.variables.experience, 300000000)
+  GUI.Player.Main.Experience:setValue(experience, toNext)
   GUI.Player.Main.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..hp.."/"..hpMax.." - "..hpPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Mana:setValue(manaPerc, 100,"&lt;p align=right&gt;"..mana.."/"..manaMax.." - "..manaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Stamina:setValue(staminaPerc, 100,"&lt;p align=right&gt;"..stamina.."/"..staminaMax.." - "..staminaPerc.."% &lt;/p&gt;")
   --
-  dif = GUI.Player.Main.Health.front:get_width() - dif
-  if (dif &lt; 0) then
+  hpDif = GUI.Player.Main.Health.front:get_width() - hpDif
+  if (hpDif &lt; 0) then
     GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width(),
                                     GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y());
-    GUI.Player.Main.Health.dif:resize(-dif,
+    GUI.Player.Main.Health.dif:resize(-hpDif,
                                       GUI.Player.Main.Health.front:get_height())
     GUI.Player.Main.Health.dif:echo("- -")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
@@ -7400,10 +7454,10 @@ function ui.fUpdatePlayer()
       background-color: rgba(255, 0, 0, 0.4);
     ]])
     ui.fIncrement_difTimer_p(2)
-  elseif (dif &gt; 0) then
-    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - dif,
+  elseif (hpDif &gt; 0) then
+    GUI.Player.Main.Health.dif:move(GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - hpDif,
                                     GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2)
-    GUI.Player.Main.Health.dif:resize(dif-1,
+    GUI.Player.Main.Health.dif:resize(hpDif-1,
                                       GUI.Player.Main.Health.front:get_height() - 4)
     GUI.Player.Main.Health.dif:echo("++")
     GUI.Player.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
@@ -7509,7 +7563,7 @@ function ui.fLoadProfile(profile)
     -- Refresh widget
     ui.fUpdateTarget()
     ui.fUpdateOpponent()
-    ui.fUpdateGroup() 
+    ui.fUpdateGroup()
     ui.fUpdatePlayer()
     ui.fUpdateAllAliasButton()
     --
@@ -7890,34 +7944,32 @@ end
       name = "GUI.AffectIcon"..i,
       x = 30*col,
       y = 30*row,
-      width = 30,
-      height = 30,
+      width = 70,
+      height = 25,
     }, GUI.Affect.Main.Body)
     GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
     --
     -- Icon
     GUI["AffectIcon"..i].icon = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".icon",
-      x = 4, y = 4,
-      width = -4,
-      height = -5,
+      x = 2, y = 2,
+      width = -27,
+      height = -2,
     }, GUI["AffectIcon"..i])
     GUI["AffectIcon"..i].icon:enableClickthrough() -- for tooltip
     GUI["AffectIcon"..i].icon:setStyleSheet(GUI.CSS.AffectIcon)
-    GUI["AffectIcon"..i].icon:setFgColor("black");
-    GUI["AffectIcon"..i].icon:setFontSize(5);
+    GUI["AffectIcon"..i].icon:setFontSize(7);
     --
     -- Time
     GUI["AffectIcon"..i].time = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".time",
-      x = 0, y = -1,
-      width = 30,
-      height = 10,
+      x = -27, y = 2,
+      width = 25,
+      height = -2,
     }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].time:setStyleSheet([[
-      background-color: rgba(0, 0, 0, 0);
-    ]])
-    GUI["AffectIcon"..i].time:setFontSize(6);
+    GUI["AffectIcon"..i].time:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].time:setStyleSheet(GUI.CSS.AffectTime)
+    GUI["AffectIcon"..i].time:setFontSize(7);
     --
     GUI["AffectIcon"..i]:hide()
   end
@@ -8956,32 +9008,32 @@ end</script>
     name = "GUI.TargetButtons.Main.Body.t1",
     x = 0,
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t2 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t2",
-    x = "50%",
+    x = "50%+2",
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t3 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t3",
     x = 0,
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t4 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t4",
-    x = "50%",
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    x = "50%+2",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   for i=1,4 do
@@ -8998,7 +9050,7 @@ end</script>
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].index:setFontSize(6)
     GUI.TargetButtons.Main.Body["t"..i].index:echo("&lt;center&gt;t"..i.."")
-    GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+    --GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
     GUI.TargetButtons.Main.Body["t"..i].index:enableClickthrough()
     --
     -- Keybid
@@ -9036,8 +9088,7 @@ end</script>
 				<script>--
 ui = ui or {}
 ui.enDebug = false
-ui.release = "1-230914"
-ui.autoUpdate = true
+ui.release = "1.23.10.06 in corso"
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 --
 -- Colors
@@ -9102,7 +9153,7 @@ ui.affects = {
 --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
 --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
 --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
---  ["scudo di fuoco"]            = {icon = "Skill_448.png", color = "firebrick", shortName = "PSI Fire" },
+-- ["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
 --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
 --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
 }
@@ -9241,12 +9292,12 @@ ui.dirTokenFrom = {
 }
 --
 ui.dirTokenColor = {
-  d     = "&lt;255,255,255:30,24,24&gt;", -- white
-  e     = "&lt;255,255,0:30,24,24&gt;",   -- yellow
-  n     = "&lt;0,255,0:30,24,24&gt;",     -- green
-  s     = "&lt;0,0,255:30,24,24&gt;",     -- blue
-  u     = "&lt;0,255,255:30,24,24&gt;",   -- cyan
-  w     = "&lt;255,0,255:30,24,24&gt;",   -- magenta
+  d = "&lt;255,255,255:30,24,24&gt;", -- white
+  e = "&lt;255,255,0:30,24,24&gt;",   -- yellow
+  n = "&lt;0,255,0:30,24,24&gt;",     -- green
+  s = "&lt;0,0,255:30,24,24&gt;",     -- blue
+  u = "&lt;0,255,255:30,24,24&gt;",   -- cyan
+  w = "&lt;255,0,255:30,24,24&gt;",   -- magenta
 }
 --
 ui.dirReverse = {
@@ -9353,27 +9404,33 @@ GUI.CSS = GUI.CSS or {}
 -- Affect
 GUI.CSS.Affect = [[
 QLabel {
-  border: 1px solid;
-  border-radius: 14px;
-  border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;
-  background-color: rgba(30, 24, 0);
+  border: 2px outset #aa8822;
+  border-radius: 8px;
 }
 ]]
 --
 -- Affect Icon
 GUI.CSS.AffectIcon = [[
   border: 0px solid;
-  border-radius: 10px;
-  qproperty-alignment: 'AlignVCenter | AlignCenter';
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px 1px 0px 1px;
   qproperty-wordWrap: true;
+]]
+--  qproperty-alignment: 'AlignVCenter | AlignCenter';
+-- Affect time
+GUI.CSS.AffectTime = [[
+  border-left: 2px outset #aa8822;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: black;
 ]]
 --
 -- Target buttons
 GUI.CSS.Target = [[
-  margin: 5px;
-  border-style: outset;
-  border-width: 2px;
-  border-color: "#aa8822";
+  border: 2px outset #aa8822;
   border-radius: 5px 10px;
   qproperty-wordWrap: true;
 ]]
@@ -9772,7 +9829,7 @@ ui.fInitTargetButtonsWidget()
 ui.fUpdateAllTargetButton()
 ui.fUpdateTarget()
 ui.fUpdateOpponent()
-ui.fUpdateGroup() 
+ui.fUpdateGroup()
 --
 -- Player
 ui.fDebug("[init] Player")

@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10">
 			<name>LeU Live</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,8 +19,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>334</borderLeftWidth>
-			<borderRightWidth>563</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>562</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -1456,7 +1456,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -4710,8 +4710,7 @@ end</script>
 local n = 0
 --
 for key, equipment in pairs(ui.equipment) do
-  if (equipment.statusColor ~= "&lt;128,128,128:30,24,24&gt;") and
-     (equipment.statusColor ~= "&lt;255,255,255:30,24,24&gt;") then
+  if (equipment.status) and (equipment.status &lt; 8) then
     send("remove "..equipment.number, false)
     send("give - "..f, false)
     if (equipment.location == "&lt;192,192,192:30,24,24&gt;impugnato&lt;r&gt;") then
@@ -5099,7 +5098,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: red;
+    background-color: green;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -5265,13 +5264,13 @@ function ui.fUpdateAffects()
                          end )
   --
   i = 0;
-  for j,affect in ipairs(orderTable) do
+  for j, affect in ipairs(orderTable) do
     if (ui.actAffects[affect] &lt; 0) then
       ui.actAffects[affect] = nil
     elseif (i&lt;20) then
       local icon = nil
       local BGColor = nil
-      local FGColor = "black"
+      local FGColor = "LightGoldenrod"
       local shortName = nil
       local CCS = GUI.CSS.AffectIcon
       --
@@ -5303,15 +5302,16 @@ function ui.fUpdateAffects()
       --
       -- Short Name
       if (not shortName) then
-        local name = ui.fRemoveArticle(affect)
-        shortName = ""
+        --local name = ui.fRemoveArticle(affect)
+        --shortName = ""
         --
-        for word in name:gmatch("%S+") do
-          shortName = shortName..string.sub(word, 1, 3).." "
-        end
+        --for word in name:gmatch("%S+") do
+        --  shortName = shortName..string.sub(word, 1, 5).." "
+        --end
+        shortName = ui.fRemoveArticle(affect);
       end
-      GUI["AffectIcon"..i].icon:setFgColor(FGcolor)
-      GUI["AffectIcon"..i].icon:echo(shortName)
+      GUI["AffectIcon"..i].icon:setFgColor(FGColor)
+      GUI["AffectIcon"..i].icon:echo("&lt;center&gt;"..shortName)
       --
       -- Icon
       if (icon) then
@@ -5328,14 +5328,15 @@ function ui.fUpdateAffects()
         BGColor = string.format("#%02X%02X%02X", R, G, B)
       end
       CCS = CCS..[[
-              background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 ]]..BGColor..[[);
+              background-color: ]]..BGColor..[[;
             ]]
+      -- background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0, stop:0 ]]..BGColor..[[, stop:1 moccasin);
       --
       -- StyleSheet
       GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
       --
       -- Duration
-      local durationColor = green
+      local durationColor = "green"
       if (ui.actAffects[affect] == 0) then
         durationColor = "red"
       elseif (ui.actAffects[affect] == 1) then
@@ -5349,25 +5350,24 @@ function ui.fUpdateAffects()
       -- ToolTip
       GUI["AffectIcon"..i]:setToolTip(affect, 10)
       --
-      -- Position
-      GUI["AffectIcon"..i]:move(x, y)
-      --
       -- Show if inside box
       if (y&lt;=GUI.Affect.Main.Body:get_height() - 20) then
+        GUI["AffectIcon"..i]:move(x, y)
         GUI["AffectIcon"..i]:show();
       else
         GUI["AffectIcon"..i]:hide();
       end
       --
       --
-      if (x &gt; GUI.Affect.Main.Body:get_width() - 60) then
+      if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 4 &gt; GUI.Affect.Main.Body:get_width()) then
         x = 0
-        y = y + 42
+        y = y + GUI["AffectIcon"..i]:get_height() + 4
       else
-        x = x + 32
+        x = x + GUI["AffectIcon"..i]:get_width() + 4
       end
     end
   end
+  --
   -- Hide not used affects
   for i=i+1, 20 do
     if (GUI["AffectIcon"..i]) then
@@ -7215,15 +7215,13 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Main.Health.front:echo(ui.variables.opponent_name)
     --
     -- Level color
-    local color
+    local color = "red"
     if (levDif &gt;= 5) then
       color = "white"
     elseif (levDif &gt;= 0) then
       color = "green"
     elseif (levDif &gt;= -5) then
       color = "orange"
-    else
-      color = "red"
     end
     --
     GUI.Opponent.Level:setFgColor(color)
@@ -7946,34 +7944,32 @@ end
       name = "GUI.AffectIcon"..i,
       x = 30*col,
       y = 30*row,
-      width = 30,
-      height = 30,
+      width = 70,
+      height = 25,
     }, GUI.Affect.Main.Body)
     GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
     --
     -- Icon
     GUI["AffectIcon"..i].icon = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".icon",
-      x = 4, y = 4,
-      width = -4,
-      height = -5,
+      x = 2, y = 2,
+      width = -27,
+      height = -2,
     }, GUI["AffectIcon"..i])
     GUI["AffectIcon"..i].icon:enableClickthrough() -- for tooltip
     GUI["AffectIcon"..i].icon:setStyleSheet(GUI.CSS.AffectIcon)
-    GUI["AffectIcon"..i].icon:setFgColor("black");
-    GUI["AffectIcon"..i].icon:setFontSize(5);
+    GUI["AffectIcon"..i].icon:setFontSize(7);
     --
     -- Time
     GUI["AffectIcon"..i].time = Geyser.Label:new2({
       name = "GUI.AffectIcon"..i..".time",
-      x = 0, y = -1,
-      width = 30,
-      height = 10,
+      x = -27, y = 2,
+      width = 25,
+      height = -2,
     }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].time:setStyleSheet([[
-      background-color: rgba(0, 0, 0, 0);
-    ]])
-    GUI["AffectIcon"..i].time:setFontSize(6);
+    GUI["AffectIcon"..i].time:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].time:setStyleSheet(GUI.CSS.AffectTime)
+    GUI["AffectIcon"..i].time:setFontSize(7);
     --
     GUI["AffectIcon"..i]:hide()
   end
@@ -9012,32 +9008,32 @@ end</script>
     name = "GUI.TargetButtons.Main.Body.t1",
     x = 0,
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t2 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t2",
-    x = "50%",
+    x = "50%+2",
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t3 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t3",
     x = 0,
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t4 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t4",
-    x = "50%",
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    x = "50%+2",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   for i=1,4 do
@@ -9054,7 +9050,7 @@ end</script>
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].index:setFontSize(6)
     GUI.TargetButtons.Main.Body["t"..i].index:echo("&lt;center&gt;t"..i.."")
-    GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+    --GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
     GUI.TargetButtons.Main.Body["t"..i].index:enableClickthrough()
     --
     -- Keybid
@@ -9093,7 +9089,6 @@ end</script>
 ui = ui or {}
 ui.enDebug = false
 ui.release = "1.23.10.06 in corso"
-ui.autoUpdate = true
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 --
 -- Colors
@@ -9158,7 +9153,7 @@ ui.affects = {
 --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
 --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
 --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
-["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "white", shortName = "PSI Fire" },
+-- ["scudo di fuoco"]            = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
 --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
 --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
 }
@@ -9409,27 +9404,33 @@ GUI.CSS = GUI.CSS or {}
 -- Affect
 GUI.CSS.Affect = [[
 QLabel {
-  border: 1px solid;
-  border-radius: 14px;
-  border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;
-  background-color: rgba(30, 24, 0);
+  border: 2px outset #aa8822;
+  border-radius: 8px;
 }
 ]]
 --
 -- Affect Icon
 GUI.CSS.AffectIcon = [[
   border: 0px solid;
-  border-radius: 10px;
-  qproperty-alignment: 'AlignVCenter | AlignCenter';
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px 1px 0px 1px;
   qproperty-wordWrap: true;
+]]
+--  qproperty-alignment: 'AlignVCenter | AlignCenter';
+-- Affect time
+GUI.CSS.AffectTime = [[
+  border-left: 2px outset #aa8822;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: black;
 ]]
 --
 -- Target buttons
 GUI.CSS.Target = [[
-  margin: 5px;
-  border-style: outset;
-  border-width: 2px;
-  border-color: "#aa8822";
+  border: 2px outset #aa8822;
   border-radius: 5px 10px;
   qproperty-wordWrap: true;
 ]]
