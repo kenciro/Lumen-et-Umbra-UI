@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSP="yes" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="no" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSP="yes" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.5" mLineSize="10.0" mBubbleMode="no" mMapViewOnly="yes" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="no" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="300">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,8 +19,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>305</borderLeftWidth>
-			<borderRightWidth>426</borderRightWidth>
+			<borderLeftWidth>319</borderLeftWidth>
+			<borderRightWidth>312</borderRightWidth>
 			<wrapAt>150</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -45,7 +45,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,8,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Courier New,14,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -488,210 +488,6 @@ disableTrigger("loot_end")</script>
 				</Trigger>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Affects Capture</name>
-				<script>ui.fDebug("[trig] Affect start")
-ui.actAffects = {}
-enableTrigger("affects_invalid")
-enableTrigger("affects_valid")
-enableTrigger("affects_end")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>1</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>+- Effetti Attivi -------------------------------------------------------------+</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>affects_invalid</name>
-					<script>ui.fDebug("[trig] Affect_invalid")
-setTriggerStayOpen("Affects Capture", 1)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>| Non hai effetti attivi al momento...                                         |</string>
-						<string>+- Effetti Permanenti ---------------------------------------------------------+</string>
-						<string>| Non hai effetti permanenti attivi...                                         |</string>
-						<string>+- Altri Effetti --------------------------------------------------------------+</string>
-						<string>| Non hai altri effetti attivi...                                              |</string>
-						<string>+- Cooldown -------------------------------------------------------------------+</string>
-						<string>| Non hai cooldown attivi al momento...                                        |</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-						<integer>3</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>affects_valid</name>
-					<script>ui.fDebug("[trig] Affect_valid")
-local name = string.trim(matches[2])
-local duration = tonumber(string.trim(matches[3]))
-if (matches[4] == "round") then
-  duration = duration / 10
-end
-ui.actAffects[name] = duration
-setTriggerStayOpen("Affects Capture", 1)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^\|(.*)\| (.*) (ore|round)\s+\|</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>affects_end</name>
-					<script>ui.fDebug("[trig] Affect_end")
-disableTrigger("affects_invalid")
-disableTrigger("affects_valid")
-disableTrigger("affects_end")
-ui.fUpdateAffects()</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>+------------------------------------------------------------------------------+</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>3</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Group</name>
-				<script>ui.fDebug("[trig] Group start")
-ui.group = {}
-ui.totalMember = 0
-enableTrigger("group_valid")
-enableTrigger("group_end")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>1</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^Ma non sei il membro di un gruppo!$</string>
-					<string>^I membri del tuo gruppo(.*)sono\:(.*)$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>group_valid</name>
-					<script>ui.fDebug("[trig] group_valid")
-if (matches[2] ~= ui.variables.character_name) then
-  local member = {matches[2], (matches[3] == "(Capo)"), tonumber(matches[4]), tonumber(matches[5]), tonumber(matches[6])}
-  ui.totalMember = ui.totalMember + 1
-  ui.group[ui.totalMember] = member
-end
-setTriggerStayOpen("Group", 1)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#00ff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^\s+(\S+)\s+(.*) HP:\s+(\d+)\% MANA:\s+(\d+)\% MV:\s+(\d+)\%$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>group_end</name>
-					<script>ui.fDebug("[trig] group_end")
-disableTrigger("group_valid")
-disableTrigger("group_end")
---
-ui.fUpdateGroup()</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#00ffff</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Tick</name>
-				<script>ui.fIncrementTickTimer(65)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^Un[']altra ora della giornata si accinge a trascorrere[.]</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Track</name>
 				<script>ui.fDebug("[trig] Track")
 if (matches[2]) then
@@ -724,27 +520,6 @@ ui.fUpdateMap()</script>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Position</name>
-				<script>ui.position = matches[2] or ""
-ui.fUpdateMap()</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^Ti muovi rapidamente verso (?:il lato|l'angolo|il) (.*) della stanza.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -5163,20 +4938,29 @@ function ui.fUpdateAffects()
   local i
   local orderTable = {}
   --
+  ui.fDebug("[call] ui.fUpdateAffects()")
+  --
   ui.actAffects = {}
   --
   -- Simulation (for debug)
   if (ui.enDebug) then
     for i=1, 20 do
-      local name = "Affect num_"..i 
+      local name = "Affect "..i 
       ui.actAffects[name] = {} 
-      ui.actAffects[name].duration = tonumber(i*2)
-      ui.actAffects[name].isRound  = false
-      if (i-1&lt;10)then
-        ui.actAffects[name].color    = "$c000"..(i-1)
+      ui.actAffects[name].category         = math.random(0, 100)
+      if (i&lt;10)then
+        ui.actAffects[name].color    = "$c000"..(i)
       else
-        ui.actAffects[name].color    = "$c00"..(i-1)
+        ui.actAffects[name].color    = "$c00"..(i)
       end
+      ui.actAffects[name].dispelResistance = math.random(0, 100)
+      ui.actAffects[name].duration         = math.random(-1, 10)
+      ui.actAffects[name].isNegative       = math.random(0, 100)
+      ui.actAffects[name].isRound          = false;
+      ui.actAffects[name].stacks           = math.random(0, 100)
+      ui.actAffects[name].type             = math.random(0, 100)
+      --
+      orderTable[#orderTable+1] = name
     end
   elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
     -- GMCP
@@ -5191,14 +4975,17 @@ function ui.fUpdateAffects()
       ui.actAffects[name].isRound          = gmcp.char.affects[affect].isRound
       ui.actAffects[name].stacks           = gmcp.char.affects[affect].stacks
       ui.actAffects[name].type             = gmcp.char.affects[affect].type
+      --
+      orderTable[#orderTable+1] = name
     end
   end
   -- Order Affects
-  for affect in pairs(ui.actAffects) do
-    orderTable[#orderTable+1] = affect
-  end
   table.sort(orderTable, function (affect1, affect2)
-                           if (ui.actAffects[affect1].isRound) and (not ui.actAffects[affect2].isRound) then
+                           if (ui.actAffects[affect1].duration &lt; 0) then
+                             return false
+                           elseif(ui.actAffects[affect2].duration &lt; 0) then
+                             return true
+                           elseif (ui.actAffects[affect1].isRound) and (not ui.actAffects[affect2].isRound) then
                              return true
                            elseif (not ui.actAffects[affect1].isRound) and (ui.actAffects[affect2].isRound) then
                              return false
@@ -5212,9 +4999,9 @@ function ui.fUpdateAffects()
     if (i&lt;20) then
       local icon = nil
       local BGColor = nil
-      local FGColor = "black"
+      local FGColor = "black";
       local shortName = nil
-      local CCS = GUI.CSS.AffectIcon
+      local CCS = GUI.CSS.AffectText
       --
       i = i + 1
       --
@@ -5235,7 +5022,7 @@ function ui.fUpdateAffects()
         if (ui.affects[affect].icon) and (io.exists(ui.pathIcn..ui.affects[affect].icon)) then
           icon = ui.pathIcn..ui.affects[affect].icon;
         end
-        --
+        --eff
         -- Pre-BG Color
         if (ui.affects[affect].BGcolor) then
           BGColor = ui.affects[affect].BGcolor
@@ -5244,15 +5031,10 @@ function ui.fUpdateAffects()
       --
       -- Short Name
       if (not shortName) then
-        local name = ui.fRemoveArticle(affect)
-        shortName = ""
-        --
-        for word in name:gmatch("%S+") do
-          shortName = shortName..string.sub(word, 1, 5).." "
-        end
+        shortName = ui.fRemoveArticle(affect);
       end
-      GUI["AffectIcon"..i].icon:setFgColor(FGColor)
-      GUI["AffectIcon"..i].icon:echo(shortName)
+      GUI["AffectIcon"..i].text:setFgColor(FGColor)
+      GUI["AffectIcon"..i].text:echo("&lt;center&gt;"..shortName)
       --
       -- Icon
       if (icon) then
@@ -5262,40 +5044,57 @@ function ui.fUpdateAffects()
       end
       --
       -- BG color
-      if (not BGColor) then  
+      if (not BGColor) then
         if (ui.actAffects[affect].color) then
           BGColor = ui.fGetColor(ui.actAffects[affect].color)
         else
-          BGColor = "rgba(27, 87, 141, 255)"
+		      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+		      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+		      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+		      BGColor = string.format("#%02X%02X%02X", R, G, B)
         end
       end
       CCS = CCS..[[
-              background-color: qradialgradient(spread:pad, cx:0.5, cy:0, radius:1, fx:0.5, fy:0, stop:0 white, stop:1 ]]..BGColor..[[);
+              background-color: ]]..BGColor..[[;
             ]]
+      GUI["AffectIcon"..i].text:setStyleSheet(CCS)
       --
-      -- StyleSheet
-      GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
+      GUI["AffectIcon"..i]:setStyleSheet([[QLabel{
+        ]]..GUI.CSS.Affect..[[
+        background-color: ]]..BGColor..[[;
+      }]])
+      --
+      -- Dispel Resistance
+      GUI["AffectIcon"..i].dispelResistance:echo("&lt;center&gt;"..ui.actAffects[affect].dispelResistance)
       --
       -- Duration
-      local durationColor = "grey"
-      if (ui.actAffects[affect].duration &lt;= 0) then
-        durationColor = "red"
+      local durationColor = "white"
+      if (ui.actAffects[affect].duration == 0) then
+        durationColor = "ansired"
       elseif (ui.actAffects[affect].duration == 1) then
         durationColor = "orange"
       elseif  (ui.actAffects[affect].duration == 2) then
         durationColor = "yellow"
       end
-      if (ui.actAffects[affect].isRound) then
-        ui.actAffects[affect].duration = "("..ui.actAffects[affect].duration..")"
+      --
+      if (ui.actAffects[affect].duration &lt; 0) then
+        -- Permanente
+        ui.actAffects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
+      elseif (ui.actAffects[affect].isRound) then
+        -- In round
+        ui.actAffects[affect].duration = (ui.actAffects[affect].duration * 4) / 75
       end
-      GUI["AffectIcon"..i].time:setFgColor(durationColor)
-      GUI["AffectIcon"..i].time:echo("&lt;center&gt;"..ui.actAffects[affect].duration)
+      GUI["AffectIcon"..i].duration:setFgColor(durationColor)
+      GUI["AffectIcon"..i].duration:echo("&lt;center&gt;"..ui.actAffects[affect].duration)
+      --
+      -- Stack
+      GUI["AffectIcon"..i].stacks:echo("&lt;center&gt;"..ui.actAffects[affect].stacks)
       --
       -- ToolTip
-      GUI["AffectIcon"..i]:setToolTip(affect, 10)
+      GUI["AffectIcon"..i]:setToolTip(affect.."\n("..ui.actAffects[affect].category..")", 10)
       --
       -- Show if inside box
-      if (y &lt;= GUI.Affect.Main.Body:get_height() - 20) then
+      if (y&lt;=GUI.Affect.Main.Body:get_height() - GUI["AffectIcon"..i]:get_height()) then
         GUI["AffectIcon"..i]:move(x, y)
         GUI["AffectIcon"..i]:show();
       else
@@ -5303,11 +5102,11 @@ function ui.fUpdateAffects()
       end
       --
       --
-      if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 4 &gt; GUI.Affect.Main.Body:get_width()) then
+      if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 2 &gt; GUI.Affect.Main.Body:get_width()) then
         x = 0
-        y = y + GUI["AffectIcon"..i]:get_height() + 4
+        y = y + GUI["AffectIcon"..i]:get_height() + 3
       else
-        x = x + GUI["AffectIcon"..i]:get_width() + 4
+        x = x + GUI["AffectIcon"..i]:get_width() + 2
       end
     end
   end
@@ -6361,16 +6160,6 @@ function ui.fExecutePath(table, option)
     for i = 1, #table do
       expandAlias(table[i])
     end
---[[    if (#table == 1) then
-      -- Execute first (alone)
-      expandAlias(table[1])
-    else
-      -- Show all
-      for i = 1, #table do
-        cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetAliasOutputFormattedText(table[i]).."\n")
-      end
-    end
-]]
   else
     local itemNumber = tonumber(option)
     if (itemNumber) then
@@ -6433,6 +6222,103 @@ function ui.fCopyFile(old_path, new_path)
   new_file_sz = new_file:seek("end")
   new_file:close()
   return new_file_sz == old_file_sz
+end
+--
+-- return true if t1 == t2
+function ui.TableCompare(o1, o2, ignore_mt)
+    -- same object
+    if o1 == o2 then return true end
+
+    local o1Type = type(o1)
+    local o2Type = type(o2)
+    --- different type
+    if o1Type ~= o2Type then return false end
+    --- same type but not table, already compared above
+    if o1Type ~= 'table' then return false end
+
+    -- use metatable method
+    if not ignore_mt then
+        local mt1 = getmetatable(o1)
+        if mt1 and mt1.__eq then
+            --compare using built in method
+            return o1 == o2
+        end
+    end
+
+    -- iterate over o1
+    for key1, value1 in pairs(o1) do
+        local value2 = o2[key1]
+        if value2 == nil or ui.TableCompare(value1, value2, ignore_mt) == false then
+            return false
+        end
+    end
+
+    --- check keys in o2 but missing from o1
+    for key2, _ in pairs(o2) do
+        if o1[key2] == nil then return false end
+    end
+    return true
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>GMCP</name>
+					<packageName></packageName>
+					<script>function ui.fUpdateGMCP()
+  --
+  --ui.fDebug("[call] ui.fUpdateGMCP()")
+  if (gmcp) then
+    ui.lastGmcp = ui.lastGmcp or {}
+
+    if (gmcp.char) then
+      ui.lastGmcp.char         = ui.lastGmcp.char or {}
+      ui.lastGmcp.char.affects = ui.lastGmcp.char.affects or {}
+      ui.lastGmcp.char.base    = ui.lastGmcp.char.base or {}
+      ui.lastGmcp.char.group   = ui.lastGmcp.char.group or {}
+      ui.lastGmcp.char.vitals  = ui.lastGmcp.char.vitals or {}
+
+      if (gmcp.char.affects) and (not ui.TableCompare(gmcp.char.affects, ui.lastGmcp.char.affects)) then
+        ui.fUpdateAffects();
+      end
+
+      if (gmcp.char.base) and (not ui.TableCompare(gmcp.char.base, ui.lastGmcp.char.base)) then
+        ui.fUpdatePlayer();
+      end
+
+      if (gmcp.char.group) and (not ui.TableCompare(gmcp.char.group, ui.lastGmcp.char.group)) then
+        ui.fUpdateGroup();
+      end
+
+      if (gmcp.char.vitals) and (not ui.TableCompare(gmcp.char.vitals, ui.lastGmcp.char.vitals)) then
+        ui.fUpdatePlayer();
+        ui.fUpdateOpponent();
+      end
+
+    end
+
+    if (gmcp.room) then
+      ui.lastGmcp.room = ui.lastGmcp.room or {}
+      if (not ui.TableCompare(gmcp.room, ui.lastGmcp.room)) then
+        ui.fUpdateMap();
+        --ui.lastGmcp.room = gmcp.room;
+      end
+    end
+
+  end
+
+
+
+
+--  if (not ui.TableCompare(t1, t2)
+  
+--ui.handler_fUpdateAffects  = registerAnonymousEventHandler("gmcp.char.affects", "")
+--ui.handler_fUpdatePlayer_b = registerAnonymousEventHandler("gmcp.char.base", "ui.fUpdatePlayer")
+--ui.handler_fUpdateGroup    = registerAnonymousEventHandler("gmcp.char.group", "ui.fUpdateGroup")
+--ui.handler_fUpdateOpponent = registerAnonymousEventHandler("gmcp.char.vitals", "ui.fUpdateOpponent")
+--ui.handler_fUpdatePlayer_v = registerAnonymousEventHandler("gmcp.char.vitals", "ui.fUpdatePlayer")
+--ui.handler_fUpdateMap      = registerAnonymousEventHandler("gmcp.room", "ui.fUpdateMap")
+  ui.lastGmcp = {}
+  ui.lastGmcp = table.deepcopy(gmcp);
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -6451,6 +6337,8 @@ function ui.fUpdateGroup()
   local nRow = 5;
   local i = 0
   local mod
+  --
+  ui.fDebug("[call] ui.fUpdateGroup()")
   --
   ui.group = {}
   if (ui.enDebug) then
@@ -7074,6 +6962,8 @@ function ui.fUpdateMap()
   local token
   local exits = {}
   --
+  ui.fDebug("[call] ui.fUpdateMap()")
+  --
   clearWindow("GUI.MapCompass.Main.Body.Exits")
   clearWindow("GUI.MapCompass.Main.Body.OtherExits")
   --
@@ -7250,6 +7140,8 @@ function ui.fUpdateOpponent()
   local levDif
   local hpDif = GUI.Opponent.Main.Health.front:get_width()
   --
+  ui.fDebug("[call] ui.fUpdateOpponent()")
+  --
   -- init 
   ui.parameters.last_hp_opponent = ui.parameters.last_hp_opponent or 0
   ui.variables.opponent_hp       = 0
@@ -7422,6 +7314,8 @@ function ui.fIncrement_difTimer_p(time_left)
 end
 --
 function ui.fUpdatePlayer()
+  --
+  ui.fDebug("[call] ui.fUpdatePlayer()")
   --
   -- init vars
   ui.variables.class          = ui.variables.class or ""
@@ -7798,7 +7692,7 @@ function ui.fRefreshTargetButton(button)
         ui.fRemoveKeyb(ui.targets[button])
       end
       -- Echo
-      child.keybind:echo("&lt;center&gt;"..keybind)
+      child.keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
       -- CCS
       if (type == "g") then
         CCS = GUI.CSS.Border3;
@@ -8002,7 +7896,7 @@ function ui.fReadFileVariables()
   -- Save
   table.save(ui.fileVariables, ui.variables)
 end
---</script>
+</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
@@ -8042,7 +7936,7 @@ end
   -- Border
   ui.fAddBorder(GUI.Affect.Main, 2)
   --
-  -- Affect icon
+  -- 20x Affects
   local i
   for i=1, 20 do
     local col = (i-1) % 10;
@@ -8052,32 +7946,56 @@ end
       name = "GUI.AffectIcon"..i,
       x = 30*col,
       y = 30*row,
-      width = 70,
-      height = 25,
+      width = 100,
+      height = 24,
     }, GUI.Affect.Main.Body)
     GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
     --
-    -- Icon
-    GUI["AffectIcon"..i].icon = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".icon",
-      x = 2, y = 2,
+    -- Text
+    GUI["AffectIcon"..i].dispelResistance = Geyser.Label:new2({
+      name = "GUI.AffectIcon"..i..".dispelResistance",
+      x = 0, y = 0,
+      width = 25,
+      height = "100%",
+    }, GUI["AffectIcon"..i])
+    GUI["AffectIcon"..i].dispelResistance:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].dispelResistance:setStyleSheet(GUI.CSS.AffectDispelResistance)
+    GUI["AffectIcon"..i].dispelResistance:setFgColor("gold")
+    GUI["AffectIcon"..i].dispelResistance:setFontSize(7);
+    --
+    -- Text
+    GUI["AffectIcon"..i].text = Geyser.Label:new2({
+      name = "GUI.AffectIcon"..i..".text",
+      x = 27, y = 2,
       width = -27,
       height = -2,
     }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].icon:enableClickthrough() -- for tooltip
-    GUI["AffectIcon"..i].icon:setStyleSheet(GUI.CSS.AffectIcon)
-    GUI["AffectIcon"..i].icon:setFgColor("black");
-    GUI["AffectIcon"..i].icon:setFontSize(7);
+    GUI["AffectIcon"..i].text:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].text:setStyleSheet(GUI.CSS.AffectText)
+    GUI["AffectIcon"..i].text:setFontSize(7);
     --
-    -- Time
-    GUI["AffectIcon"..i].time = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".time",
-      x = -27, y = 2,
+    -- Duration
+    GUI["AffectIcon"..i].duration = Geyser.Label:new2({
+      name = "GUI.AffectIcon"..i..".duration",
+      x = -25, y = 0,
       width = 25,
-      height = -2,
+      height = "50%",
     }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].time:setStyleSheet(GUI.CSS.AffectTime)
-    GUI["AffectIcon"..i].time:setFontSize(7);
+    GUI["AffectIcon"..i].duration:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].duration:setStyleSheet(GUI.CSS.AffectDuration)
+    GUI["AffectIcon"..i].duration:setFontSize(7);
+    --
+    -- Stacks
+    GUI["AffectIcon"..i].stacks = Geyser.Label:new2({
+      name = "GUI.AffectIcon"..i..".stacks",
+      x = -25, y = "50%",
+      width = 25,
+      height = "50%",
+    }, GUI["AffectIcon"..i])
+    GUI["AffectIcon"..i].stacks:enableClickthrough() -- for tooltip
+    GUI["AffectIcon"..i].stacks:setStyleSheet(GUI.CSS.AffectStacks)
+    GUI["AffectIcon"..i].stacks:setFgColor("red")
+    GUI["AffectIcon"..i].stacks:setFontSize(7);
     --
     GUI["AffectIcon"..i]:hide()
   end
@@ -8329,7 +8247,7 @@ end</script>
   --
   GUI.Group.Main = Geyser.Label:new2({
     name = "GUI.Group.Main",
-   x = 3,
+    x = 3,
     y = 25,
     width = "100%-6",
     height = "100%-28",
@@ -8426,27 +8344,32 @@ end</script>
     -- Index
     GUI.Group.Main.Body["g"..mod].index = Geyser.Label:new2({
       name = "GUI.Group.Main.Body.g"..mod..".index",
-      x = -20, 
-      y = -20,
-      width = 25,
-      height = 25,
-      fontSize = 8,
+      x = 10, 
+      y = -15,
+      width = 20,
+      height = 15,
     }, GUI.Group.Main.Body["g"..mod])
-    GUI.Group.Main.Body["g"..mod].index:echo("&lt;center&gt;g"..mod.."")
-    GUI.Group.Main.Body["g"..mod].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
     GUI.Group.Main.Body["g"..mod].index:enableClickthrough()
+    GUI.Group.Main.Body["g"..mod].index:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);    
+    GUI.Group.Main.Body["g"..mod].index:setFontSize(6)
+    GUI.Group.Main.Body["g"..mod].index:echo("g"..mod.."")
     --
     -- Keybid
     GUI.Group.Main.Body["g"..mod].keybind = Geyser.Label:new2({
       name = "GUI.Group.Main.Body.g"..mod..".keybind",
-      x = 5, y = -10,
-      width = -5,
+      x = 30,
+      y = -15,
+      width = -10,
       height = 15,
     }, GUI.Group.Main.Body["g"..mod])
     GUI.Group.Main.Body["g"..mod].keybind:enableClickthrough()
-    GUI.Group.Main.Body["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main.Body["g"..mod].keybind:setFontSize(ui.parameters.fsKeybind);
-    GUI.Group.Main.Body["g"..mod].keybind:echo("&lt;center&gt;keybind")
+    GUI.Group.Main.Body["g"..mod].keybind:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
+    GUI.Group.Main.Body["g"..mod].keybind:setFontSize(6);
+    GUI.Group.Main.Body["g"..mod].keybind:echo("keybind")
   end
   --
   -- Wrapping function
@@ -9135,60 +9058,67 @@ end</script>
     name = "GUI.TargetButtons.Main.Body.t1",
     x = 0,
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t2 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t2",
-    x = "50%",
+    x = "50%+2",
     y = 0,
-    width = "50%",
-    height = "50%",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t3 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t3",
     x = 0,
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   GUI.TargetButtons.Main.Body.t4 = Geyser.Label:new2({
     name = "GUI.TargetButtons.Main.Body.t4",
-    x = "50%",
-    y = "50%",
-    width = "50%",
-    height = "50%",
+    x = "50%+2",
+    y = "50%+2",
+    width = "50%-2",
+    height = "50%-2",
   },GUI.TargetButtons.Main.Body)
   --
   for i=1,4 do
+    GUI.TargetButtons.Main.Body["t"..i]:setClickCallback("ui.fExecuteTargetButton", "t"..i, nil)
     GUI.TargetButtons.Main.Body["t"..i]:setFontSize(9)
     GUI.TargetButtons.Main.Body["t"..i]:setFgColor("LightGoldenrod")
-    GUI.TargetButtons.Main.Body["t"..i]:setClickCallback("ui.fExecuteTargetButton", "t"..i, nil)
     --
     -- Index
     GUI.TargetButtons.Main.Body["t"..i].index = Geyser.Label:new2({
       name = "GUI.TargetButtons.Main.Body.t"..i..".index",
-      x = 0, y = 0,
-      width = 25,
-      height = 25,
+      x = 5, 
+      y = -15,
+      width = "15",
+      height = "15",
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].index:setFontSize(6)
-    GUI.TargetButtons.Main.Body["t"..i].index:echo("&lt;center&gt;t"..i.."")
-    GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+    GUI.TargetButtons.Main.Body["t"..i].index:echo("t"..i.."")
+    GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
     GUI.TargetButtons.Main.Body["t"..i].index:enableClickthrough()
     --
     -- Keybid
     GUI.TargetButtons.Main.Body["t"..i].keybind = Geyser.Label:new2({
       name = "GUI.TargetButtons.Main.Body.t"..i..".keybind",
-      x = 5, y = -15,
-      width = -5,
+      x = 5, 
+      y = -15,
+      width = "100%-10",
       height = 15,
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].keybind:enableClickthrough()
-    GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind)
+    --GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind)
+    GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
     GUI.TargetButtons.Main.Body["t"..i].keybind:setFontSize(ui.parameters.fsKeybind)
   end
   --
@@ -9540,36 +9470,53 @@ GUI.CSS = GUI.CSS or {}
 --
 -- Affect
 GUI.CSS.Affect = [[
-QLabel {
-  border: 2px outset #aa8822;
-  border-radius: 8px;
-}
+  border: 2px solid rgb(90,72,72);
+  border-radius: 12px;
 ]]
 --
--- Affect Icon
-GUI.CSS.AffectIcon = [[
-  border: 0px solid;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+-- Affect Dispel Resistance
+GUI.CSS.AffectDispelResistance = [[
+  border: 2px inset rgb(90,72,72);
+  border-radius: 12px;
+  background-color: rgb(30,24,24);
+]]
+--
+-- Affect Text
+GUI.CSS.AffectText = [[
+  border: none;
+  border-radius: 0px;
   qproperty-wordWrap: true;
 ]]
---  qproperty-alignment: 'AlignVCenter | AlignCenter';
--- Affect time
-GUI.CSS.AffectTime = [[
-  border-left: 2px outset #aa8822;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: black;
+--padding: 0px 1px 0px 1px;
+--
+-- Affect Duration
+GUI.CSS.AffectDuration = [[
+  border: 2px inset rgb(90,72,72);
+  border-bottom: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: rgb(30,24,24);;
+]]
+--
+-- Affect Stacks
+GUI.CSS.AffectStacks = [[
+  border: 2px inset rgb(90,72,72);
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: rgb(30,24,24);
+]]
+--
+-- AffectCategory
+GUI.CSS.AffectCategory = [[
+  border: 1px outset #aa8822;
+  border-radius: 4px;
+  background: #aa8822;
 ]]
 --
 -- Target buttons
 GUI.CSS.Target = [[
-  margin: 5px;
-  border-style: outset;
-  border-width: 2px;
-  border-color: "#aa8822";
+  border: 2px outset #aa8822;
   border-radius: 5px 10px;
   qproperty-wordWrap: true;
 ]]
@@ -10021,11 +9968,12 @@ setMergeTables("gmcp")
 --
 -- Events
 ui.fDebug("[init] Register events")
-registerAnonymousEventHandler("gmcp.char", "ui.fUpdatePlayer")
-registerAnonymousEventHandler("gmcp.char.affects", "ui.fUpdateAffects")
-registerAnonymousEventHandler("gmcp.char.vitals", "ui.fUpdateOpponent")
-registerAnonymousEventHandler("gmcp.room", "ui.fUpdateMap")
-registerAnonymousEventHandler("gmcp.char.group", "ui.fUpdateGroup")
+if (ui.handler_fUpdateGMCP) then
+  killAnonymousEventHandler(ui.handler_fUpdateGMCP)
+  ui.handler_fUpdateGMCP = nil
+end
+ui.handler_fUpdateGMCP  = registerAnonymousEventHandler("gmcp.char", "ui.fUpdateGMCP");
+registerAnonymousEventHandler("gmcp.room", "ui.fUpdateGMCP")
 --
 ui.fDebug("[init] ... end UI init!")
 --

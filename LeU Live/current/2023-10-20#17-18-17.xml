@@ -19,8 +19,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>353</borderLeftWidth>
-			<borderRightWidth>562</borderRightWidth>
+			<borderLeftWidth>336</borderLeftWidth>
+			<borderRightWidth>563</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -45,7 +45,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,8,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Noto Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -5302,12 +5302,6 @@ function ui.fUpdateAffects()
       --
       -- Short Name
       if (not shortName) then
-        --local name = ui.fRemoveArticle(affect)
-        --shortName = ""
-        --
-        --for word in name:gmatch("%S+") do
-        --  shortName = shortName..string.sub(word, 1, 5).." "
-        --end
         shortName = ui.fRemoveArticle(affect);
       end
       GUI["AffectIcon"..i].icon:setFgColor(FGColor)
@@ -5330,7 +5324,6 @@ function ui.fUpdateAffects()
       CCS = CCS..[[
               background-color: ]]..BGColor..[[;
             ]]
-      -- background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0, stop:0 ]]..BGColor..[[, stop:1 moccasin);
       --
       -- StyleSheet
       GUI["AffectIcon"..i].icon:setStyleSheet(CCS)
@@ -7666,7 +7659,7 @@ function ui.fRefreshTargetButton(button)
         ui.fRemoveKeyb(ui.targets[button])
       end
       -- Echo
-      child.keybind:echo("&lt;center&gt;"..keybind)
+      child.keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
       -- CCS
       if (type == "g") then
         CCS = GUI.CSS.Border3;
@@ -8221,7 +8214,7 @@ end</script>
   --
   GUI.Group.Main = Geyser.Label:new2({
     name = "GUI.Group.Main",
-   x = 3,
+    x = 3,
     y = 25,
     width = "100%-6",
     height = "100%-28",
@@ -8318,27 +8311,32 @@ end</script>
     -- Index
     GUI.Group.Main.Body["g"..mod].index = Geyser.Label:new2({
       name = "GUI.Group.Main.Body.g"..mod..".index",
-      x = -20, 
-      y = -20,
-      width = 25,
-      height = 25,
-      fontSize = 8,
+      x = 10, 
+      y = -15,
+      width = 20,
+      height = 15,
     }, GUI.Group.Main.Body["g"..mod])
-    GUI.Group.Main.Body["g"..mod].index:echo("&lt;center&gt;g"..mod.."")
-    GUI.Group.Main.Body["g"..mod].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
     GUI.Group.Main.Body["g"..mod].index:enableClickthrough()
+    GUI.Group.Main.Body["g"..mod].index:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);    
+    GUI.Group.Main.Body["g"..mod].index:setFontSize(6)
+    GUI.Group.Main.Body["g"..mod].index:echo("g"..mod.."")
     --
     -- Keybid
     GUI.Group.Main.Body["g"..mod].keybind = Geyser.Label:new2({
       name = "GUI.Group.Main.Body.g"..mod..".keybind",
-      x = 5, y = -10,
-      width = -5,
+      x = 30,
+      y = -15,
+      width = -10,
       height = 15,
     }, GUI.Group.Main.Body["g"..mod])
     GUI.Group.Main.Body["g"..mod].keybind:enableClickthrough()
-    GUI.Group.Main.Body["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main.Body["g"..mod].keybind:setFontSize(ui.parameters.fsKeybind);
-    GUI.Group.Main.Body["g"..mod].keybind:echo("&lt;center&gt;keybind")
+    GUI.Group.Main.Body["g"..mod].keybind:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
+    GUI.Group.Main.Body["g"..mod].keybind:setFontSize(6);
+    GUI.Group.Main.Body["g"..mod].keybind:echo("keybind")
   end
   --
   -- Wrapping function
@@ -9037,31 +9035,38 @@ end</script>
   },GUI.TargetButtons.Main.Body)
   --
   for i=1,4 do
+    GUI.TargetButtons.Main.Body["t"..i]:setClickCallback("ui.fExecuteTargetButton", "t"..i, nil)
     GUI.TargetButtons.Main.Body["t"..i]:setFontSize(9)
     GUI.TargetButtons.Main.Body["t"..i]:setFgColor("LightGoldenrod")
-    GUI.TargetButtons.Main.Body["t"..i]:setClickCallback("ui.fExecuteTargetButton", "t"..i, nil)
     --
     -- Index
     GUI.TargetButtons.Main.Body["t"..i].index = Geyser.Label:new2({
       name = "GUI.TargetButtons.Main.Body.t"..i..".index",
-      x = 0, y = 0,
-      width = 25,
-      height = 25,
+      x = 5, 
+      y = -15,
+      width = "15",
+      height = "15",
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].index:setFontSize(6)
-    GUI.TargetButtons.Main.Body["t"..i].index:echo("&lt;center&gt;t"..i.."")
-    --GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[border-image: url("]]..ui.pathImg..[[round.png") 0px stretch;]]);
+    GUI.TargetButtons.Main.Body["t"..i].index:echo("t"..i.."")
+    GUI.TargetButtons.Main.Body["t"..i].index:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
     GUI.TargetButtons.Main.Body["t"..i].index:enableClickthrough()
     --
     -- Keybid
     GUI.TargetButtons.Main.Body["t"..i].keybind = Geyser.Label:new2({
       name = "GUI.TargetButtons.Main.Body.t"..i..".keybind",
-      x = 5, y = -15,
-      width = -5,
+      x = 5, 
+      y = -15,
+      width = "100%-10",
       height = 15,
     }, GUI.TargetButtons.Main.Body["t"..i])
     GUI.TargetButtons.Main.Body["t"..i].keybind:enableClickthrough()
-    GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind)
+    --GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind)
+    GUI.TargetButtons.Main.Body["t"..i].keybind:setStyleSheet([[
+      background: rgba(0,0,0,0);
+    ]]);
     GUI.TargetButtons.Main.Body["t"..i].keybind:setFontSize(ui.parameters.fsKeybind)
   end
   --
