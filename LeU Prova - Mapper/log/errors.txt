@@ -1,0 +1,40 @@
+################ Rapporto pre-caricamento(2) del file di mappa ################
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "/home/ubuntu/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#12-46-51map.dat".
+[ INFO ]  - File di mappa letto con successo (0.06s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.10s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+####### Rapporto caricamento(2) del file di mappa in 2024-01-18T14:44:08 #######
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "/home/ubuntu/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#12-46-51map.dat".
+[ INFO ]  - File di mappa letto con successo (0.03s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+################ Rapporto pre-caricamento(2) del file di mappa ################
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "/home/ubuntu/.config/mudlet/profiles/LeU Prova - Mapper/map/autosave.dat".
+[ INFO ]  - File di mappa letto con successo (0.12s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.12s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+####### Rapporto caricamento(2) del file di mappa in 2024-01-18T17:18:27 #######
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "/home/ubuntu/.config/mudlet/profiles/LeU Prova - Mapper/map/autosave.dat".
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################

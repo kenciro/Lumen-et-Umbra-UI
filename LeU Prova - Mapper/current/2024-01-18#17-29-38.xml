@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova - Mapper</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6306,7 +6306,8 @@ map = map or {}
 map.room = map.room or {}
 map.prev = map.prev or {}
 map.speedWalkPath = map.speedWalkPath or {}
-map.speedwalkDelay = 0.5 -- map.speedwalkDelay or 0.1
+map.speedwalkDelay = 0.1 -- map.speedwalkDelay or 0.1
+map.speedwalkTimer = 1
 --
 local terrain_types = {
   -- used to make rooms of different terrain types have different colors
@@ -6441,34 +6442,57 @@ local function check_doors(roomID, exit)
   return doors[dir]
 end
 --
-function continue_walk()
-  if (not walking) then
-    return 
-  end
+function map.fTimeOutSpeedWalk()
+  map.speedWalkTimeOut = true;
+end
+--
+function map.fContinueSpeedWalk(walkDirs, walkPath)
+  -- Time Out
+  if (map.speedWalkTimeOut) then
+    ui.fEcho("Speedwalk interrotto.")
   --
-  send(table.remove(map.walkDirs,1))
-  -- check to see if we are done
-  if #map.walkDirs == 0 then
-    walking = false
-  end
-  -- make tempTimer to send next command if necessary
-  if (walking) and (map.speedwalkDelay &gt; 0) then
+  -- if not arrive at next room
+  elseif (tonumber(walkPath[1]) == tonumber(map.room.id)) then
+    --
+    -- Stop time out
     if (map.speedwalkTimerId) then 
-      killTimer(map.speedwalkTimerId) 
+      killTimer(map.speedwalkTimerId)
+      map.speedwalkTimerId = nil 
     end
-    map.speedwalkTimerId = tempTimer(map.speedwalkDelay, function() continue_walk() end)
+    --
+    -- Go to next room
+    if (#walkDirs &gt; 0) then
+      -- Send command
+      send(table.remove(walkDirs,1))
+      table.remove(walkPath,1)
+      --
+      -- Restart time out
+      map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)
+      --
+      -- Recall to check time out and send next command if necessary
+      if (map.speedwalkDelayId) then 
+        killTimer(map.speedwalkDelayId) 
+      end
+      map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkDirs, walkPath) end)
+    end
+  else
+    --
+    -- Recall to wait
+    if (map.speedwalkDelayId) then 
+      killTimer(map.speedwalkDelayId) 
+    end
+    map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkDirs, walkPath) end)    
   end
 end
 --
-function map.fSpeedWalk(destinationRoomId) --roomID, walkPath, walkDirs)
-  --getPath(map.room.id, destinationRoomId)
-  local walkPath = speedWalkPath
-  local walkDirs = speedWalkDir
-  --if #speedWalkPath == 0 then
-  --  return
-  --end
+function map.fStartSpeedWalk()
+  local walkPath = table.deepcopy(speedWalkPath)
+  local walkDirs = table.deepcopy(speedWalkDir)
+  --
+  -- Insert actual Position
   table.insert(walkPath, 1, map.room.id)
-  -- go through dirs to find doors that need opened, etc
+  --
+  -- Go through dirs to find doors that need opened, etc
   -- add in necessary extra commands to walkDirs table
   local k = 1
   repeat
@@ -6491,18 +6515,16 @@ function map.fSpeedWalk(destinationRoomId) --roomID, walkPath, walkDirs)
     k = k + 1
   until k &gt; #walkDirs
   --
-  -- perform walk
-  walking = true
-  map.speedwalkDelay = map.speedwalkDelay or 0
-  if (map.speedwalkDelay &gt; 0) then
-    map.walkDirs = walkDirs
-    continue_walk()
-  else
-    for _,dir in ipairs(walkDirs) do
-      send(dir)
-    end
-    walking = false
+  -- Start time out
+  if (map.speedwalkTimerId) then 
+    killTimer(map.speedwalkTimerId) 
   end
+  map.speedWalkTimeOut = false
+  map.speedwalkTimer = map.speedwalkTimer or 1
+  map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)  --
+  --
+  map.speedwalkDelay = map.speedwalkDelay or 0
+  map.fContinueSpeedWalk(walkDirs, walkPath)
 end
 --
 function map.fUnHighlightRoom(roomId)
@@ -6527,8 +6549,8 @@ function doSpeedWalk()
   map.speedWalkPath = table.deepcopy(speedWalkPath)
   --
   -- Execute speedwalk
-  if #speedWalkPath ~= 0 then
-    map.fSpeedWalk(speedWalkPath[#speedWalkPath])
+  if (#speedWalkPath ~= 0) then
+    map.fStartSpeedWalk()
   end
 end
 --
@@ -6550,7 +6572,7 @@ function ui.fUpdateMapper(event,...)
       otherExits = {},
       dir_from = {},
     }
-    ui.fLog(map.room.area.."\n"..map.room.id.." "..map.room.name)
+    ui.fLog("&lt;255,255,0:30,24,24&gt;"..map.room.area.."\n".."&lt;255,255,255:30,24,24&gt;"..map.room.id.." &lt;0,255,255:30,24,24&gt;"..map.room.name)
     -- Save all possible direction from
     for k,v in pairs(map.prev.exits) do
       if (v == map.room.id) then
