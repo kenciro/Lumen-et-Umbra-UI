@@ -38,3 +38,43 @@
 ================================= Errori area =================================
 ================================ Errori camera ================================
 ################################ Fine Rapporto ################################
+################ Rapporto pre-caricamento(2) del file di mappa ################
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "C:/Users/kenci/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#17-29-38map.dat".
+[ INFO ]  - File di mappa letto con successo (0.10s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.13s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+####### Rapporto caricamento(2) del file di mappa in 2024-01-18T21:43:28 #######
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "C:/Users/kenci/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#17-29-38map.dat".
+[ INFO ]  - File di mappa letto con successo (0.06s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.11s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+################ Rapporto pre-caricamento(2) del file di mappa ################
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "C:/Users/kenci/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#21-44-03map.dat".
+[ INFO ]  - File di mappa letto con successo (0.09s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.12s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
+####### Rapporto caricamento(2) del file di mappa in 2024-01-18T21:44:15 #######
+================================= Errori mappa =================================
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File: "C:/Users/kenci/.config/mudlet/profiles/LeU Prova - Mapper/map/2024-01-18#21-44-03map.dat".
+[ INFO ]  - File di mappa letto con successo (0.06s), verifico la coerenza di alcuni dati... ...
+[ INFO ]  - La numerazione degli ID area è corretta.
+[ INFO ]  - La numerazione degli ID stanza è corretta.
+[  OK  ]  - Controllo della mappa completato (0.11s). Buon divertimento...
+================================= Errori area =================================
+================================ Errori camera ================================
+################################ Fine Rapporto ################################
