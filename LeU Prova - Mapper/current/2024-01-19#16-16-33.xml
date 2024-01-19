@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova - Mapper</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>327</borderLeftWidth>
-			<borderRightWidth>699</borderRightWidth>
+			<borderRightWidth>696</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -72,7 +72,6 @@
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -495,7 +494,7 @@ if (matches[2]) then
 else
   ui.track = ""
 end
-ui.fUpdateMap()</script>
+ui.fUpdateRoom()</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -5715,7 +5714,9 @@ function ui.fUpdateGMCP(event, ...)
         if (not ui.fTableCompare(gmcp.room.info.exits, ui.lastGmcp.room.info.exits)) or (gmcp.room.info.num ~= ui.lastGmcp.room.info.num) then
           ui.fUpdateMapper()
         end
-        ui.fUpdateMap()
+        -- Update room
+        ui.fUpdateRoom()
+        --
         ui.lastGmcp.room = {}
         ui.lastGmcp.room = table.deepcopy(gmcp.room);
       end
@@ -5726,7 +5727,7 @@ function ui.fUpdateGMCP(event, ...)
       --
       -- Map
       if (not ui.fTableCompare(gmcp.overland, ui.lastGmcp.overland)) then
-        ui.fUpdateMap();
+        ui.fUpdateRoom();
         --
         ui.lastGmcp.overland = {}
         ui.lastGmcp.overland = table.deepcopy(gmcp.overland);
@@ -6306,8 +6307,8 @@ map = map or {}
 map.room = map.room or {}
 map.prev = map.prev or {}
 map.speedWalkPath = map.speedWalkPath or {}
-map.speedwalkDelay = 0.1 -- map.speedwalkDelay or 0.1
-map.speedwalkTimer = 1
+map.speedwalkDelay = 0.01 -- (10ms)
+map.speedwalkTimer = 1    -- (1s)
 --
 local terrain_types = {
   -- used to make rooms of different terrain types have different colors
@@ -7376,7 +7377,7 @@ function ui.fGetToken(exits, exit)
   return token
 end
 --
-function ui.fUpdateMap()
+function ui.fUpdateRoom()
   local fw, fh = calcFontSize(GUI.Room.Main.Console.name);
   local h = GUI.Room.Main.Console:get_height();
   --
@@ -7388,7 +7389,7 @@ function ui.fUpdateMap()
   local isOnMap = false
   local token
   --
-  ui.fDebug("[call] ui.fUpdateMap()")
+  ui.fDebug("[call] ui.fUpdateRoom()")
   --
   ui.mobs = {}
   ui.exits = {}
@@ -9817,7 +9818,7 @@ ui.fUpdateAffects()
 -- Map/Compass
 ui.fDebug("[init] Room")
 ui.fInitRoomWidget()
-ui.fUpdateMap()
+ui.fUpdateRoom()
 --
 -- Mapper
 ui.fInitMapperWidget()
@@ -9869,13 +9870,6 @@ function ui.fFinishedRepositioning(eventName, containerName)
   --
   if (containers[containerName]) then
     containers[containerName]:setAbsolute(true)
-    -- 
-    -- For Test
-    ui.fUpdateAffects();
-    ui.fUpdateGroup();
-    ui.fUpdateMap();
-    ui.fUpdateOpponent();
-    ui.fUpdatePlayer();
   end
 end
 --
@@ -11057,17 +11051,42 @@ function pharseArea()
   end
 end
 --
+function pw(pr)
+  if (tonumber(pr[1]) == map.room.id) then
+    if (#pr &gt; 0) then
+      -- Send command
+      table.remove(pr,1)
+      send("go "..pr[1])
+      --
+      -- Recall to check time out and send next command if necessary
+      if (pw_id) then 
+        killTimer(pw_id) 
+      end
+      pw_id = tempTimer(0.01, function() pw(pr) end)
+    end
+  else
+    if (pw_id) then 
+      killTimer(pw_id) 
+    end
+    pw_id = tempTimer(0.01, function() pw(pr) end)
+  end
+end
+
 --
-function pharseWorld()
-  local rooms = getRooms()
-  --
-  pharseRooms = pharseRooms or {}
-  pharseRoomsCnt = 0;
-  for roomId, roomName in pairs(rooms) do
-    if not table.contains(pharseRooms, roomId) then
-      send("go "..roomId)
+--
+function pharseWorld(restart)
+  pwRooms = pwRooms or {}
+  
+  if (restart) then
+    pwRooms = {}
+    -- iterate over all rooms in code
+    for id,name in pairs(getRooms()) do
+      table.insert(pwRooms,id)
     end
   end
+  --
+  send("go "..pwRooms[1])
+  pw(pwRooms)
 end</script>
 			<eventHandlerList />
 		</Script>
