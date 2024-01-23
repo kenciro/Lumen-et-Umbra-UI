@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova - Mapper</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>327</borderLeftWidth>
-			<borderRightWidth>696</borderRightWidth>
+			<borderRightWidth>698</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,7 +71,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6440,20 +6440,28 @@ local function check_doors(roomID, exit)
   local doors = getDoors(roomID)
   local dir = ui.exitMap[exit].short
   --
-  return doors[dir]
+  return (doors[dir] or 0)
+end
+--
+function map.fUnHighlightRoom(roomId)
+  unHighlightRoom(roomId)
 end
 --
 function map.fTimeOutSpeedWalk()
-  map.speedWalkTimeOut = true;
+  --
+  -- Stop speed Walk
+  if (map.speedwalkDelayId) then 
+    killTimer(map.speedwalkDelayId)
+    map.speedwalkDelayId = nil 
+  end
+  ui.fEcho("Speedwalk interrotto.")
 end
 --
-function map.fContinueSpeedWalk(walkDirs, walkPath)
-  -- Time Out
-  if (map.speedWalkTimeOut) then
-    ui.fEcho("Speedwalk interrotto.")
+function map.fContinueSpeedWalk(walkPath, walkDirs)
+    
   --
   -- if not arrive at next room
-  elseif (tonumber(walkPath[1]) == tonumber(map.room.id)) then
+  if (tonumber(walkPath[1]) == tonumber(map.room.id)) then
     --
     -- Stop time out
     if (map.speedwalkTimerId) then 
@@ -6474,7 +6482,7 @@ function map.fContinueSpeedWalk(walkDirs, walkPath)
       if (map.speedwalkDelayId) then 
         killTimer(map.speedwalkDelayId) 
       end
-      map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkDirs, walkPath) end)
+      map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkPath, walkDirs) end)
     end
   else
     --
@@ -6482,58 +6490,14 @@ function map.fContinueSpeedWalk(walkDirs, walkPath)
     if (map.speedwalkDelayId) then 
       killTimer(map.speedwalkDelayId) 
     end
-    map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkDirs, walkPath) end)    
+    map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkPath, walkDirs) end)    
   end
 end
 --
-function map.fStartSpeedWalk()
-  local walkPath = table.deepcopy(speedWalkPath)
-  local walkDirs = table.deepcopy(speedWalkDir)
-  --
-  -- Insert actual Position
-  table.insert(walkPath, 1, map.room.id)
-  --
-  -- Go through dirs to find doors that need opened, etc
-  -- add in necessary extra commands to walkDirs table
-  local k = 1
-  repeat
-    local id, dir = walkPath[k], walkDirs[k]
-    if (ui.exitMap[dir]) then
-      local status = check_doors(id, ui.exitMap[dir].short)
-      if status and status &gt; 1 then
-        -- if locked, unlock door
-        if status == 3 then
-          table.insert(walkPath,k,id)
-          table.insert(walkDirs,k,"unlock " .. (ui.exitMap[dir].short or dir))
-          k = k + 1
-        end
-        -- if closed, open door
-        table.insert(walkPath,k,id)
-        table.insert(walkDirs,k,"open " .. (ui.exitMap[dir].short or dir))
-        k = k + 1
-      end
-    end
-    k = k + 1
-  until k &gt; #walkDirs
-  --
-  -- Start time out
-  if (map.speedwalkTimerId) then 
-    killTimer(map.speedwalkTimerId) 
-  end
-  map.speedWalkTimeOut = false
-  map.speedwalkTimer = map.speedwalkTimer or 1
-  map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)  --
-  --
-  map.speedwalkDelay = map.speedwalkDelay or 0
-  map.fContinueSpeedWalk(walkDirs, walkPath)
-end
---
-function map.fUnHighlightRoom(roomId)
-  unHighlightRoom(roomId)
-end
---
-function doSpeedWalk()
+-- Highlight new path
+function map.fHighlightSpeedWalk(walkPath)
   map.speedWalkPath = map.speedWalkPath or {}
+  walkPath = walkPath or {}
   --
   -- Unhighlight old path
   for _, id in pairs(map.speedWalkPath) do
@@ -6541,17 +6505,70 @@ function doSpeedWalk()
   end
   --
   -- Highlight new path
-  for _, id in pairs(speedWalkPath) do
+  for _, id in pairs(walkPath) do
     highlightRoom(id, 255,0,0, 255,0,0, 1.2, 128, 128)
   end
   --
-  -- Save new path
   map.speedWalkPath = {}
-  map.speedWalkPath = table.deepcopy(speedWalkPath)
+  map.speedWalkPath = table.deepcopy(walkPath)
+end
+--
+-- Pharse speedwalk
+function map.fPrepareSpeedWalk(walkPath, walkDirs)
+  local p = table.deepcopy(walkPath) or {}
+  local d = table.deepcopy(walkDirs) or {}
+  --
+  if (#p ~= 0) then
+    --
+    -- Insert actual Position
+    table.insert(p, 1, map.room.id)
+    --
+    -- Go through dirs to find doors that need opened, etc
+    -- add in necessary extra commands to walkDirs table
+    local k = 1
+    while (k &lt;= #d) do
+      local id, dir = p[k], d[k]
+      if (ui.exitMap[dir]) then
+        local doorStatus = check_doors(id, ui.exitMap[dir].short)
+        --
+        -- if locked, unlock door
+        if (doorStatus) == 3 then
+          table.insert(p, k, id)
+          table.insert(d, k, "unlock " .. (ui.exitMap[dir].short or dir))
+          k = k + 1
+        end
+        --
+        -- if closed, open door
+        if (doorStatus) &gt; 1 then
+          table.insert(p, k, id)
+          table.insert(d, k, "open " .. (ui.exitMap[dir].short or dir))
+          k = k + 1
+        end
+      end
+      k = k + 1
+    end
+  end
+  --
+  return p, d
+end
+--
+function doSpeedWalk()
+  local walkPath, walkDirs = map.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+  --
+  map.fHighlightSpeedWalk(walkPath)
   --
   -- Execute speedwalk
-  if (#speedWalkPath ~= 0) then
-    map.fStartSpeedWalk()
+  if (#walkPath ~= 0) then
+    --
+    -- Start time out
+    if (map.speedwalkTimerId) then 
+      killTimer(map.speedwalkTimerId) 
+    end
+    map.speedwalkTimer = map.speedwalkTimer or 1
+    map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)  --
+    --
+    map.speedwalkDelay = map.speedwalkDelay or 0.2
+    map.fContinueSpeedWalk(walkPath, walkDirs)
   end
 end
 --
@@ -6574,6 +6591,7 @@ function ui.fUpdateMapper(event,...)
       dir_from = {},
     }
     ui.fLog("&lt;255,255,0:30,24,24&gt;"..map.room.area.."\n".."&lt;255,255,255:30,24,24&gt;"..map.room.id.." &lt;0,255,255:30,24,24&gt;"..map.room.name)
+    --
     -- Save all possible direction from
     for k,v in pairs(map.prev.exits) do
       if (v == map.room.id) then
@@ -6616,11 +6634,11 @@ function ui.fUpdateMapper(event,...)
     ]]
     -- 
     --
-    -- DEBUG: per visualizzae direzione uscite
+    --[[ DEBUG: per visualizzae direzione uscite
     for dir, id in pairs(map.prev.exits) do
       map.fUnHighlightRoom(id)
     end
-    
+    ]]
     --
     -- Exits
     for dir, id in pairs(map.room.exits) do
@@ -6628,7 +6646,7 @@ function ui.fUpdateMapper(event,...)
       if getRoomName(id) then
         setExit(map.room.id, id, dir)
   
-        -- DEBUG: 
+        --[[ DEBUG: 
         if (dir == "north") then
           highlightRoom(id, 0,255,0, 0,255,0, 0.8, 128, 128)
         elseif (dir == "south") then
@@ -6642,7 +6660,7 @@ function ui.fUpdateMapper(event,...)
         elseif (dir == "down") then
           highlightRoom(id, 255,255,255, 255,255,255, 0.8, 128, 128)
         end
-        
+        ]]
       end
     end
     --
@@ -6654,14 +6672,30 @@ function ui.fUpdateMapper(event,...)
     end
     --
     -- Other exits
-    if (table.is_empty(map.room.otherExits)) then
-      map.fUnHighlightRoom(map.room.id)
-    else
+    if not (table.is_empty(map.room.otherExits)) then
       for dir, id in pairs(map.room.otherExits) do
         addSpecialExit(map.room.id, id, "ent "..dir)
         ui.fLog(map.room.area..": "..dir.." per "..(getRoomName(id) or "???").." ("..id..")")
       end
-      highlightRoom(map.room.id, 0,255,255, 255,255,255, 1.2, 128, 128)
+    end
+    --
+    -- if area changed
+    if (map.room.area ~= map.prev.area) then
+      local areas = getAreaTable()
+      local areaID = areas[map.room.area]
+      local rooms = getAreaRooms(areaID)
+      --
+      for _,id in ipairs(rooms) do
+        local specialExits = getSpecialExits(id)
+        
+        if (table.contains(map.speedWalkPath, ""..id)) then
+          highlightRoom(id, 255,0,0, 255,0,0, 1.2, 128, 128)
+        elseif (not table.is_empty(specialExits)) then
+          highlightRoom(id, 0,255,255, 255,255,255, 1.2, 128, 128)
+        else
+          map.fUnHighlightRoom(id)
+        end
+      end
     end
     --
     centerview(map.room.id)
@@ -6707,7 +6741,7 @@ function ui.fInitMapper()
   --
   -- Events
   registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
-  --
+  --[[
   registerMapInfo("Room exits", 
     function(roomId, selectionSize, areaId, displayedArea) 
       local areas = getAreaTableSwap();
@@ -6792,6 +6826,7 @@ function ui.fInitMapper()
   )
   --
   enableMapInfo("Room exits")
+  ]]
   --
 end</script>
 					<eventHandlerList />
@@ -11087,6 +11122,126 @@ function pharseWorld(restart)
   --
   send("go "..pwRooms[1])
   pw(pwRooms)
+end
+--
+function infoRoom(id)
+  id = id or getPlayerRoom()
+  local name = getRoomName(id)
+  local idAarea = getRoomArea(id)
+  local nameAarea = getRoomAreaName(idAarea)
+  local x, y, z = getRoomCoordinates(id)
+  local exits = getRoomExits(id)
+  local specialExits = getSpecialExits(id)
+  local doors = getDoors(id)
+  local entrances = getAllRoomEntrances(id)
+  local outString = ""
+  --
+  outString = outString.."&lt;purple&gt;Room: &lt;white&gt;"..name.." &lt;purple&gt;(&lt;white&gt;"..id.."&lt;purple&gt;) [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;purple&gt;]\n"
+  --
+  outString = outString.."&lt;purple&gt;Area: &lt;white&gt;"..nameAarea.." &lt;purple&gt;(&lt;white&gt;"..idAarea.."&lt;purple&gt;) x: &lt;white&gt;"..x.." &lt;purple&gt;y: &lt;white&gt;"..y.." &lt;purple&gt;z: &lt;white&gt;"..z.."\n"
+  --
+  if (table.is_empty(exits)) then
+    outString = outString.."&lt;purple&gt;Non ci sono uscite.\n"
+  else
+    outString = outString.."&lt;purple&gt;Uscite:\n"
+    for k,v in pairs(exits) do
+      local exitIdArea = getRoomArea(v)
+      outString = outString.."  "..ui.exitMap[k].color..ui.exitMap[k].tokenOpen.." "..ui.exitMap[k].long.." &lt;white&gt;"..getRoomName(v).." &lt;purple&gt;(&lt;white&gt;"..v.."&lt;purple&gt;)"
+      if (exitIdArea ~= idAarea) then
+        outString = outString.." &lt;purple&gt;Area: &lt;white&gt;"..getRoomAreaName(exitIdArea).." &lt;purple&gt;(&lt;white&gt;"..exitIdArea.."&lt;purple&gt;)"
+      end      
+      outString = outString.."\n"
+    end
+  end 
+  --
+  if (table.is_empty(specialExits)) then
+    outString = outString.."&lt;purple&gt;Non ci sono uscite speciali.\n"
+  else
+    outString = outString.."&lt;purple&gt;Uscite speciali:\n"
+    for k,v in pairs(specialExits) do
+      for n, d in pairs(v) do
+        d = tonumber(d)
+        outString = outString.."  &lt;cyan&gt;'"..n.."' &lt;white&gt;"..getRoomName(k).." &lt;purple&gt;(&lt;white&gt;"..k.."&lt;purple&gt;)"
+        if (d == 1) then
+          outString = outString.." &lt;purple&gt;(&lt;green&gt;Aperta&lt;purple&gt;)\n"
+        elseif (d == 2) then
+          outString = outString.." &lt;purple&gt;(&lt;yellow&gt;Chiusa&lt;purple&gt;)\n"
+        elseif (d == 3) then
+          outString = outString.." &lt;purple&gt;(&lt;red&gt;Chiusa a chiave&lt;purple&gt;)\n"
+        else
+          outString = outString.." &lt;purple&gt;(&lt;orange&gt;Non definita&lt;purple&gt;) (&lt;white&gt;"..d.."&lt;purple&gt;)\n"
+        end     
+      end
+    end
+  end
+  --
+  if (table.is_empty(doors)) then
+    outString = outString.."&lt;purple&gt;Non ci sono porte.\n"
+  else
+    outString = outString.."&lt;purple&gt;Porte:\n"
+    for k,v in pairs(doors) do
+      outString = outString.."  "..ui.exitMap[k].color..ui.exitMap[k].tokenOpen.." "..ui.exitMap[k].long
+      if (v == 1) then
+        outString = outString.." &lt;purple&gt;(&lt;green&gt;Aperta&lt;purple&gt;)\n"
+      elseif (v == 2) then
+        outString = outString.." &lt;purple&gt;(&lt;yellow&gt;Chiusa&lt;purple&gt;)\n"
+      elseif (v == 3) then
+        outString = outString.." &lt;purple&gt;(&lt;red&gt;Chiusa a chiave&lt;purple&gt;)\n"
+      else
+        outString = outString.." &lt;purple&gt;(&lt;orange&gt;Non definita&lt;purple&gt;) (&lt;white&gt;"..v.."&lt;purple&gt;)\n"
+      end     
+    end
+  end
+  --
+  if (table.is_empty(entrances)) then
+    outString = outString.."&lt;purple&gt;Non ci sono entrate.\n"
+  else
+    outString = outString.."&lt;purple&gt;Entrate:\n"
+    for k,v in pairs(entrances) do
+      local entranceExits = getRoomExits(v)
+      local entranceSpecialExits = getSpecialExits(v)
+      local sEntrance = ""
+      --
+      if (not table.is_empty(entranceExits)) then
+        for k2,v2 in pairs(entranceExits) do
+          if (v2 == id) then
+            sEntrance = sEntrance..ui.exitMap[k2].color..ui.exitMap[k2].tokenOpen.." "..ui.exitMap[k2].long.." "
+          end      
+        end
+      end 
+      --
+      if (not table.is_empty(entranceSpecialExits)) then
+        for k2,v2 in pairs(entranceSpecialExits) do
+          if (k2 == id) then
+            for n, d in pairs(v2) do
+              sEntrance = sEntrance.."&lt;cyan&gt;'"..n.."' "
+            end
+          end
+        end
+      end
+      --
+      local entranceIdArea = getRoomArea(v)
+      sEntrance = sEntrance.."&lt;purple&gt;da &lt;white&gt;"..getRoomName(v).." &lt;purple&gt;(&lt;white&gt;"..v.."&lt;purple&gt;)"
+      if (entranceIdArea ~= idAarea) then
+        sEntrance = sEntrance.." &lt;purple&gt;Area: &lt;white&gt;"..getRoomAreaName(entranceIdArea).." &lt;purple&gt;(&lt;white&gt;"..entranceIdArea.."&lt;purple&gt;)"
+      end
+      outString = outString.."  "..sEntrance.."\n"
+    end
+  end
+  cecho(ui.fConvertColorString(outString.."\n"))
+end
+--
+function track(roomId)
+  local walkPath = {}
+  local walkDirs = {}
+  --
+  if getPath(getPlayerRoom(), roomId) then
+    walkPath, walkDirs = map.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+  else
+    echo("\nCan't go there!")
+  end
+  --
+  map.fHighlightSpeedWalk(walkPath)
 end</script>
 			<eventHandlerList />
 		</Script>
