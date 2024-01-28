@@ -1,3 +1,3 @@
-return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[standard]],[ [[slot]] ] = {2},[ [[origh]] ] = [[260px]],[ [[hidden]] ] = false,[ [[attached]] ] = [[right]],[ [[width]] ] = [[630px]],[ [[y]] ] = [[0.00000%]],[ [[windowname]] ] = [[main]],[ [[x]] ] = [[66.38205%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[206px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
+return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[standard]],[ [[slot]] ] = {2},[ [[y]] ] = [[76.72316%]],[ [[hidden]] ] = false,[ [[attached]] ] = [[right]],[ [[width]] ] = [[630px]],[ [[origh]] ] = [[260px]],[ [[x]] ] = [[67.18750%]],[ [[windowname]] ] = [[main]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[206px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
 {},
 }
