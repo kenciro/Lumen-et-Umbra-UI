@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova - Mapper</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -2106,7 +2106,6 @@ elseif (alias == "") then
       ui.fEcho2n("Nessun alias associato al pulsante "..ui.fGetAliasButtonFormattedText(button)..".")
     end
   else
-      display(button)
     ui.fError(ui.fGetAliasButtonFormattedText(button).." non è un pulsante valido.")
   end
 -- Rimuove il singolo alias button
@@ -6387,7 +6386,6 @@ local function make_room(room, prev)
   end
   --
   if (map.roomsCoordinates[room.id] ~= nil ) then
-    display(map.roomsCoordinates[room.id])
     --
     -- Get room position from table if exist
     coords = { 
@@ -7506,26 +7504,6 @@ function ui.fUpdateRoom()
     GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      "..ui.fGetToken(ui.exits, "down").."───"..ui.fGetToken(ui.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
     GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."          "..(exitsAsString[7] or "").."\n\n")
     --
---[[    local l = 5 -- line
-    local c = 9 -- char
-    local s = "" -- white spase
-    local sCnt = GUI.Room.Main.Console:get_width() / fw -- white space counter
-    --
-    clearWindow("GUI.Room.Main.Console")
-    --
-    sCnt = math.floor((sCnt - c) / 2)
-    for i = 1, sCnt do
-      s = s.." "
-    end 
-    --
-    -- Exits and Position
-    GUI.Room.Main.Console:decho(s.."&lt;69,69,69:30,24,24&gt;┌───"..ui.fGetToken(ui.exits, "n").."───"..ui.fGetToken(ui.exits, "u").."\n")
-    GUI.Room.Main.Console:decho(s.."&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(1).."│\n")
-    GUI.Room.Main.Console:decho(s.."&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(ui.exits, "w")..ui.fGetPosition(2)..ui.fGetToken(ui.exits, "e").."\n")
-    GUI.Room.Main.Console:decho(s.."&lt;69,69,69:30,24,24&gt;│"..ui.fGetPosition(3).."│".."\n")
-    GUI.Room.Main.Console:decho(s.."&lt;69,69,69:30,24,24&gt;"..ui.fGetToken(ui.exits, "d").."───"..ui.fGetToken(ui.exits, "s").."───┘\n")
-]]
-    --
     -- Other exits
     if (table.size(ui.otherExits) &gt; 0) then
       GUI.Room.Main.Console:setFgColor("white")
@@ -7542,32 +7520,23 @@ function ui.fUpdateRoom()
   --
   -- Objects
   if (table.size(ui.objects) &gt; 0) then
-    --GUI.Room.Main.Console:setFgColor("green")
-    --GUI.Room.Main.Console:echo("Oggetti:\n")
     for _, object in pairs(ui.objects) do
-      GUI.Room.Main.Console:cecho("&lt;green&gt;[obj]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..object.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(object.desc)).."\n")
+      GUI.Room.Main.Console:cecho("&lt;green&gt;[OBJ]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..object.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(object.desc)).."\n")
     end
-    --GUI.Room.Main.Console:echo("\n")
   end  
   --
   -- Charapter
   if (table.size(ui.players) &gt; 0) then
-    --GUI.Room.Main.Console:setFgColor("yellow")
-    --GUI.Room.Main.Console:echo("Giocatori:\n")
     for _, player in pairs(ui.players) do
-      GUI.Room.Main.Console:cecho("&lt;yellow&gt;[chr]&lt;r&gt;  &lt;DarkViolet&gt;[&lt;white&gt;"..player.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(player.desc)).."\n")
+      GUI.Room.Main.Console:cecho("&lt;yellow&gt;[CHR]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..player.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(player.desc)).."\n")
     end
-    --GUI.Room.Main.Console:echo("\n")
   end  
   --
   -- Mobs
   if (table.size(ui.mobs) &gt; 0) then
-    --GUI.Room.Main.Console:setFgColor("red")
-    --GUI.Room.Main.Console:echo("Mobs:\n")
     for _, mob in pairs(ui.mobs) do
-      GUI.Room.Main.Console:cecho("&lt;red&gt;[mob]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..mob.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; [&lt;cyan&gt;Liv&lt;reset&gt; &lt;white&gt;"..mob.level.."&lt;reset&gt;] "..ui.fConvertColorString(ui.fRemoveArticle(mob.desc)).."\n")
+      GUI.Room.Main.Console:cecho("&lt;red&gt;[MOB]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..mob.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; [&lt;cyan&gt;Liv&lt;reset&gt; &lt;white&gt;"..mob.level.."&lt;reset&gt;] "..ui.fConvertColorString(ui.fRemoveArticle(mob.desc)).."\n")
     end
-    --GUI.Room.Main.Console:echo("\n")
   end
 end</script>
 					<eventHandlerList />
@@ -10802,8 +10771,6 @@ end
   for areaName, areaId in pairs(areas) do
     if (areaId) then
       local rooms = getAreaRooms(areaId)
-      --local rooms = getRooms()
-      --display(rooms)
       local t = 0;
       local c = 0;
       --
