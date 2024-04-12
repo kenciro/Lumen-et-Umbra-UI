@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[light]],[ [[slot]] ] = {2},[ [[x]] ] = [[0.00000%]],[ [[attached]] ] = [[left]],[ [[hidden]] ] = false,[ [[width]] ] = [[326px]],[ [[y]] ] = [[54.63533%]],[ [[windowname]] ] = [[main]],[ [[origh]] ] = [[24.92623%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[139px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
+return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[light]],[ [[slot]] ] = {2},[ [[windowname]] ] = [[main]],[ [[attached]] ] = [[left]],[ [[hidden]] ] = false,[ [[width]] ] = [[326px]],[ [[origh]] ] = [[24.92623%]],[ [[x]] ] = [[0.00000%]],[ [[y]] ] = [[57.85901%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[139px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
 {},
-=======
-return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[light]],[ [[slot]] ] = {2},[ [[x]] ] = [[0.00000%]],[ [[attached]] ] = [[left]],[ [[hidden]] ] = false,[ [[width]] ] = [[326px]],[ [[y]] ] = [[57.85901%]],[ [[windowname]] ] = [[main]],[ [[origh]] ] = [[24.92623%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[139px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
-{},
->>>>>>> origin/main
 }

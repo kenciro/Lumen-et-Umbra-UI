@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>619</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Liberation Mono,12,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Code SemiLight,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -804,7 +804,7 @@ enableTrigger("multi_loot_end")</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_valid</name>
 						<script>setTriggerStayOpen("multi_loot", 1)</script>
 						<triggerType>0</triggerType>
@@ -828,7 +828,7 @@ enableTrigger("multi_loot_end")</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_end</name>
 						<script>disableTrigger("multi_loot_valid")
 disableTrigger("multi_loot_end")
@@ -6608,7 +6608,7 @@ function ui.fUpdateMapper(event,...)
   --
   ui.fDebug("[call] ui.fUpdateMapper()")
   --
-  if (gmcp) and (gmcp.room) and (gmcp.room.info) then
+  if (gmcp) and (gmcp.room) and (gmcp.room.info) and (not gmcp.room.info.isOnMap) then
     --
     map.prev = {}
     map.prev = table.deepcopy(map.room)
@@ -7452,7 +7452,6 @@ function ui.fUpdateRoom()
   end
   --
   if (isOnMap) then
-    -- 
     if (gmcp.overland) and
        (gmcp.overland.map) and
        (gmcp.overland.map.size) and
@@ -7461,8 +7460,9 @@ function ui.fUpdateRoom()
       local l = tonumber(gmcp.overland.map.size) -- line
       local c = l * 2 -- char
       local s = "" -- white spase
-      local sCnt = GUI.Room.Main.Console:get_width() / fw -- white space counter
+      local sCnt = GUI.Mapper.Main.Overland:get_width() / fw -- white space counter
       --
+      clearWindow("GUI.Mapper.Main.Overland")
       clearWindow("GUI.Room.Main.Console")
       --
       sCnt = math.floor((sCnt - c) / 2)
@@ -7472,13 +7472,16 @@ function ui.fUpdateRoom()
       --
       for i = 0, l-1 do
         if gmcp.overland.map["r"..i] then
-          GUI.Room.Main.Console:decho(s..ansi2decho(gmcp.overland.map["r"..i]).."\n")
+          GUI.Mapper.Main.Overland:decho(s..ansi2decho(gmcp.overland.map["r"..i]).."\n")
         end
       end
     end
     --
     -- Room name
     GUI.Room:setTitle(zone);
+    --
+    GUI.Mapper.Main.Mapper:hide();
+    GUI.Mapper.Main.Overland:show();
   else
     local exitsAsString = {}
     local exitsDestinationId = {}
@@ -7515,6 +7518,9 @@ function ui.fUpdateRoom()
     --
     -- Room name
     GUI.Room:setTitle(name.." - "..terrain)
+    --
+    GUI.Mapper.Main.Mapper:show();
+    GUI.Mapper.Main.Overland:hide();
   end
   --
   -- Objects
@@ -8393,12 +8399,26 @@ end</script>
   --
   -- Mapper
   GUI.Mapper.Main.Mapper = Geyser.Mapper:new2({
-    name = 'GUI.Mapper.Main.Mapper',
+    name = 'GUI.Mapper.Main.Mapper.Map',
     x=0,
     y=0,
     width = "100%", 
     height = "100%",
   }, GUI.Mapper.Main)
+  --
+  -- Overland
+  GUI.Mapper.Main.Overland = Geyser.MiniConsole:new2({ 
+    name = 'GUI.Mapper.Main.Overland',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%", 
+    autoWrap = false,
+    scrollBar = false,
+  }, GUI.Mapper.Main)
+  GUI.Mapper.Main.Overland:setColor(30,24,24)
+  GUI.Mapper.Main.Overland:setBgColor(30,24,24)
+  GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fsRoom)
   --
   -- Wrapping function
   local Minimize = GUI.Mapper.minimize
@@ -8836,7 +8856,7 @@ end</script>
 					<packageName></packageName>
 					<script>function ui.fInitRoomWidget()
   --
-  -- Compass
+  -- Room
   GUI.Room = Adjustable.Container:new2({
     name = "GUI.Room",
     x = 0,
@@ -9769,14 +9789,14 @@ ui.fDebug("[init] Affects")
 ui.fInitAffectsWidget()
 ui.fUpdateAffects()
 --
+-- Mapper
+ui.fInitMapperWidget()
+ui.fInitMapper()
+--
 -- Map/Compass
 ui.fDebug("[init] Room")
 ui.fInitRoomWidget()
 ui.fUpdateRoom()
---
--- Mapper
-ui.fInitMapperWidget()
-ui.fInitMapper()
 --
 -- Inventory
 ui.fDebug("[init] Inventory")
