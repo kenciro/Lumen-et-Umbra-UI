@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[standard]],[ [[slot]] ] = {2},[ [[windowname]] ] = [[main]],[ [[attached]] ] = false,[ [[hidden]] ] = true,[ [[width]] ] = [[702px]],[ [[origh]] ] = [[130px]],[ [[x]] ] = [[18.67666%]],[ [[y]] ] = [[1.91819%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[107px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
 {},
+=======
+return {{[ [[minimized]] ] = false,[ [[lockStyle]] ] = [[standard]],[ [[slot]] ] = {2},[ [[windowname]] ] = [[main]],[ [[attached]] ] = false,[ [[hidden]] ] = true,[ [[width]] ] = [[702px]],[ [[origh]] ] = [[130px]],[ [[x]] ] = [[18.67666%]],[ [[y]] ] = [[1.91819%]],[ [[auto_hidden]] ] = false,[ [[height]] ] = [[107px]],[ [[padding]] ] = 10,[ [[attachedMargin]] ] = 5,[ [[locked]] ] = false,},
+{},
+>>>>>>> origin/main
 }
