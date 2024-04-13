@@ -2477,25 +2477,7 @@ end
 local fontsize = tonumber(matches[3] or -1)
 if (matches[3]) then
   if (fontsize &gt;= 1) and (fontsize &lt;= 30) then
-    if (windows == "equipment") then
-      ui.parameters.fsEquipment = fontsize
-      GUI.Equipment.Main.Console:setFontSize(ui.parameters.fsEquipment)
-    elseif (windows == "help") then
-      ui.parameters.fsHelp = fontsize
-      GUI.Help.Main.Console:setFontSize(ui.parameters.fsHelp)
-    elseif (windows == "inventory") then
-      ui.parameters.fsInventory = fontsize
-      GUI.Inventory.Main.Console:setFontSize(ui.parameters.fsInventory)
-    elseif (windows == "map") then
-      ui.parameters.fsRoom = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.fsRoom)
-    elseif (windows == "private") then
-      ui.parameters.fsPrivateChat = fontsize
-      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fsPrivateChat)
-    elseif (windows == "public") then
-      ui.parameters.fsPublicChat = fontsize
-      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fsPublicChat)
-    elseif (windows == "all") then
+    if (windows == "all") then
       -- Equipment
       ui.parameters.fsEquipment = fontsize
       GUI.Equipment.Main.Console:setFontSize(ui.parameters.fsEquipment)
@@ -2505,24 +2487,49 @@ if (matches[3]) then
       -- Inventory
       ui.parameters.fsInventory = fontsize
       GUI.Inventory.Main.Console:setFontSize(ui.parameters.fsInventory)
-      -- Room
-      ui.parameters.fsRoom = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.fsRoom)
+      -- Overland
+      ui.parameters.fsOverland = fontsize
+      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fsOverland)
       -- Private
       ui.parameters.fsPrivateChat = fontsize
       GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fsPrivateChat)
       -- Public
       ui.parameters.fsPublicChat = fontsize
       GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fsPublicChat)
+      -- Room
+      ui.parameters.fsRoom = fontsize
+      GUI.Room.Main.Console:setFontSize(ui.parameters.fsRoom)
+    elseif (windows == "equipment") then
+      ui.parameters.fsEquipment = fontsize
+      GUI.Equipment.Main.Console:setFontSize(ui.parameters.fsEquipment)
+    elseif (windows == "help") then
+      ui.parameters.fsHelp = fontsize
+      GUI.Help.Main.Console:setFontSize(ui.parameters.fsHelp)
+    elseif (windows == "inventory") then
+      ui.parameters.fsInventory = fontsize
+      GUI.Inventory.Main.Console:setFontSize(ui.parameters.fsInventory)
+    elseif (windows == "overland") then
+      ui.parameters.fsOverland = fontsize
+      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fsOverland)
+    elseif (windows == "private") then
+      ui.parameters.fsPrivateChat = fontsize
+      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fsPrivateChat)
+    elseif (windows == "public") then
+      ui.parameters.fsPublicChat = fontsize
+      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fsPublicChat)
+    elseif (windows == "room") then
+      ui.parameters.fsRoom = fontsize
+      GUI.Room.Main.Console:setFontSize(ui.parameters.fsRoom)
     else
       fontsize = 0
       ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
                                             ..ui.fGetCommandFormattedText("Equipment")..", "
                                             ..ui.fGetCommandFormattedText("Help")..", "
                                             ..ui.fGetCommandFormattedText("Inventory")..", "
-                                            ..ui.fGetCommandFormattedText("Map")..", "
-                                            ..ui.fGetCommandFormattedText("Private").." o "
-                                            ..ui.fGetCommandFormattedText("Public")..".")
+                                            ..ui.fGetCommandFormattedText("Overland")..", "
+                                            ..ui.fGetCommandFormattedText("Private")..", "
+                                            ..ui.fGetCommandFormattedText("Public").." o "
+                                            ..ui.fGetCommandFormattedText("Room")..".")
     end
     --
     if (fontsize &gt; 0) then
@@ -2541,9 +2548,10 @@ else
   cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsEquipment).."\n");
   cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsHelp).."\n");
   cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsInventory).."\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsRoom).."\n");
+  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsOverland).."\n");
   cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Private")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsPrivateChat).."\n");
   cecho(ui.fGetNumberFormattedText(6)..ui.fGetCommandFormattedText(" Public")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsPublicChat).."\n\n");
+  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fsRoom).."\n");
   ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
 end</script>
 				<command></command>
@@ -7359,8 +7367,6 @@ function ui.fGetToken(exits, exit)
 end
 --
 function ui.fUpdateRoom()
-  local fw, fh = calcFontSize(GUI.Room.Main.Console.name);
-  local h = GUI.Room.Main.Console:get_height();
   --
   local roomId  = -1
   local name    = ""
@@ -7457,6 +7463,8 @@ function ui.fUpdateRoom()
        (gmcp.overland.map.size) and
        (gmcp.overland.map.radius == nil)then
       --
+      local fw, fh = calcFontSize("GUI.Mapper.Main.Overland");
+      -- local h = GUI.Room.Main.Console:get_height();
       local l = tonumber(gmcp.overland.map.size) -- line
       local c = l * 2 -- char
       local s = "" -- white spase
@@ -7465,6 +7473,8 @@ function ui.fUpdateRoom()
       clearWindow("GUI.Mapper.Main.Overland")
       clearWindow("GUI.Room.Main.Console")
       --
+      GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..subzone.."\n&lt;cyan&gt;"..name.."\n\n")
+      
       sCnt = math.floor((sCnt - c) / 2)
       for i = 1, sCnt do
         s = s.." "
@@ -7478,7 +7488,8 @@ function ui.fUpdateRoom()
     end
     --
     -- Room name
-    GUI.Room:setTitle(zone);
+    GUI.Mapper:setTitle(zone.." - "..terrain);
+    GUI.Room:setTitle(zone.." - "..name)
     --
     GUI.Mapper.Main.Mapper:hide();
     GUI.Mapper.Main.Overland:show();
@@ -7509,7 +7520,6 @@ function ui.fUpdateRoom()
     -- Other exits
     if (table.size(ui.otherExits) &gt; 0) then
       GUI.Room.Main.Console:setFgColor("white")
-      -- GUI.Room.Main.Console:echo("Altre uscite:\n")
       for otherExit, idOtherExit in pairs(ui.otherExits) do
         GUI.Room.Main.Console:decho("▷ "..otherExit.."\n")
       end
@@ -8418,7 +8428,7 @@ end</script>
   }, GUI.Mapper.Main)
   GUI.Mapper.Main.Overland:setColor(30,24,24)
   GUI.Mapper.Main.Overland:setBgColor(30,24,24)
-  GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fsRoom)
+  GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fsOverland)
   --
   -- Wrapping function
   local Minimize = GUI.Mapper.minimize
@@ -9254,13 +9264,14 @@ ui.affects = ui.affects or {}
 --
 -- General
 ui.pre_defined_parameters = {
-  fsRoom = 7,
   fsEquipment = 8,
   fsHelp = 8,
   fsInventory = 8,
   fsKeybind = 6,
+  fsoverland = 8,
   fsPrivateChat = 8,
   fsPublicChat = 8,
+  fsRoom = 7,
   page = "a"
 }</script>
 				<eventHandlerList />
