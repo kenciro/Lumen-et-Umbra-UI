@@ -1,0 +1,2 @@
+return {{[ [[last_hp]] ] = 968674,[ [[fsInventory]] ] = 8,[ [[fsEquipment]] ] = 8,[ [[last_mana]] ] = 798,[ [[fsoverland]] ] = 8,[ [[enablePugno]] ] = true,[ [[fsPublicChat]] ] = 8,[ [[fsPrivateChat]] ] = 8,[ [[fsMapCompass]] ] = 8,[ [[page]] ] = [[a]],[ [[fsKeybind]] ] = 6,[ [[fsRoom]] ] = 8,[ [[last_hp_opponent]] ] = 0,[ [[fsOverland]] ] = 12,[ [[fsHelp]] ] = 12,[ [[autoAttack]] ] = true,[ [[autoAttackArea]] ] = true,[ [[freeCast]] ] = false,},
+}

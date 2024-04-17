@@ -1,10 +1,11 @@
-/LeU Live/AdjustableContainer
-/LeU Live/Lumen et Umbra UI/icons
-/LeU Live/log/
-/LeU Live/map
-/LeU Live/map downloads
-/LeU Prova - Mapper/AdjustableContainer
-/LeU Prova - Mapper/AdjustableContainer/*
-/LeU Prova - Mapper/log
-/LeU Prova - Mapper/log/*
-/LeU Prova - Mapper/profile.aff
+LeU Live/AdjustableContainer/
+LeU Live/Lumen et Umbra UI/icons/
+LeU Live/log/
+LeU Live/map/
+LeU Live/map downloads/
+LeU Live/profile.aff
+
+LeU Prova/AdjustableContainer/
+LeU Prova/log/
+LeU Prova/profile.aff
+
