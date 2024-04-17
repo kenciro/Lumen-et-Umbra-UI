@@ -1,2 +1,0 @@
-return {{[ [[health_max]] ] = 2283,[ [[bag]] ] = [[via-lattea]],[ [[mana]] ] = 864,[ [[mana_max]] ] = 864,[ [[ac]] ] = -100,[ [[target]] ] = [[]],[ [[level]] ] = 50,[ [[alignment]] ] = 1000,[ [[bag1]] ] = [[zaino]],[ [[money]] ] = 115991,[ [[bag2]] ] = [[baule]],[ [[experience]] ] = 235346912,[ [[character_name]] ] = [[Kyrus]],[ [[opponent_level]] ] = 0,[ [[health]] ] = 2283,[ [[movement]] ] = 192,[ [[opponent_name]] ] = [[]],[ [[movement_max]] ] = 200,[ [[opponent_health_max]] ] = 100,[ [[opponent_health]] ] = 0,[ [[weapon]] ] = [[MoonShatter]],},
-}
