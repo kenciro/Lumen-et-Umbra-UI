@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -72,10 +72,10 @@
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -144,7 +144,7 @@ else
   ui.reply = string.gsub(ui.reply, "%]", "")
   ui.reply = string.gsub(ui.reply, ",", "")
   ui.reply = ui.fRemoveArticle(ui.reply)
-  ui.reply = string.sub (ui.reply, 1, string.find(ui.reply, " "))
+  ui.reply = string.sub(ui.reply, 1, string.find(ui.reply, " "))
   --
   -- Reply
   GUI.PrivateChat:setTitle("Canale privato ["..ui.reply.."]")
@@ -5242,11 +5242,15 @@ function ui.fLog(text)
   ui.lastFromPrivate = ""
 end
 --
-function ui.fGetNumberFormattedText(number)
+function ui.fTabDecimalNumber(number)
   if (number &lt; 10) then
-    return "&lt;white&gt;[&lt;steel_blue&gt; "..number.."&lt;white&gt;]".."&lt;reset&gt;"
+    return " "..number
   end
-  return "&lt;white&gt;[&lt;steel_blue&gt;"..number.."&lt;white&gt;]".."&lt;reset&gt;"
+  return number
+end
+--
+function ui.fGetNumberFormattedText(number)
+  return "&lt;white&gt;[&lt;steel_blue&gt;"..ui.fTabDecimalNumber(number).."&lt;white&gt;]".."&lt;reset&gt;"
 end
 --
 function ui.fRemoveArticle(text)
@@ -5707,8 +5711,20 @@ function ui.fUpdateGMCP(event, ...)
         ui.lastGmcp.char.vitals = ui.lastGmcp.char.vitals or {}
         --
         if (not ui.fTableCompare(gmcp.char.vitals, ui.lastGmcp.char.vitals)) then
+          --
+          -- Player
           ui.fUpdatePlayer();
-          ui.fUpdateOpponent();
+          --
+          -- Opponent
+          if (not ui.fTableCompare(gmcp.char.vitals.fighting, ui.lastGmcp.char.vitals.fighting)) then
+            ui.fUpdateOpponent();
+          end
+          --
+          -- Update player position
+          if (gmcp.char.vitals.roomPos ~= ui.lastGmcp.char.vitals.roomPos) then
+            ui.variables.roomPos = gmcp.char.vitals.roomPos or 5 
+            ui.fUpdateRoom()
+          end
           --
           ui.lastGmcp.char.vitals = {}
           ui.lastGmcp.char.vitals = table.deepcopy(gmcp.char.vitals);
@@ -5723,8 +5739,10 @@ function ui.fUpdateGMCP(event, ...)
       if (not ui.fTableCompare(gmcp.room, ui.lastGmcp.room)) then
         ui.lastGmcp.room.info = ui.lastGmcp.room.info or {}
         ui.lastGmcp.room.info.exits = ui.lastGmcp.room.info.exits or {}
-        -- Update mapper only if change room or exits
-        if (not ui.fTableCompare(gmcp.room.info.exits, ui.lastGmcp.room.info.exits)) or (gmcp.room.info.num ~= ui.lastGmcp.room.info.num) then
+        -- Update mapper only if change room or exits (secret found)
+        if (gmcp.room.info.num ~= ui.lastGmcp.room.info.num) or
+           (not ui.fTableCompare(gmcp.room.info.exits, ui.lastGmcp.room.info.exits))then
+          ui.variables.roomPos = gmcp.room.info.roomPos or 5
           ui.fUpdateMapper()
         end
         -- Update room
@@ -5740,7 +5758,7 @@ function ui.fUpdateGMCP(event, ...)
       --
       -- Map
       if (not ui.fTableCompare(gmcp.overland, ui.lastGmcp.overland)) then
-        ui.fUpdateRoom();
+        ui.fUpdateOverand();
         --
         ui.lastGmcp.overland = {}
         ui.lastGmcp.overland = table.deepcopy(gmcp.overland);
@@ -6306,7 +6324,7 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Mapper</name>
+					<name>Map \ Mapper</name>
 					<packageName></packageName>
 					<script>-- based upon "generic GMCP mapping script for Mudlet" by Blizzard. https://worldofpa.in
 -- based upon an MSDP script from the Mudlet forums in the generic mapper thread
@@ -6795,6 +6813,58 @@ function ui.fInitMapper()
   --
   enableMapInfo("Room exits")
   --
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Map \ Overland</name>
+					<packageName></packageName>
+					<script>function ui.fUpdateOverand()
+  --
+  local roomId  = -1
+  local name    = ""
+  local zone    = ""
+  local subzone = ""
+  local terrain = ""
+  local isOnMap = false
+  local token
+  --
+  ui.fDebug("[call] ui.fUpdateOverand()")
+  --
+  --if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
+  --  ui.variables.roomPos = gmcp.char.vitals.roomPos or 5
+  --end
+  --
+  if (gmcp) and (gmcp.room) and (gmcp.room.info) and (gmcp.room.info.isOnMap) and 
+     (gmcp.overland) and (gmcp.overland.map) and (gmcp.overland.map.size) and (gmcp.overland.map.radius == nil)then
+    --
+    local name    = gmcp.room.info.name or ""
+    local zone    = gmcp.room.info.zone or ""
+    local subzone = gmcp.room.info.subzone or ""
+    local terrain = gmcp.room.info.terrain or ""
+    local fw, fh = calcFontSize("GUI.Mapper.Main.Overland");
+    local l = tonumber(gmcp.overland.map.size) -- line
+    local c = l * 2 -- char
+    local s = "" -- white spase
+    local sCnt = GUI.Mapper.Main.Overland:get_width() / fw -- white space counter
+    --
+    clearWindow("GUI.Mapper.Main.Overland")
+    --
+    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..subzone.."\n&lt;cyan&gt;"..name.."\n\n")
+    sCnt = math.floor((sCnt - c) / 2)
+    for i = 1, sCnt do
+      s = s.." "
+    end 
+    --
+    for i = 0, l-1 do
+      if gmcp.overland.map["r"..i] then
+        GUI.Mapper.Main.Overland:decho(s..ansi2decho(gmcp.overland.map["r"..i]).."\n")
+      end
+    end
+    --
+    -- Room name
+    GUI.Mapper:setTitle(zone.." - "..terrain);
+  end
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -7408,7 +7478,9 @@ function ui.fUpdateRoom()
     subzone = gmcp.room.info.subzone or subzone
     terrain = gmcp.room.info.terrain or terrain
     isOnMap = gmcp.room.info.isOnMap or isOnMap
-    ui.variables.roomPos = gmcp.room.info.roomPos or 5
+    ui.variables.roomPos = ui.variables.roomPos or 5
+    --
+    clearWindow("GUI.Room.Main.Console")
     --
     --  Exits and Other exits
     if (gmcp.room.info.exits) then
@@ -7434,7 +7506,7 @@ function ui.fUpdateRoom()
           else
             ui.players[name] = {}
             ui.players[name].desc = character.desc;
-            ui.players[name].level = character.level;
+            ui.players[name].level = ui.fTabDecimalNumber(character.level);
             ui.players[name].roomPos = character.roomPos;
             ui.players[name].counter = 1;
           end
@@ -7446,7 +7518,7 @@ function ui.fUpdateRoom()
             ui.mobs[name] = {}
             ui.mobs[name].desc = character.desc;
             ui.mobs[name].key = character.key;
-            ui.mobs[name].level = character.level;
+            ui.mobs[name].level = ui.fTabDecimalNumber(character.level);
             ui.mobs[name].roomPos = character.roomPos;
             ui.mobs[name].counter = 1;
           end
@@ -7462,73 +7534,47 @@ function ui.fUpdateRoom()
           ui.objects[name].counter = ui.objects[name].counter + 1 
         else
           ui.objects[name] = {}
-          ui.objects[name].desc = object.desc;
+          if (object.desc == "") then
+            ui.objects[name].desc = "["..object.key.."]";
+          else
+            ui.objects[name].desc = object.desc;
+          end
           ui.objects[name].key = object.key;
           ui.objects[name].counter = 1;
         end   
       end
     end    
-  end
-  --
-  if (isOnMap) then
-    if (gmcp.overland) and
-       (gmcp.overland.map) and
-       (gmcp.overland.map.size) and
-       (gmcp.overland.map.radius == nil)then
-      --
-      local fw, fh = calcFontSize("GUI.Mapper.Main.Overland");
-      -- local h = GUI.Room.Main.Console:get_height();
-      local l = tonumber(gmcp.overland.map.size) -- line
-      local c = l * 2 -- char
-      local s = "" -- white spase
-      local sCnt = GUI.Mapper.Main.Overland:get_width() / fw -- white space counter
-      --
-      clearWindow("GUI.Mapper.Main.Overland")
-      clearWindow("GUI.Room.Main.Console")
-      --
-      GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..subzone.."\n&lt;cyan&gt;"..name.."\n\n")
-      
-      sCnt = math.floor((sCnt - c) / 2)
-      for i = 1, sCnt do
-        s = s.." "
-      end 
-      --
-      for i = 0, l-1 do
-        if gmcp.overland.map["r"..i] then
-          GUI.Mapper.Main.Overland:decho(s..ansi2decho(gmcp.overland.map["r"..i]).."\n")
-        end
-      end
-    end
     --
-    -- Room name
-    GUI.Mapper:setTitle(zone.." - "..terrain);
-    GUI.Room:setTitle(zone.." - "..name)
-    --
-    GUI.Mapper.Main.Mapper:hide();
-    GUI.Mapper.Main.Overland:show();
-  else
-    local exitsAsString = {}
-    local exitsDestinationId = {}
-    local idx = 1
-    --
-    exitsAsString[idx] = "&lt;0,255,255:30,24,24&gt;"..name.." ("..roomId..")"
-    idx = idx + 1
-    --
-    for k,v in pairs(ui.exits) do
-      exitsDestinationId[k] = ui.exitMap[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;69,69,69:30,24,24&gt;"
-      exitsAsString[idx] = ui.exitMap[k].dColor..ui.exitMap[k].tokenOpen.." &lt;255,255,255:30,24,24&gt;"..(getRoomName(v) or "???")
+    if (not isOnMap) then
+      local exitsAsString = {}
+      local exitsDestinationId = {}
+      local idx = 1
+      --
+      exitsAsString[idx] = "&lt;0,255,255:30,24,24&gt;"..name.." ("..roomId..")"
       idx = idx + 1
+      --
+      for k,v in pairs(ui.exits) do
+        exitsDestinationId[k] = ui.exitMap[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;69,69,69:30,24,24&gt;"
+        exitsAsString[idx] = ui.exitMap[k].dColor..ui.exitMap[k].tokenOpen.." &lt;255,255,255:30,24,24&gt;"..(getRoomName(v) or "???")
+        idx = idx + 1
+      end
+      -- Exits and Position
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌───"..ui.fGetToken(ui.exits, "north").."───"..ui.fGetToken(ui.exits, "up").."         "..(exitsAsString[2] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      "..ui.fGetToken(ui.exits, "down").."───"..ui.fGetToken(ui.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."          "..(exitsAsString[7] or "").."\n\n")
+      --
+      GUI.Mapper.Main.Mapper:show();
+      GUI.Mapper.Main.Overland:hide();  
+    else
+      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;"..name.."\n\n")
+      --
+      GUI.Mapper.Main.Mapper:hide();
+      GUI.Mapper.Main.Overland:show();
     end
-    --
-    clearWindow("GUI.Room.Main.Console")
-    -- Exits and Position
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌───"..ui.fGetToken(ui.exits, "north").."───"..ui.fGetToken(ui.exits, "up").."         "..(exitsAsString[2] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      "..ui.fGetToken(ui.exits, "down").."───"..ui.fGetToken(ui.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
-    GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."          "..(exitsAsString[7] or "").."\n\n")
     --
     -- Other exits
     if (table.size(ui.otherExits) &gt; 0) then
@@ -7542,28 +7588,25 @@ function ui.fUpdateRoom()
     -- Room name
     GUI.Room:setTitle(name.." - "..terrain)
     --
-    GUI.Mapper.Main.Mapper:show();
-    GUI.Mapper.Main.Overland:hide();
-  end
-  --
-  -- Objects
-  if (table.size(ui.objects) &gt; 0) then
-    for _, object in pairs(ui.objects) do
-      GUI.Room.Main.Console:cecho("&lt;green&gt;[OBJ]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..object.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(object.desc)).."\n")
-    end
-  end  
-  --
-  -- Charapter
-  if (table.size(ui.players) &gt; 0) then
-    for _, player in pairs(ui.players) do
-      GUI.Room.Main.Console:cecho("&lt;yellow&gt;[CHR]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..player.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(ui.fRemoveArticle(player.desc)).."\n")
-    end
-  end  
-  --
-  -- Mobs
-  if (table.size(ui.mobs) &gt; 0) then
-    for _, mob in pairs(ui.mobs) do
-      GUI.Room.Main.Console:cecho("&lt;red&gt;[MOB]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..mob.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; [&lt;cyan&gt;Liv&lt;reset&gt; &lt;white&gt;"..mob.level.."&lt;reset&gt;] "..ui.fConvertColorString(ui.fRemoveArticle(mob.desc)).."\n")
+    -- Objects
+    if (table.size(ui.objects) &gt; 0) then
+      for _, object in pairs(ui.objects) do
+        GUI.Room.Main.Console:cecho("&lt;green&gt;[OBJ]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..object.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; "..ui.fConvertColorString(object.desc).."\n")
+      end
+    end  
+    --
+    -- Charapter
+    if (table.size(ui.players) &gt; 0) then
+      for _, player in pairs(ui.players) do
+        GUI.Room.Main.Console:cecho("&lt;yellow&gt;[CHR]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..player.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; [&lt;cyan&gt;Liv&lt;reset&gt; &lt;white&gt;"..player.level.."&lt;reset&gt;] "..ui.fConvertColorString(player.desc).."\n")
+      end
+    end  
+    --
+    -- Mobs
+    if (table.size(ui.mobs) &gt; 0) then
+      for _, mob in pairs(ui.mobs) do
+        GUI.Room.Main.Console:cecho("&lt;red&gt;[MOB]&lt;r&gt; &lt;DarkViolet&gt;[&lt;white&gt;"..mob.counter.."&lt;DarkViolet&gt;]&lt;reset&gt; [&lt;cyan&gt;Liv&lt;reset&gt; &lt;white&gt;"..mob.level.."&lt;reset&gt;] "..ui.fConvertColorString(mob.desc).."\n")
+      end
     end
   end
 end</script>
