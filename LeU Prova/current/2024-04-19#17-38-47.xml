@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,10 +71,10 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -270,7 +270,7 @@ end</script>
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Equipment_valid")
@@ -325,7 +325,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 disableTrigger("equipment_valid")
@@ -5742,7 +5742,7 @@ function ui.fUpdateGMCP(event, ...)
         -- Update mapper only if change room or exits (secret found)
         if (gmcp.room.info.num ~= ui.lastGmcp.room.info.num) or
            (not ui.fTableCompare(gmcp.room.info.exits, ui.lastGmcp.room.info.exits))then
-          ui.variables.roomPos = gmcp.room.info.roomPos or 5
+          ui.variables.roomPos = gmcp.room.info.roomPos or gmcp.char.vitals.roomPos or 5
           ui.fUpdateMapper()
         end
         -- Update room
@@ -7565,12 +7565,17 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      "..ui.fGetToken(ui.exits, "down").."───"..ui.fGetToken(ui.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."          "..(exitsAsString[7] or "").."\n\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
       --
       GUI.Mapper.Main.Mapper:show();
       GUI.Mapper.Main.Overland:hide();  
     else
-      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;"..name.."\n\n")
+      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;                        "..name.."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌       ┐\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(1).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(2).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(3).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      └       ┘\n\n")
       --
       GUI.Mapper.Main.Mapper:hide();
       GUI.Mapper.Main.Overland:show();
