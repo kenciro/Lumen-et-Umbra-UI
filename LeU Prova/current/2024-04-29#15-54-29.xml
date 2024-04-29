@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2718,7 +2718,7 @@ end
 table.save(ui.fileVariables, ui.variables)</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:uiv(?:a(?:r(?:i(?:a(?:b(?:l(?:e)?)?)?)?)?)?)?|@)(?:\s*@?(\w+)(?:\s*)?(.*))?$</regex>
+				<regex>^(?i)(?:uiv(?:a(?:r(?:i(?:a(?:b(?:l(?:e)?)?)?)?)?)?)?|&amp;)(?:\s*&amp;?(\w+)(?:\s*)?(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -4167,7 +4167,7 @@ ver 1.230921
 --
 ver 1.230914
 ------------
-- Aggiunto @Target sul titolo della finestra Opponent
+- Aggiunto Target sul titolo della finestra Opponent
 - Aggiunto evidenza grafica sulla quantità di hp persi o recuperati
 - Aggiunto gestione profili
 - Aggiunto ora per ogni messaggio rivecuto nelle finestre dei messaggi
@@ -5372,11 +5372,13 @@ end
 function ui.fExpandVariables(value, toAlias)
   if (toAlias) then
     value = string.gsub(value, "#", '"..__mtchs2__.."')
-    value = string.gsub(value, "@(%w+)", '"..ui.variables.%1.."')
-    value = string.gsub(value, ui.varID.."(%w+)", '"..ui.variables.%1.."')
+    value = string.gsub(value, "["..ui.varID.."@](%w+)", '"..ui.variables.%1.."')
+    --value = string.gsub(value, "@(%w+)", '"..ui.variables.%1.."')
+    --value = string.gsub(value, ui.varID.."(%w+)", '"..ui.variables.%1.."')
   else
-    value = string.gsub(value, "@(%w+)", "ui.variables.%1")
-    value = string.gsub(value, ui.varID.."(%w+)", "ui.variables.%1")
+    value = string.gsub(value, "["..ui.varID.."@](%w+)", "ui.variables.%1")
+    --value = string.gsub(value, "@(%w+)", "ui.variables.%1")
+    --value = string.gsub(value, ui.varID.."(%w+)", "ui.variables.%1")
   end
   --
   for varName in string.gfind(value, "ui.variables%.(%w+)") do
@@ -7771,7 +7773,7 @@ function ui.fExecuteTargetButton(button)
     elseif (type == "t") then
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
     end
-    -- Save @target
+    -- Save target
     table.save(ui.fileVariables, ui.variables)
     ui.fUpdateAllTargetButton()
   else
@@ -9733,7 +9735,7 @@ ui.help.variable = [[
 &lt;title&gt;Variabili&lt;/title&gt;
 E' possibile definire delle variabili (retentive) da riutilizzare negli alias.
 E' possibile richiamare una variabile all'interno di un alias facendo precedere
-al nome della variabile il carattere speciale &lt;command&gt;@&lt;/command&gt;.
+al nome della variabile il carattere speciale &lt;command&gt;]]..ui.varID..[[&lt;/command&gt;.
 Alcune delle variabili sono già dichiarate (variabili predefinite), e vengno
 utilizzate per gli elementi l'interfaccia.
 Le variabili sono utlizzabili nel codice dei vostri script facendo accesso alla
@@ -10964,7 +10966,7 @@ function createRoomSpace(areaId, roomId, x, y, entry)
   local overlap = not table.is_empty(getRoomsByPosition(areaId, x, y, 0))
   -- Se la posizione è già occupata da un altra stanza
   if (overlap) then
-    cecho("  - &lt;orange&gt;OVERLAP ("..roomId.." - "..(entry or "nil")..") ")
+    cecho("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
     -- Se la room ha una direzione di entrata valida...
     if (entry ~= nil) and (table.contains(entryTab, entry)) then
       -- ... sposto la mappa già disegnata nel lato opposto al lato di entrata di una posizione per creare lo spazio 
@@ -10982,13 +10984,13 @@ function createRoomSpace(areaId, roomId, x, y, entry)
         end
       end
       --
-      cecho("&lt;magenta&gt;Moved sub-area to "..ui.exitMap[entry].reverse.." ")
+      cecho("&lt;magenta&gt;Moved sub-area to "..ui.exitMap[entry].reverse.."\n")
     else
-      -- ... altrimenti posto la stanza verso a est, fino a trovare una posizione libera.
+      -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
       local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
       x = max_x + 1
       y = max_y + 1
-      cecho("&lt;yellow&gt;Moved room position to S-E ")
+      cecho("&lt;yellow&gt;Moved room to S-E\n")
     end
   end
   --
@@ -11004,6 +11006,7 @@ function drawRoom(areaId, roomId, x, y, entry, maxLevel)
     end
   end
   --
+  -- Se la stanza non è già stata disegnata...
   if (roomDrawed[roomId] == nil) then
     local roomAreaId = getRoomArea(roomId)
     --
@@ -11013,8 +11016,9 @@ function drawRoom(areaId, roomId, x, y, entry, maxLevel)
       setRoomCoordinates(roomId, x, y, 0)
       roomDrawed[roomId] = true;
       level = level + 1;
-      cecho(roomId.." ("..(entry or "&lt;red&gt;nil&lt;r&gt;")..") =&gt; &lt;green&gt;x:"..x.." y:"..y.."\n");
+      cecho("&lt;green&gt;Room "..roomId.." (from &lt;red&gt;"..(entry or "nil").."&lt;green&gt;) drowed in pos(x:"..x..", y:"..y..")\n");
       --
+      -- Disegno le stanza adiacenti alle uscite
       local exits = getRoomExits(roomId)
       if (exits["east"]) and (exits["east"] ~= roomId) then
         drawRoom(areaId, exits["east"], x+1, y, "west", maxLevel)
@@ -11031,11 +11035,35 @@ function drawRoom(areaId, roomId, x, y, entry, maxLevel)
       if (exits["south"]) and (exits["south"] ~= roomId) then
         drawRoom(areaId, exits["south"], x, y-1, "north", maxLevel)
       end
-      
+      --
+      -- Disegno le stanza adiacenti alle entrate alla room
+      local entrances = getAllRoomEntrances(roomId)
+      for _,entranceId in pairs(entrances) do
+        if (roomDrawed[entranceId] == nil) then
+          local entranceAreaId = getRoomArea(entranceId)
+          --
+          if (entranceAreaId == areaId) then
+            local entranceExits = getRoomExits(entranceId)
+            --
+            if (entranceExits["east"]) and (entranceExits["east"] == roomId) then
+              drawRoom(areaId, entranceId, x-1, y, "east", maxLevel)
+            end
+            --
+            if (entranceExits["west"]) and (entranceExits["west"] == roomId) then
+              drawRoom(areaId, entranceId, x+1, y, "west", maxLevel)
+            end
+            --
+            if (entranceExits["north"]) and (entranceExits["north"] == roomId) then
+              drawRoom(areaId, entranceId, x, y-1, "north", maxLevel)
+            end
+            --
+            if (entranceExits["south"]) and (entranceExits["south"] == roomId) then
+              drawRoom(areaId, entranceId, x, y+1, "south", maxLevel)
+            end
+          end
+        end
+      end   
     end
-
-  else
-    cecho(roomId.." ("..(entry or "nil")..") &lt;orange&gt;Already drawed\n");  
   end
 end
 --
@@ -11046,12 +11074,13 @@ function redrawArea(areaName, expand, maxLevel)
   if (areaId) then
     local rooms = getAreaRooms(areaId)
     --
-    -- Sposto tutta l'area sul livello 1
+    -- Sposto tutte le stanze sul livello 1
     for _, roomId in pairs(rooms) do
       local x, y, z = getRoomCoordinates(roomId)
       setRoomCoordinates(roomId, x, y, 1)
     end
     --
+    -- Riposiziono maxLevel room sul livello 0
     level = 0
     roomDrawed = {}
     for _, roomId in pairs(rooms) do
