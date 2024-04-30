@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4271,6 +4271,35 @@ function ui.fUpdateAffects()
   local i
   local orderTable = {}
   --
+  -- Pre defined affect 
+  local pre_defined_affects = {
+  --  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
+  --  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
+  --  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
+  --  ["chiaroveggenza"]            = {icon = nil,             color = "magenta", shortName = "Chiaro" },  
+  --  ["colpo psichico"]            = {icon = nil,             color = "magenta", shortName = "Colpo PSI" },  
+  --  ["forza psichica"]            = {icon = "skill_9.png",   color = "OrangeRed", shortName = "PSI Str" },
+  --  ["individua il magico"]       = {icon = 'Skill_322.png', color = "DarkOrchid", shortName = "Ind. mag." },
+  --  ["individua il male"]         = {icon = 'skill_72.png',  color = "DarkOrchid", shortName = "Ind. mal." },
+  --  ["individua invisibile"]      = {icon = "Skill_312.png", color = "DarkOrchid", shortName = "Ind. inv." },
+  --  ["levitazione"]               = {icon = "skill_156.png", color = "blue", shortName = "Lev" },
+  --  ["nuotare (cooldown)"]        = {icon = "skill_110.png", color = "blue", shortName = "Swim" },
+  --  ["percepisci vita"]           = {icon = "skill_44.png",  color = "DarkOrchid", shortName = "True Live" },
+  --  ["primo soccorso"]            = {icon = nil,             color = "green", shortName = "First AID" },  
+  --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
+  --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
+  --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
+  --  ["mantello di fiamme"]        = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
+  --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
+  --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
+  }
+  --
+  -- Fast affect
+  local fastAffects = {
+  --  ["In Combattimento"]        = "⚔️",
+  --  ["[Set] Planar Alteration"] = "🗡️",
+  }
+  --
   ui.fDebug("[call] ui.fUpdateAffects()")
   --
   ui.affects = {}
@@ -4331,8 +4360,8 @@ function ui.fUpdateAffects()
   i = 0;
   for j, affect in ipairs(orderTable) do
     if (i&lt;20) then
-      if (table.contains(ui.fastAffects, affect)) then
-        ui.actFastAffects = ui.actFastAffects..ui.fastAffects[affect];
+      if (table.contains(fastAffects, affect)) then
+        ui.actFastAffects = ui.actFastAffects..fastAffects[affect];
       else
         local icon = nil
         local BGColor = nil
@@ -4343,26 +4372,26 @@ function ui.fUpdateAffects()
         i = i + 1
         --
         -- Pre-load icon, BG volor and short name form predefinited table (if exists)
-        if table.contains(ui.pre_defined_affects, affect) then
+        if table.contains(pre_defined_affects, affect) then
           --
           -- Pre-ShortName
-          if (ui.pre_defined_affects[affect].shortName) then
-            shortName = ui.pre_defined_affects[affect].shortName
+          if (pre_defined_affects[affect].shortName) then
+            shortName = pre_defined_affects[affect].shortName
           end
           --
           -- Pre-FG Color
-          if (ui.pre_defined_affects[affect].FGcolor) then
-            FGColor = ui.pre_defined_affects[affect].FGcolor
+          if (pre_defined_affects[affect].FGcolor) then
+            FGColor = pre_defined_affects[affect].FGcolor
           end
           --
           -- Pre-Icon
-          if (ui.pre_defined_affects[affect].icon) and (io.exists(ui.pathIcn..ui.pre_defined_affects[affect].icon)) then
-            icon = ui.pathIcn..ui.pre_defined_affects[affect].icon;
+          if (pre_defined_affects[affect].icon) and (io.exists(ui.pathIcn..pre_defined_affects[affect].icon)) then
+            icon = ui.pathIcn..pre_defined_affects[affect].icon;
           end
           --
           -- Pre-BG Color
-          if (ui.pre_defined_affects[affect].BGcolor) then
-            BGColor = ui.pre_defined_affects[affect].BGcolor
+          if (pre_defined_affects[affect].BGcolor) then
+            BGColor = pre_defined_affects[affect].BGcolor
           end
         end
         --
@@ -4480,6 +4509,16 @@ end</script>
 					<name>Alias buttons</name>
 					<packageName></packageName>
 					<script>--
+-- Expand button name. Es. ui.fExpandButton("T5") -&gt; "t", 5
+function ui.fExpandButton(button)
+  local val = 0
+  button = string.lower(button or "")
+  if (string.find(button, "^[abcgot]%d$")) then
+    return string.sub(button, 1, 1), tonumber(string.sub(button, 2, 2))
+  end
+  return nil, nil
+end
+--
 function ui.fGetAliasButtonFormattedText(button)
   return ui.cAliasButton.."["..button.."]".."&lt;reset&gt;"
 end
@@ -4657,6 +4696,28 @@ end</script>
 					<name>Aliases</name>
 					<packageName></packageName>
 					<script>--
+function ui.fExpandVariables(value, toAlias)
+  if (toAlias) then
+    value = string.gsub(value, "#", '"..__mtchs2__.."')
+    value = string.gsub(value, "["..ui.varID.."@](%w+)", '"..ui.variables.%1.."')
+    --value = string.gsub(value, "@(%w+)", '"..ui.variables.%1.."')
+    --value = string.gsub(value, ui.varID.."(%w+)", '"..ui.variables.%1.."')
+  else
+    value = string.gsub(value, "["..ui.varID.."@](%w+)", "ui.variables.%1")
+    --value = string.gsub(value, "@(%w+)", "ui.variables.%1")
+    --value = string.gsub(value, ui.varID.."(%w+)", "ui.variables.%1")
+  end
+  --
+  for varName in string.gfind(value, "ui.variables%.(%w+)") do
+    if (not ui.variables[varName]) then
+      return nil, varName
+    elseif (not toAlias) then
+      value = string.gsub(value, "ui.variables%.(%w+)", ui.variables[varName])
+    end
+  end
+  return value, nil
+end
+--
 function ui.fGetAliasNameFormattedText(alias)
   return ui.cAliasName..alias.."&lt;reset&gt;"
 end
@@ -5140,21 +5201,15 @@ end
 					<name>Generic</name>
 					<packageName></packageName>
 					<script>--
-function ui.fClickTarget(sender)
-  if (sender) then
-    local type, number = ui.fExpandButton(sender)
-    if (type == "g") or (type == "o") then
-      ui.fExecuteTargetButton(sender)
-    end
-  end
-end
---
 function ui.fGenOrderedIndex( t )
   local orderedIndex = {}
+  --
   for key in pairs(t) do
     table.insert(orderedIndex, key)
   end
+  --
   table.sort(orderedIndex)
+  --
   return orderedIndex
 end
 --
@@ -5163,7 +5218,8 @@ function ui.fOrderedNext(t, state)
   -- order. We use a temporary ordered key table that is stored in the
   -- table being iterated.
   local key = nil
-  if state == nil then
+  --
+  if (state == nil) then
     -- the first time, generate the index
     t.__orderedIndex = ui.fGenOrderedIndex(t)
     key = t.__orderedIndex[1]
@@ -5175,11 +5231,13 @@ function ui.fOrderedNext(t, state)
       end
     end
   end
-  if key then
+  --
+  if (key) then
     return key, t[key]
   end
   -- No more value to return, cleanup
   t.__orderedIndex = nil
+  --
   return
 end
 --
@@ -5188,18 +5246,7 @@ function ui.fOrderedPairs(t, state)
   return ui.fOrderedNext, t, state
 end
 --
-function ui.fDebug(text)
-  if (ui.enDebug &gt;= 1) then
-    ui.fEchon("&lt;orange&gt;- DEBUG - &lt;white&gt;("..getTime(true, "hh:mm:ss.zzz")..") "..ui.cText..text.."&lt;reset&gt;")
-  end
-end
---
-function ui.fEcho(text)
-  text = ui.echo..ui.cText..text.."&lt;reset&gt;"
-  cecho(text)
-end
---
-function ui.fEchon(text, level)
+function ui.fFormatEcho(text, level)
   local tab = ""
   if (level) and (level &gt; 0) then 
     for i=2, level do
@@ -5207,23 +5254,41 @@ function ui.fEchon(text, level)
     end
     tab = tab..ui.fGetOperatorFormattedText("  » ")
   end
-  text = ui.echo..tab..ui.cText..text.."&lt;reset&gt;\n"
-  cecho(text)
+  return ui.echo..tab..ui.cText..text.."&lt;reset&gt;"
 end
 --
-function ui.fEcho2n(text)
-  text = ui.echo..ui.cText..text.."&lt;reset&gt;\n\n"
-  cecho(text)
+function ui.fEcho(text, level)
+  cecho(ui.fFormatEcho(text, level))
 end
 --
-function ui.fError(text)
-  text = ui.echo..ui.cError.."[ERRORE] "..ui.cText..text.."&lt;reset&gt;\n\n"
-  cecho(text)
+function ui.fEchon(text, level)
+  cecho(ui.fFormatEcho(text, level).."\n")
+end
+--
+function ui.fEcho2n(text, level)
+  cecho(ui.fFormatEcho(text, level).."\n\n")
 end
 --
 function ui.fDecho(text)
   text = copy2decho(ui.echo..ui.cText)..text..copy2decho("&lt;reset&gt;").."\n\n"
   decho(text)
+end
+--
+function ui.fDebug(text)
+  if (ui.enDebug &gt;= 1) then
+    ui.fEchon("&lt;orange&gt;[DEBUG ] &lt;white&gt;("..getTime(true, "hh:mm:ss.zzz")..") "..ui.cText..text.."&lt;reset&gt;")
+  end
+end
+--
+function ui.fLog(text)
+  text = "\n&lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:30,24,24&gt;"..text.."\n"
+  GUI.PrivateChat.Main.Console:decho(text)
+  ui.lastFromPrivate = ""
+end
+--
+function ui.fError(text)
+  text = ui.echo..ui.cError.."[ERRORE] "..ui.cText..text.."&lt;reset&gt;\n\n"
+  cecho(text)
 end
 --
 function ui.fTitle(text)
@@ -5234,12 +5299,6 @@ function ui.fTitle(text)
   end
   title = title.."\n"
   return title
-end
---
-function ui.fLog(text)
-  text = "\n&lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:30,24,24&gt;"..text.."\n"
-  GUI.PrivateChat.Main.Console:decho(text)
-  ui.lastFromPrivate = ""
 end
 --
 function ui.fTabDecimalNumber(number)
@@ -5256,33 +5315,30 @@ end
 function ui.fRemoveArticle(text)
   text = " "..text.." "
   text = string.gsub(text, "&gt;", "&gt; ")
-  text = string.gsub(text, " al ", " ")
-  text = string.gsub(text, " con ", " ")
-  text = string.gsub(text, " d'", " ")
-  text = string.gsub(text, " da ", " ")
-  text = string.gsub(text, " di ", " ")
-  text = string.gsub(text, " dei ", " ")
-  text = string.gsub(text, " del ", " ")
-  text = string.gsub(text, " dell'", " ")
-  text = string.gsub(text, " degli ", " ")
-  text = string.gsub(text, " della ", " ")
-  text = string.gsub(text, " delle ", " ")
-  text = string.gsub(text, " dello ", " ")
-  text = string.gsub(text, " gli ", " ")
-  text = string.gsub(text, " i ", " ")
-  text = string.gsub(text, " il ", " ")
-  text = string.gsub(text, " Il ", " ")
-  text = string.gsub(text, " in ", " ")
-  text = string.gsub(text, " In ", " ")
-  text = string.gsub(text, " l'", " ")
-  text = string.gsub(text, " la ", " ")
-  text = string.gsub(text, " le ", " ")
-  text = string.gsub(text, " lo ", " ")
-  text = string.gsub(text, " un ", " ")
-  text = string.gsub(text, " un'", " ")
-  text = string.gsub(text, " una ", " ")
-  text = string.gsub(text, " uno ", " ")
-  text = string.gsub(text, " Uno ", " ")
+  text = string.gsub(text, " [aA][lL] ", " ")
+  text = string.gsub(text, " [cC][oO][nN] ", " ")
+  text = string.gsub(text, " [dD]'", " ")
+  text = string.gsub(text, " [dD][aA] ", " ")
+  text = string.gsub(text, " [dD][iI] ", " ")
+  text = string.gsub(text, " [dD][eE][iI] ", " ")
+  text = string.gsub(text, " [dD][eE][lL] ", " ")
+  text = string.gsub(text, " [dD][eE][lL][lL]'", " ")
+  text = string.gsub(text, " [dD][eE][gG][lL][iI] ", " ")
+  text = string.gsub(text, " [dD][eE][lL][lL][aA] ", " ")
+  text = string.gsub(text, " [dD][eE][lL][lL][eE] ", " ")
+  text = string.gsub(text, " [dD][eE][lL][lL][oO] ", " ")
+  text = string.gsub(text, " [gG][lL][iI] ", " ")
+  text = string.gsub(text, " [iI] ", " ")
+  text = string.gsub(text, " [iI][lL] ", " ")
+  text = string.gsub(text, " [iI][nN] ", " ")
+  text = string.gsub(text, " [lL]'", " ")
+  text = string.gsub(text, " [lL][aA] ", " ")
+  text = string.gsub(text, " [lL][eE] ", " ")
+  text = string.gsub(text, " [lL][oO] ", " ")
+  text = string.gsub(text, " [uU][nN] ", " ")
+  text = string.gsub(text, " [uU][nN]'", " ")
+  text = string.gsub(text, " [uU][nN][aA] ", " ")
+  text = string.gsub(text, " [uU][nN][oO] ", " ")
   text = string.gsub(text, "&gt; ", "&gt;")
   text = string.trim(text)
   return text
@@ -5369,28 +5425,6 @@ function ui.fParsingItem(text)
   return text, status, good, evil, bright, noisy, brittle
 end
 --
-function ui.fExpandVariables(value, toAlias)
-  if (toAlias) then
-    value = string.gsub(value, "#", '"..__mtchs2__.."')
-    value = string.gsub(value, "["..ui.varID.."@](%w+)", '"..ui.variables.%1.."')
-    --value = string.gsub(value, "@(%w+)", '"..ui.variables.%1.."')
-    --value = string.gsub(value, ui.varID.."(%w+)", '"..ui.variables.%1.."')
-  else
-    value = string.gsub(value, "["..ui.varID.."@](%w+)", "ui.variables.%1")
-    --value = string.gsub(value, "@(%w+)", "ui.variables.%1")
-    --value = string.gsub(value, ui.varID.."(%w+)", "ui.variables.%1")
-  end
-  --
-  for varName in string.gfind(value, "ui.variables%.(%w+)") do
-    if (not ui.variables[varName]) then
-      return nil, varName
-    elseif (not toAlias) then
-      value = string.gsub(value, "ui.variables%.(%w+)", ui.variables[varName])
-    end
-  end
-  return value, nil
-end
---
 function ui.fGetCommandFormattedText(command)
   return ui.cCommand..command.."&lt;reset&gt;"
 end
@@ -5408,16 +5442,6 @@ function ui.fExpandCommand(value)
     return string.split(value, "%s*/%s*")
   end
   return string.split(value, "%s*;%s*")
-end
---
--- Expand button name. Es. ui.fExpandButton("T5") -&gt; "t", 5
-function ui.fExpandButton(button)
-  local val = 0
-  button = string.lower(button or "")
-  if (string.find(button, "^[abcgot]%d$")) then
-    return string.sub(button, 1, 1), tonumber(string.sub(button, 2, 2))
-  end
-  return nil, nil
 end
 --
 function ui.fTitleCase(first, rest)
@@ -5536,7 +5560,6 @@ function ui.fTableCompare(o1, o2, ignore_mt)
   return true
 end
 --
---
 function hasbit(x, p)
   p = 2 ^ (p - 1)
   return x % (p + p) &gt;= p       
@@ -5544,35 +5567,36 @@ end
 --
 function ui.fGetColor(color)
   local tabColor = {
-    ["0000"] = "#080808", -- Nero 
-    ["0001"] = "#870000", -- Rosso scuro 
-    ["0002"] = "#008700", -- Verde scuro 
-    ["0003"] = "#878700", -- Marrone 
-    ["0004"] = "#000087", -- Blu 
-    ["0005"] = "#870087", -- Viola 
-    ["0006"] = "#008787", -- Cyan 
-    ["0007"] = "#a8a8a8", -- Grigio (default)        
-    ["0008"] = "#767676", -- Grigio scuro
-    ["0009"] = "#ff0000", -- Rosso chiaro
-    ["0010"] = "#00ff00", -- Verde chiaro
-    ["0011"] = "#ffff00", -- Giallo
-    ["0012"] = "#0000ff", -- Blu chiaro
-    ["0013"] = "#ff00ff", -- Viola chiaro
-    ["0014"] = "#00ffff", -- Celeste chiaro
-    ["0015"] = "#ffffff", -- Bianco
+    ["$c0000"] = "#080808", -- Nero 
+    ["$c0001"] = "#870000", -- Rosso scuro 
+    ["$c0002"] = "#008700", -- Verde scuro 
+    ["$c0003"] = "#878700", -- Marrone 
+    ["$c0004"] = "#000087", -- Blu 
+    ["$c0005"] = "#870087", -- Viola 
+    ["$c0006"] = "#008787", -- Cyan 
+    ["$c0007"] = "#a8a8a8", -- Grigio (default)        
+    ["$c0008"] = "#767676", -- Grigio scuro
+    ["$c0009"] = "#ff0000", -- Rosso chiaro
+    ["$c0010"] = "#00ff00", -- Verde chiaro
+    ["$c0011"] = "#ffff00", -- Giallo
+    ["$c0012"] = "#0000ff", -- Blu chiaro
+    ["$c0013"] = "#ff00ff", -- Viola chiaro
+    ["$c0014"] = "#00ffff", -- Celeste chiaro
+    ["$c0015"] = "#ffffff", -- Bianco
   }
   --
+  -- $chfRRGGBB
   if (string.find(color, "$chf")) then
-    -- $chfRRGGBB
     color = string.gsub(color, "$chf", "#")
+  --
+  -- $cXXXX
   elseif (string.find(color, "$c")) then
-    -- $cXXXX
-    color = string.gsub(color, "$c", "")
-    color = tabColor[color] or tabColor["0007"]
+    color = tabColor[color] or tabColor["$c0007"]
   end
+  --
   return color
 end
-
+--
 function ui.fConvertColorString(s)
   local tabColor = {
     ["$c0000"] = "&lt;black&gt;", -- Nero 
@@ -6157,13 +6181,13 @@ function ui.fGetKeyb(key1, key2, key3)
   end
   if (mod2 ~= "") then
     keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-               string.gsub(mod2 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-               string.gsub(key or "", "(%a)([%w_']*)", ui.fTitleCase)
+              string.gsub(mod2 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
+              string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
   elseif (mod1 ~= "") then
     keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-               string.gsub(key or "", "(%a)([%w_']*)", ui.fTitleCase)
+              string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
   elseif (key ~= "") then
-    keybind = string.gsub(key or "", "(%a)([%w_']*)", ui.fTitleCase)
+    keybind = string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
   end
   return isValid, mod1, mod2, key, keybind
 end
@@ -7012,6 +7036,53 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
+					<name>Options</name>
+					<packageName></packageName>
+					<script>-- Read Variables data from file
+function ui.fReadFileOptions()
+  -- Remove actual Variables
+  ui.options = {}
+  -- Load Variables
+  if (io.exists(ui.fileOptions)) then
+    table.load(ui.fileOptions, ui.options)
+  end
+  -- Merge pre defined variables
+  ui.options = table.update(ui.pre_defined_options, ui.options)
+  -- Save
+  table.save(ui.fileOptions, ui.options)
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Parameters</name>
+					<packageName></packageName>
+					<script>-- Read Parameters data from file
+function ui.fReadFileParameters()
+  --
+  local pre_defined_parameters = {
+    fsEquipment = 8,
+    fsHelp = 8,
+    fsInventory = 8,
+    fsKeybind = 6,
+    fsOverland = 8,
+    fsPrivateChat = 8,
+    fsPublicChat = 8,
+    fsRoom = 7,
+    page = "a"
+  }
+  --
+  -- Load parameters
+  ui.fDebug("[init] Load 'Parameters' from file")
+  ui.parameters = ui.parameters or {}
+  if (io.exists(ui.fileParameters)) then
+    table.load(ui.fileParameters, ui.parameters)
+  end
+  ui.parameters = table.update(pre_defined_parameters, ui.parameters)
+  table.save(ui.fileParameters, ui.parameters)
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
 					<name>Path</name>
 					<packageName></packageName>
 					<script>--
@@ -7623,6 +7694,15 @@ end</script>
 					<name>Targets</name>
 					<packageName></packageName>
 					<script>--
+function ui.fClickTarget(sender)
+  if (sender) then
+    local type, number = ui.fExpandButton(sender)
+    if (type == "g") or (type == "o") then
+      ui.fExecuteTargetButton(sender)
+    end
+  end
+end
+--
 function ui.fGetTargetChild(type, number)
   if (type == "g") then
     return GUI.Group.Main[type..number];
@@ -7797,6 +7877,27 @@ end
 --
 -- Read Targets data from file
 function ui.fReadFileTargets()
+  --
+  -- Pre defined target buttons
+  pre_defined_target_buttons = {
+    g0 = { mod1 = "CTRL", mod2 = "", key = "F10" },
+    g1 = { mod1 = "CTRL", mod2 = "", key = "F1" },
+    g2 = { mod1 = "CTRL", mod2 = "", key = "F2" },
+    g3 = { mod1 = "CTRL", mod2 = "", key = "F3" },
+    g4 = { mod1 = "CTRL", mod2 = "", key = "F4" },
+    g5 = { mod1 = "CTRL", mod2 = "", key = "F5" },
+    g6 = { mod1 = "CTRL", mod2 = "", key = "F6" },
+    g7 = { mod1 = "CTRL", mod2 = "", key = "F7" },
+    g8 = { mod1 = "CTRL", mod2 = "", key = "F8" },
+    g9 = { mod1 = "CTRL", mod2 = "", key = "F9" },
+    --
+    o0 = { mod1 = "CTRL", mod2 = "", key = "0" },
+    --
+    t1 = { mod1 = "CTRL", mod2 = "", key = "1" },
+    t2 = { mod1 = "CTRL", mod2 = "", key = "2" },
+    t3 = { mod1 = "CTRL", mod2 = "", key = "3" },
+    t4 = { mod1 = "CTRL", mod2 = "", key = "4" },
+  }
   -- Remove actual Targets
   ui.targets = {}
   -- Load Targets
@@ -7804,7 +7905,7 @@ function ui.fReadFileTargets()
     table.load(ui.fileTargets, ui.targets)
   else
     -- Update only if file targets not esist otherwise it would reassign any removed keys
-    ui.targets = table.update(ui.pre_defined_target_buttons, ui.targets)
+    ui.targets = table.update(pre_defined_target_buttons, ui.targets)
   end
   -- Save
   table.save(ui.fileTargets, ui.targets)
@@ -9124,6 +9225,7 @@ ui.pathSnd = ui.pathTpl.."sounds/"
 ui.fileNameAliases    = "aliases.lua";
 ui.fileNameHighlights = "highlights.lua";
 ui.fileNameMap        = "map.lua";
+ui.fileNameOptions    = "options.lua";
 ui.fileNameParameters = "parameters.lua";
 ui.fileNameTargets    = "targets.lua";
 ui.fileNameVariables  = "variables.lua";
@@ -9131,41 +9233,14 @@ ui.fileNameVariables  = "variables.lua";
 ui.fileAliases    = ui.pathTpl..ui.fileNameAliases;
 ui.fileHighlights = ui.pathTpl..ui.fileNameHighlights;
 ui.fileMap        = ui.pathTpl..ui.fileNameMap;
+ui.fileOptions    = ui.pathTpl..ui.fileNameOptions;
 ui.fileParameters = ui.pathTpl..ui.fileNameParameters;
 ui.fileTargets    = ui.pathTpl..ui.fileNameTargets;
 ui.fileVariables  = ui.pathTpl..ui.fileNameVariables;
 --
 ui.varID = "&amp;"
 --
--- Fast affect
-ui.fastAffects = {
---  ["In Combattimento"]        = "⚔️",
---  ["[Set] Planar Alteration"] = "🗡️",
-}
 ui.actFastAffects = "";
---
--- Pre defined affect 
-ui.pre_defined_affects = {
---  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
---  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
---  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
---  ["chiaroveggenza"]            = {icon = nil,             color = "magenta", shortName = "Chiaro" },  
---  ["colpo psichico"]            = {icon = nil,             color = "magenta", shortName = "Colpo PSI" },  
---  ["forza psichica"]            = {icon = "skill_9.png",   color = "OrangeRed", shortName = "PSI Str" },
---  ["individua il magico"]       = {icon = 'Skill_322.png', color = "DarkOrchid", shortName = "Ind. mag." },
---  ["individua il male"]         = {icon = 'skill_72.png',  color = "DarkOrchid", shortName = "Ind. mal." },
---  ["individua invisibile"]      = {icon = "Skill_312.png", color = "DarkOrchid", shortName = "Ind. inv." },
---  ["levitazione"]               = {icon = "skill_156.png", color = "blue", shortName = "Lev" },
---  ["nuotare (cooldown)"]        = {icon = "skill_110.png", color = "blue", shortName = "Swim" },
---  ["percepisci vita"]           = {icon = "skill_44.png",  color = "DarkOrchid", shortName = "True Live" },
---  ["primo soccorso"]            = {icon = nil,             color = "green", shortName = "First AID" },  
---  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
---  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
---  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
---  ["mantello di fiamme"]        = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
---  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
---  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
-}
 --
 -- Modifier for keybind
 ui.keyb_modifier = {
@@ -9228,12 +9303,12 @@ ui.keyb_single = {
 }
 --
 ui.exitMap = {
-  down  = {short = "d", long = "down", reverse = "u", tokenOpen = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
-  east  = {short = "e", long = "east", reverse = "w", tokenOpen = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
+  down  = {short = "d", long = "down",  reverse = "u", tokenOpen = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
+  east  = {short = "e", long = "east",  reverse = "w", tokenOpen = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
   north = {short = "n", long = "north", reverse = "s", tokenOpen = "△", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;green&gt;", dColor = "&lt;0,255,0:30,24,24&gt;",},
   south = {short = "s", long = "south", reverse = "n", tokenOpen = "▽", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;blue&gt;", dColor = "&lt;0,0,255:30,24,24&gt;",},
-  up    = {short = "u", long = "up", reverse = "d", tokenOpen = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
-  west  = {short = "w", long = "west", reverse = "e", tokenOpen = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
+  up    = {short = "u", long = "up",    reverse = "d", tokenOpen = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
+  west  = {short = "w", long = "west",  reverse = "e", tokenOpen = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
 }
 --
 ui.exitMap["basso"] = ui.exitMap.down
@@ -9292,27 +9367,6 @@ ui.pre_defined_variables = {
   target = "",
 }
 --
--- Pre defined target buttons
-ui.pre_defined_target_buttons = {
-  g0 = { mod1 = "CTRL", mod2 = "", key = "F10" },
-  g1 = { mod1 = "CTRL", mod2 = "", key = "F1" },
-  g2 = { mod1 = "CTRL", mod2 = "", key = "F2" },
-  g3 = { mod1 = "CTRL", mod2 = "", key = "F3" },
-  g4 = { mod1 = "CTRL", mod2 = "", key = "F4" },
-  g5 = { mod1 = "CTRL", mod2 = "", key = "F5" },
-  g6 = { mod1 = "CTRL", mod2 = "", key = "F6" },
-  g7 = { mod1 = "CTRL", mod2 = "", key = "F7" },
-  g8 = { mod1 = "CTRL", mod2 = "", key = "F8" },
-  g9 = { mod1 = "CTRL", mod2 = "", key = "F9" },
-  --
-  o0 = { mod1 = "CTRL", mod2 = "", key = "0" },
-  --
-  t1 = { mod1 = "CTRL", mod2 = "", key = "1" },
-  t2 = { mod1 = "CTRL", mod2 = "", key = "2" },
-  t3 = { mod1 = "CTRL", mod2 = "", key = "3" },
-  t4 = { mod1 = "CTRL", mod2 = "", key = "4" },
-}
---
 -- Storico Path
 ui.idxPath = 0;
 ui.memPath = 0;
@@ -9324,20 +9378,7 @@ ui.group = ui.group or {}
 ui.totalMember = 0
 --
 -- Affects
-ui.affects = ui.affects or {}
---
--- General
-ui.pre_defined_parameters = {
-  fsEquipment = 8,
-  fsHelp = 8,
-  fsInventory = 8,
-  fsKeybind = 6,
-  fsoverland = 8,
-  fsPrivateChat = 8,
-  fsPublicChat = 8,
-  fsRoom = 7,
-  page = "a"
-}</script>
+ui.affects = ui.affects or {}</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -9804,12 +9845,7 @@ end
 --
 -- Load parameters
 ui.fDebug("[init] Load 'Parameters' from file")
-ui.parameters = ui.parameters or {}
-if (io.exists(ui.fileParameters)) then
-  table.load(ui.fileParameters, ui.parameters)
-end
-ui.parameters = table.update(ui.pre_defined_parameters, ui.parameters)
-table.save(ui.fileParameters, ui.parameters)
+ui.fReadFileParameters()
 --
 -- Load variables
 ui.fDebug("[init] Load 'Variables' from file")
