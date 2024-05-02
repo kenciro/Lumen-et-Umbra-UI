@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
+			<borderLeftWidth>333</borderLeftWidth>
 			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>DejaVu Sans Mono,12,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1119,7 +1119,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -4119,7 +4119,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: red;
+    background-color: green;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -4312,6 +4312,7 @@ function ui.fUpdateAffects()
   if (ui.enDebug &gt;= 2) then
     for i=1, 20 do
       local name = "Affect "..i 
+      --
       ui.affects[name] = {} 
       ui.affects[name].category   = math.random(0, 100)
       if (i&lt;10)then
@@ -4329,9 +4330,11 @@ function ui.fUpdateAffects()
       orderTable[#orderTable+1] = name
     end
   elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
+    --
     -- GMCP
     for affect in pairs(gmcp.char.affects) do
       local name = gmcp.char.affects[affect].name 
+      --
       ui.affects[name] = {}
       ui.affects[name].category         = gmcp.char.affects[affect].category
       ui.affects[name].color            = gmcp.char.affects[affect].color
@@ -4345,6 +4348,7 @@ function ui.fUpdateAffects()
       orderTable[#orderTable+1] = name
     end
   end
+  --
   -- Order Affects
   table.sort(orderTable, function (affect1, affect2)
                            if (ui.affects[affect1].duration &lt; 0) then
@@ -4420,7 +4424,8 @@ function ui.fUpdateAffects()
   		      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
   		      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
   		      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
-  		      BGColor = string.format("#%02X%02X%02X", R, G, B)
+  		      --
+            BGColor = string.format("#%02X%02X%02X", R, G, B)
           end
         end
         CCS = CCS..[[
@@ -4438,6 +4443,7 @@ function ui.fUpdateAffects()
         --
         -- Duration
         local durationColor = "white"
+        --
         if (ui.affects[affect].duration == 0) then
           durationColor = "ansired"
         elseif (ui.affects[affect].duration == 1) then
@@ -4447,9 +4453,11 @@ function ui.fUpdateAffects()
         end
         --
         if (ui.affects[affect].duration &lt; 0) then
+          --
           -- Permanente
           ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
         elseif (not ui.affects[affect].isRound) then
+          --
           -- In round
           ui.affects[affect].duration = ui.affects[affect].duration.."t"
         end
@@ -4461,6 +4469,7 @@ function ui.fUpdateAffects()
         --
         -- ToolTip
         local toolTip = ""
+        --
         if ui.fHasbit(ui.affects[affect].category, 1) then toolTip = toolTip.."Aura " end
         if ui.fHasbit(ui.affects[affect].category, 2) then toolTip = toolTip.."Affliction " end
         if ui.fHasbit(ui.affects[affect].category, 3) then toolTip = toolTip.."Control " end
@@ -4470,7 +4479,7 @@ function ui.fUpdateAffects()
         if ui.fHasbit(ui.affects[affect].category, 7) then toolTip = toolTip.."Divine " end
         if ui.fHasbit(ui.affects[affect].category, 8) then toolTip = toolTip.."Elemental " end
         if ui.fHasbit(ui.affects[affect].category, 9) then toolTip = toolTip.."Physical " end
-        if (toolTip == "" ) then
+        if (toolTip == "") then
           GUI["AffectIcon"..i]:setToolTip(affect, 10)
         else
           GUI["AffectIcon"..i]:setToolTip(affect.."\n"..toolTip, 10)
@@ -4483,7 +4492,6 @@ function ui.fUpdateAffects()
         else
           GUI["AffectIcon"..i]:hide();
         end
-        --
         --
         if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 2 &gt; GUI.Affect.Main:get_width()) then
           x = 0
@@ -4503,6 +4511,7 @@ function ui.fUpdateAffects()
   end
 end
 --
+-- Debug simulation
 if (ui.enDebug &gt;= 2) then
   ui.fUpdateAffects()
 end</script>
@@ -4515,10 +4524,12 @@ end</script>
 -- Expand button name. Es. ui.fExpandButton("T5") -&gt; "t", 5
 function ui.fExpandButton(button)
   local val = 0
+  --
   button = string.lower(button or "")
   if (string.find(button, "^[abcgot]%d$")) then
     return string.sub(button, 1, 1), tonumber(string.sub(button, 2, 2))
   end
+  --
   return nil, nil
 end
 --
@@ -4528,6 +4539,7 @@ end
 --
 function ui.fSearchAliasButton(button)
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number
     for alias in pairs(ui.aliases) do
@@ -4536,12 +4548,14 @@ function ui.fSearchAliasButton(button)
       end
     end
   end
+  --
   return nil
 end
 --
 -- List all alias buttons
 function ui.fShowAllAliasButtons()
   local i = 0
+  --
   cecho(ui.fTitle("Pulsanti alias"))
   for alias in ui.fOrderedPairs(ui.aliases) do
     if (ui.aliases[alias].button) then
@@ -4560,15 +4574,20 @@ end
 function ui.fRemoveAliasButton(button)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number 
     local alias = ui.fSearchAliasButton(button)
+    --
     if (alias) then
       ui.aliases[alias].button = nil
+      --
       return 1
     end
+    --
     return -2 -- Not alias assigned
   end
+  --
   return -1 -- Invaid button
 end
 --
@@ -4585,21 +4604,26 @@ end
 function ui.fAssignAliasButton(button, alias)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number
     if (ui.aliases[alias]) then
       ui.fRemoveAliasButton(button)
       ui.aliases[alias].button = button
+      --
       return 1
     end
+    --
     return -2 -- Alias not exist
   end
+  --
   return -1 -- Invaid button
 end
 --
 function ui.fExecuteAliasButton(button)
   local alias = nil;
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number
     alias = ui.fSearchAliasButton(button)
@@ -4609,18 +4633,20 @@ function ui.fExecuteAliasButton(button)
       ui.fEcho2n(ui.fGetAliasButtonFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;alias&gt;").." per configurare.")
     end
   end
+  --
   return alias
 end
 --
 function ui.fRefreshAliasButton(number)
-  local found = nil;
   local bgColor
   local title = ""
   local keybind = ""
   local button = ui.parameters.page..number
+  --
   for alias in pairs(ui.aliases) do
     if (ui.aliases[alias].button) and (ui.aliases[alias].button==button) then
-      found = alias
+      title = alias
+      keybind = ui.aliases[alias].keybind or ""
       break
     end
   end
@@ -4630,10 +4656,6 @@ function ui.fRefreshAliasButton(number)
     bgColor = "0,200,0"
   elseif (ui.parameters.page == "c") then
     bgColor = "0,0,200"
-  end
-  if (found) then
-    title = found
-    keybind = ui.aliases[found].keybind or ""
   end
   --
   GUI.AliasButtons.Main.CButtons["Custom"..number].index:echo("&lt;center&gt;"..ui.parameters.page..number)
@@ -4663,6 +4685,7 @@ end
 --
 function ui.fClickAliasButton(number)
   local button = ui.parameters.page..number
+  --
   ui.fExecuteAliasButton(button)
 end
 --
@@ -4712,6 +4735,7 @@ function ui.fExpandVariables(value, toAlias)
       value = string.gsub(value, "ui.variables%.(%w+)", ui.variables[varName])
     end
   end
+  --
   return value, nil
 end
 --
@@ -4722,9 +4746,11 @@ end
 function ui.fGetAliasOutputFormattedText(command, input)
   if (command) then
     input = input or ""
+    --
     -- Add same spaces between commands
     command = string.gsub(command, "(%s*/%s*)", " / ")
     command = string.gsub(command, "(%s*;%s*)", "; ")
+    --
     -- Format Aliases
     command = string.gsub(command, "^(%w+)", function(str)
                                                if ui.aliases[str] then
@@ -4741,6 +4767,7 @@ function ui.fGetAliasOutputFormattedText(command, input)
                                                   return "; "..ui.fGetAliasNameFormattedText(str)..ui.colors.aliasOutput
                                                 end
                                               end)
+    --
     -- Format Variables
     command = string.gsub(command, "["..ui.varID.."@](%w+)", function(str)
                                                         if not ui.variables[str] then
@@ -4749,19 +4776,23 @@ function ui.fGetAliasOutputFormattedText(command, input)
                                                           return ui.fGetVarFormattedText(str)..ui.colors.aliasOutput
                                                         end
                                                       end)
+    --
     -- Format commands separator
     command = string.gsub(command, ";", ui.colors.separator..";"..ui.colors.aliasOutput)
     command = string.gsub(command, "/", ui.colors.separator.."/"..ui.colors.aliasOutput)
+    --
     -- Format input command
     command = string.gsub(command, "#", ui.fGetInputFormattedText("#"..input)..ui.colors.aliasOutput)
     --
     return ui.colors.aliasOutput..command.."&lt;reset&gt;"
   end
+  --
   return ""
 end
 --
 function ui.fGetAliasFormattedText(alias)
   local ret = ""
+  --
   if (ui.aliases[alias]) then
     ret = ui.fGetAliasNameFormattedText(alias).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text)
     if (ui.aliases[alias].keybId) then
@@ -4771,12 +4802,14 @@ function ui.fGetAliasFormattedText(alias)
       ret = ui.fGetAliasButtonFormattedText(ui.aliases[alias].button).." "..ret
     end
   end
+  --
   return ret
 end
 --
 -- List all aliases
 function ui.fShowAllAliases()
   local i = 0
+  --
   cecho(ui.fTitle("Aliases"))
   for alias in ui.fOrderedPairs(ui.aliases) do
     i = i + 1
@@ -4796,8 +4829,10 @@ function ui.fRemoveAlias(alias)
       killAlias(ui.aliases[alias]["id"])
     end
     ui.aliases[alias] = nil
+    --
     return true
   end
+  --
   return false
 end
 --
@@ -4811,15 +4846,20 @@ end
 function ui.fAddAlias(alias, value)
   local command
   local commands, varNameError = ui.fExpandVariables(value, true)
+  --
   if (not varNameError) then
+    --
     -- Init alias (if no exist)
     ui.aliases[alias] = ui.aliases[alias] or {}
+    --
     -- Remove old alias
     if (ui.aliases[alias].id) then
       killAlias(ui.aliases[alias].id)
     end
+    --
     -- Save value in text format
     ui.aliases[alias].text = value
+    --
     -- Generate alias code
     local code = [[
 ui.levelCode = (ui.levelCode or -1) + 1
@@ -4834,6 +4874,7 @@ local __mtchs2__ = matches[2] or ""
 ]]
     commands = ui.fExpandCommand(value)
     if (#commands == 1) then
+      --
       -- Single command
       command = ui.fExpandVariables(value, true)
       if (string.match(command, "__mtchs2__")) then
@@ -4843,6 +4884,7 @@ ui.fEchon(ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__), ui.level
 expandAlias("]]..command..[[", false);
 ]]
       else
+        --
         -- Search for variables in command
         local last_variable = ""
         local last_expanded_variable = ""
@@ -4851,6 +4893,7 @@ expandAlias("]]..command..[[", false);
           last_expanded_variable = variable
         end
         if (last_variable == "") then
+          --
           -- If not variables in comman, add matches[2]
           code = code..[[
 -- Single command without # and without variables
@@ -4864,6 +4907,7 @@ else
 end
 ]]
         else
+          --
           -- If variables in command, replace last variable with matches[2]
           local command_matches = string.gsub(command, last_expanded_variable, "__mtchs2__")
           code = code..[[
@@ -4880,6 +4924,7 @@ end
         end
       end
     else
+      --
       -- Multiple commands
       code = code..[[
 -- Multiple commands
@@ -4896,13 +4941,16 @@ expandAlias("]]..command..[[", false);
 --
 ui.levelCode = math.max(-1, ui.levelCode - 1)
 ]]
+    --
     -- Save alias code (for debug only)
     ui.aliases[alias].code = code
+    --
     -- Assign keybind
     local mod1 = ui.aliases[alias].mod1 or "";
     local mod2 = ui.aliases[alias].mod2 or "";
     local key = ui.aliases[alias].key or "";
     local result, keybind
+    --
     if (mod2 ~= "") then
       result, keybind = ui.fSetKeyb(ui.aliases, alias, ui.aliases[alias].code, mod2, mod1, key)
     elseif (mod1 ~= "") then
@@ -4912,14 +4960,18 @@ ui.levelCode = math.max(-1, ui.levelCode - 1)
     else
       result, keybind = ui.fSetKeyb(ui.aliases, alias, ui.aliases[alias].code)
     end
+    --
     -- Remove keybind if not valid (or already used)
     if (result &lt;= 0) then
       ui.fRemoveKeyb(ui.aliases[alias])
     end
+    --
     -- Create alias
     ui.aliases[alias].id = tempAlias([[^]]..alias..[[(?: (.*))?$]], code)
+    --
     return 1, ui.fGetAliasFormattedText(alias)
   end
+  --
   return -1, varNameError  -- Variable not exist
 end
 --
@@ -4966,6 +5018,7 @@ end</script>
 local sortColorsByHue = function(lhs, rhs)
   local lh, ll, lv = unpack(lhs.sort)
   local rh, rl, rv = unpack(rhs.sort)
+  --
   if lh &lt; rh then
     return true
   elseif lh &gt; rh then
@@ -4983,6 +5036,7 @@ end
 local sortColorsByName = function(a, b)
   local aname = string.gsub(string.lower(a.name), "_", "")
   local bname = string.gsub(string.lower(b.name), "_", "")
+  --
   return aname &lt; bname
 end
 --
@@ -4997,6 +5051,7 @@ local chunkify = function(tbl, num_chunks)
   local base_chunk_size = tblsize / num_chunks
   local chunky_chunks = tblsize % num_chunks
   local chunks = {}
+  --
   for i = 1, num_chunks do
     local chunk_size = base_chunk_size
     if i &lt;= chunky_chunks then
@@ -5008,6 +5063,7 @@ local chunkify = function(tbl, num_chunks)
     end
     chunks[i] = chunk
   end
+  --
   return chunks
 end
 --
@@ -5040,6 +5096,7 @@ local rgbToHsv = function(r, g, b)
     end
     h = h / 6
   end
+  --
   return h, s, v
 end
 --
@@ -5052,10 +5109,12 @@ local step = function(r, g, b)
   local h2 = math.floor(h * reps)
   local lum2 = math.floor(lum * reps)
   local v2 = math.floor(v * reps)
+  --
   if h2 % 2 == 1 then
     v2 = reps - v2
     lum2 = reps - lum2
   end
+  --
   return h2, lum2, v2
 end
 --
@@ -5063,6 +5122,7 @@ local function calc_luminosity(r, g, b)
   r = r &lt; 11 and r / (255 * 12.92) or ((0.055 + r / 255) / 1.055) ^ 2.4
   g = g &lt; 11 and g / (255 * 12.92) or ((0.055 + g / 255) / 1.055) ^ 2.4
   b = b &lt; 11 and b / (255 * 12.92) or ((0.055 + b / 255) / 1.055) ^ 2.4
+  --
   return (0.2126 * r) + (0.7152 * g) + (0.0722 * b)
 end
 --
@@ -5085,6 +5145,7 @@ end
 local function echoColor(color, options)
   local rgb = color.rgb
   local fgc = "white"
+  --
   if calc_luminosity(unpack(rgb)) &gt; 0.5 then
     fgc = "black"
   end
@@ -5120,6 +5181,7 @@ end
 function ui.fDisplayColors(options)
   local options = options or {}
   local optionsType = type(options)
+  --
   assert(
     optionsType == "table",
     "ui.fDisplayColors(options) argument error: options as table expects, got "..optionsType
@@ -5186,12 +5248,14 @@ end
 -- Check color
 function ui.fColorCheck(color)
   local color = color:lower()
+  --
   color = color:gsub("_", "")
   for color_name, _ in pairs(color_table) do
     if color_name:lower() == color then
       return color_name
     end
   end
+  --
   return false
 end
 </script>
@@ -5220,10 +5284,12 @@ function ui.fOrderedNext(t, state)
   local key = nil
   --
   if (state == nil) then
-    -- the first time, generate the index
+    --
+    -- First time, generate the index
     t.__orderedIndex = ui.fGenOrderedIndex(t)
     key = t.__orderedIndex[1]
   else
+    --
     -- Fetch the next value
     for i = 1,table.getn(t.__orderedIndex) do
       if t.__orderedIndex[i] == state then
@@ -5235,6 +5301,7 @@ function ui.fOrderedNext(t, state)
   if (key) then
     return key, t[key]
   end
+  --
   -- No more value to return, cleanup
   t.__orderedIndex = nil
   --
@@ -5248,12 +5315,14 @@ end
 --
 function ui.fFormatEcho(text, level)
   local tab = ""
+  --
   if (level) and (level &gt; 0) then 
     for i=2, level do
       tab = tab.."    "
     end
     tab = tab..ui.fGetOperatorFormattedText("  » ")
   end
+  --
   return ui.echo..tab..ui.colors.text..text.."&lt;reset&gt;"
 end
 --
@@ -5293,11 +5362,13 @@ end
 --
 function ui.fTitle(text)
   local title = "\n"..ui.echo..ui.colors.title..text.."\n"
+  --
   text = string.gsub(ui.echo..text, "\&lt;%a+\&gt;", "")
   for i=1, text:len() do
     title = title.."-"
   end
   title = title.."\n"
+  --
   return title
 end
 --
@@ -5305,6 +5376,7 @@ function ui.fTabDecimalNumber(number)
   if (number &lt; 10) then
     return " "..number
   end
+  --
   return number
 end
 --
@@ -5341,11 +5413,13 @@ function ui.fRemoveArticle(text)
   text = string.gsub(text, " [uU][nN][oO] ", " ")
   text = string.gsub(text, "&gt; ", "&gt;")
   text = string.trim(text)
+  --
   return text
 end
 --
 function ui.fParsingItem(text)
   local status = 8
+  --
   text = string.gsub(text, "%.%.%.", "")
   if (string.find(text, "indistruttibil")) then
     text = string.gsub(text, "E` indistruttibile!", "")
@@ -5441,6 +5515,7 @@ function ui.fExpandCommand(value)
   if string.match(value, "/") then
     return string.split(value, "%s*/%s*")
   end
+  --
   return string.split(value, "%s*;%s*")
 end
 --
@@ -5479,6 +5554,7 @@ end
 function ui.fDeleteDirectory(dir)
   local lfs = require('lfs')
   local deletedir
+  --
   deletedir = function(dir)
     for file in lfs.dir(dir) do
       local file_path = dir..'/'..file
@@ -5500,6 +5576,7 @@ function ui.fCopyFile(old_path, new_path)
   local old_file = io.open(old_path, "rb")
   local new_file = io.open(new_path, "wb")
   local old_file_sz, new_file_sz = 0, 0
+  --
   if not old_file or not new_file then
     return false
   end
@@ -5515,34 +5592,39 @@ function ui.fCopyFile(old_path, new_path)
   --
   new_file_sz = new_file:seek("end")
   new_file:close()
+  --
   return new_file_sz == old_file_sz
 end
 --
 -- return true if t1 == t2
 function ui.fTableCompare(o1, o2, ignore_mt)
+  local o1Type = type(o1)
+  local o2Type = type(o2)
+  --
   -- same object
   if o1 == o2 then
     return true
   end
   --
-  local o1Type = type(o1)
-  local o2Type = type(o2)
-  --- different type
+  -- different type
   if o1Type ~= o2Type then 
     return false 
   end
-  --- same type but not table, already compared above
+  --
+  -- same type but not table, already compared above
   if o1Type ~= 'table' then 
     return false 
   end
+  --
   -- use metatable method
   if not ignore_mt then
     local mt1 = getmetatable(o1)
     if mt1 and mt1.__eq then
-      --compare using built in method
+      -- compare using built in method
       return o1 == o2
     end
   end
+  --
   -- iterate over o1
   for key1, value1 in pairs(o1) do
     local value2 = o2[key1]
@@ -5550,7 +5632,8 @@ function ui.fTableCompare(o1, o2, ignore_mt)
       return false
     end
   end
-  --- check keys in o2 but missing from o1
+  --
+  -- check keys in o2 but missing from o1
   for key2, _ in pairs(o2) do
     if o1[key2] == nil then 
       return false 
@@ -5562,6 +5645,7 @@ end
 --
 function ui.fHasbit(x, p)
   p = 2 ^ (p - 1)
+  --
   return x % (p + p) &gt;= p       
 end
 --
@@ -5667,6 +5751,7 @@ function ui.fAddSpace(s, l, mode)
       end
     end
   end
+  --
   return s
 end
 --
@@ -5854,12 +5939,12 @@ function ui.fUpdateGroup()
       ui.group[totalMember].maxmov         = 100
       ui.group[totalMember].pov            = math.random(0, 100)
       ui.group[totalMember].maxpov         = 100
-      ui.group[totalMember].roomPos        = 5
-      
+      ui.group[totalMember].roomPos        = 5  
     end
   elseif (gmcp) and (gmcp.char) and (gmcp.char.group) then
     for member in pairs(gmcp.char.group) do
       local name = (gmcp.char.group[member].name or "")
+      --
       if (name ~= ui.player.name) then
         totalMember = totalMember + 1
         ui.group[totalMember]                = {}
@@ -5931,6 +6016,7 @@ end</script>
 					<script>--
 function ui.fHelp(cmd)
   local line
+  --
   -- Restore widget
   clearWindow("GUI.Help.Main.Console")
   GUI.Help:show()
@@ -6052,12 +6138,14 @@ function ui.fGetHighlightFormattedText(highlight)
   if (ui.highlights[highlight]) then
     return "&lt;"..ui.highlights[highlight].color.."&gt;"..highlight.."&lt;reset&gt;"
   end
+  --
   return ""
 end
 --
 function ui.fShowAllHighlights()
   local i = 0
   local num
+  --
   cecho(ui.fTitle("Highlights"))
   for highlight in pairs(ui.highlights) do
     i = i + 1
@@ -6076,8 +6164,10 @@ function ui.fRemoveHighlight(highlight)
       killTrigger(ui.highlights[highlight].id)
     end
     ui.highlights[highlight] = nil
+    --
     return true
   end
+  --
   return false
 end
 --
@@ -6092,12 +6182,15 @@ function ui.fAddHighlight(highlight, color)
   if ui.fColorCheck(color) then
     highlight = highlight or "" 
     if (highlight ~= "") then
+      --
       -- Init highlight (if not exist)
       ui.highlights[highlight] = ui.highlights[highlight] or {}
+      --
       -- Remove old highlight
       if (ui.highlights[highlight].id) then
         killTrigger(ui.highlights[highlight].id)
       end
+      --
       -- Create trigger
       ui.highlights[highlight].id = tempRegexTrigger([[(?i)(?:^|\W|\s)(]]..highlight..[[)(?:\W|$|\s)]], function()
                                                                                                           selectString(matches[2], 1)
@@ -6105,10 +6198,13 @@ function ui.fAddHighlight(highlight, color)
                                                                                                           resetFormat()
                                                                                                         end)
       ui.highlights[highlight].color = color
+      --
       return 1
     end
+    --
     return -1 -- Invaid text
   end
+  --
   return -2 -- Invalid color
 end
 --
@@ -6127,9 +6223,11 @@ end
 -- Read Highlights data from file
 function ui.fReadFileHighlights()
   local file = ui.files.highlights.path..ui.files.highlights.name
+  --
   -- Remove actual Highlights
   ui.highlights = ui.highlights or {}
   ui.fRemoveAllHighlights()
+  --
   -- Load Highlights
   if (io.exists(file)) then
     table.load(file, ui.highlights)
@@ -6160,6 +6258,7 @@ function ui.fGetKeyb(key1, key2, key3)
   local mod2 = "";
   local key = "";
   local keybind = ""
+  --
   key1 = string.upper(key1 or "")
   key2 = string.upper(key2 or "")
   key3 = string.upper(key3 or "")
@@ -6195,6 +6294,7 @@ function ui.fGetKeyb(key1, key2, key3)
     key = ""
     isValid = true
   end
+  --
   if (mod2 ~= "") then
     keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
               string.gsub(mod2 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
@@ -6205,6 +6305,7 @@ function ui.fGetKeyb(key1, key2, key3)
   elseif (key ~= "") then
     keybind = string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
   end
+  --
   return isValid, mod1, mod2, key, keybind
 end
 --
@@ -6218,11 +6319,13 @@ function ui.fSearchKeyb(table, keybind, excludeKey)
       end
     end
   end
+  --
   return nil
 end
 --
 function ui.fShowAllKeyb()
   local orderTable = {}
+  --
   -- Order Target keybind
   for target in pairs(ui.targets) do
     orderTable[#orderTable+1] = target
@@ -6238,6 +6341,7 @@ function ui.fShowAllKeyb()
                            end
                            return keybind1 &lt; keybind2
                          end )
+  --
   -- Show Target keybind
   cecho(ui.fTitle("Target keybind"))
   for i,target in ipairs(orderTable) do
@@ -6252,6 +6356,7 @@ function ui.fShowAllKeyb()
   if (#orderTable==0) then
     cecho("Per maggiori info "..ui.fGetCommandFormattedText("ui.fHelp uikeybind").."\n")
   end
+  --
   -- Order Aliases keybind
   orderTable = {}
   for alias in pairs(ui.aliases) do
@@ -6270,6 +6375,7 @@ function ui.fShowAllKeyb()
                            end
                            return keybind1 &lt; keybind2
                          end )
+  --
   -- Show Aliases keybind
   cecho(ui.fTitle("Aliases keybind"))
   for i,alias in ipairs(orderTable) do
@@ -6300,10 +6406,13 @@ function ui.fRemoveKeyb(element)
     if (element.keybId) then
       killKey(element.keybId)
       element.keybId = nil
+      --
       return 1 -- keyb removed
     end
+    --
     return -1 -- Not keyb to remove
   end
+  --
   return -2 -- Invalid element
 end
 --
@@ -6311,6 +6420,7 @@ function ui.fRemoveAllKeyb()
   for element in pairs(ui.aliases) do
     ui.fRemoveKeyb(ui.aliases[element])
   end
+  --
   for element in pairs(ui.targets) do
     ui.fRemoveKeyb(ui.targets[element])
   end
@@ -6319,12 +6429,15 @@ end
 -- Set, modify or delete a keybind
 function ui.fSetKeyb(table, tKey, code, key1, key2, key3)
   local isValid, mod1, mod2, key, keybind = ui.fGetKeyb(key1, key2, key3)
+  --
   if (table[tKey]) then
     if (isValid) then
       if (ui.fSearchKeyb(ui.targets, keybind, tKey) == nil) then
         if (ui.fSearchKeyb(ui.aliases, keybind, tKey) == nil) then
+          --
           -- Remove old keybind
           ui.fRemoveKeyb(table[tKey]);
+          --
           -- Create new keybind
           if (mod2 ~= "") then
             table[tKey].keybId = tempKey(ui.keyb_modifier[mod1] + ui.keyb_modifier[mod2], ui.keyb_single[key], code)
@@ -6335,19 +6448,25 @@ function ui.fSetKeyb(table, tKey, code, key1, key2, key3)
           else
             return 2, keybind -- keybind removed
           end
+          --
           -- Save data
           table[tKey].mod1 = mod1
           table[tKey].mod2 = mod2
           table[tKey].key = key
           table[tKey].keybind = keybind
+          --
           return 1, keybind -- keybind changed or created
         end
+        --
         return -4, keybind -- keybind already used in an alias
       end
+      --
       return -3, keybind -- keybind already used in a target
     end
+    --
     return -2, keybind -- Not valid keys
   end
+  --
   return -1, keybind -- Alias not exist
 end
 </script>
@@ -6456,19 +6575,23 @@ local function make_room(room, prev)
     }
   --
   elseif (room.area == prev.area) then
+    --
     -- Determinate room position if last room is from same area
     coords = {getRoomCoordinates(prev.id)}
     local shift = {0,0,0}
     for k,v in pairs(room.exits) do
       if v == prev.id and move_vectors[k] then
+        --
         -- C'è almeno un collegamento con la staza di provenienza a "..k.."... ricalcolo shift
         for n = 1,3 do
           shift[n] = shift[n] + move_vectors[k][n]
         end
       end
     end
+    --
     -- Shift = 0 0 0
     if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
+      --
       -- Aggiungo direzione di provenienza = map.room.dir_from
       if (#map.room.dir_from &gt; 0) then
         for _, dir in pairs(map.room.dir_from) do
@@ -6483,8 +6606,10 @@ local function make_room(room, prev)
         --setRoomChar(prev.id, "T")     
       end
     end
+    --
     -- Again Shift = 0 0 0
     if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
+      --
       -- Force top-right position
       shift = {-1,-1,0} 
     end
@@ -6492,6 +6617,7 @@ local function make_room(room, prev)
     coords[1] = coords[1] - shift[1]
     coords[2] = coords[2] - shift[2]
     coords[3] = coords[3] - shift[3]
+    --
     -- map stretching
     local overlap = getRoomsByPosition(areaID,coords[1],coords[2],coords[3])
     if not table.is_empty(overlap) then
@@ -6527,12 +6653,15 @@ function map.fHighlightRoom(roomId, HighlightPath)
   local specialExits = getSpecialExits(roomId)
   --
   if (HighlightPath) and (table.contains(map.speedWalkPath, ""..roomId)) then
+    --
     -- Highlight speedWalk path
     highlightRoom(roomId, 255,0,0, 255,0,0, 1.2, 128, 128)
   elseif (not table.is_empty(specialExits)) then
+    --
     -- Highlight rooms with special exits
     highlightRoom(roomId, 0,255,255, 255,255,255, 1.2, 128, 128)
   else
+    --
     -- Unhighlight rooms
     unHighlightRoom(roomId)
   end
@@ -6602,7 +6731,6 @@ function map.fHighlightSpeedWalk(walkPath)
   for _, id in pairs(map.speedWalkPath) do
     map.fHighlightRoom(id, true)
   end
-  --
 end
 --
 -- Pharse speedwalk
@@ -6667,7 +6795,6 @@ function doSpeedWalk()
 end
 --
 function ui.fUpdateMapper(event,...)
-  --
   ui.fDebug("[call] ui.fUpdateMapper()")
   --
   if (gmcp) and (gmcp.room) and (gmcp.room.info) and (not gmcp.room.info.isOnMap) then
@@ -6697,9 +6824,11 @@ function ui.fUpdateMapper(event,...)
     for k,v in pairs(gmcp.room.info.exits) do
       if (v &gt; 0) and (v ~= map.room.id) then
         if (ui.validExit[k]) then
+          --
           -- Exit
           map.room.exits[k] = tonumber(v)
         else
+          --
           -- Special exit
           map.room.specialExits[k] = tonumber(v)
         end
@@ -6725,11 +6854,13 @@ function ui.fUpdateMapper(event,...)
     if ((map.room.id &gt;= 23700) and (map.room.id &lt;= 24271)) or   -- Random Dungeons
        ((map.room.id &gt;= 29907) and (map.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
        ((map.room.id &gt;= 40000) and (map.room.id &lt;= 40073)) then -- Instancing 
+      --
       -- Remove exit
       local old_exits = getRoomExits(map.room.id)
       for old_exit, old_roomExit in pairs(old_exits) do
         setExit(map.room.id, -1, old_exit)
       end
+      --
       -- Remove special exit
       old_exits = getSpecialExitsSwap(map.room.id)
       for old_exit, old_roomExit in pairs(old_exits) do
@@ -6786,14 +6917,17 @@ function onMapMarkSelectedRooms(event, markRoomType)
   --
   if (selectedRooms ~= nil) then
     for i, val in ipairs(selectedRooms) do
+      --
       -- DT
       if markRoomType == "markRoomsAsDeathTrap" then
         lockRoom(val, true) -- Locks room if from being walked through when speedwalking
         setRoomChar(val, "DT")
+      --
       -- Market
       elseif markRoomType == "markRoomsAsMarket" then
         lockRoom(val, false) -- Unlocks room
         setRoomChar(val, "$")
+      --
       -- Teleport
       elseif markRoomType == "markRoomsAsTeleport" then
         lockRoom(val, false) -- Unlocks room
@@ -7041,16 +7175,19 @@ end</script>
 					<packageName></packageName>
 					<script>-- Read Variables data from file
 function ui.fReadFileOptions()
-  -- Remove actual Variables
   local file = ui.files.options.path..ui.files.options.name
   --
+  -- Remove actual Variables
   ui.options = {}
+  --
   -- Load Variables
   if (io.exists(file)) then
     table.load(file, ui.options)
   end
+  --
   -- Merge pre defined variables
   ui.options = table.update(ui.pre_defined_options, ui.options)
+  --
   -- Save
   table.save(file, ui.options)
 end</script>
@@ -7105,6 +7242,7 @@ end</script>
 					<script>--
 function ui.fGetNextNumber(text, index)
   local number = ""
+  --
   index = tonumber(index or 1)
   while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
     number = number..string.lower(text:sub(index, index))
@@ -7114,15 +7252,11 @@ function ui.fGetNextNumber(text, index)
     number = "1"
   end
   number = tonumber(number)
+  --
   return number, index
 end
---s
+--
 function ui.fSavePath(dir)
-  --if (ui.path[ui.idxPath]) and (dir == ui.dirReverse[ui.path[ui.idxPath]]) then
-  --  ui.idxPath = ui.idxPath - 1
-  --elseif (ui.path[ui.idxPath+1]) and (dir == ui.path[ui.idxPath+1]) then
-  --  ui.idxPath = ui.idxPath + 1
-  --else
   if (ui.idxPath &lt; ui.maxPath) then
     ui.idxPath = ui.idxPath + 1
     ui.path[ui.idxPath] = dir
@@ -7366,6 +7500,7 @@ function ui.fGetProfiles()
       end
     end
   end
+  --
   return profiles
 end
 --
@@ -7375,6 +7510,7 @@ function ui.fContainProfile(profiles, profile)
       return true
     end
   end
+  --
   return false;
 end
 --
@@ -7398,10 +7534,11 @@ end
 --
 function ui.fLoadProfile(profile)
   local profiles = ui.fGetProfiles()
+  --
   if (ui.fContainProfile(profiles, profile)) then
     --
     -- Load variables
-    if (ui.fCopyFile(ui.files.profiles.path..profile.."/"..ui.files.variables.names, ui.files.variables.path..ui.files.variables.name)) then
+    if (ui.fCopyFile(ui.files.profiles.path..profile.."/"..ui.files.variables.name, ui.files.variables.path..ui.files.variables.name)) then
       ui.fDebug("Reload 'Variables' from file")
       ui.fReadFileVariables()
     end
@@ -7432,23 +7569,29 @@ function ui.fLoadProfile(profile)
     --
     return true
   end
+  --
   return nil
 end
 --
 function ui.fRemoveProfile(profile)
   local profiles = ui.fGetProfiles()
+  --
   if (ui.fContainProfile(profiles, profile)) then
     ui.fDeleteDirectory(ui.files.profiles.path..profile)
+    --
     return true
   end
+  --
   return nil
 end
 --
 function ui.fRemoveAllProfiles()
   local profiles = ui.fGetProfiles()
+  --
   for profile in pairs(profiles) do
     ui.fDeleteDirectory(ui.files.profiles.path..profiles[profile])
   end
+  --
   return true
 end
 --
@@ -7465,8 +7608,10 @@ function ui.fSaveProfile(profile)
     ui.fCopyFile(ui.files.highlights.path..ui.files.highlights.name, ui.files.profiles.path..profile.."/"..ui.files.highlights.name)
     ui.fCopyFile(ui.files.targets.path..ui.files.targets.name,       ui.files.profiles.path..profile.."/"..ui.files.targets.name)
     ui.fCopyFile(ui.files.variables.path..ui.files.variables.name,   ui.files.profiles.path..profile.."/"..ui.files.variables.name)
+    --
     return true
   end
+  --
   return nil
 end</script>
 					<eventHandlerList />
@@ -7514,6 +7659,7 @@ end
 --
 function ui.fGetToken(exits, exit)
   local token = ""
+  --
   exit = string.lower(exit)
   if (ui.validExit[exit]) then
     if (table.contains(exits, exit)) then
@@ -7538,7 +7684,6 @@ function ui.fGetToken(exits, exit)
 end
 --
 function ui.fUpdateRoom()
-  --
   local token
   --
   ui.fDebug("[call] ui.fUpdateRoom()")
@@ -7590,6 +7735,7 @@ function ui.fUpdateRoom()
     --  Mobs and Players
     if (gmcp.room.info.characters) then
       for _, character in pairs(gmcp.room.info.characters) do
+        --
         -- Player
         if (character.player) then
           local name = character.level.."_"..character.desc
@@ -7602,6 +7748,7 @@ function ui.fUpdateRoom()
             ui.room.players[name].roomPos = character.roomPos;
             ui.room.players[name].counter = 1;
           end
+        --
         -- Mob
         else
           local name = character.level.."_"..character.desc.."_"..character.key
@@ -7651,6 +7798,7 @@ function ui.fUpdateRoom()
         exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,255,255:30,24,24&gt;"..(getRoomName(v) or "???")
         idx = idx + 1
       end
+      --
       -- Exits and Position
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
@@ -7717,6 +7865,7 @@ end</script>
 function ui.fClickTarget(sender)
   if (sender) then
     local type, number = ui.fExpandButton(sender)
+    --
     if (type == "g") or (type == "o") then
       ui.fExecuteTargetButton(sender)
     end
@@ -7737,9 +7886,11 @@ end
 --
 function ui.fGetTargetFormattedText(target)
   local str = ui.colors.target.."["..target.."]"
+  --
   if (ui.targets[target]) and (ui.targets[target].keybId) then
     str = str.." "..ui.fGetKeybFormattedText(ui.targets[target].keybind)
   end
+  --
   return str.."&lt;reset&gt;"
 end
 --
@@ -7757,12 +7908,14 @@ function ui.fRefreshTargetButton(button)
       local result, keybind
       local target
       local CCS, bgColor
+      --
       -- Target
       if (ui.targets[button].target) and (ui.targets[button].target ~= "") then
         target = ui.targets[button].target
       else
         target = "'"..button.."'";
       end
+      --
       -- Keybind
       if (mod2 ~= "") then
         result, keybind = ui.fSetKeyb(ui.targets, button, [[ui.fExecuteTargetButton("]]..button..[[")]], mod2, mod1, key)
@@ -7776,8 +7929,10 @@ function ui.fRefreshTargetButton(button)
       if (result &lt;= 0) then
         ui.fRemoveKeyb(ui.targets[button])
       end
+      --
       -- Echo
       child.keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
+      --
       -- CCS
       if (type == "g") then
         CCS = GUI.CSS.BorderPlayer;
@@ -7810,9 +7965,11 @@ function ui.fRefreshTargetButton(button)
           }
         ]])
       end
+      --
       return true
     end
   end
+  --
   return false
 end
 -- 
@@ -7840,6 +7997,7 @@ end
 function ui.fAssignTargetButton(button, value)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "g") or (type == "o") or (type == "t") then
     button = type..number
     ui.targets[button] = ui.targets[button] or {}
@@ -7847,14 +8005,17 @@ function ui.fAssignTargetButton(button, value)
     ui.fUpdateAllTargetButton()
     ui.fUpdateTarget()
     ui.fSaveFileTarges()
+    --
     return 1 -- Value assigned (can be nil)
   end
+  --
   return -1 -- Invaid button
 end
 --
 -- Execute Target button
 function ui.fExecuteTargetButton(button)
   local type, number = ui.fExpandButton(button)
+  --
   if (type == "g") or (type == "o") or (type == "t") then
     button = type..number
     if (ui.targets[button]) and (ui.targets[button].target) then
@@ -7921,15 +8082,19 @@ function ui.fReadFileTargets()
     t3 = { mod1 = "CTRL", mod2 = "", key = "3" },
     t4 = { mod1 = "CTRL", mod2 = "", key = "4" },
   }
+  --
   -- Remove actual Targets
   ui.targets = {}
+  --
   -- Load Targets
   if (io.exists(file)) then
     table.load(file, ui.targets)
   else
+    --
     -- Update only if file targets not esist otherwise it would reassign any removed keys
     ui.targets = table.update(pre_defined_target_buttons, ui.targets)
   end
+  --
   -- Save
   table.save(file, ui.targets)
 end</script>
@@ -7952,9 +8117,10 @@ function ui.fGetVarFormattedText(variable)
     if (ui.variables[variable] == "") then
       return ui.fGetVarNameFormattedText(variable)
     end
-    -- return ui.fGetVarValueFormattedText(ui.variables[variable])..ui.fGetVarNameFormattedText(variable)
+    --
     return ui.fGetVarNameFormattedText(variable)..ui.fGetOperatorFormattedText("=")..ui.fGetVarValueFormattedText(ui.variables[variable])
   end
+  --
   return ""
 end
 --
@@ -7967,12 +8133,15 @@ function ui.fShowAllVar()
   local app = {}
   local numVar = 0
   local numPreVar = 0
+  --
   cecho(ui.fTitle("Variabili predefinite"))
   for variable in pairs(ui.variables) do
     local var = ui.fGetVarNameFormattedText(variable)
+    --
     if (ui.variables[variable]) and (ui.variables[variable]  ~= "") then
       var = var..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable])
     end
+    --
     if (ui.fGetPreDefinitedVariables()[variable] == nil) then
       numVar = numVar + 1
       table.insert(app, ui.fGetNumberFormattedText(numVar).." "..var.."\n")
@@ -8001,6 +8170,7 @@ end
 -- Save Variables data to file
 function ui.fSaveFileVariables()
   local file = ui.files.variables.path..ui.files.variables.name
+  --
   -- Save
   table.save(file, ui.variables)
 end
@@ -8008,8 +8178,10 @@ end
 -- Read Variables data from file
 function ui.fReadFileVariables()
   local file = ui.files.variables.path..ui.files.variables.name
+  --
   -- Remove actual Variables
   ui.variables = {}
+  --
   -- Load Variables
   if (io.exists(file)) then
     table.load(file, ui.variables)
@@ -8017,10 +8189,10 @@ function ui.fReadFileVariables()
   --
   -- Merge pre defined variables
   ui.variables = table.update(ui.fGetPreDefinitedVariables(), ui.variables)
+  --
   -- Save
   table.save(file, ui.variables)
-end
-</script>
+end</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
@@ -8351,7 +8523,6 @@ end</script>
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Group, GUI.CSS.Border, GUI.CSS.Main)
-  --
   --
   local i
   for i=1, 10 do
@@ -9499,7 +9670,7 @@ GUI.CSS.ArrowUp = [[
   background: transparent;
 ]]
 --
---
+-- Border
 GUI.CSS.Border = [[
   border: 2px inset rgb(90,72,72); 
   border-top-left-radius: 4px;
