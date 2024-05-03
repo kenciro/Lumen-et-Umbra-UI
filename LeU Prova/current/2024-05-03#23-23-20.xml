@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -5725,7 +5725,7 @@ function ui.fAddMain(sender, CSS_Border, CSS_Main)
       height = "100%-28",
     }, sender)
     sender.Border:setStyleSheet(CSS_Border);
-    --
+    
     sender.Main = Geyser.Label:new2({
       name = sender.name..".Main",
       x = 5,
@@ -7980,17 +7980,17 @@ function ui.fRefreshTargetButton(button)
       child.keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
       --
       -- CCS
-      if (type == "g") then
+      if (type == "g") or (type == "o") then
         --CCS = GUI.CSS.BorderPlayer;
         CCS = [[
           border-radius: 4px; 
         ]]
         bgColor      = "150, 0, 0, 0.4"
         bgColorHover = "150, 0, 0, 1"
-      elseif (type == "o") then
-        CCS = GUI.CSS.BorderPlayer;
-        bgColor      = "150, 0, 0, 0.4"
-        bgColorHover = "150, 0, 0, 1"
+      --elseif (type == "o") then
+      --  CCS = GUI.CSS.BorderPlayer;
+      --  bgColor      = "150, 0, 0, 0.4"
+      --  bgColorHover = "150, 0, 0, 1"
       elseif (type == "t") then
         GUI.TargetButtons.Main[button]:echo("&lt;center&gt;"..target)
         CCS = GUI.CSS.Target;
@@ -8272,6 +8272,23 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Affect:changeMenuStyle ("dark")
+  GUI.Affect:newCustomItem("Invisible border", 
+  function(self) 
+    self.adjLabelstyle = GUI.CSS.AC_invisible
+    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
+    self.Border:setStyleSheet(GUI.CSS.AC_invisible);
+    self.Main:setStyleSheet(GUI.CSS.AC_invisible);
+    self:flash() 
+  end)
+  GUI.Affect:newCustomItem("Ripristina", 
+  function(self) 
+    self.adjLabelstyle = GUI.CSS.AC
+    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
+    self.Border:setStyleSheet(GUI.CSS.Border);
+    self.Main:setStyleSheet(GUI.CSS.Main);
+    self:flash() 
+  end)
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Affect, GUI.CSS.Border, GUI.CSS.Main)
@@ -8572,6 +8589,23 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Group:changeMenuStyle ("dark")
+  GUI.Group:newCustomItem("Invisible border", 
+  function(self) 
+    self.adjLabelstyle = GUI.CSS.AC_invisible
+    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
+    self.Border:setStyleSheet(GUI.CSS.AC_invisible);
+    self.Main:setStyleSheet(GUI.CSS.AC_invisible);
+    self:flash() 
+  end)
+  GUI.Group:newCustomItem("Ripristina", 
+  function(self) 
+    self.adjLabelstyle = GUI.CSS.AC
+    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
+    self.Border:setStyleSheet(GUI.CSS.Border);
+    self.Main:setStyleSheet(GUI.CSS.Main);
+    self:flash() 
+  end)
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Group, GUI.CSS.Border, GUI.CSS.Main)
@@ -8585,6 +8619,19 @@ end</script>
       name = "GUI.Group.Main.g"..mod
     }, GUI.Group.Main)
     GUI.Group.Main["g"..mod]:setClickCallback("ui.fClickTarget", "g"..mod)
+    --
+    -- Index
+    GUI.Group.Main["g"..mod].index = Geyser.Label:new2({
+      name = "GUI.Group.Main.g"..mod..".index",
+      x = 2, 
+      y = 0,
+      width = 20,
+      height = 10,
+    }, GUI.Group.Main["g"..mod])
+    GUI.Group.Main["g"..mod].index:enableClickthrough()
+    GUI.Group.Main["g"..mod].index:setStyleSheet(GUI.CSS.Keybind);
+    GUI.Group.Main["g"..mod].index:setFontSize(6)
+    GUI.Group.Main["g"..mod].index:echo("g"..mod.."")
     --
     -- Member Health Gauges
     GUI.Group.Main["g"..mod].Health = Geyser.Gauge:new2({
@@ -8613,7 +8660,7 @@ end</script>
       x = 2,
       y = 30,
       width = -2,
-      height = 7,
+      height = 6,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Mana:setValue(0, 100)
     GUI.Group.Main["g"..mod].Mana:enableClickthrough()
@@ -8632,9 +8679,9 @@ end</script>
     GUI.Group.Main["g"..mod].Stamina = Geyser.Gauge:new2({
       name = "GUI.g"..mod..".Stamina",
       x = 2,
-      y = 36,
+      y = 35,
       width = -2,
-      height = 7,
+      height = 6,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Stamina:setValue(0, 100)
     GUI.Group.Main["g"..mod].Stamina:enableClickthrough()
@@ -8659,19 +8706,6 @@ end</script>
     --}, GUI.Group.Main["g"..mod])
     --GUI.Group.Main["g"..mod].Gem:setStyleSheet(GUI.CSS.GemBlue);
     --GUI.Group.Main["g"..mod].Gem:enableClickthrough()
-    --
-    -- Index
-    GUI.Group.Main["g"..mod].index = Geyser.Label:new2({
-      name = "GUI.Group.Main.g"..mod..".index",
-      x = 2, 
-      y = 0,
-      width = 20,
-      height = 10,
-    }, GUI.Group.Main["g"..mod])
-    GUI.Group.Main["g"..mod].index:enableClickthrough()
-    GUI.Group.Main["g"..mod].index:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main["g"..mod].index:setFontSize(6)
-    GUI.Group.Main["g"..mod].index:echo("g"..mod.."")
     --
     -- Keybid
     GUI.Group.Main["g"..mod].keybind = Geyser.Label:new2({
@@ -8895,7 +8929,7 @@ end</script>
   GUI.Opponent.Level = Geyser.Label:new2({
     name = "GUI.Opponent.Level",
     x = -60,
-    y = 2,
+    y = "0%-3",
     width = 25,
     height = 25,
     fontSize = 8,
@@ -8904,25 +8938,26 @@ end</script>
   GUI.Opponent.Level:enableClickthrough()
   --
   --
-  GUI.Opponent.Main = Geyser.Label:new2({
-    name = "GUI.Opponent.Main",
-    x = 3,
-    y = 25,
-    width = "100%-6",
-    height = "100%-28",
-  }, GUI.Opponent)
-  GUI.Opponent.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
-    background-color: rgba(77, 0, 0);
-  ]]);
+  --GUI.Opponent.Main = Geyser.Label:new2({
+  --  name = "GUI.Opponent.Main",
+  --  x = 3,
+  --  y = 25,
+  --  width = "100%-6",
+  --  height = "100%-28",
+  --}, GUI.Opponent)
+  --GUI.Opponent.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
+  --  background-color: rgba(77, 0, 0);
+  --]]);
+  ui.fAddMain(GUI.Opponent, GUI.CSS.Border, GUI.CSS.Main)
   GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
   -- Opponent Health Gauges
   GUI.Opponent.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Opponent.Main.Health",
-    x = 15,
-    y = 14,
-    width = -10,
-    height = -11,
+    x = 2,
+    y = 2,
+    width = -2,
+    height = -10,
   },GUI.Opponent.Main)
   GUI.Opponent.Main.Health:setValue(0, 100)
   GUI.Opponent.Main.Health:enableClickthrough()
@@ -8949,22 +8984,22 @@ end</script>
   GUI.Opponent.Main.Health.dif:setFontSize(5)
   --
   -- Opponent Gem
-  GUI.Opponent.Main.Gem = Geyser.Label:new2({
-    name = "GUI.Opponent.Main.Gem",
-    x = 0,
-    y = 0,
-    width = 28,
-    height = 28,
-  }, GUI.Opponent.Main)
-  GUI.Opponent.Main.Gem:setStyleSheet(GUI.CSS.GemRed);
-  GUI.Opponent.Main.Gem:enableClickthrough()
+  --GUI.Opponent.Main.Gem = Geyser.Label:new2({
+  --  name = "GUI.Opponent.Main.Gem",
+  --  x = 0,
+  --  y = 0,
+  --  width = 28,
+  --  height = 28,
+  --}, GUI.Opponent.Main)
+  --GUI.Opponent.Main.Gem:setStyleSheet(GUI.CSS.GemRed);
+  --GUI.Opponent.Main.Gem:enableClickthrough()
   --
   -- Keybid
   GUI.Opponent.Main.keybind = Geyser.Label:new2({
     name = "GUI.Opponent.Main.keybind",
-    x = 5, y = -15,
+    x = 5, y = -10,
     width = -5,
-    height = 15,
+    height = 10,
   }, GUI.Opponent.Main)
   GUI.Opponent.Main.keybind:enableClickthrough()
   GUI.Opponent.Main.keybind:setStyleSheet(GUI.CSS.Keybind);
@@ -9063,7 +9098,7 @@ end</script>
   GUI.Player.Level = Geyser.Label:new2({
     name = "GUI.Player.Level",
     x = -60,
-    y = 2,
+    y = "0%-3",
     width = 25,
     height = 25,
     fontSize = 8,
@@ -9072,23 +9107,24 @@ end</script>
   GUI.Player.Level:enableClickthrough()
   --
   -- Main
-  GUI.Player.Main = Geyser.Label:new2({
-    name = "GUI.Player.Main",
-    x = 3,
-    y = 25,
-    width = "100%-6",
-    height = "100%-28",
-  }, GUI.Player)
-  GUI.Player.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
-    background-color: rgba(30,24,24);
-  ]]);
+  --GUI.Player.Main = Geyser.Label:new2({
+  --  name = "GUI.Player.Main",
+  --  x = 3,
+  --  y = 25,
+  --  width = "100%-6",
+  --  height = "100%-28",
+  --}, GUI.Player)
+  --GUI.Player.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
+  --  background-color: rgba(30,24,24);
+  --]]);
+  ui.fAddMain(GUI.Player, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Experience 
   GUI.Player.Main.Experience = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Experience",
-    x = 8, 
-    y = 10,
-    width = -5,
+    x = 2, 
+    y = 0,
+    width = -2,
     height = 6,
   },GUI.Player.Main)
   GUI.Player.Main.Experience:setValue(0, 100)
@@ -9106,10 +9142,10 @@ end</script>
   -- Player Health Gauges
   GUI.Player.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Health",
-    x = 8,
-    y = 15,
-    width = -5,
-    height = "40%-10",
+    x = 2,
+    y = 5,
+    width = -2,
+    height = "40%-8",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -9135,9 +9171,9 @@ end</script>
   -- Tick
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Tick",
-    x = 8,
-    y = "40%+4",
-    width = -5,
+    x = 2,
+    y = "40%-5",
+    width = -2,
     height = 6,
   }, GUI.Player.Main)
   GUI.Player.Main.Tick:setValue(0, 75)
@@ -9153,10 +9189,10 @@ end</script>
   -- Player Mana Gauges
   GUI.Player.Main.Mana = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Mana",
-    x = 8,
-    y = "40%+10",
-    width = -5,
-    height = "20%-5",
+    x = 2,
+    y = "40%",
+    width = -2,
+    height = "20%+1s",
   },GUI.Player.Main)
   GUI.Player.Main.Mana:setValue(0, 100)
   --
@@ -9172,10 +9208,10 @@ end</script>
   -- Player Stamina Gauges (used for moviment)
   GUI.Player.Main.Stamina = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Stamina",
-    x = 8,
-    y = "60%+5",
-    width = -5,
-    height = "20%-5",
+    x = 2,
+    y = "60%",
+    width = -2,
+    height = "20%+1",
   },GUI.Player.Main)
   GUI.Player.Main.Stamina:setValue(0, 100)
   --
@@ -9191,10 +9227,10 @@ end</script>
   -- Player Power Gauges
   GUI.Player.Main.Power = Geyser.Gauge:new2({
     name = "GUI.Player.Power",
-    x = 8,
+    x = 2,
     y = "80%",
-    width = -5,
-    height = "20%-5",
+    width = -2,
+    height = "20%+1",
   },GUI.Player.Main)
   GUI.Player.Main.Power:setValue(0, 100)
   --
@@ -9208,14 +9244,14 @@ end</script>
   GUI.Player.Main.Power.front:echo("Potenza")
   --
   -- Player Gem
-  GUI.Player.Main.Gem = Geyser.Label:new2({
-    name = "GUI.Player.Gem",
-    x = 0,
-    y = 0,
-    width = 28,
-    height = 28,
-  }, GUI.Player.Main)
-  GUI.Player.Main.Gem:setStyleSheet(GUI.CSS.GemEmpty);
+  --GUI.Player.Main.Gem = Geyser.Label:new2({
+  --  name = "GUI.Player.Gem",
+  --  x = 0,
+  --  y = 0,
+  --  width = 28,
+  --  height = 28,
+  --}, GUI.Player.Main)
+  --GUI.Player.Main.Gem:setStyleSheet(GUI.CSS.GemEmpty);
   --
   -- Wrapping function
   local Minimize = GUI.Player.minimize
@@ -9650,6 +9686,12 @@ GUI.CSS.AC = [[
 ]]
 --
 --
+GUI.CSS.AC_invisible = [[
+  border: none;
+  background: transparent;
+  color: none;
+]]
+--
 GUI.CSS.ACButtons = [[
   QLabel{
     border-radius: 5px;
@@ -9725,10 +9767,7 @@ GUI.CSS.ArrowUp = [[
 -- Border
 GUI.CSS.Border = [[
   border: 2px inset rgb(90,72,72); 
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   background-image: url("]]..ui.files.images.path..[[bgWidget.png")
 ]]
 --
@@ -9785,7 +9824,9 @@ GUI.CSS.Keybind = [[
 -- Level
 GUI.CSS.Level = [[
   border-image: url("]]..ui.files.images.path..[[borderRound.png") 0px stretch;
+  
   background-color: rgba(30,24,24);
+  background: transparent;
 ]]
 --
 -- Widget Body
