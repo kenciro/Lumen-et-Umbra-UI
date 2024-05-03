@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
+			<borderLeftWidth>332</borderLeftWidth>
 			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -136,17 +136,16 @@ if (matches[2] == "["..ui.player.name.."]") then
   from = from.." a "..matches[3].."\&lt;r\&gt;"
 elseif (matches[2] == "Mandi") or (matches[2] == "Tu") then
   local color = string.gsub(from, matches[2].."\&lt;r\&gt;", "")
-  from = color.."[\&lt;255,255,255:0,0,0\&gt;"..matches[2] ..color.."]".." a \&lt;255,255,255:0,0,0\&gt;"..matches[3].."\&lt;r\&gt;"
-  from = string.gsub(from, "Mandi", "Tu")
+  from = color.."[\&lt;255,255,255:0,0,0\&gt;Tu"..color.."]".." a \&lt;255,255,255:0,0,0\&gt;"..matches[3].."\&lt;r\&gt;"
 else
+  --
+  -- Save who Reply
   ui.reply = matches[2];
   ui.reply = string.gsub(ui.reply, "%[", "")
   ui.reply = string.gsub(ui.reply, "%]", "")
   ui.reply = string.gsub(ui.reply, ",", "")
   ui.reply = ui.fRemoveArticle(ui.reply)
   ui.reply = string.sub(ui.reply, 1, string.find(ui.reply, " "))
-  --
-  -- Reply
   GUI.PrivateChat:setTitle("Canale privato ["..ui.reply.."]")
 end
 --
@@ -159,6 +158,7 @@ end
 --
 str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
 str = string.gsub(str, "&lt;0,0,255:", "&lt;128,128,255:")
+--
 GUI.PrivateChat.Main.Console:decho(str)
 playSoundFile(ui.files.sounds.path..[[message.wav]], 10)</script>
 					<triggerType>0</triggerType>
@@ -208,6 +208,7 @@ else
   str = string.gsub(str, "] dice ",    "]")
   str = string.gsub(str, "] dici ",    "]")
   str = string.gsub(str, "] risuona ", "]")
+  --
   str = string.gsub(str, "]",          "] &lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").."\n  "..color)
   str = string.gsub(str, ":0,0,0&gt;",    ":30,24,24&gt;")
   str = "\n"..str.."\n"
@@ -4994,9 +4995,11 @@ end
 -- Read Aliases data from file
 function ui.fReadFileAliases()
   local file = ui.files.aliases.path..ui.files.aliases.name
+  --
   -- Remove actual Aliases
   ui.aliases = ui.aliases or {}
   ui.fRemoveAllAliases()
+  --
   -- Load Aliases
   if (io.exists(file)) then
     table.load(file, ui.aliases)
@@ -5773,8 +5776,29 @@ function ui.fFinishedRepositioning(eventName, containerName)
     ["GUI.TargetButtons"] = GUI.TargetButtons,
   }
   --
+  local fUpdateFunction = {
+    ["GUI.Affect"] = ui.fUpdateAffects,
+    --["GUI.AliasButtons"] = GUI.AliasButtons,
+    --["GUI.Equipment"] = GUI.Equipment,
+    ["GUI.Group"] = ui.fUpdateGroup,
+    --["GUI.Help"] = GUI.Help,
+    --["GUI.Inventory"] = GUI.Inventory,
+    --["GUI.Room"] = GUI.Room,
+    --["GUI.Mapper"] = GUI.Mapper,
+    ["GUI.Opponent"] = ui.fUpdateOpponent,
+    --["GUI.PrivateChat"] = GUI.PrivateChat,
+    ["GUI.Player"] = ui.fUpdatePlayer,
+    --["GUI.PublicChat"] = GUI.PublicChat,
+    --["GUI.TargetButtons"] = GUI.TargetButtons,
+  }
+  --
   if (containers[containerName]) then
     containers[containerName]:setAbsolute(true)
+  end
+  --
+  -- Call function relative to widget
+  if (fUpdateFunction[containerName]~=nil) then
+    fUpdateFunction[containerName]()
   end
 end</script>
 					<eventHandlerList />
@@ -5915,31 +5939,31 @@ function ui.fUpdateGroup()
   local visibleMember = 0;
   local wndH = GUI.Group.Main:get_height();
   local wndW = GUI.Group.Main:get_width();
-  local memberH = 55
+  local memberH = 50;
   local memberW = 100;
-  local nCol = 2;
-  local nRow = 5;
-  local i = 0
-  local mod
+  local nCol, nRow, i, mod
   --
   ui.fDebug("[call] ui.fUpdateGroup()")
   --
   ui.group = {}
+  --
   if (ui.enDebug &gt;= 2) then
-    for member=1, 10 do
-      totalMember = totalMember + 1
-      ui.group[totalMember]                = {}
-      ui.group[totalMember].name           = "menber_"..member
-      ui.group[totalMember].isLeader       = (member == 2)
-      ui.group[totalMember].hp             = math.random(0, 100)
-      ui.group[totalMember].maxhp          = 100
-      ui.group[totalMember].mana           = math.random(0, 100)
-      ui.group[totalMember].maxmana        = 100
-      ui.group[totalMember].mov            = math.random(0, 100)
-      ui.group[totalMember].maxmov         = 100
-      ui.group[totalMember].pov            = math.random(0, 100)
-      ui.group[totalMember].maxpov         = 100
-      ui.group[totalMember].roomPos        = 5  
+    totalMember = math.random(1, 10)
+    local leader = math.random(0, totalMember)
+    for member=1, totalMember do
+      ui.group[member] = {
+        name     = "menber_"..member,
+        isLeader = (member == leader),
+        hp       = math.random(0, 100),
+        maxhp    = 100,
+        mana     = math.random(0, 100),
+        maxmana  = 100,
+        mov      = math.random(0, 100),
+        maxmov   = 100,
+        pov      = math.random(0, 100),
+        maxpov   = 100,
+        roomPos  = math.random(1, 9),
+      }  
     end
   elseif (gmcp) and (gmcp.char) and (gmcp.char.group) then
     for member in pairs(gmcp.char.group) do
@@ -5947,52 +5971,68 @@ function ui.fUpdateGroup()
       --
       if (name ~= ui.player.name) then
         totalMember = totalMember + 1
-        ui.group[totalMember]                = {}
-        ui.group[totalMember].name           = gmcp.char.group[member].name or ""
-        ui.group[totalMember].isLeader       = gmcp.char.group[member].isLeader or false
-        ui.group[totalMember].hp             = gmcp.char.group[member].hp or 0
-        ui.group[totalMember].maxhp          = gmcp.char.group[member].maxhp or 0
-        ui.group[totalMember].mana           = gmcp.char.group[member].mana or 0
-        ui.group[totalMember].maxmana        = gmcp.char.group[member].maxmana or 0
-        ui.group[totalMember].mov            = gmcp.char.group[member].mov or 0
-        ui.group[totalMember].maxmov         = gmcp.char.group[member].maxmov or 0
-        ui.group[totalMember].pow            = gmcp.char.group[member].pow or 0
-        ui.group[totalMember].maxpow         = gmcp.char.group[member].maxpow or 0
-        ui.group[totalMember].roomPos        = gmcp.char.group[member].roomPos or 0
+        ui.group[totalMember] = {
+          name     = gmcp.char.group[member].name or "",
+          isLeader = gmcp.char.group[member].isLeader or false,
+          hp       = gmcp.char.group[member].hp or 0,
+          maxhp    = gmcp.char.group[member].maxhp or 0,
+          mana     = gmcp.char.group[member].mana or 0,
+          maxmana  = gmcp.char.group[member].maxmana or 0,
+          mov      = gmcp.char.group[member].mov or 0,
+          maxmov   = gmcp.char.group[member].maxmov or 0,
+          pow      = gmcp.char.group[member].pow or 0,
+          maxpow   = gmcp.char.group[member].maxpow or 0,
+          roomPos  = gmcp.char.group[member].roomPos or 0,
+        }
       end
     end
   end
   --
-  if totalMember &gt; 10 then
+  if (totalMember &gt; 10) then
     totalMember = 10
   end
   --
-  if (totalMember &lt;= math.floor(wndH / memberH)) then
-    nCol = 1;
-  end
-  nRow = math.min(10/nCol, math.floor(wndH / memberH));
-  memberW = wndW / nCol;
+  nRow = math.floor((wndH + 5) / (memberH + 5));
   --
-  for r = 1, nRow do
-    for c = 1, nCol do
-      i = (r-1)*nCol + c; 
+  if (totalMember &lt;= nRow) then
+    nCol = 1;
+    memberW = wndW;
+    nRow = totalMember
+  else
+    nCol = 2;
+    memberW = (wndW-5) / 2;
+  end
+  --
+  i = 0;
+  for c = 1, nCol do
+    if (c == 2) then
+      if (nRow * 2 &gt;= totalMember) then
+        nRow = totalMember - nRow
+      end
+    end
+    --
+    for r = 1, nRow do
+      i = i + 1; 
       mod = i % 10
       --
-      GUI.Group.Main["g"..mod]:resize(memberW-5, memberH-5)
-      GUI.Group.Main["g"..mod]:move((c-1)*memberW, (r-1)*memberH)
       if (i &gt; totalMember) then
         GUI.Group.Main["g"..mod]:hide();
+        --
         ui.fAssignTargetButton("g"..mod, nil)
       else
+        GUI.Group.Main["g"..mod]:resize(memberW, memberH)
+        GUI.Group.Main["g"..mod]:move((c-1)*(memberW+5), (r-1)*(memberH+5))
+        --
         GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, ui.group[i].hp.."/"..ui.group[i].maxhp.." "..ansi2string(ui.group[i].name))
         GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
         GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
         --
-        if (ui.group[i].isLeader) then
-          GUI.Group.Main["g"..mod].Gem:show()
-        else
-          GUI.Group.Main["g"..mod].Gem:hide()
-        end
+        --if (ui.group[i].isLeader) then
+        --  GUI.Group.Main["g"..mod].Gem:show()
+        --else
+        --  GUI.Group.Main["g"..mod].Gem:hide()
+        --end
+        --
         GUI.Group.Main["g"..mod]:show();
         ui.fAssignTargetButton("g"..mod, ui.group[i].name)
         visibleMember = i;
@@ -6033,7 +6073,7 @@ function ui.fHelp(cmd)
   --
   -- Pharse lines
   for line in ui.help[cmd]:gmatch("([^\n]*)\n") do
-    local str_match, end_match  = rex.find(line, [[\&lt;(?&lt;tag&gt;[^&gt;\s]+)(?&lt;argument&gt;\s*[^&gt;]*)\&gt;(?&lt;inside&gt;.*?)\&lt;\/\k&lt;tag&gt;\&gt;]])
+    local str_match, end_match = rex.find(line, [[\&lt;(?&lt;tag&gt;[^&gt;\s]+)(?&lt;argument&gt;\s*[^&gt;]*)\&gt;(?&lt;inside&gt;.*?)\&lt;\/\k&lt;tag&gt;\&gt;]])
     while (str_match) do
       local before = ""
       local match  = string.sub(line, str_match, end_match);
@@ -6053,21 +6093,27 @@ function ui.fHelp(cmd)
       --
       -- Match
       tag = tag:lower()
+      --
       if (tag == "alias") then
         inside = ui.fGetAliasFormattedText(inside)          
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "aliasname") then
         inside = ui.fGetAliasNameFormattedText(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "aliasoutput") then
         inside = ui.fGetAliasOutputFormattedText(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "button") then
         inside = ui.colors.aliasButton..inside.."&lt;reset&gt;"          
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "command") then
         inside = ui.fGetCommandFormattedText(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "exec") then
         local fgColor = string.gsub(ui.colors.link, "[\&lt;\&gt;]", "");
         argument = string.trim(argument);
@@ -6076,12 +6122,15 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:echoLink(inside, [[expandAlias("]]..argument..[[")]], argument, true)
         GUI.Help.Main.Console:setUnderline(false)
         GUI.Help.Main.Console:resetFormat()
+      --
       elseif (tag == "input") then
         inside = ui.fGetInputFormattedText(inside)          
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "keybind") then
         inside = ui.colors.keybind..inside.."&lt;reset&gt;"          
         GUI.Help.Main.Console:cecho(inside)        
+      --
       elseif (tag == "link") then
         local fgColor = string.gsub(ui.colors.link, "[\&lt;\&gt;]", "");
         argument = string.trim(argument);
@@ -6090,18 +6139,23 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:echoLink(inside, [[ui.fHelp("]]..argument..[[")]], argument, true)
         GUI.Help.Main.Console:setUnderline(false)
         GUI.Help.Main.Console:resetFormat()
+      --
       elseif (tag == "profile") then
         inside = ui.fGetProfileNameFormattedText(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "title") then
         inside = ui.fTitle(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "var") then
         inside = ui.fGetVarFormattedText(inside)
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "varname") then
         inside = ui.colors.varName..inside.."&lt;reset&gt;"
         GUI.Help.Main.Console:cecho(inside)
+      --
       elseif (tag == "varvalue") then
         inside = ui.fGetVarValueFormattedText(inside)          
         GUI.Help.Main.Console:cecho(inside)
@@ -6120,12 +6174,14 @@ function ui.fHelp(cmd)
 end
 --
 function ui.fHelp_links(htext, hlinktext, hurl, hcaption)
-  if htext ~= nil and hlinktext ~= nil and hurl ~= nil and hcaption ~= nil then
+  if (htext ~= nil) and (hlinktext ~= nil) and (hurl ~= nil) and (hcaption ~= nil) then
+    --
     GUI.Help:cecho(ui.colors.text..htext.." ")
+    --
     GUI.Help:cechoLink(ui.colors.link..hlinktext..ui.colors.text.."\n",
-              [[openWebPage("https://]]..hurl..[[")]],
-              hcaption,
-              true)
+                       [[openWebPage("https://]]..hurl..[[")]],
+                       hcaption,
+                       true)
   end
 end</script>
 					<eventHandlerList />
@@ -6986,49 +7042,34 @@ end</script>
 					<packageName></packageName>
 					<script>function ui.fUpdateOverand()
   --
-  local roomId  = -1
-  local name    = ""
-  local zone    = ""
-  local subzone = ""
-  local terrain = ""
-  local isOnMap = false
-  local token
-  --
   ui.fDebug("[call] ui.fUpdateOverand()")
   --
   --if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
   --  ui.variables.roomPos = gmcp.char.vitals.roomPos or 5
   --end
   --
-  if (gmcp) and (gmcp.room) and (gmcp.room.info) and (gmcp.room.info.isOnMap) and 
-     (gmcp.overland) and (gmcp.overland.map) and (gmcp.overland.map.size) and (gmcp.overland.map.radius == nil)then
+  if (gmcp.overland) and (gmcp.overland.map) and (gmcp.overland.map.size) then
     --
-    local name    = gmcp.room.info.name or ""
-    local zone    = gmcp.room.info.zone or ""
-    local subzone = gmcp.room.info.subzone or ""
-    local terrain = gmcp.room.info.terrain or ""
     local fw, fh = calcFontSize("GUI.Mapper.Main.Overland");
-    local l = tonumber(gmcp.overland.map.size) -- line
-    local c = l * 2 -- char
-    local s = "" -- white spase
-    local sCnt = GUI.Mapper.Main.Overland:get_width() / fw -- white space counter
+    local spacesCnt = math.floor( (GUI.Mapper.Main.Overland:get_width() / fw) / 2 - tonumber(gmcp.overland.map.size) )
+    local spaces = "" -- white spaces
     --
     clearWindow("GUI.Mapper.Main.Overland")
     --
-    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..subzone.."\n&lt;cyan&gt;"..name.."\n\n")
-    sCnt = math.floor((sCnt - c) / 2)
-    for i = 1, sCnt do
-      s = s.." "
+    for i = 1, spacesCnt do
+      spaces = spaces.." "
     end 
+    --
+    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subzone.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
     --
     for i = 0, l-1 do
       if gmcp.overland.map["r"..i] then
-        GUI.Mapper.Main.Overland:decho(s..ansi2decho(gmcp.overland.map["r"..i]).."\n")
+        GUI.Mapper.Main.Overland:decho(spaces..ansi2decho(gmcp.overland.map["r"..i]).."\n")
       end
     end
     --
     -- Room name
-    GUI.Mapper:setTitle(zone.." - "..terrain);
+    GUI.Mapper:setTitle(ui.room.zone.." - "..ui.room.terrain);
   end
 end</script>
 					<eventHandlerList />
@@ -7785,7 +7826,21 @@ function ui.fUpdateRoom()
       end
     end    
     --
-    if (not isOnMap) then
+    if (ui.room.isOnMap) then
+      --
+      -- Outland
+      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;                        "..name.."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌       ┐\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(1).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(2).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(3).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      └       ┘\n\n")
+      --
+      GUI.Mapper.Main.Mapper:hide();
+      GUI.Mapper.Main.Overland:show();
+    else
+      --
+      -- Mapper
       local exitsAsString = {}
       local exitsDestinationId = {}
       local idx = 1
@@ -7809,17 +7864,7 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
       --
       GUI.Mapper.Main.Mapper:show();
-      GUI.Mapper.Main.Overland:hide();  
-    else
-      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;                        "..name.."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌       ┐\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(1).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(2).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(3).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      └       ┘\n\n")
-      --
-      GUI.Mapper.Main.Mapper:hide();
-      GUI.Mapper.Main.Overland:show();
+      GUI.Mapper.Main.Overland:hide();
     end
     --
     -- Other exits
@@ -7907,7 +7952,7 @@ function ui.fRefreshTargetButton(button)
       local key = ui.targets[button].key or "";
       local result, keybind
       local target
-      local CCS, bgColor
+      local CCS, bgColor, bgColorHover
       --
       -- Target
       if (ui.targets[button].target) and (ui.targets[button].target ~= "") then
@@ -7926,6 +7971,7 @@ function ui.fRefreshTargetButton(button)
       else
         result, keybind = ui.fSetKeyb(ui.targets, button, [[ui.fExecuteTargetButton("]]..button..[[")]])
       end
+      --
       if (result &lt;= 0) then
         ui.fRemoveKeyb(ui.targets[button])
       end
@@ -7935,33 +7981,39 @@ function ui.fRefreshTargetButton(button)
       --
       -- CCS
       if (type == "g") then
-        CCS = GUI.CSS.BorderPlayer;
-        bgColor = "150,150,0"
+        --CCS = GUI.CSS.BorderPlayer;
+        CCS = [[
+          border-radius: 4px; 
+        ]]
+        bgColor      = "150, 0, 0, 0.4"
+        bgColorHover = "150, 0, 0, 1"
       elseif (type == "o") then
         CCS = GUI.CSS.BorderPlayer;
-        bgColor = "150,0,0"
+        bgColor      = "150, 0, 0, 0.4"
+        bgColorHover = "150, 0, 0, 1"
       elseif (type == "t") then
         GUI.TargetButtons.Main[button]:echo("&lt;center&gt;"..target)
         CCS = GUI.CSS.Target;
-        bgColor = "150,0,0"
+        bgColor      = "150, 0, 0, 0.4"
+        bgColorHover = "150, 0, 0, 1"
       end
       --
       if (target == ui.variables["target"]) then
         child:setStyleSheet([[
           QLabel{
             ]]..CCS..[[
-            background-color: rgba(]]..bgColor..[[,1);
+            background-color: rgba(]]..bgColorHover..[[);
           }
         ]])
       else
         child:setStyleSheet([[
           QLabel{
             ]]..CCS..[[
-            background-color: rgba(]]..bgColor..[[,.4);
+            background-color: rgba(]]..bgColor..[[);
           }
           QLabel::hover{
             ]]..CCS..[[
-            background-color: rgba(]]..bgColor..[[,1);
+            background-color: rgba(]]..bgColorHover..[[);
           }
         ]])
       end
@@ -8537,16 +8589,16 @@ end</script>
     -- Member Health Gauges
     GUI.Group.Main["g"..mod].Health = Geyser.Gauge:new2({
       name = "GUI.Group.Main.g"..mod..".Health",
-      x = 10,
-      y = 7,
-      width = -5,
+      x = 2,
+      y = 11,
+      width = -2,
       height = 20,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Health:setValue(0, 100)
     GUI.Group.Main["g"..mod].Health:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Health.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-      background-color: rgba(150, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     ]])
     GUI.Group.Main["g"..mod].Health.back:enableClickthrough()
     --
@@ -8558,9 +8610,9 @@ end</script>
     -- Member Mana Gauges
     GUI.Group.Main["g"..mod].Mana = Geyser.Gauge:new2({
       name = "GUI.Group.Main.g"..mod..".Mana",
-      x = 10,
-      y = 25,
-      width = -5,
+      x = 2,
+      y = 30,
+      width = -2,
       height = 7,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Mana:setValue(0, 100)
@@ -8579,9 +8631,9 @@ end</script>
     -- Member Stamina Gauges
     GUI.Group.Main["g"..mod].Stamina = Geyser.Gauge:new2({
       name = "GUI.g"..mod..".Stamina",
-      x = 10,
-      y = 30,
-      width = -5,
+      x = 2,
+      y = 36,
+      width = -2,
       height = 7,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Stamina:setValue(0, 100)
@@ -8598,23 +8650,23 @@ end</script>
     GUI.Group.Main["g"..mod].Stamina.front:enableClickthrough()
     --
     -- Member gem
-    GUI.Group.Main["g"..mod].Gem = Geyser.Label:new2({
-      name = "GUI.Group.Main.g"..mod..".Gem",
-      x = 0,
-      y = 0,
-      width = 28,
-      height = 28,
-    }, GUI.Group.Main["g"..mod])
-    GUI.Group.Main["g"..mod].Gem:setStyleSheet(GUI.CSS.GemBlue);
-    GUI.Group.Main["g"..mod].Gem:enableClickthrough()
+    --GUI.Group.Main["g"..mod].Gem = Geyser.Label:new2({
+    --  name = "GUI.Group.Main.g"..mod..".Gem",
+    --  x = 0,
+    --  y = 0,
+    --  width = 28,
+    --  height = 28,
+    --}, GUI.Group.Main["g"..mod])
+    --GUI.Group.Main["g"..mod].Gem:setStyleSheet(GUI.CSS.GemBlue);
+    --GUI.Group.Main["g"..mod].Gem:enableClickthrough()
     --
     -- Index
     GUI.Group.Main["g"..mod].index = Geyser.Label:new2({
       name = "GUI.Group.Main.g"..mod..".index",
-      x = 10, 
-      y = -15,
+      x = 2, 
+      y = 0,
       width = 20,
-      height = 15,
+      height = 10,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].index:enableClickthrough()
     GUI.Group.Main["g"..mod].index:setStyleSheet(GUI.CSS.Keybind);
@@ -8625,13 +8677,13 @@ end</script>
     GUI.Group.Main["g"..mod].keybind = Geyser.Label:new2({
       name = "GUI.Group.Main.g"..mod..".keybind",
       x = 30,
-      y = -15,
+      y = -10,
       width = -10,
-      height = 15,
+      height = 10,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].keybind:enableClickthrough()
     GUI.Group.Main["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main["g"..mod].keybind:setFontSize(6);
+    GUI.Group.Main["g"..mod].keybind:setFontSize(ui.parameters.fontSize.keybind);
     GUI.Group.Main["g"..mod].keybind:echo("keybind")
   end
   --
