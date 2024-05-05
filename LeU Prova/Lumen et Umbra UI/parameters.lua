@@ -1,3 +1,11 @@
-return {{[ [[fontSize]] ] = {2},[ [[page]] ] = [[a]],[ [[enablePugno]] ] = true,},
-{[ [[equipment]] ] = 8,[ [[overland]] ] = 8,[ [[help]] ] = 12,[ [[keybind]] ] = 6,[ [[room]] ] = 7,[ [[inventory]] ] = 8,[ [[privateChat]] ] = 8,[ [[publicChat]] ] = 8,},
+return {{[ [[enablePugno]] ] = true,[ [[page]] ] = [[a]],[ [[widgets]] ] = {2},},
+{[ [[equipment]] ] = {3},[ [[overland]] ] = {4},[ [[help]] ] = {5},[ [[keybind]] ] = {6},[ [[room]] ] = {7},[ [[inventory]] ] = {8},[ [[privateChat]] ] = {9},[ [[publicChat]] ] = {10},},
+{[ [[fontSize]] ] = 8,},
+{[ [[fontSize]] ] = 8,},
+{[ [[fontSize]] ] = 12,},
+{[ [[fontSize]] ] = 6,},
+{[ [[fontSize]] ] = 7,},
+{[ [[fontSize]] ] = 8,},
+{[ [[fontSize]] ] = 8,},
+{[ [[fontSize]] ] = 8,},
 }

@@ -71,10 +71,10 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -2486,46 +2486,46 @@ if (matches[3]) then
     if (windows == "all") then
       -- Equipment
       ui.parameters.fontSize.equipment = fontsize
-      GUI.Equipment.Main.Console:setFontSize(ui.parameters.fontSize.equipment)
+      GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
       -- Help
-      ui.parameters.fontSize.help = fontsize
-      GUI.Help.Main.Console:setFontSize(ui.parameters.fontSize.help)
+      ui.parameters.widgets.help.fontSize = fontsize
+      GUI.Help.Main.Console:setFontSize(ui.parameters.widgets.help.fontSize)
       -- Inventory
-      ui.parameters.fontSize.inventory = fontsize
-      GUI.Inventory.Main.Console:setFontSize(ui.parameters.fontSize.inventory)
+      ui.parameters.widgets.inventory.fontSize = fontsize
+      GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
       -- Overland
-      ui.parameters.fontSize.overland = fontsize
-      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fontSize.overland)
+      ui.parameters.widgets.overland.fontSize = fontsize
+      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
       -- Private
-      ui.parameters.fontSize.privateChat = fontsize
-      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fontSize.privateChat)
+      ui.parameters.widgets.privateChat.fontSize = fontsize
+      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
       -- Public
-      ui.parameters.fontSize.publicChat = fontsize
-      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fontSize.publicChat)
+      ui.parameters.widgets.publicChat.fontSize = fontsize
+      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
       -- Room
-      ui.parameters.fontSize.room = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.fontSize.room)
+      ui.parameters.widgets.room.fontSize = fontsize
+      GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
     elseif (windows == "equipment") then
-      ui.parameters.fontSize.equipment = fontsize
-      GUI.Equipment.Main.Console:setFontSize(ui.parameters.fontSize.equipment)
+      ui.parameters.widgets.equipment.fontSize = fontsize
+      GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
     elseif (windows == "help") then
-      ui.parameters.fontSize.help = fontsize
-      GUI.Help.Main.Console:setFontSize(ui.parameters.fontSize.help)
+      ui.parameters.widgets.help.fontSize = fontsize
+      GUI.Help.Main.Console:setFontSize(ui.parameters.widgets.help.fontSize)
     elseif (windows == "inventory") then
-      ui.parameters.fontSize.inventory = fontsize
-      GUI.Inventory.Main.Console:setFontSize(ui.parameters.fontSize.inventory)
+      ui.parameters.widgets.inventory.fontSize = fontsize
+      GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
     elseif (windows == "overland") then
-      ui.parameters.fontSize.overland = fontsize
-      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fontSize.overland)
+      ui.parameters.widgets.overland.fontSize = fontsize
+      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
     elseif (windows == "private") then
-      ui.parameters.fontSize.privateChat = fontsize
-      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fontSize.privateChat)
+      ui.parameters.widgets.privateChat.fontSize = fontsize
+      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
     elseif (windows == "public") then
-      ui.parameters.fontSize.publicChat = fontsize
-      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fontSize.publicChat)
+      ui.parameters.widgets.publicChat.fontSize = fontsize
+      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
     elseif (windows == "room") then
-      ui.parameters.fontSize.room = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.fontSize.room)
+      ui.parameters.widgets.room.fontSize = fontsize
+      GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
     else
       fontsize = 0
       ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
@@ -2551,13 +2551,13 @@ if (matches[3]) then
   end
 else
   cecho(ui.fTitle("Dimensioni font"))
-  cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.equipment).."\n");
-  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.help).."\n");
-  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.inventory).."\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.overland).."\n");
-  cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Private")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.privateChat).."\n");
-  cecho(ui.fGetNumberFormattedText(6)..ui.fGetCommandFormattedText(" Public")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.publicChat).."\n\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.fontSize.room).."\n");
+  cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.equipment.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.inventory.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.overland.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Private")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.privateChat.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(6)..ui.fGetCommandFormattedText(" Public")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.publicChat.fontSize).."\n\n");
+  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n");
   ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
 end</script>
 				<command></command>
@@ -7174,12 +7174,12 @@ function ui.fUpdateOpponent()
   hpGaugeWidthDif = GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
     if (hpGaugeWidthDif &lt; 0) then
-      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width(),
+      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - 3,
                                         GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
       GUI.Opponent.Main.Health.dif:resize(-hpGaugeWidthDif,
                                           GUI.Opponent.Main.Health.front:get_height())
       --
-      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(255, 0, 0, 0.8);
         background-color: rgba(255, 0, 0, 0.4);
@@ -7188,11 +7188,11 @@ function ui.fUpdateOpponent()
       GUI.Opponent.Main.Health.dif:echo("--")
     elseif (hpGaugeWidthDif &gt; 0) then
       GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif,
-                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y() + 2)
-      GUI.Opponent.Main.Health.dif:resize(hpGaugeWidthDif - 1,
-                                          GUI.Opponent.Main.Health.front:get_height() - 4)
+                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
+      GUI.Opponent.Main.Health.dif:resize(hpGaugeWidthDif,
+                                          GUI.Opponent.Main.Health.front:get_height())
       --
-      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeBack..[[
+      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(0, 255, 0, 0.8);
         background-color: rgba(0, 255, 0, 0.4);
@@ -7240,15 +7240,31 @@ end</script>
 					<script>--
 function ui.fGetPreDefinitedParameters()
   return {
-    fontSize = {
-      equipment = 8,
-      help = 8,
-      inventory = 8,
-      keybind = 6,
-      overland = 8,
-      privateChat = 8,
-      publicChat = 8,
-      room = 7,
+    widgets = {
+      equipment = {
+        fontSize = 8,
+      },
+      help = {
+        fontSize = 8,
+      },
+      inventory = {
+        fontSize = 8,
+      },
+      keybind = {
+        fontSize = 6,
+      },
+      overland = {
+        fontSize = 8,
+      },
+      privateChat = {
+        fontSize = 8,
+      },
+      publicChat = {
+        fontSize = 8,
+      },
+      room = {
+        fontSize = 7,
+      },
     },
     page = "a"
   }
@@ -7298,16 +7314,16 @@ function ui.fGetNextNumber(text, index)
 end
 --
 function ui.fSavePath(dir)
-  if (ui.idxPath &lt; ui.maxPath) then
+  if (ui.idxPath &lt; 50) then
     ui.idxPath = ui.idxPath + 1
     ui.path[ui.idxPath] = dir
     ui.memPath = ui.idxPath
   else
-    for i=1, ui.maxPath-1 do
+    for i=1, 50-1 do
       ui.path[i] = ui.path[i+1]
     end
-    ui.path[ui.maxPath] = dir    
-    ui.idxPath = ui.maxPath
+    ui.path[50] = dir    
+    ui.idxPath = 50
   end
 end
 --</script>
@@ -7477,32 +7493,34 @@ function ui.fUpdatePlayer()
     local x, y, w, h, txt, CSS
     --
     if (hpGaugeWidthDif &lt; 0) then
-      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width()
+      x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - 3
       y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y()
       w = -hpGaugeWidthDif
       h = GUI.Player.Main.Health.front:get_height()
       txt = "- -"
-      CSS = GUI.CSS.GaugeBack..[[
+      CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(255, 0, 0, 0.8);
         background-color: rgba(255, 0, 0, 0.4);
       ]]
     else
       x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
-      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y() + 2
-      w = hpGaugeWidthDif-1
-      h = GUI.Player.Main.Health.front:get_height() - 4
+      y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y()
+      w = hpGaugeWidthDif
+      h = GUI.Player.Main.Health.front:get_height()
       txt = "++"
-      CSS = GUI.CSS.GaugeBack..[[
+      CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(0, 255, 0, 0.8);
         background-color: rgba(0, 255, 0, 0.4);
       ]]
     end
+    --
     GUI.Player.Main.Health.dif:move(x, y);
     GUI.Player.Main.Health.dif:resize(w, h)
     GUI.Player.Main.Health.dif:echo(txt)
     GUI.Player.Main.Health.dif:setStyleSheet(CSS)
+    --
     ui.fDifTimerPlayer(2)
   end
 end</script>
@@ -8278,8 +8296,7 @@ end</script>
     self.adjLabelstyle = GUI.CSS.AC_invisible
     self.adjLabel:setStyleSheet(self.adjLabelstyle) 
     self.Border:setStyleSheet(GUI.CSS.AC_invisible);
-    self.Main:setStyleSheet(GUI.CSS.AC_invisible);
-    self:flash() 
+    self.Main:setStyleSheet(GUI.CSS.AC_invisible); 
   end)
   GUI.Affect:newCustomItem("Ripristina", 
   function(self) 
@@ -8287,7 +8304,6 @@ end</script>
     self.adjLabel:setStyleSheet(self.adjLabelstyle) 
     self.Border:setStyleSheet(GUI.CSS.Border);
     self.Main:setStyleSheet(GUI.CSS.Main);
-    self:flash() 
   end)
   --
   -- Add Border and Main
@@ -8498,7 +8514,7 @@ end</script>
     }, GUI.AliasButtons.Main.CButtons["Custom"..i])
     GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:enableClickthrough()
     GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:setFontSize(ui.parameters.fontSize.keybind);
+    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
   end
   --
   -- Wrapping function
@@ -8552,7 +8568,7 @@ end</script>
   }, GUI.Equipment.Main)
   GUI.Equipment.Main.Console:setColor(30, 24, 24)
   GUI.Equipment.Main.Console:setBgColor(30, 24, 24)
-  GUI.Equipment.Main.Console:setFontSize(ui.parameters.fontSize.equipment)
+  GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Equipment.minimize
@@ -8596,7 +8612,6 @@ end</script>
     self.adjLabel:setStyleSheet(self.adjLabelstyle) 
     self.Border:setStyleSheet(GUI.CSS.AC_invisible);
     self.Main:setStyleSheet(GUI.CSS.AC_invisible);
-    self:flash() 
   end)
   GUI.Group:newCustomItem("Ripristina", 
   function(self) 
@@ -8604,7 +8619,6 @@ end</script>
     self.adjLabel:setStyleSheet(self.adjLabelstyle) 
     self.Border:setStyleSheet(GUI.CSS.Border);
     self.Main:setStyleSheet(GUI.CSS.Main);
-    self:flash() 
   end)
   --
   -- Add Border and Main
@@ -8717,7 +8731,7 @@ end</script>
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].keybind:enableClickthrough()
     GUI.Group.Main["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main["g"..mod].keybind:setFontSize(ui.parameters.fontSize.keybind);
+    GUI.Group.Main["g"..mod].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
     GUI.Group.Main["g"..mod].keybind:echo("keybind")
   end
   --
@@ -8772,7 +8786,7 @@ end</script>
   }, GUI.Help.Main)
   GUI.Help.Main.Console:setColor(30, 24, 24)
   GUI.Help.Main.Console:setBgColor(30, 24, 24)
-  GUI.Help.Main.Console:setFontSize(ui.parameters.fontSize.help)
+  GUI.Help.Main.Console:setFontSize(ui.parameters.widgets.help.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Help.minimize
@@ -8825,7 +8839,7 @@ end</script>
   }, GUI.Inventory.Main)
   GUI.Inventory.Main.Console:setColor(30,24,24)
   GUI.Inventory.Main.Console:setBgColor(30,24,24)
-  GUI.Inventory.Main.Console:setFontSize(ui.parameters.fontSize.inventory)
+  GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Inventory.minimize
@@ -8887,7 +8901,7 @@ end</script>
   }, GUI.Mapper.Main)
   GUI.Mapper.Main.Overland:setColor(30,24,24)
   GUI.Mapper.Main.Overland:setBgColor(30,24,24)
-  GUI.Mapper.Main.Overland:setFontSize(ui.parameters.fontSize.overland)
+  GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Mapper.minimize
@@ -8982,6 +8996,7 @@ end</script>
   }, GUI.Opponent.Main)
   GUI.Opponent.Main.Health.dif:enableClickthrough()
   GUI.Opponent.Main.Health.dif:setFontSize(5)
+  GUI.Opponent.Main.Health.dif:hide()
   --
   -- Opponent Gem
   --GUI.Opponent.Main.Gem = Geyser.Label:new2({
@@ -9003,7 +9018,7 @@ end</script>
   }, GUI.Opponent.Main)
   GUI.Opponent.Main.keybind:enableClickthrough()
   GUI.Opponent.Main.keybind:setStyleSheet(GUI.CSS.Keybind);
-  GUI.Opponent.Main.keybind:setFontSize(ui.parameters.fontSize.keybind);
+  GUI.Opponent.Main.keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
   --
   -- Wrapping function
   local Minimize = GUI.Opponent.minimize
@@ -9056,7 +9071,7 @@ end</script>
   }, GUI.PrivateChat.Main)
   GUI.PrivateChat.Main.Console:setColor(30, 24, 24)
   GUI.PrivateChat.Main.Console:setBgColor(30, 24, 24)
-  GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.fontSize.privateChat)
+  GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.PrivateChat.minimize
@@ -9167,6 +9182,7 @@ end</script>
     height = "10",
   }, GUI.Player.Main)
   GUI.Player.Main.Health.dif:setFontSize(5)
+  GUI.Player.Main.Health.dif:hide();
   --
   -- Tick
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
@@ -9304,7 +9320,7 @@ end</script>
   }, GUI.PublicChat.Main)
   GUI.PublicChat.Main.Console:setColor(30, 24, 24)
   GUI.PublicChat.Main.Console:setBgColor(30, 24, 24)
-  GUI.PublicChat.Main.Console:setFontSize(ui.parameters.fontSize.publicChat)
+  GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.PublicChat.minimize
@@ -9357,7 +9373,7 @@ end</script>
   }, GUI.Room.Main)
   GUI.Room.Main.Console:setColor(30,24,24)
   GUI.Room.Main.Console:setBgColor(30,24,24)
-  GUI.Room.Main.Console:setFontSize(ui.parameters.fontSize.room)
+  GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Room.minimize
@@ -9459,7 +9475,7 @@ end</script>
     }, GUI.TargetButtons.Main["t"..i])
     GUI.TargetButtons.Main["t"..i].keybind:enableClickthrough()
     GUI.TargetButtons.Main["t"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.TargetButtons.Main["t"..i].keybind:setFontSize(ui.parameters.fontSize.keybind)
+    GUI.TargetButtons.Main["t"..i].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize)
   end
   --
   -- Wrapping function
@@ -9487,6 +9503,7 @@ ui = ui or {}
 ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values
 ui.release = "24/11/2023"
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
+ui.varID = "&amp;"
 --
 -- Colors
 ui.colors = {
@@ -9551,8 +9568,6 @@ ui.files = {
     name = "variables.lua",
   },
 }
---
-ui.varID = "&amp;"
 --
 ui.actFastAffects = "";
 --
@@ -9650,7 +9665,6 @@ ui.lastFromPubblic = ui.lastFromPubblic or ""
 -- Storico Path
 ui.idxPath = 0;
 ui.memPath = 0;
-ui.maxPath = 50;
 ui.path = {}
 --
 -- Group
@@ -9689,7 +9703,7 @@ GUI.CSS.AC = [[
 GUI.CSS.AC_invisible = [[
   border: none;
   background: transparent;
-  color: none;
+  padding: 2px;
 ]]
 --
 GUI.CSS.ACButtons = [[
@@ -9789,13 +9803,13 @@ GUI.CSS.ButtonsIcon = [[
 GUI.CSS.GaugeBack = [[
   border: none;
   border-radius: 5px;
-  margin: 1px;
+  margin: 0px;
 ]]
 --
 -- Gauge front
 GUI.CSS.GaugeFront = [[
   border-radius: 3px;
-  margin:  2px 0px 2px 0px;
+  margin:  2px;
 ]]
 --
 -- Gem Blue
