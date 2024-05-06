@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffff00" playerRoomStyle="3" playerRoomOuterDiameter="125" playerRoomInnerDiameter="65" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>330</borderLeftWidth>
+			<borderLeftWidth>329</borderLeftWidth>
 			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
@@ -44,14 +44,14 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#1e1818</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
-			<mMapInfoBg alpha="120">#969696</mMapInfoBg>
+			<mMapInfoBg alpha="127">#3c3030</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
 			<mRed2>#800000</mRed2>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4478,6 +4478,7 @@ function ui.fUpdateAffects()
         if ui.fHasbit(ui.affects[affect].category, 7) then toolTip = toolTip.."Divine " end
         if ui.fHasbit(ui.affects[affect].category, 8) then toolTip = toolTip.."Elemental " end
         if ui.fHasbit(ui.affects[affect].category, 9) then toolTip = toolTip.."Physical " end
+        --
         if (toolTip == "") then
           GUI["AffectIcon"..i]:setToolTip(affect, 10)
         else
@@ -5000,6 +5001,8 @@ function ui.fButtonType()
     ui.parameters.widgets.chat.type = "all"
   end
   --
+  ui.fSaveFileParameters()
+  --
   ui.fUpdateChat()
 end
 --
@@ -5009,6 +5012,8 @@ function ui.fButtonSplit()
   else
     ui.parameters.widgets.chat.split = true;
   end
+  --
+  ui.fSaveFileParameters()
   --
   ui.fUpdateChat()
 end
@@ -7350,6 +7355,9 @@ function ui.fGetPreDefinitedParameters()
       keybind = {
         fontSize = 6,
       },
+      mapper = {
+        transparent = false,
+      },
       opponent = {
         transparent = false,
       },
@@ -8579,9 +8587,9 @@ end</script>
     -- Icon
     GUI.AliasButtons.Main.CButtons["Custom"..i].icon = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".icon",
-      x = 10, y = 10,
-      width = -10,
-      height = -10,
+      x = 5, y = 5,
+      width = -5,
+      height = -5,
     }, GUI.AliasButtons.Main.CButtons["Custom"..i])
     GUI.AliasButtons.Main.CButtons["Custom"..i].icon:enableClickthrough()
     GUI.AliasButtons.Main.CButtons["Custom"..i].icon:setFgColor("violet")
@@ -9087,12 +9095,13 @@ end</script>
   --
   -- Mapper
   GUI.Mapper.Main.Mapper = Geyser.Mapper:new2({
-    name = 'GUI.Mapper.Main.Mapper.Map',
+    name = 'GUI.Mapper.Main.Mapper',
     x=0,
     y=0,
     width = "100%", 
     height = "100%",
   }, GUI.Mapper.Main)
+  setBackgroundColor("GUI.Mapper.Main.Mapper", 0, 0, 0, 0)
   --
   -- Overland
   GUI.Mapper.Main.Overland = Geyser.MiniConsole:new2({ 
@@ -9107,6 +9116,7 @@ end</script>
   GUI.Mapper.Main.Overland:setColor(30,24,24)
   GUI.Mapper.Main.Overland:setBgColor(30,24,24)
   GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
+  GUI.Mapper.Main.Overland:hide()
   --
   -- Wrapping function
   local Minimize = GUI.Mapper.minimize
@@ -9775,7 +9785,9 @@ ui.previous = ui.previous or {}</script>
 			<Script isActive="yes" isFolder="no">
 				<name>Init CSS</name>
 				<packageName></packageName>
-				<script>--
+				<script>local borderColor = "90, 72, 72";
+local bgColor = "30, 24, 24";
+--
 ui.fDebug("[init] CSS")
 --
 GUI = GUI or {}
@@ -9783,43 +9795,44 @@ GUI.CSS = GUI.CSS or {}
 --
 --
 GUI.CSS.AC = [[
-  border: 2px outset rgb(90,72,72); 
+  border: 2px outset rgb(]]..borderColor..[[); 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: rgb(25,20,20);
+  background-color: rgb(]]..bgColor..[[);
 ]]
 --
 --
 GUI.CSS.ACTransparent = [[
   QWidget{
     border: none;
-    background: transparent;
     padding: 2px;
+    background: transparent;
   }
   QWidget::hover{
-    border: 2px outset rgba(90, 72, 72, 0.7); 
+    border: 2px outset rgba(]]..borderColor..[[, 0.7); 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    background-color: rgba(25, 20, 20, 0.7);
+    background-color: rgba(]]..bgColor..[[, 0.7);
   }
 ]]
 --
 GUI.CSS.ACButtons = [[
   QLabel{
-    border-radius: 5px;
-    background-color: rgb(90,72,72);
+    border-radius: 6px;
+    background-color: rgb(90, 72, 72);
   }
   QLabel::hover{
-    background-color: rgb(180,144,144);}
+    background-color: rgb(180, 144, 144);
+  }
 ]]
 --
 -- Affect
 GUI.CSS.Affect = [[
-  border: 2px outset rgb(90,72,72);
+  border: 2px outset rgb(]]..borderColor..[[);
   border-top-left-radius: 14px;
   border-top-right-radius: 7px;
   border-bottom-left-radius: 14px;
@@ -9828,12 +9841,12 @@ GUI.CSS.Affect = [[
 --
 -- Affect Dispel Resistance
 GUI.CSS.AffectDispelResistance = [[
-  border: 2px inset rgb(90,72,72);
+  border: 2px inset rgb(]]..borderColor..[[);
   border-top-left-radius: 12px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 5px;
-  background-color: rgb(30,24,24);
+  background-color: rgb(]]..bgColor..[[);
 ]]
 --
 -- Affect Text
@@ -9845,61 +9858,34 @@ GUI.CSS.AffectText = [[
 --
 -- Affect Duration
 GUI.CSS.AffectDuration = [[
-  border: 2px inset rgb(90,72,72);
+  border: 2px inset rgb(]]..borderColor..[[);
   border-bottom: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: rgb(30,24,24);
+  background-color: rgb(]]..bgColor..[[);
 ]]
 --
 -- Affect Stacks
 GUI.CSS.AffectStacks = [[
-  border: 2px inset rgb(90,72,72);
+  border: 2px inset rgb(]]..borderColor..[[);
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: rgb(30,24,24);
-]]
---
--- Alias buttons
-GUI.CSS.AliasButtons = [[
-  border: 5px solid transparent;
-  border-image: url("]]..ui.files.images.path..[[borderButton.png") 10px stretch;
-  margin: 1px;
-]]
---
--- Navigator arrow Down
-GUI.CSS.ArrowDown = [[
-  border-image: url("]]..ui.files.images.path..[[arrowDown.png");
-  background: transparent;
-]]
---
--- Navigator arrow Up
-GUI.CSS.ArrowUp = [[
-  border-image: url("]]..ui.files.images.path..[[arrowUp.png");
-  background: transparent;
+  background-color: rgb(]]..bgColor..[[);
 ]]
 --
 -- Border
 GUI.CSS.Border = [[
-  border: 2px inset rgb(90,72,72); 
+  border: 2px inset rgb(]]..borderColor..[[); 
   border-radius: 4px;
-  background-image: url("]]..ui.files.images.path..[[bgWidget.png")
+  background-color: rgb(]]..bgColor..[[);
 ]]
 --
 -- Border transparent
 GUI.CSS.BorderTransparent = [[
   border: none;
-  background: transparent;
   padding: 2px;
-]]
---
--- Group target buttons
-GUI.CSS.BorderPlayer = [[
-  margin: 0;
-  border: 6px solid transparent;
-  border-image: url("]]..ui.files.images.path..[[bgPlayer.png") 6px stretch;
-  background-color: rgb(30, 24, 24);
+  background: transparent;
 ]]
 --
 -- Target buttons
@@ -9928,24 +9914,6 @@ GUI.CSS.GaugeFront = [[
   margin:  2px;
 ]]
 --
--- Gem Blue
-GUI.CSS.GemBlue =[[
-  margin: 0px;
-  background-image: url("]]..ui.files.images.path..[[gemBlue.png");
-]]
---
--- Gem Empty
-GUI.CSS.GemEmpty =[[
-  margin: 0px;
-  background-image: url("]]..ui.files.images.path..[[gemEmpty.png");
-]]
---
--- Gem Red
-GUI.CSS.GemRed =[[
-  margin: 0px;
-  background-image: url("]]..ui.files.images.path..[[gemRed.png");
-]]
---
 -- Keybind
 GUI.CSS.Keybind = [[
   background: transparent;
@@ -9954,8 +9922,7 @@ GUI.CSS.Keybind = [[
 -- Level
 GUI.CSS.Level = [[
   border-image: url("]]..ui.files.images.path..[[borderRound.png") 0px stretch;
-  
-  background-color: rgba(30,24,24);
+  background-color: rgb(]]..bgColor..[[);
   background: transparent;
 ]]
 --
