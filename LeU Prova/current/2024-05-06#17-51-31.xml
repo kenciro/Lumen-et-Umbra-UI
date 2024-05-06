@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
+			<borderLeftWidth>330</borderLeftWidth>
 			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,11 +71,11 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -146,7 +146,6 @@ else
   ui.reply = string.gsub(ui.reply, ",", "")
   ui.reply = ui.fRemoveArticle(ui.reply)
   ui.reply = string.sub(ui.reply, 1, string.find(ui.reply, " "))
-  GUI.PrivateChat:setTitle("Canale privato ["..ui.reply.."]")
 end
 --
 if (ui.lastFromPrivate) and (ui.lastFromPrivate == from) then
@@ -159,7 +158,9 @@ end
 str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
 str = string.gsub(str, "&lt;0,0,255:", "&lt;128,128,255:")
 --
-GUI.PrivateChat.Main.Console:decho(str)
+GUI.Chat.Main.All:decho(str)
+GUI.Chat.Main.Private:decho(str)
+--
 playSoundFile(ui.files.sounds.path..[[message.wav]], 10)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -215,8 +216,9 @@ else
   ui.lastFromPubblic = from
 end
 from = ui.fRemoveArticle(from)
-GUI.PublicChat:setTitle("Canale pubblico ["..from.."]")
-GUI.PublicChat.Main.Console:decho(str)</script>
+--
+GUI.Chat.Main.All:decho(str)
+GUI.Chat.Main.Public:decho(str)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -1120,7 +1122,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
 				<script>send("first")</script>
 				<triggerType>0</triggerType>
@@ -2179,6 +2181,91 @@ send(dir, false)</script>
 				<regex>^(?i)([neswud])$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
+				<name>UI Font size</name>
+				<script>local windows = string.lower(matches[2] or "")
+local fontsize = tonumber(matches[3] or -1)
+--
+if (matches[3]) then
+  if (fontsize &gt;= 1) and (fontsize &lt;= 30) then
+    if (windows == "all") then
+      -- Chat
+      GUI.Chat.Main.All:setFontSize(fontsize)
+      GUI.Chat.Main.Public:setFontSize(fontsize)
+      GUI.Chat.Main.Private:setFontSize(fontsize)
+      ui.parameters.widgets.chat.fontSize = fontsize
+      -- Equipment
+      GUI.Equipment.Main.Console:setFontSize(fontsize)
+      ui.parameters.fontSize.equipment = fontsize
+      -- Help
+      GUI.Help.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.help.fontSize = fontsize
+      -- Inventory
+      GUI.Inventory.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.inventory.fontSize = fontsize
+      -- Overland
+      GUI.Mapper.Main.Overland:setFontSize(fontsize)
+      ui.parameters.widgets.overland.fontSize = fontsize
+      -- Room
+      GUI.Room.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.room.fontSize = fontsize
+      --
+    elseif (windows == "chat") then
+      GUI.Chat.Main.All:setFontSize(fontsize)
+      GUI.Chat.Main.Public:setFontSize(fontsize)
+      GUI.Chat.Main.Private:setFontSize(fontsize)
+      ui.parameters.widgets.chat.fontSize = fontsize
+    elseif (windows == "equipment") then
+      GUI.Equipment.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.equipment.fontSize = fontsize
+    elseif (windows == "help") then
+      GUI.Help.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.help.fontSize = fontsize
+    elseif (windows == "inventory") then
+      GUI.Inventory.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.inventory.fontSize = fontsize
+    elseif (windows == "overland") then
+      GUI.Mapper.Main.Overland:setFontSize(fontsize)
+      ui.parameters.widgets.overland.fontSize = fontsize
+    elseif (windows == "room") then
+      GUI.Room.Main.Console:setFontSize(fontsize)
+      ui.parameters.widgets.room.fontSize = fontsize
+    else
+      fontsize = 0
+      ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
+                                            ..ui.fGetCommandFormattedText("Chat")..", "
+                                            ..ui.fGetCommandFormattedText("Equipment")..", "
+                                            ..ui.fGetCommandFormattedText("Help")..", "
+                                            ..ui.fGetCommandFormattedText("Inventory")..", "
+                                            ..ui.fGetCommandFormattedText("Overland")..", "
+                                            ..ui.fGetCommandFormattedText("Room")..".")
+    end
+    --
+    if (fontsize &gt; 0) then
+      if (windows == "all") then
+        ui.fEcho2n("La dimensione del font di tutti i widget e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
+      else
+        ui.fEcho2n("La dimensione del font del widget "..ui.fGetCommandFormattedText(windows).." e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
+      end 
+      ui.fSaveFileParameters()
+    end
+  else
+    ui.fError("La dimensione del font e' errata: Usare un valore compreso tra "..ui.fGetCommandFormattedText("1").." e "..ui.fGetCommandFormattedText("30")..".")
+  end
+else
+  cecho(ui.fTitle("Dimensioni font"))
+  cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Chat")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.chat.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.equipment.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.inventory.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.overland.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(7)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n\n");
+  ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)(?:uif(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
 				<name>UI Help</name>
 				<script>local helpselect = string.lower(matches[2] or "")
 --
@@ -2190,7 +2277,7 @@ elseif (rex.match(helpselect, [[(?i)(uib(?:u(?:t(?:t(?:o(?:n(?:s)?)?)?)?)?)?)$]]
   ui.fHelp("button")
 elseif (rex.match(helpselect, [[(?i)(?:uic(?:o(?:l(?:o(?:r(?:s?)?)?)?)?)?)$]])) then
   ui.fHelp("color")
-elseif (rex.match(helpselect, [[(?i)(?:uisetf(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)$]])) then
+elseif (rex.match(helpselect, [[(?i)(?:uif(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)$]])) then
   ui.fHelp("fontsize")
 elseif (rex.match(helpselect, [[(?i)(?:uihi(?:g(?:h(?:l(?:i(?:g(?:h(?:t(?:s)?)?)?)?)?)?)?)?)$]])) then
   ui.fHelp("highlight")
@@ -2433,17 +2520,16 @@ end</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Widget</name>
 				<script>local widgets = {
-  ["affect"]        = GUI.Affect,
+  ["affects"]       = GUI.Affects,
   ["buttons"]       = GUI.AliasButtons,
+  ["chat"]          = GUI.Chat,
   ["equipment"]     = GUI.Equipment,
   ["group"]         = GUI.Group,
   ["inventory"]     = GUI.Inventory,
   ["room"]          = GUI.Room,
   ["mapper"]        = GUI.Mapper,
   ["opponent"]      = GUI.Opponent,
-  ["private"]       = GUI.PrivateChat,
   ["player"]        = GUI.Player,
-  ["public"]        = GUI.PublicChat,
   ["target"]        = GUI.TargetButtons
 }
 local widget = string.lower(matches[2] or "")
@@ -2459,110 +2545,22 @@ elseif (widgets[widget]) then
   widgets[widget]:show();
   ui.fEcho2n("Il widget "..ui.fGetCommandFormattedText(widget).." e' stato ripristinato.")
 else
-      ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("Affect")..", "
+      ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("Affects")..", "
                                             ..ui.fGetCommandFormattedText("Buttons")..", "
+                                            ..ui.fGetCommandFormattedText("Chat")..", "
                                             ..ui.fGetCommandFormattedText("Equipment")..", "
                                             ..ui.fGetCommandFormattedText("Group")..", "
                                             ..ui.fGetCommandFormattedText("Inventory")..", "
-                                            ..ui.fGetCommandFormattedText("Room")..", "
                                             ..ui.fGetCommandFormattedText("Mapper")..", "
                                             ..ui.fGetCommandFormattedText("Opponent")..", "
-                                            ..ui.fGetCommandFormattedText("Private")..", "
                                             ..ui.fGetCommandFormattedText("Player")..", "
-                                            ..ui.fGetCommandFormattedText("Public").." o "
+                                            ..ui.fGetCommandFormattedText("Room").." o "
                                             ..ui.fGetCommandFormattedText("Target")..".")
 end
 </script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uiw(?:i(?:d(?:g(?:e(?:t?)?)?)?)?)?)(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>UI Set font size</name>
-				<script>local windows = string.lower(matches[2] or "")
-local fontsize = tonumber(matches[3] or -1)
-if (matches[3]) then
-  if (fontsize &gt;= 1) and (fontsize &lt;= 30) then
-    if (windows == "all") then
-      -- Equipment
-      ui.parameters.fontSize.equipment = fontsize
-      GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
-      -- Help
-      ui.parameters.widgets.help.fontSize = fontsize
-      GUI.Help.Main.Console:setFontSize(ui.parameters.widgets.help.fontSize)
-      -- Inventory
-      ui.parameters.widgets.inventory.fontSize = fontsize
-      GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
-      -- Overland
-      ui.parameters.widgets.overland.fontSize = fontsize
-      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
-      -- Private
-      ui.parameters.widgets.privateChat.fontSize = fontsize
-      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
-      -- Public
-      ui.parameters.widgets.publicChat.fontSize = fontsize
-      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
-      -- Room
-      ui.parameters.widgets.room.fontSize = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
-    elseif (windows == "equipment") then
-      ui.parameters.widgets.equipment.fontSize = fontsize
-      GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
-    elseif (windows == "help") then
-      ui.parameters.widgets.help.fontSize = fontsize
-      GUI.Help.Main.Console:setFontSize(ui.parameters.widgets.help.fontSize)
-    elseif (windows == "inventory") then
-      ui.parameters.widgets.inventory.fontSize = fontsize
-      GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
-    elseif (windows == "overland") then
-      ui.parameters.widgets.overland.fontSize = fontsize
-      GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
-    elseif (windows == "private") then
-      ui.parameters.widgets.privateChat.fontSize = fontsize
-      GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
-    elseif (windows == "public") then
-      ui.parameters.widgets.publicChat.fontSize = fontsize
-      GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
-    elseif (windows == "room") then
-      ui.parameters.widgets.room.fontSize = fontsize
-      GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
-    else
-      fontsize = 0
-      ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
-                                            ..ui.fGetCommandFormattedText("Equipment")..", "
-                                            ..ui.fGetCommandFormattedText("Help")..", "
-                                            ..ui.fGetCommandFormattedText("Inventory")..", "
-                                            ..ui.fGetCommandFormattedText("Overland")..", "
-                                            ..ui.fGetCommandFormattedText("Private")..", "
-                                            ..ui.fGetCommandFormattedText("Public").." o "
-                                            ..ui.fGetCommandFormattedText("Room")..".")
-    end
-    --
-    if (fontsize &gt; 0) then
-      if (windows == "all") then
-        ui.fEcho2n("La dimensione del font di tutti i widget e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
-      else
-        ui.fEcho2n("La dimensione del font del widget "..ui.fGetCommandFormattedText(windows).." e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
-      end 
-      ui.fSaveFileParameters()
-    end
-  else
-    ui.fError("La dimensione del font e' errata: Usare un valore compreso tra "..ui.fGetCommandFormattedText("1").." e "..ui.fGetCommandFormattedText("30")..".")
-  end
-else
-  cecho(ui.fTitle("Dimensioni font"))
-  cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.equipment.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.inventory.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.overland.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Private")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.privateChat.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(6)..ui.fGetCommandFormattedText(" Public")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.publicChat.fontSize).."\n\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n");
-  ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
-end</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)(?:uisetf(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Speedwalk</name>
@@ -4120,7 +4118,7 @@ end
 cecho("Trigger First AID (automatico) "..status.."\n")
 </script>
 				<css>  QWidget {
-    background-color: green;
+    background-color: red;
     border: 3px #777777;
   } </css>
 				<commandButtonUp></commandButtonUp>
@@ -4487,14 +4485,14 @@ function ui.fUpdateAffects()
         end
         --
         -- Show if inside box
-        if (y&lt;=GUI.Affect.Main:get_height() - GUI["AffectIcon"..i]:get_height()) then
+        if (y&lt;=GUI.Affects.Main:get_height() - GUI["AffectIcon"..i]:get_height()) then
           GUI["AffectIcon"..i]:move(x, y)
           GUI["AffectIcon"..i]:show();
         else
           GUI["AffectIcon"..i]:hide();
         end
         --
-        if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 2 &gt; GUI.Affect.Main:get_width()) then
+        if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 2 &gt; GUI.Affects.Main:get_width()) then
           x = 0
           y = y + GUI["AffectIcon"..i]:get_height() + 3
         else
@@ -4639,7 +4637,7 @@ function ui.fExecuteAliasButton(button)
 end
 --
 function ui.fRefreshAliasButton(number)
-  local bgColor
+  local bgColor, bgColorHover
   local title = ""
   local keybind = ""
   local button = ui.parameters.page..number
@@ -4652,14 +4650,17 @@ function ui.fRefreshAliasButton(number)
     end
   end
   if (ui.parameters.page == "a") then
-    bgColor = "200,0,0"
+    bgColor = "75, 0, 0"
+    bgColorHover = "150, 0, 0"    
   elseif (ui.parameters.page == "b") then
-    bgColor = "0,200,0"
+    bgColor = "0, 75, 0"
+    bgColorHover = "0, 200, 0"
   elseif (ui.parameters.page == "c") then
-    bgColor = "0,0,200"
+    bgColor = "0, 0, 75"
+    bgColorHover = "0, 0, 150"
   end
   --
-  GUI.AliasButtons.Main.CButtons["Custom"..number].index:echo("&lt;center&gt;"..ui.parameters.page..number)
+  GUI.AliasButtons.Main.CButtons["Custom"..number].index:echo("&lt;center&gt;"..button)
   --
   GUI.AliasButtons.Main.CButtons["Custom"..number].icon:setStyleSheet(GUI.CSS.ButtonsIcon)
   GUI.AliasButtons.Main.CButtons["Custom"..number].icon:echo("&lt;center&gt;"..title)
@@ -4668,11 +4669,12 @@ function ui.fRefreshAliasButton(number)
   --
   GUI.AliasButtons.Main.CButtons["Custom"..number]:setStyleSheet([[
     QLabel{
-      ]]..GUI.CSS.AliasButtons..[[
-      background-color: rgba(]]..bgColor..[[,.5);
+      ]]..GUI.CSS.Button..[[
+      margin: 0px 2.5px 0px 2.5px;
+      background-color: rgb(]]..bgColor..[[);
     }
     QLabel::hover{
-      background-color: rgba(]]..bgColor..[[,1);
+      background-color: rgb(]]..bgColorHover..[[);
     }
   ]])
 end
@@ -4681,39 +4683,12 @@ function ui.fUpdateAllAliasButton()
   for i = 0, 9 do
     ui.fRefreshAliasButton(i)
   end
-  GUI.AliasButtons.Main.Navigator.Page:echo("&lt;center&gt;"..ui.parameters.page)
 end
 --
 function ui.fClickAliasButton(number)
   local button = ui.parameters.page..number
   --
   ui.fExecuteAliasButton(button)
-end
---
--- Incrase page index
-function ui.fIncraseButtonsPage()
-  ui.parameters.page = ui.parameters.page or "";
-  if (ui.parameters.page == "a") then
-    ui.parameters.page = "b"
-  elseif (ui.parameters.page == "b") then
-    ui.parameters.page = "c"
-  else
-    ui.parameters.page = "a"
-  end
-  ui.fUpdateAllAliasButton()
-end
---
--- Decrase page index
-function ui.fDecraseButtonsPage()
-  ui.parameters.page = ui.parameters.page or "";
-  if (ui.parameters.page == "a") then
-    ui.parameters.page = "c"
-  elseif (ui.parameters.page == "c") then
-    ui.parameters.page = "b"
-  else
-    ui.parameters.page = "a"
-  end
-  ui.fUpdateAllAliasButton()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -5009,6 +4984,88 @@ function ui.fReadFileAliases()
   for alias in pairs(ui.aliases) do
     ui.fAddAlias(alias, ui.aliases[alias].text)
   end
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Chat</name>
+					<packageName></packageName>
+					<script>--
+function ui.fButtonType()
+  if (ui.parameters.widgets.chat.type == "all") then
+    ui.parameters.widgets.chat.type = "Public"
+  elseif (ui.parameters.widgets.chat.type == "Public") then
+    ui.parameters.widgets.chat.type = "Private"
+  else
+    ui.parameters.widgets.chat.type = "all"
+  end
+  --
+  ui.fUpdateChat()
+end
+--
+function ui.fButtonSplit()
+  if (ui.parameters.widgets.chat.split) then
+    ui.parameters.widgets.chat.split = false;
+  else
+    ui.parameters.widgets.chat.split = true;
+  end
+  --
+  ui.fUpdateChat()
+end
+--
+function ui.fUpdateChat()
+  if (ui.parameters.widgets.chat.type == "all") then
+    GUI.Chat.Button_split:show();
+    --
+    if (ui.parameters.widgets.chat.split) then
+      GUI.Chat.Main.All:hide()
+      --
+      GUI.Chat.Main.Private:move(0, 0);
+      GUI.Chat.Main.Private:resize("100%", "50%")
+      GUI.Chat.Main.Private:show()
+      --
+      GUI.Chat.Main.Public:move(0, "50%");
+      GUI.Chat.Main.Public:resize("100%", "50%")
+      GUI.Chat.Main.Public:show()
+      --
+      GUI.Chat:setTitle("Chat [all|split]")
+    else
+      GUI.Chat.Main.All:show()
+      --
+      GUI.Chat.Main.Public:hide()
+      --
+      GUI.Chat.Main.Private:hide()
+      --
+      GUI.Chat:setTitle("Chat [all]")
+    end
+  --
+  elseif (ui.parameters.widgets.chat.type == "Public") then
+    GUI.Chat.Button_split:hide();
+    --
+    GUI.Chat.Main.All:hide()
+    --
+    GUI.Chat.Main.Public:move(0, 0);
+    GUI.Chat.Main.Public:resize("100%", "100%")
+    GUI.Chat.Main.Public:show()
+    --
+    GUI.Chat.Main.Private:hide()
+    --
+    GUI.Chat:setTitle("Chat [Pubblic]")
+  else
+    GUI.Chat.Button_split:hide();
+    --
+    GUI.Chat.Main.All:hide()
+    --
+    GUI.Chat.Main.Public:hide()
+    --
+    GUI.Chat.Main.Private:move(0, 0);
+    GUI.Chat.Main.Private:resize("100%", "100%")
+    GUI.Chat.Main.Private:show()
+    --
+    GUI.Chat:setTitle("Chat [Private]")
+  end
+  --
+  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -5354,7 +5411,9 @@ end
 --
 function ui.fLog(text)
   text = "\n&lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:30,24,24&gt;"..text.."\n"
-  GUI.PrivateChat.Main.Console:decho(text)
+  GUI.Chat.Main.All:decho(text)
+  GUI.Chat.Main.Public:decho(text)
+  GUI.Chat.Main.Private:decho(text)
   ui.lastFromPrivate = ""
 end
 --
@@ -5724,6 +5783,7 @@ function ui.fAddMain(sender, CSS_Border, CSS_Main)
       width = "100%-8",
       height = "100%-28",
     }, sender)
+    sender.Border:enableClickthrough()
     sender.Border:setStyleSheet(CSS_Border);
     
     sender.Main = Geyser.Label:new2({
@@ -5733,6 +5793,7 @@ function ui.fAddMain(sender, CSS_Border, CSS_Main)
       width = "100%-10",
       height = "100%-10",
     }, sender.Border)
+    sender.Main:enableClickthrough()
     sender.Main:setStyleSheet(CSS_Main);
   end
 end
@@ -5761,35 +5822,25 @@ end
 -- Resizing containers
 function ui.fFinishedRepositioning(eventName, containerName)
   local containers = {
-    ["GUI.Affect"] = GUI.Affect,
+    ["GUI.Affects"] = GUI.Affects,
     ["GUI.AliasButtons"] = GUI.AliasButtons,
+    ["GUI.Chat"] = GUI.Chat,
     ["GUI.Equipment"] = GUI.Equipment,
     ["GUI.Group"] = GUI.Group,
     ["GUI.Help"] = GUI.Help,
     ["GUI.Inventory"] = GUI.Inventory,
-    ["GUI.Room"] = GUI.Room,
     ["GUI.Mapper"] = GUI.Mapper,
     ["GUI.Opponent"] = GUI.Opponent,
-    ["GUI.PrivateChat"] = GUI.PrivateChat,
     ["GUI.Player"] = GUI.Player,
-    ["GUI.PublicChat"] = GUI.PublicChat,
+    ["GUI.Room"] = GUI.Room,
     ["GUI.TargetButtons"] = GUI.TargetButtons,
   }
   --
   local fUpdateFunction = {
-    ["GUI.Affect"] = ui.fUpdateAffects,
-    --["GUI.AliasButtons"] = GUI.AliasButtons,
-    --["GUI.Equipment"] = GUI.Equipment,
+    ["GUI.Affects"] = ui.fUpdateAffects,
     ["GUI.Group"] = ui.fUpdateGroup,
-    --["GUI.Help"] = GUI.Help,
-    --["GUI.Inventory"] = GUI.Inventory,
-    --["GUI.Room"] = GUI.Room,
-    --["GUI.Mapper"] = GUI.Mapper,
     ["GUI.Opponent"] = ui.fUpdateOpponent,
-    --["GUI.PrivateChat"] = GUI.PrivateChat,
     ["GUI.Player"] = ui.fUpdatePlayer,
-    --["GUI.PublicChat"] = GUI.PublicChat,
-    --["GUI.TargetButtons"] = GUI.TargetButtons,
   }
   --
   if (containers[containerName]) then
@@ -5800,6 +5851,48 @@ function ui.fFinishedRepositioning(eventName, containerName)
   if (fUpdateFunction[containerName]~=nil) then
     fUpdateFunction[containerName]()
   end
+end
+--
+function switchTransparent(sender, mode)
+  if (mode) then
+    sender.adjLabelstyle = GUI.CSS.AC
+    sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
+    sender.Border:setStyleSheet(GUI.CSS.Border);
+    --sender.Main:setStyleSheet(GUI.CSS.Main);
+    --
+    return false
+  else
+    sender.adjLabelstyle = GUI.CSS.ACTransparent
+    sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
+    sender.Border:setStyleSheet(GUI.CSS.BorderTransparent);
+    --sender.Main:setStyleSheet(GUI.CSS.AC_invisible);
+    --
+    return true
+  end
+end
+--
+function ui.fOptionButton(buttonName)
+  -- Aliases Buttons
+  if (buttonName == "a") or (buttonName == "b" ) or (buttonName == "c" ) then
+    ui.parameters.page = buttonName;
+    ui.fUpdateAllAliasButton()
+  --
+  -- Chat buttons
+  elseif (buttonName == "type") then
+    if (ui.parameters.widgets.chat.type == "all") then
+      ui.parameters.widgets.chat.type = "Public"
+    elseif (ui.parameters.widgets.chat.type == "Public") then
+      ui.parameters.widgets.chat.type = "Private"
+    else
+      ui.parameters.widgets.chat.type = "all"
+    end
+    --
+    GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
+    ui.fUpdateChat()
+  --
+  elseif (buttonName == "split") then
+  end
+  echo(buttonName.."\n")
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -5936,12 +6029,11 @@ end</script>
 function ui.fUpdateGroup()
   -- Show 10 members max
   local totalMember = 0
-  local visibleMember = 0;
   local wndH = GUI.Group.Main:get_height();
   local wndW = GUI.Group.Main:get_width();
   local memberH = 50;
   local memberW = 100;
-  local nCol, nRow, i, mod
+  local nCol, nRow
   --
   ui.fDebug("[call] ui.fUpdateGroup()")
   --
@@ -5952,7 +6044,7 @@ function ui.fUpdateGroup()
     local leader = math.random(0, totalMember)
     for member=1, totalMember do
       ui.group[member] = {
-        name     = "menber_"..member,
+        name     = "Player "..member,
         isLeader = (member == leader),
         hp       = math.random(0, 100),
         maxhp    = 100,
@@ -6003,45 +6095,32 @@ function ui.fUpdateGroup()
     memberW = (wndW-5) / 2;
   end
   --
-  i = 0;
-  for c = 1, nCol do
-    if (c == 2) then
-      if (nRow * 2 &gt;= totalMember) then
-        nRow = totalMember - nRow
-      end
-    end
+  local c = 1;
+  local r = 1;
+  for i = 1, totalMember do
+    mod = i % 10
     --
-    for r = 1, nRow do
-      i = i + 1; 
-      mod = i % 10
-      --
-      if (i &gt; totalMember) then
-        GUI.Group.Main["g"..mod]:hide();
-        --
-        ui.fAssignTargetButton("g"..mod, nil)
-      else
-        GUI.Group.Main["g"..mod]:resize(memberW, memberH)
-        GUI.Group.Main["g"..mod]:move((c-1)*(memberW+5), (r-1)*(memberH+5))
-        --
-        GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, ui.group[i].hp.."/"..ui.group[i].maxhp.." "..ansi2string(ui.group[i].name))
-        GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
-        GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
-        --
-        --if (ui.group[i].isLeader) then
-        --  GUI.Group.Main["g"..mod].Gem:show()
-        --else
-        --  GUI.Group.Main["g"..mod].Gem:hide()
-        --end
-        --
-        GUI.Group.Main["g"..mod]:show();
-        ui.fAssignTargetButton("g"..mod, ui.group[i].name)
-        visibleMember = i;
-      end
+    GUI.Group.Main["g"..mod]:resize(memberW, memberH)
+    GUI.Group.Main["g"..mod]:move((c-1)*(memberW+5), (r-1)*(memberH+5))
+    --
+    GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(ui.group[i].name))
+    --
+    GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
+    GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
+    GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
+    --
+    GUI.Group.Main["g"..mod]:show();
+    ui.fAssignTargetButton("g"..mod, ui.group[i].name)
+    --
+    r = r + 1
+    if (r &gt; nRow) then
+      r = 1;
+      c = c + 1
     end
   end
   --
-  for g = visibleMember+1, 10 do
-    mod = g % 10
+  for i = totalMember+1, 10 do
+    local mod = i % 10
     GUI.Group.Main["g"..mod]:hide()
     ui.fAssignTargetButton("g"..mod, nil)
   end
@@ -7173,33 +7252,37 @@ function ui.fUpdateOpponent()
   -- Diff. hp
   hpGaugeWidthDif = GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
+    local x, y, w, h, txt, CSS
+    --
     if (hpGaugeWidthDif &lt; 0) then
-      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - 3,
-                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
-      GUI.Opponent.Main.Health.dif:resize(-hpGaugeWidthDif,
-                                          GUI.Opponent.Main.Health.front:get_height())
-      --
-      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeFront..[[
+      x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - 3
+      y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y()
+      w = -hpGaugeWidthDif
+      h = GUI.Opponent.Main.Health.front:get_height()
+      txt = "- -"
+      CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(255, 0, 0, 0.8);
         background-color: rgba(255, 0, 0, 0.4);
-      ]])
-      --
-      GUI.Opponent.Main.Health.dif:echo("--")
-    elseif (hpGaugeWidthDif &gt; 0) then
-      GUI.Opponent.Main.Health.dif:move(GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif,
-                                        GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y())
-      GUI.Opponent.Main.Health.dif:resize(hpGaugeWidthDif,
-                                          GUI.Opponent.Main.Health.front:get_height())
-      --
-      GUI.Opponent.Main.Health.dif:setStyleSheet(GUI.CSS.GaugeFront..[[
+      ]]
+    else
+      x = GUI.Opponent.Main.Health.front:get_x() - GUI.Opponent.Main:get_x() + GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif
+      y = GUI.Opponent.Main.Health.front:get_y() - GUI.Opponent.Main:get_y()
+      w = hpGaugeWidthDif
+      h = GUI.Opponent.Main.Health.front:get_height()
+      txt = "++"
+      CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(0, 255, 0, 0.8);
         background-color: rgba(0, 255, 0, 0.4);
-      ]])
-      --
-      GUI.Opponent.Main.Health.dif:echo("++")
+      ]]
     end
+    --
+    GUI.Opponent.Main.Health.dif:move(x, y);
+    GUI.Opponent.Main.Health.dif:resize(w, h)
+    GUI.Opponent.Main.Health.dif:echo(txt)
+    GUI.Opponent.Main.Health.dif:setStyleSheet(CSS)
+    --
     ui.fDifTimerOpponent(2)
   end
   --
@@ -7241,8 +7324,22 @@ end</script>
 function ui.fGetPreDefinitedParameters()
   return {
     widgets = {
+      affects = {
+        transparent = false,
+      },
+      aliasButton ={
+        transparent = false,
+      },
+      chat = {
+        type = "all",
+        split = false,    
+        fontSize = 8,
+      },
       equipment = {
         fontSize = 8,
+      },
+      group = {
+        transparent = false,
       },
       help = {
         fontSize = 8,
@@ -7253,20 +7350,20 @@ function ui.fGetPreDefinitedParameters()
       keybind = {
         fontSize = 6,
       },
+      opponent = {
+        transparent = false,
+      },
       overland = {
         fontSize = 8,
       },
-      privateChat = {
-        fontSize = 8,
-      },
-      publicChat = {
-        fontSize = 8,
+      player = {
+        transparent = false,
       },
       room = {
         fontSize = 7,
       },
     },
-    page = "a"
+    page = "a",
   }
 end
 --
@@ -8005,13 +8102,10 @@ function ui.fRefreshTargetButton(button)
         ]]
         bgColor      = "150, 0, 0, 0.4"
         bgColorHover = "150, 0, 0, 1"
-      --elseif (type == "o") then
-      --  CCS = GUI.CSS.BorderPlayer;
-      --  bgColor      = "150, 0, 0, 0.4"
-      --  bgColorHover = "150, 0, 0, 1"
+      --
       elseif (type == "t") then
         GUI.TargetButtons.Main[button]:echo("&lt;center&gt;"..target)
-        CCS = GUI.CSS.Target;
+        CCS = GUI.CSS.Button;
         bgColor      = "150, 0, 0, 0.4"
         bgColorHover = "150, 0, 0, 1"
       end
@@ -8276,9 +8370,9 @@ end</script>
 					<packageName></packageName>
 					<script>function ui.fInitAffectsWidget()
   --
-  -- Alias buttons 
-  GUI.Affect = Adjustable.Container:new2({
-    name = "GUI.Affect",
+  -- Affects
+  GUI.Affects = Adjustable.Container:new2({
+    name = "GUI.Affects",
     x = 0,
     y = 250,
     width = 300,
@@ -8290,24 +8384,19 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
-  GUI.Affect:changeMenuStyle ("dark")
-  GUI.Affect:newCustomItem("Invisible border", 
-  function(self) 
-    self.adjLabelstyle = GUI.CSS.AC_invisible
-    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
-    self.Border:setStyleSheet(GUI.CSS.AC_invisible);
-    self.Main:setStyleSheet(GUI.CSS.AC_invisible); 
-  end)
-  GUI.Affect:newCustomItem("Ripristina", 
-  function(self) 
-    self.adjLabelstyle = GUI.CSS.AC
-    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
-    self.Border:setStyleSheet(GUI.CSS.Border);
-    self.Main:setStyleSheet(GUI.CSS.Main);
-  end)
+  GUI.Affects:changeMenuStyle("dark")
   --
   -- Add Border and Main
-  ui.fAddMain(GUI.Affect, GUI.CSS.Border, GUI.CSS.Main)
+  ui.fAddMain(GUI.Affects, GUI.CSS.Border, GUI.CSS.Main)
+  --
+  -- Set transparent
+  switchTransparent(GUI.Affects, not ui.parameters.widgets.affects.transparent)
+  --
+  -- "Transparent" menu item
+  GUI.Affects:newCustomItem("Transparent", function(self) 
+                                             ui.parameters.widgets.affects.transparent = switchTransparent(self, ui.parameters.widgets.affects.transparent)
+                                             ui.fSaveFileParameters()
+                                           end)
   --
   -- 20x Affects
   local i
@@ -8321,7 +8410,7 @@ end</script>
       y = 30*row,
       width = 100,
       height = 28,
-    }, GUI.Affect.Main)
+    }, GUI.Affects.Main)
     GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
     --
     -- Dispel Resistance
@@ -8376,17 +8465,17 @@ end</script>
   end
   --
   -- Wrapping function
-  local Minimize = GUI.Affect.minimize
-  local Restore = GUI.Affect.restore
+  local Minimize = GUI.Affects.minimize
+  local Restore = GUI.Affects.restore
   --
-  function GUI.Affect:minimize(...)
-    GUI.Affect.Main:hide()
-    return Minimize(GUI.Affect)
+  function GUI.Affects:minimize(...)
+    GUI.Affects.Main:hide()
+    return Minimize(GUI.Affects)
   end
   --
-  function GUI.Affect:restore(...)
-    GUI.Affect.Main:show()
-    return Restore(GUI.Affect)
+  function GUI.Affects:restore(...)
+    GUI.Affects.Main:show()
+    return Restore(GUI.Affects)
   end
 end</script>
 					<eventHandlerList />
@@ -8410,62 +8499,68 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.AliasButtons:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.AliasButtons, GUI.CSS.Border, GUI.CSS.Main)
   --
-  -- Navigator box
-  GUI.AliasButtons.Main.Navigator = Geyser.Label:new2({
-    name = "GUI.AliasButtons.Main.Navigator",
-    x = 0, 
-    y = 0,
-    width = 25,
-    height = "100%",
-    h_policy = Geyser.Fixed,
-  },GUI.AliasButtons.Main)
+  -- Set transparent
+  switchTransparent(GUI.AliasButtons, not ui.parameters.widgets.aliasButton.transparent)
   --
-  -- Up button
-  GUI.AliasButtons.Main.Navigator.Up = Geyser.Label:new2({
-    name = "GUI.AliasButtons.Main.Navigator.Up",
-    x = 0, 
-    y = 0,
-    width = "100%",
-    height = 25,
-    v_policy = Geyser.Fixed,
-  },GUI.AliasButtons.Main.Navigator)
-  GUI.AliasButtons.Main.Navigator.Up:setStyleSheet(GUI.CSS.ArrowUp);
-  GUI.AliasButtons.Main.Navigator.Up:setClickCallback("ui.fIncraseButtonsPage")
+  -- "Transparent" menu item
+  GUI.AliasButtons:newCustomItem("Transparent", function(self) 
+                                                  ui.parameters.widgets.aliasButton.transparent = switchTransparent(self, ui.parameters.widgets.aliasButton.transparent)
+                                                  ui.fSaveFileParameters()
+                                                end)
   --
-  -- Selected button page
-  GUI.AliasButtons.Main.Navigator.Page = Geyser.Label:new2({
-    name = "GUI.AliasButtons.Main.Navigator.Page",
-    x = 0, 
-    y = 25,
-    width = 25,
-    height = "100%-50",
-  },GUI.AliasButtons.Main.Navigator)
-  GUI.AliasButtons.Main.Navigator.Page:setColor(0, 0, 0, 0)
+  -- Button "A"
+  GUI.AliasButtons.Button_a = Geyser.Label:new2({
+    name = "GUI.AliasButtons.Button_a",
+    x = -102, 
+    y = 4,
+    width = 20,
+    height = 12,
+  },GUI.AliasButtons)
+  GUI.AliasButtons.Button_a:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_a:setFontSize(6)
+  GUI.AliasButtons.Button_a:echo("&lt;center&gt;a");
+  GUI.AliasButtons.Button_a:setClickCallback("ui.fOptionButton", "a")
   --
-  -- Down button
-  GUI.AliasButtons.Main.Navigator.Down = Geyser.Label:new2({
-    name = "GUI.AliasButtons.Main.Navigator.Down",
-    x = 0, 
-    y = "100%-25",
-    width = "100%",
-    height = 25,
-    v_policy = Geyser.Fixed,
-  },GUI.AliasButtons.Main.Navigator)
-  GUI.AliasButtons.Main.Navigator.Down:setStyleSheet(GUI.CSS.ArrowDown);
-  GUI.AliasButtons.Main.Navigator.Down:setClickCallback("ui.fDecraseButtonsPage")
+  -- Button "B"
+  GUI.AliasButtons.Button_b = Geyser.Label:new2({
+    name = "GUI.AliasButtons.Button_b",
+    x = -78, 
+    y = 4,
+    width = 20,
+    height = 12,
+  },GUI.AliasButtons)
+  GUI.AliasButtons.Button_b:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_b:setFontSize(6)
+  GUI.AliasButtons.Button_b:echo("&lt;center&gt;b");
+  GUI.AliasButtons.Button_b:setClickCallback("ui.fOptionButton", "b")
+  --
+  -- Button "C"
+  GUI.AliasButtons.Button_c = Geyser.Label:new2({
+    name = "GUI.AliasButtons.Button_c",
+    x = -54, 
+    y = 4,
+    width = 20,
+    height = 12,
+  },GUI.AliasButtons)
+  GUI.AliasButtons.Button_c:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_c:setFontSize(6)
+  GUI.AliasButtons.Button_c:echo("&lt;center&gt;c");
+  GUI.AliasButtons.Button_c:setClickCallback("ui.fOptionButton", "c")
   --
   -- Alias Buttons Box
   GUI.AliasButtons.Main.CButtons = GUI.CButtons or Geyser.Label:new({
     name = "GUI.AliasButtons.Main.CButtons",
-    x = 25, 
+    x = 0, 
     y = 0,
-    width = "100%-25",
+    width = "100%",
     height = "100%",
   },GUI.AliasButtons.Main)
+  GUI.AliasButtons.Main.CButtons:setStyleSheet([[background: transparent;]]);
   --
   -- Buttons
   for order=1,10 do
@@ -8480,6 +8575,7 @@ end</script>
       height = "100%",
     },GUI.AliasButtons.Main.CButtons)
     GUI.AliasButtons.Main.CButtons["Custom"..i]:setClickCallback("ui.fClickAliasButton", i, nil)
+    --
     -- Icon
     GUI.AliasButtons.Main.CButtons["Custom"..i].icon = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".icon",
@@ -8494,22 +8590,22 @@ end</script>
     -- Index
     GUI.AliasButtons.Main.CButtons["Custom"..i].index = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".index",
-      x = 10, 
-      y = 9,
+      x = 5, 
+      y = 1,
       width = "15",
       height = "15",
     }, GUI.AliasButtons.Main.CButtons["Custom"..i])
     GUI.AliasButtons.Main.CButtons["Custom"..i].index:enableClickthrough()
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:setFontSize(6)
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:echo("t"..i.."")
+    GUI.AliasButtons.Main.CButtons["Custom"..i].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
     GUI.AliasButtons.Main.CButtons["Custom"..i].index:setStyleSheet(GUI.CSS.Keybind);
+    GUI.AliasButtons.Main.CButtons["Custom"..i].index:echo("")
     --
     -- Keybid
     GUI.AliasButtons.Main.CButtons["Custom"..i].keybind = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".keybind",
-      x = 10, 
-      y = -21,
-      width = -11,
+      x = 5, 
+      y = -15,
+      width = -10,
       height = 15,
     }, GUI.AliasButtons.Main.CButtons["Custom"..i])
     GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:enableClickthrough()
@@ -8534,6 +8630,114 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
+					<name>Chat Widget</name>
+					<packageName></packageName>
+					<script>function ui.fInitChatWidget()
+  --
+  -- Private messages
+  GUI.Chat = Adjustable.Container:new2({
+    name = "GUI.Chat",
+    x = 1240,
+    y = 0,
+    width = 300,
+    height = 265,
+    titleText ="Canale privato",
+    titleTxtColor = "orange",
+    buttonsize = 12,
+    buttonFontSize = 5,
+    adjLabelstyle = GUI.CSS.AC, 
+    buttonstyle = GUI.CSS.ACButtons,
+  })
+  GUI.Chat:changeMenuStyle("dark")
+  --
+  -- Add Border and Main
+  ui.fAddMain(GUI.Chat, GUI.CSS.Border, GUI.CSS.Main)
+  --
+  -- Button "Split"
+  GUI.Chat.Button_split = Geyser.Label:new2({
+    name = "GUI.Chat.Button_split",
+    x = -118, 
+    y = 4,
+    width = 40,
+    height = 12,
+  },GUI.Chat)
+  GUI.Chat.Button_split:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.Chat.Button_split:setFontSize(6)
+  GUI.Chat.Button_split:echo("&lt;center&gt;Split");
+  GUI.Chat.Button_split:setClickCallback("ui.fButtonSplit")
+  --
+  -- Button "Type"
+  GUI.Chat.Button_type = Geyser.Label:new2({
+    name = "GUI.Chat.Button_type",
+    x = -74, 
+    y = 4,
+    width = 40,
+    height = 12,
+  },GUI.Chat)
+  GUI.Chat.Button_type:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.Chat.Button_type:setFontSize(6)
+  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
+  GUI.Chat.Button_type:setClickCallback("ui.fButtonType")
+  --
+  -- Console "All"
+  GUI.Chat.Main.All = Geyser.MiniConsole:new2({
+    name = 'GUI.Chat.Main.All',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.All:setColor(30, 24, 24)
+  GUI.Chat.Main.All:setBgColor(30, 24, 24)
+  GUI.Chat.Main.All:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Console "Public"
+  GUI.Chat.Main.Public = Geyser.MiniConsole:new2({
+    name = 'GUI.Chat.Main.Public',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.Public:setColor(30, 24, 24)
+  GUI.Chat.Main.Public:setBgColor(30, 24, 24)
+  GUI.Chat.Main.Public:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Console "Private"
+  GUI.Chat.Main.Private = Geyser.MiniConsole:new2({
+    name = 'GUI.Chat.Main.Private',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.Private:setColor(30, 24, 24)
+  GUI.Chat.Main.Private:setBgColor(30, 24, 24)
+  GUI.Chat.Main.Private:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Wrapping function
+  local Minimize = GUI.Chat.minimize
+  local Restore = GUI.Chat.restore
+  --
+  function GUI.Chat:minimize(...)
+    GUI.Chat.Main:hide()
+    return Minimize(GUI.Chat)
+  end
+  --
+  function GUI.Chat:restore(...)
+    GUI.Chat.Main:show()
+    return Restore(GUI.Chat)
+  end
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
 					<name>Equipment Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitEquipmentWidget()
@@ -8552,6 +8756,7 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Equipment:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Equipment, GUI.CSS.Border, GUI.CSS.Main)
@@ -8605,24 +8810,19 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
-  GUI.Group:changeMenuStyle ("dark")
-  GUI.Group:newCustomItem("Invisible border", 
-  function(self) 
-    self.adjLabelstyle = GUI.CSS.AC_invisible
-    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
-    self.Border:setStyleSheet(GUI.CSS.AC_invisible);
-    self.Main:setStyleSheet(GUI.CSS.AC_invisible);
-  end)
-  GUI.Group:newCustomItem("Ripristina", 
-  function(self) 
-    self.adjLabelstyle = GUI.CSS.AC
-    self.adjLabel:setStyleSheet(self.adjLabelstyle) 
-    self.Border:setStyleSheet(GUI.CSS.Border);
-    self.Main:setStyleSheet(GUI.CSS.Main);
-  end)
+  GUI.Group:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Group, GUI.CSS.Border, GUI.CSS.Main)
+  --
+  -- Set transparent
+  switchTransparent(GUI.Group, not ui.parameters.widgets.group.transparent)
+  --
+  -- "Transparent" menu item
+  GUI.Group:newCustomItem("Transparent", function(self) 
+                                           ui.parameters.widgets.group.transparent = switchTransparent(self, ui.parameters.widgets.group.transparent)
+                                           ui.fSaveFileParameters()
+                                         end)
   --
   local i
   for i=1, 10 do
@@ -8644,8 +8844,21 @@ end</script>
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].index:enableClickthrough()
     GUI.Group.Main["g"..mod].index:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main["g"..mod].index:setFontSize(6)
+    GUI.Group.Main["g"..mod].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
     GUI.Group.Main["g"..mod].index:echo("g"..mod.."")
+    --
+    -- Index
+    GUI.Group.Main["g"..mod].Member = Geyser.Label:new2({
+      name = "GUI.Group.Main.g"..mod..".Member",
+      x = 22, 
+      y = 0,
+      width = "100%-44",
+      height = 10,
+    }, GUI.Group.Main["g"..mod])
+    GUI.Group.Main["g"..mod].Member:enableClickthrough()
+    GUI.Group.Main["g"..mod].Member:setStyleSheet(GUI.CSS.Keybind);
+    GUI.Group.Main["g"..mod].Member:setFontSize(ui.parameters.widgets.keybind.fontSize)
+    GUI.Group.Main["g"..mod].Member:echo("")
     --
     -- Member Health Gauges
     GUI.Group.Main["g"..mod].Health = Geyser.Gauge:new2({
@@ -8653,7 +8866,7 @@ end</script>
       x = 2,
       y = 11,
       width = -2,
-      height = 20,
+      height = 15,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Health:setValue(0, 100)
     GUI.Group.Main["g"..mod].Health:enableClickthrough()
@@ -8672,7 +8885,7 @@ end</script>
     GUI.Group.Main["g"..mod].Mana = Geyser.Gauge:new2({
       name = "GUI.Group.Main.g"..mod..".Mana",
       x = 2,
-      y = 30,
+      y = 27,
       width = -2,
       height = 6,
     }, GUI.Group.Main["g"..mod])
@@ -8680,7 +8893,7 @@ end</script>
     GUI.Group.Main["g"..mod].Mana:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Mana.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-      background-color: rgba(0, 0, 150, .3);
+      background-color: rgba(0, 0, 250, .3);
     ]])
     GUI.Group.Main["g"..mod].Mana.back:enableClickthrough()
     --
@@ -8693,7 +8906,7 @@ end</script>
     GUI.Group.Main["g"..mod].Stamina = Geyser.Gauge:new2({
       name = "GUI.g"..mod..".Stamina",
       x = 2,
-      y = 35,
+      y = 34,
       width = -2,
       height = 6,
     }, GUI.Group.Main["g"..mod])
@@ -8701,7 +8914,7 @@ end</script>
     GUI.Group.Main["g"..mod].Stamina:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-      background-color: rgba(0, 150, 0, .2);
+      background-color: rgba(0, 250, 0, .2);
     ]])
     GUI.Group.Main["g"..mod].Stamina.back:enableClickthrough()
     --
@@ -8709,17 +8922,6 @@ end</script>
       background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
     ]])
     GUI.Group.Main["g"..mod].Stamina.front:enableClickthrough()
-    --
-    -- Member gem
-    --GUI.Group.Main["g"..mod].Gem = Geyser.Label:new2({
-    --  name = "GUI.Group.Main.g"..mod..".Gem",
-    --  x = 0,
-    --  y = 0,
-    --  width = 28,
-    --  height = 28,
-    --}, GUI.Group.Main["g"..mod])
-    --GUI.Group.Main["g"..mod].Gem:setStyleSheet(GUI.CSS.GemBlue);
-    --GUI.Group.Main["g"..mod].Gem:enableClickthrough()
     --
     -- Keybid
     GUI.Group.Main["g"..mod].keybind = Geyser.Label:new2({
@@ -8770,6 +8972,7 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Help:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Help, GUI.CSS.Border, GUI.CSS.Main)
@@ -8823,6 +9026,7 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Inventory:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Inventory, GUI.CSS.Border, GUI.CSS.Main)
@@ -8876,6 +9080,7 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Mapper:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Mapper, GUI.CSS.Border, GUI.CSS.Main)
@@ -8938,6 +9143,22 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   });
+  GUI.Opponent:changeMenuStyle("dark")
+  --
+  -- Add Border and Main
+  ui.fAddMain(GUI.Opponent, GUI.CSS.Border, GUI.CSS.Main)
+  GUI.Opponent.Main:disableClickthrough()
+  --
+  -- Set transparent
+  switchTransparent(GUI.Opponent, not ui.parameters.widgets.opponent.transparent)
+  --
+  -- "Transparent" menu item
+  GUI.Opponent:newCustomItem("Transparent", function(self) 
+                                              ui.parameters.widgets.opponent.transparent = switchTransparent(self, ui.parameters.widgets.opponent.transparent)
+                                              ui.fSaveFileParameters()
+                                            end)
+  --
+  GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
   -- Opponent Level
   GUI.Opponent.Level = Geyser.Label:new2({
@@ -8950,20 +9171,6 @@ end</script>
   }, GUI.Opponent)
   GUI.Opponent.Level:setStyleSheet(GUI.CSS.Level);
   GUI.Opponent.Level:enableClickthrough()
-  --
-  --
-  --GUI.Opponent.Main = Geyser.Label:new2({
-  --  name = "GUI.Opponent.Main",
-  --  x = 3,
-  --  y = 25,
-  --  width = "100%-6",
-  --  height = "100%-28",
-  --}, GUI.Opponent)
-  --GUI.Opponent.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
-  --  background-color: rgba(77, 0, 0);
-  --]]);
-  ui.fAddMain(GUI.Opponent, GUI.CSS.Border, GUI.CSS.Main)
-  GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
   -- Opponent Health Gauges
   GUI.Opponent.Main.Health = Geyser.Gauge:new2({
@@ -8998,17 +9205,6 @@ end</script>
   GUI.Opponent.Main.Health.dif:setFontSize(5)
   GUI.Opponent.Main.Health.dif:hide()
   --
-  -- Opponent Gem
-  --GUI.Opponent.Main.Gem = Geyser.Label:new2({
-  --  name = "GUI.Opponent.Main.Gem",
-  --  x = 0,
-  --  y = 0,
-  --  width = 28,
-  --  height = 28,
-  --}, GUI.Opponent.Main)
-  --GUI.Opponent.Main.Gem:setStyleSheet(GUI.CSS.GemRed);
-  --GUI.Opponent.Main.Gem:enableClickthrough()
-  --
   -- Keybid
   GUI.Opponent.Main.keybind = Geyser.Label:new2({
     name = "GUI.Opponent.Main.keybind",
@@ -9037,59 +9233,6 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Pivate Chat Widget</name>
-					<packageName></packageName>
-					<script>function ui.fInitPrivateChatWidget()
-  --
-  -- Private messages
-  GUI.PrivateChat = Adjustable.Container:new2({
-    name = "GUI.PrivateChat",
-    x = 1240,
-    y = 0,
-    width = 300,
-    height = 265,
-    titleText ="Canale privato",
-    titleTxtColor = "orange",
-    buttonsize = 12,
-    buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
-  })
-  --
-  -- Add Border and Main
-  ui.fAddMain(GUI.PrivateChat, GUI.CSS.Border, GUI.CSS.Main)
-  --
-  -- Console
-  GUI.PrivateChat.Main.Console = Geyser.MiniConsole:new2({
-    name = 'GUI.PrivateChat.Main.Console',
-    x=0,
-    y=0,
-    width = "100%", 
-    height = "100%",
-    autoWrap = true,
-    scrollBar = true,
-  }, GUI.PrivateChat.Main)
-  GUI.PrivateChat.Main.Console:setColor(30, 24, 24)
-  GUI.PrivateChat.Main.Console:setBgColor(30, 24, 24)
-  GUI.PrivateChat.Main.Console:setFontSize(ui.parameters.widgets.privateChat.fontSize)
-  --
-  -- Wrapping function
-  local Minimize = GUI.PrivateChat.minimize
-  local Restore = GUI.PrivateChat.restore
-  --
-  function GUI.PrivateChat:minimize(...)
-    GUI.PrivateChat.Main:hide()
-    return Minimize(GUI.PrivateChat)
-  end
-  --
-  function GUI.PrivateChat:restore(...)
-    GUI.PrivateChat.Main:show()
-    return Restore(GUI.PrivateChat)
-  end
-end</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
 					<name>Player Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitPlayerWidget()
@@ -9108,6 +9251,19 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Player:changeMenuStyle("dark")
+  --
+  -- Add Border and Main
+  ui.fAddMain(GUI.Player, GUI.CSS.Border, GUI.CSS.Main)
+  --
+  -- Set transparent
+  switchTransparent(GUI.Player, not ui.parameters.widgets.player.transparent)
+  --
+  -- "Transparent" menu item
+  GUI.Player:newCustomItem("Transparent", function(self) 
+                                            ui.parameters.widgets.player.transparent = switchTransparent(self, ui.parameters.widgets.player.transparent)
+                                            ui.fSaveFileParameters()
+                                          end)
   --
   -- Player Level
   GUI.Player.Level = Geyser.Label:new2({
@@ -9120,19 +9276,6 @@ end</script>
   }, GUI.Player)
   GUI.Player.Level:setStyleSheet(GUI.CSS.Level);
   GUI.Player.Level:enableClickthrough()
-  --
-  -- Main
-  --GUI.Player.Main = Geyser.Label:new2({
-  --  name = "GUI.Player.Main",
-  --  x = 3,
-  --  y = 25,
-  --  width = "100%-6",
-  --  height = "100%-28",
-  --}, GUI.Player)
-  --GUI.Player.Main:setStyleSheet(GUI.CSS.BorderPlayer..[[
-  --  background-color: rgba(30,24,24);
-  --]]);
-  ui.fAddMain(GUI.Player, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Experience 
   GUI.Player.Main.Experience = Geyser.Gauge:new2({
@@ -9158,9 +9301,9 @@ end</script>
   GUI.Player.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Health",
     x = 2,
-    y = 5,
+    y = 7,
     width = -2,
-    height = "40%-8",
+    height = "40%-14",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -9188,7 +9331,7 @@ end</script>
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Tick",
     x = 2,
-    y = "40%-5",
+    y = "40%-7",
     width = -2,
     height = 6,
   }, GUI.Player.Main)
@@ -9208,12 +9351,12 @@ end</script>
     x = 2,
     y = "40%",
     width = -2,
-    height = "20%+1s",
+    height = "20%-1",
   },GUI.Player.Main)
   GUI.Player.Main.Mana:setValue(0, 100)
   --
   GUI.Player.Main.Mana.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(0, 0, 150, .3);
+    background-color: rgba(0, 0, 250, .3);
   ]])
   --
   GUI.Player.Main.Mana.front:setStyleSheet(GUI.CSS.GaugeFront..[[
@@ -9227,12 +9370,12 @@ end</script>
     x = 2,
     y = "60%",
     width = -2,
-    height = "20%+1",
+    height = "20%-1",
   },GUI.Player.Main)
   GUI.Player.Main.Stamina:setValue(0, 100)
   --
   GUI.Player.Main.Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(0, 150, 0, .2);
+    background-color: rgba(0, 250, 0, .2);
   ]])
   --
   GUI.Player.Main.Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
@@ -9246,7 +9389,7 @@ end</script>
     x = 2,
     y = "80%",
     width = -2,
-    height = "20%+1",
+    height = "20%-1",
   },GUI.Player.Main)
   GUI.Player.Main.Power:setValue(0, 100)
   --
@@ -9286,59 +9429,6 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Public Chat Widget</name>
-					<packageName></packageName>
-					<script>function ui.fInitPublicChatWidget()
-  --
-  -- Public messages
-  GUI.PublicChat = Adjustable.Container:new2({
-    name = "GUI.PublicChat",
-    x = 1240,
-    y = 275,
-    width = 300,
-    height = 265,
-    titleText ="Canale pubblico",
-    titleTxtColor = "orange",
-    buttonsize = 12,
-    buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
-  })
-  --
-  -- Add Border and Main
-  ui.fAddMain(GUI.PublicChat, GUI.CSS.Border, GUI.CSS.Main)
-  --
-  -- Console
-  GUI.PublicChat.Main.Console = Geyser.MiniConsole:new2({
-    name = 'GUI.PublicChat.Main.Console',
-    x=0,
-    y=0,
-    width = "100%", 
-    height = "100%",
-    autoWrap = true,
-    scrollBar = true,
-  }, GUI.PublicChat.Main)
-  GUI.PublicChat.Main.Console:setColor(30, 24, 24)
-  GUI.PublicChat.Main.Console:setBgColor(30, 24, 24)
-  GUI.PublicChat.Main.Console:setFontSize(ui.parameters.widgets.publicChat.fontSize)
-  --
-  -- Wrapping function
-  local Minimize = GUI.PublicChat.minimize
-  local Restore = GUI.PublicChat.restore
-  --
-  function GUI.PublicChat:minimize(...)
-    GUI.PublicChat.Main:hide()
-    return Minimize(GUI.PublicChat)
-  end
-  --
-  function GUI.PublicChat:restore(...)
-    GUI.PublicChat.Main:show()
-    return Restore(GUI.PublicChat)
-  end
-end</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
 					<name>Room Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitRoomWidget()
@@ -9350,13 +9440,14 @@ end</script>
     y = 400,
     width = 300,
     height = 260,
-    titleText ="Mappa",
+    titleText ="Stanza",
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.Room:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Room, GUI.CSS.Border, GUI.CSS.Main)
@@ -9410,6 +9501,7 @@ end</script>
     adjLabelstyle = GUI.CSS.AC, 
     buttonstyle = GUI.CSS.ACButtons,
   })
+  GUI.TargetButtons:changeMenuStyle("dark")
   --
   -- Add Border and Main
   ui.fAddMain(GUI.TargetButtons, GUI.CSS.Border, GUI.CSS.Main)
@@ -9460,10 +9552,10 @@ end</script>
       width = "15",
       height = "15",
     }, GUI.TargetButtons.Main["t"..i])
-    GUI.TargetButtons.Main["t"..i].index:setFontSize(6)
-    GUI.TargetButtons.Main["t"..i].index:echo("t"..i.."")
-    GUI.TargetButtons.Main["t"..i].index:setStyleSheet(GUI.CSS.Keybind);
     GUI.TargetButtons.Main["t"..i].index:enableClickthrough()
+    GUI.TargetButtons.Main["t"..i].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
+    GUI.TargetButtons.Main["t"..i].index:setStyleSheet(GUI.CSS.Keybind);
+    GUI.TargetButtons.Main["t"..i].index:echo("t"..i.."")
     --
     -- Keybid
     GUI.TargetButtons.Main["t"..i].keybind = Geyser.Label:new2({
@@ -9700,10 +9792,20 @@ GUI.CSS.AC = [[
 ]]
 --
 --
-GUI.CSS.AC_invisible = [[
-  border: none;
-  background: transparent;
-  padding: 2px;
+GUI.CSS.ACTransparent = [[
+  QWidget{
+    border: none;
+    background: transparent;
+    padding: 2px;
+  }
+  QWidget::hover{
+    border: 2px outset rgba(90, 72, 72, 0.7); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgba(25, 20, 20, 0.7);
+  }
 ]]
 --
 GUI.CSS.ACButtons = [[
@@ -9785,12 +9887,26 @@ GUI.CSS.Border = [[
   background-image: url("]]..ui.files.images.path..[[bgWidget.png")
 ]]
 --
+-- Border transparent
+GUI.CSS.BorderTransparent = [[
+  border: none;
+  background: transparent;
+  padding: 2px;
+]]
+--
 -- Group target buttons
 GUI.CSS.BorderPlayer = [[
   margin: 0;
   border: 6px solid transparent;
   border-image: url("]]..ui.files.images.path..[[bgPlayer.png") 6px stretch;
-  background-color: rgba(30,24,24);
+  background-color: rgb(30, 24, 24);
+]]
+--
+-- Target buttons
+GUI.CSS.Button = [[
+  border: 2px outset #aa8822;
+  border-radius: 5px 10px;
+  qproperty-wordWrap: true;
 ]]
 --
 -- Buttons Icon
@@ -9846,13 +9962,6 @@ GUI.CSS.Level = [[
 -- Widget Body
 GUI.CSS.Main = [[
   background: transparent;
-]]
---
--- Target buttons
-GUI.CSS.Target = [[
-  border: 2px outset #aa8822;
-  border-radius: 5px 10px;
-  qproperty-wordWrap: true;
 ]]</script>
 				<eventHandlerList />
 			</Script>
@@ -9885,7 +9994,7 @@ Comandi principali:
 Altri comandi:
   - &lt;command&gt;.&lt;/command&gt;/&lt;command&gt;..&lt;/command&gt;            - Integrazione &lt;link walk&gt;walk/speedwalk&lt;/link&gt;
   - &lt;command&gt;uic[olors]&lt;/command&gt;      - Lista &lt;link color&gt;colori&lt;/link&gt; disponibili per &lt;link highlight&gt;highlights&lt;/link&gt;
-  - &lt;command&gt;uisetf[ontsize]&lt;/command&gt; - Gestione &lt;link fontsize&gt;dimensione font&lt;/link&gt; dei widget
+  - &lt;command&gt;uif[ontsize]&lt;/command&gt;    - Gestione &lt;link fontsize&gt;dimensione font&lt;/link&gt; dei widget
   - &lt;command&gt;uiw[idget]&lt;/command&gt;      - Ripristino &lt;link widget&gt;widget&lt;/link&gt; chiusi
 
 Altri argomenti:
@@ -9991,9 +10100,9 @@ ui.help.fontsize = [[
 E' possibile cambiare la dimensione del font di alcuni widget dell'UI.
 
 &lt;white&gt;Utilizzo:&lt;reset&gt;
-  &lt;command&gt;uisetf[ontsize] &lt;nome_widget&gt; &lt;dimensione_font&gt;&lt;/command&gt;
+  &lt;command&gt;uif[ontsize] &lt;nome_widget&gt; &lt;dimensione_font&gt;&lt;/command&gt;
 
-I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;command&gt;all&lt;/command&gt; (per tutti contemporaneamente), &lt;command&gt;equipment&lt;/command&gt;, &lt;command&gt;help&lt;/command&gt;, &lt;command&gt;inventory&lt;/command&gt;, &lt;command&gt;map&lt;/command&gt;, &lt;command&gt;private&lt;/command&gt; o &lt;command&gt;public&lt;/command&gt;.
+I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;command&gt;all&lt;/command&gt; (per tutti contemporaneamente), &lt;command&gt;chat&lt;/command&gt;, &lt;command&gt;equipment&lt;/command&gt;, &lt;command&gt;help&lt;/command&gt;, &lt;command&gt;inventory&lt;/command&gt;, &lt;command&gt;map&lt;/command&gt;, o &lt;command&gt;room&lt;/command&gt;.
 
 Le &lt;command&gt;&lt;dimensione_font&gt;&lt;/command&gt; devono essere un valore compreso tra &lt;varValue&gt;1&lt;/varValue&gt; e &lt;varValue&gt;30&lt;/varValue&gt;.
 
@@ -10185,8 +10294,9 @@ ui.fUpdateOpponent()
 ui.fUpdateGroup()
 --
 -- Private (Used as Log from ui.fLog())
-ui.fDebug("[init] Private Chat")
-ui.fInitPrivateChatWidget()
+ui.fDebug("[init] Chat")
+ui.fInitChatWidget()
+ui.fUpdateChat()
 --
 -- Player
 ui.fDebug("[init] Player")
@@ -10219,10 +10329,6 @@ ui.fInitInventoryWidget()
 -- Equipment
 ui.fDebug("[init] Equipment")
 ui.fInitEquipmentWidget()
---
--- Public
-ui.fDebug("[init] Public Chat")
-ui.fInitPublicChatWidget()
 --
 -- Help
 ui.fDebug("[init] Help")
