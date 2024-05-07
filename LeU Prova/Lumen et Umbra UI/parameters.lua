@@ -7,7 +7,7 @@ return {{[ [[enablePugno]] ] = true,[ [[page]] ] = [[a]],[ [[widgets]] ] = {2},}
 {[ [[transparent]] ] = true,},
 {[ [[fontSize]] ] = 8,},
 {[ [[transparent]] ] = true,},
-{[ [[type]] ] = [[all]],[ [[fontSize]] ] = 10,[ [[split]] ] = true,},
+{[ [[type]] ] = [[all]],[ [[fontSize]] ] = 10,[ [[split]] ] = false,},
 {[ [[fontSize]] ] = 8,},
 {[ [[transparent]] ] = false,},
 {[ [[fontSize]] ] = 12,},
