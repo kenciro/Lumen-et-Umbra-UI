@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>330</borderLeftWidth>
+			<borderLeftWidth>329</borderLeftWidth>
 			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
@@ -71,12 +71,14 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Entrance</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Doors</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Entrance</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2085,7 +2087,7 @@ else
   end
 end
 ui.fSaveFileAliases()
-ui.fUpdateAllAliasButton()
+ui.fUpdateAliasButton()
 </script>
 				<command></command>
 				<packageName></packageName>
@@ -2142,7 +2144,7 @@ else
   end
 end
 ui.fSaveFileAliases()
-ui.fUpdateAllAliasButton()</script>
+ui.fUpdateAliasButton()</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uib(?:u(?:t(?:t(?:o(?:n(?:s)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
@@ -2469,7 +2471,7 @@ else
 end
 --
 ui.fSaveFileAliases()
-ui.fUpdateAllAliasButton()
+ui.fUpdateAliasButton()
 --
 ui.fSaveFileTarges()
 ui.fUpdateAllTargetButton()
@@ -4269,9 +4271,16 @@ ver 0.1b
 					<packageName></packageName>
 					<script>--
 function ui.fUpdateAffects()
+  local distance = 2; 
+  local w_h = GUI.Affects.Main:get_height() - distance;
+  local w_w = GUI.Affects.Main:get_width() -  distance;
+  local h = distance + 28;
+  local w = distance + 100;
   local x = 0
   local y = 0
-  local i
+  local r = 1
+  local c = 1
+  local tot_r, tot_c, total
   local orderTable = {}
   --
   -- Pre defined affect 
@@ -4310,7 +4319,7 @@ function ui.fUpdateAffects()
   --
   -- Simulation (for debug)
   if (ui.enDebug &gt;= 2) then
-    for i=1, 20 do
+    for i=1, math.random(1, 30) do
       local name = "Affect "..i 
       --
       ui.affects[name] = {} 
@@ -4364,9 +4373,23 @@ function ui.fUpdateAffects()
                            end
                          end )
   --
-  i = 0;
-  for j, affect in ipairs(orderTable) do
-    if (i&lt;20) then
+  total = math.min(#orderTable, 20);
+  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+  tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  --
+  -- Recalc w if possible
+  if (w_w - (tot_c*w) &lt; w) then
+    w = w_w / tot_c
+  end
+  --
+  for i = 1, 20 do
+    --
+    -- Show if inside box
+    if (r &gt; tot_r) or (i &gt; total) then
+      GUI["AffectIcon"..i]:hide();
+    else
+      local affect = orderTable[i]
+      --
       if (table.contains(fastAffects, affect)) then
         ui.actFastAffects = ui.actFastAffects..fastAffects[affect];
       else
@@ -4375,8 +4398,6 @@ function ui.fUpdateAffects()
         local FGColor = "black";
         local shortName = nil
         local CCS = GUI.CSS.AffectText
-        --
-        i = i + 1
         --
         -- Pre-load icon, BG volor and short name form predefinited table (if exists)
         if table.contains(pre_defined_affects, affect) then
@@ -4428,6 +4449,7 @@ function ui.fUpdateAffects()
             BGColor = string.format("#%02X%02X%02X", R, G, B)
           end
         end
+        --
         CCS = CCS..[[
                 background-color: ]]..BGColor..[[;
               ]]
@@ -4441,29 +4463,28 @@ function ui.fUpdateAffects()
         -- Duration
         local durationColor = "green"
         --
-        if (ui.affects[affect].duration == 0) then
-          durationColor = "red"
-        elseif (ui.affects[affect].duration == 1) then
-          durationColor = "orange"
-        elseif  (ui.affects[affect].duration == 2) then
-          durationColor = "yellow"
-        end
-        --
+        -- Permanent
         if (ui.affects[affect].duration &lt; 0) then
-          --
-          -- Permanente
           durationColor = "white"
           ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
-        elseif (ui.affects[affect].isRound) then
-          --
-          -- In round
-          durationColor = "ansired"
-          ui.affects[affect].duration = ui.affects[affect].duration.."r"
         else
           --
-          -- In tick
-          ui.affects[affect].duration = ui.affects[affect].duration.."t"
+          if (ui.affects[affect].duration &lt; 1) then
+            durationColor = "red"
+          elseif (ui.affects[affect].duration &lt; 3) then
+            durationColor = "orange"
+          elseif  (ui.affects[affect].duration &lt; 5) then
+            durationColor = "yellow"
+          end
+          --
+          -- In round or  tick
+          if (ui.affects[affect].isRound) then
+            ui.affects[affect].duration = ui.affects[affect].duration.."r"
+          else
+            ui.affects[affect].duration = ui.affects[affect].duration.."t"
+          end
         end
+        --
         GUI["AffectIcon"..i].duration:setFgColor(durationColor)
         GUI["AffectIcon"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
         --
@@ -4492,28 +4513,16 @@ function ui.fUpdateAffects()
           GUI["AffectIcon"..i]:setToolTip(affect.."\n"..toolTip, 10)
         end
         --
-        -- Show if inside box
-        if (y&lt;=GUI.Affects.Main:get_height() - GUI["AffectIcon"..i]:get_height()) then
-          GUI["AffectIcon"..i]:move(x, y)
-          GUI["AffectIcon"..i]:show();
-        else
-          GUI["AffectIcon"..i]:hide();
-        end
+        GUI["AffectIcon"..i]:resize(w - distance, h - distance)
+        GUI["AffectIcon"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+        GUI["AffectIcon"..i]:show();
         --
-        if (x + (2 * GUI["AffectIcon"..i]:get_width()) + 2 &gt; GUI.Affects.Main:get_width()) then
-          x = 0
-          y = y + GUI["AffectIcon"..i]:get_height() + 3
-        else
-          x = x + GUI["AffectIcon"..i]:get_width() + 2
+        c = c + 1
+        if (c &gt; tot_c) then
+          c = 1;
+          r = r + 1
         end
       end
-    end
-  end
-  --
-  -- Hide not used affects
-  for i=i+1, 20 do
-    if (GUI["AffectIcon"..i]) then
-      GUI["AffectIcon"..i]:hide();
     end
   end
 end
@@ -4644,52 +4653,89 @@ function ui.fExecuteAliasButton(button)
   return alias
 end
 --
-function ui.fRefreshAliasButton(number)
-  local bgColor, bgColorHover
-  local title = ""
-  local keybind = ""
-  local button = ui.parameters.page..number
+function ui.fUpdateAliasButton()
+  local distance = 3; 
+  local w_h = GUI.AliasButtons.Main:get_height() - distance;
+  local w_w = GUI.AliasButtons.Main:get_width() -  distance;
+  local h = distance + 25
+  local w = distance + 80;
+  local x = 0
+  local y = 0
+  local r = 1
+  local c = 1
+  local tot_r, tot_c
+  local total = 10
   --
-  for alias in pairs(ui.aliases) do
-    if (ui.aliases[alias].button) and (ui.aliases[alias].button==button) then
-      title = alias
-      keybind = ui.aliases[alias].keybind or ""
-      break
-    end
+  ui.fDebug("[call] ui.fUpdateAliasButton()")
+  --
+  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+  tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  --
+  -- Recalc w if possible
+  if (tot_c &gt;= 10) or (w_w - (tot_c*w) &lt; w) then
+    w = w_w / tot_c
   end
-  if (ui.parameters.page == "a") then
-    bgColor = "75, 0, 0"
-    bgColorHover = "150, 0, 0"    
-  elseif (ui.parameters.page == "b") then
-    bgColor = "0, 75, 0"
-    bgColorHover = "0, 200, 0"
-  elseif (ui.parameters.page == "c") then
-    bgColor = "0, 0, 75"
-    bgColorHover = "0, 0, 150"
+  --
+  -- Recalc h if possible
+  if (tot_r &gt;= 10) or (w_h - (tot_r*h) &lt; h) then
+    h = w_h / tot_r
   end
   --
-  GUI.AliasButtons.Main.CButtons["Custom"..number].index:echo("&lt;center&gt;"..button)
-  --
-  GUI.AliasButtons.Main.CButtons["Custom"..number].icon:setStyleSheet(GUI.CSS.ButtonsIcon)
-  GUI.AliasButtons.Main.CButtons["Custom"..number].icon:echo("&lt;center&gt;"..title)
-  --
-  GUI.AliasButtons.Main.CButtons["Custom"..number].keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
-  --
-  GUI.AliasButtons.Main.CButtons["Custom"..number]:setStyleSheet([[
-    QLabel{
-      ]]..GUI.CSS.Button..[[
-      margin: 0px 2.5px 0px 2.5px;
-      background-color: rgb(]]..bgColor..[[);
-    }
-    QLabel::hover{
-      background-color: rgb(]]..bgColorHover..[[);
-    }
-  ]])
-end
---
-function ui.fUpdateAllAliasButton()
   for i = 0, 9 do
-    ui.fRefreshAliasButton(i)
+    if (r &gt; tot_r) then
+      GUI.AliasButtons.Main["Button"..i]:hide();
+    else
+      local bgColor, bgColorHover
+      local title = ""
+      local keybind = ""
+      local button = ui.parameters.page..i
+      --
+      for alias in pairs(ui.aliases) do
+        if (ui.aliases[alias].button) and (ui.aliases[alias].button==button) then
+          title = alias
+          keybind = ui.aliases[alias].keybind or ""
+          break
+        end
+      end
+      --
+      if (ui.parameters.page == "a") then
+        bgColor = "75, 0, 0"
+        bgColorHover = "150, 0, 0"    
+      elseif (ui.parameters.page == "b") then
+        bgColor = "0, 75, 0"
+        bgColorHover = "0, 200, 0"
+      elseif (ui.parameters.page == "c") then
+        bgColor = "0, 0, 75"
+        bgColorHover = "0, 0, 150"
+      end
+      --
+      GUI.AliasButtons.Main["Button"..i].index:echo("&lt;center&gt;"..i)
+      --
+      GUI.AliasButtons.Main["Button"..i].icon:setStyleSheet(GUI.CSS.ButtonsIcon)
+      GUI.AliasButtons.Main["Button"..i].icon:echo("&lt;center&gt;"..title)
+      --
+      GUI.AliasButtons.Main["Button"..i].keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
+      --
+      GUI.AliasButtons.Main["Button"..i]:setStyleSheet([[
+        QLabel{
+          ]]..GUI.CSS.Button..[[
+          background-color: rgb(]]..bgColor..[[);
+        }
+        QLabel::hover{
+          background-color: rgb(]]..bgColorHover..[[);
+        }
+      ]])
+      --
+      GUI.AliasButtons.Main["Button"..i]:resize(w - distance, h - distance)
+      GUI.AliasButtons.Main["Button"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+      GUI.AliasButtons.Main["Button"..i]:show();
+      --
+      c = c + 1
+      if (c &gt; tot_c) then
+        c = 1;
+        r = r + 1
+      end
+    end
   end
 end
 --
@@ -4702,7 +4748,12 @@ end
 function ui.fOptionButton(buttonName)
   -- Aliases Buttons
   ui.parameters.page = buttonName;
-  ui.fUpdateAllAliasButton()
+  ui.fUpdateAliasButton()
+end
+--
+-- Debug simulation
+if (ui.enDebug &gt;= 2) then
+  ui.fUpdateAliasButton()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -5837,8 +5888,37 @@ function ui.fAddSpace(s, l, mode)
   return s
 end
 --
--- Resizing containers
+-- Start to Moving or Resizing containers
+function ui.fRepositioning(eventName, containerName)
+  ui.repositioning = ui.repositioning or false;
+  if (not ui.repositioning) then
+    --
+    -- Widget containers
+    local containers = {
+      ["GUI.Affects"] = GUI.Affects,
+      ["GUI.AliasButtons"] = GUI.AliasButtons,
+      ["GUI.Chat"] = GUI.Chat,
+      ["GUI.Equipment"] = GUI.Equipment,
+      ["GUI.Group"] = GUI.Group,
+      ["GUI.Help"] = GUI.Help,
+      ["GUI.Inventory"] = GUI.Inventory,
+      ["GUI.Mapper"] = GUI.Mapper,
+      ["GUI.Opponent"] = GUI.Opponent,
+      ["GUI.Player"] = GUI.Player,
+      ["GUI.Room"] = GUI.Room,
+      ["GUI.TargetButtons"] = GUI.TargetButtons,
+    }
+    if (containers[containerName]) then
+      containers[containerName].Main:hide()
+      ui.repositioning = true;
+    end
+  end
+end
+--
+-- Finish to Moving or Resizing containers
 function ui.fFinishedRepositioning(eventName, containerName)
+  --
+  -- Widget containers
   local containers = {
     ["GUI.Affects"] = GUI.Affects,
     ["GUI.AliasButtons"] = GUI.AliasButtons,
@@ -5854,38 +5934,43 @@ function ui.fFinishedRepositioning(eventName, containerName)
     ["GUI.TargetButtons"] = GUI.TargetButtons,
   }
   --
+  -- Widget funcions
   local fUpdateFunction = {
     ["GUI.Affects"] = ui.fUpdateAffects,
+    ["GUI.AliasButtons"] = ui.fUpdateAliasButton,
     ["GUI.Group"] = ui.fUpdateGroup,
     ["GUI.Opponent"] = ui.fUpdateOpponent,
     ["GUI.Player"] = ui.fUpdatePlayer,
+    ["GUI.TargetButtons"] = ui.fUpdateTargetButtons,
   }
   --
+  -- Set absolute
   if (containers[containerName]) then
     containers[containerName]:setAbsolute(true)
+    containers[containerName].Main:show();
   end
   --
   -- Call function relative to widget
   if (fUpdateFunction[containerName]~=nil) then
     fUpdateFunction[containerName]()
   end
+  --
+  ui.repositioning = false;
 end
 --
-function switchTransparent(sender, mode)
+function ui.fSetBorderMode(sender, mode)
+  --
+  -- Transparent (Mode = true)
   if (mode) then
-    sender.adjLabelstyle = GUI.CSS.AC
-    sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
-    sender.Border:setStyleSheet(GUI.CSS.Border);
-    --sender.Main:setStyleSheet(GUI.CSS.Main);
-    --
-    return false
-  else
     sender.adjLabelstyle = GUI.CSS.ACTransparent
     sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
     sender.Border:setStyleSheet(GUI.CSS.BorderTransparent);
-    --sender.Main:setStyleSheet(GUI.CSS.AC_invisible);
-    --
-    return true
+  --
+  -- Solid (Mode = false)
+  else
+    sender.adjLabelstyle = GUI.CSS.AC
+    sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
+    sender.Border:setStyleSheet(GUI.CSS.Border);
   end
 end</script>
 					<eventHandlerList />
@@ -6021,22 +6106,25 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fUpdateGroup()
-  -- Show 10 members max
-  local totalMember = 0
-  local wndH = GUI.Group.Main:get_height();
-  local wndW = GUI.Group.Main:get_width();
-  local memberH = 50;
-  local memberW = 100;
-  local nCol, nRow
+  local distance = 2; 
+  local w_h = GUI.Group.Main:get_height() - distance;
+  local w_w = GUI.Group.Main:get_width() -  distance;
+  local h = distance + 50;
+  local w = distance + 100;
+  local x = 0
+  local y = 0
+  local r = 1
+  local c = 1
+  local tot_r, tot_c, total
   --
   ui.fDebug("[call] ui.fUpdateGroup()")
   --
   ui.group = {}
   --
   if (ui.enDebug &gt;= 2) then
-    totalMember = math.random(1, 10)
-    local leader = math.random(0, totalMember)
-    for member=1, totalMember do
+    total = math.random(1, 10)
+    local leader = math.random(0, total)
+    for member=1, total do
       ui.group[member] = {
         name     = "Player "..member,
         isLeader = (member == leader),
@@ -6056,8 +6144,7 @@ function ui.fUpdateGroup()
       local name = (gmcp.char.group[member].name or "")
       --
       if (name ~= ui.player.name) then
-        totalMember = totalMember + 1
-        ui.group[totalMember] = {
+        ui.group[#ui.group+1] = {
           name     = gmcp.char.group[member].name or "",
           isLeader = gmcp.char.group[member].isLeader or false,
           hp       = gmcp.char.group[member].hp or 0,
@@ -6074,52 +6161,48 @@ function ui.fUpdateGroup()
     end
   end
   --
-  if (totalMember &gt; 10) then
-    totalMember = 10
+  total = math.min(#ui.group, 10);
+  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+  tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  --
+  -- Recalc w if possible
+  if (w_w - (tot_c*w) &lt; w) then
+    w = w_w / tot_c
   end
   --
-  nRow = math.floor((wndH + 5) / (memberH + 5));
-  --
-  if (totalMember &lt;= nRow) then
-    nCol = 1;
-    memberW = wndW;
-    nRow = totalMember
-  else
-    nCol = 2;
-    memberW = (wndW-5) / 2;
-  end
-  --
-  local c = 1;
-  local r = 1;
-  for i = 1, totalMember do
+  for i = 1, 10 do
     mod = i % 10
-    --
-    GUI.Group.Main["g"..mod]:resize(memberW, memberH)
-    GUI.Group.Main["g"..mod]:move((c-1)*(memberW+5), (r-1)*(memberH+5))
-    --
-    GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(ui.group[i].name))
-    --
-    GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
-    GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
-    GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
-    --
-    GUI.Group.Main["g"..mod]:show();
-    ui.fAssignTargetButton("g"..mod, ui.group[i].name)
-    --
-    r = r + 1
-    if (r &gt; nRow) then
-      r = 1;
+    if (r &gt; tot_r) or (i &gt; total) then
+      GUI.Group.Main["g"..mod]:hide()
+      ui.fAssignTargetButton("g"..mod, nil)
+    else
+      --
+      GUI.Group.Main["g"..mod]:resize(w - distance, h - distance)
+      GUI.Group.Main["g"..mod]:move(distance + (c-1)*w, distance + (r-1)*h)
+      --
+      GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(ui.group[i].name))
+      --
+      GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
+      GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
+      GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
+      --
+      GUI.Group.Main["g"..mod]:show();
+      ui.fAssignTargetButton("g"..mod, ui.group[i].name)
+      --
       c = c + 1
+      if (c &gt; tot_c) then
+        c = 1;
+        r = r + 1
+      end
     end
   end
   --
-  for i = totalMember+1, 10 do
-    local mod = i % 10
-    GUI.Group.Main["g"..mod]:hide()
-    ui.fAssignTargetButton("g"..mod, nil)
-  end
-  --
-  GUI.Group:setTitle("Gruppo ["..totalMember.."]")
+  GUI.Group:setTitle("Gruppo ["..total.."]")
+end
+--
+-- Debug simulation
+if (ui.enDebug &gt;= 2) then
+  ui.fUpdateGroup()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -7180,7 +7263,7 @@ function ui.fUpdateOpponent()
   --
   if (ui.enDebug &gt;= 2) then
     ui.opponent.hp         = math.random(0, 100)
-    ui.opponent.level      = math.random(0, 99)
+    ui.opponent.level      = math.random(1, 60)
     ui.opponent.name       = "C4tt1v0ne"
     ui.opponent.desc       = "Il C4tt1v0ne di d3bug"
   elseif (gmcp) and (gmcp.char) and (gmcp.char.vitals) and (gmcp.char.vitals.fighting) then
@@ -7718,7 +7801,7 @@ function ui.fLoadProfile(profile)
     ui.fUpdateOpponent()
     ui.fUpdateGroup()
     ui.fUpdatePlayer()
-    ui.fUpdateAllAliasButton()
+    ui.fUpdateAliasButton()
     --
     return true
   end
@@ -8051,6 +8134,51 @@ function ui.fGetTargetFormattedText(target)
   return str.."&lt;reset&gt;"
 end
 --
+function ui.fUpdateTargetButtons()
+  local distance = 3; 
+  local w_h = GUI.TargetButtons.Main:get_height() - distance;
+  local w_w = GUI.TargetButtons.Main:get_width() -  distance;
+  local h = distance + 25;
+  local w = distance + 120;
+  local x = 0
+  local y = 0
+  local r = 1
+  local c = 1
+  local tot_r, tot_c
+  local total = 4
+  --
+  ui.fDebug("[call] ui.fUpdateTargetButtons()")
+  --
+  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+  tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  --
+  -- Recalc w if possible
+  if (w_w - (tot_c*w) &lt; w) then
+    w = w_w / tot_c
+  end
+  --
+  -- Recalc h if possible
+  if (w_h - (tot_r*h) &lt; h) then
+    h = w_h / tot_r
+  end
+  --
+  for i = 1, 4 do
+    if (r &gt; tot_r) then
+      GUI.TargetButtons.Main["t"..i]:hide();
+    else
+      GUI.TargetButtons.Main["t"..i]:resize(w - distance, h - distance)
+      GUI.TargetButtons.Main["t"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+      GUI.TargetButtons.Main["t"..i]:show();
+      --
+      c = c + 1
+      if (c &gt; tot_c) then
+        c = 1;
+        r = r + 1
+      end
+    end
+  end
+end
+--
 -- Refresh target button
 function ui.fRefreshTargetButton(button)
   local type, number = ui.fExpandButton(button)
@@ -8258,6 +8386,11 @@ function ui.fReadFileTargets()
   --
   -- Save
   table.save(file, ui.targets)
+end
+--
+-- Debug simulation
+if (ui.enDebug &gt;= 2) then
+  ui.fUpdateTargetButtons()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -8387,11 +8520,14 @@ end</script>
   ui.fAddMain(GUI.Affects, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Set transparent
-  switchTransparent(GUI.Affects, not ui.parameters.widgets.affects.transparent)
+  ui.fSetBorderMode(GUI.Affects, ui.parameters.widgets.affects.transparent)
   --
   -- "Transparent" menu item
   GUI.Affects:newCustomItem("Transparent", function(self) 
-                                             ui.parameters.widgets.affects.transparent = switchTransparent(self, ui.parameters.widgets.affects.transparent)
+                                             local mode = ui.parameters.widgets.affects.transparent or false;
+                                             --
+                                             ui.fSetBorderMode(self, not mode)
+                                             ui.parameters.widgets.affects.transparent = not mode;
                                              ui.fSaveFileParameters()
                                            end)
   --
@@ -8502,11 +8638,14 @@ end</script>
   ui.fAddMain(GUI.AliasButtons, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Set transparent
-  switchTransparent(GUI.AliasButtons, not ui.parameters.widgets.aliasButton.transparent)
+  ui.fSetBorderMode(GUI.AliasButtons, ui.parameters.widgets.aliasButton.transparent)
   --
   -- "Transparent" menu item
   GUI.AliasButtons:newCustomItem("Transparent", function(self) 
-                                                  ui.parameters.widgets.aliasButton.transparent = switchTransparent(self, ui.parameters.widgets.aliasButton.transparent)
+                                                  local mode = ui.parameters.widgets.aliasButton.transparent or false;
+                                                  --
+                                                  ui.fSetBorderMode(self, not mode)
+                                                  ui.parameters.widgets.aliasButton.transparent = not mode;
                                                   ui.fSaveFileParameters()
                                                 end)
   --
@@ -8549,65 +8688,55 @@ end</script>
   GUI.AliasButtons.Button_c:echo("&lt;center&gt;c");
   GUI.AliasButtons.Button_c:setClickCallback("ui.fOptionButton", "c")
   --
-  -- Alias Buttons Box
-  GUI.AliasButtons.Main.CButtons = GUI.CButtons or Geyser.Label:new({
-    name = "GUI.AliasButtons.Main.CButtons",
-    x = 0, 
-    y = 0,
-    width = "100%",
-    height = "100%",
-  },GUI.AliasButtons.Main)
-  GUI.AliasButtons.Main.CButtons:setStyleSheet([[background: transparent;]]);
-  --
   -- Buttons
   for order=1,10 do
     local i = order % 10
     --
     -- Name
-    GUI.AliasButtons.Main.CButtons["Custom"..i] = Geyser.Label:new2({
+    GUI.AliasButtons.Main["Button"..i] = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i,
       x = (10*i).."%", 
       y = 0,
       width = "10%",
       height = "100%",
-    },GUI.AliasButtons.Main.CButtons)
-    GUI.AliasButtons.Main.CButtons["Custom"..i]:setClickCallback("ui.fClickAliasButton", i, nil)
+    },GUI.AliasButtons.Main)
+    GUI.AliasButtons.Main["Button"..i]:setClickCallback("ui.fClickAliasButton", i, nil)
     --
     -- Icon
-    GUI.AliasButtons.Main.CButtons["Custom"..i].icon = Geyser.Label:new2({
+    GUI.AliasButtons.Main["Button"..i].icon = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".icon",
       x = 5, y = 5,
       width = -5,
       height = -5,
-    }, GUI.AliasButtons.Main.CButtons["Custom"..i])
-    GUI.AliasButtons.Main.CButtons["Custom"..i].icon:enableClickthrough()
-    GUI.AliasButtons.Main.CButtons["Custom"..i].icon:setFgColor("violet")
-    GUI.AliasButtons.Main.CButtons["Custom"..i].icon:setFontSize(9)
+    }, GUI.AliasButtons.Main["Button"..i])
+    GUI.AliasButtons.Main["Button"..i].icon:enableClickthrough()
+    GUI.AliasButtons.Main["Button"..i].icon:setFgColor("violet")
+    GUI.AliasButtons.Main["Button"..i].icon:setFontSize(9)
     --
     -- Index
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index = Geyser.Label:new2({
+    GUI.AliasButtons.Main["Button"..i].index = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".index",
       x = 5, 
       y = 1,
       width = "15",
       height = "15",
-    }, GUI.AliasButtons.Main.CButtons["Custom"..i])
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:enableClickthrough()
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:setStyleSheet(GUI.CSS.Keybind);
-    GUI.AliasButtons.Main.CButtons["Custom"..i].index:echo("")
+    }, GUI.AliasButtons.Main["Button"..i])
+    GUI.AliasButtons.Main["Button"..i].index:enableClickthrough()
+    GUI.AliasButtons.Main["Button"..i].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
+    GUI.AliasButtons.Main["Button"..i].index:setStyleSheet(GUI.CSS.Keybind);
+    GUI.AliasButtons.Main["Button"..i].index:echo("")
     --
     -- Keybid
-    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind = Geyser.Label:new2({
+    GUI.AliasButtons.Main["Button"..i].keybind = Geyser.Label:new2({
       name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".keybind",
       x = 5, 
       y = -15,
       width = -10,
       height = 15,
-    }, GUI.AliasButtons.Main.CButtons["Custom"..i])
-    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:enableClickthrough()
-    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
-    GUI.AliasButtons.Main.CButtons["Custom"..i].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
+    }, GUI.AliasButtons.Main["Button"..i])
+    GUI.AliasButtons.Main["Button"..i].keybind:enableClickthrough()
+    GUI.AliasButtons.Main["Button"..i].keybind:setStyleSheet(GUI.CSS.Keybind);
+    GUI.AliasButtons.Main["Button"..i].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
   end
   --
   -- Wrapping function
@@ -8813,13 +8942,17 @@ end</script>
   ui.fAddMain(GUI.Group, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Set transparent
-  switchTransparent(GUI.Group, not ui.parameters.widgets.group.transparent)
+  ui.fSetBorderMode(GUI.Group, ui.parameters.widgets.group.transparent)
   --
   -- "Transparent" menu item
-  GUI.Group:newCustomItem("Transparent", function(self) 
-                                           ui.parameters.widgets.group.transparent = switchTransparent(self, ui.parameters.widgets.group.transparent)
-                                           ui.fSaveFileParameters()
-                                         end)
+  GUI.Group:newCustomItem("Transparent", 
+                          function(self) 
+                            local mode = ui.parameters.widgets.group.transparent or false;
+                            --
+                            ui.fSetBorderMode(self, not mode)
+                            ui.parameters.widgets.group.transparent = not mode;
+                            ui.fSaveFileParameters()
+                          end)
   --
   local i
   for i=1, 10 do
@@ -9149,13 +9282,17 @@ end</script>
   GUI.Opponent.Main:disableClickthrough()
   --
   -- Set transparent
-  switchTransparent(GUI.Opponent, not ui.parameters.widgets.opponent.transparent)
+  ui.fSetBorderMode(GUI.Opponent, ui.parameters.widgets.opponent.transparent)
   --
   -- "Transparent" menu item
-  GUI.Opponent:newCustomItem("Transparent", function(self) 
-                                              ui.parameters.widgets.opponent.transparent = switchTransparent(self, ui.parameters.widgets.opponent.transparent)
-                                              ui.fSaveFileParameters()
-                                            end)
+  GUI.Opponent:newCustomItem("Transparent",
+                            function(self) 
+                            local mode = ui.parameters.widgets.opponent.transparent or false;
+                            --
+                            ui.fSetBorderMode(self, not mode)
+                            ui.parameters.widgets.opponent.transparent = not mode;
+                            ui.fSaveFileParameters()
+                          end)
   --
   GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
@@ -9256,14 +9393,17 @@ end</script>
   ui.fAddMain(GUI.Player, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Set transparent
-  switchTransparent(GUI.Player, not ui.parameters.widgets.player.transparent)
+  ui.fSetBorderMode(GUI.Player, ui.parameters.widgets.player.transparent)
   --
   -- "Transparent" menu item
-  GUI.Player:newCustomItem("Transparent", function(self) 
-                                            ui.parameters.widgets.player.transparent = switchTransparent(self, ui.parameters.widgets.player.transparent)
-                                            ui.fSaveFileParameters()
-                                          end)
-  --
+  GUI.Player:newCustomItem("Transparent",
+                          function(self) 
+                            local mode = ui.parameters.widgets.player.transparent or false;
+                            --
+                            ui.fSetBorderMode(self, not mode)
+                            ui.parameters.widgets.player.transparent = not mode;
+                            ui.fSaveFileParameters()
+                          end)  --
   -- Player Level
   GUI.Player.Level = Geyser.Label:new2({
     name = "GUI.Player.Level",
@@ -10242,6 +10382,7 @@ ui.fInitGroupWidget()
 -- Target Buttons
 ui.fDebug("[init] Target Buttons")
 ui.fInitTargetButtonsWidget()
+ui.fUpdateTargetButtons()
 --
 --  Opponent and Groups are also targets. Widgets needed before updating
 ui.fUpdateAllTargetButton()
@@ -10262,7 +10403,7 @@ ui.fUpdatePlayer()
 -- Alias Button
 ui.fDebug("[init] Alias Buttons")
 ui.fInitAliasButtonsWidget()
-ui.fUpdateAllAliasButton()
+ui.fUpdateAliasButton()
 --
 -- Affects
 ui.fDebug("[init] Affects")
@@ -10300,7 +10441,14 @@ ui.fDebug("[init] setMergeTables()")
 setMergeTables("gmcp")
 --
 -- Events
--- Resizing containers
+-- Start to resizing containers
+if (ui.handlers.fRepositioning) then
+  killAnonymousEventHandler(ui.handlers.fRepositioning)
+  ui.handlers.fRepositioning = nil
+end
+ui.handlers.fRepositioning = registerAnonymousEventHandler("AdjustableContainerReposition", ui.fRepositioning)
+--
+-- Finish to resizing containers
 if (ui.handlers.fFinishedRepositioning) then
   killAnonymousEventHandler(ui.handlers.fFinishedRepositioning)
   ui.handlers.fFinishedRepositioning = nil
