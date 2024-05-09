@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,13 +71,13 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Doors</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Entrance</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Special exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Doors</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -4274,7 +4274,7 @@ function ui.fUpdateAffects()
   local distance = 2; 
   local w_h = GUI.Affects.Main:get_height() - distance;
   local w_w = GUI.Affects.Main:get_width() -  distance;
-  local h = distance + 28;
+  local h = distance + 26;
   local w = distance + 100;
   local x = 0
   local y = 0
@@ -4668,18 +4668,15 @@ function ui.fUpdateAliasButton()
   --
   ui.fDebug("[call] ui.fUpdateAliasButton()")
   --
-  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  -- When working with negative numbers math.floor() returns the closest integer less than or equal to a given value
+  tot_r = -math.floor(-total/tot_c);
   --
   -- Recalc w if possible
-  if (tot_c &gt;= 10) or (w_w - (tot_c*w) &lt; w) then
-    w = w_w / tot_c
-  end
+  w = w_w / tot_c
   --
   -- Recalc h if possible
-  if (tot_r &gt;= 10) or (w_h - (tot_r*h) &lt; h) then
-    h = w_h / tot_r
-  end
+  h = w_h / tot_r
   --
   for i = 0, 9 do
     if (r &gt; tot_r) then
@@ -4709,7 +4706,7 @@ function ui.fUpdateAliasButton()
         bgColorHover = "0, 0, 150"
       end
       --
-      GUI.AliasButtons.Main["Button"..i].index:echo("&lt;center&gt;"..i)
+      GUI.AliasButtons.Main["Button"..i].index:echo("&lt;center&gt;"..ui.parameters.page..i)
       --
       GUI.AliasButtons.Main["Button"..i].icon:setStyleSheet(GUI.CSS.ButtonsIcon)
       GUI.AliasButtons.Main["Button"..i].icon:echo("&lt;center&gt;"..title)
@@ -5962,13 +5959,13 @@ function ui.fSetBorderMode(sender, mode)
   --
   -- Transparent (Mode = true)
   if (mode) then
-    sender.adjLabelstyle = GUI.CSS.ACTransparent
+    sender.adjLabelstyle = GUI.CSS.WidgetTransparent
     sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
     sender.Border:setStyleSheet(GUI.CSS.BorderTransparent);
   --
   -- Solid (Mode = false)
   else
-    sender.adjLabelstyle = GUI.CSS.AC
+    sender.adjLabelstyle = GUI.CSS.Widget
     sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
     sender.Border:setStyleSheet(GUI.CSS.Border);
   end
@@ -6110,7 +6107,7 @@ function ui.fUpdateGroup()
   local w_h = GUI.Group.Main:get_height() - distance;
   local w_w = GUI.Group.Main:get_width() -  distance;
   local h = distance + 50;
-  local w = distance + 100;
+  local w = distance + 150;
   local x = 0
   local y = 0
   local r = 1
@@ -6166,7 +6163,7 @@ function ui.fUpdateGroup()
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
   --
   -- Recalc w if possible
-  if (w_w - (tot_c*w) &lt; w) then
+  if (w_w - (tot_c*w) &lt; w*tot_c) then
     w = w_w / tot_c
   end
   --
@@ -7441,6 +7438,7 @@ function ui.fGetPreDefinitedParameters()
       },
       room = {
         fontSize = 7,
+        transparent = false,
       },
     },
     page = "a",
@@ -8149,18 +8147,15 @@ function ui.fUpdateTargetButtons()
   --
   ui.fDebug("[call] ui.fUpdateTargetButtons()")
   --
-  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  -- When working with negative numbers math.floor() returns the closest integer less than or equal to a given value
+  tot_r = -math.floor(-total/tot_c);
   --
   -- Recalc w if possible
-  if (w_w - (tot_c*w) &lt; w) then
-    w = w_w / tot_c
-  end
+  w = w_w / tot_c
   --
   -- Recalc h if possible
-  if (w_h - (tot_r*h) &lt; h) then
-    h = w_h / tot_r
-  end
+  h = w_h / tot_r
   --
   for i = 1, 4 do
     if (r &gt; tot_r) then
@@ -8511,8 +8506,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Affects:changeMenuStyle("dark")
   --
@@ -8542,7 +8537,7 @@ end</script>
       x = 30*col,
       y = 30*row,
       width = 100,
-      height = 28,
+      height = 26,
     }, GUI.Affects.Main)
     GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
     --
@@ -8629,8 +8624,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.AliasButtons:changeMenuStyle("dark")
   --
@@ -8657,7 +8652,7 @@ end</script>
     width = 20,
     height = 12,
   },GUI.AliasButtons)
-  GUI.AliasButtons.Button_a:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_a:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.AliasButtons.Button_a:setFontSize(6)
   GUI.AliasButtons.Button_a:echo("&lt;center&gt;a");
   GUI.AliasButtons.Button_a:setClickCallback("ui.fOptionButton", "a")
@@ -8670,7 +8665,7 @@ end</script>
     width = 20,
     height = 12,
   },GUI.AliasButtons)
-  GUI.AliasButtons.Button_b:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_b:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.AliasButtons.Button_b:setFontSize(6)
   GUI.AliasButtons.Button_b:echo("&lt;center&gt;b");
   GUI.AliasButtons.Button_b:setClickCallback("ui.fOptionButton", "b")
@@ -8683,7 +8678,7 @@ end</script>
     width = 20,
     height = 12,
   },GUI.AliasButtons)
-  GUI.AliasButtons.Button_c:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.AliasButtons.Button_c:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.AliasButtons.Button_c:setFontSize(6)
   GUI.AliasButtons.Button_c:echo("&lt;center&gt;c");
   GUI.AliasButtons.Button_c:setClickCallback("ui.fOptionButton", "c")
@@ -8771,8 +8766,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Chat:changeMenuStyle("dark")
   --
@@ -8787,7 +8782,7 @@ end</script>
     width = 40,
     height = 12,
   },GUI.Chat)
-  GUI.Chat.Button_split:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.Chat.Button_split:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Chat.Button_split:setFontSize(6)
   GUI.Chat.Button_split:echo("&lt;center&gt;Split");
   GUI.Chat.Button_split:setClickCallback("ui.fButtonSplit")
@@ -8800,7 +8795,7 @@ end</script>
     width = 40,
     height = 12,
   },GUI.Chat)
-  GUI.Chat.Button_type:setStyleSheet(GUI.CSS.ACButtons);
+  GUI.Chat.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Chat.Button_type:setFontSize(6)
   GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
   GUI.Chat.Button_type:setClickCallback("ui.fButtonType")
@@ -8879,8 +8874,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Equipment:changeMenuStyle("dark")
   --
@@ -8933,8 +8928,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Group:changeMenuStyle("dark")
   --
@@ -9099,8 +9094,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Help:changeMenuStyle("dark")
   --
@@ -9153,8 +9148,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSSWidget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Inventory:changeMenuStyle("dark")
   --
@@ -9207,8 +9202,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Mapper:changeMenuStyle("dark")
   --
@@ -9272,8 +9267,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   });
   GUI.Opponent:changeMenuStyle("dark")
   --
@@ -9384,8 +9379,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Player:changeMenuStyle("dark")
   --
@@ -9442,7 +9437,7 @@ end</script>
     x = 2,
     y = 7,
     width = -2,
-    height = "40%-14",
+    height = "40%-15",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -9583,8 +9578,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.Room:changeMenuStyle("dark")
   --
@@ -9601,8 +9596,8 @@ end</script>
     autoWrap = false,
     scrollBar = false,
   }, GUI.Room.Main)
-  GUI.Room.Main.Console:setColor(30,24,24)
-  GUI.Room.Main.Console:setBgColor(30,24,24)
+  GUI.Room.Main.Console:setColor(30, 24, 24)
+  GUI.Room.Main.Console:setBgColor(30, 24, 24)
   GUI.Room.Main.Console:setFontSize(ui.parameters.widgets.room.fontSize)
   --
   -- Wrapping function
@@ -9637,8 +9632,8 @@ end</script>
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
-    adjLabelstyle = GUI.CSS.AC, 
-    buttonstyle = GUI.CSS.ACButtons,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
   })
   GUI.TargetButtons:changeMenuStyle("dark")
   --
@@ -9738,23 +9733,28 @@ ui.varID = "&amp;"
 --
 -- Colors
 ui.colors = {
-  aliasButton = "&lt;orange&gt;",
-  aliasName   = "&lt;violet&gt;",
-  aliasOutput = "&lt;PaleGoldenrod&gt;",
-  command     = "&lt;steel_blue&gt;",
-  error       = "&lt;DarkOrange&gt;",
-  input       = "&lt;MediumSeaGreen&gt;", -- #
-  keybind     = "&lt;cyan&gt;",
-  link        = "&lt;gold&gt;",
-  operator    = "&lt;salmon&gt;",         -- » or «
-  profileName = "&lt;green&gt;",
-  separator   = "&lt;orange_red&gt;",     -- ; or /
-  target      = "&lt;orange&gt;",
-  text        = "&lt;grey&gt;",
-  title       = "&lt;white&gt;",
-  varID       = "&lt;steel_blue&gt;",
-  varName     = "&lt;DeepPink&gt;",
-  varCont     = "&lt;LightBlue&gt;",
+  aliasButton  = "&lt;orange&gt;",
+  aliasName    = "&lt;violet&gt;",
+  aliasOutput  = "&lt;PaleGoldenrod&gt;",
+  command      = "&lt;steel_blue&gt;",
+  error        = "&lt;DarkOrange&gt;",
+  input        = "&lt;MediumSeaGreen&gt;", -- #
+  keybind      = "&lt;cyan&gt;",
+  link         = "&lt;gold&gt;",
+  operator     = "&lt;salmon&gt;",         -- » or «
+  profileName  = "&lt;green&gt;",
+  separator    = "&lt;orange_red&gt;",     -- ; or /
+  target       = "&lt;orange&gt;",
+  text         = "&lt;grey&gt;",
+  title        = "&lt;white&gt;",
+  varID        = "&lt;steel_blue&gt;",
+  varName      = "&lt;DeepPink&gt;",
+  varCont      = "&lt;LightBlue&gt;",
+  widget       = "25, 20, 20",
+  wBackground  = "30, 24, 24",
+  wBorder      = "90, 72, 72",
+  wButton      = "90, 72, 72",
+  wButtonHover = "180, 144, 144",
 }
 --
 ui.files = {
@@ -9914,67 +9914,65 @@ ui.previous = ui.previous or {}</script>
 			<Script isActive="yes" isFolder="no">
 				<name>Init CSS</name>
 				<packageName></packageName>
-				<script>local borderColor = "90, 72, 72";
-local bgColor = "30, 24, 24";
---
+				<script>--
 ui.fDebug("[init] CSS")
 --
 GUI = GUI or {}
 GUI.CSS = GUI.CSS or {}
 --
 --
-GUI.CSS.AC = [[
-  border: 2px outset rgb(]]..borderColor..[[); 
+GUI.CSS.Widget = [[
+  border: 2px outset rgb(]]..ui.colors.wBorder..[[); 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.widget..[[);
+]]
+--
+GUI.CSS.WidgetButton = [[
+  QLabel{
+    border-radius: 6px;
+    background-color: rgb(]]..ui.colors.wButton..[[);
+  }
+  QLabel::hover{
+    background-color: rgb(]]..ui.colors.wButtonHover..[[);
+  }
 ]]
 --
 --
-GUI.CSS.ACTransparent = [[
+GUI.CSS.WidgetTransparent = [[
   QWidget{
     border: none;
-    padding: 2px;
-    background: transparent;
-  }
-  QWidget::hover{
-    border: 2px outset rgba(]]..borderColor..[[, 0.7); 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    background-color: rgba(]]..bgColor..[[, 0.7);
+    padding: 2px;
+    background: transparent;
   }
-]]
---
-GUI.CSS.ACButtons = [[
-  QLabel{
-    border-radius: 6px;
-    background-color: rgb(90, 72, 72);
-  }
-  QLabel::hover{
-    background-color: rgb(180, 144, 144);
+  QWidget::hover{
+    border: 2px outset rgba(]]..ui.colors.wBorder..[[, 0.7); 
+    background-color: rgba(]]..ui.colors.wBackground..[[, 0.7);
   }
 ]]
 --
 -- Affect
 GUI.CSS.Affect = [[
-  border: 2px outset rgb(]]..borderColor..[[);
-  border-top-left-radius: 14px;
+  border: 2px outset rgb(]]..ui.colors.wBorder..[[);
+  border-top-left-radius: 12.5px;
   border-top-right-radius: 7px;
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 12.5px;
   border-bottom-right-radius: 7px;
 ]]
 --
 -- Affect Dispel Resistance
 GUI.CSS.AffectDispelResistance = [[
-  border: 2px inset rgb(]]..borderColor..[[);
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
   border-bottom: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
 -- Affect Text
@@ -9986,28 +9984,28 @@ GUI.CSS.AffectText = [[
 --
 -- Affect Duration
 GUI.CSS.AffectDuration = [[
-  border: 2px inset rgb(]]..borderColor..[[);
-  border-top-left-radius: 12px;
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
+  border-top-left-radius: 10.5px;
   border-top-right-radius: 5px;
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 10.5px;
   border-bottom-right-radius: 5px;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
 -- Affect Stacks
 GUI.CSS.AffectStacks = [[
-  border: 2px inset rgb(]]..borderColor..[[);
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
 -- Border
 GUI.CSS.Border = [[
-  border: 2px inset rgb(]]..borderColor..[[); 
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[); 
   border-radius: 4px;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
 -- Border transparent
@@ -10051,7 +10049,7 @@ GUI.CSS.Keybind = [[
 -- Level
 GUI.CSS.Level = [[
   border-image: url("]]..ui.files.images.path..[[borderRound.png") 0px stretch;
-  background-color: rgb(]]..bgColor..[[);
+  background-color: rgb(]]..ui.colors.wBackground..[[);
   background: transparent;
 ]]
 --
