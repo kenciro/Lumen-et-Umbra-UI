@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,14 +71,12 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Entrance</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Special exits</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Doors</mapInfoContributor>
-			<mapInfoContributor>Room exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2473,8 +2471,8 @@ end
 ui.fSaveFileAliases()
 ui.fUpdateAliasButton()
 --
-ui.fSaveFileTarges()
 ui.fUpdateAllTargetButton()
+
 </script>
 				<command></command>
 				<packageName></packageName>
@@ -2633,6 +2631,7 @@ end</script>
 local button_number = tonumber(matches[3])
 local value = matches[4] or ""
 local button = button_type..button_number
+--
 -- G buttons
 if (button_type == "G") then
   if (button_number&lt;0) or (button_number&gt;9) then
@@ -2642,6 +2641,7 @@ if (button_type == "G") then
   else
     ui.fExecuteTargetButton(button)
   end
+--
 -- O button
 elseif (button_type == "O") then
   if (button_number~=0)  then
@@ -2651,6 +2651,7 @@ elseif (button_type == "O") then
   else
     ui.fExecuteTargetButton(button)
   end
+--
 -- T buttons
 elseif (button_type == "T") then
   if (button_number&lt;1) or (button_number&gt;4) then
@@ -2659,6 +2660,8 @@ elseif (button_type == "T") then
     ui.fExecuteTargetButton(button)
   elseif (value == "remove") then
     if (ui.fAssignTargetButton(button, nil)) then
+      ui.fUpdateAllTargetButton()
+      --
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." valore rimosso.")
     else
       ui.fError(ui.fGetTargetFormattedText(button).." errore durante la rimozione del valore.")
@@ -2667,6 +2670,8 @@ elseif (button_type == "T") then
     if (ui.fAssignTargetButton(button, value)) then
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." valore impostato "..ui.fGetVarValueFormattedText(value)..".")
     else
+      ui.fUpdateAllTargetButton()
+      --
       ui.fError(ui.fGetTargetFormattedText(button).." errore durante il cambio di valore.")
     end
   end
@@ -2717,7 +2722,6 @@ end
 --
 if (variable and variable == "target") then
   ui.fUpdateAllTargetButton()
-  ui.fUpdateTarget()
 end
 --
 ui.fSaveFileVariables()</script>
@@ -4079,66 +4083,7 @@ lst_vNum = vNum+100</script>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
-	<ActionPackage>
-		<ActionGroup isActive="yes" isFolder="yes" isPushButton="no" isFlatButton="no" useCustomLayout="no">
-			<name>Top</name>
-			<packageName></packageName>
-			<script></script>
-			<css></css>
-			<commandButtonUp></commandButtonUp>
-			<commandButtonDown></commandButtonDown>
-			<icon></icon>
-			<orientation>1</orientation>
-			<location>0</location>
-			<posX>0</posX>
-			<posY>0</posY>
-			<mButtonState>1</mButtonState>
-			<sizeX>0</sizeX>
-			<sizeY>0</sizeY>
-			<buttonColumn>1</buttonColumn>
-			<buttonRotation>0</buttonRotation>
-			<Action isActive="yes" isFolder="no" isPushButton="no" isFlatButton="no" useCustomLayout="no">
-				<name>First Aid</name>
-				<packageName></packageName>
-				<script>local status = "";
-if (isActive("First AID (automatico)", "trigger") &gt; 0) then
-  disableTrigger("First AID (automatico)")
-  status = "&lt;red&gt;OFF&lt;reset&gt;"
-  setButtonStyleSheet("First Aid", [[
-  QWidget {
-    background-color: red;
-    border: 3px #777777;
-  } ]])
-else
-  enableTrigger("First AID (automatico)")
-  status = "&lt;green&gt;ON&lt;reset&gt;"
-  setButtonStyleSheet("First Aid", [[
-  QWidget {
-    background-color: green;
-    border: 3px #777777;
-  } ]])
-end
-cecho("Trigger First AID (automatico) "..status.."\n")
-</script>
-				<css>  QWidget {
-    background-color: red;
-    border: 3px #777777;
-  } </css>
-				<commandButtonUp></commandButtonUp>
-				<commandButtonDown></commandButtonDown>
-				<icon></icon>
-				<orientation>1</orientation>
-				<location>0</location>
-				<posX>0</posX>
-				<posY>0</posY>
-				<mButtonState>1</mButtonState>
-				<sizeX>0</sizeX>
-				<sizeY>0</sizeY>
-				<buttonColumn>1</buttonColumn>
-				<buttonRotation>0</buttonRotation>
-			</Action>
-		</ActionGroup>
-	</ActionPackage>
+	<ActionPackage />
 	<ScriptPackage>
 		<ScriptGroup isActive="yes" isFolder="yes">
 			<name>Lumen et Umbra UI</name>
@@ -4274,7 +4219,7 @@ function ui.fUpdateAffects()
   local distance = 2; 
   local w_h = GUI.Affects.Main:get_height() - distance;
   local w_w = GUI.Affects.Main:get_width() -  distance;
-  local h = distance + 26;
+  local h = distance + 28;
   local w = distance + 100;
   local x = 0
   local y = 0
@@ -4312,7 +4257,7 @@ function ui.fUpdateAffects()
   --  ["[Set] Planar Alteration"] = "🗡️",
   }
   --
-  ui.fDebug("[call] ui.fUpdateAffects()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAffects()")
   --
   ui.affects = {}
   ui.actFastAffects = ""
@@ -4386,7 +4331,7 @@ function ui.fUpdateAffects()
     --
     -- Show if inside box
     if (r &gt; tot_r) or (i &gt; total) then
-      GUI["AffectIcon"..i]:hide();
+      GUI.Affects.Main["Affect"..i]:hide();
     else
       local affect = orderTable[i]
       --
@@ -4427,8 +4372,8 @@ function ui.fUpdateAffects()
         if (not shortName) then
           shortName = ui.fRemoveArticle(affect);
         end
-        GUI["AffectIcon"..i].text:setFgColor(FGColor)
-        GUI["AffectIcon"..i].text:echo("&lt;center&gt;"..shortName)
+        GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
+        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..shortName)
         --
         -- Icon
         if (icon) then
@@ -4453,9 +4398,9 @@ function ui.fUpdateAffects()
         CCS = CCS..[[
                 background-color: ]]..BGColor..[[;
               ]]
-        GUI["AffectIcon"..i].text:setStyleSheet(CCS)
+        GUI.Affects.Main["Affect"..i].text:setStyleSheet(CCS)
         --
-        GUI["AffectIcon"..i]:setStyleSheet([[QLabel{
+        GUI.Affects.Main["Affect"..i]:setStyleSheet([[QLabel{
           ]]..GUI.CSS.Affect..[[
           background-color: ]]..BGColor..[[;
         }]])
@@ -4485,14 +4430,14 @@ function ui.fUpdateAffects()
           end
         end
         --
-        GUI["AffectIcon"..i].duration:setFgColor(durationColor)
-        GUI["AffectIcon"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
+        GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
+        GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
         --
         -- Dispel Resistance
-        GUI["AffectIcon"..i].dispelResistance:echo("&lt;center&gt;"..ui.affects[affect].dispelResistance)
+        GUI.Affects.Main["Affect"..i].dispelResistance:echo("&lt;center&gt;"..ui.affects[affect].dispelResistance)
         --
         -- Stack
-        GUI["AffectIcon"..i].stacks:echo("&lt;center&gt;"..ui.affects[affect].stacks)
+        GUI.Affects.Main["Affect"..i].stacks:echo("&lt;center&gt;"..ui.affects[affect].stacks)
         --
         -- ToolTip
         local toolTip = ""
@@ -4508,14 +4453,14 @@ function ui.fUpdateAffects()
         if ui.fHasbit(ui.affects[affect].category, 9) then toolTip = toolTip.."Physical " end
         --
         if (toolTip == "") then
-          GUI["AffectIcon"..i]:setToolTip(affect, 10)
+          GUI.Affects.Main["Affect"..i]:setToolTip(affect, 10)
         else
-          GUI["AffectIcon"..i]:setToolTip(affect.."\n"..toolTip, 10)
+          GUI.Affects.Main["Affect"..i]:setToolTip(affect.."\n"..toolTip, 10)
         end
         --
-        GUI["AffectIcon"..i]:resize(w - distance, h - distance)
-        GUI["AffectIcon"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
-        GUI["AffectIcon"..i]:show();
+        GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
+        GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+        GUI.Affects.Main["Affect"..i]:show();
         --
         c = c + 1
         if (c &gt; tot_c) then
@@ -4572,6 +4517,8 @@ end
 function ui.fShowAllAliasButtons()
   local i = 0
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllAliasButtons()")
+  --
   cecho(ui.fTitle("Pulsanti alias"))
   for alias in ui.fOrderedPairs(ui.aliases) do
     if (ui.aliases[alias].button) then
@@ -4591,6 +4538,8 @@ function ui.fRemoveAliasButton(button)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAliasButton("..(button or "nil")..")")
+  --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number 
     local alias = ui.fSearchAliasButton(button)
@@ -4609,6 +4558,8 @@ end
 --
 -- Remove all alias button
 function ui.fRemoveAllAliasButtons()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllAliasButtons()")
+  --
   for alias in pairs(ui.aliases) do
     if (ui.aliases[alias].button) then
       ui.aliases[alias].button = nil
@@ -4620,6 +4571,8 @@ end
 function ui.fAssignAliasButton(button, alias)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fAssignAliasButton("..(button or "nil")..", "..(alias or "nil")..")")
   --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number
@@ -4639,6 +4592,8 @@ end
 function ui.fExecuteAliasButton(button)
   local alias = nil;
   local type, number = ui.fExpandButton(button)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fExecuteAliasButton("..(button or "nil")..")")
   --
   if (type == "a") or (type == "b") or (type == "c") then
     button = type..number
@@ -4666,7 +4621,7 @@ function ui.fUpdateAliasButton()
   local tot_r, tot_c
   local total = 10
   --
-  ui.fDebug("[call] ui.fUpdateAliasButton()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAliasButton()")
   --
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
   -- When working with negative numbers math.floor() returns the closest integer less than or equal to a given value
@@ -4739,11 +4694,15 @@ end
 function ui.fClickAliasButton(number)
   local button = ui.parameters.page..number
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fClickAliasButton("..(number or "nil")..")")
+  --
   ui.fExecuteAliasButton(button)
 end
 --
 function ui.fOptionButton(buttonName)
   -- Aliases Buttons
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fOptionButton("..(buttonName or "nil")..")")
+  --
   ui.parameters.page = buttonName;
   ui.fUpdateAliasButton()
 end
@@ -4848,6 +4807,8 @@ end
 function ui.fShowAllAliases()
   local i = 0
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllAliases()")
+  --
   cecho(ui.fTitle("Aliases"))
   for alias in ui.fOrderedPairs(ui.aliases) do
     i = i + 1
@@ -4861,6 +4822,8 @@ function ui.fShowAllAliases()
 end
 --
 function ui.fRemoveAlias(alias)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAlias("..(alias or "nil")..")")
+  --
   if (ui.aliases[alias]) then
     ui.fRemoveKeyb(ui.aliases[alias]);
     if (ui.aliases[alias]["id"]) then
@@ -4875,6 +4838,8 @@ function ui.fRemoveAlias(alias)
 end
 --
 function ui.fRemoveAllAliases()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllAliases()")
+  --
   for alias in pairs(ui.aliases) do
     ui.fRemoveAlias(alias)
   end
@@ -4884,6 +4849,8 @@ end
 function ui.fAddAlias(alias, value)
   local command
   local commands, varNameError = ui.fExpandVariables(value, true)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fAddAlias("..(alias or "nil")..", "..(value or "nil")..")")
   --
   if (not varNameError) then
     --
@@ -5018,6 +4985,8 @@ function ui.fSaveFileAliases()
   local file = ui.files.aliases.path..ui.files.aliases.name
   local aliasesDataToSave = {}
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveFileAliases()")
+  --
   for alias in pairs(ui.aliases) do
     aliasesDataToSave[alias] = {}
     aliasesDataToSave[alias].text = ui.aliases[alias].text
@@ -5032,6 +5001,8 @@ end
 -- Read Aliases data from file
 function ui.fReadFileAliases()
   local file = ui.files.aliases.path..ui.files.aliases.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileAliases()")
   --
   -- Remove actual Aliases
   ui.aliases = ui.aliases or {}
@@ -5054,6 +5025,8 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fButtonType()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fButtonType()")
+  --
   if (ui.parameters.widgets.chat.type == "all") then
     ui.parameters.widgets.chat.type = "Public"
   elseif (ui.parameters.widgets.chat.type == "Public") then
@@ -5068,6 +5041,8 @@ function ui.fButtonType()
 end
 --
 function ui.fButtonSplit()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fButtonSplit()")
+  --
   if (ui.parameters.widgets.chat.split) then
     ui.parameters.widgets.chat.split = false;
   else
@@ -5080,6 +5055,8 @@ function ui.fButtonSplit()
 end
 --
 function ui.fUpdateChat()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateChat()")
+  --
   if (ui.parameters.widgets.chat.type == "all") then
     GUI.Chat.Button_split:show();
     --
@@ -5477,14 +5454,15 @@ end
 --
 function ui.fLog(text)
   text = "\n&lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:30,24,24&gt;"..text.."\n"
+  --
   GUI.Chat.Main.All:decho(text)
-  GUI.Chat.Main.Public:decho(text)
   GUI.Chat.Main.Private:decho(text)
-  ui.lastFromPrivate = ""
+  GUI.Chat.Main.Public:decho(text)
 end
 --
 function ui.fError(text)
   text = ui.echo..ui.colors.error.."[ERRORE] "..ui.colors.text..text.."&lt;reset&gt;\n\n"
+  --
   cecho(text)
 end
 --
@@ -5653,6 +5631,7 @@ end
 --
 function ui.fExecutePath(table, option)
   if (not option) then
+    --
     -- execute all
     for i = 1, #table do
       expandAlias(table[i])
@@ -5661,6 +5640,7 @@ function ui.fExecutePath(table, option)
     local itemNumber = tonumber(option)
     if (itemNumber) then
       if (itemNumber == 0) then
+        --
         -- Show all
         for i = 1, #table do
           cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetAliasOutputFormattedText(table[i]).."\n")
@@ -5671,6 +5651,7 @@ function ui.fExecutePath(table, option)
         ui.fError("Indice non valido.")
       end
     else
+      --
       -- execute command for all (es. tell Pippo)
       for i = 1, #table do
         send(option.." "..i..") "..table[i]:gsub("(%s*;%s*)", " | "))
@@ -5681,15 +5662,15 @@ end
 --
 function ui.fDeleteDirectory(dir)
   local lfs = require('lfs')
-  local deletedir
   --
-  deletedir = function(dir)
+  local function deletedir(dir)
     for file in lfs.dir(dir) do
       local file_path = dir..'/'..file
-      if file ~= "." and file ~= ".." then
-        if lfs.attributes(file_path, 'mode') == 'file' then
+      --
+      if (file ~= ".") and (file ~= "..") then
+        if (lfs.attributes(file_path, 'mode') == 'file') then
           os.remove(file_path)
-        elseif lfs.attributes(file_path, 'mode') == 'directory' then
+        elseif (lfs.attributes(file_path, 'mode') == 'directory') then
           deletedir(file_path)
         end
       end
@@ -5705,7 +5686,7 @@ function ui.fCopyFile(old_path, new_path)
   local new_file = io.open(new_path, "wb")
   local old_file_sz, new_file_sz = 0, 0
   --
-  if not old_file or not new_file then
+  if (not old_file) or (not new_file) then
     return false
   end
   --
@@ -5724,46 +5705,48 @@ function ui.fCopyFile(old_path, new_path)
   return new_file_sz == old_file_sz
 end
 --
--- return true if t1 == t2
+-- Return true if t1 == t2
 function ui.fTableCompare(o1, o2, ignore_mt)
   local o1Type = type(o1)
   local o2Type = type(o2)
   --
-  -- same object
-  if o1 == o2 then
+  -- Same object
+  if (o1 == o2) then
     return true
   end
   --
-  -- different type
-  if o1Type ~= o2Type then 
+  -- Different type
+  if (o1Type ~= o2Type) then 
     return false 
   end
   --
-  -- same type but not table, already compared above
-  if o1Type ~= 'table' then 
+  -- Same type but not table, already compared above
+  if (o1Type ~= 'table') then 
     return false 
   end
   --
-  -- use metatable method
-  if not ignore_mt then
+  -- Use metatable method
+  if (not ignore_mt) then
     local mt1 = getmetatable(o1)
+    --
     if mt1 and mt1.__eq then
-      -- compare using built in method
+      -- Compare using built in method
       return o1 == o2
     end
   end
   --
-  -- iterate over o1
+  -- Iterate over o1
   for key1, value1 in pairs(o1) do
     local value2 = o2[key1]
-    if value2 == nil or ui.fTableCompare(value1, value2, ignore_mt) == false then
+    --
+    if (value2 == nil) or (ui.fTableCompare(value1, value2, ignore_mt) == false) then
       return false
     end
   end
   --
   -- check keys in o2 but missing from o1
   for key2, _ in pairs(o2) do
-    if o1[key2] == nil then 
+    if (o1[key2] == nil) then 
       return false 
     end
   end
@@ -5865,9 +5848,12 @@ function ui.fAddMain(sender, CSS_Border, CSS_Main)
 end
 --
 function ui.fAddSpace(s, l, mode)
+  local sl
+  --
   s = s or "";
   mode = mode or "c"
-  local sl = s:len()
+  sl = s:len()
+  --
   if (sl &lt; l) then
     for i = sl+1, l do
       if (mode == "l") then
@@ -5885,9 +5871,11 @@ function ui.fAddSpace(s, l, mode)
   return s
 end
 --
--- Start to Moving or Resizing containers
+-- Moving or Resizing containers
 function ui.fRepositioning(eventName, containerName)
   ui.repositioning = ui.repositioning or false;
+  --
+  -- Only first time (faster)
   if (not ui.repositioning) then
     --
     -- Widget containers
@@ -5912,7 +5900,7 @@ function ui.fRepositioning(eventName, containerName)
   end
 end
 --
--- Finish to Moving or Resizing containers
+-- Finish to moving or resizing containers
 function ui.fFinishedRepositioning(eventName, containerName)
   --
   -- Widget containers
@@ -5959,14 +5947,22 @@ function ui.fSetBorderMode(sender, mode)
   --
   -- Transparent (Mode = true)
   if (mode) then
+    --
+    -- Widget
     sender.adjLabelstyle = GUI.CSS.WidgetTransparent
     sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
+    --
+    -- Internal border
     sender.Border:setStyleSheet(GUI.CSS.BorderTransparent);
   --
   -- Solid (Mode = false)
   else
+    --
+    -- Widget
     sender.adjLabelstyle = GUI.CSS.Widget
     sender.adjLabel:setStyleSheet(sender.adjLabelstyle) 
+    --
+    -- Internal border
     sender.Border:setStyleSheet(GUI.CSS.Border);
   end
 end</script>
@@ -5978,7 +5974,7 @@ end</script>
 					<script>--
 function ui.fUpdateGMCP(event, ...)
   --
-  ui.fDebug("[call] ui.fUpdateGMCP(&lt;white&gt;"..event.."&lt;reset&gt;)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateGMCP(&lt;white&gt;"..event.."&lt;reset&gt;)")
   --
   if (gmcp) then
     ui.previous = ui.previous or {}
@@ -6114,7 +6110,7 @@ function ui.fUpdateGroup()
   local c = 1
   local tot_r, tot_c, total
   --
-  ui.fDebug("[call] ui.fUpdateGroup()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateGroup()")
   --
   ui.group = {}
   --
@@ -6194,6 +6190,8 @@ function ui.fUpdateGroup()
     end
   end
   --
+  ui.fUpdateAllTargetButton()
+  --
   GUI.Group:setTitle("Gruppo ["..total.."]")
 end
 --
@@ -6209,6 +6207,8 @@ end</script>
 					<script>--
 function ui.fHelp(cmd)
   local line
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fHelp("..(cmd or "nil")..")")
   --
   -- Restore widget
   clearWindow("GUI.Help.Main.Console")
@@ -6327,6 +6327,9 @@ function ui.fHelp(cmd)
 end
 --
 function ui.fHelp_links(htext, hlinktext, hurl, hcaption)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fHelp_links(...)")
+  --
   if (htext ~= nil) and (hlinktext ~= nil) and (hurl ~= nil) and (hcaption ~= nil) then
     --
     GUI.Help:cecho(ui.colors.text..htext.." ")
@@ -6355,6 +6358,8 @@ function ui.fShowAllHighlights()
   local i = 0
   local num
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllHighlights()")
+  --
   cecho(ui.fTitle("Highlights"))
   for highlight in pairs(ui.highlights) do
     i = i + 1
@@ -6368,6 +6373,8 @@ function ui.fShowAllHighlights()
 end
 --
 function ui.fRemoveHighlight(highlight)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveHighlight("..(highlight.."nil")..")")
+  --
   if (ui.highlights[highlight]) then
     if (ui.highlights[highlight].id) then
       killTrigger(ui.highlights[highlight].id)
@@ -6381,6 +6388,8 @@ function ui.fRemoveHighlight(highlight)
 end
 --
 function ui.fRemoveAllHighlights()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllHighlights()")
+  --
   for highlight in pairs(ui.highlights) do
     ui.fRemoveHighlight(highlight)
   end
@@ -6388,6 +6397,8 @@ function ui.fRemoveAllHighlights()
 end
 --
 function ui.fAddHighlight(highlight, color)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveHighlight("..(highlight.."nil")..", "..(color.."nil")..")")
+  --
   if ui.fColorCheck(color) then
     highlight = highlight or "" 
     if (highlight ~= "") then
@@ -6422,6 +6433,8 @@ function ui.fSaveFileHighlights()
   local file = ui.files.highlights.path..ui.files.highlights.name
   local highlightsDataToSave = {}
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveFileHighlights()")
+  --
   for highlight in pairs(ui.highlights) do
     highlightsDataToSave[highlight] = {}
     highlightsDataToSave[highlight].color = ui.highlights[highlight].color
@@ -6432,6 +6445,8 @@ end
 -- Read Highlights data from file
 function ui.fReadFileHighlights()
   local file = ui.files.highlights.path..ui.files.highlights.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileHighlights()")
   --
   -- Remove actual Highlights
   ui.highlights = ui.highlights or {}
@@ -6535,6 +6550,8 @@ end
 function ui.fShowAllKeyb()
   local orderTable = {}
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllKeyb()")
+  --
   -- Order Target keybind
   for target in pairs(ui.targets) do
     orderTable[#orderTable+1] = target
@@ -6626,6 +6643,8 @@ function ui.fRemoveKeyb(element)
 end
 --
 function ui.fRemoveAllKeyb()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllKeyb()")
+  --
   for element in pairs(ui.aliases) do
     ui.fRemoveKeyb(ui.aliases[element])
   end
@@ -6763,6 +6782,8 @@ local function make_room(room, prev)
   local areas = getAreaTable()
   local areaID = areas[room.area]
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] make_room(..)")
+  --
   -- Create Room
   addRoom(room.id)
   --
@@ -6877,6 +6898,7 @@ function map.fHighlightRoom(roomId, HighlightPath)
 end
 --
 function map.fTimeOutSpeedWalk()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fTimeOutSpeedWalk()")
   --
   -- Stop speed Walk
   if (map.speedwalkDelayId) then 
@@ -6888,6 +6910,8 @@ end
 --
 function map.fContinueSpeedWalk(walkPath, walkDirs)
   local roomId = map.room.id or getPlayerRoom()
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fContinueSpeedWalk(..)")
   --
   -- if not arrive at next room
   if (tonumber(walkPath[1]) == tonumber(roomId)) then
@@ -6925,6 +6949,8 @@ end
 --
 -- Highlight new path
 function map.fHighlightSpeedWalk(walkPath)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fHighlightSpeedWalk(..)")
+  --
   map.speedWalkPath = map.speedWalkPath or {}
   walkPath = walkPath or {}
   --
@@ -6947,6 +6973,8 @@ function map.fPrepareSpeedWalk(walkPath, walkDirs)
   local roomId = map.room.id or getPlayerRoom()
   local p = table.deepcopy(walkPath) or {}
   local d = table.deepcopy(walkDirs) or {}
+  ..
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fPrepareSpeedWalk(..)")
   --
   if (#p ~= 0) then
     --
@@ -6985,6 +7013,8 @@ end
 function doSpeedWalk()
   local walkPath, walkDirs = map.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] doSpeedWalk()")
+  --
   -- Highlight new speedWalk (and unhighlight oldest)
   map.fHighlightSpeedWalk(walkPath)
   --
@@ -7004,7 +7034,8 @@ function doSpeedWalk()
 end
 --
 function ui.fUpdateMapper(event,...)
-  ui.fDebug("[call] ui.fUpdateMapper()")
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateMapper(..)")
   --
   if (gmcp) and (gmcp.room) and (gmcp.room.info) and (not gmcp.room.info.isOnMap) then
     --
@@ -7124,6 +7155,8 @@ function onMapMarkSelectedRooms(event, markRoomType)
   local selectedRooms = getMapSelection()["rooms"]
   local centerRoom = getMapSelection()["center"]
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] onMapMarkSelectedRooms("..(event or "nil")..", "..(markRoomType or "nil")..")")
+  --
   if (selectedRooms ~= nil) then
     for i, val in ipairs(selectedRooms) do
       --
@@ -7156,6 +7189,8 @@ end
 --
 function ui.fInitMapper()
   local file = ui.files.map.path..ui.files.map.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitMapper()")
   --
   -- Coordinates of rooms
   if (io.exists(file)) then
@@ -7195,7 +7230,7 @@ end</script>
 					<packageName></packageName>
 					<script>function ui.fUpdateOverand()
   --
-  ui.fDebug("[call] ui.fUpdateOverand()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateOverand()")
   --
   --if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
   --  ui.variables.roomPos = gmcp.char.vitals.roomPos or 5
@@ -7232,6 +7267,8 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fDifTimerOpponent(time_left)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerOpponent("..(time_left or "nil")..")")
+  --
   if (ui.handlers.fDifTimerOpponent) then
     killTimer(ui.handlers.fDifTimerOpponent)
   end
@@ -7248,7 +7285,7 @@ function ui.fUpdateOpponent()
   local title
   local hpGaugeWidthDif = GUI.Opponent.Main.Health.front:get_width()
   --
-  ui.fDebug("[call] ui.fUpdateOpponent()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateOpponent()")
   --
   -- init
   ui.opponent       = {}
@@ -7285,14 +7322,16 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Main.Health.front:echo(ui.opponent.name)
     --
     -- Level color
-    local levelDif = tonumber(ui.player.level) - tonumber(ui.opponent.level)
-    local color = "red"
+    local levelDif = tonumber(ui.opponent.level) - tonumber(ui.player.level or 0)
+    local color = "grey"
     --
-    if (levelDif &gt;= 5) then
-      color = "white"
-    elseif (levelDif &gt;= 0) then
-      color = "green"
+    if (levelDif &gt;= 10) then
+      color = "brown"
+    elseif (levelDif &gt;= 5) then
+      color = "red"
     elseif (levelDif &gt;= -5) then
+      color = "green"
+    elseif (levelDif &gt;= -10) then
       color = "orange"
     end
     --
@@ -7322,6 +7361,8 @@ function ui.fUpdateOpponent()
     -- Remove Keybind
     ui.fAssignTargetButton("o0", nil)
   end
+  --
+  ui.fUpdateAllTargetButton()
   --
   -- Diff. hp
   hpGaugeWidthDif = GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif
@@ -7374,6 +7415,8 @@ end</script>
 					<script>-- Read Variables data from file
 function ui.fReadFileOptions()
   local file = ui.files.options.path..ui.files.options.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileOptions()")
   --
   -- Remove actual Variables
   ui.options = {}
@@ -7449,6 +7492,8 @@ end
 function ui.fSaveFileParameters()
   local file = ui.files.parameters.path..ui.files.parameters.name
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveFileParameters()")
+  --
   table.save(file, ui.parameters)
 end
 --
@@ -7456,8 +7501,9 @@ end
 function ui.fReadFileParameters()
   local file = ui.files.parameters.path..ui.files.parameters.name
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileParameters()")
+  --
   -- Load parameters
-  ui.fDebug("[init] Load 'Parameters' from file")
   ui.parameters = ui.parameters or {}
   if (io.exists(file)) then
     table.load(file, ui.parameters)
@@ -7475,6 +7521,8 @@ end</script>
 function ui.fGetNextNumber(text, index)
   local number = ""
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
+  --
   index = tonumber(index or 1)
   while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
     number = number..string.lower(text:sub(index, index))
@@ -7489,6 +7537,8 @@ function ui.fGetNextNumber(text, index)
 end
 --
 function ui.fSavePath(dir)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSavePath("..(dir or "nil")..")")
+  --
   if (ui.idxPath &lt; 50) then
     ui.idxPath = ui.idxPath + 1
     ui.path[ui.idxPath] = dir
@@ -7509,6 +7559,8 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fDifTimerPlayer(time_left)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerPlayer("..(time_left or "nil")..")")
+  --
   if (ui.handlers.fDifTimerPlayer) then
     killTimer(ui.handlers.fDifTimerPlayer)
   end
@@ -7528,7 +7580,7 @@ function ui.fUpdatePlayer()
   local powerPerc = 0
   local hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width()
   --
-  ui.fDebug("[call] ui.fUpdatePlayer()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdatePlayer()")
   --
   -- init vars
   ui.player = ui.player or {}
@@ -7713,6 +7765,8 @@ end
 function ui.fInitProfiles()
   local lfs = require("lfs")
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitProfiles()")
+  --
   if (lfs.chdir(ui.files.profiles.path)) then
     ui.fDebug("ui.fInitProfiles() - Cartella profili inizializzata correttamente.")
   elseif (lfs.mkdir(ui.files.profiles.path)) then
@@ -7726,6 +7780,8 @@ end
 function ui.fGetProfiles()
   local lfs = require("lfs")
   local profiles = {}
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fGetProfiles()")
   --
   if (lfs.chdir(ui.files.profiles.path)) then
     for profile in lfs.dir(ui.files.profiles.path) do
@@ -7753,6 +7809,8 @@ function ui.fShowAllProfiles()
   local profiles = ui.fGetProfiles()
   local nProfiles = 0
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.ShowAllProfiles()")
+  --
   cecho(ui.fTitle("Profili"))
   for profile in ui.fOrderedPairs(profiles) do
     nProfiles = nProfiles + 1
@@ -7768,6 +7826,8 @@ end
 --
 function ui.fLoadProfile(profile)
   local profiles = ui.fGetProfiles()
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fLoadProfile("..(profile or "nil")..")")
   --
   if (ui.fContainProfile(profiles, profile)) then
     --
@@ -7810,6 +7870,8 @@ end
 function ui.fRemoveProfile(profile)
   local profiles = ui.fGetProfiles()
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveProfile("..(profile or "nil")..")")
+  --
   if (ui.fContainProfile(profiles, profile)) then
     ui.fDeleteDirectory(ui.files.profiles.path..profile)
     --
@@ -7822,6 +7884,8 @@ end
 function ui.fRemoveAllProfiles()
   local profiles = ui.fGetProfiles()
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllProfiles()")
+  --
   for profile in pairs(profiles) do
     ui.fDeleteDirectory(ui.files.profiles.path..profiles[profile])
   end
@@ -7832,6 +7896,8 @@ end
 function ui.fSaveProfile(profile)
   local lfs = require("lfs")
   local profiles = ui.fGetProfiles()
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveProfile("..(profile or "nil")..")")
   --
   if (ui.fContainProfile(profiles, profile)) then
     ui.fDeleteDirectory(ui.files.profiles.path..profile)
@@ -7920,7 +7986,7 @@ end
 function ui.fUpdateRoom()
   local token
   --
-  ui.fDebug("[call] ui.fUpdateRoom()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateRoom()")
   --
   ui.room = {
     id      = -1,
@@ -8101,6 +8167,8 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fClickTarget(sender)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fClickTarget("..(sender or "nil")..")")
+  --
   if (sender) then
     local type, number = ui.fExpandButton(sender)
     --
@@ -8145,7 +8213,7 @@ function ui.fUpdateTargetButtons()
   local tot_r, tot_c
   local total = 4
   --
-  ui.fDebug("[call] ui.fUpdateTargetButtons()")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateTargetButtons()")
   --
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
   -- When working with negative numbers math.floor() returns the closest integer less than or equal to a given value
@@ -8178,6 +8246,8 @@ end
 function ui.fRefreshTargetButton(button)
   local type, number = ui.fExpandButton(button)
   local child = ui.fGetTargetChild(type, number)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRefreshTargetButton("..(button or "nil")..")")
   --
   if (child ~= nil) then
     button = type..number 
@@ -8259,6 +8329,8 @@ end
 -- 
 -- Refresh all target button
 function ui.fUpdateAllTargetButton()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAllTargetButton()")
+  --
   for i=0, 9 do
     if (i &gt;= 1) and (i &lt;= 4) then
       ui.fRefreshTargetButton("t"..i)
@@ -8266,10 +8338,15 @@ function ui.fUpdateAllTargetButton()
     ui.fRefreshTargetButton("g"..i)
   end
   ui.fRefreshTargetButton("o0")
+  --
+  ui.fUpdateTarget()
+  ui.fSaveFileTarges()
 end
 --
 -- Refresh Target
 function ui.fUpdateTarget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateTarget()")
+  --
   if (not ui.variables.target) or (ui.variables.target == "") then
     GUI.TargetButtons:setTitle("Target")
   else
@@ -8282,13 +8359,12 @@ function ui.fAssignTargetButton(button, value)
   local ret = 0;
   local type, number = ui.fExpandButton(button)
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fAssignTargetButton("..(button or "nil")..", "..(value or "nil")..")")
+  --
   if (type == "g") or (type == "o") or (type == "t") then
     button = type..number
     ui.targets[button] = ui.targets[button] or {}
     ui.targets[button].target = value
-    ui.fUpdateAllTargetButton()
-    ui.fUpdateTarget()
-    ui.fSaveFileTarges()
     --
     return 1 -- Value assigned (can be nil)
   end
@@ -8299,6 +8375,8 @@ end
 -- Execute Target button
 function ui.fExecuteTargetButton(button)
   local type, number = ui.fExpandButton(button)
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fExecuteTargetButton("..(button or "nil")..")")
   --
   if (type == "g") or (type == "o") or (type == "t") then
     button = type..number
@@ -8319,8 +8397,8 @@ function ui.fExecuteTargetButton(button)
       ui.fEcho2n(ui.fGetTargetFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
     end
     -- Save target
-    ui.fSaveFileVariables()
     ui.fUpdateAllTargetButton()
+    ui.fSaveFileVariables()
   else
     ui.fEcho2n(ui.fGetTargetFormattedText(button).." pulsante non valido.")
   end
@@ -8331,6 +8409,8 @@ end
 function ui.fSaveFileTarges()
   local file = ui.files.targets.path..ui.files.targets.name
   local targetsDataToSave = {}
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveFileTarges()")
   --
   for button in pairs(ui.targets) do
     targetsDataToSave[button] = {}
@@ -8345,6 +8425,8 @@ end
 -- Read Targets data from file
 function ui.fReadFileTargets()
   local file = ui.files.targets.path..ui.files.targets.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileTargets()")
   --
   -- Pre defined target buttons
   local pre_defined_target_buttons = {
@@ -8414,6 +8496,8 @@ function ui.fGetVarFormattedText(variable)
 end
 --
 function ui.fRemoveAllVariables()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fRemoveAllVariables()")
+  --
   ui.variables = {}
   ui.variables = table.deepcopy(ui.fGetPreDefinitedVariables())
 end
@@ -8422,6 +8506,8 @@ function ui.fShowAllVar()
   local app = {}
   local numVar = 0
   local numPreVar = 0
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllVar()")
   --
   cecho(ui.fTitle("Variabili predefinite"))
   for variable in pairs(ui.variables) do
@@ -8460,6 +8546,8 @@ end
 function ui.fSaveFileVariables()
   local file = ui.files.variables.path..ui.files.variables.name
   --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSaveFileVariables()")
+  --
   -- Save
   table.save(file, ui.variables)
 end
@@ -8467,6 +8555,8 @@ end
 -- Read Variables data from file
 function ui.fReadFileVariables()
   local file = ui.files.variables.path..ui.files.variables.name
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fReadFileVariables()")
   --
   -- Remove actual Variables
   ui.variables = {}
@@ -8494,6 +8584,7 @@ end</script>
 					<name>Affects Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitAffectsWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitAffectsWidget()")
   --
   -- Affects
   GUI.Affects = Adjustable.Container:new2({
@@ -8532,64 +8623,64 @@ end</script>
     local col = (i-1) % 10;
     local row = (i&lt;=10)and(0)or(1)
     --
-    GUI["AffectIcon"..i] = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i,
+    GUI.Affects.Main["Affect"..i] = Geyser.Label:new2({
+      name = "GUI.Affects.Main.Affect"..i,
       x = 30*col,
       y = 30*row,
       width = 100,
       height = 26,
     }, GUI.Affects.Main)
-    GUI["AffectIcon"..i]:setStyleSheet(GUI.CSS.Affect);
+    GUI.Affects.Main["Affect"..i]:setStyleSheet(GUI.CSS.Affect);
     --
     -- Duration
-    GUI["AffectIcon"..i].duration = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".duration",
+    GUI.Affects.Main["Affect"..i].duration = Geyser.Label:new2({
+      name = "GUI.Affects.Main.Affect"..i..".duration",
       x = 2, y = 2,
       width = 26,
       height = -2,
-    }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].duration:enableClickthrough() -- for tooltip
-    GUI["AffectIcon"..i].duration:setStyleSheet(GUI.CSS.AffectDuration)
-    GUI["AffectIcon"..i].duration:setFontSize(7);
+    }, GUI.Affects.Main["Affect"..i])
+    GUI.Affects.Main["Affect"..i].duration:enableClickthrough() -- for tooltip
+    GUI.Affects.Main["Affect"..i].duration:setStyleSheet(GUI.CSS.AffectDuration)
+    GUI.Affects.Main["Affect"..i].duration:setFontSize(7);
     --
     -- Text
-    GUI["AffectIcon"..i].text = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".text",
+    GUI.Affects.Main["Affect"..i].text = Geyser.Label:new2({
+      name = "GUI.Affects.Main.Affect"..i..".text",
       x = 28,
       y = 2,
       width = -28,
       height = -2,
-    }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].text:enableClickthrough() -- for tooltip
-    GUI["AffectIcon"..i].text:setStyleSheet(GUI.CSS.AffectText)
-    GUI["AffectIcon"..i].text:setFontSize(7);
+    }, GUI.Affects.Main["Affect"..i])
+    GUI.Affects.Main["Affect"..i].text:enableClickthrough() -- for tooltip
+    GUI.Affects.Main["Affect"..i].text:setStyleSheet(GUI.CSS.AffectText)
+    GUI.Affects.Main["Affect"..i].text:setFontSize(7);
     --
     -- Dispel Resistance
-    GUI["AffectIcon"..i].dispelResistance = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".dispelResistance",
+    GUI.Affects.Main["Affect"..i].dispelResistance = Geyser.Label:new2({
+      name = "GUI.Affects.Main.Affect"..i..".dispelResistance",
       x = -28,
       y = 2,
       width = 26,
       height = "50%-2",
-    }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].dispelResistance:enableClickthrough() -- for tooltip
-    GUI["AffectIcon"..i].dispelResistance:setStyleSheet(GUI.CSS.AffectDispelResistance)
-    GUI["AffectIcon"..i].dispelResistance:setFgColor("cyan")
-    GUI["AffectIcon"..i].dispelResistance:setFontSize(7);
+    }, GUI.Affects.Main["Affect"..i])
+    GUI.Affects.Main["Affect"..i].dispelResistance:enableClickthrough() -- for tooltip
+    GUI.Affects.Main["Affect"..i].dispelResistance:setStyleSheet(GUI.CSS.AffectDispelResistance)
+    GUI.Affects.Main["Affect"..i].dispelResistance:setFgColor("cyan")
+    GUI.Affects.Main["Affect"..i].dispelResistance:setFontSize(7);
     --
     -- Stacks
-    GUI["AffectIcon"..i].stacks = Geyser.Label:new2({
-      name = "GUI.AffectIcon"..i..".stacks",
+    GUI.Affects.Main["Affect"..i].stacks = Geyser.Label:new2({
+      name = "GUI.Affects.Main.Affect"..i..".stacks",
       x = -28, y = "50%",
       width = 26,
       height = "50%-2",
-    }, GUI["AffectIcon"..i])
-    GUI["AffectIcon"..i].stacks:enableClickthrough() -- for tooltip
-    GUI["AffectIcon"..i].stacks:setStyleSheet(GUI.CSS.AffectStacks)
-    GUI["AffectIcon"..i].stacks:setFgColor("orange")
-    GUI["AffectIcon"..i].stacks:setFontSize(7);
+    }, GUI.Affects.Main["Affect"..i])
+    GUI.Affects.Main["Affect"..i].stacks:enableClickthrough() -- for tooltip
+    GUI.Affects.Main["Affect"..i].stacks:setStyleSheet(GUI.CSS.AffectStacks)
+    GUI.Affects.Main["Affect"..i].stacks:setFgColor("orange")
+    GUI.Affects.Main["Affect"..i].stacks:setFontSize(7);
     --
-    GUI["AffectIcon"..i]:hide()
+    GUI.Affects.Main["Affect"..i]:hide()
   end
   --
   -- Wrapping function
@@ -8612,6 +8703,7 @@ end</script>
 					<name>Alias Buttons Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitAliasButtonsWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitAliasButtonsWidget()")
   --
   -- Alias buttons 
   GUI.AliasButtons = Adjustable.Container:new2({
@@ -8689,7 +8781,7 @@ end</script>
     --
     -- Name
     GUI.AliasButtons.Main["Button"..i] = Geyser.Label:new2({
-      name = "GUI.AliasButtons.Main.CButtons.Custom"..i,
+      name = "GUI.AliasButtons.Main.Button"..i,
       x = (10*i).."%", 
       y = 0,
       width = "10%",
@@ -8699,7 +8791,7 @@ end</script>
     --
     -- Icon
     GUI.AliasButtons.Main["Button"..i].icon = Geyser.Label:new2({
-      name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".icon",
+      name = "GUI.AliasButtons.Main.Button"..i..".icon",
       x = 5, y = 5,
       width = -5,
       height = -5,
@@ -8710,7 +8802,7 @@ end</script>
     --
     -- Index
     GUI.AliasButtons.Main["Button"..i].index = Geyser.Label:new2({
-      name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".index",
+      name = "GUI.AliasButtons.Main.Button"..i..".index",
       x = 5, 
       y = 1,
       width = "15",
@@ -8723,7 +8815,7 @@ end</script>
     --
     -- Keybid
     GUI.AliasButtons.Main["Button"..i].keybind = Geyser.Label:new2({
-      name = "GUI.AliasButtons.Main.CButtons.Custom"..i..".keybind",
+      name = "GUI.AliasButtons.Main.Button"..i..".keybind",
       x = 5, 
       y = -15,
       width = -10,
@@ -8754,6 +8846,7 @@ end</script>
 					<name>Chat Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitChatWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitChatWidget()")
   --
   -- Private messages
   GUI.Chat = Adjustable.Container:new2({
@@ -8862,6 +8955,7 @@ end</script>
 					<name>Equipment Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitEquipmentWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitEquipmentWidget()")
   --
   -- Equip
   GUI.Equipment = Adjustable.Container:new2({
@@ -8916,6 +9010,7 @@ end</script>
 					<name>Group Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitGroupWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitGroupWidget()")
   --
   -- Group Members
   GUI.Group = Adjustable.Container:new2({
@@ -9082,6 +9177,7 @@ end</script>
 					<name>Help Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitHelpWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitHelpWidget()")
   --
   -- Public messages
   GUI.Help = Adjustable.Container:new2({
@@ -9136,6 +9232,7 @@ end</script>
 					<name>Inventory Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitInventoryWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitInventoryWidget()")
   --
   -- Inventory
   GUI.Inventory = Adjustable.Container:new2({
@@ -9190,6 +9287,7 @@ end</script>
 					<name>Mapper Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitMapperWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitMapperWidget()")
   --
   -- Public messages
   GUI.Mapper = Adjustable.Container:new2({
@@ -9255,6 +9353,7 @@ end</script>
 					<name>Opponent Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitOpponentWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitOpponentWidget()")
   --
   -- Opponent
   GUI.Opponent = Adjustable.Container:new2({
@@ -9367,6 +9466,7 @@ end</script>
 					<name>Player Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitPlayerWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitPlayerWidget()")
   --
   -- Player 
   GUI.Player = Adjustable.Container:new2({
@@ -9566,6 +9666,7 @@ end</script>
 					<name>Room Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitRoomWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitRoomWidget()")
   --
   -- Room
   GUI.Room = Adjustable.Container:new2({
@@ -9620,6 +9721,7 @@ end</script>
 					<name>Target Buttons Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitTargetButtonsWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitTargetButtonsWidget()")
   --
   -- Target
   GUI.TargetButtons = Adjustable.Container:new2({
@@ -9726,7 +9828,7 @@ end</script>
 				<packageName></packageName>
 				<script>--
 ui = ui or {}
-ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values
+ui.enDebug = 2 -- 0 = Off, 1 = Text only, 2 = simulate values
 ui.release = "24/11/2023"
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 ui.varID = "&amp;"
@@ -9898,17 +10000,24 @@ ui.idxPath = 0;
 ui.memPath = 0;
 ui.path = {}
 --
--- Group
-ui.group = ui.group or {}
---
 -- Affects
 ui.affects = ui.affects or {}
+--
+-- Group
+ui.group = ui.group or {}
 --
 -- Handlers
 ui.handlers = ui.handlers or {}
 --
+-- Opponent
+ui.opponent = ui.opponent or {}
+--
+-- Player
+ui.player = ui.player or {}
+--
 -- Previous
-ui.previous = ui.previous or {}</script>
+ui.previous = ui.previous or {}
+</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -9920,49 +10029,12 @@ ui.fDebug("[init] CSS")
 GUI = GUI or {}
 GUI.CSS = GUI.CSS or {}
 --
---
-GUI.CSS.Widget = [[
-  border: 2px outset rgb(]]..ui.colors.wBorder..[[); 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background-color: rgb(]]..ui.colors.widget..[[);
-]]
---
-GUI.CSS.WidgetButton = [[
-  QLabel{
-    border-radius: 6px;
-    background-color: rgb(]]..ui.colors.wButton..[[);
-  }
-  QLabel::hover{
-    background-color: rgb(]]..ui.colors.wButtonHover..[[);
-  }
-]]
---
---
-GUI.CSS.WidgetTransparent = [[
-  QWidget{
-    border: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    padding: 2px;
-    background: transparent;
-  }
-  QWidget::hover{
-    border: 2px outset rgba(]]..ui.colors.wBorder..[[, 0.7); 
-    background-color: rgba(]]..ui.colors.wBackground..[[, 0.7);
-  }
-]]
---
 -- Affect
 GUI.CSS.Affect = [[
   border: 2px outset rgb(]]..ui.colors.wBorder..[[);
-  border-top-left-radius: 12.5px;
+  border-top-left-radius: 12px;
   border-top-right-radius: 7px;
-  border-bottom-left-radius: 12.5px;
+  border-bottom-left-radius: 12px;
   border-bottom-right-radius: 7px;
 ]]
 --
@@ -9975,19 +10047,12 @@ GUI.CSS.AffectDispelResistance = [[
   background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
--- Affect Text
-GUI.CSS.AffectText = [[
-  border: none;
-  border-radius: 0px;
-  qproperty-wordWrap: true;
-]]
---
 -- Affect Duration
 GUI.CSS.AffectDuration = [[
   border: 2px inset rgb(]]..ui.colors.wBorder..[[);
-  border-top-left-radius: 10.5px;
+  border-top-left-radius: 10px;
   border-top-right-radius: 5px;
-  border-bottom-left-radius: 10.5px;
+  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 5px;
   background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
@@ -9999,6 +10064,13 @@ GUI.CSS.AffectStacks = [[
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: rgb(]]..ui.colors.wBackground..[[);
+]]
+--
+-- Affect Text
+GUI.CSS.AffectText = [[
+  border: none;
+  border-radius: 0px;
+  qproperty-wordWrap: true;
 ]]
 --
 -- Border
@@ -10056,6 +10128,43 @@ GUI.CSS.Level = [[
 -- Widget Body
 GUI.CSS.Main = [[
   background: transparent;
+]]
+--
+--
+GUI.CSS.Widget = [[
+  border: 2px outset rgb(]]..ui.colors.wBorder..[[); 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: rgb(]]..ui.colors.widget..[[);
+]]
+--
+GUI.CSS.WidgetButton = [[
+  QLabel{
+    border-radius: 6px;
+    background-color: rgb(]]..ui.colors.wButton..[[);
+  }
+  QLabel::hover{
+    background-color: rgb(]]..ui.colors.wButtonHover..[[);
+  }
+]]
+--
+--
+GUI.CSS.WidgetTransparent = [[
+  QWidget{
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 2px;
+    background: transparent;
+  }
+  QWidget::hover{
+    border: 2px outset rgba(]]..ui.colors.wBorder..[[, 0.7); 
+    background-color: rgba(]]..ui.colors.wBackground..[[, 0.7);
+  }
 ]]</script>
 				<eventHandlerList />
 			</Script>
@@ -10345,66 +10454,65 @@ gmcp = gmcp or {}
 --
 -- Check if the generic_mapper package is installed and if so uninstall it
 if table.contains(getPackages(),"generic_mapper") then
-  ui.fDebug("[init] Unistall 'generic_mapper package")
+  ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Unistall 'generic_mapper package")
   uninstallPackage("generic_mapper")
 end
 --
 -- Load parameters
-ui.fDebug("[init] Load 'Parameters' from file")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Parameters' from file")
 ui.fReadFileParameters()
 --
 -- Load variables
-ui.fDebug("[init] Load 'Variables' from file")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Variables' from file")
 ui.fReadFileVariables()
 --
 -- Load targets
-ui.fDebug("[init] Load 'Targets' from file")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Targets' from file")
 ui.fReadFileTargets()
 --
 -- Load Aliases
-ui.fDebug("[init] Load 'Aliases' from file")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Aliases' from file")
 ui.fReadFileAliases()
 --
 -- Load Highlights
-ui.fDebug("[init] Load 'Highlights' from file")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Highlights' from file")
 ui.fReadFileHighlights()
 --
 -- Opponent
-ui.fDebug("[init] Opponent")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Opponent")
 ui.fInitOpponentWidget()
 --
 -- Group
-ui.fDebug("[init] Group")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Group")
 ui.fInitGroupWidget()
 --
 -- Target Buttons
-ui.fDebug("[init] Target Buttons")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Target Buttons")
 ui.fInitTargetButtonsWidget()
 ui.fUpdateTargetButtons()
 --
 --  Opponent and Groups are also targets. Widgets needed before updating
 ui.fUpdateAllTargetButton()
-ui.fUpdateTarget()
 ui.fUpdateOpponent()
 ui.fUpdateGroup()
 --
 -- Private (Used as Log from ui.fLog())
-ui.fDebug("[init] Chat")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Chat")
 ui.fInitChatWidget()
 ui.fUpdateChat()
 --
 -- Player
-ui.fDebug("[init] Player")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Player")
 ui.fInitPlayerWidget()
 ui.fUpdatePlayer()
 --
 -- Alias Button
-ui.fDebug("[init] Alias Buttons")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Alias Buttons")
 ui.fInitAliasButtonsWidget()
 ui.fUpdateAliasButton()
 --
 -- Affects
-ui.fDebug("[init] Affects")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Affects")
 ui.fInitAffectsWidget()
 ui.fUpdateAffects()
 --
@@ -10413,29 +10521,29 @@ ui.fInitMapperWidget()
 ui.fInitMapper()
 --
 -- Map/Compass
-ui.fDebug("[init] Room")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Room")
 ui.fInitRoomWidget()
 ui.fUpdateRoom()
 --
 -- Inventory
-ui.fDebug("[init] Inventory")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Inventory")
 ui.fInitInventoryWidget()
 --
 -- Equipment
-ui.fDebug("[init] Equipment")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Equipment")
 ui.fInitEquipmentWidget()
 --
 -- Help
-ui.fDebug("[init] Help")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Help")
 ui.fInitHelpWidget()
 GUI.Help:hide()
 --
 -- Profile
-ui.fDebug("[init] Profiles")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Profiles")
 ui.fInitProfiles()
 --
 -- GMCP
-ui.fDebug("[init] setMergeTables()")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] setMergeTables()")
 setMergeTables("gmcp")
 --
 -- Events
@@ -10454,7 +10562,7 @@ end
 ui.handlers.fFinishedRepositioning = registerAnonymousEventHandler("AdjustableContainerRepositionFinish", ui.fFinishedRepositioning)
 --
 -- gmcp.char
-ui.fDebug("[init] Register events")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Register events")
 if (ui.handlers.fUpdateGMCP_char) then
   killAnonymousEventHandler(ui.handlers.fUpdateGMCP_char)
   ui.handlers.fUpdateGMCP_char = nil
@@ -10475,7 +10583,7 @@ if (ui.handlers.fUpdateGMCP_overland) then
 end
 ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland", "ui.fUpdateGMCP")
 --
-ui.fDebug("[init] ... end UI init!")
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] ... end UI init!")
 --
 ui.fEchon("&lt;orange&gt; - Lumen et Umbra UI (rel. "..ui.release..") - &lt;white&gt;"..ui.fGetCommandFormattedText("uih[elp]").."&lt;white&gt; per iniziare.")</script>
 				<eventHandlerList />
