@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>0</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,12 +71,12 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Special exits</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -288,15 +288,9 @@ GUI.Chat.Main.All:decho(m)</script>
 				<script>local other = matches[2]
 ui.fDebug("[trig] Equipment start")
 ui.equipment = {}
-clearWindow("GUI.Equipment.Main.Console")
+clearWindow("GUI.Endowment.Main.Equipment")
 enableTrigger("equipment_valid")
-enableTrigger("equipment_end")
-
-if (other) then
-  GUI.Equipment:setTitle("Eq. ("..ui.fRemoveArticle(other)..") "..getTime(true, "[hh:mm]"))
-else
-  GUI.Equipment:setTitle("Equipaggiamento "..getTime(true, "[hh:mm]"))
-end</script>
+enableTrigger("equipment_end")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>1</mStayOpen>
@@ -346,9 +340,9 @@ if (equipment.brittle) then
 end
 --
 if (equipment.status &lt; 8) then
-  GUI.Equipment.Main.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:"..ui.colors.wBackground.."&gt;["..equipment.status.."/8]&lt;r&gt;\n")
+  GUI.Endowment.Main.Equipment:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:"..ui.colors.wBackground.."&gt;["..equipment.status.."/8]&lt;r&gt;\n")
 else
-  GUI.Equipment.Main.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.."\n")
+  GUI.Endowment.Main.Equipment:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.."\n")
 end
 table.insert(ui.equipment, equipment)
 setTriggerStayOpen("Equipment", 1)
@@ -372,7 +366,10 @@ setTriggerStayOpen("Equipment", 1)
 				</Trigger>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
-					<script>ui.fDebug("[trig] Equipment_end")
+					<script>ui.parameters.widgets.endowment.type = "equip"
+ui.fUpdateEndowment()
+--
+ui.fDebug("[trig] Equipment_end")
 disableTrigger("equipment_valid")
 disableTrigger("equipment_invalid")
 disableTrigger("equipment_end")</script>
@@ -402,16 +399,10 @@ disableTrigger("equipment_end")</script>
 				<name>Loot</name>
 				<script>local inventory = matches[1] or ""
 ui.fDebug("[trig] Loot start")
-clearWindow("GUI.Inventory.Main.Console")
+clearWindow("GUI.Endowment.Main.Inventory")
 enableTrigger("loot_valid")
 enableTrigger("loot_invalid")
-enableTrigger("loot_end")
-
-if (inventory == "Stai trasportando:") or (inventory == "Non stai trasportando nulla.") then
-  GUI.Inventory:setTitle("Inventario "..getTime(true, "[hh:mm]"))
-else
-  GUI.Inventory:setTitle("Contenitore "..getTime(true, "[hh:mm]"))
-end</script>
+enableTrigger("loot_end")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>1</mStayOpen>
@@ -460,9 +451,9 @@ if (brittle) then
   name = name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (status &lt; 8) then
-  GUI.Inventory.Main.Console:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
+  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
 else
-  GUI.Inventory.Main.Console:decho(number.." "..eqtype.. " "..name.."\n")
+  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.."\n")
 end
 setTriggerStayOpen("Loot", 1)
 </script>
@@ -486,9 +477,6 @@ setTriggerStayOpen("Loot", 1)
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_invalid</name>
 					<script>ui.fDebug("[trig] Loot_invalid")
-if (matches[2]) then
-  GUI.Inventory:setTitle(matches[2].." "..getTime(true, "[hh:mm]"))
-end
 setTriggerStayOpen("Loot", 1)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>1</conditonLineDelta>
@@ -513,7 +501,10 @@ setTriggerStayOpen("Loot", 1)</script>
 				</Trigger>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_end</name>
-					<script>ui.fDebug("[trig] Loot_end")
+					<script>ui.parameters.widgets.endowment.type = "inv"
+ui.fUpdateEndowment()
+--
+ui.fDebug("[trig] Loot_end")
 disableTrigger("loot_valid")
 disableTrigger("loot_invalid")
 disableTrigger("loot_end")</script>
@@ -2235,15 +2226,13 @@ if (matches[3]) then
       GUI.Chat.Main.Public:setFontSize(fontsize)
       GUI.Chat.Main.Private:setFontSize(fontsize)
       ui.parameters.widgets.chat.fontSize = fontsize
-      -- Equipment
-      GUI.Equipment.Main.Console:setFontSize(fontsize)
-      ui.parameters.fontSize.equipment = fontsize
+      -- Endowment
+      GUI.Endowment.Main.Equipment:setFontSize(fontsize)
+      GUI.Endowment.Main.Inventory:setFontSize(fontsize)
+      ui.parameters.widgets.endowment.fontSize = fontsize
       -- Help
       GUI.Help.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.help.fontSize = fontsize
-      -- Inventory
-      GUI.Inventory.Main.Console:setFontSize(fontsize)
-      ui.parameters.widgets.inventory.fontSize = fontsize
       -- Overland
       GUI.Mapper.Main.Overland:setFontSize(fontsize)
       ui.parameters.widgets.overland.fontSize = fontsize
@@ -2256,15 +2245,13 @@ if (matches[3]) then
       GUI.Chat.Main.Public:setFontSize(fontsize)
       GUI.Chat.Main.Private:setFontSize(fontsize)
       ui.parameters.widgets.chat.fontSize = fontsize
-    elseif (windows == "equipment") then
-      GUI.Equipment.Main.Console:setFontSize(fontsize)
-      ui.parameters.widgets.equipment.fontSize = fontsize
+    elseif (windows == "endowment") then
+      GUI.Endowment.Main.Equipment:setFontSize(fontsize)
+      GUI.Endowment.Main.Inventory:setFontSize(fontsize)
+      ui.parameters.widgets.endowment.fontSize = fontsize
     elseif (windows == "help") then
       GUI.Help.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.help.fontSize = fontsize
-    elseif (windows == "inventory") then
-      GUI.Inventory.Main.Console:setFontSize(fontsize)
-      ui.parameters.widgets.inventory.fontSize = fontsize
     elseif (windows == "overland") then
       GUI.Mapper.Main.Overland:setFontSize(fontsize)
       ui.parameters.widgets.overland.fontSize = fontsize
@@ -2275,9 +2262,8 @@ if (matches[3]) then
       fontsize = 0
       ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
                                             ..ui.fGetCommandFormattedText("Chat")..", "
-                                            ..ui.fGetCommandFormattedText("Equipment")..", "
+                                            ..ui.fGetCommandFormattedText("Endowment")..", "
                                             ..ui.fGetCommandFormattedText("Help")..", "
-                                            ..ui.fGetCommandFormattedText("Inventory")..", "
                                             ..ui.fGetCommandFormattedText("Overland")..", "
                                             ..ui.fGetCommandFormattedText("Room")..".")
     end
@@ -2296,9 +2282,8 @@ if (matches[3]) then
 else
   cecho(ui.fTitle("Dimensioni font"))
   cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Chat")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.chat.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Equipment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.equipment.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Endowment")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.equipment.fontSize).."\n");
   cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Inventory")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.inventory.fontSize).."\n");
   cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.overland.fontSize).."\n");
   cecho(ui.fGetNumberFormattedText(7)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n\n");
   ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
@@ -2565,9 +2550,8 @@ end</script>
   ["affects"]       = GUI.Affects,
   ["buttons"]       = GUI.AliasButtons,
   ["chat"]          = GUI.Chat,
-  ["equipment"]     = GUI.Equipment,
+  ["endowment"]     = GUI.Endowment,
   ["group"]         = GUI.Group,
-  ["inventory"]     = GUI.Inventory,
   ["room"]          = GUI.Room,
   ["mapper"]        = GUI.Mapper,
   ["opponent"]      = GUI.Opponent,
@@ -2590,9 +2574,8 @@ else
       ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("Affects")..", "
                                             ..ui.fGetCommandFormattedText("Buttons")..", "
                                             ..ui.fGetCommandFormattedText("Chat")..", "
-                                            ..ui.fGetCommandFormattedText("Equipment")..", "
+                                            ..ui.fGetCommandFormattedText("Endowment")..", "
                                             ..ui.fGetCommandFormattedText("Group")..", "
-                                            ..ui.fGetCommandFormattedText("Inventory")..", "
                                             ..ui.fGetCommandFormattedText("Mapper")..", "
                                             ..ui.fGetCommandFormattedText("Opponent")..", "
                                             ..ui.fGetCommandFormattedText("Player")..", "
@@ -5065,65 +5048,61 @@ end</script>
 					<name>Chat</name>
 					<packageName></packageName>
 					<script>--
-function ui.fButtonType()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fButtonType()")
-  --
-  if (ui.parameters.widgets.chat.type == "all") then
-    ui.parameters.widgets.chat.type = "Public"
-  elseif (ui.parameters.widgets.chat.type == "Public") then
-    ui.parameters.widgets.chat.type = "Private"
-  else
-    ui.parameters.widgets.chat.type = "all"
-  end
-  --
-  ui.fSaveFileParameters()
-  --
-  ui.fUpdateChat()
-end
---
-function ui.fButtonSplit()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fButtonSplit()")
-  --
-  if (ui.parameters.widgets.chat.split) then
-    ui.parameters.widgets.chat.split = false;
-  else
-    ui.parameters.widgets.chat.split = true;
-  end
-  --
-  ui.fSaveFileParameters()
-  --
-  ui.fUpdateChat()
-end
---
 function ui.fUpdateChat()
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateChat()")
   --
   if (ui.parameters.widgets.chat.type == "all") then
     GUI.Chat.Button_split:show();
     --
-    if (ui.parameters.widgets.chat.split) then
+    if (ui.parameters.widgets.chat.split == "horizontal") then
       GUI.Chat.Main.All:hide()
       --
       GUI.Chat.Main.Private:move(0, 0);
-      GUI.Chat.Main.Private:resize("100%", "50%")
+      GUI.Chat.Main.Private:resize("100%", "50%-4")
       GUI.Chat.Main.Private:show()
       --
-      GUI.Chat.Main.Public:move(0, "50%");
-      GUI.Chat.Main.Public:resize("100%", "50%")
+      GUI.Chat.Split_line:move(0, "50%-2");
+      GUI.Chat.Split_line:resize("100%", 4)
+      GUI.Chat.Split_line:show()
+      --
+      GUI.Chat.Main.Public:move(0, "50%+4");
+      GUI.Chat.Main.Public:resize("100%", "50%-4")
       GUI.Chat.Main.Public:show()
       --
-      GUI.Chat:setTitle("Chat [all|split]")
+      GUI.Chat:setTitle("Chat [private - pubblic]")
+    --
+    elseif (ui.parameters.widgets.chat.split == "vertical") then
+      GUI.Chat.Main.All:hide()
+      --
+      GUI.Chat.Main.Private:move(0, 0);
+      GUI.Chat.Main.Private:resize("50%-4", "100%")
+      GUI.Chat.Main.Private:show()
+      --
+      GUI.Chat.Split_line:move("50%-2", 0);
+      GUI.Chat.Split_line:resize(4, "100%")
+      GUI.Chat.Split_line:show()
+      --
+      GUI.Chat.Main.Public:move("50%+4", 0);
+      GUI.Chat.Main.Public:resize("50%-4", "100%")
+      GUI.Chat.Main.Public:show()
+      --
+      GUI.Chat:setTitle("Chat [private | pubblic]")
+    --
     else
+      GUI.Chat.Main.All:move(0, 0);
+      GUI.Chat.Main.All:resize("100%", "100%")
       GUI.Chat.Main.All:show()
       --
       GUI.Chat.Main.Public:hide()
       --
+      GUI.Chat.Split_line:hide()
+      --
       GUI.Chat.Main.Private:hide()
       --
-      GUI.Chat:setTitle("Chat [all]")
+      GUI.Chat:setTitle("Chat [private + pubblic]")
     end
   --
-  elseif (ui.parameters.widgets.chat.type == "Public") then
+  elseif (ui.parameters.widgets.chat.type == "public") then
     GUI.Chat.Button_split:hide();
     --
     GUI.Chat.Main.All:hide()
@@ -5132,9 +5111,11 @@ function ui.fUpdateChat()
     GUI.Chat.Main.Public:resize("100%", "100%")
     GUI.Chat.Main.Public:show()
     --
+    GUI.Chat.Split_line:hide()
+    --
     GUI.Chat.Main.Private:hide()
     --
-    GUI.Chat:setTitle("Chat [Pubblic]")
+    GUI.Chat:setTitle("Chat [pubblic]")
   else
     GUI.Chat.Button_split:hide();
     --
@@ -5142,14 +5123,48 @@ function ui.fUpdateChat()
     --
     GUI.Chat.Main.Public:hide()
     --
+    GUI.Chat.Split_line:hide()
+    --
     GUI.Chat.Main.Private:move(0, 0);
     GUI.Chat.Main.Private:resize("100%", "100%")
     GUI.Chat.Main.Private:show()
     --
-    GUI.Chat:setTitle("Chat [Private]")
+    GUI.Chat:setTitle("Chat [private]")
   end
   --
   GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
+end
+--
+function ui.fChatTypeClicked()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fChatTypeClicked()")
+  --
+  if (ui.parameters.widgets.chat.type == "all") then
+    ui.parameters.widgets.chat.type = "public"
+  elseif (ui.parameters.widgets.chat.type == "public") then
+    ui.parameters.widgets.chat.type = "private"
+  else
+    ui.parameters.widgets.chat.type = "all"
+  end
+  --
+  ui.fUpdateChat()
+  --
+  ui.fSaveFileParameters()
+end
+--
+function ui.fChatSplitClicked()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fChatSplitClicked()")
+  --
+  if (ui.parameters.widgets.chat.split == "no") then
+    ui.parameters.widgets.chat.split = "vertical";
+  elseif (ui.parameters.widgets.chat.split == "vertical") then
+    ui.parameters.widgets.chat.split = "horizontal";
+  else
+    ui.parameters.widgets.chat.split = "no"
+  end
+  --
+  ui.fUpdateChat()
+  --
+  ui.fSaveFileParameters()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -5403,6 +5418,47 @@ function ui.fColorCheck(color)
   return false
 end
 </script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>Endowment</name>
+					<packageName></packageName>
+					<script>--
+function ui.fUpdateEndowment()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateEndowment()")
+  --
+if (ui.parameters.widgets.endowment.type == "equip") then
+    --
+    GUI.Endowment.Main.Equipment:show()
+    --
+    GUI.Endowment.Main.Inventory:hide()
+    --
+    GUI.Endowment:setTitle("Endowment [equipment]")
+  else
+    --
+    GUI.Endowment.Main.Equipment:hide()
+    --
+    GUI.Endowment.Main.Inventory:show()
+    --
+    GUI.Endowment:setTitle("Endowment [inventory]")
+  end
+  --
+  GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
+end
+--
+function ui.fEndowmentTypeClicked()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fEndowmentTypeClicked()")
+  --
+  if (ui.parameters.widgets.endowment.type == "equip") then
+    ui.parameters.widgets.endowment.type = "inv"
+  else
+    ui.parameters.widgets.endowment.type = "equip"
+  end
+  --
+  ui.fUpdateEndowment()
+  --
+  ui.fSaveFileParameters()
+end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
@@ -5924,10 +5980,9 @@ function ui.fRepositioning(eventName, containerName)
       ["GUI.Affects"] = GUI.Affects,
       ["GUI.AliasButtons"] = GUI.AliasButtons,
       ["GUI.Chat"] = GUI.Chat,
-      ["GUI.Equipment"] = GUI.Equipment,
+      ["GUI.Endowment"] = GUI.Endowment,
       ["GUI.Group"] = GUI.Group,
       ["GUI.Help"] = GUI.Help,
-      ["GUI.Inventory"] = GUI.Inventory,
       ["GUI.Mapper"] = GUI.Mapper,
       ["GUI.Opponent"] = GUI.Opponent,
       ["GUI.Player"] = GUI.Player,
@@ -5949,10 +6004,9 @@ function ui.fFinishedRepositioning(eventName, containerName)
     ["GUI.Affects"] = GUI.Affects,
     ["GUI.AliasButtons"] = GUI.AliasButtons,
     ["GUI.Chat"] = GUI.Chat,
-    ["GUI.Equipment"] = GUI.Equipment,
+    ["GUI.Endowment"] = GUI.Endowment,
     ["GUI.Group"] = GUI.Group,
     ["GUI.Help"] = GUI.Help,
-    ["GUI.Inventory"] = GUI.Inventory,
     ["GUI.Mapper"] = GUI.Mapper,
     ["GUI.Opponent"] = GUI.Opponent,
     ["GUI.Player"] = GUI.Player,
@@ -7248,11 +7302,11 @@ function ui.fInitMapper()
   end
   --
   -- Custom Sub-Menu
-  addMapMenu("Room type")
-  addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
-  addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
-  addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
-  addMapEvent("GO!!",  "gogogo")
+  --addMapMenu("Room type")
+  --addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
+  --addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
+  --addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
+  --addMapEvent("GO!!",  "gogogo")
   --
   -- Events
   registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
@@ -7277,14 +7331,11 @@ end</script>
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateOverand()")
   --
-  --if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
-  --  ui.variables.roomPos = gmcp.char.vitals.roomPos or 5
-  --end
-  --
   if (gmcp.overland) and (gmcp.overland.map) and (gmcp.overland.map.size) then
     --
-    local fw, fh = calcFontSize("GUI.Mapper.Main.Overland");
-    local spacesCnt = math.floor( (GUI.Mapper.Main.Overland:get_width() / fw) / 2 - tonumber(gmcp.overland.map.size) )
+    local fw, fh = calcFontSize("GUI.Mapper.Main.Overland")
+    local size = tonumber(gmcp.overland.map.size)
+    local spacesCnt = math.floor( (GUI.Mapper.Main.Overland:get_width() / fw) / 2 - size)
     local spaces = "" -- white spaces
     --
     clearWindow("GUI.Mapper.Main.Overland")
@@ -7295,7 +7346,7 @@ end</script>
     --
     GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subzone.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
     --
-    for i = 0, 11 do
+    for i = 0, size do
       if gmcp.overland.map["r"..i] then
         GUI.Mapper.Main.Overland:decho(spaces..ansi2decho(gmcp.overland.map["r"..i]).."\n")
       end
@@ -7497,16 +7548,14 @@ function ui.fGetPreDefinitedParameters()
         split = false,    
         fontSize = 8,
       },
-      equipment = {
+      endowment = {
+        type = "equip",
         fontSize = 8,
       },
       group = {
         transparent = false,
       },
       help = {
-        fontSize = 8,
-      },
-      inventory = {
         fontSize = 8,
       },
       keybind = {
@@ -7526,6 +7575,9 @@ function ui.fGetPreDefinitedParameters()
       },
       room = {
         fontSize = 7,
+        transparent = false,
+      },
+      targets = {
         transparent = false,
       },
     },
@@ -8341,7 +8393,7 @@ function ui.fRefreshTargetButton(button)
       elseif (type == "t") then
         GUI.TargetButtons.Main[button]:echo("&lt;center&gt;"..target)
         CCS = GUI.CSS.Button;
-        bgColor      = "150, 0, 0, 0.4"
+        bgColor      = "75, 0, 0, 1"
         bgColorHover = "150, 0, 0, 1"
       end
       --
@@ -8653,14 +8705,23 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.Affects, ui.parameters.widgets.affects.transparent)
   --
-  -- "Transparent" menu item
-  GUI.Affects:newCustomItem("Transparent", function(self) 
-                                             local mode = ui.parameters.widgets.affects.transparent or false;
-                                             --
-                                             ui.fSetBorderMode(self, not mode)
-                                             ui.parameters.widgets.affects.transparent = not mode;
-                                             ui.fSaveFileParameters()
-                                           end)
+  -- Button "Hide"
+  GUI.Affects.Button_hide = Geyser.Label:new2({
+    name = "GUI.Affects.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Affects)
+  GUI.Affects.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Affects.Button_hide:setFontSize(5)
+  GUI.Affects.Button_hide:echo(ui.transparentID);
+  GUI.Affects.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.affects.transparent or false;
+                                                   ui.fSetBorderMode(GUI.Affects, not mode)
+                                                   ui.parameters.widgets.affects.transparent = not mode;
+                                                   ui.fSaveFileParameters()
+                                                end)
   --
   -- 20x Affects
   local i
@@ -8772,21 +8833,30 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.AliasButtons, ui.parameters.widgets.aliasButton.transparent)
   --
-  -- "Transparent" menu item
-  GUI.AliasButtons:newCustomItem("Transparent", function(self) 
-                                                  local mode = ui.parameters.widgets.aliasButton.transparent or false;
-                                                  --
-                                                  ui.fSetBorderMode(self, not mode)
-                                                  ui.parameters.widgets.aliasButton.transparent = not mode;
-                                                  ui.fSaveFileParameters()
+  -- Button "Hide"
+  GUI.AliasButtons.Button_hide = Geyser.Label:new2({
+    name = "GUI.AliasButtons.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.AliasButtons)
+  GUI.AliasButtons.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.AliasButtons.Button_hide:setFontSize(5)
+  GUI.AliasButtons.Button_hide:echo(ui.transparentID);
+  GUI.AliasButtons.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.aliasButton.transparent or false;
+                                                   ui.fSetBorderMode(GUI.AliasButtons, not mode)
+                                                   ui.parameters.widgets.aliasButton.transparent = not mode;
+                                                   ui.fSaveFileParameters()
                                                 end)
   --
   -- Button "A"
   GUI.AliasButtons.Button_a = Geyser.Label:new2({
     name = "GUI.AliasButtons.Button_a",
-    x = -102, 
+    x = -106, 
     y = 4,
-    width = 20,
+    width = 12,
     height = 12,
   },GUI.AliasButtons)
   GUI.AliasButtons.Button_a:setStyleSheet(GUI.CSS.WidgetButton);
@@ -8797,9 +8867,9 @@ end</script>
   -- Button "B"
   GUI.AliasButtons.Button_b = Geyser.Label:new2({
     name = "GUI.AliasButtons.Button_b",
-    x = -78, 
+    x = -91, 
     y = 4,
-    width = 20,
+    width = 12,
     height = 12,
   },GUI.AliasButtons)
   GUI.AliasButtons.Button_b:setStyleSheet(GUI.CSS.WidgetButton);
@@ -8810,9 +8880,9 @@ end</script>
   -- Button "C"
   GUI.AliasButtons.Button_c = Geyser.Label:new2({
     name = "GUI.AliasButtons.Button_c",
-    x = -54, 
+    x = -76, 
     y = 4,
-    width = 20,
+    width = 12,
     height = 12,
   },GUI.AliasButtons)
   GUI.AliasButtons.Button_c:setStyleSheet(GUI.CSS.WidgetButton);
@@ -8915,20 +8985,20 @@ end</script>
   -- Button "Split"
   GUI.Chat.Button_split = Geyser.Label:new2({
     name = "GUI.Chat.Button_split",
-    x = -118, 
+    x = -133, 
     y = 4,
     width = 40,
     height = 12,
   },GUI.Chat)
   GUI.Chat.Button_split:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Chat.Button_split:setFontSize(6)
-  GUI.Chat.Button_split:echo("&lt;center&gt;Split");
-  GUI.Chat.Button_split:setClickCallback("ui.fButtonSplit")
+  GUI.Chat.Button_split:echo("&lt;center&gt;split");
+  GUI.Chat.Button_split:setClickCallback("ui.fChatSplitClicked")
   --
   -- Button "Type"
   GUI.Chat.Button_type = Geyser.Label:new2({
     name = "GUI.Chat.Button_type",
-    x = -74, 
+    x = -89, 
     y = 4,
     width = 40,
     height = 12,
@@ -8936,7 +9006,17 @@ end</script>
   GUI.Chat.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Chat.Button_type:setFontSize(6)
   GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
-  GUI.Chat.Button_type:setClickCallback("ui.fButtonType")
+  GUI.Chat.Button_type:setClickCallback("ui.fChatTypeClicked")
+  --
+  -- Button "Type"
+  GUI.Chat.Split_line = Geyser.Label:new2({
+    name = "GUI.Chat.Split_line",
+    x = 0, 
+    y = "50%-2",
+    width = "100%",
+    height = 4,
+  },GUI.Chat.Border)
+  GUI.Chat.Split_line:setStyleSheet(GUI.CSS.Border);
   --
   -- Console "All"
   GUI.Chat.Main.All = Geyser.MiniConsole:new2({
@@ -8997,14 +9077,14 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Equipment Widget</name>
+					<name>Endowment Widget</name>
 					<packageName></packageName>
-					<script>function ui.fInitEquipmentWidget()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitEquipmentWidget()")
+					<script>function ui.fInitEndowmentWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitEndowmentWidget()")
   --
   -- Equip
-  GUI.Equipment = Adjustable.Container:new2({
-    name = "GUI.Equipment",
+  GUI.Endowment = Adjustable.Container:new2({
+    name = "GUI.Endowment",
     x = 310,
     y = 140,
     width = 300,
@@ -9016,37 +9096,64 @@ end</script>
     adjLabelstyle = GUI.CSS.Widget, 
     buttonstyle = GUI.CSS.WidgetButton,
   })
-  GUI.Equipment:changeMenuStyle("dark")
+  GUI.Endowment:changeMenuStyle("dark")
   --
   -- Add Border and Main
-  ui.fAddMain(GUI.Equipment, GUI.CSS.Border, GUI.CSS.Main)
+  ui.fAddMain(GUI.Endowment, GUI.CSS.Border, GUI.CSS.Main)
   --
-  -- Console
-  GUI.Equipment.Main.Console = Geyser.MiniConsole:new2({
-    name = 'GUI.Equipment.Main.Console',
+  -- Button "Type"
+  GUI.Endowment.Button_type = Geyser.Label:new2({
+    name = "GUI.Endowment.Button_type",
+    x = -89, 
+    y = 4,
+    width = 40,
+    height = 12,
+  },GUI.Endowment)
+  GUI.Endowment.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Endowment.Button_type:setFontSize(6)
+  GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
+  GUI.Endowment.Button_type:setClickCallback("ui.fEndowmentTypeClicked")
+  --
+  -- Equipment
+  GUI.Endowment.Main.Equipment = Geyser.MiniConsole:new2({
+    name = 'GUI.Endowment.Main.Equipment',
     x=0,
     y=0,
     width = "100%", 
     height = "100%",
     autoWrap = true,
     scrollBar = true,
-  }, GUI.Equipment.Main)
-  GUI.Equipment.Main.Console:setColor(30, 24, 24)
-  GUI.Equipment.Main.Console:setBgColor(30, 24, 24)
-  GUI.Equipment.Main.Console:setFontSize(ui.parameters.widgets.equipment.fontSize)
+  }, GUI.Endowment.Main)
+  GUI.Endowment.Main.Equipment:setColor(30, 24, 24)
+  GUI.Endowment.Main.Equipment:setBgColor(30, 24, 24)
+  GUI.Endowment.Main.Equipment:setFontSize(ui.parameters.widgets.endowment.fontSize)
+  --
+  -- Inventory
+  GUI.Endowment.Main.Inventory = Geyser.MiniConsole:new2({
+    name = 'GUI.Endowment.Main.Inventory',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Endowment.Main)
+  GUI.Endowment.Main.Inventory:setColor(30, 24, 24)
+  GUI.Endowment.Main.Inventory:setBgColor(30, 24, 24)
+  GUI.Endowment.Main.Inventory:setFontSize(ui.parameters.widgets.endowment.fontSize)
   --
   -- Wrapping function
-  local Minimize = GUI.Equipment.minimize
-  local Restore = GUI.Equipment.restore
+  local Minimize = GUI.Endowment.minimize
+  local Restore = GUI.Endowment.restore
   --
-  function GUI.Equipment:minimize(...)
-    GUI.Equipment.Main:hide()
-    return Minimize(GUI.Equipment)
+  function GUI.Endowment:minimize(...)
+    GUI.Endowment.Main:hide()
+    return Minimize(GUI.Endowment)
   end
   --
-  function GUI.Equipment:restore(...)
-    GUI.Equipment.Main:show()
-    return Restore(GUI.Equipment)
+  function GUI.Endowment:restore(...)
+    GUI.Endowment.Main:show()
+    return Restore(GUI.Endowment)
   end
 end</script>
 					<eventHandlerList />
@@ -9079,15 +9186,23 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.Group, ui.parameters.widgets.group.transparent)
   --
-  -- "Transparent" menu item
-  GUI.Group:newCustomItem("Transparent", 
-                          function(self) 
-                            local mode = ui.parameters.widgets.group.transparent or false;
-                            --
-                            ui.fSetBorderMode(self, not mode)
-                            ui.parameters.widgets.group.transparent = not mode;
-                            ui.fSaveFileParameters()
-                          end)
+  -- Button "Hide"
+  GUI.Group.Button_hide = Geyser.Label:new2({
+    name = "GUI.Group.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Group)
+  GUI.Group.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Group.Button_hide:setFontSize(5)
+  GUI.Group.Button_hide:echo(ui.transparentID);
+  GUI.Group.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.group.transparent or false;
+                                                   ui.fSetBorderMode(GUI.Group, not mode)
+                                                   ui.parameters.widgets.group.transparent = not mode;
+                                                   ui.fSaveFileParameters()
+                                                end)
   --
   local i
   for i=1, 10 do
@@ -9274,61 +9389,6 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Inventory Widget</name>
-					<packageName></packageName>
-					<script>function ui.fInitInventoryWidget()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitInventoryWidget()")
-  --
-  -- Inventory
-  GUI.Inventory = Adjustable.Container:new2({
-    name = "GUI.Inventory",
-    x = 620,
-    y = 140,
-    width = 300,
-    height = 520,
-    titleText ="Inventario/Contenitore",
-    titleTxtColor = "orange",
-    buttonsize = 12,
-    buttonFontSize = 5,
-    adjLabelstyle = GUI.CSSWidget, 
-    buttonstyle = GUI.CSS.WidgetButton,
-  })
-  GUI.Inventory:changeMenuStyle("dark")
-  --
-  -- Add Border and Main
-  ui.fAddMain(GUI.Inventory, GUI.CSS.Border, GUI.CSS.Main)
-  --
-  -- Console
-  GUI.Inventory.Main.Console = Geyser.MiniConsole:new2({
-    name = 'GUI.Inventory.Main.Console',
-    x=0,
-    y=0,
-    width = "100%", 
-    height = "100%",
-    autoWrap = true,
-    scrollBar = true,
-  }, GUI.Inventory.Main)
-  GUI.Inventory.Main.Console:setColor(ui.colors.wBackground)
-  GUI.Inventory.Main.Console:setBgColor(ui.colors.wBackground)
-  GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
-  --
-  -- Wrapping function
-  local Minimize = GUI.Inventory.minimize
-  local Restore = GUI.Inventory.restore
-  --
-  function GUI.Inventory:minimize(...)
-    GUI.Inventory.Main:hide()
-    return Minimize(GUI.Inventory)
-  end
-  --
-  function GUI.Inventory:restore(...)
-    GUI.Inventory.Main:show()
-    return Restore(GUI.Inventory)
-  end
-end</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
 					<name>Mapper Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitMapperWidget()
@@ -9373,8 +9433,8 @@ end</script>
     autoWrap = false,
     scrollBar = false,
   }, GUI.Mapper.Main)
-  GUI.Mapper.Main.Overland:setColor(ui.colors.wBackground)
-  GUI.Mapper.Main.Overland:setBgColor(ui.colors.wBackground)
+  GUI.Mapper.Main.Overland:setColor(30,24,24)
+  GUI.Mapper.Main.Overland:setBgColor(30,24,24)
   GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
   GUI.Mapper.Main.Overland:hide()
   --
@@ -9423,22 +9483,30 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.Opponent, ui.parameters.widgets.opponent.transparent)
   --
-  -- "Transparent" menu item
-  GUI.Opponent:newCustomItem("Transparent",
-                            function(self) 
-                            local mode = ui.parameters.widgets.opponent.transparent or false;
-                            --
-                            ui.fSetBorderMode(self, not mode)
-                            ui.parameters.widgets.opponent.transparent = not mode;
-                            ui.fSaveFileParameters()
-                          end)
+  -- Button "Hide"
+  GUI.Opponent.Button_hide = Geyser.Label:new2({
+    name = "GUI.Opponent.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Opponent)
+  GUI.Opponent.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Opponent.Button_hide:setFontSize(5)
+  GUI.Opponent.Button_hide:echo(ui.transparentID);
+  GUI.Opponent.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.opponent.transparent or false;
+                                                   ui.fSetBorderMode(GUI.Opponent, not mode)
+                                                   ui.parameters.widgets.opponent.transparent = not mode;
+                                                   ui.fSaveFileParameters()
+                                                end)
   --
   GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
   -- Opponent Level
   GUI.Opponent.Level = Geyser.Label:new2({
     name = "GUI.Opponent.Level",
-    x = -60,
+    x = -74,
     y = "0%-3",
     width = 25,
     height = 25,
@@ -9535,19 +9603,27 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.Player, ui.parameters.widgets.player.transparent)
   --
-  -- "Transparent" menu item
-  GUI.Player:newCustomItem("Transparent",
-                          function(self) 
-                            local mode = ui.parameters.widgets.player.transparent or false;
-                            --
-                            ui.fSetBorderMode(self, not mode)
-                            ui.parameters.widgets.player.transparent = not mode;
-                            ui.fSaveFileParameters()
-                          end)  --
+  -- Button "Hide"
+  GUI.Player.Button_hide = Geyser.Label:new2({
+    name = "GUI.Player.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Player)
+  GUI.Player.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Player.Button_hide:setFontSize(5)
+  GUI.Player.Button_hide:echo(ui.transparentID);
+  GUI.Player.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.player.transparent or false;
+                                                   ui.fSetBorderMode(GUI.Player, not mode)
+                                                   ui.parameters.widgets.player.transparent = not mode;
+                                                   ui.fSaveFileParameters()
+                                                end)
   -- Player Level
   GUI.Player.Level = Geyser.Label:new2({
     name = "GUI.Player.Level",
-    x = -60,
+    x = -74,
     y = "0%-3",
     width = 25,
     height = 25,
@@ -9787,40 +9863,36 @@ end</script>
   -- Add Border and Main
   ui.fAddMain(GUI.TargetButtons, GUI.CSS.Border, GUI.CSS.Main)
   --
+  -- Set transparent
+  ui.fSetBorderMode(GUI.TargetButtons, ui.parameters.widgets.targets.transparent)
+  --
+  -- Button "Hide"
+  GUI.TargetButtons.Button_hide = Geyser.Label:new2({
+    name = "GUI.TargetButtons.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.TargetButtons)
+  GUI.TargetButtons.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.TargetButtons.Button_hide:setFontSize(5)
+  GUI.TargetButtons.Button_hide:echo(ui.transparentID)
+  GUI.TargetButtons.Button_hide:setClickCallback(function() 
+                                                   local mode = ui.parameters.widgets.targets.transparent or false;
+                                                   ui.fSetBorderMode(GUI.TargetButtons, not mode)
+                                                   ui.parameters.widgets.targets.transparent = not mode;
+                                                   ui.fSaveFileParameters()
+                                                end)
+  --
   -- Target buttons
-  GUI.TargetButtons.Main.t1 = Geyser.Label:new2({
-    name = "GUI.TargetButtons.Main.t1",
-    x = 0,
-    y = 0,
-    width = "50%-2",
-    height = "50%-2",
-  },GUI.TargetButtons.Main)
-  --
-  GUI.TargetButtons.Main.t2 = Geyser.Label:new2({
-    name = "GUI.TargetButtons.Main.t2",
-    x = "50%+2",
-    y = 0,
-    width = "50%-2",
-    height = "50%-2",
-  },GUI.TargetButtons.Main)
-  --
-  GUI.TargetButtons.Main.t3 = Geyser.Label:new2({
-    name = "GUI.TargetButtons.Main.t3",
-    x = 0,
-    y = "50%",
-    width = "50%-2",
-    height = "50%-2",
-  },GUI.TargetButtons.Main)
-  --
-  GUI.TargetButtons.Main.t4 = Geyser.Label:new2({
-    name = "GUI.TargetButtons.Main.t4",
-    x = "50%+2",
-    y = "50%+2",
-    width = "50%-2",
-    height = "50%-2",
-  },GUI.TargetButtons.Main)
-  --
   for i=1,4 do
+    GUI.TargetButtons.Main["t"..i] = Geyser.Label:new2({
+      name = "GUI.TargetButtons.Main.t"..i,
+      x = 0,
+      y = 0,
+      width = "10",
+      height = "10",
+    },GUI.TargetButtons.Main)
     GUI.TargetButtons.Main["t"..i]:setClickCallback("ui.fExecuteTargetButton", "t"..i, nil)
     GUI.TargetButtons.Main["t"..i]:setFontSize(9)
     GUI.TargetButtons.Main["t"..i]:setFgColor("LightGoldenrod")
@@ -9877,6 +9949,7 @@ ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values
 ui.release = "24/11/2023"
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 ui.varID = "&amp;"
+ui.transparentID = '&lt;center&gt;⋯'
 --
 -- Colors
 ui.colors = {
@@ -10567,13 +10640,10 @@ ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Room")
 ui.fInitRoomWidget()
 ui.fUpdateRoom()
 --
--- Inventory
-ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Inventory")
-ui.fInitInventoryWidget()
---
--- Equipment
-ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Equipment")
-ui.fInitEquipmentWidget()
+-- Endowment
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Endowment")
+ui.fInitEndowmentWidget()
+ui.fUpdateEndowment()
 --
 -- Help
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Help")
