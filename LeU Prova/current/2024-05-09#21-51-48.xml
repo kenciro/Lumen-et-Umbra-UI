@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>DejaVu Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,12 +71,12 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Special exits</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -130,6 +130,7 @@
 local from = copy2decho(matches[2])
 local to = copy2decho(matches[3])
 local message = copy2decho(matches[4])
+local m
 --
 if (matches[2] == "["..ui.player.name.."]") then
   from = string.gsub(from, ui.player.name, "Tu")
@@ -149,19 +150,33 @@ else
   ui.reply = string.sub(ui.reply, 1, string.find(ui.reply, " "))
 end
 --
-if (ui.lastFromPrivate) and (ui.lastFromPrivate == from) then
-  str = "  "..message.."\n"
+-- Private Chat
+if (ui.previous.fromPrivate) and (ui.previous.fromPrivate == from) then
+  m = "  "..message.."\n"
 else
-  str = "\n"..from.." &lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").."\n  "..message.."\n"
-  ui.lastFromPrivate = from
+  m = "\n"..from.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..message.."\n"
+  ui.previous.fromPrivate = from
 end
 --
-str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
-str = string.gsub(str, "&lt;0,0,255:", "&lt;128,128,255:")
+m = string.gsub(m, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+m = string.gsub(m, "&lt;0,0,255:", "&lt;128,128,255:")
 --
-GUI.Chat.Main.All:decho(str)
-GUI.Chat.Main.Private:decho(str)
+GUI.Chat.Main.Private:decho(m)
 --
+-- "All" Chat
+if (ui.previous.fromAll) and (ui.previous.fromAll == from) then
+  m = "  "..message.."\n"
+else
+  m = "\n"..from.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..message.."\n"
+  ui.previous.fromAll = from
+end
+--
+m = string.gsub(m, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+m = string.gsub(m, "&lt;0,0,255:", "&lt;128,128,255:")
+--
+GUI.Chat.Main.All:decho(m)
+--
+-- Sound
 playSoundFile(ui.files.sounds.path..[[message.wav]], 10)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -194,32 +209,58 @@ local str = copy2decho(matches[1])
 local color = copy2decho(matches[2])
 local from = copy2decho(matches[3])
 local message = copy2decho(matches[4])
+local m
 -- Color
 color = string.gsub(color, 'Tu&lt;r&gt;', '')
 color = string.gsub(color, '%[&lt;r&gt;', '')
--- Text
-if (ui.lastFromPubblic) and (ui.lastFromPubblic == from) then
-  str = "  "..message.."\n"
-  str = string.gsub(str, ":0,0,0&gt;",    ":30,24,24&gt;")
-else
-  str = string.gsub(str, "&gt;Tu",      "&gt;[Tu]")
-  str = string.gsub(str, "] grida ",   "]")
-  str = string.gsub(str, "] esclama ", "]")
-  str = string.gsub(str, "] mormora ", "]")
-  str = string.gsub(str, "] vi dice ", "]")
-  str = string.gsub(str, "] dice ",    "]")
-  str = string.gsub(str, "] dici ",    "]")
-  str = string.gsub(str, "] risuona ", "]")
-  --
-  str = string.gsub(str, "]",          "] &lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").."\n  "..color)
-  str = string.gsub(str, ":0,0,0&gt;",    ":30,24,24&gt;")
-  str = "\n"..str.."\n"
-  ui.lastFromPubblic = from
-end
+--
 from = ui.fRemoveArticle(from)
 --
-GUI.Chat.Main.All:decho(str)
-GUI.Chat.Main.Public:decho(str)</script>
+-- Public Chat
+if (ui.previous.fromPublic) and (ui.previous.fromPublic == from) then
+  m = "  "..message.."\n"
+  m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
+else
+  m = str
+  m = string.gsub(m, "&gt;Tu",      "&gt;[Tu]")
+  m = string.gsub(m, "] grida ",   "]")
+  m = string.gsub(m, "] esclama ", "]")
+  m = string.gsub(m, "] mormora ", "]")
+  m = string.gsub(m, "] vi dice ", "]")
+  m = string.gsub(m, "] dice ",    "]")
+  m = string.gsub(m, "] dici ",    "]")
+  m = string.gsub(m, "] risuona ", "]")
+  --
+  m = string.gsub(m, "]",          "] &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..color)
+  m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
+  m = "\n"..m.."\n"
+  ui.previous.fromPublic = from
+end
+--
+GUI.Chat.Main.Public:decho(m)
+--
+-- "All" Chat
+if (ui.previous.fromAll) and (ui.previous.fromAll == from) then
+  m = "  "..message.."\n"
+  m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
+else
+  m = str
+  m = string.gsub(m, "&gt;Tu",      "&gt;[Tu]")
+  m = string.gsub(m, "] grida ",   "]")
+  m = string.gsub(m, "] esclama ", "]")
+  m = string.gsub(m, "] mormora ", "]")
+  m = string.gsub(m, "] vi dice ", "]")
+  m = string.gsub(m, "] dice ",    "]")
+  m = string.gsub(m, "] dici ",    "]")
+  m = string.gsub(m, "] risuona ", "]")
+  --
+  m = string.gsub(m, "]",          "] &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..color)
+  m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
+  m = "\n"..m.."\n"
+  ui.previous.fromAll = from
+end
+--
+GUI.Chat.Main.All:decho(m)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -283,29 +324,29 @@ if (matches[5] == "") then
 end
 local equipment = {}
 equipment.number   = matches[2]
-equipment.location = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
-equipment.level    = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":30,24,24&gt;")
-equipment.type     = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":30,24,24&gt;")
+equipment.location = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.level    = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.type     = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 equipment.name, equipment.status, equipment.good, equipment.evil, equipment.bright, equipment.noisy, equipment.brittle = ui.fParsingItem(copy2decho(matches[6]))
-equipment.name = string.gsub(equipment.name, ":0,0,0&gt;", ":30,24,24&gt;")
+equipment.name = string.gsub(equipment.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 if (equipment.good) then
-  equipment.name = equipment.name.." &lt;0,0,255:30,24,24&gt;*&lt;r&gt;"
+  equipment.name = equipment.name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (equipment.evil) then
-  equipment.name = equipment.name.." &lt;255,0,0:30,24,24&gt;*&lt;r&gt;"
+  equipment.name = equipment.name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (equipment.bright) then
-  equipment.name = equipment.name.." &lt;255,255,255:30,24,24&gt;*&lt;r&gt;"
+  equipment.name = equipment.name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (equipment.noisy) then
-  equipment.name = equipment.name.." &lt;128,128,128:30,24,24&gt;*&lt;r&gt;"
+  equipment.name = equipment.name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (equipment.brittle) then
-  equipment.name = equipment.name.." &lt;0,128,128:30,24,24&gt;*&lt;r&gt;"
+  equipment.name = equipment.name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 --
 if (equipment.status &lt; 8) then
-  GUI.Equipment.Main.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:30,24,24&gt;["..equipment.status.."/8]&lt;r&gt;\n")
+  GUI.Equipment.Main.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:"..ui.colors.wBackground.."&gt;["..equipment.status.."/8]&lt;r&gt;\n")
 else
   GUI.Equipment.Main.Console:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.."\n")
 end
@@ -399,27 +440,27 @@ if (matches[3]=="") then
   matches[3] = "-"
 end
 local number   = matches[2]
-local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":30,24,24&gt;")
+local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 local name, status, good, evil, bright, noisy, brittle = ui.fParsingItem(copy2decho(matches[4]))
 
-name = string.gsub(name, ":0,0,0&gt;", ":30,24,24&gt;")
+name = string.gsub(name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 if (good) then
-  name = name.." &lt;0,0,255:30,24,24&gt;*&lt;r&gt;"
+  name = name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (evil) then
-  name = name.." &lt;255,0,0:30,24,24&gt;*&lt;r&gt;"
+  name = name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (bright) then
-  name = name.." &lt;255,255,255:30,24,24&gt;*&lt;r&gt;"
+  name = name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (noisy) then
-  name = name.." &lt;128,128,128:30,24,24&gt;*&lt;r&gt;"
+  name = name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (brittle) then
-  name = name.." &lt;0,128,128:30,24,24&gt;*&lt;r&gt;"
+  name = name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 if (status &lt; 8) then
-  GUI.Inventory.Main.Console:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:30,24,24&gt;["..status.."/8]&lt;r&gt;\n")
+  GUI.Inventory.Main.Console:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
 else
   GUI.Inventory.Main.Console:decho(number.." "..eqtype.. " "..name.."\n")
 end
@@ -1337,7 +1378,7 @@ elseif (matches[1] == "Un'aura di luce bianca ti protegge.") then
   str = "* SANC *";
 elseif (matches[1] == "L'aura bianca intorno al tuo corpo svanisce.") then
   ui.affects["santuario"] = -1
-  str = "&lt;255,32,321:30,24,24&gt;Fine SANC";
+  str = "&lt;255,32,321:"..ui.colors.wBackground.."&gt;Fine SANC";
 --
 -- mente oltre il corpo
 elseif (matches[1] == "Costringi il tuo corpo a non aver bisogno di cibo ed acqua!") then
@@ -1370,10 +1411,10 @@ elseif (matches[1] == "La tua mente si apre per un istante all'infinito!") then
 --
 -- Invasione
 elseif (matches[1] == "..Il velo tra le realta' si assottiglia..") then
-  str = "&lt;0,255,0:30,24,24&gt;Inizio invasione..."
+  str = "&lt;0,255,0:"..ui.colors.wBackground.."&gt;Inizio invasione..."
   expandAlias("events", false)
 elseif  (matches[1] == "..Il velo tra le realta' torna al suo stato originale..") then
-  str = "&lt;255,0,0:30,24,24&gt;... fine invasione."
+  str = "&lt;255,0,0:"..ui.colors.wBackground.."&gt;... fine invasione."
   -- sendToDiscordWebhook("... fine invasione.")
 end
 --
@@ -1928,7 +1969,7 @@ echo("\n"..msg.."\n")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Dare per avere</name>
 				<script>local str = copy2decho(matches[1] or "")
-str = string.gsub(str, ":0,0,0&gt;", ":30,24,24&gt;")
+str = string.gsub(str, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 str = string.gsub(str, "&lt;0,0,255:", "&lt;128,128,255:")
 ui.fLog(str)</script>
 				<triggerType>0</triggerType>
@@ -5453,7 +5494,7 @@ function ui.fDebug(text)
 end
 --
 function ui.fLog(text)
-  text = "\n&lt;128,128,128:30,24,24&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:30,24,24&gt;"..text.."\n"
+  text = "\n&lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").." - &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..text.."\n"
   --
   GUI.Chat.Main.All:decho(text)
   GUI.Chat.Main.Private:decho(text)
@@ -6006,9 +6047,9 @@ function ui.fUpdateGMCP(event, ...)
           if (ui.previous.char.base.gold) and (gmcp.char.base.gold) then
             local dif = gmcp.char.base.gold - ui.previous.char.base.gold
             if (dif &gt; 0) then
-              ui.fLog("&lt;0,255,0:30,24,24&gt;Guadagni "..dif.." monete d'oro.")    
+              ui.fLog("&lt;0,255,0:"..ui.colors.wBackground.."&gt;Guadagni "..dif.." monete d'oro.")    
             elseif (dif &lt; 0) then
-              ui.fLog("&lt;255,0,0:30,24,24&gt;Rimosse "..dif.." monete d'oro.")
+              ui.fLog("&lt;255,0,0:"..ui.colors.wBackground.."&gt;Rimosse "..dif.." monete d'oro.")
             end 
           end
           --
@@ -7127,7 +7168,9 @@ function ui.fUpdateMapper(event,...)
     if not (table.is_empty(map.room.specialExits)) then
       for dir, id in pairs(map.room.specialExits) do
         addSpecialExit(map.room.id, id, "ent "..dir)
-        ui.fLog(map.room.area..": "..dir.." per "..(getRoomName(id) or "???").." ("..id..")")
+        if (ui.enDebug&gt;=1) then
+          ui.fLog(map.room.area..": "..dir.." per "..(getRoomName(id) or "???").." ("..id..")")
+        end
       end
     end
     --
@@ -7147,7 +7190,9 @@ function ui.fUpdateMapper(event,...)
     --
     GUI.Mapper:setTitle(map.room.area.." - "..map.room.name)
     --
-    ui.fLog("&lt;255,255,0:30,24,24&gt;"..map.room.area.."\n".."&lt;255,255,255:30,24,24&gt;"..map.room.id.." &lt;0,255,255:30,24,24&gt;"..map.room.name)
+    if (ui.enDebug&gt;=1) then
+      ui.fLog("&lt;255,255,0:"..ui.colors.wBackground.."&gt;"..map.room.area.."\n".."&lt;255,255,255:"..ui.colors.wBackground.."&gt;"..map.room.id.." &lt;0,255,255:"..ui.colors.wBackground.."&gt;"..map.room.name)
+    end
   end
 end
 --
@@ -7250,7 +7295,7 @@ end</script>
     --
     GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subzone.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
     --
-    for i = 0, l-1 do
+    for i = 0, 11 do
       if gmcp.overland.map["r"..i] then
         GUI.Mapper.Main.Overland:decho(spaces..ansi2decho(gmcp.overland.map["r"..i]).."\n")
       end
@@ -7926,9 +7971,9 @@ function ui.fGetPosition(line)
   --
   -- Player icon or track direction
   if (ui.track == nil) or (ui.track == "") then
-    icon = "&lt;255,255,255:30,24,24&gt;⨂&lt;69,69,69:30,24,24&gt;"
+    icon = "&lt;255,255,255:"..ui.colors.wBackground.."&gt;⨂&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
   else
-    icon = ui.validExit[ui.track].dColor..ui.validExit[ui.track].tokenOpen.."&lt;69,69,69:30,24,24&gt;"
+    icon = ui.validExit[ui.track].dColor..ui.validExit[ui.track].tokenOpen.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
   end
   --
   -- West side
@@ -7967,11 +8012,11 @@ function ui.fGetToken(exits, exit)
       --
       -- From direction  
       if (ui.path[ui.idxPath]) and (ui.validExit[ui.path[ui.idxPath]].reverse == exit) then
-        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenFrom.."&lt;69,69,69:30,24,24&gt;"
+        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenFrom.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
       --
       -- Normal exit
       else
-        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenOpen.."&lt;69,69,69:30,24,24&gt;"
+        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenOpen.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
       end
     --
     -- No exit
@@ -8088,12 +8133,12 @@ function ui.fUpdateRoom()
     if (ui.room.isOnMap) then
       --
       -- Outland
-      GUI.Room.Main.Console:decho("&lt;0,255,255:30,24,24&gt;                        "..name.."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌       ┐\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(1).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(2).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;       "..ui.fGetPosition(3).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      └       ┘\n\n")
+      GUI.Room.Main.Console:decho("&lt;0,255,255:"..ui.colors.wBackground.."&gt;                        "..ui.room.name.."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      ┌       ┐\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(1).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(2).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(3).."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      └       ┘\n\n")
       --
       GUI.Mapper.Main.Mapper:hide();
       GUI.Mapper.Main.Overland:show();
@@ -8104,23 +8149,23 @@ function ui.fUpdateRoom()
       local exitsDestinationId = {}
       local idx = 1
       --
-      exitsAsString[idx] = "&lt;0,255,255:30,24,24&gt;"..ui.room.name.." ("..ui.room.id..")"
+      exitsAsString[idx] = "&lt;0,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.name.." ("..ui.room.id..")"
       idx = idx + 1
       --
       for k,v in pairs(ui.room.exits) do
-        exitsDestinationId[k] = ui.validExit[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;69,69,69:30,24,24&gt;"
-        exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,255,255:30,24,24&gt;"..(getRoomName(v) or "???")
+        exitsDestinationId[k] = ui.validExit[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+        exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
         idx = idx + 1
       end
       --
       -- Exits and Position
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:30,24,24&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
       --
       GUI.Mapper.Main.Mapper:show();
       GUI.Mapper.Main.Overland:hide();
@@ -8130,7 +8175,7 @@ function ui.fUpdateRoom()
     if (table.size(ui.room.otherExits) &gt; 0) then
       GUI.Room.Main.Console:setFgColor("white")
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
-        GUI.Room.Main.Console:decho("&lt;255,165,0:30,24,24&gt;▷ "..otherExit.." &lt;255,255,255:30,24,24&gt;"..(getRoomName(idOtherExit) or "???").."\n")
+        GUI.Room.Main.Console:decho("&lt;255,165,0:"..ui.colors.wBackground.."&gt;▷ "..otherExit.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(idOtherExit) or "???").."\n")
       end
       GUI.Room.Main.Console:echo("\n")
     end
@@ -9263,8 +9308,8 @@ end</script>
     autoWrap = true,
     scrollBar = true,
   }, GUI.Inventory.Main)
-  GUI.Inventory.Main.Console:setColor(30,24,24)
-  GUI.Inventory.Main.Console:setBgColor(30,24,24)
+  GUI.Inventory.Main.Console:setColor(ui.colors.wBackground)
+  GUI.Inventory.Main.Console:setBgColor(ui.colors.wBackground)
   GUI.Inventory.Main.Console:setFontSize(ui.parameters.widgets.inventory.fontSize)
   --
   -- Wrapping function
@@ -9328,8 +9373,8 @@ end</script>
     autoWrap = false,
     scrollBar = false,
   }, GUI.Mapper.Main)
-  GUI.Mapper.Main.Overland:setColor(30,24,24)
-  GUI.Mapper.Main.Overland:setBgColor(30,24,24)
+  GUI.Mapper.Main.Overland:setColor(ui.colors.wBackground)
+  GUI.Mapper.Main.Overland:setBgColor(ui.colors.wBackground)
   GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
   GUI.Mapper.Main.Overland:hide()
   --
@@ -9828,7 +9873,7 @@ end</script>
 				<packageName></packageName>
 				<script>--
 ui = ui or {}
-ui.enDebug = 2 -- 0 = Off, 1 = Text only, 2 = simulate values
+ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values
 ui.release = "24/11/2023"
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
 ui.varID = "&amp;"
@@ -9852,11 +9897,11 @@ ui.colors = {
   varID        = "&lt;steel_blue&gt;",
   varName      = "&lt;DeepPink&gt;",
   varCont      = "&lt;LightBlue&gt;",
-  widget       = "25, 20, 20",
-  wBackground  = "30, 24, 24",
-  wBorder      = "90, 72, 72",
-  wButton      = "90, 72, 72",
-  wButtonHover = "180, 144, 144",
+  widget       = "25,20,20",
+  wBackground  = "30,24,24",
+  wBorder      = "90,72,72",
+  wButton      = "90,72,72",
+  wButtonHover = "180,144,144",
 }
 --
 ui.files = {
@@ -9991,9 +10036,6 @@ ui.validExit["u"]     = ui.validExit.up
 ui.validExit["w"]     = ui.validExit.west
 ui.validExit["ovest"] = ui.validExit.west
 ui.validExit["o"]     = ui.validExit.west
---
-ui.lastFromPrivate = ui.lastFromPrivate or ""
-ui.lastFromPubblic = ui.lastFromPubblic or ""
 --
 -- Storico Path
 ui.idxPath = 0;
