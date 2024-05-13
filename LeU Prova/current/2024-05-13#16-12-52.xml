@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,9 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6865,7 +6864,7 @@ local move_vectors = {
 local function make_room(room, prev)
   local coords = { 0, 0, 0 }
   local areas = getAreaTable()
-  local areaID = areas[room.area]
+  local areaID = areas[string.trim(room.area)]
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] make_room(..)")
   --
@@ -6950,7 +6949,7 @@ local function make_room(room, prev)
     end
   end
   --
-  -- Associate room with area 
+  -- Associate room with area
   setRoomArea(room.id, areaID)
   --
   -- Set room coordinates
@@ -6982,64 +6981,59 @@ function ui.fHighlightRoom(roomId, HighlightPath)
   end
 end
 --
-function ui.fTimeOutSpeedWalk()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fTimeOutSpeedWalk()")
-  --
-  -- Stop speed Walk
-  if (ui.handlers.fContinueSpeedWalk) then
-    killTimer(ui.handlers.fContinueSpeedWalk)
-    ui.handlers.fContinueSpeedWalk = nil 
-  end
-  ui.fEchon("Speedwalk interrotto.")
-end
---
-function ui.fContinueSpeedWalk(walkPath, walkDirs)
+function ui.fSpeedWalk(path, dirs)
   local roomId = ui.room.id or getPlayerRoom()
   --
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fContinueSpeedWalk(..)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSpeedWalk(..)")
   --
-  -- if not arrive at next room
-  if (tonumber(walkPath[1]) == tonumber(roomId)) then
-    --
-    -- Stop time out
-    if (ui.handlers.fTimeOutSpeedWalk) then 
-      killTimer(ui.handlers.fTimeOutSpeedWalk) 
-    end
+  if (ui.handlers.fSpeedWalk) then 
+    killTimer(ui.handlers.fSpeedWalk)
+    ui.handlers.fSpeedWalk = nil; 
+  end
+  --
+  -- if arrive at next room
+  if (tonumber(path[1]) == tonumber(roomId)) then
     --
     -- Go to next room
-    if (#walkDirs &gt; 0) then
+    if (#dirs &gt; 0) then
+      local dir = dirs[1];
       -- Send command
-      ui.fEchon("Prosegui il percorso verso "..ui.validExit[walkDirs[1]].color..ui.validExit[walkDirs[1]].long)
-      send(table.remove(walkDirs,1), false)
-      table.remove(walkPath,1)
+      send(dir, false)
       --
-      -- Restart time out
-      ui.handlers.fTimeOutSpeedWalk = tempTimer(ui.speedwalk.timeOut, function() ui.fTimeOutSpeedWalk() end)
+      if (ui.validExit[dir]) then
+        ui.fEchon("Prosegui il percorso verso "..ui.validExit[dir].color..ui.validExit[dir].long)
+      else
+        -- May be special exit or door
+        ui.fEchon(dir)
+      end
+      --
+      table.remove(dirs, 1)
+      table.remove(path, 1)
       --
       -- Recall to check time out and send next command if necessary
-      if (ui.handlers.fContinueSpeedWalk) then 
-        killTimer(ui.handlers.fContinueSpeedWalk) 
-      end
-      ui.handlers.fContinueSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fContinueSpeedWalk(walkPath, walkDirs) end)
+      ui.speedwalk.timer = 0
+      ui.handlers.fSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fSpeedWalk(path, dirs) end)
     else
       ui.fEchon("Sei arrivato alla fine del percorso")    
     end
+  --
+  -- Recall if not time out
+  elseif (ui.speedwalk.timer &lt; ui.speedwalk.timeOut) then
+    ui.speedwalk.timer = ui.speedwalk.timer + ui.speedwalk.delay;
+    ui.handlers.fSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fSpeedWalk(path, dirs) end)
+  --
+  -- Time out
   else
-    --
-    -- Recall to wait
-    if (ui.handlers.fContinueSpeedWalk) then 
-      killTimer(ui.handlers.fContinueSpeedWalk) 
-    end
-    ui.handlers.fContinueSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fContinueSpeedWalk(walkPath, walkDirs) end)    
+    ui.fEchon("Speedwalk interrotto.")
   end
 end
 --
 -- Highlight new path
-function ui.fHighlightSpeedWalk(walkPath)
+function ui.fHighlightSpeedWalk(path)
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fHighlightSpeedWalk(..)")
   --
   ui.speedwalk.path = ui.speedwalk.path or {}
-  walkPath = walkPath or {}
+  path = path or {}
   --
   -- Unhighlight old path
   for _, id in pairs(ui.speedwalk.path) do
@@ -7047,7 +7041,7 @@ function ui.fHighlightSpeedWalk(walkPath)
   end
   --
   ui.speedwalk.path = {}
-  ui.speedwalk.path = table.deepcopy(walkPath)
+  ui.speedwalk.path = table.deepcopy(path)
   --
   -- Highlight new path
   for _, id in pairs(ui.speedwalk.path) do
@@ -7056,10 +7050,10 @@ function ui.fHighlightSpeedWalk(walkPath)
 end
 --
 -- Pharse speedwalk
-function ui.fPrepareSpeedWalk(walkPath, walkDirs)
+function ui.fPrepareSpeedWalk(path, dirs)
   local roomId = ui.room.id or getPlayerRoom()
-  local p = table.deepcopy(walkPath) or {}
-  local d = table.deepcopy(walkDirs) or {}
+  local p = table.deepcopy(path) or {}
+  local d = table.deepcopy(dirs) or {}
   ..
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fPrepareSpeedWalk(..)")
   --
@@ -7069,7 +7063,7 @@ function ui.fPrepareSpeedWalk(walkPath, walkDirs)
     table.insert(p, 1, roomId)
     --
     -- Go through dirs to find doors that need opened, etc
-    -- add in necessary extra commands to walkDirs table
+    -- add in necessary extra commands to dirs table
     local k = 1
     while (k &lt;= #d) do
       local id, dir = p[k], d[k]
@@ -7107,17 +7101,8 @@ function doSpeedWalk()
   --
   -- Execute speedwalk
   if (#path ~= 0) then
-    --
-    -- Start time out
-    if (ui.handlers.fTimeOutSpeedWalk) then 
-      killTimer(ui.handlers.fTimeOutSpeedWalk) 
-    end
-    ui.handlers.fTimeOutSpeedWalk = tempTimer(ui.speedwalk.timeOut, function() ui.fTimeOutSpeedWalk() end)
-    --
-    if (ui.handlers.fContinueSpeedWalk) then 
-      killTimer(ui.handlers.fContinueSpeedWalk) 
-    end
-    ui.fContinueSpeedWalk(path, dirs)
+    ui.speedwalk.timer = 0;
+    ui.fSpeedWalk(path, dirs)
   end
 end
 --
@@ -7193,7 +7178,7 @@ function ui.fUpdateMapper()
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
       local areas = getAreaTable()
-      local areaID = areas[ui.room.area]
+      local areaID = areas[string.trim(ui.room.area)]
       local rooms = getAreaRooms(areaID)
       --
       for _,id in ipairs(rooms) do
@@ -7316,6 +7301,11 @@ function ui.fUpdateOpponent()
     ui.opponent.desc       = gmcp.char.vitals.fighting.desc or ui.opponent.desc
   end
   --
+  if (hpGaugeWidthDif == 0) and (ui.opponent.hp &gt; 0) then
+    -- Engage
+    hpGaugeWidthDif = GUI.Opponent.Main.Health.back:get_width()
+  end
+  --
   ui.opponent.hp = tonumber(ui.opponent.hp) or 0
   --
   if (ui.opponent.name ~= "") then
@@ -7349,7 +7339,7 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Level:show()
     --
     -- HP
-    GUI.Opponent.Main.Health:setValue(ui.opponent.hp, ui.opponent.hpmax,"&lt;p align=right&gt;"..ui.opponent.hp.."%  &lt;/p&gt;")
+    GUI.Opponent.Main.Health:setValue(math.max(0, ui.opponent.hp), ui.opponent.hpmax, "&lt;p align=right&gt;"..ui.opponent.hp.."%  &lt;/p&gt;")
     --
     -- Keybind
     ui.fAssignTargetButton("o0", ui.opponent.name)    
@@ -7375,6 +7365,7 @@ function ui.fUpdateOpponent()
   --
   -- Diff. hp
   hpGaugeWidthDif = GUI.Opponent.Main.Health.front:get_width() - hpGaugeWidthDif
+  --
   if (hpGaugeWidthDif ~= 0) then
     local x, y, w, h, txt, CSS
     --
@@ -7401,6 +7392,8 @@ function ui.fUpdateOpponent()
         background-color: rgba(0, 255, 0, 0.4);
       ]]
     end
+    --
+    x = math.max(0, x);
     --
     GUI.Opponent.Main.Health.dif:move(x, y);
     GUI.Opponent.Main.Health.dif:resize(w, h)
@@ -7659,13 +7652,7 @@ function ui.fUpdatePlayer()
   --
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
-  ui.player.toNext = tonumber(ui.player.toNext)
-  if (ui.player.toNext &lt; 0) then
-    ui.player.toNext = 400000000
-  else
-    ui.player.toNext = ui.player.experience + ui.player.toNext
-  end 
-  ui.player.toNext = math.max(ui.player.toNext, 1)
+  ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
   --
   -- HP
   ui.player.hp = tonumber(ui.player.hp)
@@ -9457,7 +9444,7 @@ end</script>
   GUI.Opponent.Main.Health:enableClickthrough()
   --
   GUI.Opponent.Main.Health.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(00, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   ]]);
   GUI.Opponent.Main.Health.back:enableClickthrough()
   --
