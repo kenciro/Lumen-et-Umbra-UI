@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>0</borderRightWidth>
+			<borderRightWidth>617</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,12 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>13.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Special exits</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room exits</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6073,33 +6070,34 @@ function ui.fUpdateGMCP(event, ...)
   --
   if (gmcp) then
     ui.previous = ui.previous or {}
+    ui.previous.gmcp = ui.previous.gmcp or {}
     --
     -- CHAR
     if (event == "gmcp.char") then
-      ui.previous.char = ui.previous.char or {}
+      ui.previous.gmcp.char = ui.previous.gmcp.char or {}
       --
       -- Affects
       if (gmcp.char.affects) then
-        ui.previous.char.affects = ui.previous.char.affects or {}
+        ui.previous.gmcp.char.affects = ui.previous.gmcp.char.affects or {}
         --
-        if (not ui.fTableCompare(gmcp.char.affects, ui.previous.char.affects)) then
+        if (not ui.fTableCompare(gmcp.char.affects, ui.previous.gmcp.char.affects)) then
           ui.fUpdateAffects();
           --
-          ui.previous.char.affects = {}
-          ui.previous.char.affects = table.deepcopy(gmcp.char.affects);
+          ui.previous.gmcp.char.affects = {}
+          ui.previous.gmcp.char.affects = table.deepcopy(gmcp.char.affects);
         end
       end
       --
       -- Base
       if (gmcp.char.base) then
-        ui.previous.char.base = ui.previous.char.base or {}
+        ui.previous.gmcp.char.base = ui.previous.gmcp.char.base or {}
         --
-        if (not ui.fTableCompare(gmcp.char.base, ui.previous.char.base)) then
+        if (not ui.fTableCompare(gmcp.char.base, ui.previous.gmcp.char.base)) then
           ui.fUpdatePlayer();
           --
           -- Gold
-          if (ui.previous.char.base.gold) and (gmcp.char.base.gold) then
-            local dif = gmcp.char.base.gold - ui.previous.char.base.gold
+          if (ui.previous.gmcp.char.base.gold) and (gmcp.char.base.gold) then
+            local dif = gmcp.char.base.gold - ui.previous.gmcp.char.base.gold
             if (dif &gt; 0) then
               ui.fLog("&lt;0,255,0:"..ui.colors.wBackground.."&gt;Guadagni "..dif.." monete d'oro.")    
             elseif (dif &lt; 0) then
@@ -6107,81 +6105,81 @@ function ui.fUpdateGMCP(event, ...)
             end 
           end
           --
-          ui.previous.char.base = {}
-          ui.previous.char.base = table.deepcopy(gmcp.char.base);
+          ui.previous.gmcp.char.base = {}
+          ui.previous.gmcp.char.base = table.deepcopy(gmcp.char.base);
         end
       end
       --
       -- Group
       if (gmcp.char.group) then
-        ui.previous.char.group = ui.previous.char.group or {}
+        ui.previous.gmcp.char.group = ui.previous.gmcp.char.group or {}
         --
-        if (not ui.fTableCompare(gmcp.char.group, ui.previous.char.group)) then
+        if (not ui.fTableCompare(gmcp.char.group, ui.previous.gmcp.char.group)) then
           ui.fUpdateGroup();
           --
-          ui.previous.char.group = {}
-          ui.previous.char.group = table.deepcopy(gmcp.char.group);
+          ui.previous.gmcp.char.group = {}
+          ui.previous.gmcp.char.group = table.deepcopy(gmcp.char.group);
         end
       end
       --
       -- Vitalis
       if (gmcp.char.vitals) then
-        ui.previous.char.vitals = ui.previous.char.vitals or {}
+        ui.previous.gmcp.char.vitals = ui.previous.gmcp.char.vitals or {}
         --
-        if (not ui.fTableCompare(gmcp.char.vitals, ui.previous.char.vitals)) then
+        if (not ui.fTableCompare(gmcp.char.vitals, ui.previous.gmcp.char.vitals)) then
           --
           -- Player
           ui.fUpdatePlayer();
           --
           -- Opponent
-          if (not ui.fTableCompare(gmcp.char.vitals.fighting, ui.previous.char.vitals.fighting)) then
+          if (not ui.fTableCompare(gmcp.char.vitals.fighting, ui.previous.gmcp.char.vitals.fighting)) then
             ui.fUpdateOpponent();
           end
           --
           -- Player position
-          if (gmcp.char.vitals.roomPos ~= ui.previous.char.vitals.roomPos) then
+          if (gmcp.char.vitals.roomPos ~= ui.previous.gmcp.char.vitals.roomPos) then
             ui.player.roomPos = gmcp.char.vitals.roomPos or 5 
             ui.fUpdateRoom()
           end
           --
-          ui.previous.char.vitals = {}
-          ui.previous.char.vitals = table.deepcopy(gmcp.char.vitals);
+          ui.previous.gmcp.char.vitals = {}
+          ui.previous.gmcp.char.vitals = table.deepcopy(gmcp.char.vitals);
         end
       end
     --
     -- ROOM
     elseif (event == "gmcp.room") then
-      ui.previous.room = ui.previous.room or {}
+      ui.previous.gmcp.room = ui.previous.gmcp.room or {}
       --
       -- Room and Mapper
-      if (not ui.fTableCompare(gmcp.room, ui.previous.room)) then
-        ui.previous.room.info = ui.previous.room.info or {}
-        ui.previous.room.info.exits = ui.previous.room.info.exits or {}
+      if (not ui.fTableCompare(gmcp.room, ui.previous.gmcp.room)) then
+        ui.previous.gmcp.room.info = ui.previous.gmcp.room.info or {}
+        ui.previous.gmcp.room.info.exits = ui.previous.gmcp.room.info.exits or {}
+        --
+        -- Room
+        ui.player.roomPos = gmcp.room.info.roomPos or gmcp.char.vitals.roomPos or 5
+        ui.fUpdateRoom()
         --
         -- Mapper (only if change room or exits (ex secret found))
-        if (gmcp.room.info.num ~= ui.previous.room.info.num) or
-           (not ui.fTableCompare(gmcp.room.info.exits, ui.previous.room.info.exits))then
-          ui.player.roomPos = gmcp.room.info.roomPos or gmcp.char.vitals.roomPos or 5
+        if (gmcp.room.info.num ~= ui.previous.gmcp.room.info.num) or
+           (not ui.fTableCompare(gmcp.room.info.exits, ui.previous.gmcp.room.info.exits))then
           ui.fUpdateMapper()
         end
         --
-        -- Room
-        ui.fUpdateRoom()
-        --
-        ui.previous.room = {}
-        ui.previous.room = table.deepcopy(gmcp.room);
+        ui.previous.gmcp.room = {}
+        ui.previous.gmcp.room = table.deepcopy(gmcp.room);
       end
     --
     -- OVERLAND
     elseif (event == "gmcp.overland") then
-      ui.previous.overland = ui.previous.overland or {}
+      ui.previous.gmcp.overland = ui.previous.gmcp.overland or {}
       --
       -- Overland
-      if (not ui.fTableCompare(gmcp.overland, ui.previous.overland)) then
+      if (not ui.fTableCompare(gmcp.overland, ui.previous.gmcp.overland)) then
         ui.fUpdateOverand();
         --
-        ui.previous.overland = {}
-        ui.previous.overland = table.deepcopy(gmcp.overland);
+        ui.previous.gmcp.overland = {}
+        ui.previous.gmcp.overland = table.deepcopy(gmcp.overland);
       end
     end
     --
@@ -6798,23 +6796,15 @@ end
 				<Script isActive="yes" isFolder="no">
 					<name>Map \ Mapper</name>
 					<packageName></packageName>
-					<script>-- based upon "generic GMCP mapping script for Mudlet" by Blizzard. https://worldofpa.in
+					<script>-- Based upon "generic GMCP mapping script for Mudlet" by Blizzard. https://worldofpa.in
 -- based upon an MSDP script from the Mudlet forums in the generic mapper thread
 -- with pieces from the generic mapper script and the mmpkg mapper by breakone9r
 --
 mudlet = mudlet or {}; 
 mudlet.mapper_script = true
 --
-map = map or {}
-map.room = map.room or {}
-map.prev = map.prev or {}
-map.speedWalkPath    = map.speedWalkPath or {}
-map.speedwalkDelay   = map.speedwalkDelay or 0.01 -- (10ms)
-map.speedwalkTimer   = map.speedwalkTimer or 1    -- (1s)
-map.roomsCoordinates = map.roomsCoordinates or {}
---
 local terrain_types = {
-  -- used to make rooms of different terrain types have different colors
+  -- Used to make rooms of different terrain types have different colors
   -- add a new entry for each terrain type, and set the color with RGB values
   -- each id value must be unique, terrain types not listed here will use mapper default color
   -- not used if you define these in a map XML file
@@ -6868,8 +6858,8 @@ local move_vectors = {
   south = {  0, -1,  0},
   east  = {  1,  0,  0},
   west  = { -1,  0,  0},
-  up    = {  0,  0,  1},
-  down  = {  0,  0, -1}
+  up    = {  1,  1,  0},
+  down  = { -1, -1,  0}
 }
 --
 local function make_room(room, prev)
@@ -6890,13 +6880,13 @@ local function make_room(room, prev)
     areaID = addAreaName(room.area)
   end
   --
-  if (map.roomsCoordinates[room.id] ~= nil ) then
+  if (ui.map[room.id] ~= nil ) then
     --
     -- Get room position from table if exist
     coords = { 
-      map.roomsCoordinates[room.id].x or 0,
-      map.roomsCoordinates[room.id].y or 0,
-      map.roomsCoordinates[room.id].z or 0
+      ui.map[room.id].x or 0,
+      ui.map[room.id].y or 0,
+      ui.map[room.id].z or 0
     }
   --
   elseif (room.area == prev.area) then
@@ -6917,9 +6907,9 @@ local function make_room(room, prev)
     -- Shift = 0 0 0
     if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
       --
-      -- Aggiungo direzione di provenienza = map.room.dir_from
-      if (#map.room.dir_from &gt; 0) then
-        for _, dir in pairs(map.room.dir_from) do
+      -- Aggiungo direzione di provenienza = ui.room.origins
+      if (#ui.room.origins &gt; 0) then
+        for _, dir in pairs(ui.room.origins) do
           if (exitValid[dir]) then
             shift[1] = shift[1] + move_vectors[dir][1]
             shift[2] = shift[2] + move_vectors[dir][2]
@@ -6974,10 +6964,10 @@ local function check_doors(roomId, exit)
   return (doors[dir] or 0)
 end
 --
-function map.fHighlightRoom(roomId, HighlightPath)
+function ui.fHighlightRoom(roomId, HighlightPath)
   local specialExits = getSpecialExits(roomId)
   --
-  if (HighlightPath) and (table.contains(map.speedWalkPath, ""..roomId)) then
+  if (HighlightPath) and (table.contains(ui.speedwalk.path, ""..roomId)) then
     --
     -- Highlight speedWalk path
     highlightRoom(roomId, 255,0,0, 255,0,0, 1.2, 128, 128)
@@ -6992,84 +6982,86 @@ function map.fHighlightRoom(roomId, HighlightPath)
   end
 end
 --
-function map.fTimeOutSpeedWalk()
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fTimeOutSpeedWalk()")
+function ui.fTimeOutSpeedWalk()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fTimeOutSpeedWalk()")
   --
   -- Stop speed Walk
-  if (map.speedwalkDelayId) then 
-    killTimer(map.speedwalkDelayId)
-    map.speedwalkDelayId = nil 
+  if (ui.handlers.fContinueSpeedWalk) then
+    killTimer(ui.handlers.fContinueSpeedWalk)
+    ui.handlers.fContinueSpeedWalk = nil 
   end
-  ui.fEcho("Speedwalk interrotto.")
+  ui.fEchon("Speedwalk interrotto.")
 end
 --
-function map.fContinueSpeedWalk(walkPath, walkDirs)
-  local roomId = map.room.id or getPlayerRoom()
+function ui.fContinueSpeedWalk(walkPath, walkDirs)
+  local roomId = ui.room.id or getPlayerRoom()
   --
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fContinueSpeedWalk(..)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fContinueSpeedWalk(..)")
   --
   -- if not arrive at next room
   if (tonumber(walkPath[1]) == tonumber(roomId)) then
     --
     -- Stop time out
-    if (map.speedwalkTimerId) then 
-      killTimer(map.speedwalkTimerId)
-      map.speedwalkTimerId = nil 
+    if (ui.handlers.fTimeOutSpeedWalk) then 
+      killTimer(ui.handlers.fTimeOutSpeedWalk) 
     end
     --
     -- Go to next room
     if (#walkDirs &gt; 0) then
       -- Send command
-      send(table.remove(walkDirs,1))
+      ui.fEchon("Prosegui il percorso verso "..ui.validExit[walkDirs[1]].color..ui.validExit[walkDirs[1]].long)
+      send(table.remove(walkDirs,1), false)
       table.remove(walkPath,1)
       --
       -- Restart time out
-      map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)
+      ui.handlers.fTimeOutSpeedWalk = tempTimer(ui.speedwalk.timeOut, function() ui.fTimeOutSpeedWalk() end)
       --
       -- Recall to check time out and send next command if necessary
-      if (map.speedwalkDelayId) then 
-        killTimer(map.speedwalkDelayId) 
+      if (ui.handlers.fContinueSpeedWalk) then 
+        killTimer(ui.handlers.fContinueSpeedWalk) 
       end
-      map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkPath, walkDirs) end)
+      ui.handlers.fContinueSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fContinueSpeedWalk(walkPath, walkDirs) end)
+    else
+      ui.fEchon("Sei arrivato alla fine del percorso")    
     end
   else
     --
     -- Recall to wait
-    if (map.speedwalkDelayId) then 
-      killTimer(map.speedwalkDelayId) 
+    if (ui.handlers.fContinueSpeedWalk) then 
+      killTimer(ui.handlers.fContinueSpeedWalk) 
     end
-    map.speedwalkDelayId = tempTimer(map.speedwalkDelay, function() map.fContinueSpeedWalk(walkPath, walkDirs) end)    
+    ui.handlers.fContinueSpeedWalk = tempTimer(ui.speedwalk.delay, function() ui.fContinueSpeedWalk(walkPath, walkDirs) end)    
   end
 end
 --
 -- Highlight new path
-function map.fHighlightSpeedWalk(walkPath)
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fHighlightSpeedWalk(..)")
+function ui.fHighlightSpeedWalk(walkPath)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fHighlightSpeedWalk(..)")
   --
-  map.speedWalkPath = map.speedWalkPath or {}
+  ui.speedwalk.path = ui.speedwalk.path or {}
   walkPath = walkPath or {}
   --
   -- Unhighlight old path
-  for _, id in pairs(map.speedWalkPath) do
-    map.fHighlightRoom(id, false)
+  for _, id in pairs(ui.speedwalk.path) do
+    ui.fHighlightRoom(id, false)
   end
   --
-  map.speedWalkPath = {}
-  map.speedWalkPath = table.deepcopy(walkPath)
+  ui.speedwalk.path = {}
+  ui.speedwalk.path = table.deepcopy(walkPath)
   --
   -- Highlight new path
-  for _, id in pairs(map.speedWalkPath) do
-    map.fHighlightRoom(id, true)
+  for _, id in pairs(ui.speedwalk.path) do
+    ui.fHighlightRoom(id, true)
   end
 end
 --
 -- Pharse speedwalk
-function map.fPrepareSpeedWalk(walkPath, walkDirs)
-  local roomId = map.room.id or getPlayerRoom()
+function ui.fPrepareSpeedWalk(walkPath, walkDirs)
+  local roomId = ui.room.id or getPlayerRoom()
   local p = table.deepcopy(walkPath) or {}
   local d = table.deepcopy(walkDirs) or {}
   ..
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] map.fPrepareSpeedWalk(..)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fPrepareSpeedWalk(..)")
   --
   if (#p ~= 0) then
     --
@@ -7106,183 +7098,117 @@ function map.fPrepareSpeedWalk(walkPath, walkDirs)
 end
 --
 function doSpeedWalk()
-  local walkPath, walkDirs = map.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+  local path, dirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] doSpeedWalk()")
   --
   -- Highlight new speedWalk (and unhighlight oldest)
-  map.fHighlightSpeedWalk(walkPath)
+  ui.fHighlightSpeedWalk(path)
   --
   -- Execute speedwalk
-  if (#walkPath ~= 0) then
+  if (#path ~= 0) then
     --
     -- Start time out
-    if (map.speedwalkTimerId) then 
-      killTimer(map.speedwalkTimerId) 
+    if (ui.handlers.fTimeOutSpeedWalk) then 
+      killTimer(ui.handlers.fTimeOutSpeedWalk) 
     end
-    map.speedwalkTimer = map.speedwalkTimer or 1
-    map.speedwalkTimerId = tempTimer(map.speedwalkTimer, function() map.fTimeOutSpeedWalk() end)  --
+    ui.handlers.fTimeOutSpeedWalk = tempTimer(ui.speedwalk.timeOut, function() ui.fTimeOutSpeedWalk() end)
     --
-    map.speedwalkDelay = map.speedwalkDelay or 0.2
-    map.fContinueSpeedWalk(walkPath, walkDirs)
+    if (ui.handlers.fContinueSpeedWalk) then 
+      killTimer(ui.handlers.fContinueSpeedWalk) 
+    end
+    ui.fContinueSpeedWalk(path, dirs)
   end
 end
 --
-function ui.fUpdateMapper(event,...)
+function ui.fUpdateMapper()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateMapper(..)")
   --
-  if (gmcp) and (gmcp.room) and (gmcp.room.info) and (not gmcp.room.info.isOnMap) then
+  if (ui.room) and (not ui.room.isOnMap) then
     --
-    map.prev = {}
-    map.prev = table.deepcopy(map.room)
-    map.prev.exits = map.prev.exits or {}
-    --
-    map.room = {
-      id = tonumber(gmcp.room.info.num),
-      area = string.trim(gmcp.room.info.zone or "Unknow Area"),
-      name = string.trim(gmcp.room.info.name or "Unknow Room n. "..gmcp.room.info.num),
-      terrain = string.trim(gmcp.room.info.terrain or ""),
-      exits = {},
-      specialExits = {},
-      dir_from = {},
-    }
-    --
-    -- Save all possible direction from
-    for k,v in pairs(map.prev.exits) do
-      if (v == map.room.id) then
-        table.insert(map.room.dir_from, ui.validExit[k].reverse or k)
-      end
-    end
-    --
-    -- Separe exits \ special exits
-    for k,v in pairs(gmcp.room.info.exits) do
-      if (v &gt; 0) and (v ~= map.room.id) then
-        if (ui.validExit[k]) then
-          --
-          -- Exit
-          map.room.exits[k] = tonumber(v)
-        else
-          --
-          -- Special exit
-          map.room.specialExits[k] = tonumber(v)
-        end
-      end
+    -- Invalid ui.room
+    if (ui.room.id == nil) or (ui.room.id &lt;= 0) then
+      return
     end
     --
     -- Create new room if not exist
-    if (not getRoomName(map.room.id)) then
-      make_room(map.room, map.prev)
+    if (not getRoomName(ui.room.id)) then
+      make_room(ui.room, ui.previous.room)
     end
     --
     -- Update color and character from terrain
-    setRoomChar(map.room.id, "");
-    if terrain_types[map.room.terrain] then
-      setRoomEnv(map.room.id, tonumber(terrain_types[map.room.terrain].id))
-      if (terrain_types[map.room.terrain].c) then
-        setRoomChar(map.room.id, terrain_types[map.room.terrain].c)
+    setRoomChar(ui.room.id, "");
+    if terrain_types[ui.room.terrain] then
+      setRoomEnv(ui.room.id, tonumber(terrain_types[ui.room.terrain].id))
+      if (terrain_types[ui.room.terrain].c) then
+        setRoomChar(ui.room.id, terrain_types[ui.room.terrain].c)
       end
     end
     -- 
     -- Remove old exits
     -- [Crea un problema: rimuove anche le secret scoperte]
-    if ((map.room.id &gt;= 23700) and (map.room.id &lt;= 24271)) or   -- Random Dungeons
-       ((map.room.id &gt;= 29907) and (map.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
-       ((map.room.id &gt;= 40000) and (map.room.id &lt;= 40073)) then -- Instancing 
+    if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
+       ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
+       ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
       --
       -- Remove exit
-      local old_exits = getRoomExits(map.room.id)
+      local old_exits = getRoomExits(ui.room.id)
       for old_exit, old_roomExit in pairs(old_exits) do
-        setExit(map.room.id, -1, old_exit)
+        setExit(ui.room.id, -1, old_exit)
       end
       --
       -- Remove special exit
-      old_exits = getSpecialExitsSwap(map.room.id)
+      old_exits = getSpecialExitsSwap(ui.room.id)
       for old_exit, old_roomExit in pairs(old_exits) do
-        removeSpecialExit(map.room.id, old_exit)
+        removeSpecialExit(ui.room.id, old_exit)
       end
     end
     --
     -- Update exits
-    for dir, id in pairs(map.room.exits) do
-      setExitStub(map.room.id, dir, true)
+    for dir, id in pairs(ui.room.exits) do
+      setExitStub(ui.room.id, dir, true)
       if getRoomName(id) then
-        setExit(map.room.id, id, dir)
+        setExit(ui.room.id, id, dir)
       end
     end
     --
     -- Update exit to prew
-    for _, dir in pairs(map.room.dir_from) do
+    for _, dir in pairs(ui.room.origins) do
       if (ui.validExit[dir]) then
-        setExit(map.prev.id, map.room.id, ui.validExit[dir].reverse)
+        setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
       end
     end
     --
     -- Update special exits
-    if not (table.is_empty(map.room.specialExits)) then
-      for dir, id in pairs(map.room.specialExits) do
-        addSpecialExit(map.room.id, id, "ent "..dir)
+    if not (table.is_empty(ui.room.otherExits)) then
+      for dir, id in pairs(ui.room.otherExits) do
+        addSpecialExit(ui.room.id, id, "ent "..dir)
         if (ui.enDebug&gt;=1) then
-          ui.fLog(map.room.area..": "..dir.." per "..(getRoomName(id) or "???").." ("..id..")")
+          ui.fLog(ui.room.area..": "..dir.." per "..(getRoomName(id) or "???").." ("..id..")")
         end
       end
     end
     --
     -- if area changed...
-    if (map.room.area ~= map.prev.area) then
+    if (ui.room.area ~= ui.previous.room.area) then
       local areas = getAreaTable()
-      local areaID = areas[map.room.area]
+      local areaID = areas[ui.room.area]
       local rooms = getAreaRooms(areaID)
       --
       for _,id in ipairs(rooms) do
-        map.fHighlightRoom(id, true)
+        ui.fHighlightRoom(id, true)
       end
     end
     --
     --clearMapSelection()
-    centerview(map.room.id)
+    centerview(ui.room.id)
     --
-    GUI.Mapper:setTitle(map.room.area.." - "..map.room.name)
+    GUI.Mapper:setTitle(ui.room.area.." - "..ui.room.name)
     --
     if (ui.enDebug&gt;=1) then
-      ui.fLog("&lt;255,255,0:"..ui.colors.wBackground.."&gt;"..map.room.area.."\n".."&lt;255,255,255:"..ui.colors.wBackground.."&gt;"..map.room.id.." &lt;0,255,255:"..ui.colors.wBackground.."&gt;"..map.room.name)
+      ui.fLog("&lt;255,255,0:"..ui.colors.wBackground.."&gt;"..ui.room.area.."\n".."&lt;255,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.id.." &lt;0,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.name)
     end
-  end
-end
---
-function onMapMarkSelectedRooms(event, markRoomType)
-  local selectedRooms = getMapSelection()["rooms"]
-  local centerRoom = getMapSelection()["center"]
-  --
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] onMapMarkSelectedRooms("..(event or "nil")..", "..(markRoomType or "nil")..")")
-  --
-  if (selectedRooms ~= nil) then
-    for i, val in ipairs(selectedRooms) do
-      --
-      -- DT
-      if markRoomType == "markRoomsAsDeathTrap" then
-        lockRoom(val, true) -- Locks room if from being walked through when speedwalking
-        setRoomChar(val, "DT")
-      --
-      -- Market
-      elseif markRoomType == "markRoomsAsMarket" then
-        lockRoom(val, false) -- Unlocks room
-        setRoomChar(val, "$")
-      --
-      -- Teleport
-      elseif markRoomType == "markRoomsAsTeleport" then
-        lockRoom(val, false) -- Unlocks room
-        setRoomChar(val, "T")
-      end
-    end
-  end
-  updateMap()
-end
---
-function gogogo()
-  local selectedRooms = getMapSelection()["rooms"]
-  if (selectedRooms ~= nil) and (#selectedRooms == 1) then
-    send('go '..selectedRooms[1])
   end
 end
 --
@@ -7293,7 +7219,7 @@ function ui.fInitMapper()
   --
   -- Coordinates of rooms
   if (io.exists(file)) then
-    table.load(file, map.roomsCoordinates)
+    table.load(file, ui.map)
   end
   --
   -- Terrain colors
@@ -7301,25 +7227,12 @@ function ui.fInitMapper()
     setCustomEnvColor(tonumber(v.id), v.r, v.g, v.b, 255)
   end
   --
-  -- Custom Sub-Menu
-  --addMapMenu("Room type")
-  --addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
-  --addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
-  --addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
-  --addMapEvent("GO!!",  "gogogo")
-  --
-  -- Events
-  registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
-  registerAnonymousEventHandler("gogogo", "gogogo")
-  --
-  registerMapInfo("Room",          function(...) return infoRoom(nil,      "room", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Area",          function(...) return infoRoom(nil,      "area", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
+  registerMapInfo("Room",          function(...) return infoRoom(nil,      "room", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Exits",         function(...) return infoRoom(nil,      "exit", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Special exits", function(...) return infoRoom(nil, "otherexit", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Doors",         function(...) return infoRoom(nil,      "door", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Entrance",      function(...) return infoRoom(nil,  "entrance", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
-  --
-  enableMapInfo("Room exits")
   --
 end</script>
 					<eventHandlerList />
@@ -7344,7 +7257,7 @@ end</script>
       spaces = spaces.." "
     end 
     --
-    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subzone.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
+    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subArea.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
     --
     for i = 0, size do
       if gmcp.overland.map["r"..i] then
@@ -7353,7 +7266,7 @@ end</script>
     end
     --
     -- Room name
-    GUI.Mapper:setTitle(ui.room.zone.." - "..ui.room.terrain);
+    GUI.Mapper:setTitle(ui.room.area.." - "..ui.room.terrain);
   end
 end</script>
 					<eventHandlerList />
@@ -8085,29 +7998,31 @@ function ui.fUpdateRoom()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateRoom()")
   --
-  ui.room = {
-    id      = -1,
-    name    = "",
-    zone    = "",
-    subzone = "",
-    terrain = "",
-    isOnMap = false,
-    mobs = {},
-    exits = {},
-    otherExits = {},  
-    objects = {},
-    players = {},
-  }
-  --
-  --if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
-  --  ui.player.roomPos = gmcp.char.vitals.roomPos or 5
-  --end
-  --
   if (gmcp) and (gmcp.room) and (gmcp.room.info) then
+    ui.previous.room = {}
+    ui.previous.room = table.deepcopy(ui.room) or {}
+    ui.previous.room.exits = ui.previous.room.exits or {}
+    ui.previous.room.otherExits = ui.previous.room.otherExits or {}
+    --
+    ui.room = {
+      id      = -1,
+      name    = "",
+      area    = "",
+      subArea = "",
+      terrain = "",
+      isOnMap = false,
+      mobs = {},
+      exits = {},
+      otherExits = {},  
+      objects = {},
+      origins = {},
+      players = {},
+    }
+    --
     ui.room.id      = gmcp.room.info.num or ui.room.id
     ui.room.name    = gmcp.room.info.name or ui.room.name
-    ui.room.zone    = gmcp.room.info.zone or ui.room.zone
-    ui.room.subzone = gmcp.room.info.subzone or ui.room.subzone
+    ui.room.area    = gmcp.room.info.zone or ui.room.area
+    ui.room.subArea = gmcp.room.info.subzone or ui.room.subArea
     ui.room.terrain = gmcp.room.info.terrain or ui.room.terrain
     ui.room.isOnMap = gmcp.room.info.isOnMap or ui.room.isOnMap
     --
@@ -8115,15 +8030,29 @@ function ui.fUpdateRoom()
     --
     clearWindow("GUI.Room.Main.Console")
     --
+    -- origins from previous exits
+    for exit, id in pairs(ui.previous.room.exits) do
+      if (ui.room.id == id) then
+        table.insert(ui.room.origins, ui.validExit[exit].reverse)
+      end
+    end
+    --
+    -- origins from previous special exits
+    for exit, id in pairs(ui.previous.room.otherExits) do
+      if (ui.room.id == id) then
+        table.insert(ui.room.origins, exit)
+      end
+    end
+    --
     --  Exits and Other exits
     if (gmcp.room.info.exits) then
       for exit in pairs(gmcp.room.info.exits) do
         exit = string.lower(exit)
         if (gmcp.room.info.exits[exit] &gt; 0) and (gmcp.room.info.exits[exit] ~= ui.room.id) then
           if (ui.validExit[exit]) then
-            ui.room.exits[exit] = gmcp.room.info.exits[exit]
+            ui.room.exits[exit] = tonumber(gmcp.room.info.exits[exit])
           else
-            ui.room.otherExits[exit] = gmcp.room.info.exits[exit]
+            ui.room.otherExits[exit] = tonumber(gmcp.room.info.exits[exit])
           end
         end
       end
@@ -8228,12 +8157,13 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:setFgColor("white")
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
         GUI.Room.Main.Console:decho("&lt;255,165,0:"..ui.colors.wBackground.."&gt;▷ "..otherExit.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(idOtherExit) or "???").."\n")
+        GUI.Room.Main.Console:echoLink(otherExit, [[expandAlias("]]..otherExit..[[")]], otherExit, true)
       end
       GUI.Room.Main.Console:echo("\n")
     end
     --
     -- Room name
-    GUI.Room:setTitle(ui.room.name.." - "..ui.room.terrain)
+    GUI.Room:setTitle(ui.room.area.." - "..ui.room.terrain)
     --
     -- Objects
     if (table.size(ui.room.objects) &gt; 0) then
@@ -10115,6 +10045,13 @@ ui.idxPath = 0;
 ui.memPath = 0;
 ui.path = {}
 --
+-- Speedwalk
+ui.speedwalk = ui.speedwalk or {
+  delay   = 0.01, -- (sec)
+  path    = {},
+  timeOut = 1,    -- (sec)
+}
+--
 -- Affects
 ui.affects = ui.affects or {}
 --
@@ -10132,7 +10069,9 @@ ui.player = ui.player or {}
 --
 -- Previous
 ui.previous = ui.previous or {}
-</script>
+-- 
+-- Map coordinates
+ui.map = ui.map or {}</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="yes" isFolder="no">
@@ -10296,8 +10235,7 @@ Non esiste aiuto per questa parola
 --
 ui.help.help = [[
 &lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt;
-Lumen et Umbra UI comprende un insieme di componenti grafici, script, trigger,
-etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra.
+Lumen et Umbra UI comprende un insieme di componenti grafici, script, trigger, etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra.
 
 Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; per avere informazioni sugli argomenti:
 
@@ -10322,8 +10260,7 @@ Altri argomenti:
 ui.help.alias = [[
 &lt;title&gt;Aliases&lt;/title&gt;
 Gli aliases permettono di eseguire lunghi comandi digitando poche lettere.
-E' possibile arricchire il comando associato all'alias utilizzando le variabili
-create con il comando &lt;command&gt;uivariable&lt;/command&gt;. 
+All'interno dei comandi di un alisa e' possibile utilizzare le variabili create con il comando &lt;command&gt;uivariable&lt;/command&gt;. 
 E' possibile associare più comandi ad un alias utilizzando gli appositi separatori (]]..ui.colors.separator..[[;&lt;reset&gt; o ]]..ui.colors.separator..[[/&lt;reset&gt;).
 
 &lt;white&gt;Configurazione:&lt;reset&gt;
@@ -10339,7 +10276,7 @@ E' possibile associare più comandi ad un alias utilizzando gli appositi separat
 &lt;white&gt;Caratteri speciali:&lt;reset&gt;
   -   &lt;input&gt;#&lt;/input&gt;     Parametro
   -   ]]..ui.colors.varID..ui.varID..[[&lt;reset&gt;     Variabile
-  - ]]..ui.colors.separator..[[;&lt;reset&gt; o ]]..ui.colors.separator..[[/&lt;reset&gt;   Divisore comandi
+  - ]]..ui.colors.separator..[[;&lt;reset&gt; o ]]..ui.colors.separator..[[/&lt;reset&gt;   Sepratore di comandi
 
 &lt;white&gt;Esempio 1&lt;reset&gt; 
   =&gt; &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;hl&lt;/aliasName&gt; &lt;aliasOutput&gt;cast 'heal'&lt;/aliasOutput&gt;
@@ -10506,12 +10443,9 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ui.help.variable = [[
 &lt;title&gt;Variabili&lt;/title&gt;
 E' possibile definire delle variabili (retentive) da riutilizzare negli alias.
-E' possibile richiamare una variabile all'interno di un alias facendo precedere
-al nome della variabile il carattere speciale &lt;command&gt;]]..ui.varID..[[&lt;/command&gt;.
-Alcune delle variabili sono già dichiarate (variabili predefinite), e vengno
-utilizzate per gli elementi l'interfaccia.
-Le variabili sono utlizzabili nel codice dei vostri script facendo accesso alla
-tabella ui.variables[nomevariabile].
+E' possibile richiamare una variabile all'interno di un alias facendo precedere al nome della variabile il carattere speciale &lt;command&gt;]]..ui.varID..[[&lt;/command&gt;.
+Alcune delle variabili sono già dichiarate (variabili predefinite), e vengno utilizzate per gli elementi l'interfaccia.
+Le variabili sono utilizzabili nel codice dei vostri script facendo accesso alla tabella LUA ui.variables[nomevariabile].
 
 &lt;white&gt;Configurazione:&lt;reset&gt;
   &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt;                       Per visualizzare l'elenco delle variabili
@@ -11603,7 +11537,55 @@ end
 		<Script isActive="yes" isFolder="no">
 			<name>Mapper utility</name>
 			<packageName></packageName>
-			<script>function myMap(areaName)
+			<script>--
+function onMapMarkSelectedRooms(event, markRoomType)
+  local selectedRooms = getMapSelection()["rooms"]
+  local centerRoom = getMapSelection()["center"]
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] onMapMarkSelectedRooms("..(event or "nil")..", "..(markRoomType or "nil")..")")
+  --
+  if (selectedRooms ~= nil) then
+    for i, val in ipairs(selectedRooms) do
+      --
+      -- DT
+      if markRoomType == "markRoomsAsDeathTrap" then
+        lockRoom(val, true) -- Locks room if from being walked through when speedwalking
+        setRoomChar(val, "DT")
+      --
+      -- Market
+      elseif markRoomType == "markRoomsAsMarket" then
+        lockRoom(val, false) -- Unlocks room
+        setRoomChar(val, "$")
+      --
+      -- Teleport
+      elseif markRoomType == "markRoomsAsTeleport" then
+        lockRoom(val, false) -- Unlocks room
+        setRoomChar(val, "T")
+      end
+    end
+  end
+  updateMap()
+end
+--
+function gogogo()
+  local selectedRooms = getMapSelection()["rooms"]
+  if (selectedRooms ~= nil) and (#selectedRooms == 1) then
+    send('go '..selectedRooms[1])
+  end
+end
+--
+-- Custom Sub-Menu
+--addMapMenu("Room type")
+--addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
+--addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
+--addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
+addMapEvent("[Debug: GO]",  "gogogo")
+--
+-- Events
+registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
+registerAnonymousEventHandler("gogogo", "gogogo")
+--
+function myMap(areaName)
   local areas = getAreaTable()
   --local areaId = areas[areaName] 
   --
@@ -11925,11 +11907,11 @@ function infoRoom(id, infoType, onlyReturn)
     local entrances = getAllRoomEntrances(id)
     --
     if (infoType == "room") or (infoType == "all") then
-      outString = outString.."&lt;purple&gt;Room: &lt;white&gt;"..name.." &lt;purple&gt;(&lt;white&gt;"..id.."&lt;purple&gt;) [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;purple&gt;]\n"
+      outString = outString.."&lt;purple&gt;Room: &lt;white&gt;"..name.." &lt;purple&gt;(&lt;white&gt;"..id.."&lt;purple&gt;) [x:&lt;white&gt;"..x..", &lt;purple&gt;y:&lt;white&gt;"..y.."]\n" -- [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;purple&gt;]
     end
     --
     if (infoType == "area") or (infoType == "all") then
-      outString = outString.."&lt;purple&gt;Area: &lt;white&gt;"..nameAarea.." &lt;purple&gt;(&lt;white&gt;"..idAarea.."&lt;purple&gt;) x: &lt;white&gt;"..x.." &lt;purple&gt;y: &lt;white&gt;"..y.." &lt;purple&gt;z: &lt;white&gt;"..z.."\n"
+      outString = outString.."&lt;purple&gt;Area: &lt;white&gt;"..nameAarea.." &lt;purple&gt;(&lt;white&gt;"..idAarea.."&lt;purple&gt;)\n"
     end
     --
     if (infoType == "exit") or (infoType == "all") then
@@ -12053,7 +12035,7 @@ function offlinePlayerMove (dir)
       end      
     end
   end
-  echo("\nCan't go there!")
+  ui.fEchon("Non esistono uscite verso "..ui.validExit[dir].color..ui.validExit[dir].long)
   return false
 end
 --
@@ -12071,9 +12053,11 @@ function track(roomId)
 end
 --
 function saveMap()
-  -- Salva la mappa tabella della mappa nel formato nVun = {x, y, z}
+  --
+  -- Salva la mappa tabella della mappa nel formato {vNum = {x, y, z}}
   local file = ui.files.map.path..ui.files.map.name
   local tableMap = {} 
+  --
   -- iterate over all rooms in code
   for id,name in pairs(getRooms()) do
     tableMap[id] = {}
