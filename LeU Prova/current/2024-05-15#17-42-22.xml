@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="13.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>617</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -69,11 +69,10 @@
 			<mWhite2>#c0c0c0</mWhite2>
 			<mLightWhite2>#ffffff</mLightWhite2>
 			<mSpellDic>it_IT</mSpellDic>
-			<mLineSize>13.0</mLineSize>
+			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room exits</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -420,7 +419,7 @@ enableTrigger("loot_end")</script>
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_valid</name>
 					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Loot_valid")
@@ -471,7 +470,7 @@ setTriggerStayOpen("Loot", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_invalid</name>
 					<script>ui.fDebug("[trig] Loot_invalid")
 setTriggerStayOpen("Loot", 1)</script>
@@ -496,7 +495,7 @@ setTriggerStayOpen("Loot", 1)</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_end</name>
 					<script>ui.parameters.widgets.endowment.type = "inv"
 ui.fUpdateEndowment()
@@ -841,7 +840,7 @@ enableTrigger("multi_loot_end")</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_valid</name>
 						<script>setTriggerStayOpen("multi_loot", 1)</script>
 						<triggerType>0</triggerType>
@@ -865,7 +864,7 @@ enableTrigger("multi_loot_end")</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_end</name>
 						<script>disableTrigger("multi_loot_valid")
 disableTrigger("multi_loot_end")
@@ -910,7 +909,7 @@ send("get all.coin "..ui.nCad..".cad")</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Fine cadaveri</name>
 					<script>ui.getAllCadNum = nil</script>
 					<triggerType>0</triggerType>
@@ -1466,7 +1465,7 @@ ui.fUpdateAffects()</script>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>GAG</name>
 				<script>deleteLine()
 --cecho ("\n&lt;white&gt;   - GAG -   "..matches[1].."\n")
@@ -4274,14 +4273,16 @@ function ui.fUpdateAffects()
   --
   -- Fast affect
   local fastAffects = {
-  --  ["In Combattimento"]        = "⚔️",
+    ["In Combattimento"] = "C️",
+    ["Panico!"]          = "P",
+  
   --  ["[Set] Planar Alteration"] = "🗡️",
   }
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAffects()")
   --
   ui.affects = {}
-  ui.actFastAffects = ""
+  ui.fastAffects = ""
   --
   -- Simulation (for debug)
   if (ui.enDebug &gt;= 2) then
@@ -4356,8 +4357,38 @@ function ui.fUpdateAffects()
     else
       local affect = orderTable[i]
       --
+      -- Duration
+      local durationColor = "green"
+      --
+      -- Permanent
+      if (ui.affects[affect].duration &lt; 0) then
+        durationColor = "white"
+        ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
+      else
+        --
+        if (ui.affects[affect].duration &lt; 1) then
+          durationColor = "red"
+        elseif (ui.affects[affect].duration &lt; 3) then
+          durationColor = "orange"
+        elseif  (ui.affects[affect].duration &lt; 5) then
+          durationColor = "yellow"
+        end
+        --
+        -- In round or  tick
+        if (ui.affects[affect].isRound) then
+          ui.affects[affect].duration = ui.affects[affect].duration.."r"
+        else
+          ui.affects[affect].duration = ui.affects[affect].duration.."t"
+        end
+      end
+      --
+      -- Fast Affects
       if (table.contains(fastAffects, affect)) then
-        ui.actFastAffects = ui.actFastAffects..fastAffects[affect];
+      -- durationColor
+        
+        ui.fastAffects = ui.fastAffects..fastAffects[affect]..""..ui.affects[affect].duration.." ";
+      --
+      -- Normal Affects
       else
         local icon = nil
         local BGColor = nil
@@ -4425,31 +4456,6 @@ function ui.fUpdateAffects()
           ]]..GUI.CSS.Affect..[[
           background-color: ]]..BGColor..[[;
         }]])
-        --
-        -- Duration
-        local durationColor = "green"
-        --
-        -- Permanent
-        if (ui.affects[affect].duration &lt; 0) then
-          durationColor = "white"
-          ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
-        else
-          --
-          if (ui.affects[affect].duration &lt; 1) then
-            durationColor = "red"
-          elseif (ui.affects[affect].duration &lt; 3) then
-            durationColor = "orange"
-          elseif  (ui.affects[affect].duration &lt; 5) then
-            durationColor = "yellow"
-          end
-          --
-          -- In round or  tick
-          if (ui.affects[affect].isRound) then
-            ui.affects[affect].duration = ui.affects[affect].duration.."r"
-          else
-            ui.affects[affect].duration = ui.affects[affect].duration.."t"
-          end
-        end
         --
         GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
         GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
@@ -6974,7 +6980,7 @@ function ui.fHighlightRoom(roomId, HighlightPath)
   elseif (not table.is_empty(specialExits)) then
     --
     -- Highlight rooms with special exits
-    highlightRoom(roomId, 0,255,255, 255,255,255, 1.2, 128, 128)
+    highlightRoom(roomId, 0,255,255, 0,0,255, 0.7, 198, 0)
   else
     --
     -- Unhighlight rooms
@@ -7705,14 +7711,20 @@ function ui.fUpdatePlayer()
   end
   --
   -- Redraw widget
-  GUI.Player:setTitle(ui.player.name..", "..ui.player.race.." "..ui.player.class..ui.actFastAffects)
+  GUI.Player:setTitle(ui.player.name..", "..ui.player.race.." "..ui.player.class)
   GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
   GUI.Player.Main.Experience:setValue(ui.player.experience, ui.player.toNext, "")
-  GUI.Player.Main.Health:setValue(hpPerc, 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Tick:setValue(ui.player.roundTicker, ui.player.roundMax)
-  GUI.Player.Main.Mana:setValue(manaPerc, 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Stamina:setValue(staminaPerc, 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Power:setValue(powerPerc, 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Tick:setValue(ui.player.roundTicker-1, 3)
+  GUI.Player.Main.Mana:setValue(math.min(100, manaPerc), 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
+  if (ui.fastAffects) and (ui.fastAffects ~= "") then
+      GUI.Player.Affects:echo("&lt;center&gt;"..ui.fastAffects)
+    GUI.Player.Affects:show();
+  else
+    GUI.Player.Affects:hide();
+  end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
@@ -8143,10 +8155,12 @@ function ui.fUpdateRoom()
     --
     -- Other exits
     if (table.size(ui.room.otherExits) &gt; 0) then
-      GUI.Room.Main.Console:setFgColor("white")
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
-        GUI.Room.Main.Console:decho("&lt;255,165,0:"..ui.colors.wBackground.."&gt;▷ "..otherExit.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(idOtherExit) or "???").."\n")
-        GUI.Room.Main.Console:echoLink(otherExit, [[expandAlias("]]..otherExit..[[")]], otherExit, true)
+        GUI.Room.Main.Console:setFgColor("orange")
+        GUI.Room.Main.Console:echoLink("▷ "..otherExit, [[expandAlias("ent ]]..otherExit..[[")]], otherExit, true)
+        GUI.Room.Main.Console:setFgColor("white")
+        GUI.Room.Main.Console:decho(" "..(getRoomName(idOtherExit) or "???").."\n")
+        --"&lt;255,165,0:"..ui.colors.wBackground.."&gt;▷ "..otherExit.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..
       end
       GUI.Room.Main.Console:echo("\n")
     end
@@ -9522,6 +9536,31 @@ end</script>
   -- Set transparent
   ui.fSetBorderMode(GUI.Player, ui.parameters.widgets.player.transparent)
   --
+  -- Fast Affects
+  GUI.Player.Affects = Geyser.Label:new2({
+    name = "GUI.Player.Affects",
+    x = -127,
+    y = 3,
+    width = 50,
+    height = 20,
+    fontSize = 8,
+  }, GUI.Player)
+  GUI.Player.Affects:enableClickthrough()
+  GUI.Player.Affects:setStyleSheet(GUI.CSS.Keybind);
+  GUI.Player.Affects:setFontSize(6)
+  --
+  -- Player Level
+  GUI.Player.Level = Geyser.Label:new2({
+    name = "GUI.Player.Level",
+    x = -74,
+    y = "0%-3",
+    width = 25,
+    height = 25,
+    fontSize = 8,
+  }, GUI.Player)
+  GUI.Player.Level:setStyleSheet(GUI.CSS.Level);
+  GUI.Player.Level:enableClickthrough()
+  --
   -- Button "Hide"
   GUI.Player.Button_hide = Geyser.Label:new2({
     name = "GUI.Player.Button_hide",
@@ -9539,17 +9578,6 @@ end</script>
                                                    ui.parameters.widgets.player.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  -- Player Level
-  GUI.Player.Level = Geyser.Label:new2({
-    name = "GUI.Player.Level",
-    x = -74,
-    y = "0%-3",
-    width = 25,
-    height = 25,
-    fontSize = 8,
-  }, GUI.Player)
-  GUI.Player.Level:setStyleSheet(GUI.CSS.Level);
-  GUI.Player.Level:enableClickthrough()
   --
   -- Experience 
   GUI.Player.Main.Experience = Geyser.Gauge:new2({
@@ -9939,7 +9967,7 @@ ui.files = {
   },
 }
 --
-ui.actFastAffects = "";
+ui.fastAffects = "";
 --
 -- Modifier for keybind
 ui.keyb_modifier = {
