@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>617</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -282,12 +282,41 @@ GUI.Chat.Main.All:decho(m)</script>
 			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Equipment</name>
-				<script>local other = matches[2]
-ui.fDebug("[trig] Equipment start")
-ui.equipment = {}
-clearWindow("GUI.Endowment.Main.Equipment")
+				<script>ui.fDebug("[trig] Equipment start")
+--
+local preDefinitedEquipment = {
+  ["come luce"]         = { short = "luce     ", used = false },
+  ["mano destra"]       = { short = "mano     ", used = false },
+  ["mano sinistra"]     = { short = "mano     ", used = false },
+  ["al collo 1"]        = { short = "collo    ", used = false },
+  ["al collo 2"]        = { short = "collo    ", used = false },
+  ["sul corpo"]         = { short = "corpo    ", used = false },
+  ["in testa"]          = { short = "testa    ", used = false },
+  ["sulle gambe"]       = { short = "gambe    ", used = false },
+  ["ai piedi"]          = { short = "piedi    ", used = false },
+  ["sulle mani"]        = { short = "mani     ", used = false },
+  ["sulle braccia"]     = { short = "braccia  ", used = false },
+  ["come scudo"]        = { short = "scudo    ", used = false },
+  ["attorno al corpo"]  = { short = "corpo    ", used = false },
+  ["alla vita"]         = { short = "vita     ", used = false },
+  ["polso destro"]      = { short = "polso    ", used = false },
+  ["polso sinistro"]    = { short = "polso    ", used = false },
+  ["impugnato"]         = { short = "impugnato", used = false },
+  ["afferrato"]         = { short = "afferrato", used = false },
+  ["sulla schiena"]     = { short = "schiena  ", used = false },
+  ["orecchio destro"]   = { short = "orecchino", used = false },
+  ["orecchio sinistro"] = { short = "orecchino", used = false },
+  ["sul viso"]          = { short = "viso     ", used = false },
+  ["incoccato"]         = { short = "incoccato", used = false },
+  ["come aura"]         = { short = "aura     ", used = false },
+}
+--
+ui.equipment = ui.equipment or {}
+ui.equipment = table.update(ui.equipment, preDefinitedEquipment)
+--
 enableTrigger("equipment_valid")
-enableTrigger("equipment_end")</script>
+enableTrigger("equipment_end")
+</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>1</mStayOpen>
@@ -300,7 +329,7 @@ enableTrigger("equipment_end")</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>^Stai usando:$</string>
-					<string>^(.*) sta usando:$</string>
+					<string>^.* sta usando:$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -311,59 +340,87 @@ enableTrigger("equipment_end")</script>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Equipment_valid")
-local equipment = {}
-equipment.number   = string.gsub(copy2decho(matches[2]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.location = string.trim(matches[3])
-equipment.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.level    = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.status   = string.trim(matches[6])
-equipment.name,
-equipment.good,
-equipment.evil,
-equipment.bright,
-equipment.noisy,
-equipment.brittle  = ui.fParsingItem(copy2decho(matches[7]))
-equipment.name     = string.gsub(equipment.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
 --
-if (equipment.good) then
-  equipment.name = equipment.name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (equipment.evil) then
-  equipment.name = equipment.name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (equipment.bright) then
-  equipment.name = equipment.name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (equipment.noisy) then
-  equipment.name = equipment.name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (equipment.brittle) then
-  equipment.name = equipment.name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
+local location  = string.trim(matches[3])
+local slot = {}
 --
-local function perc(p)
-  local n
-  p = string.gsub(p, "%%", "")
-  n = tonumber(p)
-  if (n &lt;= 0) then
-    return "[     ]"
-  elseif (n &lt;= 20) then
-    return "[X    ]"
-  elseif (n &lt;= 40) then
-    return "[XX   ]"
-  elseif (n &lt;= 60) then
-    return "[XXX  ]"
-  elseif (n &lt;= 80) then
-    return "[XXXX ]"
-  elseif (n &lt;= 100) then
-    return "[XXXXX]"
+if (location == "al collo") then
+  if (not ui.equipment["al collo 1"].used) then
+    location = "al collo 1"
+  else
+    location = "al collo 2"
   end
 end
 --
-
-GUI.Endowment.Main.Equipment:decho(equipment.number.." - "..equipment.level.." "..perc(equipment.status).." "..equipment.type.." - "..equipment.name.."\n")
-table.insert(ui.equipment, equipment)
+if (ui.equipment[location]) then
+  --
+  slot.number   = string.gsub(copy2decho(matches[2]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.level    = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.status   = string.trim(matches[6])
+  if (matches[7] == "") then
+    slot.name = ""
+  else
+    slot.name,
+    slot.good,
+    slot.evil,
+    slot.bright,
+    slot.noisy,
+    slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
+  end
+  --
+  slot.name     = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  --
+  if (ui.equipment[location].number == slot.number) and 
+     (ui.equipment[location].type == slot.type) and 
+     (ui.equipment[location].level == slot.level) then
+    --
+    if (ui.equipment[location].name == slot.name) then
+      ui.equipment[location].stat = ""
+    else
+      ui.equipment[location].stat = slot.name 
+    end 
+    --
+  else
+    ui.equipment[location].number = slot.number 
+    ui.equipment[location].type = slot.type 
+    ui.equipment[location].level = slot.level
+    ui.equipment[location].name = slot.name
+    ui.equipment[location].stat = "";
+  end
+  --
+  ui.equipment[location].status = slot.status
+  ui.equipment[location].used = true;
+end
+--
 setTriggerStayOpen("Equipment", 1)
+--
+--if (equipment.good) then
+--  equipment.name = equipment.name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+--end
+--if (equipment.evil) then
+--  equipment.name = equipment.name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+--end
+--if (equipment.bright) then
+-- equipment.name = equipment.name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+--end
+--if (equipment.noisy) then
+--  equipment.name = equipment.name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+--end
+--if (equipment.brittle) then
+--  equipment.name = equipment.name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+--end
+--
+--
+--table.insert(ui.equipment, equipment)
+--
+--GUI.Endowment.Main.Equipment:decho(equipment.number.." "..
+--                                   ui.fRemoveArticle(equipment.location).." - "..
+--                                   equipment.level.." "..
+--                                   perc(equipment.status).." "..
+--                                   equipment.type.." - "..
+--                                   equipment.name.."\n")
+--
 </script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -384,13 +441,55 @@ setTriggerStayOpen("Equipment", 1)
 				</Trigger>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
-					<script>ui.parameters.widgets.endowment.type = "equip"
+					<script>clearWindow("GUI.Endowment.Main.Equipment")
+--
+local function perc(p)
+  local n
+  p = string.gsub(p, "%%", "")
+  n = tonumber(p)
+  if (n &lt;= 0) then
+    return "[     ]"
+  elseif (n &lt;= 20) then
+    return "[X    ]"
+  elseif (n &lt;= 40) then
+    return "[XX   ]"
+  elseif (n &lt;= 60) then
+    return "[XXX  ]"
+  elseif (n &lt;= 80) then
+    return "[XXXX ]"
+  elseif (n &lt;= 100) then
+    return "[XXXXX]"
+  end
+end
+--
+for slot, eq in pairs(ui.equipment) do
+  if (eq.used) then
+    GUI.Endowment.Main.Equipment:decho(eq.number.." "..
+                                       eq.short.." - "..
+                                       eq.level.." "..
+                                       perc(eq.status).." "..
+                                       eq.type.." - "..
+                                       eq.name.."\n")
+    --
+    if (eq.stat) and (eq.stat ~= "") then
+      GUI.Endowment.Main.Equipment:decho(eq.stat.."\n")
+    else
+      GUI.Endowment.Main.Equipment:decho("\n")
+    end
+  else
+    ui.equipment[slot] = nil
+  end
+end
+--
+ui.parameters.widgets.endowment.type = "equip"
 ui.fUpdateEndowment()
 --
-ui.fDebug("[trig] Equipment_end")
 disableTrigger("equipment_valid")
 disableTrigger("equipment_invalid")
-disableTrigger("equipment_end")</script>
+disableTrigger("equipment_end")
+--
+ui.fDebug("[trig] Equipment_end")
+</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
