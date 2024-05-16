@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,6 +71,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
@@ -307,18 +308,23 @@ enableTrigger("equipment_end")</script>
 				</regexCodePropertyList>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
-					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
+					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
+-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Equipment_valid")
-if (matches[5] == "") then
-  matches[5] = "-"
-end
 local equipment = {}
-equipment.number   = matches[2]
-equipment.location = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.level    = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.type     = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-equipment.name, equipment.status, equipment.good, equipment.evil, equipment.bright, equipment.noisy, equipment.brittle = ui.fParsingItem(copy2decho(matches[6]))
-equipment.name = string.gsub(equipment.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.number   = string.gsub(copy2decho(matches[2]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.location = string.trim(matches[3])
+equipment.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.level    = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+equipment.status   = string.trim(matches[6])
+equipment.name,
+equipment.good,
+equipment.evil,
+equipment.bright,
+equipment.noisy,
+equipment.brittle  = ui.fParsingItem(copy2decho(matches[7]))
+equipment.name     = string.gsub(equipment.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+--
 if (equipment.good) then
   equipment.name = equipment.name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
@@ -335,11 +341,27 @@ if (equipment.brittle) then
   equipment.name = equipment.name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
 --
-if (equipment.status &lt; 8) then
-  GUI.Endowment.Main.Equipment:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.." ".."&lt;255,128,64:"..ui.colors.wBackground.."&gt;["..equipment.status.."/8]&lt;r&gt;\n")
-else
-  GUI.Endowment.Main.Equipment:decho(equipment.number.." "..equipment.level.." "..equipment.type.." "..equipment.name.."\n")
+local function perc(p)
+  local n
+  p = string.gsub(p, "%%", "")
+  n = tonumber(p)
+  if (n &lt;= 0) then
+    return "[     ]"
+  elseif (n &lt;= 20) then
+    return "[X    ]"
+  elseif (n &lt;= 40) then
+    return "[XX   ]"
+  elseif (n &lt;= 60) then
+    return "[XXX  ]"
+  elseif (n &lt;= 80) then
+    return "[XXXX ]"
+  elseif (n &lt;= 100) then
+    return "[XXXXX]"
+  end
 end
+--
+
+GUI.Endowment.Main.Equipment:decho(equipment.number.." - "..equipment.level.." "..perc(equipment.status).." "..equipment.type.." - "..equipment.name.."\n")
 table.insert(ui.equipment, equipment)
 setTriggerStayOpen("Equipment", 1)
 </script>
@@ -354,7 +376,7 @@ setTriggerStayOpen("Equipment", 1)
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>(?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)</string>
+						<string>(\[.*\]) \&lt;(.*)\&gt;.*\[(.*)\|(.*)\|(.*)\] (.*)</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -5613,6 +5635,7 @@ function ui.fRemoveArticle(text)
   text = string.gsub(text, " [lL][aA] ", " ")
   text = string.gsub(text, " [lL][eE] ", " ")
   text = string.gsub(text, " [lL][oO] ", " ")
+  text = string.gsub(text, " [pP][aA][iA][oOaA] ", " ")
   text = string.gsub(text, " [uU][nN] ", " ")
   text = string.gsub(text, " [uU][nN]'", " ")
   text = string.gsub(text, " [uU][nN][aA] ", " ")
@@ -5624,9 +5647,10 @@ function ui.fRemoveArticle(text)
 end
 --
 function ui.fParsingItem(text)
-  local status = 8
+  --local status = 8
   --
   text = string.gsub(text, "%.%.%.", "")
+  --[[
   if (string.find(text, "indistruttibil")) then
     text = string.gsub(text, "E` indistruttibile!", "")
     text = string.gsub(text, "Sono indistruttibili!", "")
@@ -5668,6 +5692,7 @@ function ui.fParsingItem(text)
     text = string.gsub(text, "Sono in frantumi. Inutilizzabili!", "")
     status = 0
   end
+  ]]
   --
   local good = string.find(text, "luce blu")
   if (good) then
@@ -5702,7 +5727,7 @@ function ui.fParsingItem(text)
   text = string.gsub(text, "&lt;[%d,:]+&gt;&lt;r&gt;", "")
   text = ui.fRemoveArticle(text)
   --
-  return text, status, good, evil, bright, noisy, brittle
+  return text, --[[status,]] good, evil, bright, noisy, brittle
 end
 --
 function ui.fGetCommandFormattedText(command)
@@ -7275,7 +7300,7 @@ function ui.fDifTimerOpponent(time_left)
   end
   --
   if (time_left &gt; 0) then
-    ui.handlers.fDifTimerOpponent = tempTimer(1, function() ui.fDifTimerOpponent(time_left - 1) end)
+    ui.handlers.fDifTimerOpponent = tempTimer(0.5, function() ui.fDifTimerOpponent(time_left - 0.5) end)
     GUI.Opponent.Main.Health.dif:show()
   else
     GUI.Opponent.Main.Health.dif:hide()
@@ -7407,7 +7432,7 @@ function ui.fUpdateOpponent()
     GUI.Opponent.Main.Health.dif:echo(txt)
     GUI.Opponent.Main.Health.dif:setStyleSheet(CSS)
     --
-    ui.fDifTimerOpponent(2)
+    ui.fDifTimerOpponent(1.5)
   end
   --
   -- Target on title
@@ -7576,7 +7601,7 @@ function ui.fDifTimerPlayer(time_left)
   end
   --
   if (time_left &gt; 0) then
-    ui.handlers.fDifTimerPlayer = tempTimer(1, function() ui.fDifTimerPlayer(time_left - 1) end)
+    ui.handlers.fDifTimerPlayer = tempTimer(0.5, function() ui.fDifTimerPlayer(time_left - 0.5) end)
     GUI.Player.Main.Health.dif:show()
   else
     GUI.Player.Main.Health.dif:hide()
@@ -7634,7 +7659,7 @@ function ui.fUpdatePlayer()
     ui.player.maxpow         = 100
     
     ui.player.roundMax       = 5
-    ui.player.roundTicker    = math.random(0, 5)
+    ui.player.roundTicker    = math.random(0, 4)
   elseif (gmcp) and (gmcp.char) and (gmcp.char.base) and (gmcp.char.vitals) then
     ui.player.class          = gmcp.char.base.class or ui.player.class
     ui.player.experience     = gmcp.char.base.experience or ui.player.experience
@@ -7759,7 +7784,7 @@ function ui.fUpdatePlayer()
     GUI.Player.Main.Health.dif:echo(txt)
     GUI.Player.Main.Health.dif:setStyleSheet(CSS)
     --
-    ui.fDifTimerPlayer(2)
+    ui.fDifTimerPlayer(1.5)
   end
 end</script>
 					<eventHandlerList />
@@ -9054,7 +9079,7 @@ end</script>
     y=0,
     width = "100%", 
     height = "100%",
-    autoWrap = true,
+    autoWrap = false,
     scrollBar = true,
   }, GUI.Endowment.Main)
   GUI.Endowment.Main.Equipment:setColor(30, 24, 24)
@@ -9068,7 +9093,7 @@ end</script>
     y=0,
     width = "100%", 
     height = "100%",
-    autoWrap = true,
+    autoWrap = false,
     scrollBar = true,
   }, GUI.Endowment.Main)
   GUI.Endowment.Main.Inventory:setColor(30, 24, 24)
