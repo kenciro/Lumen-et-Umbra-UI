@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>617</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Noto Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -72,8 +72,8 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -285,30 +285,30 @@ GUI.Chat.Main.All:decho(m)</script>
 				<script>ui.fDebug("[trig] Equipment start")
 --
 local preDefinitedEquipment = {
-  ["come luce"]         = { short = "luce     ", used = false },
-  ["mano destra"]       = { short = "mano     ", used = false },
-  ["mano sinistra"]     = { short = "mano     ", used = false },
-  ["al collo 1"]        = { short = "collo    ", used = false },
-  ["al collo 2"]        = { short = "collo    ", used = false },
-  ["sul corpo"]         = { short = "corpo    ", used = false },
-  ["in testa"]          = { short = "testa    ", used = false },
-  ["sulle gambe"]       = { short = "gambe    ", used = false },
-  ["ai piedi"]          = { short = "piedi    ", used = false },
-  ["sulle mani"]        = { short = "mani     ", used = false },
-  ["sulle braccia"]     = { short = "braccia  ", used = false },
-  ["come scudo"]        = { short = "scudo    ", used = false },
-  ["attorno al corpo"]  = { short = "corpo    ", used = false },
-  ["alla vita"]         = { short = "vita     ", used = false },
-  ["polso destro"]      = { short = "polso    ", used = false },
-  ["polso sinistro"]    = { short = "polso    ", used = false },
-  ["impugnato"]         = { short = "impugnato", used = false },
-  ["afferrato"]         = { short = "afferrato", used = false },
-  ["sulla schiena"]     = { short = "schiena  ", used = false },
-  ["orecchio destro"]   = { short = "orecchino", used = false },
-  ["orecchio sinistro"] = { short = "orecchino", used = false },
-  ["sul viso"]          = { short = "viso     ", used = false },
-  ["incoccato"]         = { short = "incoccato", used = false },
-  ["come aura"]         = { short = "aura     ", used = false },
+  ["come luce"]         = { short = "Luc", used = false },
+  ["mano destra"]       = { short = "Man", used = false },
+  ["mano sinistra"]     = { short = "Man", used = false },
+  ["al collo 1"]        = { short = "Col", used = false },
+  ["al collo 2"]        = { short = "Col", used = false },
+  ["sul corpo"]         = { short = "Cor", used = false },
+  ["in testa"]          = { short = "Tes", used = false },
+  ["sulle gambe"]       = { short = "Gam", used = false },
+  ["ai piedi"]          = { short = "Pie", used = false },
+  ["sulle mani"]        = { short = "Man", used = false },
+  ["sulle braccia"]     = { short = "Bra", used = false },
+  ["come scudo"]        = { short = "Scu", used = false },
+  ["attorno al corpo"]  = { short = "Att", used = false },
+  ["alla vita"]         = { short = "Vit", used = false },
+  ["polso destro"]      = { short = "Pol", used = false },
+  ["polso sinistro"]    = { short = "Pol", used = false },
+  ["impugnato"]         = { short = "Imp", used = false },
+  ["afferrato"]         = { short = "Aff", used = false },
+  ["sulla schiena"]     = { short = "Sch", used = false },
+  ["orecchio destro"]   = { short = "Ore", used = false },
+  ["orecchio sinistro"] = { short = "Ore", used = false },
+  ["sul viso"]          = { short = "Vis", used = false },
+  ["incoccato"]         = { short = "Inc", used = false },
+  ["come aura"]         = { short = "Aur", used = false },
 }
 --
 ui.equipment = ui.equipment or {}
@@ -354,9 +354,9 @@ end
 --
 if (ui.equipment[location]) then
   --
-  slot.number   = string.gsub(copy2decho(matches[2]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.number   = tonumber(string.trim(matches[2]))
   slot.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-  slot.level    = string.gsub(copy2decho(matches[5]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.level    = tonumber(string.trim(matches[5]))
   slot.status   = string.trim(matches[6])
   if (matches[7] == "") then
     slot.name = ""
@@ -369,7 +369,7 @@ if (ui.equipment[location]) then
     slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
   end
   --
-  slot.name     = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
   --
   if (ui.equipment[location].number == slot.number) and 
      (ui.equipment[location].type == slot.type) and 
@@ -433,7 +433,7 @@ setTriggerStayOpen("Equipment", 1)
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>(\[.*\]) \&lt;(.*)\&gt;.*\[(.*)\|(.*)\|(.*)\] (.*)</string>
+						<string>\[(.*)\] \&lt;(.*)\&gt;.*\[(.*)\|(.*)\|(.*)\] (.*)</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -442,44 +442,6 @@ setTriggerStayOpen("Equipment", 1)
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>clearWindow("GUI.Endowment.Main.Equipment")
---
-local function perc(p)
-  local n
-  p = string.gsub(p, "%%", "")
-  n = tonumber(p)
-  if (n &lt;= 0) then
-    return "[     ]"
-  elseif (n &lt;= 20) then
-    return "[X    ]"
-  elseif (n &lt;= 40) then
-    return "[XX   ]"
-  elseif (n &lt;= 60) then
-    return "[XXX  ]"
-  elseif (n &lt;= 80) then
-    return "[XXXX ]"
-  elseif (n &lt;= 100) then
-    return "[XXXXX]"
-  end
-end
---
-for slot, eq in pairs(ui.equipment) do
-  if (eq.used) then
-    GUI.Endowment.Main.Equipment:decho(eq.number.." "..
-                                       eq.short.." - "..
-                                       eq.level.." "..
-                                       perc(eq.status).." "..
-                                       eq.type.." - "..
-                                       eq.name.."\n")
-    --
-    if (eq.stat) and (eq.stat ~= "") then
-      GUI.Endowment.Main.Equipment:decho(eq.stat.."\n")
-    else
-      GUI.Endowment.Main.Equipment:decho("\n")
-    end
-  else
-    ui.equipment[slot] = nil
-  end
-end
 --
 ui.parameters.widgets.endowment.type = "equip"
 ui.fUpdateEndowment()
@@ -646,11 +608,13 @@ disableTrigger("loot_end")</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Track</name>
 				<script>ui.fDebug("[trig] Track")
-if (matches[2]) then
-  ui.track = ui.validExit[string.lower(matches[2])] or ""
+--
+if (matches[2]) and (ui.validExit[string.lower(matches[2])])then
+  ui.track = ui.validExit[string.lower(matches[2])].short
 else
   ui.track = ""
 end
+--
 ui.fUpdateRoom()</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4515,7 +4479,7 @@ function ui.fUpdateAffects()
         local BGColor = nil
         local FGColor = "black";
         local shortName = nil
-        local CCS = GUI.CSS.AffectText
+        local CCS = GUI.CSS.ItemText
         --
         -- Pre-load icon, BG volor and short name form predefinited table (if exists)
         if table.contains(pre_defined_affects, affect) then
@@ -4574,7 +4538,7 @@ function ui.fUpdateAffects()
         GUI.Affects.Main["Affect"..i].text:setStyleSheet(CCS)
         --
         GUI.Affects.Main["Affect"..i]:setStyleSheet([[QLabel{
-          ]]..GUI.CSS.Affect..[[
+          ]]..GUI.CSS.Item..[[
           background-color: ]]..BGColor..[[;
         }]])
         --
@@ -5548,23 +5512,157 @@ end
 					<name>Endowment</name>
 					<packageName></packageName>
 					<script>--
+local function perc(p)
+  local n
+  p = string.gsub(p, "%%", "")
+  n = tonumber(p)
+  if (n &lt;= 0) then
+    return "[     ]"
+  elseif (n &lt;= 20) then
+    return "[X    ]"
+  elseif (n &lt;= 40) then
+    return "[XX   ]"
+  elseif (n &lt;= 60) then
+    return "[XXX  ]"
+  elseif (n &lt;= 80) then
+    return "[XXXX ]"
+  elseif (n &lt;= 100) then
+    return "[XXXXX]"
+  end
+end
+--
 function ui.fUpdateEndowment()
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateEndowment()")
   --
-if (ui.parameters.widgets.endowment.type == "equip") then
-    --
-    GUI.Endowment.Main.Equipment:show()
-    --
-    GUI.Endowment.Main.Inventory:hide()
+  if (ui.parameters.widgets.endowment.type == "equip") then
+    local distance = 2; 
+    local w_h = GUI.Endowment.Main:get_height() - distance;
+    local w_w = GUI.Endowment.Main:get_width() -  distance;
+    local h = distance + 32;
+    local w = distance + 150;
+    local x = 0
+    local y = 0
+    local r = 1
+    local c = 1
+    local tot_r, tot_c, total
+    local orderTable = {}
     --
     GUI.Endowment:setTitle("Endowment [equipment]")
+    --
+    -- Order Itemss
+    for item in pairs(ui.equipment) do
+      if (ui.equipment[item].used) then
+        orderTable[#orderTable+1] = item
+      end
+    end
+    --
+    table.sort(orderTable, function (item1, item2)
+                             return (ui.equipment[item1].number &lt; ui.equipment[item2].number)
+                           end )
+    --
+    total = math.min(#orderTable, 25);
+    tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+    tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+    --
+    -- Recalc w if possible
+    if (w_w - (tot_c*w) &lt; w) then
+      w = w_w / tot_c
+    end
+    --
+    for i = 1, 25 do
+      --
+      -- Show if inside box
+      if (r &gt; tot_r) or (i &gt; total) then
+        GUI.Endowment.Main["Item"..i]:hide();
+      else
+        local item = orderTable[i]
+        --
+        -- Type (determinate color)
+        local BGColor = "grey";
+        local t = ansi2string(decho2ansi(ui.equipment[item].type))
+        -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
+        if (t == "C") then
+          BGColor = "white";
+        elseif (t == "U") then
+          BGColor = "lime";
+        elseif (t == "R") then
+          BGColor = "cyan";
+        elseif (t == "E") then
+          BGColor = "blue";
+        elseif (t == "L") then
+          BGColor = "orange";
+        else
+          BGColor = "grey";
+        end
+        --
+        GUI.Endowment.Main["Item"..i].Index:echo("&lt;center&gt;"..ui.equipment[item].number)
+        GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
+        ui.equipment[item].name = string.gsub(ui.equipment[item].name, "(%a)([%w_']+)", ui.fTitleCase)
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].name);
+        GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
+        GUI.Endowment.Main["Item"..i].Slot:echo("&lt;center&gt;"..ui.equipment[item].short);
+        -- stat
+        local stat = ""
+        if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
+          stat = ansi2string(decho2ansi(ui.equipment[item].stat))
+          stat = string.gsub(stat, "%s*(%d+)", "%1")
+          stat = string.gsub(stat, "Arm", "Classe Armatura\n")
+          stat = string.gsub(stat, "Ast", "Astuzia\n")
+          stat = string.gsub(stat, "Prc", "Precisione\n")
+          stat = string.gsub(stat, "PfR", "Recupero Punti Ferita\n")
+          stat = string.gsub(stat, "PF",  "Punti Ferita\n")
+          stat = string.gsub(stat, "MnR", "Recupero Mana\n")
+          stat = string.gsub(stat, "Mn",  "Mana\n")
+          stat = string.gsub(stat, "MvR", "Recupero Movimento\n")
+          stat = string.gsub(stat, "Mv",  "Movimento\n")
+          stat = string.gsub(stat, "RMg", "Riduzione del danno magico\n")
+          stat = string.gsub(stat, "Crt", "Colpo Critico\n")
+          stat = string.gsub(stat, "Vit", "Vitalita'\n")
+          stat = string.gsub(stat, "Cos", "Costituzione'\n")
+          stat = string.gsub(stat, "Dmg", "Danno Fisicp\n")
+          stat = string.gsub(stat, "RFi", "Resistenza al Fuoco\n")
+          stat = string.gsub(stat, "DPs", "Danno Psichico\n")
+          stat = string.gsub(stat, "Let", "Letalita'\n")
+          stat = string.gsub(stat, "Mag", "Potere Magico\n")
+          stat = string.gsub(stat, "(%d+d%d+)", "%1 Danno\n")
+          stat = "\n"..stat
+        end
+        --
+        -- ToolTip
+        local toolTip = ansi2string(decho2ansi(ui.equipment[item].name))..
+                        " (Liv. "..ui.equipment[item].level..")".."\n"..
+                        stat.."\n"..
+                        "["..item.."]"
+        GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
+        --
+        -- CSS
+        GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText..[[
+                background-color: ]]..BGColor..[[;
+              ]])
+        --
+        GUI.Endowment.Main["Item"..i]:setStyleSheet([[QLabel{
+          ]]..GUI.CSS.Item..[[
+          background-color: ]]..BGColor..[[;
+        }]])        
+        --
+        GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
+        GUI.Endowment.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+        GUI.Endowment.Main["Item"..i]:show();
+        --
+        c = c + 1
+        if (c &gt; tot_c) then
+          c = 1;
+          r = r + 1
+        end
+      end
+    end
+    --
+    GUI.Endowment.Main.Inventory:hide()
   else
     --
-    GUI.Endowment.Main.Equipment:hide()
+    GUI.Endowment:setTitle("Endowment [inventory]")
     --
     GUI.Endowment.Main.Inventory:show()
-    --
-    GUI.Endowment:setTitle("Endowment [inventory]")
   end
   --
   GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
@@ -8061,9 +8159,9 @@ function ui.fGetPosition(line)
   --
   -- Player icon or track direction
   if (ui.track == nil) or (ui.track == "") then
-    icon = "&lt;255,255,255:"..ui.colors.wBackground.."&gt;⨂&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+    icon = "&lt;255,255,255:"..ui.colors.wBackground.."&gt;⨂&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
   else
-    icon = ui.validExit[ui.track].dColor..ui.validExit[ui.track].tokenOpen.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+    icon = ui.validExit[ui.track].dColor..ui.validExit[ui.track].tokenOpen.."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
   end
   --
   -- West side
@@ -8102,11 +8200,11 @@ function ui.fGetToken(exits, exit)
       --
       -- From direction  
       if (ui.path[ui.idxPath]) and (ui.validExit[ui.path[ui.idxPath]].reverse == exit) then
-        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenFrom.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenFrom.."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
       --
       -- Normal exit
       else
-        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenOpen.."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+        token = ui.validExit[exit].dColor..ui.validExit[exit].tokenOpen.."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
       end
     --
     -- No exit
@@ -8240,11 +8338,11 @@ function ui.fUpdateRoom()
       --
       -- Outland
       GUI.Room.Main.Console:decho("&lt;0,255,255:"..ui.colors.wBackground.."&gt;                        "..ui.room.name.."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      ┌       ┐\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(1).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(2).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(3).."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      └       ┘\n\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      ┌       ┐\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(1).."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(2).."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;       "..ui.fGetPosition(3).."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      └       ┘\n\n")
       --
       GUI.Mapper.Main.Mapper:hide();
       GUI.Mapper.Main.Overland:show();
@@ -8259,19 +8357,19 @@ function ui.fUpdateRoom()
       idx = idx + 1
       --
       for k,v in pairs(ui.room.exits) do
-        exitsDestinationId[k] = ui.validExit[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;69,69,69:"..ui.colors.wBackground.."&gt;"
+        exitsDestinationId[k] = ui.validExit[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
         exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
         idx = idx + 1
       end
       --
       -- Exits and Position
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;69,69,69:"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
       --
       GUI.Mapper.Main.Mapper:show();
       GUI.Mapper.Main.Overland:hide();
@@ -8793,7 +8891,7 @@ end</script>
       width = 100,
       height = 26,
     }, GUI.Affects.Main)
-    GUI.Affects.Main["Affect"..i]:setStyleSheet(GUI.CSS.Affect);
+    GUI.Affects.Main["Affect"..i]:setStyleSheet(GUI.CSS.Item);
     --
     -- Duration
     GUI.Affects.Main["Affect"..i].duration = Geyser.Label:new2({
@@ -8803,7 +8901,7 @@ end</script>
       height = -2,
     }, GUI.Affects.Main["Affect"..i])
     GUI.Affects.Main["Affect"..i].duration:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].duration:setStyleSheet(GUI.CSS.AffectDuration)
+    GUI.Affects.Main["Affect"..i].duration:setStyleSheet(GUI.CSS.ItemLeft)
     GUI.Affects.Main["Affect"..i].duration:setFontSize(7);
     --
     -- Text
@@ -8815,7 +8913,7 @@ end</script>
       height = -2,
     }, GUI.Affects.Main["Affect"..i])
     GUI.Affects.Main["Affect"..i].text:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].text:setStyleSheet(GUI.CSS.AffectText)
+    GUI.Affects.Main["Affect"..i].text:setStyleSheet(GUI.CSS.ItemText)
     GUI.Affects.Main["Affect"..i].text:setFontSize(7);
     --
     -- Dispel Resistance
@@ -8827,7 +8925,7 @@ end</script>
       height = "50%-2",
     }, GUI.Affects.Main["Affect"..i])
     GUI.Affects.Main["Affect"..i].dispelResistance:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].dispelResistance:setStyleSheet(GUI.CSS.AffectDispelResistance)
+    GUI.Affects.Main["Affect"..i].dispelResistance:setStyleSheet(GUI.CSS.ItemTopRight)
     GUI.Affects.Main["Affect"..i].dispelResistance:setFgColor("cyan")
     GUI.Affects.Main["Affect"..i].dispelResistance:setFontSize(7);
     --
@@ -8839,7 +8937,7 @@ end</script>
       height = "50%-2",
     }, GUI.Affects.Main["Affect"..i])
     GUI.Affects.Main["Affect"..i].stacks:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].stacks:setStyleSheet(GUI.CSS.AffectStacks)
+    GUI.Affects.Main["Affect"..i].stacks:setStyleSheet(GUI.CSS.ItemBottomRight)
     GUI.Affects.Main["Affect"..i].stacks:setFgColor("orange")
     GUI.Affects.Main["Affect"..i].stacks:setFontSize(7);
     --
@@ -9171,20 +9269,6 @@ end</script>
   GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
   GUI.Endowment.Button_type:setClickCallback("ui.fEndowmentTypeClicked")
   --
-  -- Equipment
-  GUI.Endowment.Main.Equipment = Geyser.MiniConsole:new2({
-    name = 'GUI.Endowment.Main.Equipment',
-    x=0,
-    y=0,
-    width = "100%", 
-    height = "100%",
-    autoWrap = false,
-    scrollBar = true,
-  }, GUI.Endowment.Main)
-  GUI.Endowment.Main.Equipment:setColor(30, 24, 24)
-  GUI.Endowment.Main.Equipment:setBgColor(30, 24, 24)
-  GUI.Endowment.Main.Equipment:setFontSize(ui.parameters.widgets.endowment.fontSize)
-  --
   -- Inventory
   GUI.Endowment.Main.Inventory = Geyser.MiniConsole:new2({
     name = 'GUI.Endowment.Main.Inventory',
@@ -9198,6 +9282,82 @@ end</script>
   GUI.Endowment.Main.Inventory:setColor(30, 24, 24)
   GUI.Endowment.Main.Inventory:setBgColor(30, 24, 24)
   GUI.Endowment.Main.Inventory:setFontSize(ui.parameters.widgets.endowment.fontSize)
+  --
+  -- 25x Slot
+  for i=1, 25 do
+    --
+    GUI.Endowment.Main["Item"..i] = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Slot"..i,
+      width = 100,
+      height = 26,
+    }, GUI.Endowment.Main)
+    GUI.Endowment.Main["Item"..i]:setStyleSheet(GUI.CSS.Item);
+    --
+    -- Index
+    GUI.Endowment.Main["Item"..i].Index = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Index",
+      x = 2,
+      y = 2,
+      width = 30,
+      height = "50%-2",
+    }, GUI.Endowment.Main["Item"..i])
+    GUI.Endowment.Main["Item"..i].Index:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Index:setStyleSheet(GUI.CSS.ItemTopLeft)
+    GUI.Endowment.Main["Item"..i].Index:setFontSize(7);
+    --
+    -- Status
+    GUI.Endowment.Main["Item"..i].Status = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Status",
+      x = 2,
+      y = "50%",
+      width = 30,
+      height = "50%-2",
+    }, GUI.Endowment.Main["Item"..i])
+    GUI.Endowment.Main["Item"..i].Status:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Status:setStyleSheet(GUI.CSS.ItemBottomLeft)
+    GUI.Endowment.Main["Item"..i].Status:setFgColor("orange")
+    GUI.Endowment.Main["Item"..i].Status:setFontSize(7);
+    --
+    -- Text
+    GUI.Endowment.Main["Item"..i].Text = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Text",
+      x = 32,
+      y = 2,
+      width = -32,
+      height = -2,
+    }, GUI.Endowment.Main["Item"..i])
+    GUI.Endowment.Main["Item"..i].Text:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
+    GUI.Endowment.Main["Item"..i].Text:setFontSize(8);
+    GUI.Endowment.Main["Item"..i].Text:setFgColor("black")    --
+    -- Level
+    GUI.Endowment.Main["Item"..i].Level = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Level",
+      x = -32,
+      y = 2,
+      width = 30,
+      height = "50%-2",
+    }, GUI.Endowment.Main["Item"..i])
+    GUI.Endowment.Main["Item"..i].Level:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Level:setStyleSheet(GUI.CSS.ItemTopRight)
+    GUI.Endowment.Main["Item"..i].Level:setFgColor("green")
+    GUI.Endowment.Main["Item"..i].Level:setFontSize(7);
+    --
+    -- Slot
+    GUI.Endowment.Main["Item"..i].Slot = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Slot",
+      x = -32,
+      y = "50%",
+      width = 30,
+      height = "50%-2",
+    }, GUI.Endowment.Main["Item"..i])
+    GUI.Endowment.Main["Item"..i].Slot:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Slot:setStyleSheet(GUI.CSS.ItemBottomRight)
+    GUI.Endowment.Main["Item"..i].Slot:setFgColor("orange")
+    GUI.Endowment.Main["Item"..i].Slot:setFontSize(7);
+    --
+    GUI.Endowment.Main["Item"..i]:hide()
+  end
   --
   -- Wrapping function
   local Minimize = GUI.Endowment.minimize
@@ -10046,6 +10206,7 @@ ui.colors = {
   wBorder      = "90,72,72",
   wButton      = "90,72,72",
   wButtonHover = "180,144,144",
+  wText        = "69,69,69",
 }
 --
 ui.files = {
@@ -10224,26 +10385,17 @@ ui.fDebug("[init] CSS")
 GUI = GUI or {}
 GUI.CSS = GUI.CSS or {}
 --
--- Affect
-GUI.CSS.Affect = [[
+-- Item
+GUI.CSS.Item = [[
   border: 2px outset rgb(]]..ui.colors.wBorder..[[);
   border-top-left-radius: 12px;
-  border-top-right-radius: 7px;
+  border-top-right-radius:12px;
   border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 7px;
+  border-bottom-right-radius:12px;
 ]]
 --
--- Affect Dispel Resistance
-GUI.CSS.AffectDispelResistance = [[
-  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
-  border-bottom: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: rgb(]]..ui.colors.wBackground..[[);
-]]
---
--- Affect Duration
-GUI.CSS.AffectDuration = [[
+-- Item Left
+GUI.CSS.ItemLeft = [[
   border: 2px inset rgb(]]..ui.colors.wBorder..[[);
   border-top-left-radius: 10px;
   border-top-right-radius: 5px;
@@ -10252,20 +10404,47 @@ GUI.CSS.AffectDuration = [[
   background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
--- Affect Stacks
-GUI.CSS.AffectStacks = [[
+-- Item Top Left
+GUI.CSS.ItemTopLeft = [[
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
+  background-color: rgb(]]..ui.colors.wBackground..[[);
+]]
+--
+-- Item Bottom Left
+GUI.CSS.ItemBottomLeft = [[
   border: 2px inset rgb(]]..ui.colors.wBorder..[[);
   border-top: none;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 5px;
   background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
--- Affect Text
-GUI.CSS.AffectText = [[
+-- Item Text
+GUI.CSS.ItemText = [[
   border: none;
   border-radius: 0px;
   qproperty-wordWrap: true;
+]]
+--
+-- Item Top Right
+GUI.CSS.ItemTopRight = [[
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  background-color: rgb(]]..ui.colors.wBackground..[[);
+]]
+--
+-- Item Bottom Right
+GUI.CSS.ItemBottomRight = [[
+  border: 2px inset rgb(]]..ui.colors.wBorder..[[);
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(]]..ui.colors.wBackground..[[);
 ]]
 --
 -- Border
@@ -10660,7 +10839,7 @@ ui.fReadFileVariables()
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Targets' from file")
 ui.fReadFileTargets()
 --
--- Load Aliases
+-- Load Aliasese
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Load 'Aliases' from file")
 ui.fReadFileAliases()
 --
