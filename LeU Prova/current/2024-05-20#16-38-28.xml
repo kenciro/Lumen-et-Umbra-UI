@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>617</borderRightWidth>
+			<borderRightWidth>602</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -529,11 +529,12 @@ end
 if (brittle) then
   name = name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
 end
-if (status &lt; 8) then
-  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
-else
+
+--if (status &lt; 8) then
+--  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
+--else
   GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.."\n")
-end
+--end
 setTriggerStayOpen("Loot", 1)
 </script>
 					<triggerType>0</triggerType>
@@ -1144,7 +1145,7 @@ setDoor(gmcp.room.info.num, dir, 3)</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</TriggerGroup>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>auto_attac_first_mob</name>
 				<script>enableTrigger("is_a_valid_mob")</script>
 				<triggerType>0</triggerType>
@@ -4038,7 +4039,6 @@ elseif (opt == "a") then
 elseif (opt == "s") then
   ui.parameters.autoAttackArea = false;
 else
-  ui.variables.attackFirstMob = true; -- Attiva attacco primo mob in stanza
   send("info mobiles")                -- Farà scattare trigger per ricerap 1° mob e attacca
 end
 --
@@ -5604,28 +5604,84 @@ function ui.fUpdateEndowment()
         -- stat
         local stat = ""
         if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
-          stat = ansi2string(decho2ansi(ui.equipment[item].stat))
-          stat = string.gsub(stat, "%s*(%d+)", "%1")
-          stat = string.gsub(stat, "Arm", "Classe Armatura\n")
-          stat = string.gsub(stat, "Ast", "Astuzia\n")
-          stat = string.gsub(stat, "Prc", "Precisione\n")
-          stat = string.gsub(stat, "PfR", "Recupero Punti Ferita\n")
-          stat = string.gsub(stat, "PF",  "Punti Ferita\n")
-          stat = string.gsub(stat, "MnR", "Recupero Mana\n")
-          stat = string.gsub(stat, "Mn",  "Mana\n")
-          stat = string.gsub(stat, "MvR", "Recupero Movimento\n")
-          stat = string.gsub(stat, "Mv",  "Movimento\n")
-          stat = string.gsub(stat, "RMg", "Riduzione del danno magico\n")
-          stat = string.gsub(stat, "Crt", "Colpo Critico\n")
-          stat = string.gsub(stat, "Vit", "Vitalita'\n")
-          stat = string.gsub(stat, "Cos", "Costituzione'\n")
-          stat = string.gsub(stat, "Dmg", "Danno Fisicp\n")
-          stat = string.gsub(stat, "RFi", "Resistenza al Fuoco\n")
-          stat = string.gsub(stat, "DPs", "Danno Psichico\n")
-          stat = string.gsub(stat, "Let", "Letalita'\n")
-          stat = string.gsub(stat, "Mag", "Potere Magico\n")
-          stat = string.gsub(stat, "(%d+d%d+)", "%1 Danno\n")
-          stat = "\n"..stat
+          local replacements = {
+          	["DAc"] = "Danno Acido\n",
+          	["DCh"] = "Danno Caos\n",
+          	["DEl"] = "Danno Elettricita'\n",
+          	["DEn"] = "Danno Energia\n",
+          	["DFr"] = "Danno Freddo\n",
+          	["DFu"] = "Danno Fuoco\n",
+          	["DIm"] = "Danno Impatto\n",
+          	["DLu"] = "Danno Lumen\n",
+          	["DNa"] = "Danno Natura\n",
+          	["DPe"] = "Danno Perforazione\n",
+          	["DPs"] = "Danno Psichico\n",
+          	["DTa"] = "Danno Taglio\n",
+          	["DTr"] = "Danno Trauma\n",
+          	["DUm"] = "Danno Umbra\n",
+          	["Dmg"] = "Danno Fisico\n",
+
+          	["EEl"] = "Efficacia Elettricita'\n",
+          	["EFr"] = "Efficacia Freddo\n",
+          	["EFu"] = "Efficacia Fuoco\n",
+
+          	["RAc"] = "Resistenza Acido\n",
+          	["RCh"] = "Resistenza Caos\n",
+          	["RDi"] = "Resistenza danni Divini\n",
+          	["REl"] = "Resistenza Elettricita'\n",
+          	["REm"] = "Resistenza danni Elementali\n",
+          	["REn"] = "Resistenza Energia\n",
+          	["RFr"] = "Resistenza Freddo\n",
+          	["RFs"] = "Resistenza Fisici\n",
+          	["RFu"] = "Resistenza Fuoco\n",
+          	["RIm"] = "Resistenza Impatto\n",
+          	["RLu"] = "Resistenza Lumen\n",
+          	["RMg"] = "Resistenza Magici\n",
+          	["RNa"] = "Resistenza Natura\n",
+          	["RPe"] = "Resistenza Perforazione\n",
+          	["RPs"] = "Resistenza danno Psichico\n",
+          	["RTT"] = "Resistenza Tutto\n",
+          	["RTa"] = "Resistenza Taglio\n",
+          	["RTr"] = "Resistenza Trauma\n",
+          	["RUm"] = "Resistenza Umbra\n",
+
+          	["For"] = "Forza\n",
+          	["Des"] = "Destrezza\n",
+          	["Cos"] = "Costituzione\n",
+          	["Int"] = "Intelligenza\n",
+          	["Sag"] = "Saggezza\n",
+          	["Car"] = "Carisma\n",
+
+          	["Let"] = "Letalita'\n",
+          	["Ast"] = "Astuzia\n",
+          	["Vit"] = "Vitalità\n",
+          	["Per"] = "Percezione\n",
+          	["Prc"] = "Precisione\n",
+          	["Pen"] = "Penetrazione\n",
+
+          	["Arm"] = "Classe Armatura\n",
+          	["Crt"] = "Colpo Critico\n",
+          	["CCF"] = "Corpo a Corpo Fisico\n",
+          	["CCM"] = "Corpo a Corpo Magico\n",
+          	["IsA"] = "Incantesimo su Arma\n",
+          	["PdG"] = "Pittura di Guerra\n",
+          	["Mag"] = "Potere Magico\n",
+          	["Spc"] = "Potere Speciale\n",
+          	["BSc"] = "Bloccare con lo Scudo\n",
+          	["Nms"] = "Nemesi\n",
+
+          	["PfR"] = "Recupero Punti Ferita\n",
+          	["MnR"] = "Recupero Mana\n",
+          	["MvR"] = "Recupero Movimento\n",
+
+          	["PF"]	= "Punti Ferita\n",
+          	["Mn"]	= "Mana\n", 
+          	["Mv"]	= "Movimento\n", 
+          }
+          stat = "\n"..ansi2string(decho2ansi(ui.equipment[item].stat))
+          stat = string.gsub(stat, "[^ ]+", replacements)
+          stat = string.gsub(stat, "(%d+d%d+)", "%1 Danno\n")  -- Dice ('x'd'y')
+          stat = string.gsub(stat, " ( +)", "")                -- White spaces
         end
         --
         -- ToolTip
@@ -7833,8 +7889,10 @@ function ui.fUpdatePlayer()
     pow            = 0,
     maxpow         = 0,
     
-    roundMax       = 0,
+    roundMax       = 4,
     roundTicker    = 0,
+    
+    secsToTick     = 0,
   }  --
   -- for debug
   if (ui.enDebug &gt;= 2) then
@@ -7856,7 +7914,10 @@ function ui.fUpdatePlayer()
     ui.player.maxpow         = 100
     
     ui.player.roundMax       = 5
-    ui.player.roundTicker    = math.random(0, 4)
+    ui.player.roundTicker    = math.random(0, ui.player.roundMax)
+    
+    ui.player.secsToTick     = math.random(0, 74)
+    
   elseif (gmcp) and (gmcp.char) and (gmcp.char.base) and (gmcp.char.vitals) then
     ui.player.class          = gmcp.char.base.class or ui.player.class
     ui.player.experience     = gmcp.char.base.experience or ui.player.experience
@@ -7877,6 +7938,8 @@ function ui.fUpdatePlayer()
     
     ui.player.roundMax       = gmcp.char.vitals.roundMax or ui.player.roundMax
     ui.player.roundTicker    = gmcp.char.vitals.roundTicker or ui.player.roundTicker
+    
+    ui.player.secsToTick     = gmcp.char.vitals.secsToTick or ui.player.secsToTick
   end
   --
   -- Experience
@@ -7897,6 +7960,9 @@ function ui.fUpdatePlayer()
     playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
   end
   ui.previous.hp = ui.player.hp
+  --
+  -- Tick
+  ui.player.secsToTick = tonumber(ui.player.secsToTick)
   --
   -- Round Tick
   ui.player.roundTicker = tonumber(ui.player.roundTicker)
@@ -7935,12 +8001,14 @@ function ui.fUpdatePlayer()
   -- Redraw widget
   GUI.Player:setTitle(ui.player.name..", "..ui.player.race.." "..ui.player.class)
   GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
-  GUI.Player.Main.Experience:setValue(ui.player.experience, ui.player.toNext, "")
+  GUI.Player.Main.Tick:setValue(ui.player.secsToTick, 74, "")
   GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Tick:setValue(ui.player.roundTicker-1, 3)
+  GUI.Player.Main.Round:setValue(ui.player.roundTicker-1, ui.player.roundMax, "")
   GUI.Player.Main.Mana:setValue(math.min(100, manaPerc), 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Experience:setValue(ui.player.experience, ui.player.toNext, "")
+  --
   if (ui.fastAffects) and (ui.fastAffects ~= "") then
       GUI.Player.Affects:echo("&lt;center&gt;"..ui.fastAffects)
     GUI.Player.Affects:show();
@@ -9857,30 +9925,32 @@ end</script>
   GUI.Player.Button_hide:setFontSize(5)
   GUI.Player.Button_hide:echo(ui.transparentID);
   GUI.Player.Button_hide:setClickCallback(function() 
-                                                   local mode = ui.parameters.widgets.player.transparent or false;
-                                                   ui.fSetBorderMode(GUI.Player, not mode)
-                                                   ui.parameters.widgets.player.transparent = not mode;
-                                                   ui.fSaveFileParameters()
-                                                end)
+                                            local mode = ui.parameters.widgets.player.transparent or false;
+                                            ui.fSetBorderMode(GUI.Player, not mode)
+                                            ui.parameters.widgets.player.transparent = not mode;
+                                            ui.fSaveFileParameters()
+                                          end)
   --
-  -- Experience 
-  GUI.Player.Main.Experience = Geyser.Gauge:new2({
-    name = "GUI.Player.Main.Experience",
+  -- Tick 
+  GUI.Player.Main.Tick = Geyser.Gauge:new2({
+    name = "GUI.Player.Main.Tick",
     x = 2, 
     y = 0,
     width = -2,
     height = 6,
   },GUI.Player.Main)
-  GUI.Player.Main.Experience:setValue(0, 100)
+  GUI.Player.Main.Tick:setValue(0, 74)
   --
-  GUI.Player.Main.Experience.front:echo("")
+  GUI.Player.Main.Tick.front:echo("")
   --
-  GUI.Player.Main.Experience.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  GUI.Player.Main.Tick.back:setStyleSheet(GUI.CSS.GaugeBack..[[
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
   ]])
   --
-  GUI.Player.Main.Experience.front:setStyleSheet(GUI.CSS.GaugeFront..[[
-    background-color: purple;
+  GUI.Player.Main.Tick.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: grey;
+    border-radius: 1px;
   ]])
   --
   -- Player Health Gauges
@@ -9913,22 +9983,24 @@ end</script>
   GUI.Player.Main.Health.dif:setFontSize(5)
   GUI.Player.Main.Health.dif:hide();
   --
-  -- Tick
-  GUI.Player.Main.Tick = Geyser.Gauge:new2({
-    name = "GUI.Player.Main.Tick",
+  -- Round
+  GUI.Player.Main.Round = Geyser.Gauge:new2({
+    name = "GUI.Player.Main.Round",
     x = 2,
     y = "40%-7",
     width = -2,
     height = 6,
   }, GUI.Player.Main)
-  GUI.Player.Main.Tick:setValue(0, 75)
+  GUI.Player.Main.Round:setValue(0, 4)
   --
-  GUI.Player.Main.Tick.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+  GUI.Player.Main.Round.back:setStyleSheet(GUI.CSS.GaugeBack..[[
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
   ]])
   --
-  GUI.Player.Main.Tick.front:setStyleSheet(GUI.CSS.GaugeFront..[[
-    background-color: grey;
+  GUI.Player.Main.Round.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: darkgrey;
+    border-radius: 1px;
   ]])
   --
   -- Player Mana Gauges
@@ -9937,12 +10009,12 @@ end</script>
     x = 2,
     y = "40%",
     width = -2,
-    height = "20%-1",
+    height = "20%-3",
   },GUI.Player.Main)
   GUI.Player.Main.Mana:setValue(0, 100)
   --
   GUI.Player.Main.Mana.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(0, 0, 250, .3);
+    background-color: rgba(0, 100, 250, .3);
   ]])
   --
   GUI.Player.Main.Mana.front:setStyleSheet(GUI.CSS.GaugeFront..[[
@@ -9954,9 +10026,9 @@ end</script>
   GUI.Player.Main.Stamina = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Stamina",
     x = 2,
-    y = "60%",
+    y = "60%-2",
     width = -2,
-    height = "20%-1",
+    height = "20%-3",
   },GUI.Player.Main)
   GUI.Player.Main.Stamina:setValue(0, 100)
   --
@@ -9973,9 +10045,9 @@ end</script>
   GUI.Player.Main.Power = Geyser.Gauge:new2({
     name = "GUI.Player.Power",
     x = 2,
-    y = "80%",
+    y = "80%-4",
     width = -2,
-    height = "20%-1",
+    height = "20%-3",
   },GUI.Player.Main)
   GUI.Player.Main.Power:setValue(0, 100)
   --
@@ -9986,17 +10058,29 @@ end</script>
   GUI.Player.Main.Power.front:setStyleSheet(GUI.CSS.GaugeFront..[[
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ffa500, stop: 0.65 #e86100, stop: 1 #ff8c00);
   ]])
-  GUI.Player.Main.Power.front:echo("Potenza")
+  GUI.Player.Main.Power.front:echo("Energia")
   --
-  -- Player Gem
-  --GUI.Player.Main.Gem = Geyser.Label:new2({
-  --  name = "GUI.Player.Gem",
-  --  x = 0,
-  --  y = 0,
-  --  width = 28,
-  --  height = 28,
-  --}, GUI.Player.Main)
-  --GUI.Player.Main.Gem:setStyleSheet(GUI.CSS.GemEmpty);
+  -- Experience 
+  GUI.Player.Main.Experience = Geyser.Gauge:new2({
+    name = "GUI.Player.Main.Experience",
+    x = 2, 
+    y = -6,
+    width = -2,
+    height = 6,
+  },GUI.Player.Main)
+  GUI.Player.Main.Experience:setValue(0, 100)
+  --
+  GUI.Player.Main.Experience.front:echo("")
+  --
+  GUI.Player.Main.Experience.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+  ]])
+  --
+  GUI.Player.Main.Experience.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: purple;
+    border-radius: 1px;
+  ]])
   --
   -- Wrapping function
   local Minimize = GUI.Player.minimize
