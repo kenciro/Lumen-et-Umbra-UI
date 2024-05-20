@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>602</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Mono Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -285,30 +285,30 @@ GUI.Chat.Main.All:decho(m)</script>
 				<script>ui.fDebug("[trig] Equipment start")
 --
 local preDefinitedEquipment = {
-  ["come luce"]         = { short = "Luc", used = false },
-  ["mano destra"]       = { short = "Man", used = false },
-  ["mano sinistra"]     = { short = "Man", used = false },
-  ["al collo 1"]        = { short = "Col", used = false },
-  ["al collo 2"]        = { short = "Col", used = false },
-  ["sul corpo"]         = { short = "Cor", used = false },
-  ["in testa"]          = { short = "Tes", used = false },
-  ["sulle gambe"]       = { short = "Gam", used = false },
-  ["ai piedi"]          = { short = "Pie", used = false },
-  ["sulle mani"]        = { short = "Man", used = false },
-  ["sulle braccia"]     = { short = "Bra", used = false },
-  ["come scudo"]        = { short = "Scu", used = false },
-  ["attorno al corpo"]  = { short = "Att", used = false },
-  ["alla vita"]         = { short = "Vit", used = false },
-  ["polso destro"]      = { short = "Pol", used = false },
-  ["polso sinistro"]    = { short = "Pol", used = false },
-  ["impugnato"]         = { short = "Imp", used = false },
-  ["afferrato"]         = { short = "Aff", used = false },
-  ["sulla schiena"]     = { short = "Sch", used = false },
-  ["orecchio destro"]   = { short = "Ore", used = false },
-  ["orecchio sinistro"] = { short = "Ore", used = false },
-  ["sul viso"]          = { short = "Vis", used = false },
-  ["incoccato"]         = { short = "Inc", used = false },
-  ["come aura"]         = { short = "Aur", used = false },
+  ["come luce"]         = { short = "LUC", used = false },
+  ["mano destra"]       = { short = "MAN", used = false },
+  ["mano sinistra"]     = { short = "MAN", used = false },
+  ["al collo 1"]        = { short = "COL", used = false },
+  ["al collo 2"]        = { short = "COL", used = false },
+  ["sul corpo"]         = { short = "COR", used = false },
+  ["in testa"]          = { short = "TES", used = false },
+  ["sulle gambe"]       = { short = "GAM", used = false },
+  ["ai piedi"]          = { short = "PIE", used = false },
+  ["sulle mani"]        = { short = "MAN", used = false },
+  ["sulle braccia"]     = { short = "BRA", used = false },
+  ["come scudo"]        = { short = "SCU", used = false },
+  ["attorno al corpo"]  = { short = "ATT", used = false },
+  ["alla vita"]         = { short = "VIT", used = false },
+  ["polso destro"]      = { short = "POL", used = false },
+  ["polso sinistro"]    = { short = "POL", used = false },
+  ["impugnato"]         = { short = "IMP", used = false },
+  ["afferrato"]         = { short = "AFF", used = false },
+  ["sulla schiena"]     = { short = "SCH", used = false },
+  ["orecchio destro"]   = { short = "ORE", used = false },
+  ["orecchio sinistro"] = { short = "ORE", used = false },
+  ["sul viso"]          = { short = "VIS", used = false },
+  ["incoccato"]         = { short = "INC", used = false },
+  ["come aura"]         = { short = "AUR", used = false },
 }
 --
 ui.equipment = ui.equipment or {}
@@ -385,7 +385,7 @@ if (ui.equipment[location]) then
     ui.equipment[location].number = slot.number 
     ui.equipment[location].type = slot.type 
     ui.equipment[location].level = slot.level
-    ui.equipment[location].name = slot.name
+    ui.equipment[location].name = string.gsub(slot.name, "(%a)([%w_']+)", ui.fTitleCase)
     ui.equipment[location].stat = "";
   end
   --
@@ -5511,25 +5511,80 @@ end
 				<Script isActive="yes" isFolder="no">
 					<name>Endowment</name>
 					<packageName></packageName>
-					<script>--
-local function perc(p)
-  local n
-  p = string.gsub(p, "%%", "")
-  n = tonumber(p)
-  if (n &lt;= 0) then
-    return "[     ]"
-  elseif (n &lt;= 20) then
-    return "[X    ]"
-  elseif (n &lt;= 40) then
-    return "[XX   ]"
-  elseif (n &lt;= 60) then
-    return "[XXX  ]"
-  elseif (n &lt;= 80) then
-    return "[XXXX ]"
-  elseif (n &lt;= 100) then
-    return "[XXXXX]"
-  end
-end
+					<script>local replacements = {
+	["DAc"] = "Danno Acido\n",
+	["DCh"] = "Danno Caos\n",
+	["DEl"] = "Danno Elettricita'\n",
+	["DEn"] = "Danno Energia\n",
+	["DFr"] = "Danno Freddo\n",
+	["DFu"] = "Danno Fuoco\n",
+	["DIm"] = "Danno Impatto\n",
+	["DLu"] = "Danno Lumen\n",
+	["DNa"] = "Danno Natura\n",
+	["DPe"] = "Danno Perforazione\n",
+	["DPs"] = "Danno Psichico\n",
+	["DTa"] = "Danno Taglio\n",
+	["DTr"] = "Danno Trauma\n",
+	["DUm"] = "Danno Umbra\n",
+	["Dmg"] = "Danno Fisico\n",
+
+	["EEl"] = "Efficacia Elettricita'\n",
+	["EFr"] = "Efficacia Freddo\n",
+	["EFu"] = "Efficacia Fuoco\n",
+
+	["RAc"] = "Resistenza Acido\n",
+	["RCh"] = "Resistenza Caos\n",
+	["RDi"] = "Resistenza danni Divini\n",
+	["REl"] = "Resistenza Elettricita'\n",
+	["REm"] = "Resistenza danni Elementali\n",
+	["REn"] = "Resistenza Energia\n",
+	["RFr"] = "Resistenza Freddo\n",
+	["RFs"] = "Resistenza Fisici\n",
+	["RFu"] = "Resistenza Fuoco\n",
+	["RIm"] = "Resistenza Impatto\n",
+	["RLu"] = "Resistenza Lumen\n",
+	["RMg"] = "Resistenza Magici\n",
+	["RNa"] = "Resistenza Natura\n",
+	["RPe"] = "Resistenza Perforazione\n",
+	["RPs"] = "Resistenza danno Psichico\n",
+	["RTT"] = "Resistenza Tutto\n",
+	["RTa"] = "Resistenza Taglio\n",
+	["RTr"] = "Resistenza Trauma\n",
+	["RUm"] = "Resistenza Umbra\n",
+
+	["For"] = "Forza\n",
+	["Des"] = "Destrezza\n",
+	["Cos"] = "Costituzione\n",
+	["Int"] = "Intelligenza\n",
+	["Sag"] = "Saggezza\n",
+	["Car"] = "Carisma\n",
+
+	["Let"] = "Letalita'\n",
+	["Ast"] = "Astuzia\n",
+	["Vit"] = "Vitalità\n",
+	["Per"] = "Percezione\n",
+	["Prc"] = "Precisione\n",
+	["Pen"] = "Penetrazione\n",
+
+	["Arm"] = "Classe Armatura\n",
+	["Crt"] = "Colpo Critico\n",
+	["CCF"] = "Corpo a Corpo Fisico\n",
+	["CCM"] = "Corpo a Corpo Magico\n",
+	["IsA"] = "Incantesimo su Arma\n",
+	["PdG"] = "Pittura di Guerra\n",
+	["Mag"] = "Potere Magico\n",
+	["Spc"] = "Potere Speciale\n",
+	["BSc"] = "Bloccare con lo Scudo\n",
+	["Nms"] = "Nemesi\n",
+
+	["PfR"] = "Recupero Punti Ferita\n",
+	["MnR"] = "Recupero Mana\n",
+	["MvR"] = "Recupero Movimento\n",
+
+	["PF"]	= "Punti Ferita\n",
+	["Mn"]	= "Mana\n", 
+	["Mv"]	= "Movimento\n", 
+}
 --
 function ui.fUpdateEndowment()
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateEndowment()")
@@ -5597,87 +5652,13 @@ function ui.fUpdateEndowment()
         --
         GUI.Endowment.Main["Item"..i].Index:echo("&lt;center&gt;"..ui.equipment[item].number)
         GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
-        ui.equipment[item].name = string.gsub(ui.equipment[item].name, "(%a)([%w_']+)", ui.fTitleCase)
         GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].name);
         GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
         GUI.Endowment.Main["Item"..i].Slot:echo("&lt;center&gt;"..ui.equipment[item].short);
-        -- stat
+        --
+        -- Stat for ToolTip
         local stat = ""
         if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
-          local replacements = {
-          	["DAc"] = "Danno Acido\n",
-          	["DCh"] = "Danno Caos\n",
-          	["DEl"] = "Danno Elettricita'\n",
-          	["DEn"] = "Danno Energia\n",
-          	["DFr"] = "Danno Freddo\n",
-          	["DFu"] = "Danno Fuoco\n",
-          	["DIm"] = "Danno Impatto\n",
-          	["DLu"] = "Danno Lumen\n",
-          	["DNa"] = "Danno Natura\n",
-          	["DPe"] = "Danno Perforazione\n",
-          	["DPs"] = "Danno Psichico\n",
-          	["DTa"] = "Danno Taglio\n",
-          	["DTr"] = "Danno Trauma\n",
-          	["DUm"] = "Danno Umbra\n",
-          	["Dmg"] = "Danno Fisico\n",
-
-          	["EEl"] = "Efficacia Elettricita'\n",
-          	["EFr"] = "Efficacia Freddo\n",
-          	["EFu"] = "Efficacia Fuoco\n",
-
-          	["RAc"] = "Resistenza Acido\n",
-          	["RCh"] = "Resistenza Caos\n",
-          	["RDi"] = "Resistenza danni Divini\n",
-          	["REl"] = "Resistenza Elettricita'\n",
-          	["REm"] = "Resistenza danni Elementali\n",
-          	["REn"] = "Resistenza Energia\n",
-          	["RFr"] = "Resistenza Freddo\n",
-          	["RFs"] = "Resistenza Fisici\n",
-          	["RFu"] = "Resistenza Fuoco\n",
-          	["RIm"] = "Resistenza Impatto\n",
-          	["RLu"] = "Resistenza Lumen\n",
-          	["RMg"] = "Resistenza Magici\n",
-          	["RNa"] = "Resistenza Natura\n",
-          	["RPe"] = "Resistenza Perforazione\n",
-          	["RPs"] = "Resistenza danno Psichico\n",
-          	["RTT"] = "Resistenza Tutto\n",
-          	["RTa"] = "Resistenza Taglio\n",
-          	["RTr"] = "Resistenza Trauma\n",
-          	["RUm"] = "Resistenza Umbra\n",
-
-          	["For"] = "Forza\n",
-          	["Des"] = "Destrezza\n",
-          	["Cos"] = "Costituzione\n",
-          	["Int"] = "Intelligenza\n",
-          	["Sag"] = "Saggezza\n",
-          	["Car"] = "Carisma\n",
-
-          	["Let"] = "Letalita'\n",
-          	["Ast"] = "Astuzia\n",
-          	["Vit"] = "Vitalità\n",
-          	["Per"] = "Percezione\n",
-          	["Prc"] = "Precisione\n",
-          	["Pen"] = "Penetrazione\n",
-
-          	["Arm"] = "Classe Armatura\n",
-          	["Crt"] = "Colpo Critico\n",
-          	["CCF"] = "Corpo a Corpo Fisico\n",
-          	["CCM"] = "Corpo a Corpo Magico\n",
-          	["IsA"] = "Incantesimo su Arma\n",
-          	["PdG"] = "Pittura di Guerra\n",
-          	["Mag"] = "Potere Magico\n",
-          	["Spc"] = "Potere Speciale\n",
-          	["BSc"] = "Bloccare con lo Scudo\n",
-          	["Nms"] = "Nemesi\n",
-
-          	["PfR"] = "Recupero Punti Ferita\n",
-          	["MnR"] = "Recupero Mana\n",
-          	["MvR"] = "Recupero Movimento\n",
-
-          	["PF"]	= "Punti Ferita\n",
-          	["Mn"]	= "Mana\n", 
-          	["Mv"]	= "Movimento\n", 
-          }
           stat = "\n"..ansi2string(decho2ansi(ui.equipment[item].stat))
           stat = string.gsub(stat, "[^ ]+", replacements)
           stat = string.gsub(stat, "(%d+d%d+)", "%1 Danno\n")  -- Dice ('x'd'y')
@@ -5832,7 +5813,7 @@ function ui.fLog(text)
   --
   GUI.Chat.Main.All:decho(text)
   GUI.Chat.Main.Private:decho(text)
-  GUI.Chat.Main.Public:decho(text)
+  --GUI.Chat.Main.Public:decho(text)
 end
 --
 function ui.fError(text)
@@ -7846,6 +7827,21 @@ end
 					<name>Player</name>
 					<packageName></packageName>
 					<script>--
+function ui.fSoftenRound(time_left)
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSoftenRound("..(time_left or "nil")..")")
+  --
+  if (ui.handlers.fSoftenRound) then
+    killTimer(ui.handlers.fSoftenRound)
+  end
+  --
+  if (time_left &gt;= 0) then
+    GUI.Player.Main.Round:setValue(time_left, ui.player.roundMax, "")
+    ui.handlers.fSoftenRound = tempTimer(0.1, function() ui.fSoftenRound(time_left - 0.1) end)
+  else
+    GUI.Player.Main.Round:setValue(0, ui.player.roundMax, "")
+  end
+end
+--
 function ui.fDifTimerPlayer(time_left)
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerPlayer("..(time_left or "nil")..")")
   --
@@ -8003,7 +7999,8 @@ function ui.fUpdatePlayer()
   GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
   GUI.Player.Main.Tick:setValue(ui.player.secsToTick, 74, "")
   GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Round:setValue(ui.player.roundTicker-1, ui.player.roundMax, "")
+  --GUI.Player.Main.Round:setValue(ui.player.roundTicker-1, ui.player.roundMax, "")
+  ui.fSoftenRound(ui.player.roundTicker-1)
   GUI.Player.Main.Mana:setValue(math.min(100, manaPerc), 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
@@ -9371,20 +9368,21 @@ end</script>
     }, GUI.Endowment.Main["Item"..i])
     GUI.Endowment.Main["Item"..i].Index:enableClickthrough() -- for tooltip
     GUI.Endowment.Main["Item"..i].Index:setStyleSheet(GUI.CSS.ItemTopLeft)
+    GUI.Endowment.Main["Item"..i].Index:setFgColor("white")
     GUI.Endowment.Main["Item"..i].Index:setFontSize(7);
     --
     -- Status
-    GUI.Endowment.Main["Item"..i].Status = Geyser.Label:new2({
-      name = "GUI.Endowment.Main.Item"..i..".Status",
+    GUI.Endowment.Main["Item"..i].Slot = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Slot",
       x = 2,
       y = "50%",
       width = 30,
       height = "50%-2",
     }, GUI.Endowment.Main["Item"..i])
-    GUI.Endowment.Main["Item"..i].Status:enableClickthrough() -- for tooltip
-    GUI.Endowment.Main["Item"..i].Status:setStyleSheet(GUI.CSS.ItemBottomLeft)
-    GUI.Endowment.Main["Item"..i].Status:setFgColor("orange")
-    GUI.Endowment.Main["Item"..i].Status:setFontSize(7);
+    GUI.Endowment.Main["Item"..i].Slot:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Slot:setStyleSheet(GUI.CSS.ItemBottomLeft)
+    GUI.Endowment.Main["Item"..i].Slot:setFgColor("orange")
+    GUI.Endowment.Main["Item"..i].Slot:setFontSize(7);
     --
     -- Text
     GUI.Endowment.Main["Item"..i].Text = Geyser.Label:new2({
@@ -9412,17 +9410,17 @@ end</script>
     GUI.Endowment.Main["Item"..i].Level:setFontSize(7);
     --
     -- Slot
-    GUI.Endowment.Main["Item"..i].Slot = Geyser.Label:new2({
-      name = "GUI.Endowment.Main.Item"..i..".Slot",
+    GUI.Endowment.Main["Item"..i].Status = Geyser.Label:new2({
+      name = "GUI.Endowment.Main.Item"..i..".Status",
       x = -32,
       y = "50%",
       width = 30,
       height = "50%-2",
     }, GUI.Endowment.Main["Item"..i])
-    GUI.Endowment.Main["Item"..i].Slot:enableClickthrough() -- for tooltip
-    GUI.Endowment.Main["Item"..i].Slot:setStyleSheet(GUI.CSS.ItemBottomRight)
-    GUI.Endowment.Main["Item"..i].Slot:setFgColor("orange")
-    GUI.Endowment.Main["Item"..i].Slot:setFontSize(7);
+    GUI.Endowment.Main["Item"..i].Status:enableClickthrough() -- for tooltip
+    GUI.Endowment.Main["Item"..i].Status:setStyleSheet(GUI.CSS.ItemBottomRight)
+    GUI.Endowment.Main["Item"..i].Status:setFgColor("orange")
+    GUI.Endowment.Main["Item"..i].Status:setFontSize(7);
     --
     GUI.Endowment.Main["Item"..i]:hide()
   end
@@ -9882,7 +9880,7 @@ end</script>
   })
   GUI.Player:changeMenuStyle("dark")
   --
-  -- Add Border and Main
+  -- Border and Main
   ui.fAddMain(GUI.Player, GUI.CSS.Border, GUI.CSS.Main)
   --
   -- Set transparent
@@ -9901,7 +9899,7 @@ end</script>
   GUI.Player.Affects:setStyleSheet(GUI.CSS.Keybind);
   GUI.Player.Affects:setFontSize(6)
   --
-  -- Player Level
+  -- Level
   GUI.Player.Level = Geyser.Label:new2({
     name = "GUI.Player.Level",
     x = -74,
@@ -9937,7 +9935,7 @@ end</script>
     x = 2, 
     y = 0,
     width = -2,
-    height = 6,
+    height = 5,
   },GUI.Player.Main)
   GUI.Player.Main.Tick:setValue(0, 74)
   --
@@ -9953,13 +9951,13 @@ end</script>
     border-radius: 1px;
   ]])
   --
-  -- Player Health Gauges
+  -- Health
   GUI.Player.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Health",
     x = 2,
-    y = 7,
+    y = 6,
     width = -2,
-    height = "40%-15",
+    height = "40%-12",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -9987,9 +9985,9 @@ end</script>
   GUI.Player.Main.Round = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Round",
     x = 2,
-    y = "40%-7",
+    y = "40%-6",
     width = -2,
-    height = 6,
+    height = 5,
   }, GUI.Player.Main)
   GUI.Player.Main.Round:setValue(0, 4)
   --
@@ -10003,7 +10001,7 @@ end</script>
     border-radius: 1px;
   ]])
   --
-  -- Player Mana Gauges
+  -- Mana
   GUI.Player.Main.Mana = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Mana",
     x = 2,
@@ -10022,7 +10020,7 @@ end</script>
   ]])
   GUI.Player.Main.Mana.front:echo("Mana")
   --
-  -- Player Stamina Gauges (used for moviment)
+  -- Stamina (used for moviment)
   GUI.Player.Main.Stamina = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Stamina",
     x = 2,
@@ -10041,7 +10039,7 @@ end</script>
   ]])
   GUI.Player.Main.Stamina.front:echo("Movimento")
   --
-  -- Player Power Gauges
+  -- Power (used for energy)
   GUI.Player.Main.Power = Geyser.Gauge:new2({
     name = "GUI.Player.Power",
     x = 2,
@@ -10440,6 +10438,9 @@ ui.speedwalk = ui.speedwalk or {
 --
 -- Affects
 ui.affects = ui.affects or {}
+--
+-- Equipment
+ui.equipment = ui.equipment or {}
 --
 -- Group
 ui.group = ui.group or {}
