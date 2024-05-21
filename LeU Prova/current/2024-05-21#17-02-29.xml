@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>617</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4585,7 +4585,7 @@ function ui.fUpdateAffects()
 end
 --
 -- Debug simulation
-if (ui.enDebug &gt;= 2) then
+if (ui.enDebug) and (ui.enDebug &gt;= 2) then
   ui.fUpdateAffects()
 end</script>
 					<eventHandlerList />
@@ -4820,7 +4820,7 @@ function ui.fOptionButton(buttonName)
 end
 --
 -- Debug simulation
-if (ui.enDebug &gt;= 2) then
+if (ui.enDebug) and (ui.enDebug &gt;= 2) then
   ui.fUpdateAliasButton()
 end</script>
 					<eventHandlerList />
@@ -5632,28 +5632,19 @@ function ui.fUpdateEndowment()
       else
         local item = orderTable[i]
         --
-        -- Type (determinate color)
-        local BGColor = "grey";
-        local t = ansi2string(decho2ansi(ui.equipment[item].type))
-        -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
-        if (t == "C") then
-          BGColor = "white";
-        elseif (t == "U") then
-          BGColor = "lime";
-        elseif (t == "R") then
-          BGColor = "cyan";
-        elseif (t == "E") then
-          BGColor = "blue";
-        elseif (t == "L") then
-          BGColor = "orange";
-        else
-          BGColor = "grey";
-        end
-        --
+        -- Number
         GUI.Endowment.Main["Item"..i].Index:echo("&lt;center&gt;"..ui.equipment[item].number)
+        --
+        -- Status
         GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
+        --
+        -- Name
         GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].name);
+        --
+        -- Level
         GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
+        --
+        -- Slot
         GUI.Endowment.Main["Item"..i].Slot:echo("&lt;center&gt;"..ui.equipment[item].short);
         --
         -- Stat for ToolTip
@@ -5672,6 +5663,39 @@ function ui.fUpdateEndowment()
                         "["..item.."]"
         GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
         --
+        -- Type (determinate color)
+        local BGColor = "grey"
+        local t = ansi2string(decho2ansi(ui.equipment[item].type))
+        --
+        -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
+        if (t == "C") then
+          BGColor = "white"
+        elseif (t == "U") then
+          BGColor = "lime"
+        elseif (t == "R") then
+          BGColor = "cyan"
+        elseif (t == "E") then
+          BGColor = "blue"
+        elseif (t == "L") then
+          BGColor = "orange"
+        end
+        --
+        -- BorderColor
+        local borderColor = ui.colors.wBorder
+        local status = string.gsub(ui.equipment[item].status, "%%", "")
+        status = tonumber(status)
+        if (status &lt; 20) then
+          borderColor = "brown"
+        elseif (status &lt; 40) then
+          borderColor = "red"
+        elseif (status &lt; 60) then
+          borderColor = "orange"
+        elseif (status &lt; 80) then
+          borderColor = "yellow"
+        elseif (status &lt; 100) then
+          borderColor = "green"
+        end
+        --
         -- CSS
         GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText..[[
                 background-color: ]]..BGColor..[[;
@@ -5680,6 +5704,7 @@ function ui.fUpdateEndowment()
         GUI.Endowment.Main["Item"..i]:setStyleSheet([[QLabel{
           ]]..GUI.CSS.Item..[[
           background-color: ]]..BGColor..[[;
+          border: 2px outset ]]..borderColor..[[;
         }]])        
         --
         GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
@@ -6554,7 +6579,7 @@ function ui.fUpdateGroup()
 end
 --
 -- Debug simulation
-if (ui.enDebug &gt;= 2) then
+if (ui.enDebug) and (ui.enDebug &gt;= 2) then
   ui.fUpdateGroup()
 end</script>
 					<eventHandlerList />
@@ -7721,6 +7746,7 @@ function ui.fGetPreDefinitedParameters()
         fontSize = 8,
       },
       endowment = {
+        transparent = false,
         type = "equip",
         fontSize = 8,
       },
@@ -8783,7 +8809,7 @@ function ui.fReadFileTargets()
 end
 --
 -- Debug simulation
-if (ui.enDebug &gt;= 2) then
+if (ui.enDebug) and (ui.enDebug &gt;= 2) then
   ui.fUpdateTargetButtons()
 end</script>
 					<eventHandlerList />
@@ -9320,11 +9346,34 @@ end</script>
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Endowment, GUI.CSS.Border, GUI.CSS.Main)
+
+  --
+  -- Button "Hide"
+  GUI.Endowment.Button_hide = Geyser.Label:new2({
+    name = "GUI.Endowment.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Endowment)
+  GUI.Endowment.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Endowment.Button_hide:setFontSize(5)
+  GUI.Endowment.Button_hide:echo(ui.transparentID);
+  GUI.Endowment.Button_hide:setClickCallback(function() 
+                                            local mode = ui.parameters.widgets.endowment.transparent or false;
+                                            ui.fSetBorderMode(GUI.Endowment, not mode)
+                                            ui.parameters.widgets.endowment.transparent = not mode;
+                                            ui.fSaveFileParameters()
+                                          end)
+
+
+
+
   --
   -- Button "Type"
   GUI.Endowment.Button_type = Geyser.Label:new2({
     name = "GUI.Endowment.Button_type",
-    x = -89, 
+    x = -101, 
     y = 4,
     width = 40,
     height = 12,
@@ -9704,7 +9753,6 @@ end</script>
     width = "100%", 
     height = "100%",
   }, GUI.Mapper.Main)
-  setBackgroundColor("GUI.Mapper.Main.Mapper", 0, 0, 0, 0)
   --
   -- Overland
   GUI.Mapper.Main.Overland = Geyser.MiniConsole:new2({ 
