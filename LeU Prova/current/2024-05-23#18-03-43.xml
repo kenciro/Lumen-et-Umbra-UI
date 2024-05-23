@@ -369,24 +369,18 @@ if (ui.equipment[location]) then
     slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
   end
   --
-  slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  ui.equipment[location].number = slot.number 
+  ui.equipment[location].type = slot.type 
+  ui.equipment[location].level = slot.level
   --
-  if (ui.equipment[location].number == slot.number) and 
-     (ui.equipment[location].type == slot.type) and 
-     (ui.equipment[location].level == slot.level) then
-    --
-    if (ui.equipment[location].name == slot.name) then
-      ui.equipment[location].stat = ""
-    else
-      ui.equipment[location].stat = slot.name 
-    end 
-    --
+  slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+  if (ui.fIsStatistics(slot.name)) then
+    ui.equipment[location].stat = slot.name;
+    if (ui.equipment[location].name == nil) then
+      ui.equipment[location].name = location
+    end
   else
-    ui.equipment[location].number = slot.number 
-    ui.equipment[location].type = slot.type 
-    ui.equipment[location].level = slot.level
-    ui.equipment[location].name = string.gsub(slot.name, "(%a)([%w_']+)", ui.fTitleCase)
-    ui.equipment[location].stat = "";
+    ui.equipment[location].name = slot.name;
   end
   --
   ui.equipment[location].status = slot.status
@@ -5586,6 +5580,22 @@ end
 	["Mv"]	= "Movimento\n", 
 }
 --
+function ui.fIsStatistics(s)
+  s = ansi2string(decho2ansi(s))
+  --
+  for k, i in pairs(replacements) do
+    s = string.gsub(s, k, "")
+  end
+  --
+  s = string.gsub(s, "%d+d%d+", "")
+  --
+  s = string.gsub(s, "%d+", "")
+  --
+  s = string.gsub(s, " ", "")
+  --
+  return (string.len(s) == 0)
+end
+--
 function ui.fUpdateEndowment()
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateEndowment()")
   --
@@ -5604,7 +5614,7 @@ function ui.fUpdateEndowment()
     --
     GUI.Endowment:setTitle("Endowment [equipment]")
     --
-    -- Order Itemss
+    -- Order Items
     for item in pairs(ui.equipment) do
       if (ui.equipment[item].used) then
         orderTable[#orderTable+1] = item
@@ -5681,7 +5691,7 @@ function ui.fUpdateEndowment()
         end
         --
         -- BorderColor
-        local borderColor = ui.colors.wBorder
+        local borderColor = "rgb("..ui.colors.wBorder..")"
         local status = string.gsub(ui.equipment[item].status, "%%", "")
         status = tonumber(status)
         if (status &lt; 20) then
@@ -6305,6 +6315,7 @@ function ui.fFinishedRepositioning(eventName, containerName)
   local fUpdateFunction = {
     ["GUI.Affects"] = ui.fUpdateAffects,
     ["GUI.AliasButtons"] = ui.fUpdateAliasButton,
+    ["GUI.Endowment"] = ui.fUpdateEndowment,
     ["GUI.Group"] = ui.fUpdateGroup,
     ["GUI.Opponent"] = ui.fUpdateOpponent,
     ["GUI.Player"] = ui.fUpdatePlayer,
@@ -9346,7 +9357,9 @@ end</script>
   --
   -- Add Border and Main
   ui.fAddMain(GUI.Endowment, GUI.CSS.Border, GUI.CSS.Main)
-
+  --
+  -- Set transparent
+  ui.fSetBorderMode(GUI.Endowment, ui.parameters.widgets.endowment.transparent)
   --
   -- Button "Hide"
   GUI.Endowment.Button_hide = Geyser.Label:new2({
@@ -9365,10 +9378,6 @@ end</script>
                                             ui.parameters.widgets.endowment.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
-
-
-
-
   --
   -- Button "Type"
   GUI.Endowment.Button_type = Geyser.Label:new2({

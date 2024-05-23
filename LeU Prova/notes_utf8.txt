@@ -1,3 +1,24 @@
+ uia cr mind 'frantumazione psichica' &target;
+ uia bl mind 'colpo psichico' &target;
+ uia lampo mind 'lampo di energia' &target;
+
+area
+ uia ub mind 'colpo superiore';
+
+lame
+uia as mind 'assalto psionico' &target;
+
+pugno
+uia schia mind 'schiaffo violento' &target;
+uia morsa mind 'morsa brutale' &target;
+uia pugno mind 'pugno serrato' &target;
+
+flame
+uia mf mind 'manipola fiamme' potenzia
+uia mf mind 'manipola fiamme' convoglia
+uia mf mind 'manipola fiamme' espandi
+
+
 [ 1] <alla mano destra>       [ 83|  5] |E| l'anello degli Angeli...E` in condizioni eccellenti
 [ 2] <alla mano sinistra>     [ 83|  5] |E| l'anello degli Angeli...E` in condizioni eccellenti
 [ 3] <intorno al collo>       [147|  4] |L| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
@@ -19,3 +40,4 @@
 [19] <all'orecchio sinistro>  [ 83|  4] |E| un Pendente a forma di foglia d'Alloro...E` in condizioni eccellenti
 [20] <sul viso>               [106| 12] |A| un paio di occhiali d'oro massiccio...E` in condizioni eccellenti
 [21] <come aura>              [116|  2] |L| una scintilla di pura magia...E` indistruttibile!
+
