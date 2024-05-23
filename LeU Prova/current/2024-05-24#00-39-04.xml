@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>617</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Mono Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4434,6 +4434,7 @@ function ui.fUpdateAffects()
     if (r &gt; tot_r) or (i &gt; total) then
       GUI.Affects.Main["Affect"..i]:hide();
     else
+      local duration = ""
       local affect = orderTable[i]
       --
       -- Duration
@@ -4443,6 +4444,7 @@ function ui.fUpdateAffects()
       if (ui.affects[affect].duration &lt; 0) then
         durationColor = "white"
         ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
+        duration = "Permanente"
       else
         --
         if (ui.affects[affect].duration &lt; 1) then
@@ -4455,8 +4457,10 @@ function ui.fUpdateAffects()
         --
         -- In round or  tick
         if (ui.affects[affect].isRound) then
+          duration = ui.affects[affect].duration.." round"
           ui.affects[affect].duration = ui.affects[affect].duration.."r"
         else
+          duration = ui.affects[affect].duration.." tick"
           ui.affects[affect].duration = ui.affects[affect].duration.."t"
         end
       end
@@ -4548,21 +4552,27 @@ function ui.fUpdateAffects()
         -- ToolTip
         local toolTip = ""
         --
-        if ui.fHasbit(ui.affects[affect].category, 1) then toolTip = toolTip.."Aura " end
-        if ui.fHasbit(ui.affects[affect].category, 2) then toolTip = toolTip.."Affliction " end
-        if ui.fHasbit(ui.affects[affect].category, 3) then toolTip = toolTip.."Control " end
-        if ui.fHasbit(ui.affects[affect].category, 4) then toolTip = toolTip.."Hinder " end
-        if ui.fHasbit(ui.affects[affect].category, 5) then toolTip = toolTip.."Immunity " end
-        if ui.fHasbit(ui.affects[affect].category, 6) then toolTip = toolTip.."Arcane " end
-        if ui.fHasbit(ui.affects[affect].category, 7) then toolTip = toolTip.."Divine " end
-        if ui.fHasbit(ui.affects[affect].category, 8) then toolTip = toolTip.."Elemental " end
-        if ui.fHasbit(ui.affects[affect].category, 9) then toolTip = toolTip.."Physical " end
+        if ui.fHasbit(ui.affects[affect].type, 1) then toolTip = toolTip.."Aura " end
+        if ui.fHasbit(ui.affects[affect].type, 2) then toolTip = toolTip.."Affliction " end
+        if ui.fHasbit(ui.affects[affect].type, 3) then toolTip = toolTip.."Control " end
+        if ui.fHasbit(ui.affects[affect].type, 4) then toolTip = toolTip.."Hinder " end
+        if ui.fHasbit(ui.affects[affect].type, 5) then toolTip = toolTip.."Immunity " end
+        if ui.fHasbit(ui.affects[affect].type, 6) then toolTip = toolTip.."Arcane " end
+        if ui.fHasbit(ui.affects[affect].type, 7) then toolTip = toolTip.."Divine " end
+        if ui.fHasbit(ui.affects[affect].type, 8) then toolTip = toolTip.."Elemental " end
+        if ui.fHasbit(ui.affects[affect].type, 9) then toolTip = toolTip.."Physical " end
+        if (toolTip == "") then toolTip = "-" else toolTip = "&amp;lt;"..string.trim(toolTip).."&amp;gt;" end
         --
-        if (toolTip == "") then
-          GUI.Affects.Main["Affect"..i]:setToolTip(affect, 10)
-        else
-          GUI.Affects.Main["Affect"..i]:setToolTip(affect.."\n"..toolTip, 10)
-        end
+        toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(affect)..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
+                        '&lt;i&gt;'..toolTip..'&lt;/i&gt;&lt;/p&gt;'..
+                        '&lt;lu&gt;'..
+                        '&lt;li&gt;▷ '..ui.affects[affect].dispelResistance.. ' resistenza&lt;/li&gt;'..
+                        '&lt;li&gt;▷ '..ui.affects[affect].stacks..' stack&lt;/li&gt;'..
+                        '&lt;/lu&gt;'..
+                        --stat..
+                        '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;'
+        --
+        GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
         --
         GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
         GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
@@ -5506,78 +5516,78 @@ end
 					<name>Endowment</name>
 					<packageName></packageName>
 					<script>local replacements = {
-	["DAc"] = "Danno Acido\n",
-	["DCh"] = "Danno Caos\n",
-	["DEl"] = "Danno Elettricita'\n",
-	["DEn"] = "Danno Energia\n",
-	["DFr"] = "Danno Freddo\n",
-	["DFu"] = "Danno Fuoco\n",
-	["DIm"] = "Danno Impatto\n",
-	["DLu"] = "Danno Lumen\n",
-	["DNa"] = "Danno Natura\n",
-	["DPe"] = "Danno Perforazione\n",
-	["DPs"] = "Danno Psichico\n",
-	["DTa"] = "Danno Taglio\n",
-	["DTr"] = "Danno Trauma\n",
-	["DUm"] = "Danno Umbra\n",
-	["Dmg"] = "Danno Fisico\n",
+	["DAc"] = "Danno Acido",
+	["DCh"] = "Danno Caos",
+	["DEl"] = "Danno Elettricita'",
+	["DEn"] = "Danno Energia",
+	["DFr"] = "Danno Freddo",
+	["DFu"] = "Danno Fuoco",
+	["DIm"] = "Danno Impatto",
+	["DLu"] = "Danno Lumen",
+	["DNa"] = "Danno Natura",
+	["DPe"] = "Danno Perforazione",
+	["DPs"] = "Danno Psichico",
+	["DTa"] = "Danno Taglio",
+	["DTr"] = "Danno Trauma",
+	["DUm"] = "Danno Umbra",
+	["Dmg"] = "Danno Fisico",
 
-	["EEl"] = "Efficacia Elettricita'\n",
-	["EFr"] = "Efficacia Freddo\n",
-	["EFu"] = "Efficacia Fuoco\n",
+	["EEl"] = "Efficacia Elettricita'",
+	["EFr"] = "Efficacia Freddo",
+	["EFu"] = "Efficacia Fuoco",
 
-	["RAc"] = "Resistenza Acido\n",
-	["RCh"] = "Resistenza Caos\n",
-	["RDi"] = "Resistenza danni Divini\n",
-	["REl"] = "Resistenza Elettricita'\n",
-	["REm"] = "Resistenza danni Elementali\n",
-	["REn"] = "Resistenza Energia\n",
-	["RFr"] = "Resistenza Freddo\n",
-	["RFs"] = "Resistenza Fisici\n",
-	["RFu"] = "Resistenza Fuoco\n",
-	["RIm"] = "Resistenza Impatto\n",
-	["RLu"] = "Resistenza Lumen\n",
-	["RMg"] = "Resistenza Magici\n",
-	["RNa"] = "Resistenza Natura\n",
-	["RPe"] = "Resistenza Perforazione\n",
-	["RPs"] = "Resistenza danno Psichico\n",
-	["RTT"] = "Resistenza Tutto\n",
-	["RTa"] = "Resistenza Taglio\n",
-	["RTr"] = "Resistenza Trauma\n",
-	["RUm"] = "Resistenza Umbra\n",
+	["RAc"] = "Resistenza Acido",
+	["RCh"] = "Resistenza Caos",
+	["RDi"] = "Resistenza danni Divini",
+	["REl"] = "Resistenza Elettricita'",
+	["REm"] = "Resistenza danni Elementali",
+	["REn"] = "Resistenza Energia",
+	["RFr"] = "Resistenza Freddo",
+	["RFs"] = "Resistenza Fisici",
+	["RFu"] = "Resistenza Fuoco",
+	["RIm"] = "Resistenza Impatto",
+	["RLu"] = "Resistenza Lumen",
+	["RMg"] = "Resistenza Magici",
+	["RNa"] = "Resistenza Natura",
+	["RPe"] = "Resistenza Perforazione",
+	["RPs"] = "Resistenza danno Psichico",
+	["RTT"] = "Resistenza Tutto",
+	["RTa"] = "Resistenza Taglio",
+	["RTr"] = "Resistenza Trauma",
+	["RUm"] = "Resistenza Umbra",
 
-	["For"] = "Forza\n",
-	["Des"] = "Destrezza\n",
-	["Cos"] = "Costituzione\n",
-	["Int"] = "Intelligenza\n",
-	["Sag"] = "Saggezza\n",
-	["Car"] = "Carisma\n",
+	["For"] = "Forza",
+	["Des"] = "Destrezza",
+	["Cos"] = "Costituzione",
+	["Int"] = "Intelligenza",
+	["Sag"] = "Saggezza",
+	["Car"] = "Carisma",
 
-	["Let"] = "Letalita'\n",
-	["Ast"] = "Astuzia\n",
-	["Vit"] = "Vitalità\n",
-	["Per"] = "Percezione\n",
-	["Prc"] = "Precisione\n",
-	["Pen"] = "Penetrazione\n",
+	["Let"] = "Letalita'",
+	["Ast"] = "Astuzia",
+	["Vit"] = "Vitalità",
+	["Per"] = "Percezione",
+	["Prc"] = "Precisione",
+	["Pen"] = "Penetrazione",
 
-	["Arm"] = "Classe Armatura\n",
-	["Crt"] = "Colpo Critico\n",
-	["CCF"] = "Corpo a Corpo Fisico\n",
-	["CCM"] = "Corpo a Corpo Magico\n",
-	["IsA"] = "Incantesimo su Arma\n",
-	["PdG"] = "Pittura di Guerra\n",
-	["Mag"] = "Potere Magico\n",
-	["Spc"] = "Potere Speciale\n",
-	["BSc"] = "Bloccare con lo Scudo\n",
-	["Nms"] = "Nemesi\n",
+	["Arm"] = "Classe Armatura",
+	["Crt"] = "Colpo Critico",
+	["CCF"] = "Corpo a Corpo Fisico",
+	["CCM"] = "Corpo a Corpo Magico",
+	["IsA"] = "Incantesimo su Arma",
+	["PdG"] = "Pittura di Guerra",
+	["Mag"] = "Potere Magico",
+	["Spc"] = "Potere Speciale",
+	["BSc"] = "Bloccare con lo Scudo",
+	["Nms"] = "Nemesi",
 
-	["PfR"] = "Recupero Punti Ferita\n",
-	["MnR"] = "Recupero Mana\n",
-	["MvR"] = "Recupero Movimento\n",
+	["PfR"] = "Recupero Punti Ferita",
+	["MnR"] = "Recupero Mana",
+	["MvR"] = "Recupero Movimento",
 
-	["PF"]	= "Punti Ferita\n",
-	["Mn"]	= "Mana\n", 
-	["Mv"]	= "Movimento\n", 
+	["PF"]	= "Punti Ferita",
+	["Mn"]	= "Mana", 
+	["Mv"]	= "Movimento", 
 }
 --
 function ui.fIsStatistics(s)
@@ -5649,7 +5659,7 @@ function ui.fUpdateEndowment()
         GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
         --
         -- Name
-        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].name);
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.fRemoveArticle(ui.equipment[item].name));
         --
         -- Level
         GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
@@ -5657,37 +5667,29 @@ function ui.fUpdateEndowment()
         -- Slot
         GUI.Endowment.Main["Item"..i].Slot:echo("&lt;center&gt;"..ui.equipment[item].short);
         --
-        -- Stat for ToolTip
-        local stat = ""
-        if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
-          stat = "\n"..ansi2string(decho2ansi(ui.equipment[item].stat))
-          stat = string.gsub(stat, "[^ ]+", replacements)
-          stat = string.gsub(stat, "(%d+d%d+)", "%1 Danno\n")  -- Dice ('x'd'y')
-          stat = string.gsub(stat, " ( +)", "")                -- White spaces
-        end
-        --
-        -- ToolTip
-        local toolTip = ansi2string(decho2ansi(ui.equipment[item].name))..
-                        " (Liv. "..ui.equipment[item].level..")".."\n"..
-                        stat.."\n"..
-                        "["..item.."]"
-        GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
-        --
         -- Type (determinate color)
         local BGColor = "grey"
         local t = ansi2string(decho2ansi(ui.equipment[item].type))
         --
         -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
         if (t == "C") then
+          t = "&lt;color=white&gt;Comune&lt;/color&gt;"
           BGColor = "white"
         elseif (t == "U") then
+          t = "Non comune"
           BGColor = "lime"
         elseif (t == "R") then
+          t = "Raro"
           BGColor = "cyan"
         elseif (t == "E") then
+          t = "Epico"
           BGColor = "blue"
         elseif (t == "L") then
+          t = "Leggendario"
           BGColor = "orange"
+        else
+          t = "Spazzatura"
+          BGColor = "grey"
         end
         --
         -- BorderColor
@@ -5716,6 +5718,24 @@ function ui.fUpdateEndowment()
           background-color: ]]..BGColor..[[;
           border: 2px outset ]]..borderColor..[[;
         }]])        
+        --
+        -- Stat for ToolTip
+        local stat = ""
+        if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
+          stat = "&lt;lu&gt;"..ansi2string(decho2ansi(ui.equipment[item].stat)).."&lt;/lu&gt;"
+          stat = string.gsub(stat, "(%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")  -- Dice ('x'd'y')
+          --stat = string.gsub(stat, "[^ ]+", replacements)
+          stat = string.gsub(stat, "[a-zA-Z]+", replacements)
+          stat = string.gsub(stat, "(%d+d%d+)", "&lt;li&gt;▷ %1 Danno&lt;/li&gt;")  -- Dice ('x'd'y')
+          --stat = string.gsub(stat, " ( +)", "")                -- White spaces
+        end
+        --
+        -- ToolTip
+        local toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
+                        '&lt;i&gt;&amp;lt;'..item..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
+                        stat..
+                        '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..t..'&lt;/i&gt; [Liv. '..ui.equipment[item].level..']&lt;/p&gt;'
+        GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
         --
         GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
         GUI.Endowment.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
@@ -5994,7 +6014,7 @@ function ui.fParsingItem(text)
   end
   --
   text = string.gsub(text, "&lt;[%d,:]+&gt;&lt;r&gt;", "")
-  text = ui.fRemoveArticle(text)
+  --text = ui.fRemoveArticle(text)
   --
   return text, --[[status,]] good, evil, bright, noisy, brittle
 end
@@ -6149,9 +6169,15 @@ function ui.fTableCompare(o1, o2, ignore_mt)
 end
 --
 function ui.fHasbit(x, p)
+  x = tonumber(x)
+  p = tonumber(p)
+  
+  display(x, p)
+  --
   p = 2 ^ (p - 1)
   --
-  return x % (p + p) &gt;= p       
+  return (x % (p + p) &gt;= p)
+  --return (math.mod(x, p+p) &gt;= p)       
 end
 --
 function ui.fGetColor(color)
