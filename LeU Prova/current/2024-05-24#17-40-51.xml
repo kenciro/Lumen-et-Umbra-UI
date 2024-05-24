@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>512</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -285,31 +285,30 @@ GUI.Chat.Main.All:decho(m)</script>
 				<script>ui.fDebug("[trig] Equipment start")
 --
 local preDefinitedEquipment = {
-  ["come luce"]         = { short = "LUC", used = false },
-  ["mano destra"]       = { short = "MAN", used = false },
-  ["mano sinistra"]     = { short = "MAN", used = false },
-  ["al collo 1"]        = { short = "COL", used = false },
-  ["al collo 2"]        = { short = "COL", used = false },
-  ["sul corpo"]         = { short = "COR", used = false },
-  ["in testa"]          = { short = "TES", used = false },
-  ["sulle gambe"]       = { short = "GAM", used = false },
-  ["ai piedi"]          = { short = "PIE", used = false },
-  ["sulle mani"]        = { short = "MAN", used = false },
-  ["sulle braccia"]     = { short = "BRA", used = false },
-  ["come scudo"]        = { short = "SCU", used = false },
-  ["attorno al corpo"]  = { short = "ATT", used = false },
-  ["alla vita"]         = { short = "VIT", used = false },
-  ["polso destro"]      = { short = "POL", used = false },
-  ["polso sinistro"]    = { short = "POL", used = false },
-  ["impugnato"]         = { short = "IMP", used = false },
-  ["afferrato"]         = { short = "AFF", used = false },
-  ["sulla schiena"]     = { short = "SCH", used = false },
-  ["orecchio destro"]   = { short = "ORE", used = false },
-  ["orecchio sinistro"] = { short = "ORE", used = false },
-  ["sul viso"]          = { short = "VIS", used = false },
-  ["incoccato"]         = { short = "INC", used = false },
-  ["come aura"]         = { short = "AUR", used = false },
-}
+  ["come luce"]         = { slot = "Luce",      short = "LUC", used = false },
+  ["mano destra"]       = { slot = "Mano",      short = "MAN", used = false },
+  ["mano sinistra"]     = { slot = "Mano",      short = "MAN", used = false },
+  ["al collo 1"]        = { slot = "Collo",     short = "COL", used = false },
+  ["al collo 2"]        = { slot = "Collo",     short = "COL", used = false },
+  ["sul corpo"]         = { slot = "Corpo",     short = "COR", used = false },
+  ["in testa"]          = { slot = "Testa",     short = "TES", used = false },
+  ["sulle gambe"]       = { slot = "Gambe",     short = "GAM", used = false },
+  ["ai piedi"]          = { slot = "Piedi",     short = "PIE", used = false },
+  ["sulle mani"]        = { slot = "Mani",      short = "MAN", used = false },
+  ["sulle braccia"]     = { slot = "Braccia",   short = "BRA", used = false },
+  ["come scudo"]        = { slot = "Scudo",     short = "SCU", used = false },
+  ["attorno al corpo"]  = { slot = "Attorno",   short = "ATT", used = false },
+  ["alla vita"]         = { slot = "Vita",      short = "VIT", used = false },
+  ["polso destro"]      = { slot = "Polso",     short = "POL", used = false },
+  ["polso sinistro"]    = { slot = "Polso",     short = "POL", used = false },
+  ["impugnato"]         = { slot = "Arma",      short = "IMP", used = false },
+  ["afferrato"]         = { slot = "Afferrato", short = "AFF", used = false },
+  ["sulla schiena"]     = { slot = "Schiena",   short = "SCH", used = false },
+  ["orecchio destro"]   = { slot = "Orecchie",  short = "ORE", used = false },
+  ["orecchio sinistro"] = { slot = "Orecchie",  short = "ORE", used = false },
+  ["sul viso"]          = { slot = "Viso",      short = "VIS", used = false },
+  ["incoccato"]         = { slot = "Incoccato", short = "INC", used = false },
+  ["come aura"]         = { slot = "Aura",      short = "AUR", used = false },}
 --
 ui.equipment = ui.equipment or {}
 ui.equipment = table.update(ui.equipment, preDefinitedEquipment)
@@ -376,9 +375,7 @@ if (ui.equipment[location]) then
   slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
   if (ui.fIsStatistics(slot.name)) then
     ui.equipment[location].stat = slot.name;
-    if (ui.equipment[location].name == nil) then
-      ui.equipment[location].name = location
-    end
+    ui.equipment[location].name = ui.equipment[location].name or ui.equipment[location].slot
   else
     ui.equipment[location].name = slot.name;
   end
@@ -435,17 +432,14 @@ setTriggerStayOpen("Equipment", 1)
 				</Trigger>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
-					<script>clearWindow("GUI.Endowment.Main.Equipment")
+					<script>ui.fDebug("[trig] Equipment_end")
 --
 ui.parameters.widgets.endowment.type = "equip"
 ui.fUpdateEndowment()
 --
 disableTrigger("equipment_valid")
 disableTrigger("equipment_invalid")
-disableTrigger("equipment_end")
---
-ui.fDebug("[trig] Equipment_end")
-</script>
+disableTrigger("equipment_end")</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -469,6 +463,291 @@ ui.fDebug("[trig] Equipment_end")
 				</Trigger>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Identification</name>
+				<script>ui.fDebug("[trig] Identification")
+--
+ui.identification = {}
+ui.identification.name = matches[2]
+ui.identification.type = matches[3]
+--
+enableTrigger("identification_valid")
+enableTrigger("identification_invalid")
+enableTrigger("identification_end")
+
+--[[
+un ciondolo antico (ciondolo antico), Tipologia: Armatura.
+Indossabilita` : Collo.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Assente (1/1): (1) 
+
+Garantisce un bonus all'Armatura di 4.
+
+Conferisce i Poteri:
+[1][Innato         ] +2 Precisione
+[2][Innato         ] +2 Precisione
+
+Pesa 3 etti e vale 2000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 3.
+
+---------------------------------------------------------------------
+
+una frusta mentale (frusta mentale), Tipologia: Arma.
+Indossabilita` : Arma.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Assente (1/1): (1) 
+
+Causa 2D5 danni (Media: 6) di tipologia Frustare.
+Guadagna 40% del danno fisico e 0% del potere magico.
+Con il tuo equipaggiamento, questo corrisponde a 7 danni aggiuntivi.
+
+Conferisce i Poteri:
+[1][Innato         ] +3 Precisione
+[2][Innato         ] +1 Potere Magico
+[3][Innato         ] +5 Vitalita`
+
+Puo` essere utilizzato solo da Psionico monoclasse.
+Pesa 5 etti e vale 3000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 15.
+
+---------------------------------------------------------------------
+
+lo scudo di Iamud, il Barbaro (scudo iamud barbaro), Tipologia: Armatura.
+Indossabilita` : Scudo.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Viandante (3/9): 1 2 (3) 4 5 6 7 8 9 
+
+Garantisce un bonus all'Armatura di 5.
+
+Conferisce i Poteri:
+[1][Innato         ] +2 Costituzione
+[2][Cardinale      ] +1 Danno Fisico
+[3][Volatile       ] +1 Resistenza al Fuoco (1...3)
+[4][Volatile       ] +1 Danno Psichico (1...3)
+
+Richiede Livello 1 per essere utilizzato.
+Pesa 4 etti e vale 3500 monete d'oro.
+Indice di danneggiamento: 4/100
+Il livello di potenza complessivo di questo oggetto e` 5.
+
+... tanto crudele quanto scanzonato, il Barbaro lasciava spesso
+in terra mucchi scomposti di sangue ed ossa, non piu` identificabili 
+per quel che furono in vita. Causa note e tragiche abitudini alimentari,
+si racconta anche d'altri mucchi, ancora meno gradevoli, mai
+distanti abbastanza dall'accampamento ...
+
+Questo oggetto fa parte del set Memorie dell'Avventura.
+I bonus potenziali sono:
+(2 pezzi): +150 Punti Ferita
+(4 pezzi): +25% Punti Esperienza (+10% se Liv 50)
+
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+
+]]</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>1</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#00aaff</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(.+) \(.+\), Tipologia: (.+).$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>identification_valid</name>
+					<script>ui.fDebug("[trig] identification_valid")
+--
+if (matches[2] == "Indossabilita") then
+  ui.identification.slot = string.trim(matches[3])
+elseif (matches[2] == "bonus all'Armatura") then
+  ui.identification.bonus = ui.identification.bonus or {}
+  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Classe Armatura"
+elseif (matches[2] == "Causa") then
+  ui.identification.bonus = ui.identification.bonus or {}
+  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Danno ("..string.trim(matches[4])..")"
+else
+  ui.identification.bonus = ui.identification.bonus or {}
+  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." ("..string.trim(matches[2])..")"
+end
+--
+setTriggerStayOpen("Identification", 1)
+--[[
+un ciondolo antico (ciondolo antico), Tipologia: Armatura.
+Indossabilita` : Collo.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Assente (1/1): (1) 
+
+Garantisce un bonus all'Armatura di 4.
+
+Conferisce i Poteri:
+[1][Innato         ] +2 Precisione
+[2][Innato         ] +2 Precisione
+
+Pesa 3 etti e vale 2000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 3.
+
+---------------------------------------------------------------------
+
+una frusta mentale (frusta mentale), Tipologia: Arma.
+Indossabilita` : Arma.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Assente (1/1): (1) 
+
+Causa 2D5 danni (Media: 6) di tipologia Frustare.
+Guadagna 40% del danno fisico e 0% del potere magico.
+Con il tuo equipaggiamento, questo corrisponde a 7 danni aggiuntivi.
+
+Conferisce i Poteri:
+[1][Innato         ] +3 Precisione
+[2][Innato         ] +1 Potere Magico
+[3][Innato         ] +5 Vitalita`
+
+Puo` essere utilizzato solo da Psionico monoclasse.
+Pesa 5 etti e vale 3000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 15.
+
+---------------------------------------------------------------------
+
+lo scudo di Iamud, il Barbaro (scudo iamud barbaro), Tipologia: Armatura.
+Indossabilita` : Scudo.
+Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
+Percorso Viandante (3/9): 1 2 (3) 4 5 6 7 8 9 
+
+Garantisce un bonus all'Armatura di 5.
+
+Conferisce i Poteri:
+[1][Innato         ] +2 Costituzione
+[2][Cardinale      ] +1 Danno Fisico
+[3][Volatile       ] +1 Resistenza al Fuoco (1...3)
+[4][Volatile       ] +1 Danno Psichico (1...3)
+
+Richiede Livello 1 per essere utilizzato.
+Pesa 4 etti e vale 3500 monete d'oro.
+Indice di danneggiamento: 4/100
+Il livello di potenza complessivo di questo oggetto e` 5.
+
+... tanto crudele quanto scanzonato, il Barbaro lasciava spesso
+in terra mucchi scomposti di sangue ed ossa, non piu` identificabili 
+per quel che furono in vita. Causa note e tragiche abitudini alimentari,
+si racconta anche d'altri mucchi, ancora meno gradevoli, mai
+distanti abbastanza dall'accampamento ...
+
+Questo oggetto fa parte del set Memorie dell'Avventura.
+I bonus potenziali sono:
+(2 pezzi): +150 Punti Ferita
+(4 pezzi): +25% Punti Esperienza (+10% se Liv 50)
+
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+
+]]</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#00ff00</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^(Indossabilita)` : (.+).$</string>
+						<string>^Garantisce un (bonus all'Armatura) di (.+).$</string>
+						<string>^(Causa) (.+) danni \(Media: .+\) di tipologia (.+).$</string>
+						<string>^\[.+\]\[(.+)\] (.+)$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>identification_invalid</name>
+					<script>ui.fDebug("[trig] identification_invalid")
+--
+setTriggerStayOpen("Identification", 1)
+</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ffff7f</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^$</string>
+						<string>Contribuisce .+ al limite per gli oggetti indossabili.</string>
+						<string>Percorso .+ \(.+\/.+\): .+ </string>
+						<string>Pesa .+ etti e vale .+ monete d'oro.</string>
+						<string>Indice di danneggiamento: .+\/100</string>
+						<string>Conferisce i Poteri:</string>
+						<string>Richiede .+ per essere utilizzato.</string>
+						<string>Guadagna .+\% del danno fisico e .+\% del potere magico.</string>
+						<string>Con il tuo equipaggiamento, questo corrisponde a .+ danni aggiuntivi.</string>
+						<string>Puo` essere utilizzato solo da .+.</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>identification_end</name>
+					<script>ui.fDebug("[trig] identification_end")
+--
+ui.identification.level = matches[2]
+ui.fUpdateEndowment()
+--
+disableTrigger("identification_valid")
+disableTrigger("identification_invalid")
+disableTrigger("identification_end")
+</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^Il livello di potenza complessivo di questo oggetto e` (.+).$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Loot</name>
 				<script>local inventory = matches[1] or ""
 ui.fDebug("[trig] Loot start")
@@ -496,7 +775,7 @@ enableTrigger("loot_end")</script>
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_valid</name>
 					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Loot_valid")
@@ -548,7 +827,7 @@ setTriggerStayOpen("Loot", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_invalid</name>
 					<script>ui.fDebug("[trig] Loot_invalid")
 setTriggerStayOpen("Loot", 1)</script>
@@ -573,12 +852,13 @@ setTriggerStayOpen("Loot", 1)</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>loot_end</name>
-					<script>ui.parameters.widgets.endowment.type = "inv"
+					<script>ui.fDebug("[trig] Loot_end")
+--
+ui.parameters.widgets.endowment.type = "inv"
 ui.fUpdateEndowment()
 --
-ui.fDebug("[trig] Loot_end")
 disableTrigger("loot_valid")
 disableTrigger("loot_invalid")
 disableTrigger("loot_end")</script>
@@ -3713,7 +3993,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)lame(?:\s+(.*))?$</regex>
+				<regex>^(?i)glame(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Magione</name>
@@ -5732,9 +6012,24 @@ function ui.fUpdateEndowment()
         --
         -- ToolTip
         local toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-                        '&lt;i&gt;&amp;lt;'..item..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
+                        '&lt;i&gt;&amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
                         stat..
                         '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..t..'&lt;/i&gt; [Liv. '..ui.equipment[item].level..']&lt;/p&gt;'
+        --
+        if (ui.identification) then
+          toolTip = toolTip.."&lt;hr&gt;"..
+          '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ui.identification.name or "no name")..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
+          '&lt;i&gt;&amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'
+          if (ui.identification.bonus) then
+            toolTip = toolTip.."&lt;lu&gt;"
+            for _, i in pairs(ui.identification.bonus) do
+              toolTip = toolTip.."&lt;li&gt;▷ "..i.."&lt;/li&gt;"
+            end
+            toolTip = toolTip.."&lt;/lu&gt;"
+          end
+          toolTip = toolTip..'&lt;p style="text-align: right;"&gt;&lt;i&gt;'..'RARITA'..'&lt;/i&gt; [Liv. '..(ui.identification.level or '-')..']&lt;/p&gt;'              
+        end
+        --
         GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
         --
         GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
@@ -5857,8 +6152,10 @@ function ui.fDecho(text)
   decho(text)
 end
 --
-function ui.fDebug(text)
-  if (ui.enDebug &gt;= 1) then
+function ui.fDebug(text, level)
+  level = level or 1
+  --
+  if (ui.enDebug &gt;= level) then
     ui.fEchon("&lt;orange&gt;[DEBUG ] &lt;white&gt;("..getTime(true, "hh:mm:ss.zzz")..") "..ui.colors.text..text.."&lt;reset&gt;")
   end
 end
@@ -6171,8 +6468,6 @@ end
 function ui.fHasbit(x, p)
   x = tonumber(x)
   p = tonumber(p)
-  
-  display(x, p)
   --
   p = 2 ^ (p - 1)
   --
@@ -6393,7 +6688,7 @@ end</script>
 					<script>--
 function ui.fUpdateGMCP(event, ...)
   --
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateGMCP(&lt;white&gt;"..event.."&lt;reset&gt;)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateGMCP(&lt;white&gt;"..event.."&lt;reset&gt;)", 3)
   --
   if (gmcp) then
     ui.previous = ui.previous or {}
@@ -7589,7 +7884,7 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fDifTimerOpponent(time_left)
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerOpponent("..(time_left or "nil")..")")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerOpponent(&lt;white&gt;"..(time_left or "nil").."&lt;r&gt;)", 3)
   --
   if (ui.handlers.fDifTimerOpponent) then
     killTimer(ui.handlers.fDifTimerOpponent)
@@ -7891,7 +8186,7 @@ end
 					<packageName></packageName>
 					<script>--
 function ui.fSoftenRound(time_left)
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSoftenRound("..(time_left or "nil")..")")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fSoftenRound(&lt;white&gt;"..(time_left or "nil").."&lt;r&gt;)", 3)
   --
   if (ui.handlers.fSoftenRound) then
     killTimer(ui.handlers.fSoftenRound)
@@ -7906,7 +8201,7 @@ function ui.fSoftenRound(time_left)
 end
 --
 function ui.fDifTimerPlayer(time_left)
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerPlayer("..(time_left or "nil")..")")
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fDifTimerPlayer(&lt;white&gt;"..(time_left or "nil").."&lt;r&gt;)", 3)
   --
   if (ui.handlers.fDifTimerPlayer) then
     killTimer(ui.handlers.fDifTimerPlayer)
