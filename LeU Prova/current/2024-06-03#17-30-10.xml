@@ -4480,10 +4480,8 @@ function ui.fUpdateAffects()
   --
   -- Fast affect
   local fastAffects = {
-    ["In Combattimento"] = "C️",
-    ["Panico!"]          = "P",
-  
-  --  ["[Set] Planar Alteration"] = "🗡️",
+    ["In Combattimento"] = '&lt;span style="font-size:20px"&gt;⚔&lt;/span&gt;',
+    ["Panico!"]          = '&lt;span style="font-size:20px"&gt;🏃&lt;/span&gt;',
   }
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAffects()")
@@ -4594,7 +4592,7 @@ function ui.fUpdateAffects()
       -- Fast Affects
       if (table.contains(fastAffects, affect)) then
         -- durationColor
-        ui.fastAffects = ui.fastAffects..fastAffects[affect]..""..ui.affects[affect].duration.." ";
+        ui.fastAffects = ui.fastAffects..fastAffects[affect]..ui.affects[affect].duration;
       --
       -- Normal Affects
       else
@@ -4633,7 +4631,7 @@ function ui.fUpdateAffects()
           shortName = ui.fRemoveArticle(affect);
         end
         GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
-        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..shortName)
+        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..string.gsub(shortName, "(%a)([%w_']*)", ui.fTitleCase))
         --
         -- Icon
         if (icon) then
@@ -5735,12 +5733,12 @@ function ui.fUpdateEndowment()
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateEndowment()")
   --
   if (ui.parameters.widgets.endowment.type == "equip") then
-    local distance = 2; 
+    local distance = 1; 
     local min_w = 150;
     local max_w = 250;
     local w_h = GUI.Endowment.Main:get_height() - distance;
     local w_w = GUI.Endowment.Main:get_width() -  distance;
-    local h = distance + 32;
+    local h = distance + 30;
     local w = distance + min_w;
     local x = 0
     local y = 0
@@ -5784,7 +5782,7 @@ function ui.fUpdateEndowment()
         GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
         --
         -- Name
-        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.fRemoveArticle(ui.equipment[item].name));
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.fRemoveArticle(string.gsub(ui.equipment[item].name, "(%a)([%w_']*)", ui.fTitleCase)));
         --
         -- Level
         GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
