@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>505</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Mono SemiLight,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,8 +71,6 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
@@ -463,7 +461,7 @@ disableTrigger("equipment_end")</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Identification</name>
 				<script>ui.fDebug("[trig] Identification")
 --
@@ -473,81 +471,7 @@ ui.identification.type = matches[3]
 --
 enableTrigger("identification_valid")
 enableTrigger("identification_invalid")
-enableTrigger("identification_end")
-
---[[
-un ciondolo antico (ciondolo antico), Tipologia: Armatura.
-Indossabilita` : Collo.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Assente (1/1): (1) 
-
-Garantisce un bonus all'Armatura di 4.
-
-Conferisce i Poteri:
-[1][Innato         ] +2 Precisione
-[2][Innato         ] +2 Precisione
-
-Pesa 3 etti e vale 2000 monete d'oro.
-Indice di danneggiamento: 0/100
-Il livello di potenza complessivo di questo oggetto e` 3.
-
----------------------------------------------------------------------
-
-una frusta mentale (frusta mentale), Tipologia: Arma.
-Indossabilita` : Arma.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Assente (1/1): (1) 
-
-Causa 2D5 danni (Media: 6) di tipologia Frustare.
-Guadagna 40% del danno fisico e 0% del potere magico.
-Con il tuo equipaggiamento, questo corrisponde a 7 danni aggiuntivi.
-
-Conferisce i Poteri:
-[1][Innato         ] +3 Precisione
-[2][Innato         ] +1 Potere Magico
-[3][Innato         ] +5 Vitalita`
-
-Puo` essere utilizzato solo da Psionico monoclasse.
-Pesa 5 etti e vale 3000 monete d'oro.
-Indice di danneggiamento: 0/100
-Il livello di potenza complessivo di questo oggetto e` 15.
-
----------------------------------------------------------------------
-
-lo scudo di Iamud, il Barbaro (scudo iamud barbaro), Tipologia: Armatura.
-Indossabilita` : Scudo.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Viandante (3/9): 1 2 (3) 4 5 6 7 8 9 
-
-Garantisce un bonus all'Armatura di 5.
-
-Conferisce i Poteri:
-[1][Innato         ] +2 Costituzione
-[2][Cardinale      ] +1 Danno Fisico
-[3][Volatile       ] +1 Resistenza al Fuoco (1...3)
-[4][Volatile       ] +1 Danno Psichico (1...3)
-
-Richiede Livello 1 per essere utilizzato.
-Pesa 4 etti e vale 3500 monete d'oro.
-Indice di danneggiamento: 4/100
-Il livello di potenza complessivo di questo oggetto e` 5.
-
-... tanto crudele quanto scanzonato, il Barbaro lasciava spesso
-in terra mucchi scomposti di sangue ed ossa, non piu` identificabili 
-per quel che furono in vita. Causa note e tragiche abitudini alimentari,
-si racconta anche d'altri mucchi, ancora meno gradevoli, mai
-distanti abbastanza dall'accampamento ...
-
-Questo oggetto fa parte del set Memorie dell'Avventura.
-I bonus potenziali sono:
-(2 pezzi): +150 Punti Ferita
-(4 pezzi): +25% Punti Esperienza (+10% se Liv 50)
-
----------------------------------------------------------------------
-
----------------------------------------------------------------------
-
-]]</script>
+enableTrigger("identification_end")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>1</mStayOpen>
@@ -564,7 +488,7 @@ I bonus potenziali sono:
 				<regexCodePropertyList>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_valid</name>
 					<script>ui.fDebug("[trig] identification_valid")
 --
@@ -581,87 +505,14 @@ else
   ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." ("..string.trim(matches[2])..")"
 end
 --
-setTriggerStayOpen("Identification", 1)
---[[
-un ciondolo antico (ciondolo antico), Tipologia: Armatura.
-Indossabilita` : Collo.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Assente (1/1): (1) 
-
-Garantisce un bonus all'Armatura di 4.
-
-Conferisce i Poteri:
-[1][Innato         ] +2 Precisione
-[2][Innato         ] +2 Precisione
-
-Pesa 3 etti e vale 2000 monete d'oro.
-Indice di danneggiamento: 0/100
-Il livello di potenza complessivo di questo oggetto e` 3.
-
----------------------------------------------------------------------
-
-una frusta mentale (frusta mentale), Tipologia: Arma.
-Indossabilita` : Arma.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Assente (1/1): (1) 
-
-Causa 2D5 danni (Media: 6) di tipologia Frustare.
-Guadagna 40% del danno fisico e 0% del potere magico.
-Con il tuo equipaggiamento, questo corrisponde a 7 danni aggiuntivi.
-
-Conferisce i Poteri:
-[1][Innato         ] +3 Precisione
-[2][Innato         ] +1 Potere Magico
-[3][Innato         ] +5 Vitalita`
-
-Puo` essere utilizzato solo da Psionico monoclasse.
-Pesa 5 etti e vale 3000 monete d'oro.
-Indice di danneggiamento: 0/100
-Il livello di potenza complessivo di questo oggetto e` 15.
-
----------------------------------------------------------------------
-
-lo scudo di Iamud, il Barbaro (scudo iamud barbaro), Tipologia: Armatura.
-Indossabilita` : Scudo.
-Contribuisce 0 [Non Limitato] al limite per gli oggetti indossabili.
-Percorso Viandante (3/9): 1 2 (3) 4 5 6 7 8 9 
-
-Garantisce un bonus all'Armatura di 5.
-
-Conferisce i Poteri:
-[1][Innato         ] +2 Costituzione
-[2][Cardinale      ] +1 Danno Fisico
-[3][Volatile       ] +1 Resistenza al Fuoco (1...3)
-[4][Volatile       ] +1 Danno Psichico (1...3)
-
-Richiede Livello 1 per essere utilizzato.
-Pesa 4 etti e vale 3500 monete d'oro.
-Indice di danneggiamento: 4/100
-Il livello di potenza complessivo di questo oggetto e` 5.
-
-... tanto crudele quanto scanzonato, il Barbaro lasciava spesso
-in terra mucchi scomposti di sangue ed ossa, non piu` identificabili 
-per quel che furono in vita. Causa note e tragiche abitudini alimentari,
-si racconta anche d'altri mucchi, ancora meno gradevoli, mai
-distanti abbastanza dall'accampamento ...
-
-Questo oggetto fa parte del set Memorie dell'Avventura.
-I bonus potenziali sono:
-(2 pezzi): +150 Punti Ferita
-(4 pezzi): +25% Punti Esperienza (+10% se Liv 50)
-
----------------------------------------------------------------------
-
----------------------------------------------------------------------
-
-]]</script>
+setTriggerStayOpen("Identification", 1)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
 					<mCommand></mCommand>
 					<packageName></packageName>
-					<mFgColor>#00ff00</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
+					<mFgColor>#000000</mFgColor>
+					<mBgColor>#00ff00</mBgColor>
 					<mSoundFile></mSoundFile>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -678,19 +529,18 @@ I bonus potenziali sono:
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_invalid</name>
 					<script>ui.fDebug("[trig] identification_invalid")
 --
-setTriggerStayOpen("Identification", 1)
-</script>
+setTriggerStayOpen("Identification", 1)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
 					<mCommand></mCommand>
 					<packageName></packageName>
-					<mFgColor>#ffff7f</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
+					<mFgColor>#000000</mFgColor>
+					<mBgColor>#ff5500</mBgColor>
 					<mSoundFile></mSoundFile>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -705,6 +555,10 @@ setTriggerStayOpen("Identification", 1)
 						<string>Guadagna .+\% del danno fisico e .+\% del potere magico.</string>
 						<string>Con il tuo equipaggiamento, questo corrisponde a .+ danni aggiuntivi.</string>
 						<string>Puo` essere utilizzato solo da .+.</string>
+						<string>Puo` contenere .+ etti.</string>
+						<string>Indice di danneggiamento: .+.</string>
+						<string>Causa i seguenti effetti con potenza .+:</string>
+						<string>  .+</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -717,9 +571,13 @@ setTriggerStayOpen("Identification", 1)
 						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_end</name>
 					<script>ui.fDebug("[trig] identification_end")
 --
@@ -728,15 +586,14 @@ ui.fUpdateEndowment()
 --
 disableTrigger("identification_valid")
 disableTrigger("identification_invalid")
-disableTrigger("identification_end")
-</script>
+disableTrigger("identification_end")</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
 					<mCommand></mCommand>
 					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
+					<mFgColor>#000000</mFgColor>
+					<mBgColor>#0000ff</mBgColor>
 					<mSoundFile></mSoundFile>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -4748,8 +4605,7 @@ function ui.fUpdateAffects()
       --
       -- Fast Affects
       if (table.contains(fastAffects, affect)) then
-      -- durationColor
-        
+        -- durationColor
         ui.fastAffects = ui.fastAffects..fastAffects[affect]..""..ui.affects[affect].duration.." ";
       --
       -- Normal Affects
@@ -4822,7 +4678,7 @@ function ui.fUpdateAffects()
         }]])
         --
         GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
-        GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
+        GUI.Affects.Main["Affect"..i].duration:cecho("&lt;center&gt;"..ui.affects[affect].duration)
         --
         -- Dispel Resistance
         GUI.Affects.Main["Affect"..i].dispelResistance:echo("&lt;center&gt;"..ui.affects[affect].dispelResistance)
@@ -5875,14 +5731,14 @@ function ui.fIsStatistics(s)
   s = ansi2string(decho2ansi(s))
   --
   for k, i in pairs(replacements) do
-    s = string.gsub(s, k, "")
+    s = string.gsub(s, k, "")       -- statistics
   end
   --
-  s = string.gsub(s, "%d+d%d+", "")
+  s = string.gsub(s, "%d+d%d+", "") -- dices
   --
-  s = string.gsub(s, "%d+", "")
+  s = string.gsub(s, "-?%d+", "")     -- values
   --
-  s = string.gsub(s, " ", "")
+  s = string.gsub(s, " ", "")       -- white space
   --
   return (string.len(s) == 0)
 end
@@ -5953,27 +5809,27 @@ function ui.fUpdateEndowment()
         local t = ansi2string(decho2ansi(ui.equipment[item].type))
         --
         -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
-        if (t == "A") then
-          t = "Astral"
-          BGColor = "cyan"
-        elseif (t == "C") then
+        if (t == "C") then
           t = "&lt;color=white&gt;Comune&lt;/color&gt;"
           BGColor = "white"
+        elseif (t == "U") then
+          t = "Non comune"
+          BGColor = "lime"
+        elseif (t == "R") then
+          t = "Raro"
+          BGColor = "cyan"
         elseif (t == "E") then
           t = "Epico"
           BGColor = "blue"
         elseif (t == "L") then
           t = "Leggendario"
           BGColor = "orange"
-        elseif (t == "R") then
-          t = "Raro"
-          BGColor = "cyan"
         elseif (t == "S") then
           t = "Set"
-          BGColor = "yellow"
-        elseif (t == "U") then
-          t = "Non comune"
-          BGColor = "lime"
+          BGColor = "yellow"        
+        elseif (t == "A") then
+          t = "Astral"
+          BGColor = "cyan"        
         else
           t = "Spazzatura"
           BGColor = "grey"
@@ -6010,7 +5866,7 @@ function ui.fUpdateEndowment()
         local stat = ""
         if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
           stat = "&lt;lu&gt;"..ansi2string(decho2ansi(ui.equipment[item].stat)).."&lt;/lu&gt;"
-          stat = string.gsub(stat, "(%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")  -- Dice ('x'd'y')
+          stat = string.gsub(stat, "(-?%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")  -- Dice ('x'd'y')
           --stat = string.gsub(stat, "[^ ]+", replacements)
           stat = string.gsub(stat, "[a-zA-Z]+", replacements)
           stat = string.gsub(stat, "(%d+d%d+)", "&lt;li&gt;▷ %1 Danno&lt;/li&gt;")  -- Dice ('x'd'y')
@@ -6208,6 +6064,8 @@ end
 function ui.fRemoveArticle(text)
   text = " "..text.." "
   text = string.gsub(text, "&gt;", "&gt; ")
+  text = string.gsub(text, " [aA] ", " ")
+  text = string.gsub(text, " [aA][dD] ", " ")
   text = string.gsub(text, " [aA][lL] ", " ")
   text = string.gsub(text, " [cC][oO][nN] ", " ")
   text = string.gsub(text, " [dD]'", " ")
@@ -6727,10 +6585,11 @@ function ui.fUpdateGMCP(event, ...)
           -- Gold
           if (ui.previous.gmcp.char.base.gold) and (gmcp.char.base.gold) then
             local dif = gmcp.char.base.gold - ui.previous.gmcp.char.base.gold
-            if (dif &gt; 0) then
-              ui.fLog("&lt;0,255,0:"..ui.colors.wBackground.."&gt;Guadagni "..dif.." monete d'oro.")    
-            elseif (dif &lt; 0) then
-              ui.fLog("&lt;255,0,0:"..ui.colors.wBackground.."&gt;Rimosse "..dif.." monete d'oro.")
+            --if (dif &gt; 0) then
+            --  ui.fLog("&lt;0,255,0:"..ui.colors.wBackground.."&gt;+"..dif.." mo")    
+            --else
+            if (dif &lt; 0) then
+              ui.fLog("&lt;255,0,0:"..ui.colors.wBackground.."&gt;"..dif.." mo")
             end 
           end
           --
