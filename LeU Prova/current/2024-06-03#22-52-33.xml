@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Liberation Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Cascadia Code Light,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -72,8 +72,8 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4480,8 +4480,8 @@ function ui.fUpdateAffects()
   --
   -- Fast affect
   local fastAffects = {
-    ["In Combattimento"] = '&lt;span style="font-size:20px"&gt;⚔&lt;/span&gt;',
-    ["Panico!"]          = '&lt;span style="font-size:20px"&gt;🏃&lt;/span&gt;',
+    ["In Combattimento"] = '&lt;span style="font-size:10px"&gt;⚔&lt;/span&gt;',
+    ["Panico!"]          = '&lt;span style="font-size:10px"&gt;🏃&lt;/span&gt;',
   }
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateAffects()")
