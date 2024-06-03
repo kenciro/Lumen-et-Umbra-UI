@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Lumen et Umbra UI</string>
@@ -71,6 +71,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
@@ -373,10 +374,11 @@ if (ui.equipment[location]) then
   --
   slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
   if (ui.fIsStatistics(slot.name)) then
-    ui.equipment[location].stat = slot.name;
     ui.equipment[location].name = ui.equipment[location].name or ui.equipment[location].slot
-  else
+    ui.equipment[location].stat = slot.name;
+  elseif(ui.equipment[location].name == nil) or (slot.name ~= ui.equipment[location].name) then
     ui.equipment[location].name = slot.name;
+    ui.equipment[location].stat = nil;
   end
   --
   ui.equipment[location].status = slot.status
@@ -1027,7 +1029,7 @@ sposta(5)</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList />
 				<regexCodePropertyList />
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>multi_loot</name>
 					<script>if (ui.getAllCadNum)and(not ui.inCad)then
   ui.inCad = true;
@@ -1548,7 +1550,7 @@ end</script>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>LOG + Auto update effets</name>
 				<script>local str = "";
 --
@@ -1941,7 +1943,7 @@ end
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Combattimento automatico</name>
 				<script>--[[
 if (ui.parameters.autoAttack) then
@@ -4270,35 +4272,21 @@ end</script>
 				<regex>^(\d+)\*\s*(.*)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Repair</name>
-				<script>local f = matches[2] or "fabbro"
-local n = 0
---
-for key, equipment in pairs(ui.equipment) do
-  if (equipment.status) and (equipment.status &lt; 8) then
-    send("remove "..equipment.number, false)
-    send("give - "..f, false)
-    if (equipment.location == "&lt;192,192,192:30,24,24&gt;impugnato&lt;r&gt;") then
-      send("wi -", false)
-    else
-      send("wear -", false)
+				<name>Multi Loot</name>
+				<script>ui.getAllCadNum = 0;
+for _, object in pairs(ui.room.objects) do
+  display(object.key)
+  if (string.find(object.key, "cadavere")) then
+    for i=1, object.counter do
+      ui.getAllCadNum = ui.getAllCadNum + 1;
+      send("get all "..ui.getAllCadNum..".cad")
     end
-    n = n + 1
   end
 end
 --
-if (n==0) then
-  ui.fEcho2n("Non hai nulla da riparare. Usare il comando "..ui.fGetCommandFormattedText("eq").." per aggiornare il tuo equipaggiamento.")
+if  (ui.getAllCadNum == 0) then
+  ui.fEchon('Nessun cadavere da sciacallare')
 end</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)(?:uirep(?:a(?:i(?:r?)?)?)?)(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>Multi Loot</name>
-				<script>ui.getAllCadNum = 1;
-send("get all "..ui.getAllCadNum..".cad")
-</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^ll$</regex>
@@ -4454,10 +4442,12 @@ ver 0.1b
 					<script>--
 function ui.fUpdateAffects()
   local distance = 2; 
+  local min_w = 100;
+  local max_w = 150;
   local w_h = GUI.Affects.Main:get_height() - distance;
   local w_w = GUI.Affects.Main:get_width() -  distance;
   local h = distance + 28;
-  local w = distance + 100;
+  local w = distance + min_w;
   local x = 0
   local y = 0
   local r = 1
@@ -4561,10 +4551,8 @@ function ui.fUpdateAffects()
   tot_r = math.max(1, math.min(math.floor(w_h / h), total));
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
   --
-  -- Recalc w if possible
-  if (w_w - (tot_c*w) &lt; w) then
-    w = w_w / tot_c
-  end
+  -- Recalc w
+  w = math.min(w_w / tot_c, distance + max_w)
   --
   for i = 1, 20 do
     --
@@ -4678,7 +4666,7 @@ function ui.fUpdateAffects()
         }]])
         --
         GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
-        GUI.Affects.Main["Affect"..i].duration:cecho("&lt;center&gt;"..ui.affects[affect].duration)
+        GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
         --
         -- Dispel Resistance
         GUI.Affects.Main["Affect"..i].dispelResistance:echo("&lt;center&gt;"..ui.affects[affect].dispelResistance)
@@ -5748,10 +5736,12 @@ function ui.fUpdateEndowment()
   --
   if (ui.parameters.widgets.endowment.type == "equip") then
     local distance = 2; 
+    local min_w = 150;
+    local max_w = 250;
     local w_h = GUI.Endowment.Main:get_height() - distance;
     local w_w = GUI.Endowment.Main:get_width() -  distance;
     local h = distance + 32;
-    local w = distance + 150;
+    local w = distance + min_w;
     local x = 0
     local y = 0
     local r = 1
@@ -5776,10 +5766,8 @@ function ui.fUpdateEndowment()
     tot_r = math.max(1, math.min(math.floor(w_h / h), total));
     tot_c = math.max(1, math.min(math.floor(w_w / w), total));
     --
-    -- Recalc w if possible
-    if (w_w - (tot_c*w) &lt; w) then
-      w = w_w / tot_c
-    end
+    -- Recalc w 
+    w = math.min(w_w / tot_c, distance + max_w)
     --
     for i = 1, 25 do
       --
@@ -5817,7 +5805,7 @@ function ui.fUpdateEndowment()
           BGColor = "lime"
         elseif (t == "R") then
           t = "Raro"
-          BGColor = "cyan"
+          BGColor = "rgb(58,120,242)"
         elseif (t == "E") then
           t = "Epico"
           BGColor = "blue"
@@ -6680,11 +6668,13 @@ end</script>
 					<packageName></packageName>
 					<script>--
 function ui.fUpdateGroup()
-  local distance = 2; 
+  local distance = 2;
+  local min_w = 150;
+  local max_w = 250;
   local w_h = GUI.Group.Main:get_height() - distance;
   local w_w = GUI.Group.Main:get_width() -  distance;
   local h = distance + 50;
-  local w = distance + 150;
+  local w = distance + min_w;
   local x = 0
   local y = 0
   local r = 1
@@ -6740,9 +6730,7 @@ function ui.fUpdateGroup()
   tot_c = math.max(1, math.min(math.floor(w_w / w), total));
   --
   -- Recalc w if possible
-  if (w_w - (tot_c*w) &lt; w*tot_c) then
-    w = w_w / tot_c
-  end
+  w = math.min(w_w / tot_c, distance + max_w)
   --
   for i = 1, 10 do
     mod = i % 10
@@ -8059,7 +8047,7 @@ function ui.fSoftenRound(time_left)
   end
   --
   if (time_left &gt;= 0) then
-    GUI.Player.Main.Round:setValue(time_left, ui.player.roundMax, "")
+    GUI.Player.Main.Round:setValue(time_left, ui.player.roundMax + 1, "")
     ui.handlers.fSoftenRound = tempTimer(0.1, function() ui.fSoftenRound(time_left - 0.1) end)
   else
     GUI.Player.Main.Round:setValue(0, ui.player.roundMax, "")
@@ -8223,8 +8211,7 @@ function ui.fUpdatePlayer()
   GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
   GUI.Player.Main.Tick:setValue(ui.player.secsToTick, 74, "")
   GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
-  --GUI.Player.Main.Round:setValue(ui.player.roundTicker-1, ui.player.roundMax, "")
-  ui.fSoftenRound(ui.player.roundTicker-1)
+  ui.fSoftenRound(ui.player.roundTicker)
   GUI.Player.Main.Mana:setValue(math.min(100, manaPerc), 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
@@ -9166,6 +9153,7 @@ end</script>
                                                    ui.parameters.widgets.affects.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
+  GUI.Affects.Button_hide:setToolTip("Transparent", 10)
   --
   -- 20x Affects
   local i
@@ -9294,6 +9282,7 @@ end</script>
                                                    ui.parameters.widgets.aliasButton.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
+  GUI.AliasButtons.Button_hide:setToolTip("Transparent", 10)
   --
   -- Button "A"
   GUI.AliasButtons.Button_a = Geyser.Label:new2({
@@ -9565,6 +9554,7 @@ end</script>
                                             ui.parameters.widgets.endowment.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
+  GUI.Endowment.Button_hide:setToolTip("Transparent", 10)
   --
   -- Button "Type"
   GUI.Endowment.Button_type = Geyser.Label:new2({
@@ -9731,8 +9721,9 @@ end</script>
                                                    ui.parameters.widgets.group.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
+  GUI.Group.Button_hide:setToolTip("Transparent", 10)
   --
-  local i
+  -- Members
   for i=1, 10 do
     local mod = i % 10
     --
@@ -10006,6 +9997,7 @@ end</script>
   -- Add Border and Main
   ui.fAddMain(GUI.Opponent, GUI.CSS.Border, GUI.CSS.Main)
   GUI.Opponent.Main:disableClickthrough()
+  GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
   --
   -- Set transparent
   ui.fSetBorderMode(GUI.Opponent, ui.parameters.widgets.opponent.transparent)
@@ -10027,8 +10019,7 @@ end</script>
                                                    ui.parameters.widgets.opponent.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  --
-  GUI.Opponent.Main:setClickCallback("ui.fExecuteTargetButton", "o0", nil)
+  GUI.Opponent.Button_hide:setToolTip("Transparent", 10)
   --
   -- Opponent Level
   GUI.Opponent.Level = Geyser.Label:new2({
@@ -10172,6 +10163,7 @@ end</script>
                                             ui.parameters.widgets.player.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
+  GUI.Player.Button_hide:setToolTip("Transparent", 10)
   --
   -- Tick 
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
@@ -10440,6 +10432,7 @@ end</script>
                                                    ui.parameters.widgets.targets.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
+  GUI.TargetButtons.Button_hide:setToolTip("Transparent", 10)
   --
   -- Target buttons
   for i=1,4 do
