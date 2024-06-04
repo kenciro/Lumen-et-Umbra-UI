@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>2</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,12,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Noto Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -1879,7 +1879,7 @@ end
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione Mob &lt;-&gt; Livello</name>
 				<script>local str = copy2decho(matches[2])
 local qtt = copy2decho(matches[3])
@@ -8470,10 +8470,9 @@ function ui.fGetToken(exits, exit)
   exit = string.lower(exit)
   if (ui.validExit[exit]) then
     if (table.contains(exits, exit)) then
-      local idx = table.index_of(exits, exit)
       --
-      -- From direction  
-      if (ui.path[ui.idxPath]) and (ui.validExit[ui.path[ui.idxPath]].reverse == exit) then
+      -- From direction
+      if (table.contains(ui.room.origins, ui.validExit[exit].short)) then
         token = ui.validExit[exit].dColor..ui.validExit[exit].tokenFrom.."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
       --
       -- Normal exit
@@ -12512,7 +12511,6 @@ function pw(pr)
     pw_id = tempTimer(0.01, function() pw(pr) end)
   end
 end
-
 --
 --
 function pharseWorld(restart)
@@ -12676,6 +12674,7 @@ function offlinePlayerMove (dir)
     end
   end
   ui.fEchon("Non esistono uscite verso "..ui.validExit[dir].color..ui.validExit[dir].long)
+  --
   return false
 end
 --
@@ -12695,7 +12694,7 @@ end
 --
 function saveMap()
   --
-  -- Salva la mappa tabella della mappa nel formato {vNum = {x, y, z}}
+  -- Salva la mappa nel formato {vNum = {x, y, z}}
   local file = ui.files.map.path..ui.files.map.name
   local tableMap = {} 
   --
