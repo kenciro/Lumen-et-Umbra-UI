@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -333,7 +334,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -430,7 +431,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -2803,11 +2804,11 @@ if (table.is_empty(result)) then
   ui.fEchon("Nessuna stanza trovata") 
 else
   for k, v in ui.fOrderedPairs(result) do
-    cechoLink("&lt;purple&gt;[&lt;white&gt;i&lt;purple&gt;]", [[expandAlias("uiroom ]]..k..[[")]], "Info su '"..v.."'", true)
+    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;Info&lt;gold&gt;]", [[expandAlias("uiroom ]]..k..[[")]], "Info su '"..v.."'", true)
     echo(" ") 
-    cechoLink("&lt;purple&gt;[&lt;white&gt;T&lt;purple&gt;]", [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
+    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;Track&lt;gold&gt;]", [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
     echo(" ") 
-    cechoLink("&lt;purple&gt;[&lt;white&gt;▷&lt;purple&gt;]", [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
+    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;GO&lt;gold&gt;]", [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
     echo(" ") 
     cecho("&lt;purple&gt;#&lt;white&gt;"..k.." &lt;cyan&gt;"..v.."\n")
   end
@@ -8738,6 +8739,8 @@ function ui.fUpdateRoom()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateRoom()")
   --
   if (gmcp) and (gmcp.room) and (gmcp.room.info) then
+    local trackText = "&lt;255,0,0:"..ui.colors.wBackground.."&gt;".."[".."&lt;255,165,0:"..ui.colors.wBackground.."&gt;".."T".."&lt;255,0,0:"..ui.colors.wBackground.."&gt;".."]"
+    --  
     ui.previous.room = {}
     ui.previous.room = table.deepcopy(ui.room) or {}
     ui.previous.room.exits = ui.previous.room.exits or {}
@@ -8867,11 +8870,12 @@ function ui.fUpdateRoom()
       -- Mapper
       local exitsAsString = {}
       local exitsDestinationId = {}
+      local exitsCommand = {}
       local idx = 1
       --
       -- End of path
       if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        exitsAsString[idx] = "&lt;255,64,0:"..ui.colors.wBackground.."&gt;".."[fine traccia] ".."&lt;0,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.name.." ("..ui.room.id..")"
+        exitsAsString[idx] = "&lt;255,64,0:"..ui.colors.wBackground.."&gt;"..trackText.." &lt;0,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.name.." ("..ui.room.id..")"
       else
         exitsAsString[idx] = "&lt;0,255,255:"..ui.colors.wBackground.."&gt;"..ui.room.name.." ("..ui.room.id..")"
       end
@@ -8881,21 +8885,55 @@ function ui.fUpdateRoom()
         exitsDestinationId[k] = ui.validExit[k].dColor..ui.fAddSpace( ""..v, 5).."&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == v) then
-          exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,64,0:"..ui.colors.wBackground.."&gt;".."[traccia]".." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
+          exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,64,0:"..ui.colors.wBackground.."&gt;"..trackText.." &lt;192,192,192:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
         else
-          exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
+          exitsAsString[idx] = ui.validExit[k].dColor..ui.validExit[k].tokenOpen.." &lt;192,192,192:"..ui.colors.wBackground.."&gt;"..(getRoomName(v) or "???")
         end
+        -- Exits command
+        exitsCommand[idx] = ui.validExit[k].long
         idx = idx + 1
       end
       --
       -- Exits and Position
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         "..(exitsAsString[2] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(1).."│         "..(exitsAsString[3] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   "..(exitsAsString[4] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(3).."│         "..(exitsAsString[5] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         "..(exitsAsString[6] or "").."\n")
-      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           "..(exitsAsString[7] or "").."\n\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   "..(exitsAsString[1] or ""))
+      GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look")]], "Guarda", true)
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         ")
+      if (exitsAsString[2]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[2], [[expandAlias("]]..exitsCommand[2]..[[")]], "Vai a "..exitsCommand[2], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[2]..[[")]], "Guarda a "..exitsCommand[2], true)
+      end
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(1).."│         ")
+      if (exitsAsString[3]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[3], [[expandAlias("]]..exitsCommand[3]..[[")]], "Vai a "..exitsCommand[3], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
+      end
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
+      if (exitsAsString[4]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[4], [[expandAlias("]]..exitsCommand[4]..[[")]], "Vai a "..exitsCommand[4], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
+      end
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      │"..ui.fGetPosition(3).."│         ")
+      if (exitsAsString[5]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[5], [[expandAlias("]]..exitsCommand[5]..[[")]], "Vai a "..exitsCommand[5], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
+      end
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         ")
+      if (exitsAsString[6]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[6], [[expandAlias("]]..exitsCommand[6]..[[")]], "Vai a "..exitsCommand[6], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[6]..[[")]], "Guarda a "..exitsCommand[6], true)
+      end
+      GUI.Room.Main.Console:echo("\n")
+      GUI.Room.Main.Console:decho("&lt;"..ui.colors.wText..":"..ui.colors.wBackground.."&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           ")
+      if (exitsAsString[7]) then
+        GUI.Room.Main.Console:dechoLink(exitsAsString[7], [[expandAlias("]]..exitsCommand[7]..[[")]], "Vai a "..exitsCommand[7], true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Look&lt;gold&gt;]&lt;r&gt;", [[expandAlias("look ]]..exitsCommand[7]..[[")]], "Guarda a "..exitsCommand[7], true)
+      end
+      GUI.Room.Main.Console:echo("\n\n")
       --
       GUI.Mapper.Main.Mapper:show();
       GUI.Mapper.Main.Overland:hide();
@@ -8904,15 +8942,12 @@ function ui.fUpdateRoom()
     -- Other exits
     if (table.size(ui.room.otherExits) &gt; 0) then
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
-        GUI.Room.Main.Console:setFgColor("orange")
-        GUI.Room.Main.Console:echoLink("▷ "..otherExit, [[expandAlias("ent ]]..otherExit..[[")]], otherExit, true)
+        GUI.Room.Main.Console:cechoLink("&lt;orange&gt;▷ "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == idOtherExit) then
-          GUI.Room.Main.Console:decho(" &lt;255,64,0:"..ui.colors.wBackground.."&gt;[traccia]")
+          GUI.Room.Main.Console:decho(" "..trackText)
         end
-        GUI.Room.Main.Console:setFgColor("white")
-        GUI.Room.Main.Console:decho(" "..(getRoomName(idOtherExit) or "???").."\n")
-        --"&lt;255,165,0:"..ui.colors.wBackground.."&gt;▷ "..otherExit.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;"..
+        GUI.Room.Main.Console:cecho(" "..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."\n")
       end
       GUI.Room.Main.Console:echo("\n")
     end
@@ -8926,9 +8961,9 @@ function ui.fUpdateRoom()
         local key = string.gsub(object.key, " ", "-")
         GUI.Room.Main.Console:cecho("&lt;green&gt;O&lt;r&gt; ")
         GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..object.counter.."&lt;purple&gt;]&lt;r&gt; "..ui.fConvertColorString(object.desc).."&lt;r&gt;")
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;Exam&lt;purple&gt;]", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..object.desc.."'", true)        
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;Get&lt;purple&gt;]", [[expandAlias("get ]]..key..[[")]], "Raccogli '"..object.desc.."'", true)
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;Get all&lt;purple&gt;]", [[expandAlias("get all ]]..key..[[")]], "Prendi tutto da '"..object.desc.."'", true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Exam&lt;gold&gt;]&lt;r&gt;", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..object.desc.."'", true)        
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Get&lt;gold&gt;]&lt;r&gt;", [[expandAlias("get ]]..key..[[")]], "Raccogli '"..object.desc.."'", true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Get all&lt;gold&gt;]&lt;r&gt;", [[expandAlias("get all ]]..key..[[")]], "Prendi tutto da '"..object.desc.."'", true)
         
         GUI.Room.Main.Console:cecho("\n")        
       end
@@ -8940,7 +8975,7 @@ function ui.fUpdateRoom()
         local key = string.gsub(player.desc, " ", "-")
         GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; ")
         GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..player.counter.."&lt;purple&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..player.level.."&lt;r&gt;] "..ui.fConvertColorString(player.desc).."&lt;r&gt;")
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;Exam&lt;purple&gt;]", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..player.desc.."'", true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Exam&lt;gold&gt;]&lt;r&gt;", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..player.desc.."'", true)
         GUI.Room.Main.Console:cecho("\n")
       end
     end  
@@ -8951,8 +8986,8 @@ function ui.fUpdateRoom()
         local key = string.gsub(mob.key, " ", "-")
         GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; ")
         GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..mob.counter.."&lt;purple&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..mob.level.."&lt;r&gt;] "..ui.fConvertColorString(mob.desc).."&lt;r&gt;")
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;Exam&lt;purple&gt;]", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..mob.desc.."'", true)        
-        GUI.Room.Main.Console:cechoLink(" &lt;purple&gt;[&lt;white&gt;KILL&lt;purple&gt;]", [[expandAlias("kill ]]..key..[[")]], "Colpisci '"..mob.desc.."'", true)
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;Exam&lt;gold&gt;]&lt;r&gt;", [[expandAlias("examine ]]..key..[[")]], "Esamina '"..mob.desc.."'", true)        
+        GUI.Room.Main.Console:cechoLink(" &lt;gold&gt;[&lt;LightYellow&gt;KILL&lt;gold&gt;]&lt;r&gt;", [[expandAlias("kill ]]..key..[[")]], "Colpisci '"..mob.desc.."'", true)
         GUI.Room.Main.Console:cecho("\n")
       end
     end
