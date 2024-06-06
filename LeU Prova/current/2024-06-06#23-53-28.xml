@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>616</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -4759,12 +4759,13 @@ end
 -- Cecho Alias with link
 function ui.fLinkAliasButton(button)
   local alias = ui.fSearchAliasButton(button)
-  cecho(" " ..ui.fGetAliasButtonFormattedText(button))
+  --cecho(" " ..ui.fGetAliasButtonFormattedText(button))
+  cechoLink(ui.fGetAliasButtonFormattedText(button), [[expandAlias("]]..button..[[")]], "Esegui '"..button.."'", true)
+  cecho(" "..ui.fGetOperatorFormattedText("»").." ")
   if (alias) then
-    cecho(" "..ui.fGetOperatorFormattedText("»").." ")
-    cecho(ui.fGetAliasNameFormattedText(alias).." "..
-          ui.fGetOperatorFormattedText("»").." "..
-          ui.fGetAliasOutputFormattedText(ui.aliases[alias].text));
+    ui.fLinkAlias(alias)
+  else
+    cecho("&lt;r&gt;non configurato.")
   end
 end
 --
@@ -4778,8 +4779,9 @@ function ui.fShowAllAliasButtons()
   local button = {"a", "b", "c"}
   for b=1, 3 do
     for i=0, 9 do
-      cecho(" "..ui.fGetNumberFormattedText((b-1)*10 + i +1).." ")
-      cechoLink(ui.cLink("Del"), [[expandAlias("uibuttons ]]..button[b]..i..[[ remove")]], "Rimuovi l'alias associato a '"..button[b]..i.."'", true)
+      cecho(ui.fGetNumberFormattedText((b-1)*10 + i +1).." ")
+      cechoLink(ui.cLink("X"), [[expandAlias("uibuttons ]]..button[b]..i..[[ remove")]], "Rimuovi l'alias associato a '"..button[b]..i.."'", true)
+      cecho(" ")
       ui.fLinkAliasButton(button[b]..i)
       cecho("\n")
     end
@@ -5050,16 +5052,16 @@ end
 function ui.fLinkAlias(alias)
   if (ui.aliases[alias]) then
     cechoLink(ui.cLink(ui.fGetAliasNameFormattedText(alias)), [[expandAlias("]]..alias..[[")]], "Esegui l'alias '"..alias.."'", true)
-    --
+    --[[
     if (ui.aliases[alias].keybId) then
-      cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetKeybFormattedText(ui.aliases[alias].keybind))
+      cecho(ui.fGetKeybFormattedText(ui.aliases[alias].keybind))
     end
     --
     if (ui.aliases[alias].button) then
-      cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasButtonFormattedText(ui.aliases[alias].button))
-    end
+      cecho(ui.fGetAliasButtonFormattedText(ui.aliases[alias].button))
+    end]]
+    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text))
   end
-  cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text))
 end
 --
 -- List all aliases
@@ -5075,7 +5077,7 @@ function ui.fShowAllAliases()
     for alias in ui.fOrderedPairs(ui.aliases) do
       idx = idx + 1
       cecho(ui.fGetNumberFormattedText(idx).." ")
-      cechoLink(ui.cLink("Del"), [[expandAlias("uialias ]]..alias..[[ remove")]], "Cancella l'alias '"..alias.."'", true)
+      cechoLink(ui.cLink("X"), [[expandAlias("uialias ]]..alias..[[ remove")]], "Cancella l'alias '"..alias.."'", true)
       cecho(" ")
       ui.fLinkAlias(alias)
       echo("\n")
@@ -7082,7 +7084,7 @@ end</script>
 					<script>--
 function ui.fGetKeybFormattedText(keybind)
   if (keybind) then
-    return ui.colors.keybind.."["..keybind.."]".."&lt;reset&gt;"
+    return ui.colors.keybind.."&lt;"..keybind.."&gt;".."&lt;reset&gt;"
   end
   return ""
 end
@@ -9009,7 +9011,7 @@ function ui.fGetTargetFormattedText(target)
   local str = ui.colors.target.."["..target.."]"
   --
   if (ui.targets[target]) and (ui.targets[target].keybId) then
-    str = str.." "..ui.fGetKeybFormattedText(ui.targets[target].keybind)
+    str = ui.fGetKeybFormattedText(ui.targets[target].keybind)..ui.fGetOperatorFormattedText(" » ")..str
   end
   --
   return str.."&lt;reset&gt;"
@@ -10792,7 +10794,7 @@ ui.transparentID = '&lt;center&gt;⋯'
 ui.colors = {
   aliasButton  = "&lt;orange&gt;",
   aliasName    = "&lt;violet&gt;",
-  aliasOutput  = "&lt;PaleGoldenrod&gt;",
+  aliasOutput  = "&lt;r&gt;",  -- "&lt;PaleGoldenrod&gt;"
   command      = "&lt;steel_blue&gt;",
   error        = "&lt;DarkOrange&gt;",
   input        = "&lt;MediumSeaGreen&gt;", -- #
