@@ -10785,10 +10785,10 @@ end</script>
 				<script>--
 ui = ui or {}
 ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values
-ui.release = "24/11/2023"
+ui.release = getPackageInfo("LeU_UI", "version")
 ui.echo = "&lt;blue&gt;[  &lt;DodgerBlue&gt;UI  &lt;blue&gt;] "
-ui.varID = "&amp;"
 ui.transparentID = '&lt;center&gt;⋯'
+ui.varID = "&amp;"
 --
 -- Colors
 ui.colors = {
@@ -10800,11 +10800,11 @@ ui.colors = {
   input        = "&lt;MediumSeaGreen&gt;", -- #
   keybind      = "&lt;cyan&gt;",
   link         = "&lt;gold&gt;",
-  operator     = "&lt;salmon&gt;",         -- » or «
+  operator     = "&lt;gold&gt;",         -- » or «
   profileName  = "&lt;green&gt;",
   separator    = "&lt;orange_red&gt;",     -- ; or /
   target       = "&lt;orange&gt;",
-  text         = "&lt;grey&gt;",
+  text         = "&lt;r&gt;",
   title        = "&lt;white&gt;",
   varID        = "&lt;steel_blue&gt;",
   varName      = "&lt;DeepPink&gt;",
@@ -11572,7 +11572,10 @@ ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland"
 --
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] ... end UI init!")
 --
-ui.fEchon("&lt;orange&gt; - Lumen et Umbra UI (rel. "..ui.release..") - &lt;white&gt;"..ui.fGetCommandFormattedText("uih[elp]").."&lt;white&gt; per iniziare.")</script>
+ui.fEcho("&lt;orange&gt; - Caricamento 'Lumen et Umbra UI' (rel. "..ui.release..") completato.&lt;r&gt;\n")
+ui.fEcho("&lt;orange&gt; - Digitare ");
+cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui i comando 'uihelp'", true) 
+cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")</script>
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
