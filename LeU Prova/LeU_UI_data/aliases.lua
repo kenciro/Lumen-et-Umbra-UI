@@ -1,4 +1,4 @@
-return {{[ [[lampo]] ] = {2},[ [[buff]] ] = {3},[ [[shield]] ] = {4},[ [[g]] ] = {5},[ [[cel]] ] = {6},[ [[ga]] ] = {7},[ [[morsa]] ] = {8},[ [[p]] ] = {9},[ [[mfc]] ] = {10},[ [[over]] ] = {11},[ [[dro]] ] = {12},[ [[lame]] ] = {13},[ [[cham]] ] = {14},[ [[as]] ] = {15},[ [[minibuff]] ] = {16},[ [[mfe]] ] = {17},[ [[mano]] ] = {18},[ [[bl]] ] = {19},[ [[scry]] ] = {20},[ [[schia]] ] = {21},[ [[pugno]] ] = {22},[ [[flame]] ] = {23},[ [[mf]] ] = {24},[ [[cr]] ] = {25},[ [[psi]] ] = {26},[ [[sense]] ] = {27},[ [[pi]] ] = {28},[ [[chiaro]] ] = {29},[ [[vuoto]] ] = {30},[ [[cani]] ] = {31},[ [[ext]] ] = {32},[ [[x]] ] = {33},[ [[blink]] ] = {34},[ [[ub]] ] = {35},[ [[mfp]] ] = {36},[ [[rin]] ] = {37},},
+return {{[ [[lampo]] ] = {2},[ [[buff]] ] = {3},[ [[shield]] ] = {4},[ [[g]] ] = {5},[ [[cel]] ] = {6},[ [[ga]] ] = {7},[ [[morsa]] ] = {8},[ [[p]] ] = {9},[ [[mfc]] ] = {10},[ [[over]] ] = {11},[ [[dro]] ] = {12},[ [[lame]] ] = {13},[ [[cham]] ] = {14},[ [[as]] ] = {15},[ [[minibuff]] ] = {16},[ [[mfe]] ] = {17},[ [[mano]] ] = {18},[ [[bl]] ] = {19},[ [[scry]] ] = {20},[ [[schia]] ] = {21},[ [[pugno]] ] = {22},[ [[flame]] ] = {23},[ [[mf]] ] = {24},[ [[rin]] ] = {25},[ [[psi]] ] = {26},[ [[sense]] ] = {27},[ [[pi]] ] = {28},[ [[chiaro]] ] = {29},[ [[vuoto]] ] = {30},[ [[cani]] ] = {31},[ [[ext]] ] = {32},[ [[x]] ] = {33},[ [[blink]] ] = {34},[ [[ub]] ] = {35},[ [[mfp]] ] = {36},[ [[cr]] ] = {37},},
 {[ [[mod2]] ] = [[]],[ [[key]] ] = [[F7]],[ [[text]] ] = [[mind 'lampo di energia' &target]],[ [[mod1]] ] = [[]],},
 {[ [[mod2]] ] = [[]],[ [[key]] ] = [[F10]],[ [[text]] ] = [[flame / lame / mfp / rin / minibuff]],[ [[mod1]] ] = [[]],},
 {[ [[text]] ] = [[mind 'scudo psichico']],},
@@ -22,7 +22,7 @@ return {{[ [[lampo]] ] = {2},[ [[buff]] ] = {3},[ [[shield]] ] = {4},[ [[g]] ] =
 {[ [[text]] ] = [[mind 'pugno serrato' &target]],},
 {[ [[text]] ] = [[mind 'mantello di fiamme']],},
 {[ [[text]] ] = [[mind 'manipola fiamme']],},
-{[ [[mod2]] ] = [[]],[ [[key]] ] = [[F2]],[ [[button]] ] = [[a1]],[ [[text]] ] = [[mind 'frantumazione psichica' &target]],[ [[mod1]] ] = [[]],},
+{[ [[text]] ] = [[mind 'rinforzo psichico' &stat]],},
 {[ [[text]] ] = [[mind 'invisibilita psichica']],},
 {[ [[text]] ] = [[mind 'senso del pericolo']],},
 {[ [[text]] ] = [[mind 'pensiero imponente' &target]],},
@@ -34,5 +34,5 @@ return {{[ [[lampo]] ] = {2},[ [[buff]] ] = {3},[ [[shield]] ] = {4},[ [[g]] ] =
 {[ [[text]] ] = [[mind 'cancella la mente' &target]],},
 {[ [[mod2]] ] = [[]],[ [[key]] ] = [[F6]],[ [[text]] ] = [[mind 'colpo superiore']],[ [[mod1]] ] = [[]],},
 {[ [[text]] ] = [[mind 'manipola fiamme' potenzia]],},
-{[ [[text]] ] = [[mind 'rinforzo psichico' &stat]],},
+{[ [[mod2]] ] = [[]],[ [[key]] ] = [[F2]],[ [[button]] ] = [[a1]],[ [[text]] ] = [[mind 'frantumazione psichica' &target]],[ [[mod1]] ] = [[]],},
 }
