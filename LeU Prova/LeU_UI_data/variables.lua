@@ -1,2 +1,2 @@
-return {{[ [[health_max]] ] = 439,[ [[bag]] ] = [[borsa-conservante]],[ [[mana]] ] = 527,[ [[mana_max]] ] = 527,[ [[ac]] ] = -35,[ [[bag2]] ] = [[baule]],[ [[level]] ] = 42,[ [[stat]] ] = [[des]],[ [[target]] ] = [[]],[ [[character_name]] ] = [[Kc]],[ [[money]] ] = 51606,[ [[health]] ] = 436,[ [[alignment]] ] = 1000,[ [[bag1]] ] = [[zaino]],[ [[opponent_level]] ] = 0,[ [[movement]] ] = 118,[ [[experience]] ] = 39847577,[ [[opponent_health_max]] ] = 100,[ [[movement_max]] ] = 118,[ [[opponent_name]] ] = [[]],[ [[opponent_health]] ] = 0,[ [[weapon]] ] = [[MoonShatter]],},
+return {{[ [[target]] ] = [[]],[ [[bag]] ] = [[molte-tasche]],[ [[stat]] ] = [[des]],},
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,9 +18,9 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>616</borderRightWidth>
-			<wrapAt>120</wrapAt>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>505</borderRightWidth>
+			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
 			<mBgColor>#000000</mBgColor>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -496,6 +496,7 @@ enableTrigger("identification_end")</script>
 --
 if (matches[2] == "Indossabilita") then
   ui.identification.slot = string.trim(matches[3])
+  if (ui.identification.slot == "") then ui.identification.slot = ui.identification.type end
 elseif (matches[2] == "bonus all'Armatura") then
   ui.identification.bonus = ui.identification.bonus or {}
   ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Classe Armatura"
@@ -519,7 +520,7 @@ setTriggerStayOpen("Identification", 1)</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>^(Indossabilita)` : (.+).$</string>
+						<string>^(Indossabilita)` : ?(.+).$</string>
 						<string>^Garantisce un (bonus all'Armatura) di (.+).$</string>
 						<string>^(Causa) (.+) danni \(Media: .+\) di tipologia (.+).$</string>
 						<string>^\[.+\]\[(.+)\] (.+)$</string>
@@ -4372,18 +4373,37 @@ end</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Multi Loot</name>
-				<script>ui.getAllCadNum = 0;
+				<script>local cntCad = 0;
+local cntTes = 0;
+--
 for _, object in pairs(ui.room.objects) do
-  display(object.key)
+  local lot = ""
+  local tot = 0
+  local cnt = 0
+  --
   if (string.find(object.key, "cadavere")) then
-    for i=1, object.counter do
-      ui.getAllCadNum = ui.getAllCadNum + 1;
-      send("get all "..ui.getAllCadNum..".cad")
-    end
+    lot = "cadavere"
+    cnt = cntCad
+    tot = object.counter
+  elseif (string.find(object.key, "testa")) then
+    lot = "testa"
+    cnt = cntTes
+    tot = object.counter
   end
+  --
+  for i=1, tot do
+    cnt = cnt + 1;
+    send("get all "..cnt.."."..lot)
+  end
+  --
+  if (lot == "cadavere")  then
+    cntCad = cnt
+  elseif (lot == "testa")  then
+    cntTes = cnt
+  end    
 end
 --
-if  (ui.getAllCadNum == 0) then
+if  (cntCad == 0) and (cntTes == 0) then
   ui.fEchon('Nessun cadavere da sciacallare')
 end</script>
 				<command></command>
@@ -4404,6 +4424,13 @@ lst_vNum = vNum+100</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:mygo)(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>myprompt</name>
+				<script>send("set prompt %K $c0009%h$c0015:$c0001%H $c0012%m$c0015:$c0004%M $c0010%v$c0015:$c0002%V $c0011%e$c0015:$c0003%E $c0015[%S$c0015] %n:%c $c0009%N$c0015:$c0009%C $c0014%x$c0015&gt;")</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>myprompt</regex>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
@@ -7904,7 +7931,8 @@ end</script>
     --
     local fw, fh = calcFontSize("GUI.Mapper.Main.Overland")
     local size = tonumber(gmcp.overland.map.size)
-    local spacesCnt = math.floor( (GUI.Mapper.Main.Overland:get_width() / fw) / 2 - size)
+    local maxChar = math.floor(GUI.Mapper.Main.Overland:get_width() / fw)
+    local spacesCnt = math.floor(maxChar / 2) - size
     local spaces = "" -- white spaces
     --
     clearWindow("GUI.Mapper.Main.Overland")
@@ -7913,7 +7941,8 @@ end</script>
       spaces = spaces.." "
     end 
     --
-    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.room.subArea.."\n&lt;cyan&gt;"..ui.room.name.."\n\n")
+    GUI.Mapper.Main.Overland:cecho("&lt;white&gt;"..ui.fAddSpace(ui.room.subArea, maxChar).."\n"..
+                                   "&lt;cyan&gt;"..ui.fAddSpace(ui.room.name, maxChar).."\n\n")
     --
     for i = 0, size do
       if gmcp.overland.map["r"..i] then
@@ -9321,32 +9350,38 @@ end
 --
 function ui.fShowAllVar()
   local app = {}
-  local numVar = 0
-  local numPreVar = 0
+  local idx = 0
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fShowAllVar()")
   --
   cecho(ui.fTitle("Variabili predefinite"))
   for variable in pairs(ui.variables) do
-    local var = ui.fGetVarNameFormattedText(variable)
-    --
-    if (ui.variables[variable]) and (ui.variables[variable]  ~= "") then
-      var = var..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable])
-    end
-    --
-    if (ui.fGetPreDefinitedVariables()[variable] == nil) then
-      numVar = numVar + 1
-      table.insert(app, ui.fGetNumberFormattedText(numVar).." "..var.."\n")
-    else
-      numPreVar = numPreVar + 1
-      cecho(ui.fGetNumberFormattedText(numPreVar).." "..var.."\n")
+    if (ui.variables[variable]) and (ui.fGetPreDefinitedVariables()[variable]) then
+      idx = idx + 1
+      cecho(ui.fGetNumberFormattedText(idx).." "..ui.fGetVarNameFormattedText(variable))
+      if (ui.variables[variable]  ~= "") then
+        cecho(ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable]))
+      end
+      cecho("\n")
     end
   end
+  --
   cecho(ui.fTitle("Variabili"))
-  if (numVar&gt;0) then
-    for data in pairs(app) do
-      cecho(app[data])
+  idx = 0
+  for variable in pairs(ui.variables) do
+    if (ui.variables[variable]) and (ui.fGetPreDefinitedVariables()[variable] == nil) then
+      idx = idx + 1
+      cecho(ui.fGetNumberFormattedText(idx).." ")
+      cechoLink(ui.cLink("X"), [[expandAlias("uiv ]]..variable..[[ remove]]..getCommandSeparator()..[[uiv")]], "Rimuovi la variabile '"..variable.."'", true)
+      checho(" "..ui.fGetVarNameFormattedText(variable))
+      if (ui.variables[variable]  ~= "") then
+        cecho(ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable]))
+      end
+      cecho("\n")
     end
+  end
+  --
+  if (idx &gt; 0) then
     echo("\n")
   else
     cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uivariables").."\n\n")
@@ -10240,8 +10275,8 @@ end</script>
     autoWrap = false,
     scrollBar = false,
   }, GUI.Mapper.Main)
-  GUI.Mapper.Main.Overland:setColor(30,24,24)
-  GUI.Mapper.Main.Overland:setBgColor(30,24,24)
+  GUI.Mapper.Main.Overland:setColor(0,0,0)
+  GUI.Mapper.Main.Overland:setBgColor(0,0,0)
   GUI.Mapper.Main.Overland:setFontSize(ui.parameters.widgets.overland.fontSize)
   GUI.Mapper.Main.Overland:hide()
   --
@@ -10807,8 +10842,8 @@ ui.colors = {
   text         = "&lt;r&gt;",
   title        = "&lt;white&gt;",
   varID        = "&lt;steel_blue&gt;",
-  varName      = "&lt;DeepPink&gt;",
-  varCont      = "&lt;LightBlue&gt;",
+  varName      = "&lt;LightBlue&gt;",
+  varCont      = "&lt;LightSkyBlue&gt;",
   widget       = "25,20,20",
   wBackground  = "30,24,24",
   wBorder      = "90,72,72",
@@ -12944,7 +12979,7 @@ end</script>
 			<keyCode>33554431</keyCode>
 			<keyModifier>0</keyModifier>
 			<Key isActive="yes" isFolder="no">
-				<name>keypad 0 (group)</name>
+				<name>keypad + 0 (group)</name>
 				<packageName></packageName>
 				<script></script>
 				<command>group</command>
@@ -12952,7 +12987,7 @@ end</script>
 				<keyModifier>536870912</keyModifier>
 			</Key>
 			<Key isActive="yes" isFolder="no">
-				<name>keypad 5 (look)</name>
+				<name>keypad + 5 (look)</name>
 				<packageName></packageName>
 				<script></script>
 				<command>look</command>
@@ -12960,11 +12995,19 @@ end</script>
 				<keyModifier>536870912</keyModifier>
 			</Key>
 			<Key isActive="yes" isFolder="no">
-				<name>get all cad</name>
+				<name>ALT + keypad + 1 (get all cad)</name>
 				<packageName></packageName>
 				<script>expandAlias("ll")</script>
 				<command></command>
 				<keyCode>49</keyCode>
+				<keyModifier>671088640</keyModifier>
+			</Key>
+			<Key isActive="yes" isFolder="no">
+				<name>ALT + keypad + 5 (cerca)</name>
+				<packageName></packageName>
+				<script></script>
+				<command>cerca</command>
+				<keyCode>53</keyCode>
 				<keyModifier>671088640</keyModifier>
 			</Key>
 			<KeyGroup isActive="yes" isFolder="yes">
@@ -12975,7 +13018,7 @@ end</script>
 				<keyCode>-1</keyCode>
 				<keyModifier>0</keyModifier>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 1</name>
+					<name>CTRL + keypad 1</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look down</command>
@@ -12983,7 +13026,7 @@ end</script>
 					<keyModifier>603979776</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 2</name>
+					<name>CTRL + keypad 2</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look south</command>
@@ -12991,7 +13034,7 @@ end</script>
 					<keyModifier>603979776</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 4</name>
+					<name>CTRL + keypad 4</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look west</command>
@@ -12999,7 +13042,7 @@ end</script>
 					<keyModifier>603979776</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 6</name>
+					<name>CTRL + keypad 6</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look east</command>
@@ -13007,7 +13050,7 @@ end</script>
 					<keyModifier>603979776</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 8</name>
+					<name>CTRL + keypad 8</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look north</command>
@@ -13015,7 +13058,7 @@ end</script>
 					<keyModifier>603979776</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control keypad 9</name>
+					<name>CTRL + keypad 9</name>
 					<packageName></packageName>
 					<script></script>
 					<command>loo up</command>
@@ -13031,7 +13074,7 @@ end</script>
 				<keyCode>33554431</keyCode>
 				<keyModifier>0</keyModifier>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 1</name>
+					<name>CTRL + ALT + keypad + 1</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("d")</script>
 					<command></command>
@@ -13039,7 +13082,7 @@ end</script>
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 2</name>
+					<name>CTRL + ALT + keypad + 2</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("s")</script>
 					<command></command>
@@ -13047,7 +13090,7 @@ end</script>
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 4</name>
+					<name>CTRL + ALT + keypad + 4</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("w")</script>
 					<command></command>
@@ -13055,7 +13098,7 @@ end</script>
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 6</name>
+					<name>CTRL + ALT + keypad + 6</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("e")</script>
 					<command></command>
@@ -13063,7 +13106,7 @@ end</script>
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 8</name>
+					<name>CTRL + ALT + keypad + 8</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("n")</script>
 					<command></command>
@@ -13071,7 +13114,7 @@ end</script>
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>control + alt + keypad + 9</name>
+					<name>CTRL + alt + keypad + 9</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("u")</script>
 					<command></command>
