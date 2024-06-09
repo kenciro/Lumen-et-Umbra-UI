@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>333</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>329</borderLeftWidth>
+			<borderRightWidth>511</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,8 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -463,7 +463,7 @@ disableTrigger("equipment_end")</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Identification</name>
 				<script>ui.fDebug("[trig] Identification")
 --
@@ -490,7 +490,7 @@ enableTrigger("identification_end")</script>
 				<regexCodePropertyList>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_valid</name>
 					<script>ui.fDebug("[trig] identification_valid")
 --
@@ -532,7 +532,7 @@ setTriggerStayOpen("Identification", 1)</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_invalid</name>
 					<script>ui.fDebug("[trig] identification_invalid")
 --
@@ -580,7 +580,7 @@ setTriggerStayOpen("Identification", 1)</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>identification_end</name>
 					<script>ui.fDebug("[trig] identification_end")
 --
@@ -602,139 +602,6 @@ disableTrigger("identification_end")</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>^Il livello di potenza complessivo di questo oggetto e` (.+).$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Loot</name>
-				<script>local inventory = matches[1] or ""
-ui.fDebug("[trig] Loot start")
-clearWindow("GUI.Endowment.Main.Inventory")
-enableTrigger("loot_valid")
-enableTrigger("loot_invalid")
-enableTrigger("loot_end")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>1</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^Stai trasportando:$</string>
-					<string>^Non stai trasportando nulla.$</string>
-					<string>^Quando ci guardi dentro, vedi:$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>loot_valid</name>
-					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
-ui.fDebug("[trig] Loot_valid")
-if (matches[3]=="") then
-  matches[3] = "-"
-end
-local number   = matches[2]
-local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-local name, status, good, evil, bright, noisy, brittle = ui.fParsingItem(copy2decho(matches[4]))
-
-name = string.gsub(name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-if (good) then
-  name = name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (evil) then
-  name = name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (bright) then
-  name = name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (noisy) then
-  name = name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-if (brittle) then
-  name = name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
-end
-
---if (status &lt; 8) then
---  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
---else
-  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.."\n")
---end
-setTriggerStayOpen("Loot", 1)
-</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^\[(.*)\] (?:\|(.*)\| )?(.*)</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>loot_invalid</name>
-					<script>ui.fDebug("[trig] Loot_invalid")
-setTriggerStayOpen("Loot", 1)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^Oggetti in inventario : .* su .*</string>
-						<string>^Peso trasportato\s+: .* su .* etti</string>
-						<string>^(.*) \(.*\)'*</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>loot_end</name>
-					<script>ui.fDebug("[trig] Loot_end")
---
-ui.parameters.widgets.endowment.type = "inv"
-ui.fUpdateEndowment()
---
-disableTrigger("loot_valid")
-disableTrigger("loot_invalid")
-disableTrigger("loot_end")</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -1334,6 +1201,139 @@ disableTrigger("is_a_valid_mob")</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Loot</name>
+				<script>local inventory = matches[1] or ""
+ui.fDebug("[trig] Loot start")
+--clearWindow("GUI.Endowment.Main.Inventory")
+enableTrigger("loot_valid")
+enableTrigger("loot_invalid")
+enableTrigger("loot_end")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>1</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Stai trasportando:$</string>
+					<string>^Non stai trasportando nulla.$</string>
+					<string>^Quando ci guardi dentro, vedi:$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>loot_valid</name>
+					<script>-- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
+ui.fDebug("[trig] Loot_valid")
+if (matches[3]=="") then
+  matches[3] = "-"
+end
+local number   = matches[2]
+local eqtype   = string.gsub(copy2decho(matches[3]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+local name, status, good, evil, bright, noisy, brittle = ui.fParsingItem(copy2decho(matches[4]))
+
+name = string.gsub(name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+if (good) then
+  name = name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+end
+if (evil) then
+  name = name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+end
+if (bright) then
+  name = name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+end
+if (noisy) then
+  name = name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+end
+if (brittle) then
+  name = name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
+end
+
+--if (status &lt; 8) then
+--  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.." &lt;255,128,64:"..ui.colors.wBackground.."&gt;["..status.."/8]&lt;r&gt;\n")
+--else
+--  GUI.Endowment.Main.Inventory:decho(number.." "..eqtype.. " "..name.."\n")
+--end
+setTriggerStayOpen("Loot", 1)
+</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>1</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^\[(.*)\] (?:\|(.*)\| )?(.*)</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>loot_invalid</name>
+					<script>ui.fDebug("[trig] Loot_invalid")
+setTriggerStayOpen("Loot", 1)</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>1</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^Oggetti in inventario : .* su .*</string>
+						<string>^Peso trasportato\s+: .* su .* etti</string>
+						<string>^(.*) \(.*\)'*</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>loot_end</name>
+					<script>ui.fDebug("[trig] Loot_end")
+--
+ui.parameters.widgets.endowment.type = "inv"
+ui.fUpdateEndowment()
+--
+disableTrigger("loot_valid")
+disableTrigger("loot_invalid")
+disableTrigger("loot_end")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Invasioni</name>
 				<script>local t1 = matches[2] * 60 * 60 + matches[3] * 60 + matches[4]
@@ -1880,7 +1880,7 @@ end
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione Mob &lt;-&gt; Livello</name>
 				<script>local str, liv, qtt
 --
@@ -2459,7 +2459,6 @@ if (matches[3]) then
       ui.parameters.widgets.chat.fontSize = fontsize
       -- Endowment
       GUI.Endowment.Main.Equipment:setFontSize(fontsize)
-      GUI.Endowment.Main.Inventory:setFontSize(fontsize)
       ui.parameters.widgets.endowment.fontSize = fontsize
       -- Help
       GUI.Help.Main.Console:setFontSize(fontsize)
@@ -2478,7 +2477,6 @@ if (matches[3]) then
       ui.parameters.widgets.chat.fontSize = fontsize
     elseif (windows == "endowment") then
       GUI.Endowment.Main.Equipment:setFontSize(fontsize)
-      GUI.Endowment.Main.Inventory:setFontSize(fontsize)
       ui.parameters.widgets.endowment.fontSize = fontsize
     elseif (windows == "help") then
       GUI.Help.Main.Console:setFontSize(fontsize)
@@ -2724,6 +2722,7 @@ else
     isTarget = false
     result, keybind = ui.fSetKeyb(ui.aliases, element, ui.aliases[element].code, key1, key2, key3)
   end
+  --
   if (result == -4) then
     ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fGetKeybFormattedText(keybind).." è già utilizzata in un alias.")
   elseif (result == -3) then
@@ -2735,7 +2734,7 @@ else
   elseif (result == 1) and (isTarget) then
     ui.fEcho2n("Il tasto rapido è stato assegnato al target "..ui.fGetTargetFormattedText(element)..".")
   elseif (result == 1) and (not isTarget) then
-    ui.fEcho2n("Il tasto rapido è stato assegnato all'alias "..ui.fGetAliasFormattedText(element)..".")
+    ui.fEcho2n("Il tasto rapido è stato assegnato all'alias "..ui.fGetAliasNameFormattedText(element)..".")
   elseif (result == 2) and (isTarget) then
     ui.fEcho2n("Il tasto rapido associato al target "..ui.fGetTargetFormattedText(element).." è stato rimosso.")
   elseif (result == 2) and (not isTarget) then
@@ -4786,13 +4785,12 @@ end
 -- Cecho Alias with link
 function ui.fLinkAliasButton(button)
   local alias = ui.fSearchAliasButton(button)
-  --cecho(" " ..ui.fGetAliasButtonFormattedText(button))
   cechoLink(ui.fGetAliasButtonFormattedText(button), [[expandAlias("]]..button..[[")]], "Esegui '"..button.."'", true)
   cecho(" "..ui.fGetOperatorFormattedText("»").." ")
   if (alias) then
     ui.fLinkAlias(alias)
   else
-    cecho("&lt;r&gt;non configurato.")
+    cecho("&lt;r&gt;non configurato")
   end
 end
 --
@@ -5061,15 +5059,17 @@ function ui.fGetAliasFormattedText(alias)
   local ret = ""
   --
   if (ui.aliases[alias]) then
-    ret = ui.fGetAliasNameFormattedText(alias).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text)
+    ret = ui.fGetAliasNameFormattedText(alias)
     --
     if (ui.aliases[alias].keybId) then
-      ret = ui.fGetKeybFormattedText(ui.aliases[alias].keybind).." "..ret
+      ret = ret.." "..ui.fGetOperatorFormattedText("or").." "..ui.fGetKeybFormattedText(ui.aliases[alias].keybind)
     end
     --
     if (ui.aliases[alias].button) then
-      ret = ui.fGetAliasButtonFormattedText(ui.aliases[alias].button).." "..ret
+      ret = ret.." "..ui.fGetOperatorFormattedText("or").." "..ui.fGetAliasButtonFormattedText(ui.aliases[alias].button)
     end
+    --
+    ret = ret.." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text)
   end
   --
   return ret
@@ -5079,14 +5079,6 @@ end
 function ui.fLinkAlias(alias)
   if (ui.aliases[alias]) then
     cechoLink(ui.cLink(ui.fGetAliasNameFormattedText(alias)), [[expandAlias("]]..alias..[[")]], "Esegui l'alias '"..alias.."'", true)
-    --[[
-    if (ui.aliases[alias].keybId) then
-      cecho(ui.fGetKeybFormattedText(ui.aliases[alias].keybind))
-    end
-    --
-    if (ui.aliases[alias].button) then
-      cecho(ui.fGetAliasButtonFormattedText(ui.aliases[alias].button))
-    end]]
     cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text))
   end
 end
@@ -5177,7 +5169,7 @@ local __mtchs2__ = matches[2] or ""
       if (string.match(command, "__mtchs2__")) then
         code = code..[[
 -- Single command with #
-ui.fEchon(ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__), ui.levelCode);
+ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__), ui.levelCode);
 expandAlias("]]..command..[[", false);
 ]]
       else
@@ -5195,11 +5187,11 @@ expandAlias("]]..command..[[", false);
           code = code..[[
 -- Single command without # and without variables
 if (__mtchs2__ == "") then
-  ui.fEchon(ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
+  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
   expandAlias("]]..command..[[", false);
 else
   -- Append matches[2]
-  ui.fEchon(ui.fGetAliasOutputFormattedText("]]..value..[[ #", __mtchs2__), ui.levelCode);
+  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[ #", __mtchs2__), ui.levelCode);
   expandAlias("]]..command..[[".." "..__mtchs2__, false);
 end
 ]]
@@ -5210,11 +5202,11 @@ end
           code = code..[[
 -- Single command without # but with variables
 if (__mtchs2__ == "") then
-  ui.fEchon(ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
+  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
   expandAlias("]]..command..[[", false);
 else
   -- Replace last variable with matches[2]
-  ui.fEchon(ui.fGetAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", __mtchs2__), ui.levelCode);
+  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", __mtchs2__), ui.levelCode);
   expandAlias("]]..command_matches..[[", false);
 end
 ]]
@@ -5229,7 +5221,7 @@ end
       for _, cmd in ipairs(commands) do
         command = ui.fExpandVariables(cmd, true)
         code = code..[[
-ui.fEchon(ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__), ui.levelCode);
+ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__), ui.levelCode);
 expandAlias("]]..command..[[", false);
 ]]
       end
@@ -5945,13 +5937,6 @@ function ui.fUpdateEndowment()
         end
       end
     end
-    --
-    GUI.Endowment.Main.Inventory:hide()
-  else
-    --
-    GUI.Endowment:setTitle("Endowment [inventory]")
-    --
-    GUI.Endowment.Main.Inventory:show()
   end
   --
   GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
@@ -6694,6 +6679,11 @@ function ui.fUpdateGMCP(event, ...)
           ui.previous.gmcp.char.vitals = table.deepcopy(gmcp.char.vitals);
         end
       end
+      --
+      -- Cooldowns
+      if (not table.is_empty(gmcp.char.cooldowns)) then
+        display(gmcp.char.cooldowns)
+      end
     --
     -- ROOM
     elseif (event == "gmcp.room") then
@@ -7111,7 +7101,7 @@ end</script>
 					<script>--
 function ui.fGetKeybFormattedText(keybind)
   if (keybind) then
-    return ui.colors.keybind.."&lt;"..keybind.."&gt;".."&lt;reset&gt;"
+    return ui.colors.keybind.."&lt;"..keybind.."&gt;".."&lt;r&gt;"
   end
   return ""
 end
@@ -7210,18 +7200,19 @@ function ui.fShowAllKeyb()
                          end )
   --
   -- Show Target keybind
-  cecho(ui.fTitle("Target keybind"))
+  cecho(ui.fTitle("Keybind associati ai Target"))
   for i,target in ipairs(orderTable) do
     if (ui.targets[target].keybId) then
+      cecho(ui.fGetNumberFormattedText(i).." ")
+      cechoLink(ui.cLink("X"), [[expandAlias("uikeybind ]]..target..[[ remove")]], "Rimuovi il keybind associato al target '"..target.."'", true)
+      cecho(" "..ui.fGetTargetFormattedText(target, true)..ui.fGetOperatorFormattedText(" » "))
       if (ui.targets[target].target) then
-        cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetTargetFormattedText(target)..ui.fGetOperatorFormattedText(" » ")..ui.fGetVarNameFormattedText("target")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.targets[target].target).."\n")
+        cecho(ui.fGetVarNameFormattedText("target")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.targets[target].target))
       else
-        cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetTargetFormattedText(target).."\n")
+        cecho("&lt;r&gt;non configurato")
       end
+      cecho("\n")
     end
-  end
-  if (#orderTable==0) then
-    cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uikeybind").."\n")
   end
   --
   -- Order Aliases keybind
@@ -7244,9 +7235,13 @@ function ui.fShowAllKeyb()
                          end )
   --
   -- Show Aliases keybind
-  cecho(ui.fTitle("Aliases keybind"))
+  cecho(ui.fTitle("Keybind associati agli Aliases"))
   for i,alias in ipairs(orderTable) do
-    cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetAliasFormattedText(alias).."\n")
+      cecho(ui.fGetNumberFormattedText(i).." ")
+      cechoLink(ui.cLink("X"), [[expandAlias("uikeybind ]]..alias..[[ remove")]], "Rimuovi il keybind associato all'alias '"..alias.."'", true)
+      cecho(" "..ui.fGetKeybFormattedText(ui.aliases[alias].keybind)..ui.fGetOperatorFormattedText(" » "))
+    ui.fLinkAlias(alias)
+    cecho("\n")
   end
   if (#orderTable==0) then
     cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uikeybind").."\n\n")
@@ -9036,10 +9031,11 @@ function ui.fGetTargetChild(type, number)
   end
 end
 --
-function ui.fGetTargetFormattedText(target)
-  local str = ui.colors.target.."["..target.."]"
+function ui.fGetTargetFormattedText(target, keybind)
+  local str = ui.colors.target..target
+  keybind = keybind or false
   --
-  if (ui.targets[target]) and (ui.targets[target].keybId) then
+  if (keybind) and (ui.targets[target]) and (ui.targets[target].keybId) then
     str = ui.fGetKeybFormattedText(ui.targets[target].keybind)..ui.fGetOperatorFormattedText(" » ")..str
   end
   --
@@ -9229,10 +9225,10 @@ function ui.fExecuteTargetButton(button)
     if (ui.targets[button]) and (ui.targets[button].target) then
       if (ui.variables["target"] == ui.targets[button].target) then
         ui.variables["target"] = ""
-        ui.fEcho2n(ui.fGetTargetFormattedText(button).." nessun "..ui.fGetVarNameFormattedText("target").." selezionato")
+        ui.fEcho2n(ui.fGetTargetFormattedText(button)..ui.fGetOperatorFormattedText(" » ").."nessun "..ui.fGetVarNameFormattedText("target").." selezionato")
       else
         ui.variables["target"] = ui.targets[button].target
-        ui.fEcho2n(ui.fGetTargetFormattedText(button).." "..ui.fGetVarNameFormattedText("target").." impostato su "..ui.fGetVarValueFormattedText(ui.variables.target).."&lt;reset&gt;.")
+        ui.fEcho2n(ui.fGetTargetFormattedText(button)..ui.fGetOperatorFormattedText(" » ")..ui.fGetVarNameFormattedText("target").." impostato su "..ui.fGetVarValueFormattedText(ui.variables.target).."&lt;reset&gt;.")
       end
       ui.fUpdateTarget()
     elseif (type == "g") then
@@ -9892,20 +9888,6 @@ end</script>
   GUI.Endowment.Button_type:setFontSize(6)
   GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
   GUI.Endowment.Button_type:setClickCallback("ui.fEndowmentTypeClicked")
-  --
-  -- Inventory
-  GUI.Endowment.Main.Inventory = Geyser.MiniConsole:new2({
-    name = 'GUI.Endowment.Main.Inventory',
-    x=0,
-    y=0,
-    width = "100%", 
-    height = "100%",
-    autoWrap = false,
-    scrollBar = true,
-  }, GUI.Endowment.Main)
-  GUI.Endowment.Main.Inventory:setColor(30, 24, 24)
-  GUI.Endowment.Main.Inventory:setBgColor(30, 24, 24)
-  GUI.Endowment.Main.Inventory:setFontSize(ui.parameters.widgets.endowment.fontSize)
   --
   -- 25x Slot
   for i=1, 25 do
@@ -10832,7 +10814,7 @@ ui.colors = {
   aliasOutput  = "&lt;r&gt;",  -- "&lt;PaleGoldenrod&gt;"
   command      = "&lt;steel_blue&gt;",
   error        = "&lt;DarkOrange&gt;",
-  input        = "&lt;MediumSeaGreen&gt;", -- #
+  input        = "&lt;bisque&gt;", -- #
   keybind      = "&lt;cyan&gt;",
   link         = "&lt;gold&gt;",
   operator     = "&lt;gold&gt;",         -- » or «
@@ -10843,7 +10825,7 @@ ui.colors = {
   title        = "&lt;white&gt;",
   varID        = "&lt;steel_blue&gt;",
   varName      = "&lt;LightBlue&gt;",
-  varCont      = "&lt;LightSkyBlue&gt;",
+  varCont      = "&lt;MediumSeaGreen&gt;",
   widget       = "25,20,20",
   wBackground  = "30,24,24",
   wBorder      = "90,72,72",
