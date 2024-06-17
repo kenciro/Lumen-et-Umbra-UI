@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>329</borderLeftWidth>
-			<borderRightWidth>511</borderRightWidth>
+			<borderLeftWidth>333</borderLeftWidth>
+			<borderRightWidth>451</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -1148,60 +1148,6 @@ setDoor(gmcp.room.info.num, dir, 3)</script>
 				</Trigger>
 			</TriggerGroup>
 			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>auto_attac_first_mob</name>
-				<script>enableTrigger("is_a_valid_mob")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>1</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^------- Creature in Stanza -------$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>is_a_valid_mob</name>
-					<script>local mob = matches[1] 
-if (mob) and (mob ~= "") and (ui.variables.attackFirstMob) then
-  mob = ui.fRemoveArticle(mob)
-  --mob = string.gsub(mob, " ", "-")
-  mob = string.sub(mob, 1, string.find(mob, ' '))
-  cecho(" &lt;orange&gt; (Auto attack first mob)\n");
-  --if (ui.parameters.enablePugno) then
-  --  expandAlias("pugno "..mob, false)
-  --end
-  expandAlias("attack "..mob, false)
-end
-ui.variables.attackFirstMob = nil;
-disableTrigger("is_a_valid_mob")</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>1</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^(\w+).*</string>
-						<string>^$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Loot</name>
 				<script>local inventory = matches[1] or ""
 ui.fDebug("[trig] Loot start")
@@ -1372,26 +1318,6 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>First AID (automatico)</name>
-				<script>send("first")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Puoi medicarti di nuovo.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Flee (automatico)</name>
 				<script>send("flee", false)</script>
@@ -1414,12 +1340,9 @@ setTriggerStayOpen("Invasioni", 1)</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Stand (automatico)</name>
-				<script>if (not ui.wfStandUp) then
-  ui.fEchon("Trig Auto stand - Resend last command: "..ui.fGetAliasOutputFormattedText(command))
-  --
-  expandAlias("stand;"..command)
-  ui.wfStandUp = true;
-end</script>
+				<script>ui.fEchon("Trig Auto stand - Resend last command: "..ui.fGetAliasOutputFormattedText(command))
+--
+expandAlias("stand;"..command)</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1434,32 +1357,14 @@ end</script>
 					<string>Prima forse dovresti alzarti, non credi?</string>
 					<string>Ti devi alzare per lanciare quest'incantesimo.</string>
 					<string>Nah... Sei troppo rilassato...</string>
+					<string>Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. </string>
+					<string>Tramortito dagli eventi, avrai bisogno di del tempo per riprenderti. </string>
+					<string>Hai bisogno di alzarti in piedi per usare le tue abilita`!</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>3</integer>
 					<integer>3</integer>
 					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Fine stand (automatico)</name>
-				<script>ui.wfStandUp = false;</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Sei gia` in piedi.</string>
-					<string>Smetti di riposare e ti alzi.</string>
-					<string>Ti alzi.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
 					<integer>3</integer>
 					<integer>3</integer>
 					<integer>3</integer>
@@ -1800,7 +1705,7 @@ ui.fUpdateAffects()</script>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione descrizione &lt;-&gt; danni</name>
 				<script>local des = copy2decho(matches[2])
 local dam = copy2decho(matches[3])
@@ -1995,26 +1900,6 @@ end]]</script>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Sei morto! Mi spiace...</name>
-				<script>expandAlias("stand")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Sei morto! Mi spiace...</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -4263,6 +4148,8 @@ ui.fExecutePath(path, matches[2])</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>Attacco automatico</name>
 				<script>local opt = matches[2] or ""
+local attack = false
+--
 if (opt == "+") then
   ui.parameters.autoAttack = true;
 elseif (opt == "-") then
@@ -4272,7 +4159,7 @@ elseif (opt == "a") then
 elseif (opt == "s") then
   ui.parameters.autoAttackArea = false;
 else
-  send("info mobiles")                -- Farà scattare trigger per ricerap 1° mob e attacca
+  attack = true
 end
 --
 opt = "autoAttack ";
@@ -4287,7 +4174,13 @@ else
   opt = opt.."&lt;red&gt;OFF"
 end
 ui.fEcho2n(opt)  
-</script>
+--
+if (attack) then
+  for _,mob in pairs(ui.room.mobs) do
+    expandAlias("attack "..mob.key)
+    break 
+  end
+end</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^aa([\+\-as])?$</regex>
@@ -6681,7 +6574,7 @@ function ui.fUpdateGMCP(event, ...)
       end
       --
       -- Cooldowns
-      if (not table.is_empty(gmcp.char.cooldowns)) then
+      if (gmcp.char.cooldowns) and (not table.is_empty(gmcp.char.cooldowns)) then
         display(gmcp.char.cooldowns)
       end
     --
@@ -7666,15 +7559,15 @@ function ui.fSpeedWalk(path, dirs)
     -- Go to next room
     if (#dirs &gt; 0) then
       local dir = dirs[1];
-      -- Send command
-      send(dir, false)
       --
       if (ui.validExit[dir]) then
-        ui.fEchon("Prosegui il percorso verso "..ui.validExit[dir].color..ui.validExit[dir].long)
+        ui.fEchon("Prosegui lungo il percorso andando verso "..ui.validExit[dir].color..ui.validExit[dir].long)
       else
         -- May be special exit or door
         ui.fEchon(dir)
       end
+      -- Send command
+      send(dir, false)
       --
       table.remove(dirs, 1)
       table.remove(path, 1)
