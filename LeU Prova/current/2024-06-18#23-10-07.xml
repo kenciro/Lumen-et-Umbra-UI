@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSP="no" mEnableMSDP="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes" BoldIsBright="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,13 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
+<<<<<<<< HEAD:LeU Prova/current/2024-06-18#23-10-07.xml
 			<borderLeftWidth>329</borderLeftWidth>
 			<borderRightWidth>510</borderRightWidth>
+========
+			<borderLeftWidth>305</borderLeftWidth>
+			<borderRightWidth>505</borderRightWidth>
+>>>>>>>> 9eff9c5 (- redraw map in dungeon):LeU Prova/current/2024-07-09#16-39-03.xml
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,9 +76,12 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+<<<<<<<< HEAD:LeU Prova/current/2024-06-18#23-10-07.xml
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Area</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+========
+>>>>>>>> 9eff9c5 (- redraw map in dungeon):LeU Prova/current/2024-07-09#16-39-03.xml
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -82,6 +90,7 @@
 			<profileShortcut key="Package manager">Alt+O</profileShortcut>
 			<profileShortcut key="Module manager">Alt+I</profileShortcut>
 			<profileShortcut key="MultiView">Alt+V</profileShortcut>
+			<profileShortcut key="Mute all media">Alt+K</profileShortcut>
 			<profileShortcut key="Play">Alt+C</profileShortcut>
 			<profileShortcut key="Disconnect">Alt+D</profileShortcut>
 			<profileShortcut key="Reconnect">Alt+R</profileShortcut>
@@ -2910,6 +2919,7 @@ ui.fSaveFileVariables()</script>
   ["chat"]          = GUI.Chat,
   ["endowment"]     = GUI.Endowment,
   ["group"]         = GUI.Group,
+  ["help"]          = GUI.Help,
   ["room"]          = GUI.Room,
   ["mapper"]        = GUI.Mapper,
   ["opponent"]      = GUI.Opponent,
@@ -5660,7 +5670,7 @@ function ui.fIsStatistics(s)
   --
   s = string.gsub(s, "%d+d%d+", "") -- dices
   --
-  s = string.gsub(s, "-?%d+", "")     -- values
+  s = string.gsub(s, "-?%d+", "")   -- values
   --
   s = string.gsub(s, " ", "")       -- white space
   --
@@ -5672,11 +5682,11 @@ function ui.fUpdateEndowment()
   --
   if (ui.parameters.widgets.endowment.type == "equip") then
     local distance = 1; 
-    local min_w = 150;
+    local min_w = 100;
     local max_w = 250;
     local w_h = GUI.Endowment.Main:get_height() - distance;
     local w_w = GUI.Endowment.Main:get_width() -  distance;
-    local h = distance + 30;
+    local h = distance + 28;
     local w = distance + min_w;
     local x = 0
     local y = 0
@@ -5832,7 +5842,6 @@ function ui.fUpdateEndowment()
     end
   end
   --
-  GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
 end
 --
 function ui.fEndowmentTypeClicked()
@@ -6384,28 +6393,39 @@ function ui.fAddSpace(s, l, mode)
   return s
 end
 --
+-- Widget containers
+local containers = {
+  ["GUI.Affects"] = GUI.Affects,
+  ["GUI.AliasButtons"] = GUI.AliasButtons,
+  ["GUI.Chat"] = GUI.Chat,
+  ["GUI.Endowment"] = GUI.Endowment,
+  ["GUI.Group"] = GUI.Group,
+  ["GUI.Help"] = GUI.Help,
+  ["GUI.Mapper"] = GUI.Mapper,
+  ["GUI.Opponent"] = GUI.Opponent,
+  ["GUI.Player"] = GUI.Player,
+  ["GUI.Room"] = GUI.Room,
+  ["GUI.TargetButtons"] = GUI.TargetButtons,
+}
+--
+-- Widget funcions
+local fUpdateFunction = {
+  ["GUI.Affects"] = ui.fUpdateAffects,
+  ["GUI.AliasButtons"] = ui.fUpdateAliasButton,
+  ["GUI.Endowment"] = ui.fUpdateEndowment,
+  ["GUI.Group"] = ui.fUpdateGroup,
+  ["GUI.Opponent"] = ui.fUpdateOpponent,
+  ["GUI.Player"] = ui.fUpdatePlayer,
+  ["GUI.TargetButtons"] = ui.fUpdateTargetButtons,
+}
+--
 -- Moving or Resizing containers
 function ui.fRepositioning(eventName, containerName)
   ui.repositioning = ui.repositioning or false;
   --
   -- Only first time (faster)
   if (not ui.repositioning) then
-    --
-    -- Widget containers
-    local containers = {
-      ["GUI.Affects"] = GUI.Affects,
-      ["GUI.AliasButtons"] = GUI.AliasButtons,
-      ["GUI.Chat"] = GUI.Chat,
-      ["GUI.Endowment"] = GUI.Endowment,
-      ["GUI.Group"] = GUI.Group,
-      ["GUI.Help"] = GUI.Help,
-      ["GUI.Mapper"] = GUI.Mapper,
-      ["GUI.Opponent"] = GUI.Opponent,
-      ["GUI.Player"] = GUI.Player,
-      ["GUI.Room"] = GUI.Room,
-      ["GUI.TargetButtons"] = GUI.TargetButtons,
-    }
-    if (containers[containerName]) then
+    if (table.contains(containers, containerName)) then
       containers[containerName].Main:hide()
       ui.repositioning = true;
     end
@@ -6415,40 +6435,14 @@ end
 -- Finish to moving or resizing containers
 function ui.fFinishedRepositioning(eventName, containerName)
   --
-  -- Widget containers
-  local containers = {
-    ["GUI.Affects"] = GUI.Affects,
-    ["GUI.AliasButtons"] = GUI.AliasButtons,
-    ["GUI.Chat"] = GUI.Chat,
-    ["GUI.Endowment"] = GUI.Endowment,
-    ["GUI.Group"] = GUI.Group,
-    ["GUI.Help"] = GUI.Help,
-    ["GUI.Mapper"] = GUI.Mapper,
-    ["GUI.Opponent"] = GUI.Opponent,
-    ["GUI.Player"] = GUI.Player,
-    ["GUI.Room"] = GUI.Room,
-    ["GUI.TargetButtons"] = GUI.TargetButtons,
-  }
-  --
-  -- Widget funcions
-  local fUpdateFunction = {
-    ["GUI.Affects"] = ui.fUpdateAffects,
-    ["GUI.AliasButtons"] = ui.fUpdateAliasButton,
-    ["GUI.Endowment"] = ui.fUpdateEndowment,
-    ["GUI.Group"] = ui.fUpdateGroup,
-    ["GUI.Opponent"] = ui.fUpdateOpponent,
-    ["GUI.Player"] = ui.fUpdatePlayer,
-    ["GUI.TargetButtons"] = ui.fUpdateTargetButtons,
-  }
-  --
   -- Set absolute
-  if (containers[containerName]) then
+  if (table.contains(containers, containerName)) then
     containers[containerName]:setAbsolute(true)
     containers[containerName].Main:show();
   end
   --
   -- Call function relative to widget
-  if (fUpdateFunction[containerName]~=nil) then
+  if (table.contains(fUpdateFunction, containerName)) then
     fUpdateFunction[containerName]()
   end
   --
@@ -7703,6 +7697,25 @@ function ui.fUpdateMapper()
       return
     end
     --
+    -- if area changed...
+    if (ui.room.area ~= ui.previous.room.area) then
+      -- 
+      -- ... and area mutable.
+      if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
+         ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
+         ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
+        --
+        -- Clear area
+        local areas = getAreaTable()
+        local areaId = areas[string.trim(ui.room.area)]
+        local rooms = getAreaRooms(areaId)
+        --
+        for _, roomId in pairs(rooms) do
+          deleteRoom(roomId)
+        end
+      end
+    end
+    --
     -- Create new room if not exist
     if (not getRoomName(ui.room.id)) then
       make_room(ui.room, ui.previous.room)
@@ -7771,8 +7784,16 @@ function ui.fUpdateMapper()
         ui.fHighlightRoom(id, true)
       end
     end
+    -- 
+    -- Redraw Area
+    if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
+       ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
+       ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
+      --
+      -- redraw area
+      redrawArea(ui.room.area, true)
+    end
     --
-    --clearMapSelection()
     centerview(ui.room.id)
     --
     GUI.Mapper:setTitle(ui.room.area.." - "..ui.room.name)
@@ -9330,10 +9351,10 @@ end</script>
   -- Affects
   GUI.Affects = Adjustable.Container:new2({
     name = "GUI.Affects",
-    x = 0,
-    y = 250,
-    width = 300,
-    height = 200,
+    x = -730,
+    y = 340,
+    width = 200,
+    height = 300,
     titleText ="Effetti",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9440,11 +9461,13 @@ end</script>
   --
   function GUI.Affects:minimize(...)
     GUI.Affects.Main:hide()
+    ui.fEcho2n("(2) HIDE GUI.Affects.Main")
     return Minimize(GUI.Affects)
   end
   --
   function GUI.Affects:restore(...)
     GUI.Affects.Main:show()
+    ui.fEcho2n("(2) SHOW GUI.Affects.Main")
     return Restore(GUI.Affects)
   end
 end</script>
@@ -9459,10 +9482,11 @@ end</script>
   -- Alias buttons 
   GUI.AliasButtons = Adjustable.Container:new2({
     name = "GUI.AliasButtons",
-    x = 310,
-    y = 0,
-    width = 920,
-    height = 130,
+    attached = "right",
+    x = -500,
+    y = "87%",
+    width = 500,
+    height = "13%",
     titleText ="Pulsanti alias",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9612,10 +9636,11 @@ end</script>
   -- Private messages
   GUI.Chat = Adjustable.Container:new2({
     name = "GUI.Chat",
-    x = 1240,
+    attached = "left",
+    x = 0,
     y = 0,
     width = 300,
-    height = 265,
+    height = "55%",
     titleText ="Canale privato",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9731,10 +9756,11 @@ end</script>
   -- Equip
   GUI.Endowment = Adjustable.Container:new2({
     name = "GUI.Endowment",
-    x = 310,
-    y = 140,
-    width = 300,
-    height = 520,
+    attached = "right",
+    x = -500,
+    y = "58%",
+    width = 500,
+    height = "29%",
     titleText ="Equipaggiamento",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9768,19 +9794,6 @@ end</script>
                                             ui.fSaveFileParameters()
                                           end)
   GUI.Endowment.Button_hide:setToolTip("Transparent", 10)
-  --
-  -- Button "Type"
-  GUI.Endowment.Button_type = Geyser.Label:new2({
-    name = "GUI.Endowment.Button_type",
-    x = -101, 
-    y = 4,
-    width = 40,
-    height = 12,
-  },GUI.Endowment)
-  GUI.Endowment.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
-  GUI.Endowment.Button_type:setFontSize(6)
-  GUI.Endowment.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.endowment.type);
-  GUI.Endowment.Button_type:setClickCallback("ui.fEndowmentTypeClicked")
   --
   -- 25x Slot
   for i=1, 25 do
@@ -9828,7 +9841,7 @@ end</script>
     }, GUI.Endowment.Main["Item"..i])
     GUI.Endowment.Main["Item"..i].Text:enableClickthrough() -- for tooltip
     GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
-    GUI.Endowment.Main["Item"..i].Text:setFontSize(8);
+    GUI.Endowment.Main["Item"..i].Text:setFontSize(7);
     GUI.Endowment.Main["Item"..i].Text:setFgColor("black")    --
     -- Level
     GUI.Endowment.Main["Item"..i].Level = Geyser.Label:new2({
@@ -9884,10 +9897,10 @@ end</script>
   -- Group Members
   GUI.Group = Adjustable.Container:new2({
     name = "GUI.Group",
-    x = 930,
-    y = 140,
-    width = 300,
-    height = 250,
+    x = -730,
+    y = 20,
+    width = 200,
+    height = 300,
     titleText ="Gruppo",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10060,10 +10073,10 @@ end</script>
   -- Public messages
   GUI.Help = Adjustable.Container:new2({
     name = "GUI.Help",
-    x = 20,
-    y = 20,
-    width = 1000,
-    height = 500,
+    x = 100,
+    y = 100,
+    width = -100,
+    height = -100,
     titleText ="Lumen et Umbra UI - Help",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10115,10 +10128,11 @@ end</script>
   -- Public messages
   GUI.Mapper = Adjustable.Container:new2({
     name = "GUI.Mapper",
-    x = 930,
-    y = 400,
-    width = 300,
-    height = 280,
+    attached = "right",
+    x = -500,
+    y = 0,
+    width = 500,
+    height = "29%",
     titleText ="Mapper",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10180,10 +10194,11 @@ end</script>
   -- Opponent
   GUI.Opponent = Adjustable.Container:new2({
     name = "GUI.Opponent",
+    attached = "left",
     x = 0,
-    y = 160,
+    y = "70%",
     width = 300,
-    height = 80,
+    height = "10%",
     titleText = "Avversario",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10301,10 +10316,11 @@ end</script>
   -- Player 
   GUI.Player = Adjustable.Container:new2({
     name = "GUI.Player",
+    attached = "left",
     x = 0,
-    y = 0,
+    y = "80%",
     width = 300,
-    height = 150,
+    height = "20%",
     titleText ="Player",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10540,10 +10556,11 @@ end</script>
   -- Room
   GUI.Room = Adjustable.Container:new2({
     name = "GUI.Room",
-    x = 0,
-    y = 400,
-    width = 300,
-    height = 260,
+    attached = "right",
+    x = -500,
+    y = "29%",
+    width = 500,
+    height = "29%",
     titleText ="Stanza",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -10595,10 +10612,11 @@ end</script>
   -- Target
   GUI.TargetButtons = Adjustable.Container:new2({
     name = "GUI.TargetButtons",
-    x = 1240,
-    y = 540,
+    attached = "left",
+    x = 0,
+    y = "55%",
     width = 300,
-    height = 120,
+    height = "15%",
     titleText ="Target",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -11334,7 +11352,7 @@ E' possibile ripristinare i widget dell'UI che sono stati minimizzati o chiusi.
 &lt;white&gt;Utilizzo:&lt;reset&gt;
   &lt;command&gt;uiw[idget] &lt;nome_widget&gt;&lt;/command&gt;
 
-I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;exec uiwidget all&gt;all&lt;/exec&gt; (per tutti contemporaneamente), &lt;exec uiwidget affect&gt;affect&lt;/exec&gt;, &lt;exec uiwidget buttons&gt;buttons&lt;/exec&gt;, &lt;exec uiwidget equipment&gt;equipment&lt;/exec&gt;, &lt;exec uiwidget group&gt;group&lt;/exec&gt;, &lt;exec uiwidget inventory&gt;inventory&lt;/exec&gt;, &lt;exec uiwidget map&gt;map&lt;/exec&gt;, &lt;exec uiwidget mapper&gt;mapper&lt;/exec&gt;, &lt;exec uiwidget opponent&gt;opponent&lt;/exec&gt;, &lt;exec uiwidget private&gt;private&lt;/exec&gt;, &lt;exec uiwidget player&gt;player&lt;/exec&gt;, &lt;exec uiwidget public&gt;public&lt;/exec&gt; o &lt;exec uiwidget target&gt;target&lt;/exec&gt; per i relativi widgets.
+I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;exec uiwidget all&gt;all&lt;/exec&gt; (per tutti contemporaneamente), &lt;exec uiwidget affects&gt;affects&lt;/exec&gt;, &lt;exec uiwidget buttons&gt;buttons&lt;/exec&gt;, &lt;exec uiwidget chat&gt;chat&lt;/exec&gt;, &lt;exec uiwidget endowment&gt;endowment&lt;/exec&gt;, &lt;exec uiwidget group&gt;group&lt;/exec&gt;, &lt;exec uiwidget help&gt;help&lt;/exec&gt;, &lt;exec uiwidget mapper&gt;mapper&lt;/exec&gt;, &lt;exec uiwidget opponent&gt;opponent&lt;/exec&gt;, &lt;exec uiwidget player&gt;player&lt;/exec&gt;, &lt;exec uiwidget room&gt;room&lt;/exec&gt; o &lt;exec uiwidget target&gt;target&lt;/exec&gt; per i relativi widgets.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]

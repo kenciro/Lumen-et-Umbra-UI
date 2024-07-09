@@ -1,2 +1,2 @@
-return {{[ [[target]] ] = [[]],[ [[bag]] ] = [[molte-tasche]],[ [[stat]] ] = [[des]],},
+return {{[ [[target]] ] = [[]],[ [[bag]] ] = [[borsa]],[ [[stat]] ] = [[des]],},
 }
