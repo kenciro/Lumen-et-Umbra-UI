@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes" BoldIsBright="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes" BoldIsBright="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>305</borderLeftWidth>
-			<borderRightWidth>505</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>379</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -4595,11 +4595,11 @@ function ui.fUpdateAffects()
                         '&lt;/lu&gt;'..
                         --stat..
                         '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;'
-        --
         GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
         --
-        GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
+        --
         GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+        GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
         GUI.Affects.Main["Affect"..i]:show();
         --
         c = c + 1
@@ -6382,60 +6382,11 @@ function ui.fAddSpace(s, l, mode)
   return s
 end
 --
--- Widget containers
-local containers = {
-  ["GUI.Affects"] = GUI.Affects,
-  ["GUI.AliasButtons"] = GUI.AliasButtons,
-  ["GUI.Chat"] = GUI.Chat,
-  ["GUI.Endowment"] = GUI.Endowment,
-  ["GUI.Group"] = GUI.Group,
-  ["GUI.Help"] = GUI.Help,
-  ["GUI.Mapper"] = GUI.Mapper,
-  ["GUI.Opponent"] = GUI.Opponent,
-  ["GUI.Player"] = GUI.Player,
-  ["GUI.Room"] = GUI.Room,
-  ["GUI.TargetButtons"] = GUI.TargetButtons,
-}
---
--- Widget funcions
-local fUpdateFunction = {
-  ["GUI.Affects"] = ui.fUpdateAffects,
-  ["GUI.AliasButtons"] = ui.fUpdateAliasButton,
-  ["GUI.Endowment"] = ui.fUpdateEndowment,
-  ["GUI.Group"] = ui.fUpdateGroup,
-  ["GUI.Opponent"] = ui.fUpdateOpponent,
-  ["GUI.Player"] = ui.fUpdatePlayer,
-  ["GUI.TargetButtons"] = ui.fUpdateTargetButtons,
-}
---
--- Moving or Resizing containers
-function ui.fRepositioning(eventName, containerName)
-  ui.repositioning = ui.repositioning or false;
-  --
-  -- Only first time (faster)
-  if (not ui.repositioning) then
-    if (table.contains(containers, containerName)) then
-      containers[containerName].Main:hide()
-      ui.repositioning = true;
-    end
-  end
-end
---
--- Finish to moving or resizing containers
-function ui.fFinishedRepositioning(eventName, containerName)
-  --
-  -- Set absolute
-  if (table.contains(containers, containerName)) then
-    containers[containerName]:setAbsolute(true)
-    containers[containerName].Main:show();
-  end
-  --
-  -- Call function relative to widget
-  if (table.contains(fUpdateFunction, containerName)) then
-    fUpdateFunction[containerName]()
-  end
-  --
-  ui.repositioning = false;
+function ui.fWindowResize(eventName, containerName)
+  ui.fUpdateAffects()
+  ui.fUpdateEndowment()
+  ui.fUpdateGroup()
+  ui.fUpdateTargetButtons()
 end
 --
 function ui.fSetBorderMode(sender, mode)
@@ -9447,18 +9398,23 @@ end</script>
   -- Wrapping function
   local Minimize = GUI.Affects.minimize
   local Restore = GUI.Affects.restore
+  local Resize = GUI.Affects.resize
   --
   function GUI.Affects:minimize(...)
     GUI.Affects.Main:hide()
-    ui.fEcho2n("(2) HIDE GUI.Affects.Main")
     return Minimize(GUI.Affects)
   end
   --
   function GUI.Affects:restore(...)
     GUI.Affects.Main:show()
-    ui.fEcho2n("(2) SHOW GUI.Affects.Main")
     return Restore(GUI.Affects)
   end
+  --
+  function GUI.Affects:resize(...)
+    ui.fUpdateAffects()
+    return Resize(GUI.Affects, ...)
+  end
+  --
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -9864,6 +9820,7 @@ end</script>
   -- Wrapping function
   local Minimize = GUI.Endowment.minimize
   local Restore = GUI.Endowment.restore
+  local Resize = GUI.Endowment.resize
   --
   function GUI.Endowment:minimize(...)
     GUI.Endowment.Main:hide()
@@ -9873,6 +9830,11 @@ end</script>
   function GUI.Endowment:restore(...)
     GUI.Endowment.Main:show()
     return Restore(GUI.Endowment)
+  end
+  --
+  function GUI.Endowment:resize(...)
+    ui.fUpdateEndowment()
+    return Resize(GUI.Endowment, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -10040,6 +10002,7 @@ end</script>
   -- Wrapping function
   local Minimize = GUI.Group.minimize
   local Restore = GUI.Group.restore
+  local Resize = GUI.Group.resize
   --
   function GUI.Group:minimize(...)
     GUI.Group.Main:hide()
@@ -10049,6 +10012,11 @@ end</script>
   function GUI.Group:restore(...)
     GUI.Group.Main:show()
     return Restore(GUI.Group)
+  end
+  --
+  function GUI.Group:resize(...)
+    ui.fUpdateGroup()
+    return Resize(GUI.Group, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -10460,30 +10428,11 @@ end</script>
   ]])
   GUI.Player.Main.Mana.front:echo("Mana")
   --
-  -- Stamina (used for moviment)
-  GUI.Player.Main.Stamina = Geyser.Gauge:new2({
-    name = "GUI.Player.Main.Stamina",
-    x = 2,
-    y = "60%-2",
-    width = -2,
-    height = "20%-3",
-  },GUI.Player.Main)
-  GUI.Player.Main.Stamina:setValue(0, 100)
-  --
-  GUI.Player.Main.Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(0, 250, 0, .2);
-  ]])
-  --
-  GUI.Player.Main.Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
-  ]])
-  GUI.Player.Main.Stamina.front:echo("Movimento")
-  --
   -- Power (used for energy)
   GUI.Player.Main.Power = Geyser.Gauge:new2({
     name = "GUI.Player.Power",
     x = 2,
-    y = "80%-4",
+    y = "60%-2",
     width = -2,
     height = "20%-3",
   },GUI.Player.Main)
@@ -10497,6 +10446,25 @@ end</script>
     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ffa500, stop: 0.65 #e86100, stop: 1 #ff8c00);
   ]])
   GUI.Player.Main.Power.front:echo("Energia")
+  --
+  -- Stamina (used for moviment)
+  GUI.Player.Main.Stamina = Geyser.Gauge:new2({
+    name = "GUI.Player.Main.Stamina",
+    x = 2,
+    y = "80%-4",
+    width = -2,
+    height = "20%-3",
+  },GUI.Player.Main)
+  GUI.Player.Main.Stamina:setValue(0, 100)
+  --
+  GUI.Player.Main.Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
+    background-color: rgba(0, 250, 0, .2);
+  ]])
+  --
+  GUI.Player.Main.Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
+  ]])
+  GUI.Player.Main.Stamina.front:echo("Movimento")
   --
   -- Experience 
   GUI.Player.Main.Experience = Geyser.Gauge:new2({
@@ -10682,6 +10650,7 @@ end</script>
   -- Wrapping function
   local Minimize = GUI.TargetButtons.minimize
   local Restore = GUI.TargetButtons.restore
+  local Resize = GUI.TargetButtons.resize
   --
   function GUI.TargetButtons:minimize(...)
     GUI.TargetButtons.Main:hide()
@@ -10691,6 +10660,11 @@ end</script>
   function GUI.TargetButtons:restore(...)
     GUI.TargetButtons.Main:show()
     return Restore(GUI.TargetButtons)
+  end
+  --
+  function GUI.TargetButtons:resize(...)
+    ui.fUpdateTargetButtons()
+    return Resize(GUI.TargetButtons, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -11451,19 +11425,13 @@ ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] setMergeTables()")
 setMergeTables("gmcp")
 --
 -- Events
--- Start to resizing containers
-if (ui.handlers.fRepositioning) then
-  killAnonymousEventHandler(ui.handlers.fRepositioning)
-  ui.handlers.fRepositioning = nil
-end
-ui.handlers.fRepositioning = registerAnonymousEventHandler("AdjustableContainerReposition", ui.fRepositioning)
 --
--- Finish to resizing containers
-if (ui.handlers.fFinishedRepositioning) then
-  killAnonymousEventHandler(ui.handlers.fFinishedRepositioning)
-  ui.handlers.fFinishedRepositioning = nil
+-- Resize main window
+if (ui.handlers.fWindowResize) then
+  killAnonymousEventHandler(ui.handlers.fWindowResize)
+  ui.handlers.fWindowResize = nil
 end
-ui.handlers.fFinishedRepositioning = registerAnonymousEventHandler("AdjustableContainerRepositionFinish", ui.fFinishedRepositioning)
+ui.handlers.fWindowResize = registerAnonymousEventHandler("sysWindowResizeEvent", ui.fWindowResize)
 --
 -- gmcp.char
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Register events")
