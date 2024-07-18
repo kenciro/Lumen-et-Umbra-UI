@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>326</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>380</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4071,7 +4071,7 @@ if (attack) then
       elseif (ui.affects["lame psioniche"]) then
         expandAlias("as "..firstMob, false)
       elseif (ui.affects["mano di energia"]) then
-        expandAlias("schia "..firstMob, false)
+        expandAlias("bash "..firstMob, false)
       else
         expandAlias("cr "..firstMob, false)
       end 
@@ -4110,40 +4110,63 @@ r(f())</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Explorer</name>
-				<script>local dirTo = ""
-local dirFrom = "";
+				<script>local steps = {
+ "d", "e", "n", "w", "s", "u", 
+}
 --
-if (ui.path[ui.idxPath]) then
-  dirFrom = ui.dirReverse[ui.path[ui.idxPath]]
+local function nextStep(origin)
+  for s, step in ipairs(steps) do
+    if step == origin then
+      local cnt = #steps
+      local idx = s
+      --
+      while (cnt &gt; 0) do
+        if (idx &gt;= #steps) then
+          idx = 1
+        else
+          idx = idx + 1
+        end
+        --
+        if (table.contains(ui.room.exits, ui.validExit[steps[idx]].long)) then
+          return idx
+        end
+        cnt = cnt - 1
+      end
+    end
+  end
+  --
+  return 1
 end
 --
-if (dirFrom == "e") then
-  if (table.contains(ui.exits, "s")) then dirTo = "s"
-  elseif (table.contains(ui.exits, "w")) then dirTo = "w"
-  elseif (table.contains(ui.exits, "n")) then dirTo = "n"
-  else dirTo = "e"
-  end
-elseif (dirFrom == "s") then
-  if (table.contains(ui.exits, "w")) then dirTo = "w"
-  elseif (table.contains(ui.exits, "n")) then dirTo = "n"
-  elseif (table.contains(ui.exits, "e")) then dirTo = "e"
-  else dirTo = "s"
-  end
-elseif (dirFrom == "w") then
-  if (table.contains(ui.exits, "n")) then dirTo = "n"
-  elseif (table.contains(ui.exits, "e")) then dirTo = "e"
-  elseif (table.contains(ui.exits, "s")) then dirTo = "s"
-  else dirTo = "w"
-  end
-else
-  if (table.contains(ui.exits, "e")) then dirTo = "e"
-  elseif (table.contains(ui.exits, "s")) then dirTo = "s"
-  elseif (table.contains(ui.exits, "w")) then dirTo = "w"
-  else dirTo = "n"
-  end
-end
+expandAlias(steps[nextStep(ui.origins[1])])
+
+--if (table.contains(ui.origins, "e")) then
+--  if (table.contains(ui.room.exits, "south")) then dirTo = "s"
+--  elseif (table.contains(ui.room.exits, "west")) then dirTo = "w"
+--  elseif (table.contains(ui.room.exits, "north")) then dirTo = "n"
+--  else dirTo = "e"
+--  end
+--elseif (table.contains(ui.origins, "s")) then
+--  if (table.contains(ui.room.exits, "west")) then dirTo = "w"
+--  elseif (table.contains(ui.room.exits, "north")) then dirTo = "n"
+--  elseif (table.contains(ui.room.exits, "east")) then dirTo = "e"
+--  else dirTo = "s"
+--  end
+--elseif (table.contains(ui.origins, "w")) then
+--  if (table.contains(ui.room.exits, "north")) then dirTo = "n"
+--  elseif (table.contains(ui.room.exits, "east")) then dirTo = "e"
+--  elseif (table.contains(ui.room.exits, "south")) then dirTo = "s"
+--  else dirTo = "w"
+--  end
+--else
+--  if (table.contains(ui.room.exits, "east")) then dirTo = "e"
+--  elseif (table.contains(ui.room.exits, "south")) then dirTo = "s"
+--  elseif (table.contains(ui.room.exits, "west")) then dirTo = "w"
+--  else dirTo = "n"
+--  end
+--end
 -- echo("Arrivi da "..ui.dirToken[dirFrom].." e vai verso "..ui.dirToken[dirTo]..".")
-expandAlias(dirTo)</script>
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^ee$</regex>
@@ -4168,8 +4191,9 @@ end</script>
 				<regex>^(\d+)\*\s*(.*)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>Multi Loot</name>
-				<script>local cntCad = 0;
+				<name>Multi loot</name>
+				<script>local obj = matches[2] or "all"
+local cntCad = 0;
 local cntTes = 0;
 --
 for _, object in pairs(ui.room.objects) do
@@ -4189,7 +4213,7 @@ for _, object in pairs(ui.room.objects) do
   --
   for i=1, tot do
     cnt = cnt + 1;
-    send("get all "..cnt.."."..lot)
+    send("get "..obj.." "..cnt.."."..lot)
   end
   --
   if (lot == "cadavere")  then
@@ -4204,7 +4228,7 @@ if  (cntCad == 0) and (cntTes == 0) then
 end</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^ll$</regex>
+				<regex>^(?i)(?:ll)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>mygo</name>
@@ -7185,9 +7209,9 @@ local function make_room(room, prev)
     -- Shift = 0 0 0
     if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
       --
-      -- Aggiungo direzione di provenienza = ui.room.origins
-      if (#ui.room.origins &gt; 0) then
-        for _, dir in pairs(ui.room.origins) do
+      -- Aggiungo direzione di provenienza = ui.origins
+      if (#ui.origins &gt; 0) then
+        for _, dir in pairs(ui.origins) do
           if (exitValid[dir]) then
             shift[1] = shift[1] + move_vectors[dir][1]
             shift[2] = shift[2] + move_vectors[dir][2]
@@ -7606,7 +7630,7 @@ function ui.fUpdateMapper()
     end
     --
     -- Update exit to prew
-    for _, dir in pairs(ui.room.origins) do
+    for _, dir in pairs(ui.origins or {}) do
       if (ui.validExit[dir]) then
         setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
       end
@@ -8454,7 +8478,7 @@ function ui.fGetToken(exits, exit)
     if (table.contains(exits, exit)) then
       --
       -- From direction
-      if (table.contains(ui.room.origins, ui.validExit[exit].short)) then
+      if (table.contains(ui.origins, ui.validExit[exit].short)) then
         token = ui.validExit[exit].color..ui.validExit[exit].tokenFrom.."&lt;r&gt;"
       --
       -- Normal exit
@@ -8496,6 +8520,8 @@ function ui.fUpdateRoom()
   --
   if (gmcp) and (gmcp.room) and (gmcp.room.info) then
     local trackText = "&lt;red&gt;[&lt;orange&gt;T&lt;red&gt;]&lt;r&gt;"
+    --
+    clearWindow("GUI.Room.Main.Console")
     --  
     ui.previous.room = {}
     ui.previous.room = table.deepcopy(ui.room) or {}
@@ -8513,7 +8539,6 @@ function ui.fUpdateRoom()
       exits = {},
       otherExits = {},  
       objects = {},
-      origins = {},
       players = {},
     }
     --
@@ -8526,19 +8551,22 @@ function ui.fUpdateRoom()
     --
     ui.player.roomPos = ui.player.roomPos or 5
     --
-    clearWindow("GUI.Room.Main.Console")
-    --
-    -- origins from previous exits
-    for exit, id in pairs(ui.previous.room.exits) do
-      if (ui.room.id == id) then
-        table.insert(ui.room.origins, ui.validExit[exit].reverse)
+    -- Origins
+    if (ui.room.id ~= ui.previous.room.id) then
+      ui.origins = {}
+      --
+      -- origins from previous exits
+      for exit, id in pairs(ui.previous.room.exits) do
+        if (ui.room.id == id) then
+          table.insert(ui.origins, ui.validExit[exit].reverse)
+        end
       end
-    end
-    --
-    -- origins from previous special exits
-    for exit, id in pairs(ui.previous.room.otherExits) do
-      if (ui.room.id == id) then
-        table.insert(ui.room.origins, exit)
+      --
+      -- origins from previous special exits
+      for exit, id in pairs(ui.previous.room.otherExits) do
+        if (ui.room.id == id) then
+          table.insert(ui.origins, exit)
+        end
       end
     end
     --
