@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>308</borderLeftWidth>
-			<borderRightWidth>380</borderRightWidth>
+			<borderLeftWidth>326</borderLeftWidth>
+			<borderRightWidth>509</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -5248,6 +5248,83 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
+					<name>Cooldowns</name>
+					<packageName></packageName>
+					<script>--
+function ui.fUpdateCooldowns()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateCooldowns()")
+  --
+  local distance = 2; 
+  local min_w = 100;
+  local max_w = 150;
+  local w_h = GUI.Cooldowns.Main:get_height() - distance;
+  local w_w = GUI.Cooldowns.Main:get_width() -  distance;
+  local h = distance + 28;
+  local w = distance + min_w;
+  local x = 0
+  local y = 0
+  local r = 1
+  local c = 1
+  local tot_r, tot_c, total
+  local orderTable = {}
+  --
+  ui.cooldowns = {}
+  display(gmcp.char.cooldowns)
+  --
+  -- Simulation (for debug)
+  if (ui.enDebug &gt;= 2) then
+    display(gmcp.char.cooldowns)
+
+  elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
+    --
+    -- GMCP
+    for cooldown in pairs(gmcp.char.cooldowns) do
+      local name = gmcp.char.cooldowns[cooldown].name 
+      --
+      ui.cooldowns[name] = {}
+      ui.cooldowns[name].duration = gmcp.char.cooldowns[cooldown].duration
+      --
+      orderTable[#orderTable+1] = name
+    end
+  end
+  --
+  -- Order Affects
+  table.sort(orderTable, function (cooldown1, cooldown2)
+                           return ui.cooldowns[cooldown1].duration &lt; ui.cooldowns[cooldown2].duration
+                         end )
+  --
+  --
+  total = math.min(#orderTable, 10);
+  tot_r = math.max(1, math.min(math.floor(w_h / h), total));
+  tot_c = math.max(1, math.min(math.floor(w_w / w), total));
+  --
+  -- Recalc w
+  w = math.min(w_w / tot_c, distance + max_w)
+  --
+  for i = 1, 10 do
+    --
+    -- Show if inside box
+    if (r &gt; tot_r) or (i &gt; total) then
+      GUI.Cooldowns.Main["Item"..i]:hide();
+    else
+      local cooldown = orderTable[i]
+      --
+      GUI.Cooldowns.Main["Item"..i].Text:cecho("&lt;white&gt;"..cooldown.." "..ui.cooldowns[cooldown].duration)
+      GUI.Cooldowns.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+      GUI.Cooldowns.Main["Item"..i]:resize(w - distance, h - distance)
+      GUI.Cooldowns.Main["Item"..i]:show();
+      --
+      c = c + 1
+      if (c &gt; tot_c) then
+        c = 1;
+        r = r + 1
+      end
+    end
+  end
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
 					<name>Colors</name>
 					<packageName></packageName>
 					<script>--
@@ -6431,11 +6508,12 @@ function ui.fUpdateGMCP(event, ...)
       end
       --
       -- Cooldowns
-      if (gmcp.char.cooldowns) and (not table.is_empty(gmcp.char.cooldowns)) then
+      if (gmcp.char.cooldowns) then
         ui.previous.gmcp.char.cooldowns = ui.previous.gmcp.char.cooldowns or {}
         --
         if (not ui.fTableCompare(gmcp.char.cooldowns, ui.previous.gmcp.char.cooldowns)) then
-          display(gmcp.char.cooldowns)
+          ui.fUpdateCooldowns()
+          ui.previous.gmcp.char.cooldowns = {}
           ui.previous.gmcp.char.cooldowns = table.deepcopy(gmcp.char.cooldowns);
         end
       end
@@ -7935,10 +8013,11 @@ function ui.fGetPreDefinitedParameters()
         split = false,    
         fontSize = 8,
       },
+      cooldowns = {
+        transparent = false,
+      },
       endowment = {
         transparent = false,
-        type = "equip",
-        fontSize = 8,
       },
       group = {
         transparent = false,
@@ -9632,6 +9711,100 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
+					<name>Cooldowns Widget</name>
+					<packageName></packageName>
+					<script>function ui.fInitCooldownsWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fInitCooldownsWidget()")
+  --
+  -- Equip
+  GUI.Cooldowns = Adjustable.Container:new2({
+    name = "GUI.Cooldowns",
+    x = 300,
+    y = 0,
+    width = 500,
+    height = 100,
+    titleText ="Cooldowns",
+    titleTxtColor = "orange",
+    buttonsize = 12,
+    buttonFontSize = 5,
+    adjLabelstyle = GUI.CSS.Widget, 
+    buttonstyle = GUI.CSS.WidgetButton,
+  })
+  GUI.Cooldowns:changeMenuStyle("dark")
+  --
+  -- Add Border and Main
+  ui.fAddMain(GUI.Cooldowns, GUI.CSS.Border, GUI.CSS.Main)
+  --
+  -- Set transparent
+  ui.fSetBorderMode(GUI.Cooldowns, ui.parameters.widgets.cooldowns.transparent)
+  --
+  -- Button "Hide"
+  GUI.Cooldowns.Button_hide = Geyser.Label:new2({
+    name = "GUI.Cooldowns.Button_hide",
+    x = -46, 
+    y = 4,
+    width = 12,
+    height = 12,
+  },GUI.Cooldowns)
+  GUI.Cooldowns.Button_hide:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Cooldowns.Button_hide:setFontSize(5)
+  GUI.Cooldowns.Button_hide:echo(ui.transparentID);
+  GUI.Cooldowns.Button_hide:setClickCallback(function() 
+                                            local mode = ui.parameters.widgets.cooldowns.transparent or false;
+                                            ui.fSetBorderMode(GUI.Cooldowns, not mode)
+                                            ui.parameters.widgets.cooldowns.transparent = not mode;
+                                            ui.fSaveFileParameters()
+                                          end)
+  GUI.Cooldowns.Button_hide:setToolTip("Transparent", 10)
+  --
+  -- 10x Slot
+  for i=1, 10 do
+    --
+    GUI.Cooldowns.Main["Item"..i] = Geyser.Label:new2({
+      name = "GUI.Cooldowns.Main.Item"..i,
+      width = 100,
+      height = 26,
+    }, GUI.Cooldowns.Main)
+    GUI.Cooldowns.Main["Item"..i]:setStyleSheet(GUI.CSS.Item);
+    --
+    -- Text
+    GUI.Cooldowns.Main["Item"..i].Text = Geyser.Label:new2({
+      name = "GUI.Cooldowns.Main.Item"..i..".Text",
+      x = 32,
+      y = 2,
+      width = -32,
+      height = -2,
+    }, GUI.Cooldowns.Main["Item"..i])
+    GUI.Cooldowns.Main["Item"..i].Text:enableClickthrough() -- for tooltip
+    GUI.Cooldowns.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
+    GUI.Cooldowns.Main["Item"..i].Text:setFontSize(7);
+    GUI.Cooldowns.Main["Item"..i].Text:setFgColor("black")
+    --
+  end
+  --
+  -- Wrapping function
+  local Minimize = GUI.Cooldowns.minimize
+  local Restore = GUI.Cooldowns.restore
+  local Resize = GUI.Cooldowns.resize
+  --
+  function GUI.Cooldowns:minimize(...)
+    GUI.Cooldowns.Main:hide()
+    return Minimize(GUI.Cooldowns)
+  end
+  --
+  function GUI.Cooldowns:restore(...)
+    GUI.Cooldowns.Main:show()
+    return Restore(GUI.Cooldowns)
+  end
+  --
+  function GUI.Cooldowns:resize(...)
+    ui.fUpdateCooldowns()
+    return Resize(GUI.Cooldowns, ...)
+  end
+end</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
 					<name>Endowment Widget</name>
 					<packageName></packageName>
 					<script>function ui.fInitEndowmentWidget()
@@ -9683,7 +9856,7 @@ end</script>
   for i=1, 25 do
     --
     GUI.Endowment.Main["Item"..i] = Geyser.Label:new2({
-      name = "GUI.Endowment.Main.Slot"..i,
+      name = "GUI.Endowment.Main.Item"..i,
       width = 100,
       height = 26,
     }, GUI.Endowment.Main)
@@ -11316,7 +11489,7 @@ ui.fUpdateAllTargetButton()
 ui.fUpdateOpponent()
 ui.fUpdateGroup()
 --
--- Private (Used as Log from ui.fLog())
+-- Chat
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Chat")
 ui.fInitChatWidget()
 ui.fUpdateChat()
@@ -11344,6 +11517,11 @@ ui.fInitMapper()
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Room")
 ui.fInitRoomWidget()
 ui.fUpdateRoom()
+--
+-- Cooldowns
+ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Cooldowns")
+ui.fInitCooldownsWidget()
+ui.fUpdateCooldowns()
 --
 -- Endowment
 ui.fDebug("[&lt;white&gt;init&lt;reset&gt;] Endowment")
