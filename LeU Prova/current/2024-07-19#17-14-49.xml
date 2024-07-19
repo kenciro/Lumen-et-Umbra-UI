@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>326</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>379</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2768,6 +2768,7 @@ ui.fSaveFileVariables()</script>
   ["affects"]       = GUI.Affects,
   ["buttons"]       = GUI.AliasButtons,
   ["chat"]          = GUI.Chat,
+  ["cooldowns"]     = GUI.Cooldowns,
   ["endowment"]     = GUI.Endowment,
   ["group"]         = GUI.Group,
   ["help"]          = GUI.Help,
@@ -5259,7 +5260,7 @@ function ui.fUpdateCooldowns()
   local max_w = 150;
   local w_h = GUI.Cooldowns.Main:get_height() - distance;
   local w_w = GUI.Cooldowns.Main:get_width() -  distance;
-  local h = distance + 28;
+  local h = distance + 20;
   local w = distance + min_w;
   local x = 0
   local y = 0
@@ -5268,24 +5269,28 @@ function ui.fUpdateCooldowns()
   local tot_r, tot_c, total
   local orderTable = {}
   --
-  ui.cooldowns = {}
-  display(gmcp.char.cooldowns)
-  --
-  -- Simulation (for debug)
-  if (ui.enDebug &gt;= 2) then
-    display(gmcp.char.cooldowns)
-
-  elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
+  -- GMCP
+  if (gmcp) and (gmcp.char) and (gmcp.char.cooldowns) then
     --
-    -- GMCP
+    ui.previous.cooldowns = table.deepcopy(ui.cooldowns or {});
+    ui.cooldowns = {}
+    --
     for cooldown in pairs(gmcp.char.cooldowns) do
-      local name = gmcp.char.cooldowns[cooldown].name 
+      local name = string.gsub(gmcp.char.cooldowns[cooldown].name, "(%a)([%w_']*)", ui.fTitleCase)
       --
       ui.cooldowns[name] = {}
-      ui.cooldowns[name].duration = gmcp.char.cooldowns[cooldown].duration
+      ui.cooldowns[name].duration = tonumber(gmcp.char.cooldowns[cooldown].duration)
+      if (ui.previous.cooldowns[name] == nil) then
+        ui.cooldowns[name].maxDuration = ui.cooldowns[name].duration
+      else
+        ui.cooldowns[name].maxDuration = ui.previous.cooldowns[name].maxDuration
+      end
       --
       orderTable[#orderTable+1] = name
     end
+  else
+    --
+    ui.cooldowns = ui.cooldowns or {}
   end
   --
   -- Order Affects
@@ -5309,10 +5314,13 @@ function ui.fUpdateCooldowns()
     else
       local cooldown = orderTable[i]
       --
-      GUI.Cooldowns.Main["Item"..i].Text:cecho("&lt;white&gt;"..cooldown.." "..ui.cooldowns[cooldown].duration)
+      --GUI.Cooldowns.Main["Item"..i].Text:cecho("&lt;white&gt;"..cooldown.." "..ui.cooldowns[cooldown].duration)
+      GUI.Cooldowns.Main["Item"..i].front:echo(cooldown)
+      GUI.Cooldowns.Main["Item"..i]:setValue(ui.cooldowns[cooldown].duration, ui.cooldowns[cooldown].maxDuration,"&lt;p align=right&gt;"..ui.cooldowns[cooldown].duration.."/"..ui.cooldowns[cooldown].maxDuration)
+      --
       GUI.Cooldowns.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
       GUI.Cooldowns.Main["Item"..i]:resize(w - distance, h - distance)
-      GUI.Cooldowns.Main["Item"..i]:show();
+      GUI.Cooldowns.Main["Item"..i]:show()
       --
       c = c + 1
       if (c &gt; tot_c) then
@@ -6384,6 +6392,8 @@ end
 --
 function ui.fWindowResize(eventName, containerName)
   ui.fUpdateAffects()
+  ui.fUpdateAliasButton()
+  ui.fUpdateCooldowns()
   ui.fUpdateEndowment()
   ui.fUpdateGroup()
   ui.fUpdateTargetButtons()
@@ -7636,6 +7646,172 @@ function doSpeedWalk()
   end
 end
 --
+--
+function ui.fExpandArea(areaName)
+  local areas = getAreaTable()
+  local areaId = areas[areaName] 
+  --
+  if (areaId) then
+    local rooms = getAreaRooms(areaId)
+    local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
+    --
+    local x = (max_x - min_x)
+    --
+    for i = max_x, min_x, -1 do
+      local y = (max_y - min_y)
+      for j = max_y, min_y, -1 do
+        roomsByPosition = getRoomsByPosition(areaId, i, j, 0)
+        for _, roomId in pairs(roomsByPosition) do
+          setRoomCoordinates(roomId, x*2, y*2, 0)
+        end
+        y = y - 1
+      end
+      x = x - 1
+    end
+    --
+    ui.fDebug('Area expanded ('..areaName..')')
+  else
+    ui.fDebug('Area non trovata ('..areaName..')')
+  end
+end
+--
+function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
+  --
+  -- OverLap
+  local overlap = not table.is_empty(getRoomsByPosition(areaId, x, y, 0))
+  -- Se la posizione è già occupata da un altra stanza
+  if (overlap) then
+    ui.fDebug("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
+    -- Se la room ha una direzione di entrata valida...
+    if (entry ~= nil) and (table.contains(entryTab, entry)) then
+      -- ... sposto la mappa già disegnata nel lato opposto al lato di entrata di una posizione per creare lo spazio 
+      for rd_id in pairs(roomDrawed) do
+        local rd_x, rd_y, rd_z = getRoomCoordinates(rd_id)
+        --
+        if (entry == "north") and (rd_y &gt;= y) then
+          setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
+        elseif (entry == "south") and (rd_y &gt;= y) then -- ok
+          setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
+        elseif (entry == "west") and (rd_x &gt;= x) then -- ok
+          setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
+        elseif (entry == "east") and (rd_x &gt;= x) then
+          setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
+        end
+      end
+      --
+      ui.fDebug("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
+    else
+      -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
+      local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
+      x = max_x + 1
+      y = max_y + 1
+      ui.fDebug("&lt;yellow&gt;Moved room to S-E")
+    end
+  end
+  --
+  return x, y
+end
+--
+function ui.fDrawRoom(areaId, roomId, x, y, entry, maxLevel)
+  if (maxLevel ~= nil) then
+    if (level &lt; maxLevel) then    
+      ui.fDebug(ui.fAddSpace(""..(level+1)..") ", level+4, 'l'));
+    else
+      return
+    end
+  end
+  --
+  -- Se la stanza non è già stata disegnata...
+  if (roomDrawed[roomId] == nil) then
+    local roomAreaId = getRoomArea(roomId)
+    --
+    if (roomAreaId == areaId) then
+      x, y = ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
+      --
+      setRoomCoordinates(roomId, x, y, 0)
+      roomDrawed[roomId] = true;
+      level = level + 1;
+      ui.fDebug("&lt;green&gt;Room "..roomId.." (from &lt;red&gt;"..(entry or "nil").."&lt;green&gt;) drowed in pos(x:"..x..", y:"..y..")");
+      --
+      -- Disegno le stanza adiacenti alle uscite
+      local exits = getRoomExits(roomId)
+      if (exits["east"]) and (exits["east"] ~= roomId) then
+        ui.fDrawRoom(areaId, exits["east"], x+1, y, "west", maxLevel)
+      end
+      --
+      if (exits["west"]) and (exits["west"] ~= roomId) then
+        ui.fDrawRoom(areaId, exits["west"], x-1, y, "east", maxLevel)
+      end
+      --
+      if (exits["north"]) and (exits["north"] ~= roomId) then
+        ui.fDrawRoom(areaId, exits["north"], x, y+1, "south", maxLevel)
+      end
+      --
+      if (exits["south"]) and (exits["south"] ~= roomId) then
+        ui.fDrawRoom(areaId, exits["south"], x, y-1, "north", maxLevel)
+      end
+      --
+      -- Disegno le stanza adiacenti alle entrate alla room
+      local entrances = getAllRoomEntrances(roomId)
+      for _,entranceId in pairs(entrances) do
+        if (roomDrawed[entranceId] == nil) then
+          local entranceAreaId = getRoomArea(entranceId)
+          --
+          if (entranceAreaId == areaId) then
+            local entranceExits = getRoomExits(entranceId)
+            --
+            if (entranceExits["east"]) and (entranceExits["east"] == roomId) then
+              ui.fDrawRoom(areaId, entranceId, x-1, y, "east", maxLevel)
+            end
+            --
+            if (entranceExits["west"]) and (entranceExits["west"] == roomId) then
+              ui.fDrawRoom(areaId, entranceId, x+1, y, "west", maxLevel)
+            end
+            --
+            if (entranceExits["north"]) and (entranceExits["north"] == roomId) then
+              ui.fDrawRoom(areaId, entranceId, x, y-1, "north", maxLevel)
+            end
+            --
+            if (entranceExits["south"]) and (entranceExits["south"] == roomId) then
+              ui.fDrawRoom(areaId, entranceId, x, y+1, "south", maxLevel)
+            end
+          end
+        end
+      end   
+    end
+  end
+end
+--
+function ui.fRedrawArea(areaName, expand, maxLevel)
+  local areas = getAreaTable()
+  local areaId = areas[areaName] 
+  --
+  if (areaId) then
+    local rooms = getAreaRooms(areaId)
+    --
+    -- Sposto tutte le stanze sul livello 1
+    for _, roomId in pairs(rooms) do
+      local x, y, z = getRoomCoordinates(roomId)
+      setRoomCoordinates(roomId, x, y, 1)
+    end
+    --
+    -- Riposiziono maxLevel room sul livello 0
+    level = 0
+    roomDrawed = {}
+    for _, roomId in pairs(rooms) do
+      ui.fDrawRoom(areaId, roomId, 0, 0, nil, maxLevel)
+    end
+    --
+    if (expand) then
+      ui.fExpandArea(areaName)
+    end
+    --
+    ui.fDebug('Area redrawed ('..areaName..')')
+  else
+    ui.fDebug('Area non trovata ('..areaName..')')
+  end
+end
+--
 function ui.fUpdateMapper()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] ui.fUpdateMapper(..)")
@@ -7741,7 +7917,7 @@ function ui.fUpdateMapper()
        ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
       --
       -- redraw area
-      redrawArea(ui.room.area, true)
+      ui.fRedrawArea(ui.room.area, true)
     end
     --
     centerview(ui.room.id)
@@ -8760,13 +8936,13 @@ function ui.fUpdateRoom()
       --
       -- Line 1
       GUI.Room.Main.Console:cecho("        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   ")
-      GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look")]], "Guarda", true)
+      GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look")]], "Guarda", true)
       GUI.Room.Main.Console:cecho((exitsAsString[1] or "").."\n")    
       --
       -- Line 2
       GUI.Room.Main.Console:cecho("&lt;r&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         ")
       if (exitsAsString[2]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[2]..[[")]], "Guarda a "..exitsCommand[2], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[2]..[[")]], "Guarda a "..exitsCommand[2], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[2], [[expandAlias("]]..exitsCommand[2]..[[")]], "Vai a "..exitsCommand[2], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8774,7 +8950,7 @@ function ui.fUpdateRoom()
       -- Line 3
       GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(1).."│         ")
       if (exitsAsString[3]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[3], [[expandAlias("]]..exitsCommand[3]..[[")]], "Vai a "..exitsCommand[3], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8782,7 +8958,7 @@ function ui.fUpdateRoom()
       -- Line 4
       GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
       if (exitsAsString[4]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[4], [[expandAlias("]]..exitsCommand[4]..[[")]], "Vai a "..exitsCommand[4], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8790,7 +8966,7 @@ function ui.fUpdateRoom()
       -- Line 5
       GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(3).."│         ")
       if (exitsAsString[5]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[5], [[expandAlias("]]..exitsCommand[5]..[[")]], "Vai a "..exitsCommand[5], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8798,7 +8974,7 @@ function ui.fUpdateRoom()
       -- Line 6
       GUI.Room.Main.Console:cecho("&lt;r&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         ")
       if (exitsAsString[6]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[6]..[[")]], "Guarda a "..exitsCommand[6], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[6]..[[")]], "Guarda a "..exitsCommand[6], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[6], [[expandAlias("]]..exitsCommand[6]..[[")]], "Vai a "..exitsCommand[6], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8806,7 +8982,7 @@ function ui.fUpdateRoom()
       -- Line 7
       GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           ")
       if (exitsAsString[7]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("look ]]..exitsCommand[7]..[[")]], "Guarda a "..exitsCommand[7], true)
+        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[7]..[[")]], "Guarda a "..exitsCommand[7], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[7], [[expandAlias("]]..exitsCommand[7]..[[")]], "Vai a "..exitsCommand[7], true)
       end
       GUI.Room.Main.Console:cecho("\n\n")
@@ -9577,6 +9753,7 @@ end</script>
   -- Wrapping function
   local Minimize = GUI.AliasButtons.minimize
   local Restore = GUI.AliasButtons.restore
+  local Resize = GUI.AliasButtons.resize
   --
   function GUI.AliasButtons:minimize(...)
     GUI.AliasButtons.Main:hide()
@@ -9586,6 +9763,11 @@ end</script>
   function GUI.AliasButtons:restore(...)
     GUI.AliasButtons.Main:show()
     return Restore(GUI.AliasButtons)
+  end
+  --
+  function GUI.AliasButtons:resize(...)
+    ui.fUpdateAliasButton()
+    return Resize(GUI.AliasButtons, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -9759,27 +9941,25 @@ end</script>
   --
   -- 10x Slot
   for i=1, 10 do
-    --
-    GUI.Cooldowns.Main["Item"..i] = Geyser.Label:new2({
+    GUI.Cooldowns.Main["Item"..i] = Geyser.Gauge:new2({
       name = "GUI.Cooldowns.Main.Item"..i,
+      x = 5,
+      y = 5,
       width = 100,
-      height = 26,
-    }, GUI.Cooldowns.Main)
-    GUI.Cooldowns.Main["Item"..i]:setStyleSheet(GUI.CSS.Item);
+      height = 10,
+    },GUI.Cooldowns.Main)
+    GUI.Player.Main.Health:setValue(0, 100)
     --
-    -- Text
-    GUI.Cooldowns.Main["Item"..i].Text = Geyser.Label:new2({
-      name = "GUI.Cooldowns.Main.Item"..i..".Text",
-      x = 32,
-      y = 2,
-      width = -32,
-      height = -2,
-    }, GUI.Cooldowns.Main["Item"..i])
-    GUI.Cooldowns.Main["Item"..i].Text:enableClickthrough() -- for tooltip
-    GUI.Cooldowns.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
-    GUI.Cooldowns.Main["Item"..i].Text:setFontSize(7);
-    GUI.Cooldowns.Main["Item"..i].Text:setFgColor("black")
+    GUI.Cooldowns.Main["Item"..i].back:setStyleSheet(GUI.CSS.GaugeBack..[[
+      background-color: rgba(150, 0, 0, 0.5);
+    ]])
     --
+    GUI.Cooldowns.Main["Item"..i].front:setStyleSheet(GUI.CSS.GaugeFront..[[
+      background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
+    ]])
+    GUI.Cooldowns.Main["Item"..i]:echo("Item"..i)
+
+    GUI.Cooldowns.Main["Item"..i]:hide()
   end
   --
   -- Wrapping function
@@ -10974,6 +11154,9 @@ ui.speedwalk = ui.speedwalk or {
 -- Affects
 ui.affects = ui.affects or {}
 --
+-- Cooldowns
+ui.cooldowns = ui.cooldowns or {}
+--
 -- Equipment
 ui.equipment = ui.equipment or {}
 --
@@ -11427,7 +11610,7 @@ E' possibile ripristinare i widget dell'UI che sono stati minimizzati o chiusi.
 &lt;white&gt;Utilizzo:&lt;reset&gt;
   &lt;command&gt;uiw[idget] &lt;nome_widget&gt;&lt;/command&gt;
 
-I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;exec uiwidget all&gt;all&lt;/exec&gt; (per tutti contemporaneamente), &lt;exec uiwidget affects&gt;affects&lt;/exec&gt;, &lt;exec uiwidget buttons&gt;buttons&lt;/exec&gt;, &lt;exec uiwidget chat&gt;chat&lt;/exec&gt;, &lt;exec uiwidget endowment&gt;endowment&lt;/exec&gt;, &lt;exec uiwidget group&gt;group&lt;/exec&gt;, &lt;exec uiwidget help&gt;help&lt;/exec&gt;, &lt;exec uiwidget mapper&gt;mapper&lt;/exec&gt;, &lt;exec uiwidget opponent&gt;opponent&lt;/exec&gt;, &lt;exec uiwidget player&gt;player&lt;/exec&gt;, &lt;exec uiwidget room&gt;room&lt;/exec&gt; o &lt;exec uiwidget target&gt;target&lt;/exec&gt; per i relativi widgets.
+I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;exec uiwidget all&gt;all&lt;/exec&gt; (per tutti contemporaneamente), &lt;exec uiwidget affects&gt;affects&lt;/exec&gt;, &lt;exec uiwidget buttons&gt;buttons&lt;/exec&gt;, &lt;exec uiwidget chat&gt;chat&lt;/exec&gt;, &lt;exec uiwidget cooldowns&gt;cooldowns&lt;/exec&gt;, &lt;exec uiwidget endowment&gt;endowment&lt;/exec&gt;, &lt;exec uiwidget group&gt;group&lt;/exec&gt;, &lt;exec uiwidget help&gt;help&lt;/exec&gt;, &lt;exec uiwidget mapper&gt;mapper&lt;/exec&gt;, &lt;exec uiwidget opponent&gt;opponent&lt;/exec&gt;, &lt;exec uiwidget player&gt;player&lt;/exec&gt;, &lt;exec uiwidget room&gt;room&lt;/exec&gt; o &lt;exec uiwidget target&gt;target&lt;/exec&gt; per i relativi widgets.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -12280,11 +12463,235 @@ end</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
-		</ScriptGroup>
-		<Script isActive="no" isFolder="no">
-			<name>Rosa dei venti</name>
-			<packageName></packageName>
-			<script>local CSS_Pulsante = [[
+			<Script isActive="yes" isFolder="no">
+				<name>Mapper utility</name>
+				<packageName></packageName>
+				<script>--
+function onMapMarkSelectedRooms(event, markRoomType)
+  local selectedRooms = getMapSelection()["rooms"]
+  local centerRoom = getMapSelection()["center"]
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] onMapMarkSelectedRooms("..(event or "nil")..", "..(markRoomType or "nil")..")")
+  --
+  if (selectedRooms ~= nil) then
+    for i, val in ipairs(selectedRooms) do
+      --
+      -- DT
+      if markRoomType == "markRoomsAsDeathTrap" then
+        lockRoom(val, true) -- Locks room if from being walked through when speedwalking
+        setRoomChar(val, "DT")
+      --
+      -- Market
+      elseif markRoomType == "markRoomsAsMarket" then
+        lockRoom(val, false) -- Unlocks room
+        setRoomChar(val, "$")
+      --
+      -- Teleport
+      elseif markRoomType == "markRoomsAsTeleport" then
+        lockRoom(val, false) -- Unlocks room
+        setRoomChar(val, "T")
+      end
+    end
+  end
+  updateMap()
+end
+--
+function gogogo()
+  local selectedRooms = getMapSelection()["rooms"]
+  if (selectedRooms ~= nil) and (#selectedRooms == 1) then
+    send('go '..selectedRooms[1])
+  end
+end
+--
+-- Custom Sub-Menu
+--addMapMenu("Room type")
+--addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
+--addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
+--addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
+addMapEvent("[Debug: GO]",  "gogogo")
+--
+-- Events
+registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
+registerAnonymousEventHandler("gogogo", "gogogo")
+--
+function myMap(areaName)
+  local areas = getAreaTable()
+  --local areaId = areas[areaName] 
+  --
+  for areaName, areaId in pairs(areas) do
+    if (areaId) then
+      local rooms = getAreaRooms(areaId)
+      local t = 0;
+      local c = 0;
+      --
+      for _, roomId in pairs(rooms) do
+        local x, y, z = getRoomCoordinates(roomId)
+        local nameRoom = getRoomName(roomId)
+        if (z ~= 0) then
+          -- local areaId = getRoomArea(roomId)
+          local roomAtZ0 = getRoomsByPosition(areaId, z, y, 0)
+          --
+          t = t +1
+          if (roomAtZ0 == nil) or (table.is_empty(roomAtZ0)) then
+            cecho(roomId.." - z:"..z.." - "..areaName.." - "..getRoomAreaName(areaId).."&lt;orange&gt;..spostabile\n")
+            c = c + 1
+          end
+        end
+      end
+      if (t &gt; 0) then
+        echo('\n'..t..' stanze a livelli diversi da 0 di cui '..c..' spostabili\n\n')
+      end
+    else
+      echo('Area non trovata ('..name..')')
+    end
+  end
+end
+--
+local roomDrawed = {}
+local level;
+local entryTab = {
+  "east",
+  "north",
+  "south",
+  "west",
+}
+--
+function getAreaDimension(areaId)
+  local rooms = getAreaRooms(areaId)
+  local max_x = nil;
+  local min_x = nil;
+  local max_y = nil;
+  local min_y = nil;
+  --
+  for _, roomId in pairs(rooms) do
+    local x, y, z = getRoomCoordinates(roomId)
+    
+    if (z == 0) then
+      if (max_x == nil) or (x &gt; max_x) then
+        max_x = x
+      end
+  
+      if (min_x == nil) or (x &lt; min_x) then
+        min_x = x
+      end
+  
+      if (max_y == nil) or (y &gt; max_y) then
+        max_y = y
+      end
+  
+      if (min_y == nil) or (y &lt; min_y) then
+        min_y = y
+      end
+    end
+  end
+  --
+  return min_x, min_y, max_x, max_y
+end
+--
+function purgeExits()
+  local areas = getAreaTable()
+  --
+  for areaName, areaId in pairs(areas) do
+    local rooms = getAreaRooms(areaId)
+    --
+    for _, roomId in pairs(rooms) do
+      local exits = getRoomExits(roomId)
+      for exitDir, exitRoom in pairs(exits) do
+        if (exitRoom == 0) or (exitRoom == roomId) then
+          echo(areaId..") "..areaName.." =&gt; "..roomId.." =&gt; "..exitDir.." = "..exitRoom.."\n")
+          setExit(roomId, -1, exitDir)
+        end
+      end      
+    end
+  end
+end
+--
+function pharseArea()
+  local roomId = getPlayerRoom()
+  local areaId = getRoomArea(roomId)
+  local rooms = getAreaRooms(areaId)
+  
+  for _, roomId in pairs(rooms) do
+    send("go "..roomId)
+  end
+end
+--
+function pw(pr)
+  if (tonumber(pr[1]) == map.room.id) then
+    if (#pr &gt; 0) then
+      -- Send command
+      table.remove(pr,1)
+      send("go "..pr[1])
+      --
+      -- Recall to check time out and send next command if necessary
+      if (pw_id) then 
+        killTimer(pw_id) 
+      end
+      pw_id = tempTimer(0.01, function() pw(pr) end)
+    end
+  else
+    if (pw_id) then 
+      killTimer(pw_id) 
+    end
+    pw_id = tempTimer(0.01, function() pw(pr) end)
+  end
+end
+--
+--
+function pharseWorld(restart)
+  pwRooms = pwRooms or {}
+  
+  if (restart) then
+    pwRooms = {}
+    -- iterate over all rooms in code
+    for id,name in pairs(getRooms()) do
+      table.insert(pwRooms,id)
+    end
+  end
+  --
+  send("go "..pwRooms[1])
+  pw(pwRooms)
+end
+--
+function offlinePlayerMove (dir)
+  local id = getPlayerRoom()
+  local name = getRoomName(id)
+  --
+  if (name) then
+    local exits = getRoomExits(id)
+    --
+    for k, v in pairs(exits) do
+      if (ui.validExit[k].short == ui.validExit[dir].short) then
+        centerview(v)
+        return true
+      end      
+    end
+  end
+  ui.fEchon("Non esistono uscite verso "..ui.validExit[dir].color..ui.validExit[dir].long)
+  --
+  return false
+end
+--
+function saveMap()
+  --
+  -- Salva la mappa nel formato {vNum = {x, y, z}}
+  local file = ui.files.map.path..ui.files.map.name
+  local tableMap = {} 
+  --
+  -- iterate over all rooms in code
+  for id,name in pairs(getRooms()) do
+    tableMap[id] = {}
+    tableMap[id].x, tableMap[id].y, tableMap[id].z = getRoomCoordinates(id)
+  end
+  --
+  table.save(file, tableMap)
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="no" isFolder="no">
+				<name>Rosa dei venti</name>
+				<packageName></packageName>
+				<script>local CSS_Pulsante = [[
   QLabel{
     border: 2px outset #aa8822;
     border-radius: 5px 10px;
@@ -12472,398 +12879,9 @@ function rosaDeiVenti:restore(...)
   return Restore(rosaDeiVenti)
 end
 </script>
-			<eventHandlerList />
-		</Script>
-		<Script isActive="yes" isFolder="no">
-			<name>Mapper utility</name>
-			<packageName></packageName>
-			<script>--
-function onMapMarkSelectedRooms(event, markRoomType)
-  local selectedRooms = getMapSelection()["rooms"]
-  local centerRoom = getMapSelection()["center"]
-  --
-  ui.fDebug("[&lt;cyan&gt;call&lt;reset&gt;] onMapMarkSelectedRooms("..(event or "nil")..", "..(markRoomType or "nil")..")")
-  --
-  if (selectedRooms ~= nil) then
-    for i, val in ipairs(selectedRooms) do
-      --
-      -- DT
-      if markRoomType == "markRoomsAsDeathTrap" then
-        lockRoom(val, true) -- Locks room if from being walked through when speedwalking
-        setRoomChar(val, "DT")
-      --
-      -- Market
-      elseif markRoomType == "markRoomsAsMarket" then
-        lockRoom(val, false) -- Unlocks room
-        setRoomChar(val, "$")
-      --
-      -- Teleport
-      elseif markRoomType == "markRoomsAsTeleport" then
-        lockRoom(val, false) -- Unlocks room
-        setRoomChar(val, "T")
-      end
-    end
-  end
-  updateMap()
-end
---
-function gogogo()
-  local selectedRooms = getMapSelection()["rooms"]
-  if (selectedRooms ~= nil) and (#selectedRooms == 1) then
-    send('go '..selectedRooms[1])
-  end
-end
---
--- Custom Sub-Menu
---addMapMenu("Room type")
---addMapEvent("markRoomsAsDeathTrap", "onMapMarkSelectedRooms", "Room type", "Death Trap")
---addMapEvent("markRoomsAsMarket",    "onMapMarkSelectedRooms", "Room type", "Market")
---addMapEvent("markRoomsAsTeleport",  "onMapMarkSelectedRooms", "Room type", "Teleport")
-addMapEvent("[Debug: GO]",  "gogogo")
---
--- Events
-registerAnonymousEventHandler("onMapMarkSelectedRooms", "onMapMarkSelectedRooms")
-registerAnonymousEventHandler("gogogo", "gogogo")
---
-function myMap(areaName)
-  local areas = getAreaTable()
-  --local areaId = areas[areaName] 
-  --
-  for areaName, areaId in pairs(areas) do
-    if (areaId) then
-      local rooms = getAreaRooms(areaId)
-      local t = 0;
-      local c = 0;
-      --
-      for _, roomId in pairs(rooms) do
-        local x, y, z = getRoomCoordinates(roomId)
-        local nameRoom = getRoomName(roomId)
-        if (z ~= 0) then
-          -- local areaId = getRoomArea(roomId)
-          local roomAtZ0 = getRoomsByPosition(areaId, z, y, 0)
-          --
-          t = t +1
-          if (roomAtZ0 == nil) or (table.is_empty(roomAtZ0)) then
-            cecho(roomId.." - z:"..z.." - "..areaName.." - "..getRoomAreaName(areaId).."&lt;orange&gt;..spostabile\n")
-            c = c + 1
-          end
-        end
-      end
-      if (t &gt; 0) then
-        echo('\n'..t..' stanze a livelli diversi da 0 di cui '..c..' spostabili\n\n')
-      end
-    else
-      echo('Area non trovata ('..name..')')
-    end
-  end
-end
---
-local roomDrawed = {}
-local level;
-local entryTab = {
-  "east",
-  "north",
-  "south",
-  "west",
-}
---
-function getAreaDimension(areaId)
-  local rooms = getAreaRooms(areaId)
-  local max_x = nil;
-  local min_x = nil;
-  local max_y = nil;
-  local min_y = nil;
-  --
-  for _, roomId in pairs(rooms) do
-    local x, y, z = getRoomCoordinates(roomId)
-    
-    if (z == 0) then
-      if (max_x == nil) or (x &gt; max_x) then
-        max_x = x
-      end
-  
-      if (min_x == nil) or (x &lt; min_x) then
-        min_x = x
-      end
-  
-      if (max_y == nil) or (y &gt; max_y) then
-        max_y = y
-      end
-  
-      if (min_y == nil) or (y &lt; min_y) then
-        min_y = y
-      end
-    end
-  end
-  --
-  return min_x, min_y, max_x, max_y
-end
---
-function expandArea(areaName)
-  local areas = getAreaTable()
-  local areaId = areas[areaName] 
-  --
-  if (areaId) then
-    local rooms = getAreaRooms(areaId)
-    local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
-    --
-    local x = (max_x - min_x)
-    --
-    for i = max_x, min_x, -1 do
-      local y = (max_y - min_y)
-      for j = max_y, min_y, -1 do
-        roomsByPosition = getRoomsByPosition(areaId, i, j, 0)
-        for _, roomId in pairs(roomsByPosition) do
-          setRoomCoordinates(roomId, x*2, y*2, 0)
-        end
-        y = y - 1
-      end
-      x = x - 1
-    end
-    --
-    echo('Expanded!')
-  else
-    echo('Area non trovata ('..areaName..')')
-  end
-end
---
-function createRoomSpace(areaId, roomId, x, y, entry)
-  --
-  -- OverLap
-  local overlap = not table.is_empty(getRoomsByPosition(areaId, x, y, 0))
-  -- Se la posizione è già occupata da un altra stanza
-  if (overlap) then
-    cecho("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
-    -- Se la room ha una direzione di entrata valida...
-    if (entry ~= nil) and (table.contains(entryTab, entry)) then
-      -- ... sposto la mappa già disegnata nel lato opposto al lato di entrata di una posizione per creare lo spazio 
-      for rd_id in pairs(roomDrawed) do
-        local rd_x, rd_y, rd_z = getRoomCoordinates(rd_id)
-        --
-        if (entry == "north") and (rd_y &gt;= y) then
-          setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
-        elseif (entry == "south") and (rd_y &gt;= y) then -- ok
-          setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
-        elseif (entry == "west") and (rd_x &gt;= x) then -- ok
-          setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
-        elseif (entry == "east") and (rd_x &gt;= x) then
-          setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
-        end
-      end
-      --
-      cecho("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse.."\n")
-    else
-      -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
-      local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
-      x = max_x + 1
-      y = max_y + 1
-      cecho("&lt;yellow&gt;Moved room to S-E\n")
-    end
-  end
-  --
-  return x, y
-end
---
-function drawRoom(areaId, roomId, x, y, entry, maxLevel)
-  if (maxLevel ~= nil) then
-    if (level &lt; maxLevel) then    
-      echo(ui.fAddSpace(""..(level+1)..") ", level+4, 'l'));
-    else
-      return
-    end
-  end
-  --
-  -- Se la stanza non è già stata disegnata...
-  if (roomDrawed[roomId] == nil) then
-    local roomAreaId = getRoomArea(roomId)
-    --
-    if (roomAreaId == areaId) then
-      x, y = createRoomSpace(areaId, roomId, x, y, entry)
-      --
-      setRoomCoordinates(roomId, x, y, 0)
-      roomDrawed[roomId] = true;
-      level = level + 1;
-      cecho("&lt;green&gt;Room "..roomId.." (from &lt;red&gt;"..(entry or "nil").."&lt;green&gt;) drowed in pos(x:"..x..", y:"..y..")\n");
-      --
-      -- Disegno le stanza adiacenti alle uscite
-      local exits = getRoomExits(roomId)
-      if (exits["east"]) and (exits["east"] ~= roomId) then
-        drawRoom(areaId, exits["east"], x+1, y, "west", maxLevel)
-      end
-      --
-      if (exits["west"]) and (exits["west"] ~= roomId) then
-        drawRoom(areaId, exits["west"], x-1, y, "east", maxLevel)
-      end
-      --
-      if (exits["north"]) and (exits["north"] ~= roomId) then
-        drawRoom(areaId, exits["north"], x, y+1, "south", maxLevel)
-      end
-      --
-      if (exits["south"]) and (exits["south"] ~= roomId) then
-        drawRoom(areaId, exits["south"], x, y-1, "north", maxLevel)
-      end
-      --
-      -- Disegno le stanza adiacenti alle entrate alla room
-      local entrances = getAllRoomEntrances(roomId)
-      for _,entranceId in pairs(entrances) do
-        if (roomDrawed[entranceId] == nil) then
-          local entranceAreaId = getRoomArea(entranceId)
-          --
-          if (entranceAreaId == areaId) then
-            local entranceExits = getRoomExits(entranceId)
-            --
-            if (entranceExits["east"]) and (entranceExits["east"] == roomId) then
-              drawRoom(areaId, entranceId, x-1, y, "east", maxLevel)
-            end
-            --
-            if (entranceExits["west"]) and (entranceExits["west"] == roomId) then
-              drawRoom(areaId, entranceId, x+1, y, "west", maxLevel)
-            end
-            --
-            if (entranceExits["north"]) and (entranceExits["north"] == roomId) then
-              drawRoom(areaId, entranceId, x, y-1, "north", maxLevel)
-            end
-            --
-            if (entranceExits["south"]) and (entranceExits["south"] == roomId) then
-              drawRoom(areaId, entranceId, x, y+1, "south", maxLevel)
-            end
-          end
-        end
-      end   
-    end
-  end
-end
---
-function redrawArea(areaName, expand, maxLevel)
-  local areas = getAreaTable()
-  local areaId = areas[areaName] 
-  --
-  if (areaId) then
-    local rooms = getAreaRooms(areaId)
-    --
-    -- Sposto tutte le stanze sul livello 1
-    for _, roomId in pairs(rooms) do
-      local x, y, z = getRoomCoordinates(roomId)
-      setRoomCoordinates(roomId, x, y, 1)
-    end
-    --
-    -- Riposiziono maxLevel room sul livello 0
-    level = 0
-    roomDrawed = {}
-    for _, roomId in pairs(rooms) do
-      drawRoom(areaId, roomId, 0, 0, nil, maxLevel)
-    end
-    --
-    if (expand) then
-      expandArea(areaName)
-    end
-    --
-    echo('\nRedrawed!!');
-  else
-    echo('\nArea non trovata ('..areaName..')')
-  end
-end
---
-function purgeExits()
-  local areas = getAreaTable()
-  --
-  for areaName, areaId in pairs(areas) do
-    local rooms = getAreaRooms(areaId)
-    --
-    for _, roomId in pairs(rooms) do
-      local exits = getRoomExits(roomId)
-      for exitDir, exitRoom in pairs(exits) do
-        if (exitRoom == 0) or (exitRoom == roomId) then
-          echo(areaId..") "..areaName.." =&gt; "..roomId.." =&gt; "..exitDir.." = "..exitRoom.."\n")
-          setExit(roomId, -1, exitDir)
-        end
-      end      
-    end
-  end
-end
---
-function pharseArea()
-  local roomId = getPlayerRoom()
-  local areaId = getRoomArea(roomId)
-  local rooms = getAreaRooms(areaId)
-  
-  for _, roomId in pairs(rooms) do
-    send("go "..roomId)
-  end
-end
---
-function pw(pr)
-  if (tonumber(pr[1]) == map.room.id) then
-    if (#pr &gt; 0) then
-      -- Send command
-      table.remove(pr,1)
-      send("go "..pr[1])
-      --
-      -- Recall to check time out and send next command if necessary
-      if (pw_id) then 
-        killTimer(pw_id) 
-      end
-      pw_id = tempTimer(0.01, function() pw(pr) end)
-    end
-  else
-    if (pw_id) then 
-      killTimer(pw_id) 
-    end
-    pw_id = tempTimer(0.01, function() pw(pr) end)
-  end
-end
---
---
-function pharseWorld(restart)
-  pwRooms = pwRooms or {}
-  
-  if (restart) then
-    pwRooms = {}
-    -- iterate over all rooms in code
-    for id,name in pairs(getRooms()) do
-      table.insert(pwRooms,id)
-    end
-  end
-  --
-  send("go "..pwRooms[1])
-  pw(pwRooms)
-end
---
-function offlinePlayerMove (dir)
-  local id = getPlayerRoom()
-  local name = getRoomName(id)
-  --
-  if (name) then
-    local exits = getRoomExits(id)
-    --
-    for k, v in pairs(exits) do
-      if (ui.validExit[k].short == ui.validExit[dir].short) then
-        centerview(v)
-        return true
-      end      
-    end
-  end
-  ui.fEchon("Non esistono uscite verso "..ui.validExit[dir].color..ui.validExit[dir].long)
-  --
-  return false
-end
---
-function saveMap()
-  --
-  -- Salva la mappa nel formato {vNum = {x, y, z}}
-  local file = ui.files.map.path..ui.files.map.name
-  local tableMap = {} 
-  --
-  -- iterate over all rooms in code
-  for id,name in pairs(getRooms()) do
-    tableMap[id] = {}
-    tableMap[id].x, tableMap[id].y, tableMap[id].z = getRoomCoordinates(id)
-  end
-  --
-  table.save(file, tableMap)
-end</script>
-			<eventHandlerList />
-		</Script>
+				<eventHandlerList />
+			</Script>
+		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage>
 		<KeyGroup isActive="yes" isFolder="yes">
