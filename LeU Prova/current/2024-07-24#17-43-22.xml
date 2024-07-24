@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -73,6 +73,7 @@
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4024,33 +4025,31 @@ elseif (opt == "s") then
 else
   attack = true
 end
---[[
-opt = "autoAttack ";
-if ui.parameters.autoAttack then
-  opt = opt.."&lt;green&gt;ON "
-  if ui.parameters.autoAttackArea then
-    opt = opt.."&lt;red&gt;(AREA)"
-  else
-    opt = opt.."&lt;orange&gt;(SINGLE)"
-  end  
-else
-  opt = opt.."&lt;red&gt;OFF"
-end
-ui.fEchon(opt)  
-]]--
+--
 if (attack) then
-  local firstMob = '';
+  local opponent = '';
+  local attack = 'bl';
   --
+  -- Fuori dal combattimento, primo mob a tiro
   if (ui.opponent.name == '') then
     for _, mob in pairs(ui.room.mobs) do
-      firstMob = mob.key
+      opponent = mob.key
+      --
+      -- Mano di energia attiva
+      if (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
+        attack = 'bash';
+      end
+      --
       break 
     end
+  --
+  -- In combattimento
   else
-    firstMob = ui.opponent.name
+    opponent = ui.opponent.name
   end
   --
-  if (firstMob == '') then
+  --
+  if (opponent == '') then
     ui.fEchon("Non ci sono mob da attaccare")  
     if (ui.affects["velocita` della luce"]) then
       if (ui.affects["mantello di fiamme"] == nil) then
@@ -4061,28 +4060,42 @@ if (attack) then
     end
   else
     --
-    ui.fEchon("Attacchi: &lt;red&gt;"..firstMob)  
+    ui.fEchon("Opponent: &lt;red&gt;"..opponent)  
     --
     -- LightSpeed
     if (ui.affects["velocita` della luce"]) then
-      if (ui.affects["mantello di fiamme"] == nil) then
-        expandAlias("flame", false)
-      elseif (perc &lt;= 80) then
+      --
+      -- Hp sotto l'70%
+      if (perc &lt;= 70) then
         expandAlias("cel", false)
+      --
+      -- Schudo di fiamme scaduto
+      elseif (ui.affects["mantello di fiamme"] == nil) then
+        expandAlias("flame", false)
+      --
+      -- Lame Psioniche attive
       elseif (ui.affects["lame psioniche"]) then
-        expandAlias("as "..firstMob, false)
-      elseif (ui.affects["mano di energia"]) then
-        expandAlias("bash "..firstMob, false)
+        expandAlias("as "..opponent, false)
+      --
+      -- Mano di energia attiva, ma in cooldowns
+      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"]) then
+          expandAlias("lampo "..opponent, false)
+      --
+      -- Mano di energia attiva e sono in combattimento
+      elseif (ui.affects["mano di energia"]) and (attack == 'bl') then 
+        expandAlias("pugno "..opponent, false)
+      --
+      -- 
       else
-        expandAlias("cr "..firstMob, false)
+        expandAlias("lampo "..opponent, false)
       end 
     end
     --
     --
     if (ui.player.pow &lt; 40) then
-      expandAlias("cr "..firstMob, false)
+      expandAlias("cr "..opponent, false)
     else
-      expandAlias("bl "..firstMob, false)
+      expandAlias(attack.." "..opponent, false)
     end
   end
 end</script>
@@ -5799,23 +5812,22 @@ function ui.fUpdateEndowment()
       local stat = ""
       if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
         stat = "&lt;lu&gt;"..ansi2string(decho2ansi(ui.equipment[item].stat)).."&lt;/lu&gt;"
-        stat = string.gsub(stat, "(-?%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")  -- Dice ('x'd'y')
-        --stat = string.gsub(stat, "[^ ]+", replacements)
-        stat = string.gsub(stat, "[a-zA-Z]+", replacements)
+        stat = string.gsub(stat, "(-?%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")      -- Numeric value
         stat = string.gsub(stat, "(%d+d%d+)", "&lt;li&gt;▷ %1 Danno&lt;/li&gt;")  -- Dice ('x'd'y')
-        --stat = string.gsub(stat, " ( +)", "")                -- White spaces
+        stat = string.gsub(stat, "[a-zA-Z]+", replacements)           -- Stat
       end
       --
       -- ToolTip
-      local toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-                      '&lt;i&gt;&amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
+      local toolTip = '&lt;p style="text-align: center;"&gt;&lt;br&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
+                      '&lt;i&gt;Indossato &amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
                       stat..
                       '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..t..'&lt;/i&gt; [Liv. '..ui.equipment[item].level..']&lt;/p&gt;'
       --
+      -- ToolTip identificated object
       if (ui.identification) then
         toolTip = toolTip.."&lt;hr&gt;"..
         '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ui.identification.name or "no name")..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-        '&lt;i&gt;&amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'
+        '&lt;i&gt;Identificato &amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'
         if (ui.identification.bonus) then
           toolTip = toolTip.."&lt;lu&gt;"
           for _, i in pairs(ui.identification.bonus) do
@@ -8936,13 +8948,13 @@ function ui.fUpdateRoom()
       --
       -- Line 1
       GUI.Room.Main.Console:cecho("        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   ")
-      GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look")]], "Guarda", true)
+      --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look")]], "Guarda", true)
       GUI.Room.Main.Console:cecho((exitsAsString[1] or "").."\n")    
       --
       -- Line 2
       GUI.Room.Main.Console:cecho("&lt;r&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         ")
       if (exitsAsString[2]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[2]..[[")]], "Guarda a "..exitsCommand[2], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[2]..[[")]], "Guarda a "..exitsCommand[2], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[2], [[expandAlias("]]..exitsCommand[2]..[[")]], "Vai a "..exitsCommand[2], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8950,7 +8962,7 @@ function ui.fUpdateRoom()
       -- Line 3
       GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(1).."│         ")
       if (exitsAsString[3]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[3], [[expandAlias("]]..exitsCommand[3]..[[")]], "Vai a "..exitsCommand[3], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8958,7 +8970,7 @@ function ui.fUpdateRoom()
       -- Line 4
       GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
       if (exitsAsString[4]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[4], [[expandAlias("]]..exitsCommand[4]..[[")]], "Vai a "..exitsCommand[4], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8966,7 +8978,7 @@ function ui.fUpdateRoom()
       -- Line 5
       GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(3).."│         ")
       if (exitsAsString[5]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[5], [[expandAlias("]]..exitsCommand[5]..[[")]], "Vai a "..exitsCommand[5], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8974,7 +8986,7 @@ function ui.fUpdateRoom()
       -- Line 6
       GUI.Room.Main.Console:cecho("&lt;r&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         ")
       if (exitsAsString[6]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[6]..[[")]], "Guarda a "..exitsCommand[6], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[6]..[[")]], "Guarda a "..exitsCommand[6], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[6], [[expandAlias("]]..exitsCommand[6]..[[")]], "Vai a "..exitsCommand[6], true)
       end
       GUI.Room.Main.Console:cecho("\n")
@@ -8982,7 +8994,7 @@ function ui.fUpdateRoom()
       -- Line 7
       GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           ")
       if (exitsAsString[7]) then
-        GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[7]..[[")]], "Guarda a "..exitsCommand[7], true)
+        --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[7]..[[")]], "Guarda a "..exitsCommand[7], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[7], [[expandAlias("]]..exitsCommand[7]..[[")]], "Vai a "..exitsCommand[7], true)
       end
       GUI.Room.Main.Console:cecho("\n\n")
