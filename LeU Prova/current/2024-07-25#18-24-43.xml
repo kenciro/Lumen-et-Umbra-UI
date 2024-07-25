@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>308</borderLeftWidth>
-			<borderRightWidth>379</borderRightWidth>
+			<borderRightWidth>380</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -73,7 +73,6 @@
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -7693,25 +7692,29 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
   local overlap = not table.is_empty(getRoomsByPosition(areaId, x, y, 0))
   -- Se la posizione è già occupata da un altra stanza
   if (overlap) then
-    ui.fDebug("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
+    ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
     -- Se la room ha una direzione di entrata valida...
-    if (entry ~= nil) and (table.contains(entryTab, entry)) then
+    if (entry ~= nil) and (table.contains(ui.validExit, entry)) then
       -- ... sposto la mappa già disegnata nel lato opposto al lato di entrata di una posizione per creare lo spazio 
       for rd_id in pairs(roomDrawed) do
         local rd_x, rd_y, rd_z = getRoomCoordinates(rd_id)
         --
-        if (entry == "north") and (rd_y &gt;= y) then
-          setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
+        if (entry == "north") and (rd_y &lt;= y) then
+          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." in giu'")          
+          setRoomCoordinates(rd_id, rd_x, rd_y-1, 0)
         elseif (entry == "south") and (rd_y &gt;= y) then -- ok
+          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." in su")          
           setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
-        elseif (entry == "west") and (rd_x &gt;= x) then -- ok
-          setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
+        elseif (entry == "west") and (rd_x &lt;= x) then -- ok
+          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." a destra")          
+          setRoomCoordinates(rd_id, rd_x-1, rd_y, 0)
         elseif (entry == "east") and (rd_x &gt;= x) then
+          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." a sinistra")          
           setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
         end
       end
       --
-      ui.fDebug("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
+      ui.fEchon("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
     else
       -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
       local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
