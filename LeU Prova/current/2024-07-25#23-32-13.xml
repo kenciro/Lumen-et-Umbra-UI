@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>308</borderLeftWidth>
-			<borderRightWidth>380</borderRightWidth>
+			<borderLeftWidth>326</borderLeftWidth>
+			<borderRightWidth>509</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
