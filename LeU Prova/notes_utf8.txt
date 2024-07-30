@@ -1,3 +1,14 @@
+La forgia divina
+La fortezza ...
+Oltre il portale
+PVP
+Rhy... (avamposto)
+Sithicus
+Terre
+Tirk
+
+
+
  uia cr mind 'frantumazione psichica' &target;
  uia bl mind 'colpo psichico' &target;
  uia lampo mind 'lampo di energia' &target;
