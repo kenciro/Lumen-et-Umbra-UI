@@ -1,2 +1,2 @@
-return {{[ [[target]] ] = [[]],[ [[bag]] ] = [[borsa]],[ [[stat]] ] = [[des]],},
+return {{[ [[target]] ] = [[]],[ [[bag]] ] = [[borsa-conservante]],[ [[stat]] ] = [[des]],},
 }

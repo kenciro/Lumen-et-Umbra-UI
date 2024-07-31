@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>326</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>380</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -354,65 +354,43 @@ end
 if (ui.equipment[location]) then
   --
   slot.number   = tonumber(string.trim(matches[2]))
-  slot.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-  slot.level    = tonumber(string.trim(matches[5]))
-  slot.status   = string.trim(matches[6])
-  if (matches[7] == "") then
-    slot.name = ""
-  else
-    slot.name,
-    slot.good,
-    slot.evil,
-    slot.bright,
-    slot.noisy,
-    slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
+  --
+  -- Con il comando "eq manc" il numero e "X"
+  if (slot.number) then
+    slot.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+    slot.level    = tonumber(string.trim(matches[5]))
+    slot.status   = string.trim(matches[6])
+    --
+    if (matches[7] == "") then
+      slot.name = ""
+    else
+      slot.name,
+      slot.good,
+      slot.evil,
+      slot.bright,
+      slot.noisy,
+      slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
+    end
+    --
+    ui.equipment[location].number = slot.number 
+    ui.equipment[location].type = slot.type 
+    ui.equipment[location].level = slot.level
+    --
+    slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+    if (ui.fIsStatistics(slot.name)) then
+      ui.equipment[location].name = ui.equipment[location].name or ui.equipment[location].slot
+      ui.equipment[location].stat = slot.name;
+    elseif(ui.equipment[location].name == nil) or (slot.name ~= ui.equipment[location].name) then
+      ui.equipment[location].name = slot.name;
+      ui.equipment[location].stat = nil;
+    end
+    --
+    ui.equipment[location].status = slot.status
+    ui.equipment[location].used = true;
   end
-  --
-  ui.equipment[location].number = slot.number 
-  ui.equipment[location].type = slot.type 
-  ui.equipment[location].level = slot.level
-  --
-  slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
-  if (ui.fIsStatistics(slot.name)) then
-    ui.equipment[location].name = ui.equipment[location].name or ui.equipment[location].slot
-    ui.equipment[location].stat = slot.name;
-  elseif(ui.equipment[location].name == nil) or (slot.name ~= ui.equipment[location].name) then
-    ui.equipment[location].name = slot.name;
-    ui.equipment[location].stat = nil;
-  end
-  --
-  ui.equipment[location].status = slot.status
-  ui.equipment[location].used = true;
 end
 --
 setTriggerStayOpen("Equipment", 1)
---
---if (equipment.good) then
---  equipment.name = equipment.name.." &lt;0,0,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
---end
---if (equipment.evil) then
---  equipment.name = equipment.name.." &lt;255,0,0:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
---end
---if (equipment.bright) then
--- equipment.name = equipment.name.." &lt;255,255,255:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
---end
---if (equipment.noisy) then
---  equipment.name = equipment.name.." &lt;128,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
---end
---if (equipment.brittle) then
---  equipment.name = equipment.name.." &lt;0,128,128:"..ui.colors.wBackground.."&gt;*&lt;r&gt;"
---end
---
---
---table.insert(ui.equipment, equipment)
---
---GUI.Endowment.Main.Equipment:decho(equipment.number.." "..
---                                   ui.fRemoveArticle(equipment.location).." - "..
---                                   equipment.level.." "..
---                                   perc(equipment.status).." "..
---                                   equipment.type.." - "..
---                                   equipment.name.."\n")
---
 </script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -12687,19 +12665,63 @@ function offlinePlayerMove (dir)
   return false
 end
 --
-function saveMap()
+function saveMap(area)
   --
   -- Salva la mappa nel formato {vNum = {x, y, z}}
   local file = ui.files.map.path..ui.files.map.name
-  local tableMap = {} 
   --
-  -- iterate over all rooms in code
-  for id,name in pairs(getRooms()) do
-    tableMap[id] = {}
-    tableMap[id].x, tableMap[id].y, tableMap[id].z = getRoomCoordinates(id)
+  if (area) then
+    --
+    -- iterate over all rooms in selected area
+    local areas = getAreaTable()
+    local areaID = areas[string.trim(area)]
+    --
+    if (areaID) then
+      local rooms = getAreaRooms(areaID)
+      --
+      for _,id in ipairs(rooms) do
+        ui.map[id] = {}
+        ui.map[id].x, ui.map[id].y, ui.map[id].z = getRoomCoordinates(id)
+      end
+      ui.fEchon("Area salvata")
+    else
+      ui.fEchon("Area non trovata")
+    end
+  else
+    ui.map = {}
+    --
+    -- iterate over all rooms in code
+    for id,name in pairs(getRooms()) do
+      ui.map[id] = {}
+      ui.map[id].x, ui.map[id].y, ui.map[id].z = getRoomCoordinates(id)
+    end
+    ui.fEchon("Mappa salvata")
   end
   --
-  table.save(file, tableMap)
+  table.save(file, ui.map)
+end
+--
+function reloadMap(area)
+  --
+  if (area) then
+    --
+    -- iterate over all rooms in selected area
+    local areas = getAreaTable()
+    local areaID = areas[string.trim(area)]
+    --
+    if (areaID) then
+      local rooms = getAreaRooms(areaID)
+      --
+      for _,id in ipairs(rooms) do
+        setRoomCoordinates(id, ui.map[id].x or 0, ui.map[id].y or 0, 0)
+      end
+      ui.fEchon("Area ricaricata")
+    else
+      ui.fEchon("Area non trovata")
+    end
+  else
+    ui.fEchon("Necessario specificare un area")
+  end
 end</script>
 				<eventHandlerList />
 			</Script>

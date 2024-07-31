@@ -1,54 +1,10 @@
-La forgia divina
-La fortezza ...
+Aree da salvare:
+
+Inferno
+La fortezza invisibile
 Oltre il portale
 PVP
 Rhy... (avamposto)
 Sithicus
 Terre
 Tirk
-
-
-
- uia cr mind 'frantumazione psichica' &target;
- uia bl mind 'colpo psichico' &target;
- uia lampo mind 'lampo di energia' &target;
-
-area
- uia ub mind 'colpo superiore';
-
-lame
-uia as mind 'assalto psionico' &target;
-
-pugno
-uia schia mind 'schiaffo violento' &target;
-uia morsa mind 'morsa brutale' &target;
-uia pugno mind 'pugno serrato' &target;
-
-flame
-uia mf mind 'manipola fiamme' potenzia
-uia mf mind 'manipola fiamme' convoglia
-uia mf mind 'manipola fiamme' espandi
-
-
-[ 1] <alla mano destra>       [ 83|  5] |E| l'anello degli Angeli...E` in condizioni eccellenti
-[ 2] <alla mano sinistra>     [ 83|  5] |E| l'anello degli Angeli...E` in condizioni eccellenti
-[ 3] <intorno al collo>       [147|  4] |L| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
-[ 4] <intorno al collo>       [108|  4] |L| un simbolo sacro ad Hansolo...Ha un alone luminoso...E` indistruttibile!
-[ 5] <sul corpo>              [ 76| 16] |E| la super corazza del millennio...E` in condizioni eccellenti
-[ 6] <in testa>               [ 83| 12] |E| l'Elmo del Manipolatore dei Piani...E` in condizioni eccellenti
-[ 7] <sulle gambe>            [106| 12] |A| una paio di gambali decorati in oro...Sono in condizioni eccellenti
-[ 8] <ai piedi>               [ 83| 12] |E| gli Stivali del Manipolatore dei Piani...Sono in condizioni eccellenti
-[ 9] <sulle mani>             [120|  6] |L| i guanti della Luce...Sono indistruttibili!
-[10] <sulle braccia>          [ 83| 12] |E| gli Spallacci del Manipolatore dei Piani...Sono in condizioni eccellenti
-[11] <come scudo>             [106| 12] |A| un pavese con fregi dorati...E` in condizioni eccellenti
-[12] <intorno al corpo>       [ 83| 12] |E| il Mantello del Manipolatore dei Piani...E` in condizioni eccellenti
-[13] <intorno alla vita>      [114| 12] |A| una fascia di morbida stoffa...E` in condizioni eccellenti
-[14] <al polso destro>        [ 88|  6] |E| il bracciale degli Angeli Astrali...E` in condizioni eccellenti
-[15] <al polso sinistro>      [ 88|  6] |E| il bracciale degli Angeli Astrali...E` in condizioni eccellenti
-[16] <impugnato>              [148|  0] |L| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
-[17] <sulla schiena>          [ 94| 12] |A| un manto degli Dei passati...E` in condizioni eccellenti
-[18] <all'orecchio destro>    [ 83|  4] |E| un Pendente a forma di foglia d'Alloro...E` in condizioni eccellenti
-[19] <all'orecchio sinistro>  [ 83|  4] |E| un Pendente a forma di foglia d'Alloro...E` in condizioni eccellenti
-[20] <sul viso>               [106| 12] |A| un paio di occhiali d'oro massiccio...E` in condizioni eccellenti
-[21] <come aura>              [116|  2] |L| una scintilla di pura magia...E` indistruttibile!
-
