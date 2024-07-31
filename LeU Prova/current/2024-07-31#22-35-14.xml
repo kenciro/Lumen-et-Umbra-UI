@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>308</borderLeftWidth>
-			<borderRightWidth>380</borderRightWidth>
+			<borderLeftWidth>326</borderLeftWidth>
+			<borderRightWidth>509</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4961,15 +4961,20 @@ function ui.fAddAlias(alias, value)
     --
     -- Generate alias code
     local code = [[
-ui.levelCode = (ui.levelCode or -1) + 1
-if (ui.levelCode &gt; 20) then
-  ui.levelCode = ui.levelCode -1
-  ui.fError("Stack overflow protection.")
+--
+-- Recursion leval
+ui.levelCode = ui.levelCode or 0
+if (ui.levelCode &gt;= 20) then
+  ui.fError("Recursion protection.")
+  ui.levelCode = ui.levelCode - 1
   return
 end
+ui.levelCode = ui.levelCode + 1
 --
+-- Init
 matches = matches or {}
 local __mtchs2__ = matches[2] or ""
+ui.echoed = ui.echoed or ""
 ]]
     commands = ui.fExpandCommand(value)
     if (#commands == 1) then
@@ -4978,8 +4983,13 @@ local __mtchs2__ = matches[2] or ""
       command = ui.fExpandVariables(value, true)
       if (string.match(command, "__mtchs2__")) then
         code = code..[[
+--
 -- Single command with #
-ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__), ui.levelCode);
+if (ui.echoed == "") then
+  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__));
+else
+  cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[", __mtchs2__));
+end
 expandAlias("]]..command..[[", false);
 ]]
       else
@@ -4995,13 +5005,21 @@ expandAlias("]]..command..[[", false);
           --
           -- If not variables in comman, add matches[2]
           code = code..[[
+--
 -- Single command without # and without variables
 if (__mtchs2__ == "") then
-  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
+  if (ui.echoed == "") then
+    ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["));
+  else
+    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["));
+  end
   expandAlias("]]..command..[[", false);
 else
-  -- Append matches[2]
-  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[ #", __mtchs2__), ui.levelCode);
+  if (ui.echoed == "") then
+    ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[ #", __mtchs2__));
+  else
+    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[[ #", __mtchs2__));
+  end
   expandAlias("]]..command..[[".." "..__mtchs2__, false);
 end
 ]]
@@ -5010,13 +5028,21 @@ end
           -- If variables in command, replace last variable with matches[2]
           local command_matches = string.gsub(command, last_expanded_variable, "__mtchs2__")
           code = code..[[
+--
 -- Single command without # but with variables
 if (__mtchs2__ == "") then
-  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["), ui.levelCode);
+  if (ui.echoed == "") then
+    ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["));
+  else
+    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..value..[["));
+  end
   expandAlias("]]..command..[[", false);
 else
-  -- Replace last variable with matches[2]
-  ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", __mtchs2__), ui.levelCode);
+  if (ui.echoed == "") then
+    ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", __mtchs2__));
+  else
+    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..string.gsub(value, last_variable, "#")..[[", __mtchs2__));
+  end
   expandAlias("]]..command_matches..[[", false);
 end
 ]]
@@ -5026,19 +5052,41 @@ end
       --
       -- Multiple commands
       code = code..[[
+local lstEchoed = ui.echoed
+--
 -- Multiple commands
 ]]
-      for _, cmd in ipairs(commands) do
+      for idx, cmd in ipairs(commands) do
         command = ui.fExpandVariables(cmd, true)
         code = code..[[
-ui.fEchon(ui.fGetAliasNameFormattedText("]]..alias..[[").." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__), ui.levelCode);
+if (ui.echoed == "") then
+  ui.echoed = ui.fGetAliasNameFormattedText("]]..alias..[[").."[]]..idx..[[] "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__);
+  ui.fEcho(ui.echoed);
+else
+]]
+        if (idx == 1) then
+        code = code..[[
+  cecho("[]]..idx..[[] "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__));
+  ui.echoed = ui.echoed.."[]]..idx..[[] "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__);
+]]
+        else
+        code = code..[[
+  ui.echoed = ui.echoed.."[]]..idx..[[] "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText("]]..cmd..[[", __mtchs2__);
+  ui.fEcho(ui.echoed);
+]]
+        end
+        code = code..[[
+end
 expandAlias("]]..command..[[", false);
+echo("\n");
+ui.echoed = lstEchoed;
+--
 ]]
       end
     end
     code = code..[[
 --
-ui.levelCode = math.max(-1, ui.levelCode - 1)
+ui.levelCode = math.max(0, ui.levelCode - 1)
 ]]
     --
     -- Save alias code (for debug only)
