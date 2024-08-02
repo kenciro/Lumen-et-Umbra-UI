@@ -1,8 +1,14 @@
 Aree da salvare:
 
-La villa delle feste
+La villa delle feste - Fare giro per secret, e sistemare tre stanze scollegate
 La fortezza invisibile
 Oltre il portale
-PVP
+PVP-  Fare giro per secret, e sistemare tre stanze scollegate
 Rhy... (avamposto)
-Torre Oscura
+
+Room ID	Area		Note
+22851	Torre Oscura		Ci sono 500.000 mo
+22830	Torre Oscura		C'è una panca con dentro 100.000 mo
+22819	Torre Oscura		C'è una cassa con dentro 100.000 mo
+22821	Torre Oscura		C'è una cassa con dentro 100.000 mo
+22877	Torre Oscura		C'è una cassa con dentro 100.000 mo
