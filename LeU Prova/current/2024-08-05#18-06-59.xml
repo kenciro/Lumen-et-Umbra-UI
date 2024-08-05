@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>305</borderLeftWidth>
-			<borderRightWidth>0</borderRightWidth>
+			<borderRightWidth>376</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -3750,7 +3750,7 @@ ui.fExecutePath(path, matches[2])</script>
 				<packageName></packageName>
 				<regex>^(?i)scacchiera(?:\s+(.*))?$</regex>
 			</Alias>
-			<Alias isActive="yes" isFolder="no">
+			<Alias isActive="no" isFolder="no">
 				<name>Spaventapasseri</name>
 				<script>local path = {
   "dw alma",
@@ -7726,11 +7726,63 @@ function ui.fExpandArea(areaName)
 end
 --
 function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
+  local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
   --
   -- OverLap
   local overlap = not table.is_empty(getRoomsByPosition(areaId, x, y, 0))
+  local is_path = false;
+  --
+  if (entry == "north") or (entry == "south") then
+    local lRoomId
+    local lr_x = x-1
+    --
+    -- Cerco prima room a sinistra sulla linea
+    while (lr_x &gt;= min_x) and (lRoomId == nil) do
+      local RoomsByPosition = getRoomsByPosition(areaId, lr_x, y, 0)
+      if (not table.is_empty(RoomsByPosition)) then
+        lRoomId = RoomsByPosition[0]
+      end
+      lr_x = lr_x - 1;
+    end
+    -- Se trovo una room
+    if (lRoomId) then
+      -- verifico se ha un uscita a est
+      local exits = getRoomExits(lRoomId)
+      if (exits["east"]) then
+        local rr_x, rr_y, rr_z = getRoomCoordinates(exits["east"])
+        if rr_x &gt; x then
+          -- Il percorso tra le due stanze è sul punto di inserimento
+          is_path = true;
+        end
+      end
+    end
+  elseif (entry == "west") or (entry == "east") then
+    local bRoomId
+    local br_y = y-1
+    --
+    -- Cerco prima room a sinistra sulla linea
+    while (br_y &gt;= min_y) and (yRoomId == nil) do
+      local RoomsByPosition = getRoomsByPosition(areaId, x, br_y, 0)
+      if (not table.is_empty(RoomsByPosition)) then
+        bRoomId = RoomsByPosition[0]
+      end
+      br_y = br_y - 1;
+    end
+    -- Se trovo una room
+    if (bRoomId) then
+      -- verifico se ha un uscita a est
+      local exits = getRoomExits(bRoomId)
+      if (exits["north"]) then
+        local rr_x, rr_y, rr_z = getRoomCoordinates(exits["north"])
+        if rr_y &gt; y then
+          -- Il percorso tra le due stanze è sul punto di inserimento
+          is_path = true;
+        end
+      end
+    end
+  end 
   -- Se la posizione è già occupata da un altra stanza
-  if (overlap) then
+  if (overlap) or is_path then
     ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
     -- Se la room ha una direzione di entrata valida...
     if (entry ~= nil) and (table.contains(ui.validExit, entry)) then
@@ -7756,7 +7808,6 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
       ui.fEchon("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
     else
       -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
-      local min_x, min_y, max_x, max_y = getAreaDimension(areaId)
       x = max_x + 1
       y = max_y + 1
       ui.fDebug("&lt;yellow&gt;Moved room to S-E")
@@ -7833,6 +7884,9 @@ function ui.fDrawRoom(areaId, roomId, x, y, entry, maxLevel)
         end
       end   
     end
+--  else
+    -- verifica le coordinate
+    
   end
 end
 --

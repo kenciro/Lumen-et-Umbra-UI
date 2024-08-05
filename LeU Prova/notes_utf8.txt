@@ -1,10 +1,5 @@
 Aree da salvare:
 
-La villa delle feste - Fare giro per secret, e sistemare tre stanze scollegate
-La fortezza invisibile
-Oltre il portale
-PVP-  Fare giro per secret, e sistemare tre stanze scollegate
-Rhy... (avamposto)
 
 Room ID	Area		Note
 22851	Torre Oscura		Ci sono 500.000 mo
