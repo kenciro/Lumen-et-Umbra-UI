@@ -7,3 +7,26 @@ Room ID	Area		Note
 22819	Torre Oscura		C'è una cassa con dentro 100.000 mo
 22821	Torre Oscura		C'è una cassa con dentro 100.000 mo
 22877	Torre Oscura		C'è una cassa con dentro 100.000 mo
+
+
+[buttons]
+
+[target]
+Il widget target è composto da 4 tasti configurabili (t1, t2, t3 e t4) ai quali è possibile associare il nome di un mob, perosonaggio, oggetto, etc. Cliccando un tasto target la variabile @target viene autimaticamente aggiornata con il valore configurato del tasto target cliccato. Lo stesso effetto lo si ottiene digitanto il nome che appare in alto a sinstra (t1, t2, etc) oppure con la combinazione di tasti rapidi associata al tasto target che si vuole selezionare. Questa funzionalità combinata con gli alias permette di eseguire comandi specifici saltando velocemente da un obiettivi pre-impostato all'altro.
+
+Configurazione:
+  t1..4 <valore>        Per assegnare un valore a T1..T4
+  t1..4 remove          Per rimuovere il valore assegnato a T1..T4
+
+Utilizzo:
+  t1..4 o <click>             Per assegnare alla variabile &target il valore assegnato a T1..4
+
+[room]
+
+[help]
+
+[player]
+
+[mapper]
+
+lua[opponent]
