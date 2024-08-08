@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>376</borderRightWidth>
+			<borderLeftWidth>306</borderLeftWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,9 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2150,25 +2149,6 @@ ui.fDisplayColors({justText = false, removeDupes = true})</script>
 				<regex>^(?i)(?:uic(?:o(?:l(?:o(?:r(?:s)?)?)?)?)?)$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Directiones</name>
-				<script>-- TODO: integrare comando RUN ^(?i)(?:ru(?:n)?\s+)?([neswud])$
---
-local dir = string.lower(matches[2]);
--- Don't save path if retrace
-if (not ui.retrace) then
-  ui.fSavePath(dir)
-end
-ui.retrace = false;
--- Initi cadaver counter
-ui.nCad = 0
---
-ui.fDebug("[alias] UI Directiones - Mem: "..ui.idxPath.."/"..ui.memPath.." - Dir: "..dir)
-send(dir, false)</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)([neswud])$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
 				<name>UI Font size</name>
 				<script>local windows = string.lower(matches[2] or "")
 local fontsize = tonumber(matches[3] or -1)
@@ -2247,17 +2227,56 @@ end</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Go</name>
-				<script>local roomId = matches[2] or ""
-local walkPath = {}
-local walkDirs = {}
+				<script>local room = matches[2] or ""
 --
-if getPath(getPlayerRoom(), roomId) then
-  walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
-  doSpeedWalk()
+if (room == "") then
+  ui.fEcho2n("Specificare il nome o l'ID della stanza da raggiungere")   
 else
-  -- Remove last SpeedWalk 
-  ui.fHighlightSpeedWalk(walkPath)
-  ui.fError("Impossibile da raggiungere")
+  local result = searchRoom(room)
+  local count = 0
+  local roomId = 0
+  --
+  if (type(result) == 'string') then
+    -- 
+    -- Search for ID: Convert search from ID in search from text (validate ID)
+    result = searchRoom(result, true, true)
+    if (not table.is_empty(result)) then
+      roomId = tonumber(room)    
+    end
+  else
+    --
+    -- Search for Name: 
+    for k, v in pairs(result) do
+      count = count + 1
+      if (count == 1) then
+        roomId = tonumber(k)
+      end
+    end
+  end
+  --
+  -- Multiple results
+  if (count &gt; 1) then
+    ui.fShowRooms(result)
+    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
+  --
+  -- Single result
+  elseif (roomId) and (roomId &gt; 0) then  
+    local walkPath = {}
+    local walkDirs = {}
+    --
+    if getPath(getPlayerRoom(), roomId) then
+      walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+      doSpeedWalk()
+    else
+      -- Remove last SpeedWalk 
+      ui.fHighlightSpeedWalk(walkPath)
+      ui.fError("Impossibile da raggiungere")
+    end
+  --
+  -- Zero result
+  else
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  end
 end</script>
 				<command></command>
 				<packageName></packageName>
@@ -2297,6 +2316,53 @@ end</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uih(?:e(?:l(?:p)?)?)?)(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>UI Info room</name>
+				<script>local room = matches[2] or ""
+--
+if (room == "") then
+  ui.fRoomInfo()
+else
+  local result = searchRoom(room)
+  local count = 0
+  local roomId = 0
+  --
+  if (type(result) == 'string') then
+    -- 
+    -- Search for ID: Convert search from ID in search from text (validate ID)
+    result = searchRoom(result, true, true)
+    if (not table.is_empty(result)) then
+      roomId = tonumber(room)    
+    end
+  else
+    --
+    -- Search for Name: 
+    for k, v in pairs(result) do
+      count = count + 1
+      if (count == 1) then
+        roomId = tonumber(k)
+      end
+    end
+  end
+  --
+  -- Multiple results
+  if (count &gt; 1) then
+    ui.fShowRooms(result)
+    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
+  --
+  -- Single result
+  elseif (roomId) and (roomId &gt; 0) then  
+    ui.fRoomInfo(roomId)
+  --
+  -- Zero result
+  else
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  end
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)(?:uii(?:n(?:f(?:o)?)?)?)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Reply</name>
@@ -2517,39 +2583,24 @@ end</script>
 				<regex>^(?i)(?:uip(?:r(?:o(?:f(?:i(?:l(?:e(?:s)?)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Room Info</name>
-				<script>ui.fRoomInfo(matches[2])</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)(?:uii(?:n(?:f(?:o)?)?)?)(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
 				<name>UI Search</name>
-				<script>local s = matches[2] or ""
-local result = searchRoom(s)
+				<script>local room = matches[2] or ""
 --
-if (type(result) == 'string') then
-  if (result == "") then
-    result = {}
-  else
-    result = searchRoom(result, true, true)
-  end
-end
---
-cecho(ui.fTitle("Ricerca per nome stanza ("..s..")"))
---
-if (table.is_empty(result)) then
-  ui.fEchon("Nessuna stanza trovata") 
+if (room == "") then
+  ui.fEcho2n("Specificare il nome o l'ID della stanza da cercare")   
 else
-  for k, v in ui.fOrderedPairs(result) do
-    cecho(ui.fGetNumberFormattedText(k, 5).." ")
-    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;Info&lt;gold&gt;]", [[expandAlias("uiinfo ]]..k..[[")]], "Info su '"..v.."'", true)
-    echo(" ") 
-    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;Track&lt;gold&gt;]", [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
-    echo(" ") 
-    cechoLink("&lt;gold&gt;[&lt;LightYellow&gt;GO&lt;gold&gt;]", [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
-    cecho(" &lt;cyan&gt;"..ui.fConvertColorString(v).." &lt;purple&gt;Area: &lt;white&gt;"..getRoomAreaName(getRoomArea(k)).."\n")
+  local result = searchRoom(room)
+  --
+  if (type(result) == 'string') then
+    -- 
+    -- Search for ID: Convert search from ID in search from text (validate ID)
+    result = searchRoom(result, true, true)
+    if (not table.is_empty(result)) then
+      roomId = tonumber(room)    
+    end
   end
+  --
+  ui.fShowRooms(result)
 end</script>
 				<command></command>
 				<packageName></packageName>
@@ -2577,7 +2628,7 @@ if (in_path == "") then
   elseif (not backwards) then
     if (ui.idxPath &lt; ui.memPath) then
       ui.idxPath = ui.idxPath + 1
-      out_path = ui.path[ui.idxPath]
+      out_path = ui.path[ui.idxPath].nnsd
       ui.retrace = true
     else
       ui.fEcho2n("Sei alla fine del percorso memorizzato.")
@@ -2674,19 +2725,58 @@ end</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Track</name>
-				<script>local roomId = matches[2] or ""
-local walkPath = {}
-local walkDirs = {}
+				<script>local room = matches[2] or ""
 --
-if getPath(getPlayerRoom(), roomId) then
-  walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
-  -- Highlight SpeedWalk 
-  ui.fHighlightSpeedWalk(walkPath)
-  ui.fEchon("Un nuovo sentiero è stato tracciato")
+if (room == "") then
+  ui.fEcho2n("Specificare il nome o l'ID della stanza da tracciare")   
 else
-  -- Remove last SpeedWalk 
-  ui.fHighlightSpeedWalk(walkPath)
-  ui.fError("Impossibile da tracciare")
+  local result = searchRoom(room)
+  local count = 0
+  local roomId = 0
+  --
+  if (type(result) == 'string') then
+    -- 
+    -- Search for ID: Convert search from ID in search from text (validate ID)
+    result = searchRoom(result, true, true)
+    if (not table.is_empty(result)) then
+      roomId = tonumber(room)    
+    end
+  else
+    --
+    -- Search for Name: 
+    for k, v in pairs(result) do
+      count = count + 1
+      if (count == 1) then
+        roomId = tonumber(k)
+      end
+    end
+  end
+  --
+  -- Multiple results
+  if (count &gt; 1) then
+    ui.fShowRooms(result)
+    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
+  --
+  -- Single result
+  elseif (roomId) and (roomId &gt; 0) then  
+    local walkPath = {}
+    local walkDirs = {}
+    --
+    if getPath(getPlayerRoom(), roomId) then
+      walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+      -- 
+      ui.fHighlightSpeedWalk(walkPath)
+      ui.fEcho2n("Un nuovo sentiero è stato tracciato")
+    else
+      -- Remove last SpeedWalk 
+      ui.fHighlightSpeedWalk(walkPath)
+      ui.fError("Impossibile da raggiungere")
+    end
+  --
+  -- Zero result
+  else
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  end
 end</script>
 				<command></command>
 				<packageName></packageName>
@@ -4008,10 +4098,11 @@ if (attack) then
   local opponent = '';
   local attack = 'bl';
   --
-  -- Fuori dal combattimento, primo mob a tiro
+  -- Fuori dal combattimento...
   if (ui.opponent.name == '') then
+    -- .. primo mob a tiro
     for _, mob in pairs(ui.room.mobs) do
-      opponent = mob.key
+      opponent = string.gsub(mob.key, " ", "-")
       --
       -- Mano di energia attiva
       if (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
@@ -4027,8 +4118,10 @@ if (attack) then
   end
   --
   --
+  ui.echoed = nil
+  --
   if (opponent == '') then
-    ui.fEchon("Non ci sono mob da attaccare")  
+    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
     if (ui.affects["velocita` della luce"]) then
       if (ui.affects["mantello di fiamme"] == nil) then
         expandAlias("flame", false)
@@ -4038,16 +4131,17 @@ if (attack) then
     end
   else
     --
-    ui.fEchon("Opponent: &lt;red&gt;"..opponent)  
+    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;red&gt;"..opponent)  
     --
     -- LightSpeed
     if (ui.affects["velocita` della luce"]) then
+      cecho("&lt;green&gt; (LightSpeed)\n")
       --
       -- Hp sotto l'70%
       if (perc &lt;= 70) then
         expandAlias("cel", false)
       --
-      -- Schudo di fiamme scaduto
+      -- Scudo di fiamme scaduto
       elseif (ui.affects["mantello di fiamme"] == nil) then
         expandAlias("flame", false)
       --
@@ -4066,8 +4160,9 @@ if (attack) then
       -- 
       else
         expandAlias("lampo "..opponent, false)
-      end 
+      end
     end
+    echo("\n") 
     --
     --
     if (ui.player.pow &lt; 40) then
@@ -4075,6 +4170,7 @@ if (attack) then
     else
       expandAlias(attack.." "..opponent, false)
     end
+    echo("\n") 
   end
 end</script>
 				<command></command>
@@ -6047,7 +6143,7 @@ function ui.fdigitNumber(number, digit)
 end
 --
 function ui.fGetNumberFormattedText(number, digit)
-  return "&lt;purple&gt;[&lt;white&gt;"..ui.fdigitNumber(number, digit).."&lt;purple&gt;]".."&lt;r&gt;"
+  return "&lt;ansiMagenta&gt;[&lt;white&gt;"..ui.fdigitNumber(number, digit).."&lt;ansiMagenta&gt;]".."&lt;r&gt;"
 end
 --
 function ui.fRemoveArticle(text)
@@ -6855,7 +6951,6 @@ function ui.fHelp(cmd)
   GUI.Help:show()
   GUI.Help.Main.Console:enableScrolling ()
   GUI.Help.Main.Console:scrollTo(1)
-  
 end
 --
 function ui.fHelp_links(htext, hlinktext, hurl, hcaption)
@@ -7306,6 +7401,27 @@ local move_vectors = {
   down  = { -1, -1,  0}
 }
 --
+function ui.fShowRooms(rooms)
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fShowRooms(...)")
+  --
+  cecho(ui.fTitle("Stanze"))
+  --
+  if (table.is_empty(rooms)) then
+    cecho("Non ci sono stanze da mostrare\n\n")
+  else
+    for k, v in ui.fOrderedPairs(rooms) do
+      cecho(ui.fGetNumberFormattedText(k, 5).." ")
+      cechoLink(ui.cLink("I"), [[expandAlias("uiinfo ]]..k..[[")]], "Info su '"..v.."'", true)
+      echo(" ") 
+      cechoLink(ui.cLink("T"), [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
+      echo(" ") 
+      cechoLink(ui.cLink("G"), [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
+      cecho(" &lt;cyan&gt;"..ui.fConvertColorString(v).." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(getRoomArea(k)).."\n")
+    end
+    echo("\n")
+  end
+end
+--
 local function make_room(room, prev)
   local coords = { 0, 0, 0 }
   local areas = getAreaTable()
@@ -7414,7 +7530,13 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
   id = id or getMapSelection()["center"] or getPlayerRoom()
   --
   if (not onlyReturn) then
-    outString = ui.fTitle("Informazioni stanza &lt;purple&gt;#&lt;white&gt;"..id)
+    if (id == getMapSelection()["center"]) then
+      outString = ui.fTitle("Informazioni &lt;yellow&gt;stanza selezionata sulla mappa&lt;r&gt; &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+    elseif (id == getPlayerRoom()) then
+      outString = ui.fTitle("Informazioni &lt;green&gt;stanza attuale&lt;r&gt; &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+    else
+      outString = ui.fTitle("Informazioni stanza &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+    end
   end
   --
   id = tonumber(id)
@@ -7434,23 +7556,23 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       local entrances = getAllRoomEntrances(id)
       --
       if (infoType == "room") or (infoType == "all") then
-        outString = outString.."&lt;purple&gt;Room: &lt;cyan&gt;"..name.." &lt;purple&gt;#&lt;white&gt;"..id.." &lt;purple&gt;(x:&lt;white&gt;"..x..", &lt;purple&gt;y:&lt;white&gt;"..y.."&lt;purple&gt;)\n" -- [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;purple&gt;]
+        outString = outString.."&lt;ansiMagenta&gt;Room: &lt;cyan&gt;"..name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..id.." &lt;ansiMagenta&gt;(x:&lt;white&gt;"..x..", &lt;ansiMagenta&gt;y:&lt;white&gt;"..y.."&lt;ansiMagenta&gt;)\n" -- [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;ansiMagenta&gt;]
       end
       --
       if (infoType == "area") or (infoType == "all") then
-        outString = outString.."&lt;purple&gt;Area: &lt;white&gt;"..nameAarea.." &lt;purple&gt;#&lt;white&gt;"..idAarea.."\n"
+        outString = outString.."&lt;ansiMagenta&gt;Area: &lt;white&gt;"..nameAarea.." &lt;ansiMagenta&gt;#&lt;white&gt;"..idAarea.."\n"
       end
       --
       if (infoType == "exit") or (infoType == "all") then
         if (table.is_empty(exits)) then
-          outString = outString.."&lt;purple&gt;Non ci sono uscite.\n"
+          outString = outString.."&lt;ansiMagenta&gt;Non ci sono uscite.\n"
         else
-          outString = outString.."&lt;purple&gt;Uscite:\n"
+          outString = outString.."&lt;ansiMagenta&gt;Uscite:\n"
           for k,v in pairs(exits) do
             local exitIdArea = getRoomArea(v)
-            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long.." &lt;white&gt;"..getRoomName(v).." &lt;purple&gt;#&lt;white&gt;"..v
+            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long.." &lt;white&gt;"..getRoomName(v).." &lt;ansiMagenta&gt;#&lt;white&gt;"..v
             if (exitIdArea ~= idAarea) then
-              outString = outString.." &lt;purple&gt;Area: &lt;white&gt;"..getRoomAreaName(exitIdArea).." &lt;purple&gt;#&lt;white&gt;"..exitIdArea
+              outString = outString.." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(exitIdArea).." &lt;ansiMagenta&gt;#&lt;white&gt;"..exitIdArea
             end      
             outString = outString.."\n"
           end
@@ -7459,21 +7581,21 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "otherexit") or (infoType == "all") then
         if (table.is_empty(specialExits)) then
-          outString = outString.."&lt;purple&gt;Non ci sono uscite speciali.\n"
+          outString = outString.."&lt;ansiMagenta&gt;Non ci sono uscite speciali.\n"
         else
-          outString = outString.."&lt;purple&gt;Uscite speciali:\n"
+          outString = outString.."&lt;ansiMagenta&gt;Uscite speciali:\n"
           for k,v in pairs(specialExits) do
             for n, d in pairs(v) do
               d = tonumber(d)
-              outString = outString.."  &lt;cyan&gt;'"..n.."' &lt;white&gt;"..getRoomName(k).." &lt;purple&gt;#&lt;white&gt;"..k
+              outString = outString.."  &lt;cyan&gt;'"..n.."' &lt;white&gt;"..getRoomName(k).." &lt;ansiMagenta&gt;#&lt;white&gt;"..k
               if (d == 1) then
-                outString = outString.." &lt;purple&gt;(&lt;green&gt;Aperta&lt;purple&gt;)\n"
+                outString = outString.." &lt;ansiMagenta&gt;(&lt;green&gt;Aperta&lt;ansiMagenta&gt;)\n"
               elseif (d == 2) then
-                outString = outString.." &lt;purple&gt;(&lt;yellow&gt;Chiusa&lt;purple&gt;)\n"
+                outString = outString.." &lt;ansiMagenta&gt;(&lt;yellow&gt;Chiusa&lt;ansiMagenta&gt;)\n"
               elseif (d == 3) then
-                outString = outString.." &lt;purple&gt;(&lt;red&gt;Chiusa a chiave&lt;purple&gt;)\n"
+                outString = outString.." &lt;ansiMagenta&gt;(&lt;red&gt;Chiusa a chiave&lt;ansiMagenta&gt;)\n"
               else
-                outString = outString.." &lt;purple&gt;(&lt;orange&gt;Non definita&lt;purple&gt;) (&lt;white&gt;"..d.."&lt;purple&gt;)\n"
+                outString = outString.." &lt;ansiMagenta&gt;(&lt;orange&gt;Non definita&lt;ansiMagenta&gt;) (&lt;white&gt;"..d.."&lt;ansiMagenta&gt;)\n"
               end     
             end
           end
@@ -7482,19 +7604,19 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "door") or (infoType == "all") then
         if (table.is_empty(doors)) then
-          outString = outString.."&lt;purple&gt;Non ci sono porte.\n"
+          outString = outString.."&lt;ansiMagenta&gt;Non ci sono porte.\n"
         else
-          outString = outString.."&lt;purple&gt;Porte:\n"
+          outString = outString.."&lt;ansiMagenta&gt;Porte:\n"
           for k,v in pairs(doors) do
             outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long
             if (v == 1) then
-              outString = outString.." &lt;purple&gt;(&lt;green&gt;Aperta&lt;purple&gt;)\n"
+              outString = outString.." &lt;ansiMagenta&gt;(&lt;green&gt;Aperta&lt;ansiMagenta&gt;)\n"
             elseif (v == 2) then
-              outString = outString.." &lt;purple&gt;(&lt;yellow&gt;Chiusa&lt;purple&gt;)\n"
+              outString = outString.." &lt;ansiMagenta&gt;(&lt;yellow&gt;Chiusa&lt;ansiMagenta&gt;)\n"
             elseif (v == 3) then
-              outString = outString.." &lt;purple&gt;(&lt;red&gt;Chiusa a chiave&lt;purple&gt;)\n"
+              outString = outString.." &lt;ansiMagenta&gt;(&lt;red&gt;Chiusa a chiave&lt;ansiMagenta&gt;)\n"
             else
-              outString = outString.." &lt;purple&gt;(&lt;orange&gt;Non definita&lt;purple&gt;) (&lt;white&gt;"..v.."&lt;purple&gt;)\n"
+              outString = outString.." &lt;ansiMagenta&gt;(&lt;orange&gt;Non definita&lt;ansiMagenta&gt;) (&lt;white&gt;"..v.."&lt;ansiMagenta&gt;)\n"
             end     
           end
         end
@@ -7502,9 +7624,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "entrance") or (infoType == "all") then
         if (table.is_empty(entrances)) then
-          outString = outString.."&lt;purple&gt;Non ci sono entrate.\n"
+          outString = outString.."&lt;ansiMagenta&gt;Non ci sono entrate.\n"
         else
-          outString = outString.."&lt;purple&gt;Entrate:\n"
+          outString = outString.."&lt;ansiMagenta&gt;Entrate:\n"
           for k,v in pairs(entrances) do
             local entranceExits = getRoomExits(v)
             local entranceSpecialExits = getSpecialExits(v)
@@ -7529,19 +7651,19 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
             end
             --
             local entranceIdArea = getRoomArea(v)
-            sEntrance = sEntrance.."&lt;purple&gt;da &lt;white&gt;"..getRoomName(v).." &lt;purple&gt;#&lt;white&gt;"..v
+            sEntrance = sEntrance.."&lt;ansiMagenta&gt;da &lt;white&gt;"..getRoomName(v).." &lt;ansiMagenta&gt;#&lt;white&gt;"..v
             if (entranceIdArea ~= idAarea) then
-              sEntrance = sEntrance.." &lt;purple&gt;Area: &lt;white&gt;"..getRoomAreaName(entranceIdArea).." &lt;purple&gt;#&lt;white&gt;"..entranceIdArea
+              sEntrance = sEntrance.." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(entranceIdArea).." &lt;ansiMagenta&gt;#&lt;white&gt;"..entranceIdArea
             end
             outString = outString.."  "..sEntrance.."\n"
           end
         end
       end
     else
-      outString = outString.."&lt;purple&gt;La stanza (&lt;white&gt;"..(id or "nil").."&lt;purple&gt;) non esiste o non è stata ancora esplorata.\n"
+      outString = outString.."&lt;ansiMagenta&gt;La stanza (&lt;white&gt;"..(id or "nil").."&lt;ansiMagenta&gt;) non esiste o non è stata ancora esplorata.\n"
     end
   else
-    outString = outString.."&lt;purple&gt;L'indice della stanza non è valido.\n"
+    outString = outString.."&lt;ansiMagenta&gt;L'indice della stanza non è valido.\n"
   end
   --
   if (onlyReturn) then
@@ -9026,9 +9148,9 @@ function ui.fUpdateRoom()
       --
       -- Prepare Line 1: End of path
       if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        exitsAsString[idx] = "&lt;red&gt;[&lt;white&gt;⨂&lt;cyan&gt;&lt;red&gt;]&lt;cyan&gt;"..ui.room.name.." &lt;purple&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
+        exitsAsString[idx] = "&lt;red&gt;[&lt;white&gt;⨂&lt;cyan&gt;&lt;red&gt;]&lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
       else
-        exitsAsString[idx] = "&lt;white&gt; ⨂ &lt;cyan&gt;"..ui.room.name.." &lt;purple&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
+        exitsAsString[idx] = "&lt;white&gt; ⨂ &lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
       end
       idx = idx + 1
       --
@@ -9132,7 +9254,7 @@ function ui.fUpdateRoom()
         --GUI.Room.Main.Console:cecho(" ")
         --GUI.Room.Main.Console:cechoLink(ui.cLink("GA"), [[expandAlias("get all ]]..key..[[")]], "Prendi tutto da '"..object.desc.."'", true)
         --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..object.counter.."&lt;purple&gt;]&lt;r&gt; "..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")        
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..object.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")        
       end
     end  
     --
@@ -9143,7 +9265,7 @@ function ui.fUpdateRoom()
         GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; ")
         --GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("examine ]]..key..[[")]], "Esamina '"..player.desc.."'", true)
         --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..player.counter.."&lt;purple&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..player.level.."&lt;r&gt;] "..ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..player.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..player.level.."&lt;r&gt;] "..ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
       end
     end  
     --
@@ -9156,7 +9278,7 @@ function ui.fUpdateRoom()
         --GUI.Room.Main.Console:cecho(" ")
         --GUI.Room.Main.Console:cechoLink(ui.cLink("&lt;red&gt;K"), [[expandAlias("kill ]]..key..[[")]], "Colpisci '"..mob.desc.."'", true)
         --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;purple&gt;[&lt;white&gt;"..mob.counter.."&lt;purple&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..mob.level.."&lt;r&gt;] "..ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..mob.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..mob.level.."&lt;r&gt;] "..ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
       end
     end
   end
@@ -10438,7 +10560,7 @@ end</script>
     y = 100,
     width = -100,
     height = -100,
-    titleText ="Lumen et Umbra UI - Help",
+    titleText ="Lumen et Umbra UI rel. "..ui.release.." - Help",
     titleTxtColor = "orange",
     buttonsize = 12,
     buttonFontSize = 5,
@@ -11471,32 +11593,35 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.help = [[
-&lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt;Lumen et Umbra UI comprende un insieme di finestre (widget), script, trigger, etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra su client Mudlet. Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; per avere informazioni sugli argomenti disponibili.
+&lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt; Lumen et Umbra UI comprende un insieme di finestre (widget), script, trigger, etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra su client Mudlet. Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; per avere informazioni sugli argomenti disponibili.
 
-&lt;white&gt;Witgets&lt;r&gt; &lt;link widgets&gt;Panoramica&lt;/link&gt;
- &lt;link affects&gt;Affects&lt;/link&gt;   ▷ Widget effetti attivi                      &lt;link mapper&gt;Mapper&lt;/link&gt;   ▷ Widget mappa 
- &lt;link buttons&gt;Buttons&lt;/link&gt;   ▷ Widget bottoni per alias                   &lt;link opponent&gt;Opponent&lt;/link&gt; ▷ Widget dati avversatrio 
- &lt;link chat&gt;Chat&lt;/link&gt;      ▷ Widget chat                                &lt;link player&gt;Player&lt;/link&gt;   ▷ Widget dati giocatore
- &lt;link cooldowns&gt;Cooldowns&lt;/link&gt; ▷ Widget cooldowns                           &lt;link room&gt;Room&lt;/link&gt;     ▷ Widget stanza 
- &lt;link endowment&gt;Endowment&lt;/link&gt; ▷ Widget equipaggiamento                     &lt;link targets&gt;Target&lt;/link&gt;   ▷ Widget bottoni target 
- &lt;link group&gt;Group&lt;/link&gt;     ▷ Widget gruppo
+&lt;yellow&gt;Witgets&lt;r&gt; &lt;link widgets&gt;Panoramica&lt;/link&gt;
+  &lt;link affects&gt;Affects&lt;/link&gt;   ▷ Widget effetti attivi                      &lt;link mapper&gt;Mapper&lt;/link&gt;   ▷ Widget mappa 
+  &lt;link buttons&gt;Buttons&lt;/link&gt;   ▷ Widget bottoni per alias                   &lt;link opponent&gt;Opponent&lt;/link&gt; ▷ Widget dati avversatrio 
+  &lt;link chat&gt;Chat&lt;/link&gt;      ▷ Widget chat                                &lt;link player&gt;Player&lt;/link&gt;   ▷ Widget dati giocatore
+  &lt;link cooldowns&gt;Cooldowns&lt;/link&gt; ▷ Widget cooldowns                           &lt;link room&gt;Room&lt;/link&gt;     ▷ Widget stanza 
+  &lt;link endowment&gt;Endowment&lt;/link&gt; ▷ Widget equipaggiamento                     &lt;link targets&gt;Target&lt;/link&gt;   ▷ Widget bottoni per target 
+  &lt;link group&gt;Group&lt;/link&gt;     ▷ Widget gruppo
 
-&lt;white&gt;Comandi (principali):                                    Comandi (mappa):&lt;r&gt;
- &lt;link alias&gt;uia[liases]&lt;/link&gt;    ▷ Comando per gestire gli aliases       &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
- &lt;link help&gt;uih[elp]&lt;/link&gt;       ▷ Questo help                           &lt;link roominfo&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
- &lt;link highlight&gt;uihi[ghlights]&lt;/link&gt; ▷ Comando per gestione gli highlights   &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
- &lt;link variable&gt;uiv[ariables]&lt;/link&gt;  ▷ Comando per gestione le variabili     &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
+&lt;yellow&gt;Comandi (principali):                                    Comandi (mappa):&lt;r&gt;
+  &lt;link alias&gt;uia[liases]&lt;/link&gt;    ▷ Comando per gestire gli aliases       &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
+  &lt;link help&gt;uih[elp]&lt;/link&gt;       ▷ Questo help                           &lt;link info&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
+  &lt;link highlight&gt;uihi[ghlights]&lt;/link&gt; ▷ Comando per gestione gli highlights   &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
+  &lt;link variable&gt;uiv[ariables]&lt;/link&gt;  ▷ Comando per gestione le variabili     &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
 
-&lt;white&gt;Altri comandi:&lt;r&gt;
- &lt;link walk&gt;.&lt;/link&gt; o &lt;link walk&gt;..&lt;/link&gt;        ▷ Comando di walk e speedwalk
- &lt;link target&gt;Gn&lt;/link&gt;, &lt;link target&gt;o0&lt;/link&gt; o &lt;link target&gt;Tn&lt;/link&gt; ▷ Comandi per impostare la variabile &lt;var&gt;target&lt;/var&gt;
- &lt;link button&gt;uib[uttons]&lt;/link&gt;     ▷ Comando per la gestione dei pulsanti per alias (a0..a9, b0..b9, c0..c9)
- &lt;link color&gt;uic[olors]&lt;/link&gt;      ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
- &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt;    ▷ Comando per la gestione della dimensione dei font di aluni widget
- &lt;link keybind&gt;uik[eibind]&lt;/link&gt;     ▷ Comando per la gestione dei tasti rapidi per aliases e targets
- &lt;link profile&gt;uip[rofiles]&lt;/link&gt;    ▷ Comando per la gestione dei profili
- &lt;link reply&gt;uir[eply]&lt;/link&gt;       ▷ Comando per rispondere velocemente all'ultimo messsaggio ricevuto
- &lt;link widget&gt;uiw[idget]&lt;/link&gt;      ▷ Comando per il ripristino dei widget chiusi
+&lt;yellow&gt;Altri comandi:&lt;r&gt;
+  &lt;link walk&gt;.&lt;/link&gt;,
+  &lt;link walk&gt;..&lt;/link&gt;           ▷ Comandi di walk e speedwalk
+  &lt;link target&gt;g0..g9&lt;/link&gt;,
+  &lt;link target&gt;o0&lt;/link&gt;,
+  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link button&gt;uib[uttons]&lt;/link&gt;  ▷ Comando per la gestione dei pulsanti del widget Button
+  &lt;link color&gt;uic[olors]&lt;/link&gt;   ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
+  &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt; ▷ Comando per la gestione della dimensione dei font di aluni widget
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
+  &lt;link profile&gt;uip[rofiles]&lt;/link&gt; ▷ Comando per la gestione dei profili
+  &lt;link reply&gt;uir[eply]&lt;/link&gt;    ▷ Comando per rispondere velocemente all'ultimo messsaggio ricevuto
+  &lt;link widget&gt;uiw[idget]&lt;/link&gt;   ▷ Comando per il ripristino dei widget chiusi
 ]]
 --
 ui.help.affects = [[
@@ -11511,26 +11636,26 @@ ui.help.alias = [[
 &lt;title&gt;Aliases&lt;/title&gt;Gli aliases permettono di associare un testo semplice a uno o più comandi complessi. I comandi di un alias possono contenere variabili create con il comando &lt;link variable&gt;uiv[ariables]&lt;/link&gt; o altri alias creati precedenemente con il comando &lt;link alias&gt;uia[liases]&lt;/link&gt;. 
 Per associare più comandi ad un alias utilizzare uno degli appositi separatori di comando (]]..ui.colors.separator..[[;&lt;r&gt; o ]]..ui.colors.separator..[[/&lt;r&gt;). Richiamando l'alias i comandi verranno eseguiti sequenzialmente dal primo all'ultimo.
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uia[liases]&lt;/command&gt;                   Per visualizzare l'elenco degli aliases
   &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;           Per visualizzare il singolo alias
   &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;comandi&gt; Per creare o modificare un alias
   &lt;command&gt;uia[liases]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;command&gt;remove&lt;/command&gt;    Per eliminare un alias
   &lt;command&gt;uia[liases] remove_all&lt;/command&gt;        Per eliminare tutti gli aliases
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt; &lt;input&gt;[argomento]&lt;/input&gt;           Per eseguire l'alias
 
-&lt;white&gt;Carattere speciale&lt;r&gt; &lt;input&gt;#&lt;/input&gt;
+&lt;yellow&gt;Carattere speciale&lt;r&gt; &lt;input&gt;#&lt;/input&gt;
 Normalmente, durante l'esecuzione di un alias, l'input passato come parametro ad un alias viene appeso al comando o sostituito all'ultima variabile del comando (se presente). Il carattere speciale &lt;input&gt;#&lt;/input&gt; permette di specificare il punto esatto all'interno del comando dove inserire il testo di input.
 
-&lt;white&gt;Carattere speciale&lt;r&gt; ]]..ui.colors.varID..ui.varID..[[&lt;r&gt;
+&lt;yellow&gt;Carattere speciale&lt;r&gt; ]]..ui.colors.varID..ui.varID..[[&lt;r&gt;
 Per utilizzare una variabile precedentemente dichiarata con il comando &lt;link variable&gt;uiv[ariables]&lt;/link&gt; all'interno di un alias usare il carattere speciale ]]..ui.colors.varID..ui.varID..[[&lt;r&gt; prima delnome della variabile.
 
-&lt;white&gt;Caratteri speciali&lt;r&gt; ]]..ui.colors.separator..[[;&lt;r&gt; o ]]..ui.colors.separator..[[/&lt;r&gt;
+&lt;yellow&gt;Caratteri speciali&lt;r&gt; ]]..ui.colors.separator..[[;&lt;r&gt; o ]]..ui.colors.separator..[[/&lt;r&gt;
 Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'interno dello stesso alias
 
-&lt;white&gt;Esempio 1: Comando semplice&lt;r&gt;
+&lt;yellow&gt;Esempio 1: Comando semplice&lt;r&gt;
   Dichiarazione:
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;hl&lt;/aliasName&gt; &lt;aliasOutput&gt;cast 'heal'&lt;/aliasOutput&gt;
 
@@ -11544,7 +11669,7 @@ Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'int
     
   L'input viene appeso al comando.
 
-&lt;white&gt;Esempio 2: Comando con variabile&lt;r&gt;
+&lt;yellow&gt;Esempio 2: Comando con variabile&lt;r&gt;
   Dichiarazione:
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;bt&lt;/aliasName&gt; bash &lt;varName&gt;target&lt;/varName&gt;   
    
@@ -11560,7 +11685,7 @@ Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'int
   
   L'ultima variabile viene sostituita dall'input. Il valore della variabile, in questo caso &lt;varName&gt;target&lt;/varName&gt;, non cambierà
 
-&lt;white&gt;Esempio 3: Comando con più variabili&lt;r&gt;
+&lt;yellow&gt;Esempio 3: Comando con più variabili&lt;r&gt;
   Dichiarazione:
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;aa&lt;/aliasName&gt; &lt;varName&gt;action&lt;/varName&gt; &lt;varName&gt;target&lt;/varName&gt;
   
@@ -11576,7 +11701,7 @@ Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'int
   
   L'ultima variabile viene sostituita dall'input. Il valore della variabile, in questo caso &lt;varName&gt;target&lt;/varName&gt;, non cambierà
 
-&lt;white&gt;Esempio 4: Comandi multipli con input a posizione definita
+&lt;yellow&gt;Esempio 4: Comandi multipli con input a posizione definita
   Dichiarazione:
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;dd&lt;/aliasName&gt; &lt;aliasOutput&gt;get&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt; ]]..ui.colors.separator..[[/&lt;r&gt; &lt;aliasOutput&gt;drink&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; ]]..ui.colors.separator..[[/&lt;r&gt; &lt;aliasOutput&gt;put&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt;
   
@@ -11590,7 +11715,7 @@ Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'int
   
   Il carattere speciale &lt;input&gt;#&lt;/input&gt; verrà sostituito dall'imput. Si noti che in caso di mancanza di input, il carattere speciale &lt;input&gt;#&lt;/input&gt; verrà sostituito da uno spazio vuoto
 
-&lt;white&gt;Esempio 5: Comandi multipli complessi con alias, variabili e input a posizione definita
+&lt;yellow&gt;Esempio 5: Comandi multipli complessi con alias, variabili e input a posizione definita
   Dichiarazione (si faccia riferimento agli esempi precedenti):
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;gg&lt;/aliasName&gt; &lt;aliasOutput&gt;get&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt;
     ▷ &lt;command&gt;uia&lt;/command&gt; &lt;aliasName&gt;pp&lt;/aliasName&gt; &lt;aliasOutput&gt;put&lt;/aliasOutput&gt; &lt;input&gt;#&lt;/input&gt; &lt;varName&gt;bag&lt;/varName&gt;
@@ -11606,29 +11731,47 @@ Utilizzare uno dei seguenti carattere speciali per dividere più comandi all'int
     ◁ [3] &lt;aliasName&gt;pp&lt;/aliasName&gt; limonata
       ◁ &lt;aliasOutput&gt;put&lt;/aliasOutput&gt; &lt;input&gt;limonata&lt;/input&gt; &lt;varValue&gt;moltetasche&lt;/varValue&gt;
   
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt; ▷ Comando per la gestione dei tasti rapidi per aliases e targets
+ 
+Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
+]]
+--
+ui.help.buttons = [[
+&lt;title&gt;Widget Button&lt;/title&gt;Il widget Button contiene dei pulsanti che posso essere assonciati ad un alias creato precedentemente. I pulsanti sono identificati da una lettera (&lt;red&gt;a&lt;r&gt;, &lt;green&gt;b&lt;r&gt; oppure &lt;blue&gt;c&lt;r&gt;) e un numero (da 0 a 9) per un totale di 30 pulsanti configurabili (da &lt;red&gt;a0&lt;r&gt; a &lt;red&gt;a9&lt;r&gt;, da &lt;green&gt;b0&lt;r&gt; a &lt;green&gt;b9&lt;r&gt; e da &lt;blue&gt;c0&lt;r&gt; a &lt;blue&gt;c9&lt;r&gt;).
+
+I pulsanti sono ragruppati per lettera ed è possibile passare da un gruppo all'altro cliccando sui pulsanti a, b e c sulla barra del titolo del widget.
+
+Tramite il comando &lt;link button&gt;uib[uttons]&lt;/link&gt; è possibile configurare i pusanti del widget.
+
+Cliccare su un pulsante o richiamarlo per nome da console equivale a eseguire l'alias a cui è stato associato.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link button&gt;uib[uttons]&lt;/link&gt;  ▷ Comando per la gestione dei pulsanti del widget Button
+
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.button = [[
-&lt;title&gt;Pulsanti per alias&lt;/title&gt;I pulsanti degli alias sono i pulsanti che posso essere personalizzati 
-assonciandogli un alias. Sono identificati con una lettera (a, b oppure c) e un
-numero (da 0 a 9) per un totale di 30 pulsanti configurabili (da &lt;button&gt;[a0]&lt;/button&gt; a &lt;button&gt;[a9]&lt;/button&gt;, da &lt;button&gt;[b0]&lt;/button&gt; a &lt;button&gt;[b9]&lt;/button&gt;, da &lt;button&gt;[c0]&lt;/button&gt; a &lt;button&gt;[c9]&lt;/button&gt;).
+&lt;title&gt;Gestione dei pulsanti del widget Button&lt;/title&gt;Tramite il comando &lt;command&gt;uib[uttons]&lt;/command&gt; è possibile associare, cambiare o rimuovere un alias a uno dei 30 pulsanti del widget Button.
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+Una volta associato ad un alias, sul pulsante appariranno le informazioni relative al suo nome (in alto a sinistra), all'alias associato (al centro) e al tasto di scelta rapida associato all'alias (in basso a destra, se presente). Si noti che il tasto di scelta rapida va associato all'alias (tramite il comando &lt;link keybind&gt;uik[eibind]&lt;/link&gt;) e non al pulsante.
+
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uib[uttons]&lt;/command&gt;                   Per visualizzare l'elenco dei pulsanti configurati
   &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt;&lt;button&gt;&lt;/button&gt;          Per visualizzare il singolo pulsante
   &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt;&lt;button&gt;&lt;/button&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;  Per associare un alias al pusante
   &lt;command&gt;uib[uttons]&lt;/command&gt; &lt;button&gt;&lt;button&gt;&lt;/button&gt; &lt;command&gt;remove&lt;/command&gt;   Per eliminare l'alias associato al pulsante
   &lt;command&gt;uib[uttons] remove_all&lt;/command&gt;        Per eliminare gli aliases associati a tutti i pulsanti
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;button&gt;&lt;button&gt;&lt;/button&gt; o click             Per eseguire l'alias associato al pulsante
 
-Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
-]]
---
-ui.help.buttons = [[
-&lt;title&gt;Widget Alias Buttons&lt;/title&gt;TODO
+&lt;button&gt;&lt;button&gt;&lt;/button&gt; deve essere compreso tra uno dei 30 pulsanti disponibili (da &lt;red&gt;a0&lt;r&gt; a &lt;red&gt;a9&lt;r&gt;, da &lt;green&gt;b0&lt;r&gt; a &lt;green&gt;b9&lt;r&gt; e da &lt;blue&gt;c0&lt;r&gt; a &lt;blue&gt;c9&lt;r&gt;).
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link buttons&gt;Buttons&lt;/link&gt;     ▷ Widget bottoni per alias
+  &lt;link alias&gt;uia[liases]&lt;/link&gt; ▷ Comando per gestire gli aliases
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -11648,10 +11791,9 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.color = [[
-&lt;title&gt;Colori&lt;/title&gt;E' possibile visualizzare l'elenco dei colori che si possono utilizzare negli
-uiHilights tramite il comando &lt;command&gt;uiColors&lt;/command&gt;.  
+&lt;title&gt;Colori&lt;/title&gt;Tramite il comando &lt;command&gt;uiColors&lt;/command&gt; è possibile visualizzare l'elenco dei colori che si possono utilizzare negli &lt;link highlight&gt;highlight&lt;/link&gt;.  
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;uic[olors]&lt;/command&gt;    Per visualizzare l'elenco dei colori
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
@@ -11665,25 +11807,48 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.fontsize = [[
-&lt;title&gt;Impostare la dimensione del font dei widget&lt;/title&gt;E' possibile cambiare la dimensione del font di alcuni widget dell'UI.
+&lt;title&gt;Impostare la dimensione del font dei widget&lt;/title&gt;Tramite il comando &lt;command&gt;uif[ontsize]&lt;/command&gt; è possibile cambiare la dimensione del font di alcuni widget dell'UI.
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;uif[ontsize]&lt;/command&gt; &lt;input&gt;&lt;widget&gt;&lt;/input&gt; &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt;
 
-I nomi dei &lt;input&gt;&lt;widget&gt;&lt;/input&gt; disponibili sono: &lt;input&gt;all&lt;/input&gt; (per tutti contemporaneamente), &lt;input&gt;chat&lt;/input&gt;, &lt;input&gt;endowment&lt;/input&gt;, &lt;input&gt;help&lt;/input&gt;, &lt;input&gt;overland&lt;/input&gt;, o &lt;input&gt;room&lt;/input&gt;.
+I &lt;input&gt;&lt;widget&gt;&lt;/input&gt; a cui è possibile cambiare la dimensione del font sono: &lt;input&gt;all&lt;/input&gt; (per tutti contemporaneamente), &lt;input&gt;chat&lt;/input&gt;, &lt;input&gt;endowment&lt;/input&gt;, &lt;input&gt;help&lt;/input&gt;, &lt;input&gt;overland&lt;/input&gt;, o &lt;input&gt;room&lt;/input&gt;.
 
 Le &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt; del font devono essere un valore compreso tra &lt;varValue&gt;1&lt;/varValue&gt; e &lt;varValue&gt;30&lt;/varValue&gt;.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
+ui.help.go = [[
+&lt;title&gt;Mapper: go&lt;/title&gt;Tramite il comando &lt;command&gt;uig[o]&lt;/command&gt; è possibile muoversi automaticamente verso una stanza che è stata mappata.
+
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
+  &lt;command&gt;uif[go]&lt;/command&gt; &lt;input&gt;&lt;id&gt;&lt;/input&gt;|&lt;input&gt;&lt;nome&gt;&lt;/input&gt;
+
+Il parametro di ricerca della destinazione può essere indistintamente l'&lt;input&gt;&lt;id&gt;&lt;/input&gt; o il &lt;input&gt;&lt;nome&gt;&lt;/input&gt; della stanza.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link info&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
+  &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
+  &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
+
+Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
+]]
+--
 ui.help.group = [[
-&lt;title&gt;Widget Group&lt;/title&gt;Il widget group visualizza automaticamente (via GMCP) i dati relativi ai componenti del gruppo a cui si partecipa. Il leader del gruppo viene evidenziato col simbolo 👑 a fianco al nome.
+&lt;title&gt;Widget Group&lt;/title&gt;Il widget Group visualizza automaticamente (via GMCP) i dati relativi ai componenti del gruppo a cui si partecipa. Il leader del gruppo viene evidenziato col simbolo 👑 a fianco al nome.
 
 Cliccando su un elemento del gruppo, la variabile &lt;varName&gt;target&lt;/varName&gt; viene autimaticamente aggiornata con il nome del componente del gruppo cliccato.
-Lo stesso effetto lo si ottiene digitanto il nome che appare in alto a sinstra all'elemento del gruppo (da &lt;button&gt;g0&lt;/button&gt; a &lt;button&gt;g9&lt;/button&gt; in quanto considerati &lt;link target&gt;Target&lt;/link&gt;) oppure con la combinazione di tasti rapidi associata al'elemento del gruppo che si vuole selezionare.
 
-Questa funzionalità, combinata con gli alias, permette di eseguire comandi specifici sul componente del gruppo selezionato (ad esempio curandolo con l'alias: cast 'healt' &lt;varName&gt;target&lt;/varName&gt;).
+Lo stesso effetto lo si ottiene digitanto il nome dell'elemento del gruppo (da &lt;button&gt;g0&lt;/button&gt; a &lt;button&gt;g9&lt;/button&gt;) oppure con la combinazione di tasti rapidi associata all'elemento del gruppo (visualizzata in basso a destra).
+
+Questa funzionalità, combinata con gli alias, permette di eseguire comandi specifici sull'avversario.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link target&gt;g0..g9&lt;/link&gt;,
+  &lt;link target&gt;o0&lt;/link&gt;,
+  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]        
@@ -11691,7 +11856,7 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ui.help.highlight = [[
 &lt;title&gt;Highlights&lt;/title&gt;Gli Highlights permettono di evidenziare parole o frasi del mud cambiandone il colore. Questo può semplificare la visualizzazione di elementi importanti all'interno del testo come, ad esempio, evidenziare la presenza di una &lt;red&gt;cassa&lt;r&gt; o di una &lt;cyan&gt;chiave&lt;r&gt; nella descrizione di una stanza.
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uihi[lights]&lt;/command&gt;                   Per visualizzare l'elenco degli highlights
   &lt;command&gt;uihi[lights]&lt;/command&gt; &lt;testo&gt;           Per visualizzare il colore del testo
   &lt;command&gt;uihi[lights]&lt;/command&gt; &lt;testo&gt; &lt;colore&gt;  Per associare un colore a un testo
@@ -11703,38 +11868,87 @@ E' possibile visualizzare un elenco dei colori disponibili per gli highlights ut
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
-ui.help.keybind = [[
-&lt;title&gt;Tasti rapidi per aliases e target&lt;/title&gt;E' possibile associare una combinazione di tasti a un alias o a un target con
-il comando &lt;command&gt;uikeybind&lt;/command&gt;.
+ui.help.info = [[
+&lt;title&gt;Mapper: info&lt;/title&gt;Tramite il comando &lt;command&gt;uii[nfo]&lt;/command&gt; è possibile ottenere informazioni su una stanza che è stata mappata.
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
+  &lt;command&gt;uii[nfo]&lt;/command&gt; &lt;input&gt;&lt;id&gt;&lt;/input&gt;|&lt;input&gt;&lt;nome&gt;&lt;/input&gt;
+
+Il parametro di ricerca della destinazione può essere indistintamente l'&lt;input&gt;&lt;id&gt;&lt;/input&gt; o il &lt;input&gt;&lt;nome&gt;&lt;/input&gt; della stanza.
+
+Se non viene specificato nessun parametro di ricerca il comando restituirà informazioni sulla stanza in cui si trova attualmente il giocatore.
+
+Se è selezionata una stanza sul widget Mappa (e viene specificato nessun parametro)uih u il comando restituirà informazioni sulla stanza selezionata.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
+  &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
+  &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
+
+Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
+]]
+--
+ui.help.keybind = [[
+&lt;title&gt;Tasti rapidi per aliases e target&lt;/title&gt;Tramite il comando &lt;command&gt;uik[eybind]&lt;/command&gt; è possibile associare una combinazione di tasti rapidi a un &lt;link alias&gt;alias&lt;/link&gt; o a un &lt;link target&gt;target&lt;/link&gt;.
+
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uik[eybind]&lt;/command&gt;                           Per visualizzare l'elenco dei tasti rapidi
   &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;|&lt;button&gt;&lt;target&gt;&lt;/button&gt;          Per visualizzare i tasti dell'alias\del target
   &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;|&lt;button&gt;&lt;target&gt;&lt;/button&gt; &lt;keybind&gt;&lt;tasti&gt;&lt;/keybind&gt;  Per associare uun tasto all'alias\al target
   &lt;command&gt;uik[eybind]&lt;/command&gt; &lt;aliasName&gt;&lt;alias&gt;&lt;/aliasName&gt;|&lt;button&gt;&lt;target&gt;&lt;/button&gt; &lt;command&gt;remove&lt;/command&gt;   Per eliminare i tasti dell'alias\del target
   &lt;command&gt;uik[eybind] remove_all&lt;/command&gt;                Per eliminare tutti i tasti rapidi
 
-I tasti utillizzabili possono essere i tasti funzione (&lt;keybind&gt;f1&lt;/keybind&gt;, &lt;keybind&gt;f2&lt;/keybind&gt;, &lt;keybind&gt;f3&lt;/keybind&gt;, etc), i caratteri
-dell'alfabeto (&lt;keybind&gt;a&lt;/keybind&gt;, &lt;keybind&gt;b&lt;/keybind&gt;, &lt;keybind&gt;c&lt;/keybind&gt;, etc) e i numeri (&lt;keybind&gt;0&lt;/keybind&gt;, &lt;keybind&gt;1&lt;/keybind&gt;, &lt;keybind&gt;2&lt;/keybind&gt;, etc), presi singolarmente oppure
-preceduti da &lt;keybind&gt;CTRL&lt;/keybind&gt; o &lt;keybind&gt;ALT&lt;/keybind&gt; (oppure entrambi).
+I tasti utillizzabili possono essere o i tasti funzione (&lt;keybind&gt;f1&lt;/keybind&gt;, &lt;keybind&gt;f2&lt;/keybind&gt;, &lt;keybind&gt;f3&lt;/keybind&gt;, etc) o i caratteri dell'alfabeto (&lt;keybind&gt;a&lt;/keybind&gt;, &lt;keybind&gt;b&lt;/keybind&gt;, &lt;keybind&gt;c&lt;/keybind&gt;, etc) o i numeri (&lt;keybind&gt;0&lt;/keybind&gt;, &lt;keybind&gt;1&lt;/keybind&gt;, &lt;keybind&gt;2&lt;/keybind&gt;, etc), presi singolarmente oppure preceduti da &lt;keybind&gt;CTRL&lt;/keybind&gt; o &lt;keybind&gt;ALT&lt;/keybind&gt; (o entrambi).
 
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link target&gt;g0..g9&lt;/link&gt;,
+  &lt;link target&gt;o0&lt;/link&gt;,
+  &lt;link target&gt;t1..t4&lt;/link&gt;      ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link alias&gt;uia[liases]&lt;/link&gt; ▷ Comando per gestire gli aliases
+ 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.mapper = [[
-&lt;title&gt;Widget Mapper\Overland&lt;/title&gt;TODO
+&lt;title&gt;Widget Mapper\Overland&lt;/title&gt;Il widget Mapper ha la doppia funzione di visualizzare le aree di gioco interne che sono state esplorate e di visualizzare le zone esterne dell'overland. Il passaggio tre le due visualizzazioni avviene automaticamente in base alla posizione del personaggio.
+
+&lt;yellow&gt;Mapper&lt;r&gt;
+Per la gestione delle aree interne il widget Mapper utilizza il componente &lt;cyan&gt;Geyser Mapper&lt;r&gt; di Mudlet che comprende funzionalità generiche per le gestione delle stanze esplorate accessibili dal menù che appare clickandoci sopra con il tasto destro (fare riferimento all'help on line di Mudlet), alle quali sono state aggiunte delle funzionalità personalizzate create su misura per Lumen et Umbra come la ricerca automatica del percorso più breve (ove possibile, facendo doppio click sulla stanza che si desidera raggiungere), la visualizzazione di portali, la visualizzazione di uscite speciali o la visualizzazione del percorso da seguire.
+
+Le funzionalità del widget Mapper sono inoltre arricchite dai comandi testuali &lt;link go&gt;uig[o]&lt;/link&gt; per spostarsu ad una stanza specifica, &lt;link info&gt;uii[nfo]&lt;/link&gt; per avere informazioni sulla stanza attuale o una stanza specifica, &lt;link search&gt;uis[earch]&lt;/link&gt; per cercare una stanza partendo dal suo nome e &lt;link track&gt;uit[rack]&lt;/link&gt; per tracciare sulla mappa il percorso verso una stanza, ove possibile.
+
+&lt;yellow&gt;Overland&lt;r&gt;
+Per la gestione delle zone dell'overland il widget Mapper si aggiorna automaticamente con le informazioni ricevute dal server via GMCP. Non integra ulteriori funzioni speciali.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
+  &lt;link info&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
+  &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
+  &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.opponent = [[
-&lt;title&gt;Widget Opponent&lt;/title&gt;TODO
+&lt;title&gt;Widget Opponent&lt;/title&gt;Il widget Opponent visualizza automaticamente (via GMCP) i dati dell'avversario contro cui si sta combattendo relativi a nome, livello e HP (barra rossa).
+
+Cliccando sulla barra degli HP, la variabile &lt;varName&gt;target&lt;/varName&gt; viene autimaticamente aggiornata con il nome dell'avversario.
+
+Lo stesso effetto lo si ottiene digitanto il nome del widget (&lt;button&gt;o0&lt;/button&gt;) oppure con la combinazione di tasti rapidi associata all'avversario (visualizzata in basso a destra).
+
+Questa funzionalità, combinata con gli alias, permette di eseguire comandi specifici sull'avversario.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link target&gt;g0..g9&lt;/link&gt;,
+  &lt;link target&gt;o0&lt;/link&gt;,
+  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.player = [[
-&lt;title&gt;Widget Player&lt;/title&gt;TODO
+&lt;title&gt;Widget Player&lt;/title&gt;Il widget Player visualizza automaticamente (via GMCP) i dati del personaggio in gioco relativi a nome, razza, classe, livello, HP (barra rossa), mana (barra blu), energia (barra gialla) e movimanto (barra verde). Inoltre è possibile tenere sotto controlo il tick counter (barra sopra la barra HP), il round counter (barra sotto la barra HP) e l'esperienza (barra sotto la barra del movimento).
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -11742,7 +11956,7 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ui.help.profile = [[
 &lt;title&gt;Profili&lt;/title&gt;Tramite l'utilizzo dei profili è possibile salvare alias, highlights, target e variabili  
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uip[rofiles]&lt;/command&gt;                   Per visualizzare l'elenco dei disponibili
   &lt;command&gt;uip[rofiles] load&lt;/command&gt; &lt;profile&gt;&lt;profilo&gt;&lt;/profile&gt;    Per caricare un profile
   &lt;command&gt;uip[rofiles] save&lt;/command&gt; &lt;profile&gt;&lt;profilo&gt;&lt;/profile&gt;    Per salvare i dati in uso su un profilo
@@ -11753,36 +11967,89 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.room = [[
-&lt;title&gt;Widget Room&lt;/title&gt;TODO
+&lt;title&gt;Widget Room&lt;/title&gt;Il widget Room visualizza i dati relativi alla stanza in cui si trova attualmete il personaggio e si aggiorna automaticamente (via GMCP) ad ogni spostamento.
+
+Il widget è composto da un quadrato in formato ASCII che rappresenta la stanza in cui ci si trova sul quale è possibile visualizzare le uscite disponibili (con frecce che indicano le direzioni nord, est, sud, ovest, su e giu) con gli ID delle stanze di destinazione, la posizione del personaggio all'interno della stanza (con un cerchio crociato, vedere il comando &lt;command&gt;sposta&lt;/command&gt;) e la direzione da cui si è entrati nella stanza (rombo pieno al posto della reccia di direzione).
+
+A fianco al quadrato e riportata una legenda della stanza dalla quale è possibile visualizzare il nome e l'ID della stanza attuale e il nome delle stanze a cui fanno riferimento le uscite. Da questa leggenda è possibile spostarsi ad una stanza adiacente clickando sul nome della destinazione.
+
+Sotto il quadrato vengono riportate altre informazioni relative alla stanza tra cui le uscite speciali o portali (se presenti) ai quali si può entrare clickandoci sopra, l'elendo degli oggetti, dei giocatori e dei MOB (in questo ordine) presenti in stanza.
+
+Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
+]]
+--
+ui.help.search = [[
+&lt;title&gt;Mapper: search&lt;/title&gt;Tramite il comando &lt;command&gt;uis[earch]&lt;/command&gt; è possibile ricercare stanze che sono state mappate.
+
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
+  &lt;command&gt;uis[earch]&lt;/command&gt; &lt;input&gt;&lt;id&gt;&lt;/input&gt;|&lt;input&gt;&lt;nome&gt;&lt;/input&gt;
+
+Il parametro di ricerca della destinazione può essere indistintamente l'&lt;input&gt;&lt;id&gt;&lt;/input&gt; o il &lt;input&gt;&lt;nome&gt;&lt;/input&gt; della stanza.
+
+Nell'elenco dei risultati oltre all'id, il nome e all'area della stanza, verranno riportati dei link iperattivi tramite i quali sarà possibile eseguire direttamente i comandi &lt;link info&gt;uii[nfo]&lt;/link&gt; (I), &lt;link track&gt;uit[rack]&lt;/link&gt; (T) e &lt;link go&gt;uig[o]&lt;/link&gt; (G).
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
+  &lt;link info&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
+  &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.target = [[
-&lt;title&gt;Target (g0..g9, o0, t1..t4)&lt;/title&gt;La variable &lt;varName&gt;target&lt;/varName&gt; è una variabile predefinita dell'UI di Lumen et Umbra che è
-possibile impostare in modi differenti. Oltre ad essere trattata come una 
-variabile gestibile dal comando &lt;command&gt;uivariables&lt;/command&gt; è possibile impostarla utilizzando
-o i 4 tasti target (&lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; e &lt;button&gt;t4&lt;/button&gt;), oppure cliccando sul riquadro del nemico
-attualmente ingaggiato (&lt;button&gt;o0&lt;/button&gt;) o ancora cliccando su uno dei componenti del gruppo
+&lt;title&gt;Target (g0..g9, o0, t1..t4)&lt;/title&gt;La variable &lt;varName&gt;target&lt;/varName&gt; è una variabile predefinita utilizzabile negli &lt;link alias&gt;uia[liases]&lt;/link&gt; e che è possibile impostare in modi differenti.
+
+Oltre ad essere getibile come semplice variabile tramite il comando &lt;link variable&gt;uiv[ariables]&lt;/link&gt; è possibile impostarla utilizzando o i 4 tasti del widget Target (&lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; e &lt;button&gt;t4&lt;/button&gt;), o cliccando sull'avversario ingaggiato dal widget Opponent (&lt;button&gt;o0&lt;/button&gt;) o ancora cliccando su uno dei componenti del gruppo dal widget Gruppo.
 di gioco (da &lt;button&gt;g0&lt;/button&gt; a &lt;button&gt;g9&lt;/button&gt;).
-I tasti &lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; e &lt;button&gt;t4&lt;/button&gt; sono configurabili, mentre &lt;button&gt;o0&lt;/button&gt; e da &lt;button&gt;g0&lt;/button&gt; a &lt;button&gt;g9&lt;/button&gt; sono preimpostati in base
-all'avversario ingaggiato e la composizione dale gruppo (l'ultima aggiornata 
-con il comando &lt;white&gt;group&lt;r&gt;.
 
-&lt;white&gt;Configurazione:&lt;r&gt;
-  &lt;command&gt;t1..4&lt;/command&gt; &lt;valore&gt;        Per assegnare un valore a T1..T4
-  &lt;command&gt;t1..4 remove&lt;/command&gt;          Per rimuovere il valore aassegnato a T1..T4
+I tasti del widget Target &lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; e &lt;button&gt;t4&lt;/button&gt; sono configurabili, mentre &lt;button&gt;o0&lt;/button&gt; e da &lt;button&gt;g0&lt;/button&gt; a &lt;button&gt;g9&lt;/button&gt; sono preimpostati in base all'avversario ingaggiato o alla composizione attuale del gruppo.
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
-  &lt;g0..9&gt; o click             Per assegnare a &lt;varName&gt;target&lt;/varName&gt; un componente del gruppo
-  &lt;0o&gt; o click                Per assegnare a &lt;varName&gt;target&lt;/varName&gt; l'avversario ingaggiato
-  &lt;t1..4&gt; o click             Per assegnare a &lt;varName&gt;target&lt;/varName&gt; il valore assegnato a t1..4
+&lt;yellow&gt;Configurazione:&lt;r&gt;
+  &lt;command&gt;t1&lt;/command&gt;|&lt;command&gt;t2&lt;/command&gt;|&lt;command&gt;t3&lt;/command&gt;|&lt;command&gt;t4&lt;/command&gt; &lt;valore&gt;        Per assegnare un valore a &lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; o &lt;button&gt;t4&lt;/button&gt;
+  &lt;command&gt;t1&lt;/command&gt;|&lt;command&gt;t2&lt;/command&gt;|&lt;command&gt;t3&lt;/command&gt;|&lt;command&gt;t4 remove&lt;/command&gt;          Per rimuovere il valore assegnato a &lt;command&gt;t1&lt;/command&gt;, &lt;command&gt;t2&lt;/command&gt;, &lt;command&gt;t3&lt;/command&gt; o &lt;command&gt;t4&lt;/command&gt;
+
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
+  &lt;command&gt;g0&lt;/command&gt;| .. | &lt;command&gt;g9&lt;/command&gt; o click sul widget Group      Per assegnare a &lt;varName&gt;target&lt;/varName&gt; il nome del relativo componente del gruppo
+  &lt;command&gt;o0&lt;/command&gt;          o click sul widget Opponent   Per assegnare a &lt;varName&gt;target&lt;/varName&gt; il nome dell'avversario ingaggiato
+  &lt;command&gt;t1&lt;/command&gt;|&lt;command&gt;t2&lt;/command&gt;|&lt;command&gt;t3&lt;/command&gt;|&lt;command&gt;t4&lt;/command&gt; o click sug widget Targets    Per assegnare a &lt;varName&gt;target&lt;/varName&gt; il valore assegnato a &lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; o &lt;button&gt;t4&lt;/button&gt;
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link group&gt;Group&lt;/link&gt;       ▷ Widget gruppo
+  &lt;link opponent&gt;Opponent&lt;/link&gt;    ▷ Widget dati avversatrio 
+  &lt;link targets&gt;Target&lt;/link&gt;      ▷ Widget bottoni per target 
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt; ▷ Comando per la gestione dei tasti rapidi per aliases e targets
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.targets= [[
-&lt;title&gt;Widget Targets&lt;/title&gt;TODO
+&lt;title&gt;Widget Targets&lt;/title&gt;Il widget Target è coposto da 4 pulsanti personalizzabili sui quali è possibile memorizzare 4 target differenti. Clickando su uno dei pulsanti la variabile &lt;varName&gt;Target&lt;/varName&gt; viene aggiornata con il valore che è stato assegnato al pulsante.
+
+Lo stesso effetto lo si ottiene digitanto il nome del pulsante (&lt;button&gt;t1&lt;/button&gt;, &lt;button&gt;t2&lt;/button&gt;, &lt;button&gt;t3&lt;/button&gt; e &lt;button&gt;t4&lt;/button&gt;) oppure con la combinazione di tasti rapidi associata al pulsante (visualizzata su ogni tasto, in basso a destra).
+
+Questa funzionalità, combinata con gli alias, permette di passare velcemente da un target all'altro.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link target&gt;g0..g9&lt;/link&gt;,
+  &lt;link target&gt;o0&lt;/link&gt;,
+  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
+
+Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
+]]
+--
+ui.help.track = [[
+&lt;title&gt;Mapper: track&lt;/title&gt;Tramite il comando &lt;command&gt;uit[rack]&lt;/command&gt; è possibile tracciare un sentiero sulla mappa che porterà ad una stanza che sia stata mappata.
+
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
+  &lt;command&gt;uit[rack]&lt;/command&gt; &lt;input&gt;&lt;id&gt;&lt;/input&gt;|&lt;input&gt;&lt;nome&gt;&lt;/input&gt;
+
+Il parametro di ricerca della destinazione può essere indistintamente l'&lt;input&gt;&lt;id&gt;&lt;/input&gt; o il &lt;input&gt;&lt;nome&gt;&lt;/input&gt; della stanza.
+
+&lt;yellow&gt;Per maggiori informazioni:&lt;r&gt;
+  &lt;link go&gt;uig[o]&lt;/link&gt;     ▷ Comando per muoversi automaticamente a una stanza 
+  &lt;link info&gt;uii[nfo]&lt;/link&gt;   ▷ Comando avere informazioni su una stanza
+  &lt;link search&gt;uis[earch]&lt;/link&gt; ▷ Comando per cercare una stanza
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -11793,34 +12060,26 @@ E' possibile richiamare una variabile all'interno di un alias facendo precedere 
 Alcune delle variabili sono già dichiarate (variabili predefinite), e vengno utilizzate per gli elementi l'interfaccia.
 Le variabili sono utilizzabili nel codice dei vostri script facendo accesso alla tabella LUA ui.variables[nomevariabile].
 
-&lt;white&gt;Configurazione:&lt;r&gt;
+&lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt;                       Per visualizzare l'elenco delle variabili
-  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt;                Per visualizzare il valore di una variabile
-  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;varValue&gt;&lt;valore&gt;&lt;/varValue&gt;       Per creare o modificare una variabile
-  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;command&gt;remove&lt;/command&gt;         Per rimuovere una variabile
+  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt;               Per visualizzare il valore di una variabile
+  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;varValue&gt;&lt;valore&gt;&lt;/varValue&gt;      Per creare o modificare una variabile
+  &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;varName&gt;&lt;nome&gt;&lt;/varName&gt; &lt;command&gt;remove&lt;/command&gt;        Per rimuovere una variabile
   &lt;command&gt;uiv[ariable]&lt;/command&gt;|&lt;command&gt;]]..ui.varID..[[&lt;/command&gt; &lt;command&gt;remove_all&lt;/command&gt;            Per rimuovere tutte le variabili
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.walk = [[
-&lt;title&gt;Walk, Speedwalk e Backwalk&lt;/title&gt;Lumen et Umbra UI comprende uno strumento per la gestione dei movimenti del
-personaggio. Tramite i comandi "&lt;command&gt;.&lt;/command&gt;" e "&lt;command&gt;..&lt;/command&gt;" è possibile percorrere lunghi
-&lt;percorsi&gt; espressi, per esempio, nel formato "ee2w4suuu9n" oltre che 
-ripercorrere i propri passi. 
+&lt;title&gt;Walk, Speedwalk e Backwalk&lt;/title&gt;Tramite il comandi "&lt;command&gt;.&lt;/command&gt;" è possibile percorrere un &lt;percorso&gt; espressi nel formato "ee2w4suuu9n".
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+Tramite il comando "&lt;command&gt;..&lt;/command&gt;" oltre che ripercorrere un &lt;percorso&gt; all'indietro. 
+
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;.&lt;/command&gt;&lt;percorso&gt;   Per eseguire il percorso specificato
   &lt;command&gt;..&lt;/command&gt;&lt;percorso&gt;  Per eseguire il percorso specificato all'indietro
   &lt;command&gt;.&lt;/command&gt;             Per ripercorere i propri passi (massimo 50 locazioni)
   &lt;command&gt;..&lt;/command&gt;            Per ripercorere i propri passi all'indietro (massimo 50 locazioni)
-
-&lt;white&gt;Attenzione:&lt;r&gt;
-- Vengono memorizzate le direzioni inviate anche se il movimento nella locazione
-non dovesse avvenire a causa di un ostacolo.
-- Funziona solo con i comandi "d", "e", "n", "s", "u" e "w". 
-- Non funziona con il comando "enter".
-- Non funziona con il comando "run".
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -11828,7 +12087,7 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ui.help.widget = [[
 &lt;title&gt;Ripristino dei widget chiusi&lt;/title&gt;E' possibile ripristinare i widget dell'UI che sono stati minimizzati o chiusi.
 
-&lt;white&gt;Utilizzo:&lt;r&gt;
+&lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;uiw[idget] &lt;nome_widget&gt;&lt;/command&gt;
 
 I &lt;command&gt;&lt;nome_widget&gt;&lt;/command&gt; disponibili sono: &lt;exec uiwidget all&gt;all&lt;/exec&gt; (ripristina tutti i widgets), &lt;exec uiwidget affects&gt;affects&lt;/exec&gt;, &lt;exec uiwidget buttons&gt;buttons&lt;/exec&gt;, &lt;exec uiwidget chat&gt;chat&lt;/exec&gt;, &lt;exec uiwidget cooldowns&gt;cooldowns&lt;/exec&gt;, &lt;exec uiwidget endowment&gt;endowment&lt;/exec&gt;, &lt;exec uiwidget group&gt;group&lt;/exec&gt;, &lt;exec uiwidget help&gt;help&lt;/exec&gt;, &lt;exec uiwidget mapper&gt;mapper&lt;/exec&gt;, &lt;exec uiwidget opponent&gt;opponent&lt;/exec&gt;, &lt;exec uiwidget player&gt;player&lt;/exec&gt;, &lt;exec uiwidget room&gt;room&lt;/exec&gt; o &lt;exec uiwidget target&gt;target&lt;/exec&gt; per i relativi widgets.
@@ -11841,7 +12100,7 @@ ui.help.widgets = [[
 
 Tutti i widget hanno la possibilità di essere spostati, ridimensionato, chiusi (tasto &lt;cyan&gt;&lt;x&gt;&lt;r&gt; nella barra del titolo), nascosti (tasto &lt;cyan&gt;&lt;_&gt;&lt;r&gt; nella barra del titolo) o ripristinati (con il comando &lt;link widget&gt;uiw[idget]&lt;/link&gt;). Alcuni widget possono essere resi trasparenti (tasto &lt;cyan&gt;&lt;...&gt;&lt;r&gt; nella barra del titolo) per personalizare il più possibile la disposizione dei widget all'interno dell'area di gioco.
 
-I widget sono creati utilizzando il componeti &lt;cyan&gt;Geyser Adjustable Container&lt;r&gt; (fare riferimento all'help on line di Mudlet) che integrano delle funzionalità comuni accessibili dal menù che appare cliccando con il tasto destro sulla barra del titolo.
+I widget sono creati utilizzando il componeti &lt;cyan&gt;Geyser Adjustable Container&lt;r&gt; di Mudlet (fare riferimento all'help on line di Mudlet) che integrano delle funzionalità comuni accessibili dal menù che appare cliccando con il tasto destro sulla barra del titolo.
 Tra queste funzionalità merita di essere menzionata la possibilità di agganciare il widget a un bordo della finestra principale di gioco. Per fare questo è sufficente spostare il widget contro il bordo al quale lo si vuole agganciare, cliccare con tasto destro sulla barra del titolo e selezionare &lt;cyan&gt;&lt;Aggancia a:&gt;&lt;r&gt;. Apparirà un sottomenù con i nomi dei bordi della finestra principale (es: basso, destra, etc) ai quali sarà possibie agganciare il widget. Per sganciare il widget dal bordo è sufficiente spostare il widget lontano dal bordo al quale è stato agganciato.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
