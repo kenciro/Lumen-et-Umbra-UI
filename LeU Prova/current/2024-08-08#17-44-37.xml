@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -655,17 +655,12 @@ ui.fUpdateRoom()</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList />
 				<regexCodePropertyList />
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa</name>
-					<script>local dir = ui.path[ui.idxPath] or ""
-expandAlias("open "..matches[2].." "..dir)
-setDoor(gmcp.room.info.num, dir, 2)
--- 
--- Rimozione dell'ultima direzione inserita in quanto porta chiusa
---if (ui.idxPath &gt; 0) then
---  ui.idxPath = ui.idxPath - 1
---  ui.idxMem = ui.idxPath
---end</script>
+					<script>--local dir = ui.path[ui.idxPath] or ""
+expandAlias("open "..matches[2]) --.." "..dir)
+--setDoor(gmcp.room.info.num, dir, 2)
+</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -683,11 +678,11 @@ setDoor(gmcp.room.info.num, dir, 2)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa a chiave</name>
-					<script>local dir = ui.path[ui.idxPath] or ""
-expandAlias("unlock "..matches[2].." "..dir)
-setDoor(gmcp.room.info.num, dir, 3)</script>
+					<script>--local dir = ui.path[ui.idxPath] or ""
+expandAlias("unlock "..matches[2]) --.." "..dir)
+--setDoor(gmcp.room.info.num, dir, 3)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -800,48 +795,6 @@ ui.inCad = false;</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>L'urlo di morte di (*) ti gela il sangue nelle vene.$</name>
-					<script>ui.nCad = ui.nCad or 0
-ui.nCad = ui.nCad + 1
-send("get all.coin "..ui.nCad..".cad")</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>L'urlo di morte di (.*) ti gela il sangue nelle vene.$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Fine cadaveri</name>
-					<script>ui.getAllCadNum = nil</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^Non vedi nessun (?:.*)cad.$</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Mangia\Conserva Ethereum</name>
@@ -2614,32 +2567,32 @@ local in_path = string.lower(matches[3] or "")
 local out_path = ""
 local backwards = (matches[2] == ".")
 --
-if (in_path == "") then
-  -- Retrace your steps back
-  if (backwards) then
-    if (ui.idxPath &gt;= 1) then
-      out_path = ui.dirReverse[ui.path[ui.idxPath]]
-      ui.idxPath = ui.idxPath - 1;
-      ui.retrace = true
-    else
-      ui.fEcho2n("Sei all'inizio del percorso memorizzato.")
-    end
-  -- Retrace your steps forward 
-  elseif (not backwards) then
-    if (ui.idxPath &lt; ui.memPath) then
-      ui.idxPath = ui.idxPath + 1
-      out_path = ui.path[ui.idxPath].nnsd
-      ui.retrace = true
-    else
-      ui.fEcho2n("Sei alla fine del percorso memorizzato.")
-    end
+local function ui_fGetNextNumber(text, index)
+  local number = ""
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui_fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
+  --
+  index = tonumber(index or 1)
+  while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
+    number = number..string.lower(text:sub(index, index))
+    index = index + 1
   end
+  if (number == "") then
+    number = "1"
+  end
+  number = tonumber(number)
+  --
+  return number, index
+end
+--
+if (in_path == "") then
+  ui.fEcho2n("Specificare un percorso.")
 else
   -- Speedwalk
   local number
   local idx = 1
   while (idx&lt;=in_path:len()) do
-    number, idx = ui.fGetNextNumber(in_path, idx)
+    number, idx = ui_fGetNextNumber(in_path, idx)
     if (idx&lt;=in_path:len()) then
       local char = string.lower(in_path:sub(idx, idx))
       for j=1, number do
@@ -4171,6 +4124,8 @@ if (attack) then
       expandAlias(attack.." "..opponent, false)
     end
     echo("\n") 
+    --
+    send("l")
   end
 end</script>
 				<command></command>
@@ -8489,46 +8444,6 @@ end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
-					<name>Path</name>
-					<packageName></packageName>
-					<script>--
-function ui.fGetNextNumber(text, index)
-  local number = ""
-  --
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
-  --
-  index = tonumber(index or 1)
-  while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
-    number = number..string.lower(text:sub(index, index))
-    index = index + 1
-  end
-  if (number == "") then
-    number = "1"
-  end
-  number = tonumber(number)
-  --
-  return number, index
-end
---
-function ui.fSavePath(dir)
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fSavePath("..(dir or "nil")..")")
-  --
-  if (ui.idxPath &lt; 50) then
-    ui.idxPath = ui.idxPath + 1
-    ui.path[ui.idxPath] = dir
-    ui.memPath = ui.idxPath
-  else
-    for i=1, 50-1 do
-      ui.path[i] = ui.path[i+1]
-    end
-    ui.path[50] = dir    
-    ui.idxPath = 50
-  end
-end
---</script>
-					<eventHandlerList />
-				</Script>
-				<Script isActive="yes" isFolder="no">
 					<name>Player</name>
 					<packageName></packageName>
 					<script>--
@@ -11372,11 +11287,6 @@ ui.validExit["u"]     = ui.validExit.up
 ui.validExit["w"]     = ui.validExit.west
 ui.validExit["ovest"] = ui.validExit.west
 ui.validExit["o"]     = ui.validExit.west
---
--- Storico Path
-ui.idxPath = 0;
-ui.memPath = 0;
-ui.path = {}
 --
 -- Speedwalk
 ui.speedwalk = ui.speedwalk or {
