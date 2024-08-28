@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -657,10 +657,13 @@ ui.fUpdateRoom()</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa</name>
-					<script>--local dir = ui.path[ui.idxPath] or ""
-expandAlias("open "..matches[2]) --.." "..dir)
---setDoor(gmcp.room.info.num, dir, 2)
-</script>
+					<script>ui.door = {
+  name = matches[2],
+  pick = true,
+  doorbash = true,
+}
+--
+expandAlias("open "..ui.door.name)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -672,17 +675,45 @@ expandAlias("open "..matches[2]) --.." "..dir)
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>^(?:Il|Lo|La|I|Gli|Le) (\S*) (?:e`|sono) chius(?:a|e|i|o).</string>
+						<string>^(?:Il|Lo|La|I|Gli|Le) (\S*) (?:e`|sono) chius[aeio].</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>Chiave, Doorbash or Pick</name>
+					<script>if (matches[2] == "scassinarla") then
+  ui.door.pick = false;
+elseif  (matches[2] == "sfondata") then
+  ui.door.doorbash = false;
+elseif  (matches[2]) then
+  ui.door.key = matches[2];
+end</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>E` impossibile (scassinarla).</string>
+						<string>E` troppo robusta per essere (sfondata).</string>
+						<string>Il meccanismo di chiusura sembra adatto a (.*)</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+						<integer>1</integer>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa a chiave</name>
-					<script>--local dir = ui.path[ui.idxPath] or ""
-expandAlias("unlock "..matches[2]) --.." "..dir)
---setDoor(gmcp.room.info.num, dir, 3)</script>
+					<script>expandAlias("unlock "..matches[2])</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -702,6 +733,33 @@ expandAlias("unlock "..matches[2]) --.." "..dir)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>Non hai la chiave giusta.</name>
+					<script>if (ui.door.pick) then
+  expandAlias("pick "..ui.door.name) 
+elseif (ui.door.doorbash) then
+  expandAlias("doorbash "..ui.door.name) 
+else
+  echo("\n")
+  ui.fEchon("Impossibile da scassinare o sfondare. ("..(ui.door.key or "non esiste chiave")..")")
+end</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>Non hai la chiave giusta.</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
 			</TriggerGroup>
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Loot</name>
@@ -718,84 +776,6 @@ expandAlias("unlock "..matches[2]) --.." "..dir)
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList />
 				<regexCodePropertyList />
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>multi_loot</name>
-					<script>if (ui.getAllCadNum)and(not ui.inCad)then
-  ui.inCad = true;
-  ui.getAllCadNum = ui.getAllCadNum + 1
-  send("get all "..ui.getAllCadNum..".cad")
-end
-enableTrigger("multi_loot_valid")
-enableTrigger("multi_loot_end")</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>1</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>Prendi .* da .*</string>
-						<string>Non c'e` niente in .*</string>
-						<string>Il cadavere .* non ti appartiene, non puoi prenderne i contenuti!</string>
-						<string>Non puoi prendere .*</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-						<name>multi_loot_valid</name>
-						<script>setTriggerStayOpen("multi_loot", 1)</script>
-						<triggerType>0</triggerType>
-						<conditonLineDelta>0</conditonLineDelta>
-						<mStayOpen>0</mStayOpen>
-						<mCommand></mCommand>
-						<packageName></packageName>
-						<mFgColor>#ff0000</mFgColor>
-						<mBgColor>#ffff00</mBgColor>
-						<mSoundFile></mSoundFile>
-						<colorTriggerFgColor>#000000</colorTriggerFgColor>
-						<colorTriggerBgColor>#000000</colorTriggerBgColor>
-						<regexCodeList>
-							<string>Prendi .* da .*</string>
-							<string>Non puoi prendere .*</string>
-							<string>C'erano .* monete.</string>
-						</regexCodeList>
-						<regexCodePropertyList>
-							<integer>1</integer>
-							<integer>1</integer>
-							<integer>1</integer>
-						</regexCodePropertyList>
-					</Trigger>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-						<name>multi_loot_end</name>
-						<script>disableTrigger("multi_loot_valid")
-disableTrigger("multi_loot_end")
-ui.inCad = false;</script>
-						<triggerType>0</triggerType>
-						<conditonLineDelta>0</conditonLineDelta>
-						<mStayOpen>0</mStayOpen>
-						<mCommand></mCommand>
-						<packageName></packageName>
-						<mFgColor>#ff0000</mFgColor>
-						<mBgColor>#ffff00</mBgColor>
-						<mSoundFile></mSoundFile>
-						<colorTriggerFgColor>#000000</colorTriggerFgColor>
-						<colorTriggerBgColor>#000000</colorTriggerBgColor>
-						<regexCodeList>
-							<string>^$</string>
-						</regexCodeList>
-						<regexCodePropertyList>
-							<integer>1</integer>
-						</regexCodePropertyList>
-					</Trigger>
-				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Mangia\Conserva Ethereum</name>
 					<script>expandAlias("p eth")</script>
@@ -1300,255 +1280,6 @@ end</script>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>LOG + Auto update effets</name>
-				<script>local str = "";
---
--- scudo di fuoco
-if (matches[1] == "La tua pelle ha acquistato la consistenza del ghiaccio.") then
-  ui.affects["scudo di ghiaccio"] = 3 
-elseif (matches[1] == "La tua pelle ha perso la consistenza del ghiaccio.") then
-  ui.affects["scudo di ghiaccio"] = -1
---
--- scudo di fuoco
-elseif (matches[1] == "Convochi uno schermo di fiamme intorno a te stesso.") then
-  ui.affects["scudo di fuoco"] = 26 
-elseif (matches[1] == "La tua aura fiammeggiante svanisce.") then
-  ui.affects["scudo di fuoco"] = -1
---
--- scarica di adrenalina
-elseif (matches[1] == "Acceleri il metabolismo nel tuo corpo!") then
-  ui.affects["scarica di adrenalina"] = 4
-elseif (matches[1] == "Il metabolismo nel tuo corpo torna normale.") then
-  ui.affects["scarica di adrenalina"] = -1
-  expandAlias("dro kyrus")
---
--- forza psichica
-elseif (matches[1] == "Ti senti piu` forte.") then
-  ui.affects["forza psichica"] = 100
-elseif (matches[1] == "La tua forza psichicamente indotta svanisce.") then
-  ui.affects["forza psichica"] = -1
---
--- santuario
-elseif (matches[1] == "Un'aura di luce bianca ti protegge.") then
-  ui.affects["santuario"] = 3
-  str = "* SANC *";
-elseif (matches[1] == "L'aura bianca intorno al tuo corpo svanisce.") then
-  ui.affects["santuario"] = -1
-  str = "&lt;255,32,321:"..ui.colors.wBackground.."&gt;Fine SANC";
---
--- mente oltre il corpo
-elseif (matches[1] == "Costringi il tuo corpo a non aver bisogno di cibo ed acqua!") then
-  ui.affects["mente oltre il corpo"] = 12
-elseif (matches[1] == "Senti un gorgoglio nello stomaco.") then
-  ui.affects["mente oltre il corpo"] = -1
---
--- scudo psichico
-elseif (matches[1] == "Erigi uno scudo mentale intorno al tuo corpo.") then
-  ui.affects["scudo psichico"] = 50
-elseif (matches[1] == "Il tuo scudo psichico svanisce.") then
-  ui.affects["scudo psichico"] = -1
---
--- pugno cinetico
-elseif (rex.match(matches[1], [[Con ampi gesti crei un pugno di pura energia (.*)]])) then
-  ui.parameters.enablePugno = false
-elseif (matches[1] == "Senti di poter sferrare di nuovo un pugno cinetico.") then
-  ui.parameters.enablePugno = true
---
--- avvelena lame
-elseif (matches[1] == "Sulle tue lame non rimane piu' traccia di veleno.") then
-  expandAlias("enve lee")
---
--- free cast
-elseif (matches[1] == "La tua mente si apre per un istante all'infinito!") then
-  if (ui.parameters.autoAttack) then
-    cecho("&lt;yellow&gt; (Free cast available)\n");
-    ui.parameters.freeCast = true;
-  end
---
--- Invasione
-elseif (matches[1] == "..Il velo tra le realta' si assottiglia..") then
-  str = "&lt;0,255,0:"..ui.colors.wBackground.."&gt;Inizio invasione..."
-  expandAlias("events", false)
-elseif  (matches[1] == "..Il velo tra le realta' torna al suo stato originale..") then
-  str = "&lt;255,0,0:"..ui.colors.wBackground.."&gt;... fine invasione."
-  -- sendToDiscordWebhook("... fine invasione.")
-end
---
-if (str ~= "") then
-  ui.fLog(str)
-end
---
-ui.fUpdateAffects()</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#00ffff</mFgColor>
-				<mBgColor>#000000</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Acceleri il metabolismo nel tuo corpo!</string>
-					<string>Il metabolismo nel tuo corpo torna normale.</string>
-					<string>Convochi uno schermo di fiamme intorno a te stesso.</string>
-					<string>La tua aura fiammeggiante svanisce.</string>
-					<string>Un'aura di luce bianca ti protegge.</string>
-					<string>L'aura bianca intorno al tuo corpo svanisce.</string>
-					<string>Costringi il tuo corpo a non aver bisogno di cibo ed acqua!</string>
-					<string>Senti un gorgoglio nello stomaco.</string>
-					<string>Erigi uno scudo mentale intorno al tuo corpo.</string>
-					<string>Il tuo scudo psichico svanisce.</string>
-					<string>Ti senti piu` forte.</string>
-					<string>La tua forza psichicamente indotta svanisce.</string>
-					<string>..Il velo tra le realta' .*</string>
-					<string>Senti di poter sferrare di nuovo un pugno cinetico.</string>
-					<string>La tua mente si apre per un istante all'infinito!</string>
-					<string>Senti di poter sferrare di nuovo un pugno cinetico.</string>
-					<string>Con ampi gesti crei un pugno di pura energia .*</string>
-					<string>Sulle tue lame non rimane piu' traccia di veleno.</string>
-					<string>La tua pelle ha perso la consistenza del ghiaccio.</string>
-					<string>La tua pelle ha acquistato la consistenza del ghiaccio.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>1</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>1</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>GAG</name>
-				<script>deleteLine()
---cecho ("\n&lt;white&gt;   - GAG -   "..matches[1].."\n")
-</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>.*  il suo fulmine non ti colpisce</string>
-					<string>.* COLPISC</string>
-					<string>.* cerca di lanciarti un incantesimo al quale sei immune.</string>
-					<string>.* compie un'impressionante mossa di combattimento.</string>
-					<string>.* crea delle fiamme dalle sue tempie!</string>
-					<string>.* criticamente a colpire .*</string>
-					<string>.* e` morto! R.I.P.</string>
-					<string>.* fa una bella mossa, ma perde l'equilibrio e cade in terra.</string>
-					<string>.* ha preso male la mira e il suo fulmine .*</string>
-					<string>.* lancia un intreccio di raggi luminosi ma riesci a schivarli agilmente!</string>
-					<string>.* ma (lo|la|li) manchi completamente.</string>
-					<string>.* manca completamente.</string>
-					<string>.* non riesce a raggiungerti con il suo tocco.</string>
-					<string>.* non riesce ad assorbire la tua energia vitale</string>
-					<string>.* pronuncia le parole.*</string>
-					<string>.* rimbalza a terra.</string>
-					<string>.* si concentra... .*</string>
-					<string>.* si rende conto di avere spazio per agire indisturbat[ao] e prepara un potente incantesimo!</string>
-					<string>.* smette di usare .*</string>
-					<string>.* ti indica, ma riesci a schivare la tempesta gelida scatenata dalla sua mano!</string>
-					<string>.* ti lancia un colonna di fuoco, ma tu riesci a spostarti dalla traiettoria</string>
-					<string>^Cerchi di medicare alla meglio le tue ferite.</string>
-					<string>^Eviti abilmente il getto d'acido .*</string>
-					<string>^Eviti con facilita' il calcio .*</string>
-					<string>^Flussi di energia planare .*</string>
-					<string>^Hai raggiunto il limite massimo di punti esperienza.</string>
-					<string>^I flussi di energia planare rinnovano il loro vigore!</string>
-					<string>^Il cono di freddo lanciato .* ti colpisce in pieno!</string>
-					<string>^Il tuo pensiero viaggia alla velocita' della luce!</string>
-					<string>^Inizi il processo di alterazione delle cellule del tuo corpo.</string>
-					<string>^L'energia planare si affievolisce e scompare.</string>
-					<string>^La conoscenza della magia di .* aumenta il danno dell'incantesimo!</string>
-					<string>^La tua concentrazione .*</string>
-					<string>^La tua conoscenza della magia .*</string>
-					<string>^DISABILITA La tua esperienza e` aumentata di .*</string>
-					<string>^DISABILITA La tua parte di esperienza e` .*</string>
-					<string>^Le fiamme mentali di .* non riescono a bruciarti</string>
-					<string>^Le tue abilita' migliorano criticamente il tuo incantesimo di guarigione!</string>
-					<string>^Scovi un punto debole nella mente del tuo bersaglio!</string>
-					<string>^Ti sposti dalla traiettoria del cono congelante .*</string>
-					<string>^Una palla di fuoco lanciata da .* ti sfiora</string>
-					<string>.* facendolo cadere a terra rovinosamente.</string>
-					<string>.* finisce a terra.</string>
-					<string>Il veleno non sembra sortire alcun effetto!</string>
-					<string>.* ti morde!</string>
-					<string>.* riesce a migliorare criticamente il suo incantesimo di guarigione!</string>
-					<string>Perdi la concentrazione e porti un colpo poco convinto.</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione descrizione &lt;-&gt; danni</name>
 				<script>local des = copy2decho(matches[2])
@@ -1586,54 +1317,7 @@ decho("\n"..dam.." "..des)
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Aure</name>
-				<script>local aura = matches[2]
-deleteLine()
-if (aura == "luce") then
-  cecho("&lt;white&gt; (*)&lt;r&gt;")
-elseif (aura == "ghiaccio") then
-  cecho("&lt;cyan&gt; (*)&lt;r&gt;")
-elseif (aura == "elettrica") then
-  cecho("&lt;blue&gt; (*)&lt;r&gt;")
-elseif (aura == "fiammeggiante") then
-  cecho("&lt;red&gt; (*)&lt;r&gt;")
-elseif (aura == "oscurita") then
-  cecho("&lt;DimGrey&gt; (*)&lt;r&gt;")
-elseif (aura == "copie") then
-  cecho("&lt;purple&gt; (*)&lt;r&gt;")
-end
-</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^.* brilla di (luce) propria!$</string>
-					<string>^.* e` avvolt[oa] da un\'aura (elettrica).$</string>
-					<string>^.* e` avvolt[oa] in una luce (fiammeggiante)!$</string>
-					<string>^.* e` avvolt[oa] nell'(oscurita)`!$</string>
-					<string>^La pelle di .* ha la consistenza del (ghiaccio)!$</string>
-					<string>^L'aria attorno a .* e` carica di (elettric)ita`!$</string>
-					<string>^.* e` accompagnato da diverse (copie) di se stesso!$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione Mob &lt;-&gt; Livello</name>
 				<script>local str, liv, qtt
 --
@@ -1669,17 +1353,23 @@ decho("\n"..qtt.." " ..liv.." "..str)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Send all vie Telegram</name>
-				<script>local str = matches[1]
-ui.telegramMessage = ui.telegramMessage or ""
-if (rex.match(matches[1], [[^\[.*\].*]])) then
-  expandAlias("#telegram tell KenCiro78 "..ui.telegramMessage, false)
-  ui.telegramMessage = ""
-else
-  ui.telegramMessage = ui.telegramMessage.."\r\n"..str
-end
-</script>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Aure</name>
+				<script>local aura = matches[2]
+deleteLine()
+if (aura == "luce") then
+  cecho(" &lt;white&gt;(&lt;r&gt;⨂&lt;white&gt;)&lt;r&gt;")
+elseif (aura == "ghiaccio") then
+  cecho(" &lt;cyan&gt;(&lt;r&gt;⨂&lt;cyan&gt;)&lt;r&gt;")
+elseif (aura == "elettrica&lt;r&gt;") then
+  cecho(" &lt;blue&gt;(&lt;r&gt;⨂&lt;blue&gt;)&lt;r&gt;")
+elseif (aura == "fiammeggiante") then
+  cecho(" &lt;red&gt;(&lt;r&gt;⨂&lt;red&gt;)&lt;r&gt;")
+elseif (aura == "oscurita") then
+  cecho(" &lt;DimGrey&gt;(&lt;r&gt;⨂&lt;DimGrey&gt;)&lt;r&gt;")
+elseif (aura == "copie") then
+  cecho(" &lt;purple&gt;(&lt;r&gt;⨂&lt;purple&gt;)&lt;r&gt;")
+end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1691,9 +1381,21 @@ end
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>.*</string>
+					<string>.* brilla di (luce) propria!</string>
+					<string>.* e` avvolt[oa] da un\'aura (elettric)a.</string>
+					<string>.* e` avvolt[oa] in una luce (fiammeggiante)!</string>
+					<string>.* e` avvolt[oa] nell'(oscurita)`!</string>
+					<string>La pelle di .* ha la consistenza del (ghiaccio)!</string>
+					<string>L'aria attorno a .* e` carica di (elettric)ita`!</string>
+					<string>.* e` accompagnat[oa] da diverse (copie) di se stess[oa]!</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -1921,8 +1623,16 @@ cecho(" [&lt;cyan&gt;"..str.."&lt;r&gt;] ")</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>[Mago] Ultimo spell lanciato</name>
-				<script>ui.variables.lastSpell = matches[2] or "";</script>
+				<name>Send all vie Telegram</name>
+				<script>local str = matches[1]
+ui.telegramMessage = ui.telegramMessage or ""
+if (rex.match(matches[1], [[^\[.*\].*]])) then
+  expandAlias("#telegram tell KenCiro78 "..ui.telegramMessage, false)
+  ui.telegramMessage = ""
+else
+  ui.telegramMessage = ui.telegramMessage.."\r\n"..str
+end
+</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1934,32 +1644,10 @@ cecho(" [&lt;cyan&gt;"..str.."&lt;r&gt;] ")</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^Pronunci le parole, \'(.*)\'$</string>
+					<string>.*</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>[Mago] Recast</name>
-				<script>if (ui.variables.lastSpell) then
-  send ("cast '"..ui.variables.lastSpell.."'")
-end</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Perdi la tua concentrazione!</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -4242,6 +3930,7 @@ end</script>
 				<script>local obj = matches[2] or "all"
 local cntCad = 0;
 local cntTes = 0;
+local cntPol = 0;
 --
 for _, object in pairs(ui.room.objects) do
   local lot = ""
@@ -4256,6 +3945,10 @@ for _, object in pairs(ui.room.objects) do
     lot = "testa"
     cnt = cntTes
     tot = object.counter
+  elseif (string.find(object.key, "polvere")) then
+    lot = "polvere"
+    cnt = cntPol
+    tot = object.counter
   end
   --
   for i=1, tot do
@@ -4267,6 +3960,8 @@ for _, object in pairs(ui.room.objects) do
     cntCad = cnt
   elseif (lot == "testa")  then
     cntTes = cnt
+  elseif (lot == "polvere")  then
+    cntPol = cnt
   end    
 end
 --
@@ -8252,14 +7947,16 @@ function ui.fUpdateOpponent()
     local levelDif = tonumber(ui.opponent.level) - tonumber(ui.player.level or 0)
     local color = "grey"
     --
-    if (levelDif &gt;= 10) then
-      color = "brown"
-    elseif (levelDif &gt;= 5) then
-      color = "red"
-    elseif (levelDif &gt;= -5) then
+    if (levelDif &lt; -5) then
+      color = "grey"
+    elseif (levelDif &lt; 0) then
       color = "green"
-    elseif (levelDif &gt;= -10) then
-      color = "orange"
+    elseif (levelDif == 0) then
+      color = "white"
+    elseif (levelDif &lt; 10) then
+      color = "yellow"
+    else
+      color = "red"
     end
     --
     GUI.Opponent.Level:setFgColor(color)
@@ -8565,7 +8262,7 @@ function ui.fUpdatePlayer()
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
   ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
-  ui.player.toNext = math.max(ui.player.toNext, 1)  
+  ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
   --
   -- HP
   ui.player.hp = tonumber(ui.player.hp)
