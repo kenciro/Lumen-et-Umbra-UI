@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>308</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>509</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -4161,8 +4161,7 @@ function ui.fUpdateAffects()
       --
       -- Fast Affects
       if (table.contains(fastAffects, affect)) then
-        -- durationColor
-        ui.fastAffects = ui.fastAffects..fastAffects[affect]..ui.affects[affect].duration;
+        ui.fastAffects = ui.fastAffects..fastAffects[affect].."x"..ui.affects[affect].duration.." ";
       --
       -- Normal Affects
       else
@@ -8190,12 +8189,12 @@ function ui.fUpdatePlayer()
   -- init vars
   ui.player = {
     class          = "",
-    experience     = 0,
+    experience     = 1,
     gold           = 0,
     level          = 0,
     name           = "",
     race           = "",
-    toNext         = 0,
+    toNext         = 1,
 
     hp             = 0,
     maxhp          = 0,
@@ -8316,7 +8315,12 @@ function ui.fUpdatePlayer()
   end
   --
   -- Redraw widget
-  GUI.Player:setTitle(ui.player.name..", "..ui.player.race.." "..ui.player.class)
+  if (ui.fastAffects) and (ui.fastAffects ~= "") then
+    GUI.Player:setTitle(ui.player.name.." "..ui.player.race.." "..ui.player.class.." - "..ui.fastAffects)
+  else
+    GUI.Player:setTitle(ui.player.name.." "..ui.player.race.." "..ui.player.class)
+  end
+  --
   GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
   GUI.Player.Main.Tick:setValue(ui.player.secsToTick, 74, "")
   GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
@@ -8325,13 +8329,6 @@ function ui.fUpdatePlayer()
   GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
   GUI.Player.Main.Experience:setValue(ui.player.experience, ui.player.toNext, "")
-  --
-  if (ui.fastAffects) and (ui.fastAffects ~= "") then
-      GUI.Player.Affects:echo("&lt;center&gt;"..ui.fastAffects)
-    GUI.Player.Affects:show();
-  else
-    GUI.Player.Affects:hide();
-  end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
@@ -10434,19 +10431,6 @@ end</script>
   --
   -- Set transparent
   ui.fSetBorderMode(GUI.Player, ui.parameters.widgets.player.transparent)
-  --
-  -- Fast Affects
-  GUI.Player.Affects = Geyser.Label:new2({
-    name = "GUI.Player.Affects",
-    x = -127,
-    y = 3,
-    width = 50,
-    height = 20,
-    fontSize = 8,
-  }, GUI.Player)
-  GUI.Player.Affects:enableClickthrough()
-  GUI.Player.Affects:setStyleSheet(GUI.CSS.Keybind);
-  GUI.Player.Affects:setFontSize(6)
   --
   -- Level
   GUI.Player.Level = Geyser.Label:new2({
