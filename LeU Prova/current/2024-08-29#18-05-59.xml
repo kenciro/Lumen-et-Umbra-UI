@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>308</borderLeftWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1332,8 +1332,8 @@ else
   qtt = "&lt;192,192,192:0,0,0&gt;[&lt;r&gt;&lt;0,255,0:0,0,0&gt;1&lt;r&gt;&lt;192,192,192:0,0,0&gt;]&lt;r&gt;"
 end
 --
-deleteLine()
-decho("\n"..qtt.." " ..liv.." "..str)</script>
+selectCaptureGroup(1)
+dreplace(qtt.." " ..liv.." "..str)</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1353,7 +1353,7 @@ decho("\n"..qtt.." " ..liv.." "..str)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Aure</name>
 				<script>local aura = matches[2]
 deleteLine()
@@ -1361,7 +1361,7 @@ if (aura == "luce") then
   cecho(" &lt;white&gt;(&lt;r&gt;⨂&lt;white&gt;)&lt;r&gt;")
 elseif (aura == "ghiaccio") then
   cecho(" &lt;cyan&gt;(&lt;r&gt;⨂&lt;cyan&gt;)&lt;r&gt;")
-elseif (aura == "elettrica&lt;r&gt;") then
+elseif (aura == "elettric") then
   cecho(" &lt;blue&gt;(&lt;r&gt;⨂&lt;blue&gt;)&lt;r&gt;")
 elseif (aura == "fiammeggiante") then
   cecho(" &lt;red&gt;(&lt;r&gt;⨂&lt;red&gt;)&lt;r&gt;")
@@ -3795,12 +3795,12 @@ if (attack) then
         expandAlias("as "..opponent, false)
       --
       -- Mano di energia attiva, ma in cooldowns
-      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"]) then
-          expandAlias("lampo "..opponent, false)
+      -- elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"]) then
+      --   expandAlias("lampo "..opponent, false)
       --
       -- Mano di energia attiva e sono in combattimento
-      elseif (ui.affects["mano di energia"]) and (attack == 'bl') then 
-        expandAlias("pugno "..opponent, false)
+      -- elseif (ui.affects["mano di energia"]) and (attack == 'bl') then 
+      --   expandAlias("pugno "..opponent, false)
       --
       -- 
       else
@@ -5052,8 +5052,8 @@ end</script>
 					<name>Cooldowns</name>
 					<packageName></packageName>
 					<script>--
-function ui.fUpdateCooldowns()
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateCooldowns()")
+function ui.fRefreshCooldownsWidget()
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fRefreshCooldownsWidget()")
   --
   local distance = 2; 
   local min_w = 100;
@@ -5069,31 +5069,10 @@ function ui.fUpdateCooldowns()
   local tot_r, tot_c, total
   local orderTable = {}
   --
-  -- GMCP
-  if (gmcp) and (gmcp.char) and (gmcp.char.cooldowns) then
-    --
-    ui.previous.cooldowns = table.deepcopy(ui.cooldowns or {});
-    ui.cooldowns = {}
-    --
-    for cooldown in pairs(gmcp.char.cooldowns) do
-      local name = string.gsub(gmcp.char.cooldowns[cooldown].name, "(%a)([%w_']*)", ui.fTitleCase)
-      --
-      ui.cooldowns[name] = {}
-      ui.cooldowns[name].duration = tonumber(gmcp.char.cooldowns[cooldown].duration)
-      if (ui.previous.cooldowns[name] == nil) then
-        ui.cooldowns[name].maxDuration = ui.cooldowns[name].duration
-      else
-        ui.cooldowns[name].maxDuration = ui.previous.cooldowns[name].maxDuration
-      end
-      --
-      orderTable[#orderTable+1] = name
-    end
-  else
-    --
-    ui.cooldowns = ui.cooldowns or {}
-  end
-  --
   -- Order Affects
+  for cooldown in pairs(ui.cooldowns) do
+    orderTable[#orderTable+1] = cooldown;
+  end
   table.sort(orderTable, function (cooldown1, cooldown2)
                            return ui.cooldowns[cooldown1].duration &lt; ui.cooldowns[cooldown2].duration
                          end )
@@ -5113,10 +5092,14 @@ function ui.fUpdateCooldowns()
       GUI.Cooldowns.Main["Item"..i]:hide();
     else
       local cooldown = orderTable[i]
+      local roundToDisplay = math.floor(ui.cooldowns[cooldown].duration);
       --
-      --GUI.Cooldowns.Main["Item"..i].Text:cecho("&lt;white&gt;"..cooldown.." "..ui.cooldowns[cooldown].duration)
-      GUI.Cooldowns.Main["Item"..i].front:echo(cooldown)
-      GUI.Cooldowns.Main["Item"..i]:setValue(ui.cooldowns[cooldown].duration, ui.cooldowns[cooldown].maxDuration,"&lt;p align=right&gt;"..ui.cooldowns[cooldown].duration.."/"..ui.cooldowns[cooldown].maxDuration)
+      if (ui.cooldowns[cooldown].duration - roundToDisplay &gt; 0) then
+        roundToDisplay = roundToDisplay + 1;
+      end
+      --
+      GUI.Cooldowns.Main["Item"..i].front:echo("")
+      GUI.Cooldowns.Main["Item"..i]:setValue(ui.cooldowns[cooldown].duration, ui.cooldowns[cooldown].maxDuration,"&lt;p align=center&gt;"..cooldown.." "..roundToDisplay.."&lt;/p&gt;")
       --
       GUI.Cooldowns.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
       GUI.Cooldowns.Main["Item"..i]:resize(w - distance, h - distance)
@@ -5129,6 +5112,34 @@ function ui.fUpdateCooldowns()
       end
     end
   end
+end
+--
+function ui.fUpdateCooldowns()
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateCooldowns()")
+  --
+  -- GMCP
+  if (gmcp) and (gmcp.char) and (gmcp.char.cooldowns) then
+    --
+    ui.previous.cooldowns = table.deepcopy(ui.cooldowns or {});
+    ui.cooldowns = {}
+    --
+    for cooldown in pairs(gmcp.char.cooldowns) do
+      local name = string.gsub(gmcp.char.cooldowns[cooldown].name, "(%a)([%w_']*)", ui.fTitleCase)
+      --
+      ui.cooldowns[name] = {}
+      ui.cooldowns[name].duration = tonumber(gmcp.char.cooldowns[cooldown].duration)
+      if (ui.previous.cooldowns[name] == nil) then
+        ui.cooldowns[name].maxDuration = ui.cooldowns[name].duration
+      else
+        ui.cooldowns[name].maxDuration = ui.previous.cooldowns[name].maxDuration
+      end
+    end
+  else
+    --
+    ui.cooldowns = ui.cooldowns or {}
+  end
+  --
+  ui.fRefreshCooldownsWidget()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -8151,14 +8162,45 @@ function ui.fSoftenRound(time_left)
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fSoftenRound(&lt;white&gt;"..(time_left or "nil").."&lt;r&gt;)", 3)
   --
   if (ui.handlers.fSoftenRound) then
-    killTimer(ui.handlers.fSoftenRound)
+    killTimer(ui.handlers.fSoftenRound);
+    ui.handlers.fSoftenRound = nil;
   end
   --
+  -- Elapsed time
+  ui.epoch = getEpoch();
+  ui.previous.epoch = ui.previous.epoch or ui.epoch;
+  ui.elapsed = ui.epoch - ui.previous.epoch;
+  ui.previous.epoch = ui.epoch;
+  --
+  -- Round soften
   if (time_left &gt;= 0) then
     GUI.Player.Main.Round:setValue(time_left, ui.player.roundMax + 1, "")
-    ui.handlers.fSoftenRound = tempTimer(0.1, function() ui.fSoftenRound(time_left - 0.1) end)
+    ui.handlers.fSoftenRound = tempTimer(0.10, function() ui.fSoftenRound(time_left - ui.elapsed) end)
   else
-    GUI.Player.Main.Round:setValue(0, ui.player.roundMax, "")
+    GUI.Player.Main.Round:setValue(ui.player.roundMax + 1, ui.player.roundMax + 1, "")
+  end
+  --
+  -- Cooldowns soften (every seconds)
+  ui.second = ui.second or 0.0;
+  ui.second = ui.second + ui.elapsed;
+  --
+  if (ui.second &gt;= 1.0) then
+    local refreshCooldowns = false;
+    --  
+    for cooldown in pairs(ui.cooldowns) do
+      if (ui.cooldowns[cooldown].duration &gt; 0) then
+        ui.cooldowns[cooldown].duration = ui.cooldowns[cooldown].duration - 0.25;
+      else
+        ui.cooldowns[cooldown].duration = 0;
+      end
+      refreshCooldowns = true
+    end
+    --
+    if (refreshCooldowns) then
+      ui.fRefreshCooldownsWidget()
+    end
+    --
+    ui.second = ui.second - 1.0;
   end
 end
 --
@@ -9797,15 +9839,23 @@ end</script>
     },GUI.Cooldowns.Main)
     GUI.Player.Main.Health:setValue(0, 100)
     --
-    GUI.Cooldowns.Main["Item"..i].back:setStyleSheet(GUI.CSS.GaugeBack..[[
-      background-color: rgba(150, 0, 0, 0.5);
-    ]])
+  GUI.Cooldowns.Main["Item"..i].back:setStyleSheet(GUI.CSS.GaugeBack..[[
+    background-color: DimGrey;
+  ]])
+  --
+  GUI.Cooldowns.Main["Item"..i].front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    background-color: DarkSlateGrey;
+  ]])
+    --GUI.Cooldowns.Main["Item"..i].back:setStyleSheet(GUI.CSS.GaugeBack..[[
+    --  background-color: rgba(150, 0, 0, 0.5);
+    --]])
     --
-    GUI.Cooldowns.Main["Item"..i].front:setStyleSheet(GUI.CSS.GaugeFront..[[
-      background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
-    ]])
+    --GUI.Cooldowns.Main["Item"..i].front:setStyleSheet(GUI.CSS.GaugeFront..[[
+    --  background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ee0000, stop: 0.65 #990000, stop: 1 #bb0000);
+    --]])
+    --
     GUI.Cooldowns.Main["Item"..i]:echo("Item"..i)
-
+    --
     GUI.Cooldowns.Main["Item"..i]:hide()
   end
   --
