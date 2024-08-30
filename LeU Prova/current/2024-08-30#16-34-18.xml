@@ -4161,7 +4161,7 @@ function ui.fUpdateAffects()
       --
       -- Fast Affects
       if (table.contains(fastAffects, affect)) then
-        ui.fastAffects = ui.fastAffects..fastAffects[affect].."x"..ui.affects[affect].duration.." ";
+        ui.fastAffects = ui.fastAffects.." - "..fastAffects[affect]..":"..ui.affects[affect].duration;
       --
       -- Normal Affects
       else
@@ -6472,9 +6472,9 @@ function ui.fUpdateGroup()
         GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(ui.group[i].name))
       end
       --
-      GUI.Group.Main["g"..mod].Health:setValue(ui.group[i].hp, ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
-      GUI.Group.Main["g"..mod].Mana:setValue(ui.group[i].mana, ui.group[i].maxmana)
-      GUI.Group.Main["g"..mod].Stamina:setValue(ui.group[i].mov, ui.group[i].maxmov)
+      GUI.Group.Main["g"..mod].Health:setValue(math.max(0, ui.group[i].hp), ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
+      GUI.Group.Main["g"..mod].Mana:setValue(math.max(0, ui.group[i].mana), ui.group[i].maxmana)
+      GUI.Group.Main["g"..mod].Stamina:setValue(math.max(0, ui.group[i].mov), ui.group[i].maxmov)
       --
       GUI.Group.Main["g"..mod]:show();
       ui.fAssignTargetButton("g"..mod, ui.group[i].name)
@@ -7898,10 +7898,11 @@ function ui.fDifTimerOpponent(time_left)
   --
   if (ui.handlers.fDifTimerOpponent) then
     killTimer(ui.handlers.fDifTimerOpponent)
+    ui.handlers.fDifTimerOpponent = nil;
   end
   --
   if (time_left &gt; 0) then
-    ui.handlers.fDifTimerOpponent = tempTimer(0.5, function() ui.fDifTimerOpponent(time_left - 0.5) end)
+    ui.handlers.fDifTimerOpponent = tempTimer(time_left, function() ui.fDifTimerOpponent(0.0) end)
     GUI.Opponent.Main.Health.dif:show()
   else
     GUI.Opponent.Main.Health.dif:hide()
@@ -8173,35 +8174,10 @@ function ui.fSoftenRound(time_left)
   ui.previous.epoch = ui.epoch;
   --
   -- Round soften
-  if (time_left &gt;= 0) then
-    GUI.Player.Main.Round:setValue(time_left, ui.player.roundMax + 1, "")
-    ui.handlers.fSoftenRound = tempTimer(0.10, function() ui.fSoftenRound(time_left - ui.elapsed) end)
-  else
-    GUI.Player.Main.Round:setValue(ui.player.roundMax + 1, ui.player.roundMax + 1, "")
-  end
+  GUI.Player.Main.Round:setValue(math.max(0, time_left), ui.player.roundMax + 1, "")
+  time_left = math.max(0, time_left - ui.elapsed);
   --
-  -- Cooldowns soften (every seconds)
-  ui.second = ui.second or 0.0;
-  ui.second = ui.second + ui.elapsed;
-  --
-  if (ui.second &gt;= 1.0) then
-    local refreshCooldowns = false;
-    --  
-    for cooldown in pairs(ui.cooldowns) do
-      if (ui.cooldowns[cooldown].duration &gt; 0) then
-        ui.cooldowns[cooldown].duration = ui.cooldowns[cooldown].duration - 0.25;
-      else
-        ui.cooldowns[cooldown].duration = 0;
-      end
-      refreshCooldowns = true
-    end
-    --
-    if (refreshCooldowns) then
-      ui.fRefreshCooldownsWidget()
-    end
-    --
-    ui.second = ui.second - 1.0;
-  end
+  ui.handlers.fSoftenRound = tempTimer(0.10, function() ui.fSoftenRound(time_left) end)
 end
 --
 function ui.fDifTimerPlayer(time_left)
@@ -8209,10 +8185,11 @@ function ui.fDifTimerPlayer(time_left)
   --
   if (ui.handlers.fDifTimerPlayer) then
     killTimer(ui.handlers.fDifTimerPlayer)
+    ui.handlers.fDifTimerPlayer = nil;
   end
   --
   if (time_left &gt; 0) then
-    ui.handlers.fDifTimerPlayer = tempTimer(0.5, function() ui.fDifTimerPlayer(time_left - 0.5) end)
+    ui.handlers.fDifTimerPlayer = tempTimer(time_left, function() ui.fDifTimerPlayer(0.0) end)
     GUI.Player.Main.Health.dif:show()
   else
     GUI.Player.Main.Health.dif:hide()
@@ -8220,10 +8197,6 @@ function ui.fDifTimerPlayer(time_left)
 end
 --
 function ui.fUpdatePlayer()
-  local hpPerc = 0
-  local manaPerc = 0
-  local staminaPerc = 0
-  local powerPerc = 0
   local hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdatePlayer()")
@@ -8238,20 +8211,24 @@ function ui.fUpdatePlayer()
     race           = "",
     toNext         = 1,
 
-    hp             = 0,
-    maxhp          = 0,
-    mana           = 0,
-    maxmana        = 0,
-    mov            = 0,
-    maxmov         = 0,
-    pow            = 0,
-    maxpow         = 0,
+    hp             = 1,
+    maxhp          = 1,
+    mana           = 1,
+    maxmana        = 1,
+    mov            = 1,
+    maxmov         = 1,
+    pow            = 1,
+    maxpow         = 1,
     
     roundMax       = 4,
     roundTicker    = 0,
     
     secsToTick     = 0,
-  }  --
+  }
+  --
+  ui.previous.player = ui.previous.player or ui.player;
+  ui.previous.fastAffects = ui.previous.fastAffects or ui.fastAffects;
+  --
   -- for debug
   if (ui.enDebug &gt;= 2) then
     ui.player.class          = "debugger"
@@ -8300,77 +8277,104 @@ function ui.fUpdatePlayer()
     ui.player.secsToTick     = gmcp.char.vitals.secsToTick or ui.player.secsToTick
   end
   --
-  -- Experience
-  ui.player.experience = tonumber(ui.player.experience)
-  ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
-  ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
+  -- Tittle
+  if (ui.player.name ~= ui.previous.player.name) or
+     (ui.player.race ~= ui.previous.player.race) or
+     (ui.player.class ~= ui.previous.player.class) or
+     (ui.fastAffects ~= ui.previous.fastAffects) then
+    if (ui.fastAffects == '') then
+      GUI.Player:setTitle(ui.player.name.." "..ui.player.race.." "..ui.player.class);
+    else
+      GUI.Player:setTitle(ui.player.name..ui.fastAffects);
+    end
+  end
+  --
+  -- Level
+  if (ui.player.level ~= ui.previous.player.level) then
+    GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level);
+  end
+  --
+  -- Tick
+  ui.player.secsToTick = tonumber(ui.player.secsToTick)
+  if (ui.player.secsToTick ~= ui.previous.player.secsToTick) then
+    GUI.Player.Main.Tick:setValue(math.max(0, ui.player.secsToTick), 74, "")
+    --
+    -- Cooldowns soften (every seconds)
+    if (not table.is_empty(ui.cooldowns)) then
+      for cooldown in pairs(ui.cooldowns) do
+        ui.cooldowns[cooldown].duration = math.max(0, ui.cooldowns[cooldown].duration - 1/4);
+      end
+      ui.fRefreshCooldownsWidget()
+    end
+  end
   --
   -- HP
   ui.player.hp = tonumber(ui.player.hp)
   ui.player.maxhp = tonumber(ui.player.maxhp)
-  ui.previous.hp = ui.previous.hp or ui.player.hp;
-  --
-  if (ui.player.maxhp ~= 0) then 
-    hpPerc = math.floor(100 * ui.player.hp / ui.player.maxhp) 
+  if (ui.player.hp  ~= ui.previous.player.hp) or
+     (ui.player.maxhp  ~= ui.previous.player.maxhp) then
+    local hpPerc = math.floor(100 * ui.player.hp / ui.player.maxhp); 
+    --
+    if (hpPerc &lt;= 40) then
+      playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
+    end
+    --
+    GUI.Player.Main.Health:setValue(math.max(0, ui.player.hp), ui.player.maxhp,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
   end
   --
-  if (ui.player.hp &lt; ui.previous.hp) and (hpPerc &lt;= 40) then
-    playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
-  end
-  ui.previous.hp = ui.player.hp
-  --
-  -- Tick
-  ui.player.secsToTick = tonumber(ui.player.secsToTick)
-  --
-  -- Round Tick
+  -- Round counter
   ui.player.roundTicker = tonumber(ui.player.roundTicker)
   ui.player.roundMax = tonumber(ui.player.roundMax)
   ui.player.roundMax = math.max(ui.player.roundMax, 1)  
+  if (ui.player.roundTicker ~= ui.previous.player.roundTicker) or
+     (ui.player.roundMax ~= ui.previous.player.roundMax) then
+    if (ui.player.roundTicker == ui.player.roundMax + 1) then
+      ui.fSoftenRound(ui.player.roundTicker)
+    end
+  end
   --
   -- Mana
   ui.player.mana = tonumber(ui.player.mana)
   ui.player.maxmana = tonumber(ui.player.maxmana)
-  ui.previous.mana = ui.previous.mana or ui.player.mana
-  --
-  if (ui.player.maxmana ~= 0) then 
-    manaPerc = math.floor(100 * ui.player.mana / ui.player.maxmana) 
-  end
-  --
-  if (ui.player.mana &lt; ui.previous.mana) then
-    playSoundFile(ui.files.sounds.path..[[cast.wav]], 10)
-  end
-  ui.previous.mana = ui.player.mana
-  --
-  -- Stamina
-  ui.player.mov = tonumber(ui.player.mov)
-  ui.player.maxmov = tonumber(ui.player.maxmov)
-  --
-  if (ui.player.maxmov ~= 0) then 
-    staminaPerc = math.floor(100 * ui.player.mov / ui.player.maxmov) 
+  if (ui.player.mana ~= ui.previous.player.mana) or
+     (ui.player.maxmana  ~= ui.previous.player.maxmana) then
+    local manaPerc = math.floor(100 * ui.player.mana / ui.player.maxmana); 
+    --
+    if (ui.player.mana &lt; ui.previous.player.mana) then
+      playSoundFile(ui.files.sounds.path..[[cast.wav]], 10)
+    end
+    --
+    GUI.Player.Main.Mana:setValue(math.max(0, ui.player.mana), ui.player.maxmana, "&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
   end
   --
   -- Power
   ui.player.pow = tonumber(ui.player.pow)
   ui.player.maxpow = tonumber(ui.player.maxpow)
-  if ui.player.maxpow ~= 0 then
-    powerPerc = math.floor(100 * ui.player.pow / ui.player.maxpow) 
+  if (ui.player.pow ~= ui.previous.player.pow) or
+     (ui.player.maxpow  ~= ui.previous.player.maxpow) then
+      local powerPerc = math.floor(100 * ui.player.pow / ui.player.maxpow);
+      --
+      GUI.Player.Main.Power:setValue(math.max(0, ui.player.pow), ui.player.maxpow, "&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
   end
   --
-  -- Redraw widget
-  if (ui.fastAffects) and (ui.fastAffects ~= "") then
-    GUI.Player:setTitle(ui.player.name.." "..ui.player.race.." "..ui.player.class.." - "..ui.fastAffects)
-  else
-    GUI.Player:setTitle(ui.player.name.." "..ui.player.race.." "..ui.player.class)
+  -- Stamina
+  ui.player.mov = tonumber(ui.player.mov)
+  ui.player.maxmov = tonumber(ui.player.maxmov)
+  if (ui.player.mov ~= ui.previous.player.mov) or
+     (ui.player.maxmov  ~= ui.previous.player.maxmov) then
+      local staminaPerc = math.floor(100 * ui.player.mov / ui.player.maxmov); 
+      --
+      GUI.Player.Main.Stamina:setValue(math.max(0, ui.player.mov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   end
   --
-  GUI.Player.Level:echo("&lt;center&gt;"..ui.player.level)
-  GUI.Player.Main.Tick:setValue(ui.player.secsToTick, 74, "")
-  GUI.Player.Main.Health:setValue(math.min(100, hpPerc), 100,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
-  ui.fSoftenRound(ui.player.roundTicker)
-  GUI.Player.Main.Mana:setValue(math.min(100, manaPerc), 100,"&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Stamina:setValue(math.min(100, staminaPerc), 100,"&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Power:setValue(math.min(100, powerPerc), 100,"&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
-  GUI.Player.Main.Experience:setValue(ui.player.experience, ui.player.toNext, "")
+  -- Experience
+  ui.player.experience = tonumber(ui.player.experience)
+  ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
+  ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
+  if (ui.player.experience ~= ui.previous.player.experience) or
+     (ui.player.toNext  ~= ui.previous.player.toNext) then
+    GUI.Player.Main.Experience:setValue(math.max(0, ui.player.experience), ui.player.toNext, "")
+  end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
@@ -8407,6 +8411,9 @@ function ui.fUpdatePlayer()
     --
     ui.fDifTimerPlayer(1.5)
   end
+  --
+  ui.previous.player = ui.player;
+  ui.previous.fastAffects = ui.fastAffects;
 end</script>
 					<eventHandlerList />
 				</Script>
