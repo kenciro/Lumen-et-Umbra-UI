@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>509</borderRightWidth>
+			<borderLeftWidth>309</borderLeftWidth>
+			<borderRightWidth>382</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -1317,7 +1317,7 @@ decho("\n"..dam.." "..des)
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Inversione Mob &lt;-&gt; Livello</name>
 				<script>local str, liv, qtt
 --
@@ -1345,11 +1345,9 @@ dreplace(qtt.." " ..liv.." "..str)</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^(.*) (\[Liv [\d\?]*\](?:\[Elite\])?)</string>
-					<string>^(.*) (\[Liv [\d\?]*\](?:\[Elite\])?)( \[\d*\])</string>
+					<string>^(.*) (\[Liv \d*\])(\[Elite\])?( \[\d*\])?$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
-					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -1645,6 +1643,36 @@ end
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>.*</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Comandi speciali per aprire uscite</name>
+				<script>local actions = {
+  ['Sollevi'] = 'solleva',
+  ['Spingi']  = 'spingi',
+  ['Tiri']    = 'tira',
+  ['Ruoti']    = 'ruota',  
+}
+local action = matches[2]
+local object = matches[3]
+local direction = matches[4]
+
+echo('\nPer andare a '..direction..' devi '..action..' '..object..'\n\n')</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(\S*) (.*), liberando il percorso verso (.*).$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -3791,8 +3819,9 @@ if (attack) then
         expandAlias("flame", false)
       --
       --
-      elseif (ui.player.pow &lt;= 100) then
-        expandAlias("cani 1", false)
+      -- ripristino energia
+      elseif (ui.player.pow &lt;= 130) then
+        expandAlias("cani 1", false)      
       --
       -- Lame Psioniche attive
       elseif (ui.affects["lame psioniche"]) then
@@ -6250,6 +6279,27 @@ function ui.fConnection()
   cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui i comando 'uihelp'", true) 
   cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
 end
+--
+function ui.fLevelColor(opponentLevel, playerLevel)
+  --
+  -- Level color
+  local levelDif = tonumber(opponentLevel) - tonumber(playerLevel or 0)
+  local color = "grey"
+  --
+  if (levelDif &lt; -5) then
+    color = "grey"
+  elseif (levelDif &lt; 0) then
+    color = "green"
+  elseif (levelDif == 0) then
+    color = "white"
+  elseif (levelDif &lt; 10) then
+    color = "yellow"
+  else
+    color = "red"
+  end
+  --
+  return color
+end
 </script>
 					<eventHandlerList />
 				</Script>
@@ -7959,23 +8009,8 @@ function ui.fUpdateOpponent()
     --
     GUI.Opponent.Main.Health.front:echo(ui.opponent.name)
     --
-    -- Level color
-    local levelDif = tonumber(ui.opponent.level) - tonumber(ui.player.level or 0)
-    local color = "grey"
-    --
-    if (levelDif &lt; -5) then
-      color = "grey"
-    elseif (levelDif &lt; 0) then
-      color = "green"
-    elseif (levelDif == 0) then
-      color = "white"
-    elseif (levelDif &lt; 10) then
-      color = "yellow"
-    else
-      color = "red"
-    end
-    --
-    GUI.Opponent.Level:setFgColor(color)
+    -- Level
+    GUI.Opponent.Level:setFgColor(ui.fLevelColor(ui.opponent.level, ui.player.level))
     GUI.Opponent.Level:echo("&lt;center&gt;"..ui.opponent.level)
     GUI.Opponent.Level:show()
     --
@@ -8932,7 +8967,9 @@ function ui.fUpdateRoom()
         GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; ")
         --GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("examine ]]..key..[[")]], "Esamina '"..player.desc.."'", true)
         --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..player.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..player.level.."&lt;r&gt;] "..ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..player.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "[&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;] "..
+                                    ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
       end
     end  
     --
@@ -8945,7 +8982,9 @@ function ui.fUpdateRoom()
         --GUI.Room.Main.Console:cecho(" ")
         --GUI.Room.Main.Console:cechoLink(ui.cLink("&lt;red&gt;K"), [[expandAlias("kill ]]..key..[[")]], "Colpisci '"..mob.desc.."'", true)
         --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..mob.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..mob.level.."&lt;r&gt;] "..ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..mob.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;] "..
+                                    ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
       end
     end
   end

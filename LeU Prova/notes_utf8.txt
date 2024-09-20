@@ -18,3 +18,44 @@ Room ID	Area		Note
 24740	Deadhame			7500mo (andando al forziere di moria di uigo, forse una teleport)
 4198	Miniere di Moria		forziere
 
+La Forgia
+- “pdebug mats” per aggiungerti materiali in banca (utile per fare test)
+- quando hai fatto pdebug, puoi vedere la cassetta (comando cassetta) con gli elementi disponibili
+- dalla banca puoi ritirare gli elementi che ti serviranno (es. withdrwaw bismuto)
+- “pdebug forgia” per accedere al laboratorio (si esce andando down, che porta ad Alma)
+- metti gli elementi necessari nel calderone
+- a questo punto ti metti in eq un oggetto su cui vuoi lavorare
+- ora puoi effettivamente cominciare a lavorare con il comando “infondi”
+- ti troverai dentro un menu e potrai scegliere quale attività fare (ad esempio alzare di livello un certo oggetto)
+- per fare qualsiasi altra cosa (ad es. mettere altri oggetti in eq o mandare messaggi) dovrai prima uscire dal menu
+
+Le ricette
+- Le ricette si ottengono con due tipi di elementi: materiali e coadiuvanti
+- i materiali sono gli elementi strettamente necessari
+- i coadiuvanti servono ad indirizzare/modificare/migliorare le ricette (in generale, se qualcosa è una fiala/sacchetto/ampolla/bottiglietta è facile sia un coadiuvante)
+- quando identifichi qualcosa ti dice che tipo di elemento è
+- Una volta completata la ricetta, i coadiuvanti possono rimanere (non sempre vengono consumati completamente), mentre i materiali base spariscono (vengono usati tutti sempre)
+
+Alcune trasmutazioni base:
+
+Rigenerazione
+Rerolla quel che si può rerollare sull'oggetto. Se un potere è preservato, non lo modifica e rimuove lo stato di preservazione. Richiede 1 sfera di energia entropica.
+
+Inversione di Polarità
+Trasforma i poteri di tipo Cardinale da Dam a SP o viceversa. Richiede 1 Invertitore di Polarità.
+
+Modellare il Fato
+Rolla un potere di tipo Profetico, dandogli sostanza se vuoto, o modificando la statistica se già presente. Il risultato è influenzato dall'uso dei coadiuvanti. Non modifica lo stato di preservazione, non influenza poteri preservati.
+[10:01]
+una nota importante - queste cose sono un tentativo di standardizzare il sistema oggetti di LeU
+[10:01]
+tutto funzionerà così
+[10:01]
+da liv 1 a liv 50 all'endgame etc.
+[10:03]
+Oggetti Destino
+
+Gli oggetti Destino ora hanno un potere Cardinale e 4 poteri Profetici.
+Il potere Cardinale è rollato random nel momento in cui vengono acquistati, i poteri Profetici potete impostarli voi tramite Modellare il Fato.
+
+Oltre alla trasmutazione, i poteri Profetici hanno un costo molto basso per essere Preservati, e la trasmutazione specifica per modellarli non modifica lo stato di preservazione. Questo dovrebbe consentirvi controllo completo nel costruirli come volete (come ora), e nel modificarli come preferite nel tempo (che ora non potete fare)
