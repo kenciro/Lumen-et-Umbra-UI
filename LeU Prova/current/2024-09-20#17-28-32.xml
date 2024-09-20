@@ -1648,19 +1648,22 @@ end
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Comandi speciali per aprire uscite</name>
 				<script>local actions = {
-  ['Sollevi'] = 'solleva',
-  ['Spingi']  = 'spingi',
-  ['Tiri']    = 'tira',
-  ['Ruoti']    = 'ruota',  
+  ['abbassi'] = 'abbassa',
+  ['apri']    = 'apri',
+  ['giri']    = 'gira',
+  ['ruoti']   = 'ruota',  
+  ['sollevi'] = 'solleva',
+  ['spingi']  = 'spingi',
+  ['tiri']    = 'tira',
 }
-local action = matches[2]
-local object = matches[3]
-local direction = matches[4]
-
-echo('\nPer andare a '..direction..' devi '..action..' '..object..'\n\n')</script>
+local action    = string.lower(ui.fRemoveArticle(matches[2]))
+local object    = string.lower(ui.fRemoveArticle(matches[3]))
+local direction = string.lower(ui.fRemoveArticle(matches[4]))
+action = actions[action] or 'AZIONE MANCANTE'
+cecho('\nPer andare a &lt;yellow&gt;'..direction..'&lt;r&gt; dare comando: &lt;green&gt;'..action..' '..object..'&lt;r&gt;\n\n')</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
