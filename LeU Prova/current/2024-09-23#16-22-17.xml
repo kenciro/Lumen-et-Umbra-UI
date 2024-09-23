@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>382</borderRightWidth>
+			<borderLeftWidth>244</borderLeftWidth>
+			<borderRightWidth>301</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -703,7 +703,7 @@ end</script>
 					<regexCodeList>
 						<string>E` impossibile (scassinarla).</string>
 						<string>E` troppo robusta per essere (sfondata).</string>
-						<string>Il meccanismo di chiusura sembra adatto a (.*)</string>
+						<string>Il meccanismo di chiusura sembra adatto a (.*)\.</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -741,7 +741,7 @@ elseif (ui.door.doorbash) then
   expandAlias("doorbash "..ui.door.name) 
 else
   echo("\n")
-  ui.fEchon("Impossibile da scassinare o sfondare. ("..(ui.door.key or "non esiste chiave")..")")
+  ui.fEchon("Impossibile da scassinare o sfondare (&lt;white&gt;"..(ui.door.key or "&lt;orange&gt;Non esiste chiave").."&lt;r&gt;)")
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1662,8 +1662,20 @@ end
 local action    = string.lower(ui.fRemoveArticle(matches[2]))
 local object    = string.lower(ui.fRemoveArticle(matches[3]))
 local direction = string.lower(ui.fRemoveArticle(matches[4]))
-action = actions[action] or 'AZIONE MANCANTE'
-cecho('\nPer andare a &lt;yellow&gt;'..direction..'&lt;r&gt; dare comando: &lt;green&gt;'..action..' '..object..'&lt;r&gt;\n\n')</script>
+--
+echo('\n')
+if (actions[action]) then
+  action = actions[action]; 
+  if (ui.validExit[direction]) then
+    direction = ui.validExit[direction].short;
+    setRoomUserData(ui.room.id, direction, action..' '..object..' '..direction)
+    ui.fEcho2n('Impostata apertura speciale &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..action..' '..object..' '..direction..'&lt;r&gt;')
+  else
+    ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
+  end
+else
+  ui.fError('&lt;green&gt;'..action..'&lt;r&gt; non è un azione riconosciuta. Aggiornare la tabella del trigger')
+end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -7063,6 +7075,13 @@ end
 --
 mudlet = mudlet or {}; 
 mudlet.mapper_script = true
+local iColor = {
+  ["area"]      = '&lt;yellow&gt;',
+  ["room"]      = '&lt;cyan&gt;',
+  ["text"]      = '&lt;ansiMagenta&gt;',
+  ["special"]   = '&lt;orange&gt;',
+  
+}
 --
 local terrain_types = {
   -- Used to make rooms of different terrain types have different colors
@@ -7138,7 +7157,7 @@ function ui.fShowRooms(rooms)
       cechoLink(ui.cLink("T"), [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
       echo(" ") 
       cechoLink(ui.cLink("G"), [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
-      cecho(" &lt;cyan&gt;"..ui.fConvertColorString(v).." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(getRoomArea(k)).."\n")
+      cecho(" "..iColor["room"]..ui.fConvertColorString(v).." "..iColor["text"].."Area: &lt;white&gt;"..getRoomAreaName(getRoomArea(k)).."\n")
     end
     echo("\n")
   end
@@ -7239,13 +7258,6 @@ local function make_room(room, prev)
   setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
 end
 --
-local function check_doors(roomId, exit)
-  local doors = getDoors(roomId)
-  local dir = ui.validExit[exit].short
-  --
-  return (doors[dir] or 0)
-end
---
 function ui.fRoomInfo(id, infoType, onlyReturn)
   local outString = ""
   --
@@ -7253,11 +7265,11 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
   --
   if (not onlyReturn) then
     if (id == getMapSelection()["center"]) then
-      outString = ui.fTitle("Informazioni &lt;yellow&gt;stanza selezionata sulla mappa&lt;r&gt; &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+      outString = ui.fTitle("Informazioni &lt;yellow&gt;stanza selezionata sulla mappa&lt;r&gt; "..iColor["text"].."#"..iColor["room"]..id..iColor["text"])
     elseif (id == getPlayerRoom()) then
-      outString = ui.fTitle("Informazioni &lt;green&gt;stanza attuale&lt;r&gt; &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+      outString = ui.fTitle("Informazioni &lt;green&gt;stanza attuale&lt;r&gt; "..iColor["text"].."#"..iColor["room"]..id..iColor["text"])
     else
-      outString = ui.fTitle("Informazioni stanza &lt;ansiMagenta&gt;#&lt;white&gt;"..id)
+      outString = ui.fTitle("Informazioni stanza "..iColor["text"].."#"..iColor["room"]..id..iColor["text"])
     end
   end
   --
@@ -7276,25 +7288,31 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       local specialExits = getSpecialExits(id)
       local doors = getDoors(id)
       local entrances = getAllRoomEntrances(id)
+      local userData = getAllRoomUserData(id)
       --
       if (infoType == "room") or (infoType == "all") then
-        outString = outString.."&lt;ansiMagenta&gt;Room: &lt;cyan&gt;"..name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..id.." &lt;ansiMagenta&gt;(x:&lt;white&gt;"..x..", &lt;ansiMagenta&gt;y:&lt;white&gt;"..y.."&lt;ansiMagenta&gt;)\n" -- [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta").."&lt;ansiMagenta&gt;]
+        outString = outString..iColor["text"].."Room: "..iColor["room"]..name.." "..iColor["text"].."#"..iColor["room"]..id.." "..iColor["text"].."(x:&lt;white&gt;"..x..", "..iColor["text"].."y:&lt;white&gt;"..y..iColor["text"]..")\n" -- [&lt;white&gt;"..getRoomWeight(id).." - "..(roomLocked(id) and "Chiusa" or "Aperta")..iColor["text"].."]
       end
       --
       if (infoType == "area") or (infoType == "all") then
-        outString = outString.."&lt;ansiMagenta&gt;Area: &lt;white&gt;"..nameAarea.." &lt;ansiMagenta&gt;#&lt;white&gt;"..idAarea.."\n"
+        outString = outString..iColor["text"].."Area: "..iColor["area"]..nameAarea.." "..iColor["text"].."#"..iColor["area"]..idAarea.."\n"
       end
       --
       if (infoType == "exit") or (infoType == "all") then
         if (table.is_empty(exits)) then
-          outString = outString.."&lt;ansiMagenta&gt;Non ci sono uscite.\n"
+          outString = outString..iColor["text"].."Non ci sono uscite.\n"
         else
-          outString = outString.."&lt;ansiMagenta&gt;Uscite:\n"
+          outString = outString..iColor["text"].."Uscite:\n"
           for k,v in pairs(exits) do
             local exitIdArea = getRoomArea(v)
-            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long.." &lt;white&gt;"..getRoomName(v).." &lt;ansiMagenta&gt;#&lt;white&gt;"..v
+            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long.." "..iColor["room"]..getRoomName(v).." "..iColor["text"].."#"..iColor["room"]..v
+            --
+            if (userData[ui.validExit[k].short]) then
+              outString = outString.." "..iColor["text"].."("..ui.validExit[k].color..userData[ui.validExit[k].short]..iColor["text"]..")"
+            end
+            --
             if (exitIdArea ~= idAarea) then
-              outString = outString.." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(exitIdArea).." &lt;ansiMagenta&gt;#&lt;white&gt;"..exitIdArea
+              outString = outString.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(exitIdArea).." "..iColor["text"].."#"..iColor["area"]..exitIdArea
             end      
             outString = outString.."\n"
           end
@@ -7303,22 +7321,28 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "otherexit") or (infoType == "all") then
         if (table.is_empty(specialExits)) then
-          outString = outString.."&lt;ansiMagenta&gt;Non ci sono uscite speciali.\n"
+          outString = outString..iColor["text"].."Non ci sono uscite speciali.\n"
         else
-          outString = outString.."&lt;ansiMagenta&gt;Uscite speciali:\n"
+          outString = outString..iColor["text"].."Uscite speciali:\n"
           for k,v in pairs(specialExits) do
+            local exitIdArea = getRoomArea(k)
             for n, d in pairs(v) do
               d = tonumber(d)
-              outString = outString.."  &lt;cyan&gt;'"..n.."' &lt;white&gt;"..getRoomName(k).." &lt;ansiMagenta&gt;#&lt;white&gt;"..k
+              outString = outString.."  "..iColor["text"].."'"..iColor["special"]..n..iColor["text"].."' "..iColor["room"]..getRoomName(k).." "..iColor["text"].."#"..iColor["room"]..k
               if (d == 1) then
-                outString = outString.." &lt;ansiMagenta&gt;(&lt;green&gt;Aperta&lt;ansiMagenta&gt;)\n"
+                outString = outString.." "..iColor["text"].."(&lt;green&gt;Aperta"..iColor["text"]..")"
               elseif (d == 2) then
-                outString = outString.." &lt;ansiMagenta&gt;(&lt;yellow&gt;Chiusa&lt;ansiMagenta&gt;)\n"
+                outString = outString.." "..iColor["text"].."(&lt;yellow&gt;Chiusa"..iColor["text"]..")"
               elseif (d == 3) then
-                outString = outString.." &lt;ansiMagenta&gt;(&lt;red&gt;Chiusa a chiave&lt;ansiMagenta&gt;)\n"
-              else
-                outString = outString.." &lt;ansiMagenta&gt;(&lt;orange&gt;Non definita&lt;ansiMagenta&gt;) (&lt;white&gt;"..d.."&lt;ansiMagenta&gt;)\n"
+                outString = outString.." "..iColor["text"].."(&lt;red&gt;Chiusa a chiave"..iColor["text"]..")"
+              -- else
+              --  outString = outString.." "..iColor["text"].."(&lt;orange&gt;Non definita"..iColor["text"]..") (&lt;white&gt;"..d..iColor["text"]..")\n"
               end     
+            --
+            if (exitIdArea ~= idAarea) then
+              outString = outString.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(exitIdArea).." "..iColor["text"].."#"..iColor["area"]..exitIdArea
+            end      
+            outString = outString.."\n"
             end
           end
         end
@@ -7326,19 +7350,19 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "door") or (infoType == "all") then
         if (table.is_empty(doors)) then
-          outString = outString.."&lt;ansiMagenta&gt;Non ci sono porte.\n"
+          outString = outString..iColor["text"].."Non ci sono porte.\n"
         else
-          outString = outString.."&lt;ansiMagenta&gt;Porte:\n"
+          outString = outString..iColor["text"].."Porte:\n"
           for k,v in pairs(doors) do
             outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long
             if (v == 1) then
-              outString = outString.." &lt;ansiMagenta&gt;(&lt;green&gt;Aperta&lt;ansiMagenta&gt;)\n"
+              outString = outString.." "..iColor["text"].."(&lt;green&gt;Aperta"..iColor["text"]..")\n"
             elseif (v == 2) then
-              outString = outString.." &lt;ansiMagenta&gt;(&lt;yellow&gt;Chiusa&lt;ansiMagenta&gt;)\n"
+              outString = outString.." "..iColor["text"].."(&lt;yellow&gt;Chiusa"..iColor["text"]..")\n"
             elseif (v == 3) then
-              outString = outString.." &lt;ansiMagenta&gt;(&lt;red&gt;Chiusa a chiave&lt;ansiMagenta&gt;)\n"
+              outString = outString.." "..iColor["text"].."(&lt;red&gt;Chiusa a chiave"..iColor["text"]..")\n"
             else
-              outString = outString.." &lt;ansiMagenta&gt;(&lt;orange&gt;Non definita&lt;ansiMagenta&gt;) (&lt;white&gt;"..v.."&lt;ansiMagenta&gt;)\n"
+              outString = outString.." "..iColor["text"].."(&lt;orange&gt;Non definita"..iColor["text"]..") (&lt;white&gt;"..v..iColor["text"]..")\n"
             end     
           end
         end
@@ -7346,9 +7370,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "entrance") or (infoType == "all") then
         if (table.is_empty(entrances)) then
-          outString = outString.."&lt;ansiMagenta&gt;Non ci sono entrate.\n"
+          outString = outString..iColor["text"].."Non ci sono entrate.\n"
         else
-          outString = outString.."&lt;ansiMagenta&gt;Entrate:\n"
+          outString = outString..iColor["text"].."Entrate:\n"
           for k,v in pairs(entrances) do
             local entranceExits = getRoomExits(v)
             local entranceSpecialExits = getSpecialExits(v)
@@ -7373,19 +7397,30 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
             end
             --
             local entranceIdArea = getRoomArea(v)
-            sEntrance = sEntrance.."&lt;ansiMagenta&gt;da &lt;white&gt;"..getRoomName(v).." &lt;ansiMagenta&gt;#&lt;white&gt;"..v
+            sEntrance = sEntrance..iColor["text"].."da "..iColor["room"]..getRoomName(v).." "..iColor["text"].."#"..iColor["room"]..v
             if (entranceIdArea ~= idAarea) then
-              sEntrance = sEntrance.." &lt;ansiMagenta&gt;Area: &lt;white&gt;"..getRoomAreaName(entranceIdArea).." &lt;ansiMagenta&gt;#&lt;white&gt;"..entranceIdArea
+              sEntrance = sEntrance.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(entranceIdArea).." "..iColor["text"].."#"..iColor["area"]..entranceIdArea
             end
             outString = outString.."  "..sEntrance.."\n"
           end
         end
       end
+      --
+      if (infoType == "data") or (infoType == "all") then
+        if (table.is_empty(userData)) then
+          outString = outString..iColor["text"].."Non ci sono note.\n"
+        else
+          outString = outString..iColor["text"].."Note:\n"
+          for k,v in pairs(userData) do
+            outString = outString.."  "..iColor["room"]..k..iColor["text"].." = &lt;white&gt;"..v.."&lt;r&gt;\n"
+          end
+        end
+      end
     else
-      outString = outString.."&lt;ansiMagenta&gt;La stanza (&lt;white&gt;"..(id or "nil").."&lt;ansiMagenta&gt;) non esiste o non è stata ancora esplorata.\n"
+      outString = outString..iColor["text"].."La stanza (&lt;white&gt;"..(id or "nil")..iColor["text"]..") non esiste o non è stata ancora esplorata.\n"
     end
   else
-    outString = outString.."&lt;ansiMagenta&gt;L'indice della stanza non è valido.\n"
+    outString = outString..iColor["text"].."L'indice della stanza non è valido.\n"
   end
   --
   if (onlyReturn) then
@@ -7505,19 +7540,11 @@ function ui.fPrepareSpeedWalk(path, dirs)
     while (k &lt;= #d) do
       local id, dir = p[k], d[k]
       if (ui.validExit[dir]) then
-        local doorStatus = check_doors(id, ui.validExit[dir].short)
+        local userData = getAllRoomUserData(id)
         --
-        -- if locked, unlock door
-        if (doorStatus) == 3 then
+        if (userData[ui.validExit[dir].short]) then
           table.insert(p, k, id)
-          table.insert(d, k, "unlock " .. (ui.validExit[dir].short or dir))
-          k = k + 1
-        end
-        --
-        -- if closed, open door
-        if (doorStatus) &gt; 1 then
-          table.insert(p, k, id)
-          table.insert(d, k, "open " .. (ui.validExit[dir].short or dir))
+          table.insert(d, k, userData[ui.validExit[dir].short])
           k = k + 1
         end
       end
