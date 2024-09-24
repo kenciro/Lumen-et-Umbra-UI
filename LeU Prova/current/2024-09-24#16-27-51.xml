@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>244</borderLeftWidth>
-			<borderRightWidth>301</borderRightWidth>
+			<borderLeftWidth>309</borderLeftWidth>
+			<borderRightWidth>382</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,8 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -657,13 +658,14 @@ ui.fUpdateRoom()</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa</name>
-					<script>ui.door = {
+					<script>ui.direction = ui.direction or ""
+ui.door = {
   name = matches[2],
   pick = true,
   doorbash = true,
 }
 --
-expandAlias("open "..ui.door.name)</script>
+expandAlias("open "..ui.door.name.." "..ui.direction)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -713,7 +715,8 @@ end</script>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa a chiave</name>
-					<script>expandAlias("unlock "..matches[2])</script>
+					<script>ui.direction = ui.direction or ''
+expandAlias("unlock "..matches[2].." "..ui.direction)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -735,10 +738,11 @@ end</script>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Non hai la chiave giusta.</name>
-					<script>if (ui.door.pick) then
-  expandAlias("pick "..ui.door.name) 
+					<script>ui.direction = ui.direction or ''
+if (ui.door.pick) then
+  expandAlias("pick "..ui.door.name.." "..ui.direction) 
 elseif (ui.door.doorbash) then
-  expandAlias("doorbash "..ui.door.name) 
+  expandAlias("doorbash "..ui.door.name.." "..ui.direction) 
 else
   echo("\n")
   ui.fEchon("Impossibile da scassinare o sfondare (&lt;white&gt;"..(ui.door.key or "&lt;orange&gt;Non esiste chiave").."&lt;r&gt;)")
@@ -755,6 +759,51 @@ end</script>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
 						<string>Non hai la chiave giusta.</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>Comandi speciali per aprire uscite</name>
+					<script>local actions = {
+  ['abbassi'] = 'abbassa',
+  ['apri']    = 'apri',
+  ['giri']    = 'gira',
+  ['ruoti']   = 'ruota',  
+  ['sollevi'] = 'solleva',
+  ['spingi']  = 'spingi',
+  ['tiri']    = 'tira',
+}
+local action    = string.lower(ui.fRemoveArticle(matches[2]))
+local object    = string.lower(ui.fRemoveArticle(matches[3]))
+local direction = string.lower(ui.fRemoveArticle(matches[4]))
+--
+echo('\n')
+if (actions[action]) then
+  action = actions[action]; 
+  if (ui.validExit[direction]) then
+    direction = ui.validExit[direction].short;
+    setRoomUserData(ui.room.id, direction, action..' '..object..' '..direction)
+    ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..action..' '..object..' '..direction..'&lt;r&gt;')
+  else
+    ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
+  end
+else
+  ui.fError('&lt;green&gt;'..action..'&lt;r&gt; non è un azione riconosciuta. Aggiornare la tabella del trigger')
+end</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^(\S*) (.*), liberando il percorso verso (.*).$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -1136,7 +1185,7 @@ end</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</TriggerGroup>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Invasioni</name>
 				<script>local t1 = matches[2] * 60 * 60 + matches[3] * 60 + matches[4]
 local t2 = os.date("%H") * 60 * 60 + os.date("%M") * 60 + os.date("%S")
@@ -1643,51 +1692,6 @@ end
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>.*</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Comandi speciali per aprire uscite</name>
-				<script>local actions = {
-  ['abbassi'] = 'abbassa',
-  ['apri']    = 'apri',
-  ['giri']    = 'gira',
-  ['ruoti']   = 'ruota',  
-  ['sollevi'] = 'solleva',
-  ['spingi']  = 'spingi',
-  ['tiri']    = 'tira',
-}
-local action    = string.lower(ui.fRemoveArticle(matches[2]))
-local object    = string.lower(ui.fRemoveArticle(matches[3]))
-local direction = string.lower(ui.fRemoveArticle(matches[4]))
---
-echo('\n')
-if (actions[action]) then
-  action = actions[action]; 
-  if (ui.validExit[direction]) then
-    direction = ui.validExit[direction].short;
-    setRoomUserData(ui.room.id, direction, action..' '..object..' '..direction)
-    ui.fEcho2n('Impostata apertura speciale &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..action..' '..object..' '..direction..'&lt;r&gt;')
-  else
-    ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
-  end
-else
-  ui.fError('&lt;green&gt;'..action..'&lt;r&gt; non è un azione riconosciuta. Aggiornare la tabella del trigger')
-end</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^(\S*) (.*), liberando il percorso verso (.*).$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -3826,16 +3830,15 @@ if (attack) then
       cecho("&lt;green&gt; (LightSpeed)\n")
       --
       -- Hp sotto l'70%
-      if (perc &lt;= 60) then
+      if (perc &lt;= 65) then
         expandAlias("cel", false)
       --
       -- Scudo di fiamme scaduto
-      elseif (ui.affects["mantello di fiamme"] == nil) then
+      elseif (perc &gt;= 50) and (ui.affects["mantello di fiamme"] == nil) then
         expandAlias("flame", false)
       --
-      --
       -- ripristino energia
-      elseif (ui.player.pow &lt;= 130) then
+      elseif (ui.player.pow &lt;= 100) then
         expandAlias("cani 1", false)      
       --
       -- Lame Psioniche attive
@@ -4041,6 +4044,19 @@ lst_vNum = vNum+100</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>myprompt</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>Navigator</name>
+				<script>ui.direction = ui.validExit[string.lower(matches[2])].short;
+local userData = getAllRoomUserData(ui.room.id)
+--4
+if (not table.is_empty(userData)) and (userData[ui.direction]) then
+  send(userData[ui.direction])
+end
+send(ui.direction, false)</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)(a|alto|b|basso|d|down|e|est|east|n|nord|north|o|ovest|s|sud|south|u|up|w|west)$</regex>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
@@ -7258,6 +7274,20 @@ local function make_room(room, prev)
   setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
 end
 --
+local function getDoorStatus(status)
+  status = tonumber(status)
+  --
+  if (status == 1) then
+    return "&lt;green&gt;Aperta&lt;r&gt;"
+  elseif (status == 2) then
+    return "&lt;yellow&gt;Chiusa&lt;r&gt;"
+  elseif (status == 3) then
+    return "&lt;red&gt;Chiusa a chiave&lt;r&gt;"
+  end
+  --
+  return "&lt;white&gt;Non definita ("..status..")&lt;r&gt;"
+end
+--
 function ui.fRoomInfo(id, infoType, onlyReturn)
   local outString = ""
   --
@@ -7305,12 +7335,18 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           outString = outString..iColor["text"].."Uscite:\n"
           for k,v in pairs(exits) do
             local exitIdArea = getRoomArea(v)
-            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long.." "..iColor["room"]..getRoomName(v).." "..iColor["text"].."#"..iColor["room"]..v
-            --
+            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long
+            -- Doors
+            if (doors[ui.validExit[k].short]) then
+              outString = outString.." "..iColor["text"].."["..getDoorStatus(doors[ui.validExit[k].short])..iColor["text"].."]"
+            end
+            -- Name and ID
+            outString = outString.." "..iColor["room"]..getRoomName(v).." "..iColor["text"].."#"..iColor["room"]..v            
+            -- User Data
             if (userData[ui.validExit[k].short]) then
               outString = outString.." "..iColor["text"].."("..ui.validExit[k].color..userData[ui.validExit[k].short]..iColor["text"]..")"
             end
-            --
+            -- Destination to different area
             if (exitIdArea ~= idAarea) then
               outString = outString.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(exitIdArea).." "..iColor["text"].."#"..iColor["area"]..exitIdArea
             end      
@@ -7327,28 +7363,24 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           for k,v in pairs(specialExits) do
             local exitIdArea = getRoomArea(k)
             for n, d in pairs(v) do
-              d = tonumber(d)
-              outString = outString.."  "..iColor["text"].."'"..iColor["special"]..n..iColor["text"].."' "..iColor["room"]..getRoomName(k).." "..iColor["text"].."#"..iColor["room"]..k
-              if (d == 1) then
-                outString = outString.." "..iColor["text"].."(&lt;green&gt;Aperta"..iColor["text"]..")"
-              elseif (d == 2) then
-                outString = outString.." "..iColor["text"].."(&lt;yellow&gt;Chiusa"..iColor["text"]..")"
-              elseif (d == 3) then
-                outString = outString.." "..iColor["text"].."(&lt;red&gt;Chiusa a chiave"..iColor["text"]..")"
-              -- else
-              --  outString = outString.." "..iColor["text"].."(&lt;orange&gt;Non definita"..iColor["text"]..") (&lt;white&gt;"..d..iColor["text"]..")\n"
-              end     
-            --
-            if (exitIdArea ~= idAarea) then
-              outString = outString.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(exitIdArea).." "..iColor["text"].."#"..iColor["area"]..exitIdArea
-            end      
-            outString = outString.."\n"
+              outString = outString.."  "..iColor["text"].."'"..iColor["special"]..n..iColor["text"].."'"
+              -- Door
+              if (tonumber(d) &gt; 0) then
+                outString = outString.." "..iColor["text"].."["..getDoorStatus(d)..iColor["text"].."]"
+              end
+              -- Name and ID
+              outString = outString.." "..iColor["room"]..getRoomName(k).." "..iColor["text"].."#"..iColor["room"]..k
+              -- Destination to different area
+              if (exitIdArea ~= idAarea) then
+                outString = outString.." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(exitIdArea).." "..iColor["text"].."#"..iColor["area"]..exitIdArea
+              end      
+              outString = outString.."\n"
             end
           end
         end
       end
       --
-      if (infoType == "door") or (infoType == "all") then
+      if (infoType == "door") then
         if (table.is_empty(doors)) then
           outString = outString..iColor["text"].."Non ci sono porte.\n"
         else
@@ -7406,7 +7438,7 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
         end
       end
       --
-      if (infoType == "data") or (infoType == "all") then
+      if (infoType == "data") then
         if (table.is_empty(userData)) then
           outString = outString..iColor["text"].."Non ci sono note.\n"
         else
@@ -12950,37 +12982,25 @@ function reloadMap(area)
     ui.fEchon("Necessario specificare un area")
   end
 end
-
---[[
-(areaName, expand, maxLevel)
+--
+function cleanRoomsName()
   local areas = getAreaTable()
-  local areaId = areas[areaName] 
   --
-  if (areaId) then
+  for areaName, areaId in pairs(areas) do
     local rooms = getAreaRooms(areaId)
     --
-    -- Sposto tutte le stanze sul livello 1
     for _, roomId in pairs(rooms) do
-      local x, y, z = getRoomCoordinates(roomId)
-      setRoomCoordinates(roomId, x, y, 1)
+      local name = getRoomName(roomId)
+      if (string.match(name, "$C%d%d%d%d") ~= nil) then
+        echo(roomId.." - "..name.." = ")
+        name = string.gsub(name, "$C%d%d%d%d", "")
+        echo(name.."\n")
+        setRoomName(roomId, name)
+      end
+      
     end
-    --
-    -- Riposiziono maxLevel room sul livello 0
-    level = 0
-    roomDrawed = {}
-    for _, roomId in pairs(rooms) do
-      ui.fDrawRoom(areaId, roomId, 0, 0, nil, maxLevel)
-    end
-    --
-    if (expand) then
-      ui.fExpandArea(areaName)
-    end
-    --
-    ui.fDebug('Area redrawed ('..areaName..')')
-  else
-    ui.fDebug('Area non trovata ('..areaName..')')
   end
-]]</script>
+end</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="no" isFolder="no">
