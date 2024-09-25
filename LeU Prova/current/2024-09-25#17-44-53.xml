@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -785,6 +785,7 @@ if (actions[action]) then
   if (ui.validExit[direction]) then
     direction = ui.validExit[direction].short;
     setRoomUserData(ui.room.id, direction, action..' '..object..' '..direction)
+    setDoor(ui.room.id, direction, 2)
     ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..action..' '..object..' '..direction..'&lt;r&gt;')
   else
     ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
@@ -1918,7 +1919,7 @@ end</script>
 				<regex>^(?i)(?:uif(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Go</name>
+				<name>UI Go To Room</name>
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
@@ -2275,7 +2276,7 @@ end</script>
 				<regex>^(?i)(?:uip(?:r(?:o(?:f(?:i(?:l(?:e(?:s)?)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Search</name>
+				<name>UI Search Room</name>
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
@@ -2416,7 +2417,7 @@ end</script>
 				<regex>^(?i)([got])(\d)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>UI Track</name>
+				<name>UI Track Room</name>
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
@@ -7166,6 +7167,7 @@ function ui.fShowRooms(rooms)
   if (table.is_empty(rooms)) then
     cecho("Non ci sono stanze da mostrare\n\n")
   else
+    local counter = 0;
     for k, v in ui.fOrderedPairs(rooms) do
       cecho(ui.fGetNumberFormattedText(k, 5).." ")
       cechoLink(ui.cLink("I"), [[expandAlias("uiinfo ]]..k..[[")]], "Info su '"..v.."'", true)
@@ -7173,9 +7175,11 @@ function ui.fShowRooms(rooms)
       cechoLink(ui.cLink("T"), [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
       echo(" ") 
       cechoLink(ui.cLink("G"), [[expandAlias("uigo ]]..k..[[")]], "Vai a '"..v.."'", true)
-      cecho(" "..iColor["room"]..ui.fConvertColorString(v).." "..iColor["text"].."Area: &lt;white&gt;"..getRoomAreaName(getRoomArea(k)).."\n")
+      cecho(" "..iColor["room"]..ui.fConvertColorString(v).." "..iColor["text"].."Area: "..iColor["area"]..getRoomAreaName(getRoomArea(k)).."\n")
+      counter = counter + 1;
     end
     echo("\n")
+    ui.fEchon(iColor["text"].."Trovate &lt;white&gt;"..counter..iColor["text"].." stanze");
   end
 end
 --
@@ -12799,6 +12803,7 @@ function myMap(areaName)
   end
 end
 --
+--[[
 local roomDrawed = {}
 local level;
 local entryTab = {
@@ -12807,6 +12812,8 @@ local entryTab = {
   "south",
   "west",
 }
+]]
+--
 --
 function getAreaDimension(areaId)
   local rooms = getAreaRooms(areaId)
@@ -13000,6 +13007,38 @@ function cleanRoomsName()
       
     end
   end
+end
+--
+function cleanRoomsDoors()
+  local areas = getAreaTable()
+  --
+  for areaName, areaId in pairs(areas) do
+    local rooms = getAreaRooms(areaId)
+    --
+    for _, roomId in pairs(rooms) do
+      --
+      local doors = getDoors(roomId)
+      if (not table.is_empty(doors)) then
+        ui.fEcho("Porte &lt;orange&gt;eliminate&lt;r&gt; in "..roomId)        
+        for d, x in pairs(doors) do
+          echo(" - "..d..": "..x)
+          setDoor(roomId, d, 0)
+        end
+        echo("\n")
+      end
+      --
+      local userData = getAllRoomUserData(roomId)
+      if (not table.is_empty(userData)) then
+        ui.fEcho("Porte &lt;green&gt;aggiunte&lt;r&gt; in: "..roomId)
+        for d, x in pairs(userData) do
+          echo(" - "..d..": "..x)
+          setDoor(roomId, d, 2)
+        end
+        echo("\n")
+      end
+    end
+  end
+  echo("Done\n")
 end</script>
 				<eventHandlerList />
 			</Script>
