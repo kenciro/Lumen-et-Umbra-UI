@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>382</borderRightWidth>
+			<borderLeftWidth>305</borderLeftWidth>
+			<borderRightWidth>505</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Courier New,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>30</commandLineMinimumHeight>
@@ -71,8 +71,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
-			<mapInfoContributor>Special exits</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -689,7 +688,7 @@ expandAlias("open "..ui.door.name.." "..ui.direction)</script>
   ui.door.pick = false;
 elseif  (matches[2] == "sfondata") then
   ui.door.doorbash = false;
-elseif  (matches[2]) then
+else
   ui.door.key = matches[2];
 end</script>
 					<triggerType>0</triggerType>
@@ -744,6 +743,7 @@ if (ui.door.pick) then
 elseif (ui.door.doorbash) then
   expandAlias("doorbash "..ui.door.name.." "..ui.direction) 
 else
+  setDoor(ui.room.id, ui.direction, 3)
   echo("\n")
   ui.fEchon("Impossibile da scassinare o sfondare (&lt;white&gt;"..(ui.door.key or "&lt;orange&gt;Non esiste chiave").."&lt;r&gt;)")
 end</script>
@@ -4050,7 +4050,7 @@ lst_vNum = vNum+100</script>
 				<name>Navigator</name>
 				<script>ui.direction = ui.validExit[string.lower(matches[2])].short;
 local userData = getAllRoomUserData(ui.room.id)
---4
+--
 if (not table.is_empty(userData)) and (userData[ui.direction]) then
   send(userData[ui.direction])
 end
@@ -7092,6 +7092,7 @@ end
 --
 mudlet = mudlet or {}; 
 mudlet.mapper_script = true
+--
 local iColor = {
   ["area"]      = '&lt;yellow&gt;',
   ["room"]      = '&lt;cyan&gt;',
@@ -7159,6 +7160,7 @@ local move_vectors = {
   down  = { -1, -1,  0}
 }
 --
+-- Show a list of rooms
 function ui.fShowRooms(rooms)
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fShowRooms(...)")
   --
@@ -7183,27 +7185,31 @@ function ui.fShowRooms(rooms)
   end
 end
 --
-local function make_room(room, prev)
+-- Create a room and try to place it in a valid position
+local function fUpdateRoom(room, prev)
   local coords = { 0, 0, 0 }
   local areas = getAreaTable()
   local areaID = areas[string.trim(room.area)]
   --
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] make_room(..)")
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] fUpdateRoom(..)")
   --
   -- Create Room
   addRoom(room.id)
   --
-  -- Set room name
-	setRoomName(room.id, room.name)
+  -- Set room name (remove colors)
+  local name = string.gsub(room.name, "$C", "$c")
+  name = string.gsub(name, "$c%d%d%d%d", "")
+	setRoomName(room.id, name)
   --
   if (not areaID) then
     -- Create Area if not exist
     areaID = addAreaName(room.area)
   end
   --
+  -- Positions
   if (ui.map[room.id] ~= nil ) then
     --
-    -- Get room position from table if exist
+    -- Get room positions among pre-stored positions
     coords = { 
       ui.map[room.id].x or 0,
       ui.map[room.id].y or 0,
@@ -7212,7 +7218,7 @@ local function make_room(room, prev)
   --
   elseif (room.area == prev.area) then
     --
-    -- Determinate room position if last room is from same area
+    -- Determinate room position (if last room is from same area)
     coords = {getRoomCoordinates(prev.id)}
     local shift = {0,0,0}
     for k,v in pairs(room.exits) do
@@ -7271,13 +7277,14 @@ local function make_room(room, prev)
     end
   end
   --
-  -- Associate room with area
+  -- Associate area to room
   setRoomArea(room.id, areaID)
   --
-  -- Set room coordinates
+  -- Set coordinates
   setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
 end
 --
+-- Returns colored text based on door type
 local function getDoorStatus(status)
   status = tonumber(status)
   --
@@ -7292,9 +7299,11 @@ local function getDoorStatus(status)
   return "&lt;white&gt;Non definita ("..status..")&lt;r&gt;"
 end
 --
+-- Returns room information
 function ui.fRoomInfo(id, infoType, onlyReturn)
   local outString = ""
   --
+  -- id rom or map selected room or actual room
   id = id or getMapSelection()["center"] or getPlayerRoom()
   --
   if (not onlyReturn) then
@@ -7466,6 +7475,7 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
   end
 end
 --
+-- Performs speedwalk recursively checking for individual rooms reached
 function ui.fSpeedWalk(path, dirs)
   local roomId = ui.room.id or getPlayerRoom()
   --
@@ -7513,7 +7523,7 @@ function ui.fSpeedWalk(path, dirs)
   end
 end
 --
--- Highlight single room
+-- Highlight a single room
 function ui.fHighlightRoom(roomId, HighlightPath)
   local specialExits = getSpecialExits(roomId)
   --
@@ -7521,12 +7531,20 @@ function ui.fHighlightRoom(roomId, HighlightPath)
   --
   if (HighlightPath) and (table.contains(ui.speedwalk.path, roomId)) then
     --
-    -- Highlight speedWalk path
-    highlightRoom(roomId, 255,0,0, 255,0,0, 1.2, 128, 128)
+    -- Highlight speedWalk path...
+    if (table.is_empty(specialExits)) then
+      --
+      -- ... without special exits
+      highlightRoom(roomId, 255,255,0, 255,255,0, 1.2, 64, 64)
+    else
+      --
+      -- ... with special exits
+      highlightRoom(roomId, 255,255,0, 0,255,255, 1.2, 64, 128)
+    end
   elseif (not table.is_empty(specialExits)) then
     --
     -- Highlight rooms with special exits
-    highlightRoom(roomId, 0,255,255, 0,0,255, 0.7, 198, 0)
+    highlightRoom(roomId, 0,255,255, 0,255,255, 0.6, 64, 128)
   else
     --
     -- Unhighlight rooms
@@ -7567,7 +7585,7 @@ function ui.fPrepareSpeedWalk(path, dirs)
   --
   if (#p ~= 0) then
     --
-    -- Insert actual Position
+    -- Insert actual\start position
     table.insert(p, 1, roomId)
     --
     -- Go through dirs to find doors that need opened, etc
@@ -7592,6 +7610,7 @@ function ui.fPrepareSpeedWalk(path, dirs)
   return p, d
 end
 --
+-- System function called when double-click on a single map room 
 function doSpeedWalk()
   local path, dirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
   --
@@ -7671,7 +7690,7 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
     local bRoomId
     local br_y = y-1
     --
-    -- Cerco prima room a sinistra sulla linea
+    -- Cerco prima room sopra la linea
     while (br_y &gt;= min_y) and (yRoomId == nil) do
       local RoomsByPosition = getRoomsByPosition(areaId, x, br_y, 0)
       if (not table.is_empty(RoomsByPosition)) then
@@ -7691,10 +7710,16 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
         end
       end
     end
-  end 
+  end
+  -- 
   -- Se la posizione è già occupata da un altra stanza
-  if (overlap) or is_path then
-    ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP: ")
+  if (overlap) or (is_path) then
+    -- TODO: convertire ui.fEchon in ui.fDebug
+    if (overlap) then
+      ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP")
+    else
+      ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") IS ON PATH")
+    end
     -- Se la room ha una direzione di entrata valida...
     if (entry ~= nil) and (table.contains(ui.validExit, entry)) then
       -- ... sposto la mappa già disegnata nel lato opposto al lato di entrata di una posizione per creare lo spazio 
@@ -7716,12 +7741,12 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
         end
       end
       --
-      ui.fEchon("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
+      ui.fDebug("&lt;magenta&gt;Moved sub-area to "..ui.validExit[entry].reverse)
     else
       -- ... altrimenti posto la stanza verso sud-est, fino a trovare una posizione libera.
       x = max_x + 1
       y = max_y + 1
-      ui.fDebug("&lt;yellow&gt;Moved room to S-E")
+      ui.fDebug("&lt;yellow&gt;Sub-Area started to S-E")
     end
   end
   --
@@ -7846,9 +7871,9 @@ function ui.fUpdateMapper()
     if (ui.room.area ~= ui.previous.room.area) then
       -- 
       -- ... and area mutable.
-      if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
-         ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
-         ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
+      if (ui.room.area == 'Il Dungeon di Bosco Verde ') or
+         (ui.room.area == 'Instancing') or
+         (ui.room.area == 'Random Dungeons') then 
         --
         -- Clear area
         local areas = getAreaTable()
@@ -7863,34 +7888,16 @@ function ui.fUpdateMapper()
     --
     -- Create new room if not exist
     if (not getRoomName(ui.room.id)) then
-      make_room(ui.room, ui.previous.room)
+      fUpdateRoom(ui.room, ui.previous.room)
     end
     --
     -- Update color and character from terrain
     setRoomChar(ui.room.id, "");
-    if terrain_types[ui.room.terrain] then
+    if (terrain_types[ui.room.terrain]) then
       setRoomEnv(ui.room.id, tonumber(terrain_types[ui.room.terrain].id))
+      -- Assign a char if available
       if (terrain_types[ui.room.terrain].c) then
         setRoomChar(ui.room.id, terrain_types[ui.room.terrain].c)
-      end
-    end
-    -- 
-    -- Remove old exits
-    -- [Crea un problema: rimuove anche le secret scoperte]
-    if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
-       ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
-       ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
-      --
-      -- Remove exit
-      local old_exits = getRoomExits(ui.room.id)
-      for old_exit, old_roomExit in pairs(old_exits) do
-        setExit(ui.room.id, -1, old_exit)
-      end
-      --
-      -- Remove special exit
-      old_exits = getSpecialExitsSwap(ui.room.id)
-      for old_exit, old_roomExit in pairs(old_exits) do
-        removeSpecialExit(ui.room.id, old_exit)
       end
     end
     --
@@ -7931,9 +7938,7 @@ function ui.fUpdateMapper()
     end
     -- 
     -- Redraw Area
-    if ((ui.room.id &gt;= 23700) and (ui.room.id &lt;= 24271)) or   -- Random Dungeons
-       ((ui.room.id &gt;= 29907) and (ui.room.id &lt;= 29990)) or   -- Il Dungeon di Bosco Verde 
-       ((ui.room.id &gt;= 40000) and (ui.room.id &lt;= 40073)) then -- Instancing 
+    if (ui.room.area == 'Random Dungeons') then 
       --
       -- redraw area
       ui.fRedrawArea(ui.room.area, true)
@@ -7954,22 +7959,24 @@ function ui.fInitMapper()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitMapper()")
   --
-  -- Coordinates of rooms
+  -- Load pre-stored rooms positions
   if (io.exists(file)) then
     table.load(file, ui.map)
   end
   --
-  -- Terrain colors
+  -- Load terrain colors
   for k,v in pairs(terrain_types) do
     setCustomEnvColor(tonumber(v.id), v.r, v.g, v.b, 255)
   end
   --
+  -- Special mapper room info
   registerMapInfo("Area",          function(...) return ui.fRoomInfo(nil,      "area", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Room",          function(...) return ui.fRoomInfo(nil,      "room", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Exits",         function(...) return ui.fRoomInfo(nil,      "exit", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Special exits", function(...) return ui.fRoomInfo(nil, "otherexit", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Doors",         function(...) return ui.fRoomInfo(nil,      "door", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   registerMapInfo("Entrance",      function(...) return ui.fRoomInfo(nil,  "entrance", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
+  registerMapInfo("User data",     function(...) return ui.fRoomInfo(nil,      "data", true) --[[ Text ]], false --[[ Bold ]], false --[[ Italic ]], 255, 255, 255 --[[ RGB text color ]]; end)
   --
 end</script>
 					<eventHandlerList />
@@ -11299,6 +11306,7 @@ GUI.CSS.Level = [[
 ]]
 --
 -- Widget Body
+
 GUI.CSS.Main = [[
   background: transparent;
 ]]
