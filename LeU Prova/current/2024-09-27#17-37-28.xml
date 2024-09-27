@@ -8710,27 +8710,43 @@ function ui.fGetPosition(line)
     icon = ui.validExit[ui.track].color..ui.validExit[ui.track].tokenOpen.."&lt;r&gt;"
   end
   --
-  -- West side
-  if ((line == 3) and (ui.player.roomPos == 1)) or -- "sud-ovest"
-     ((line == 2) and (ui.player.roomPos == 4)) or -- "ovest"
-     ((line == 1) and (ui.player.roomPos == 7)) then -- "nord-ovest"
-    position = icon.."      "
+  -- Line 1
+  if (line == 1) then
+    if (ui.player.roomPos == 9) then -- "nord-est"
+      position = "&lt;DimGrey&gt;7  8&lt;r&gt;  "..icon
+    elseif (ui.player.roomPos == 7) then -- "nord-ovest"
+      position = icon.."  &lt;DimGrey&gt;8  9&lt;r&gt;"
+    elseif (ui.player.roomPos == 8) then -- "nord"
+      position = "&lt;DimGrey&gt;7&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;9&lt;r&gt;"
+    else
+      position = "&lt;DimGrey&gt;7  8  9&lt;r&gt;"
+    end
   --
-  -- Central side
-  elseif ((line == 3) and (ui.player.roomPos == 2)) or -- "sud"
-         ((line == 2) and (ui.player.roomPos == 5)) or -- "centro"
-         ((line == 1) and (ui.player.roomPos == 8)) then -- "nord"
-    position = "   "..icon.."   "
+  -- Line 2
+  elseif (line == 2) then
+    if (ui.player.roomPos == 5) then -- "centro"
+      position = "&lt;DimGrey&gt;4&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;6&lt;r&gt;"
+    elseif (ui.player.roomPos == 4) then -- "ovest"
+      position = icon.."  &lt;DimGrey&gt;5  6&lt;r&gt;"
+    elseif (ui.player.roomPos == 6) then -- "est"
+      position = "&lt;DimGrey&gt;4  5&lt;r&gt;  "..icon
+    else
+      position = "&lt;DimGrey&gt;4  5  6&lt;r&gt;"
+    end
+  -- Line 3
+  elseif (line == 3) then
+    if (ui.player.roomPos == 1) then -- "sud-ovest"
+      position = icon.."  &lt;DimGrey&gt;2  3&lt;r&gt;"
+    elseif (ui.player.roomPos == 2) then -- "sud"
+      position = "&lt;DimGrey&gt;1&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;3&lt;r&gt;"
+    elseif (ui.player.roomPos == 3) then -- "sud-est"
+      position = "&lt;DimGrey&gt;1  2&lt;r&gt;  "..icon
+    else
+      position = "&lt;DimGrey&gt;1  2  3&lt;r&gt;"
+    end
   --
-  -- East side
-  elseif ((line == 3) and (ui.player.roomPos == 3)) or -- "sud-est"
-         ((line == 2) and (ui.player.roomPos == 6)) or -- "est"
-         ((line == 1) and (ui.player.roomPos == 9)) then -- "nord-est"
-    position = "      "..icon
-  --
-  --  No position in line
   else
-    position = "       "
+    position = "X  X  X"
   end
   --
   return position
