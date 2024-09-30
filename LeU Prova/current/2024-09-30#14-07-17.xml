@@ -71,8 +71,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>15.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -3837,11 +3837,11 @@ if (attack) then
         expandAlias("cel", false)
       --
       -- Scudo di fiamme scaduto
-      elseif (perc &gt;= 50) and (ui.affects["mantello di fiamme"] == nil) then
+      elseif (ui.affects["mantello di fiamme"] == nil) then
         expandAlias("flame", false)
       --
       -- ripristino energia
-      elseif (ui.player.pow &lt;= 100) then
+      elseif (ui.player.pow &lt;= 80) then
         expandAlias("cani 1", false)      
       --
       -- Lame Psioniche attive
@@ -3863,9 +3863,15 @@ if (attack) then
     end
     echo("\n") 
     --
+    -- Super cura
+    if (ui.affects["velocita` della luce"]) and (perc &lt;= 20) then
+      expandAlias("cel", false)
     --
-    if (ui.player.pow &lt; 40) then
+    -- Crush
+    elseif (ui.player.pow &lt; 40) then
       expandAlias("cr "..opponent, false)
+    --
+    -- Normal attack
     else
       expandAlias(attack.." "..opponent, false)
     end
@@ -4222,7 +4228,7 @@ function ui.fUpdateAffects()
           ui.affects[affect].duration = ui.affects[affect].duration.."r"
         else
           duration = ui.affects[affect].duration.." tick"
-          ui.affects[affect].duration = ui.affects[affect].duration.."t"
+          ui.affects[affect].duration = ui.affects[affect].duration.."T"
         end
       end
       --
@@ -8698,8 +8704,46 @@ end</script>
 				<Script isActive="yes" isFolder="no">
 					<name>Room</name>
 					<packageName></packageName>
-					<script>--
-function ui.fGetPosition(line)
+					<script>function ui.fDrawRoomPosition(position)
+  local isPlayerPos = (ui.player.roomPos == position)
+  local isPlayersPos = false
+  local isMobPos = false 
+  --
+  -- Players
+  for _, player in pairs(ui.room.players) do
+    if (player.roomPos == position) then
+      isPlayersPos = true
+    end
+  end
+  --
+  -- Mobs
+  for _, mob in pairs(ui.room.mobs) do
+    if (mob.roomPos == position) then
+      isMobPos = true
+    end
+  end
+  --
+  --      
+  if (isPlayerPos) and (isPlayersPos) and (isMobPos) then
+    return "&lt;brown&gt;⨂&lt;r&gt;"
+  elseif (isPlayerPos) and (isPlayersPos) then
+    return "&lt;gold&gt;⨂&lt;r&gt;"
+  elseif (isPlayerPos) and (isMobPos) then
+    return "&lt;orange&gt;⨂&lt;r&gt;"
+  elseif (isPlayersPos) and (isMobPos) then
+    return "&lt;magenta&gt;⨂&lt;r&gt;"
+  elseif (isMobPos) then
+    return "&lt;red&gt;⨂&lt;r&gt;"
+  elseif (isPlayersPos) then
+    return "&lt;yellow&gt;⨂&lt;r&gt;"
+  elseif (isPlayerPos) then
+    return "&lt;white&gt;⨂&lt;r&gt;"
+  else
+    return "&lt;DimGrey&gt;"..position.."&lt;r&gt;"
+  end
+end
+--
+function ui.fDrawRoomLine(line)
   local position = ""
   local icon = ""
   --
@@ -8712,38 +8756,15 @@ function ui.fGetPosition(line)
   --
   -- Line 1
   if (line == 1) then
-    if (ui.player.roomPos == 9) then -- "nord-est"
-      position = "&lt;DimGrey&gt;7  8&lt;r&gt;  "..icon
-    elseif (ui.player.roomPos == 7) then -- "nord-ovest"
-      position = icon.."  &lt;DimGrey&gt;8  9&lt;r&gt;"
-    elseif (ui.player.roomPos == 8) then -- "nord"
-      position = "&lt;DimGrey&gt;7&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;9&lt;r&gt;"
-    else
-      position = "&lt;DimGrey&gt;7  8  9&lt;r&gt;"
-    end
+    position = ui.fDrawRoomPosition(7).."  "..ui.fDrawRoomPosition(8).."  "..ui.fDrawRoomPosition(9)
   --
   -- Line 2
   elseif (line == 2) then
-    if (ui.player.roomPos == 5) then -- "centro"
-      position = "&lt;DimGrey&gt;4&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;6&lt;r&gt;"
-    elseif (ui.player.roomPos == 4) then -- "ovest"
-      position = icon.."  &lt;DimGrey&gt;5  6&lt;r&gt;"
-    elseif (ui.player.roomPos == 6) then -- "est"
-      position = "&lt;DimGrey&gt;4  5&lt;r&gt;  "..icon
-    else
-      position = "&lt;DimGrey&gt;4  5  6&lt;r&gt;"
-    end
+    position = ui.fDrawRoomPosition(4).."  "..ui.fDrawRoomPosition(5).."  "..ui.fDrawRoomPosition(6)
+  --
   -- Line 3
   elseif (line == 3) then
-    if (ui.player.roomPos == 1) then -- "sud-ovest"
-      position = icon.."  &lt;DimGrey&gt;2  3&lt;r&gt;"
-    elseif (ui.player.roomPos == 2) then -- "sud"
-      position = "&lt;DimGrey&gt;1&lt;r&gt;  "..icon.."  &lt;DimGrey&gt;3&lt;r&gt;"
-    elseif (ui.player.roomPos == 3) then -- "sud-est"
-      position = "&lt;DimGrey&gt;1  2&lt;r&gt;  "..icon
-    else
-      position = "&lt;DimGrey&gt;1  2  3&lt;r&gt;"
-    end
+    position = ui.fDrawRoomPosition(1).."  "..ui.fDrawRoomPosition(2).."  "..ui.fDrawRoomPosition(3)
   --
   else
     position = "X  X  X"
@@ -8924,9 +8945,9 @@ function ui.fUpdateRoom()
       -- Outland
       GUI.Room.Main.Console:cecho("                        "..ui.room.name.."&lt;r&gt;\n")
       GUI.Room.Main.Console:cecho("      ┌       ┐\n")
-      GUI.Room.Main.Console:cecho("       "..ui.fGetPosition(1).."\n")
-      GUI.Room.Main.Console:cecho("       "..ui.fGetPosition(2).."\n")
-      GUI.Room.Main.Console:cecho("       "..ui.fGetPosition(3).."\n")
+      GUI.Room.Main.Console:cecho("       "..ui.fDrawRoomLine(1).."\n")
+      GUI.Room.Main.Console:cecho("       "..ui.fDrawRoomLine(2).."\n")
+      GUI.Room.Main.Console:cecho("       "..ui.fDrawRoomLine(3).."\n")
       GUI.Room.Main.Console:cecho("      └       ┘\n\n")
       --
       GUI.Mapper.Main.Mapper:hide();
@@ -8975,7 +8996,7 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:cecho("\n")
       --
       -- Line 3
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(1).."│         ")
+      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fDrawRoomLine(1).."│         ")
       if (exitsAsString[3]) then
         --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[3]..[[")]], "Guarda a "..exitsCommand[3], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[3], [[expandAlias("]]..exitsCommand[3]..[[")]], "Vai a "..exitsCommand[3], true)
@@ -8983,7 +9004,7 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:cecho("\n")
       --
       -- Line 4
-      GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fGetPosition(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
+      GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fDrawRoomLine(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
       if (exitsAsString[4]) then
         --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[4]..[[")]], "Guarda a "..exitsCommand[4], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[4], [[expandAlias("]]..exitsCommand[4]..[[")]], "Vai a "..exitsCommand[4], true)
@@ -8991,7 +9012,7 @@ function ui.fUpdateRoom()
       GUI.Room.Main.Console:cecho("\n")
       --
       -- Line 5
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fGetPosition(3).."│         ")
+      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fDrawRoomLine(3).."│         ")
       if (exitsAsString[5]) then
         --GUI.Room.Main.Console:cechoLink(ui.cLink("👁 "), [[expandAlias("look ]]..exitsCommand[5]..[[")]], "Guarda a "..exitsCommand[5], true)
         GUI.Room.Main.Console:cechoLink(exitsAsString[5], [[expandAlias("]]..exitsCommand[5]..[[")]], "Vai a "..exitsCommand[5], true)
