@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="no" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="15.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="5000" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -47,7 +47,7 @@
 			<mDisplayFont>Courier,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
-			<commandLineMinimumHeight>30</commandLineMinimumHeight>
+			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#1e1818</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
@@ -69,10 +69,10 @@
 			<mWhite2>#c0c0c0</mWhite2>
 			<mLightWhite2>#ffffff</mLightWhite2>
 			<mSpellDic>it_IT</mSpellDic>
-			<mLineSize>15.0</mLineSize>
+			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -8440,7 +8440,7 @@ function ui.fUpdatePlayer()
       playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
     end
     --
-    GUI.Player.Main.Health:setValue(math.max(0, ui.player.hp), ui.player.maxhp,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
+    GUI.Player.Main.Health:setValue(math.min(math.max(0, ui.player.hp), ui.player.maxhp), ui.player.maxhp,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
   end
   --
   -- Round counter
@@ -8465,7 +8465,7 @@ function ui.fUpdatePlayer()
       playSoundFile(ui.files.sounds.path..[[cast.wav]], 10)
     end
     --
-    GUI.Player.Main.Mana:setValue(math.max(0, ui.player.mana), ui.player.maxmana, "&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
+    GUI.Player.Main.Mana:setValue(math.min(math.max(0, ui.player.mana), ui.player.maxmana), ui.player.maxmana, "&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
   end
   --
   -- Power
@@ -8475,7 +8475,7 @@ function ui.fUpdatePlayer()
      (ui.player.maxpow  ~= ui.previous.player.maxpow) then
       local powerPerc = math.floor(100 * ui.player.pow / ui.player.maxpow);
       --
-      GUI.Player.Main.Power:setValue(math.max(0, ui.player.pow), ui.player.maxpow, "&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
+      GUI.Player.Main.Power:setValue(math.min(math.max(0, ui.player.pow), ui.player.maxpow), ui.player.maxpow, "&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
   end
   --
   -- Stamina
@@ -8485,7 +8485,7 @@ function ui.fUpdatePlayer()
      (ui.player.maxmov  ~= ui.previous.player.maxmov) then
       local staminaPerc = math.floor(100 * ui.player.mov / ui.player.maxmov); 
       --
-      GUI.Player.Main.Stamina:setValue(math.max(0, ui.player.mov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
+      GUI.Player.Main.Stamina:setValue(math.min(math.max(0, ui.player.mov), ui.player.maxmov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
   end
   --
   -- Experience
@@ -8494,7 +8494,7 @@ function ui.fUpdatePlayer()
   ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
   if (ui.player.experience ~= ui.previous.player.experience) or
      (ui.player.toNext  ~= ui.previous.player.toNext) then
-    GUI.Player.Main.Experience:setValue(math.max(0, ui.player.experience), ui.player.toNext, "")
+    GUI.Player.Main.Experience:setValue(math.min(math.max(0, ui.player.experience), ui.player.toNext), ui.player.toNext, "")
   end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
@@ -9056,30 +9056,28 @@ function ui.fUpdateRoom()
     --
     -- Room name
     GUI.Room:setTitle(ui.room.area.." - "..ui.room.terrain)
+    --  
+    local function fGetCounter(counter)
+      if (counter) and (tonumber(counter) &gt; 1) then
+        return counter;
+      end
+      return '-'
+    end
     --
     -- Objects
     if (table.size(ui.room.objects) &gt; 0) then
       for _, object in pairs(ui.room.objects) do
-        local key = string.gsub(object.key, " ", "-")
-        GUI.Room.Main.Console:cecho("&lt;green&gt;O&lt;r&gt; ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("examine ]]..key..[[")]], "Esamina '"..object.desc.."'", true)        
-        --GUI.Room.Main.Console:cecho(" ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("G"), [[expandAlias("get ]]..key..[[")]], "Raccogli '"..object.desc.."'", true)
-        --GUI.Room.Main.Console:cecho(" ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("GA"), [[expandAlias("get all ]]..key..[[")]], "Prendi tutto da '"..object.desc.."'", true)
-        --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..object.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")        
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "&lt;green&gt;O&lt;r&gt; "..
+                                    ui.fConvertColorString(object.desc).."&lt;r&gt;\n")        
       end
-    end  
+    end
     --
     -- Charapter
     if (table.size(ui.room.players) &gt; 0) then
       for _, player in pairs(ui.room.players) do
-        local key = string.gsub(player.desc, " ", "-")
-        GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("examine ]]..key..[[")]], "Esamina '"..player.desc.."'", true)
-        --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..player.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "&lt;yellow&gt;P&lt;r&gt; "..
                                     "[&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;] "..
                                     ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
       end
@@ -9088,13 +9086,8 @@ function ui.fUpdateRoom()
     -- Mobs
     if (table.size(ui.room.mobs) &gt; 0) then
       for _, mob in pairs(ui.room.mobs) do
-        local key = string.gsub(mob.key, " ", "-")
-        GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("L"), [[expandAlias("examine ]]..key..[[")]], "Esamina '"..mob.desc.."'", true)        
-        --GUI.Room.Main.Console:cecho(" ")
-        --GUI.Room.Main.Console:cechoLink(ui.cLink("&lt;red&gt;K"), [[expandAlias("kill ]]..key..[[")]], "Colpisci '"..mob.desc.."'", true)
-        --GUI.Room.Main.Console:cecho(" ")
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..mob.counter.."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "&lt;red&gt;M&lt;r&gt; "..
                                     "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;] "..
                                     ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
       end
