@@ -73,6 +73,7 @@
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -8962,10 +8963,11 @@ function ui.fUpdateRoom()
       --
       -- Prepare Line 1: End of path
       if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        exitsAsString[idx] = "&lt;red&gt;[&lt;white&gt;⨂&lt;cyan&gt;&lt;red&gt;]&lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
+        exitsAsString[idx] = "&lt;red&gt;[&lt;white&gt;⨂&lt;cyan&gt;&lt;red&gt;]&lt;cyan&gt;"
       else
-        exitsAsString[idx] = "&lt;white&gt; ⨂ &lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
+        exitsAsString[idx] = "&lt;white&gt; ⨂ &lt;cyan&gt;"
       end
+      exitsAsString[idx] = exitsAsString[idx]..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;"
       idx = idx + 1
       --
       -- Prepare other line
