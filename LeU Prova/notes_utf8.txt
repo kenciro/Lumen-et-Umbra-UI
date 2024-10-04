@@ -8,6 +8,7 @@ Room ID	Area		Note
 22821	Torre Oscura		C'è una cassa con dentro 100.000 mo
 22877	Torre Oscura		C'è una cassa con dentro 100.000 mo
 
+21082	Orshingal			4000mo
 7953	Citta' delle nuvole		10000mo
 4446	Elfo Sgozzato e Warren		3500mo - mob 51 da tirare giù
 9361	Fortezza Pennina 		6000mo - chiave da Ashark, lo Sciamano - Studio [9242]

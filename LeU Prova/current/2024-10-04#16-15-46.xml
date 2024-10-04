@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="5000" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="26" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,7 +18,7 @@
 			<port>6667</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>305</borderLeftWidth>
+			<borderLeftWidth>306</borderLeftWidth>
 			<borderRightWidth>505</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1409,17 +1409,17 @@ dreplace(qtt.." " ..liv.." "..str)</script>
 				<script>local aura = matches[2]
 deleteLine()
 if (aura == "luce") then
-  cecho(" &lt;white&gt;(&lt;r&gt;⨂&lt;white&gt;)&lt;r&gt;")
+  cecho(" &lt;white&gt;(&lt;r&gt;o&lt;white&gt;)&lt;r&gt;")
 elseif (aura == "ghiaccio") then
-  cecho(" &lt;cyan&gt;(&lt;r&gt;⨂&lt;cyan&gt;)&lt;r&gt;")
+  cecho(" &lt;cyan&gt;(&lt;r&gt;o&lt;cyan&gt;)&lt;r&gt;")
 elseif (aura == "elettric") then
-  cecho(" &lt;blue&gt;(&lt;r&gt;⨂&lt;blue&gt;)&lt;r&gt;")
+  cecho(" &lt;blue&gt;(&lt;r&gt;o&lt;blue&gt;)&lt;r&gt;")
 elseif (aura == "fiammeggiante") then
-  cecho(" &lt;red&gt;(&lt;r&gt;⨂&lt;red&gt;)&lt;r&gt;")
+  cecho(" &lt;red&gt;(&lt;r&gt;o&lt;red&gt;)&lt;r&gt;")
 elseif (aura == "oscurita") then
-  cecho(" &lt;DimGrey&gt;(&lt;r&gt;⨂&lt;DimGrey&gt;)&lt;r&gt;")
+  cecho(" &lt;DimGrey&gt;(&lt;r&gt;o&lt;DimGrey&gt;)&lt;r&gt;")
 elseif (aura == "copie") then
-  cecho(" &lt;purple&gt;(&lt;r&gt;⨂&lt;purple&gt;)&lt;r&gt;")
+  cecho(" &lt;purple&gt;(&lt;r&gt;o&lt;purple&gt;)&lt;r&gt;")
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -3554,9 +3554,7 @@ send("tira tenda")
 expandAlias("w")
 send("unlock forziere")
 send("open forziere")
-send("get all forziere")
-send("don fenice")
-</script>
+send("get lapislazuli forziere")</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(greylin)$</regex>
@@ -4105,6 +4103,7 @@ function ui.fUpdateAffects()
   --
   -- Pre defined affect 
   local pre_defined_affects = {
+    ["velocita` della luce"]        = {                        BGcolor = "cyan" },
   --  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
   --  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
   --  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
@@ -11397,7 +11396,7 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.help = [[
-&lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt; Lumen et Umbra UI comprende un insieme di finestre (widget), script, trigger, etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra su client Mudlet. Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; per avere informazioni sugli argomenti disponibili.
+&lt;title&gt;Lumen et Umbra UI Help&lt;/title&gt; Lumen et Umbra UI comprende un insieme di finestre (widget), script, trigger, etc, creati per personalizzare l'esperienza di gioco con il MUD Lumen et Umbra su client Mudlet. Usare il comando &lt;command&gt;uih[elp] &lt;comando&gt;&lt;/command&gt; o clicca sui link tra parentesi quadre per avere informazioni sugli argomenti disponibili.
 
 &lt;yellow&gt;Witgets&lt;r&gt; &lt;link widgets&gt;Panoramica&lt;/link&gt;
   &lt;link affects&gt;Affects&lt;/link&gt;   ▷ Widget effetti attivi                      &lt;link mapper&gt;Mapper&lt;/link&gt;   ▷ Widget mappa 
