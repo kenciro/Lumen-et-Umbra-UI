@@ -6,12 +6,19 @@
 /LeU Live/map downloads/
 /LeU Live/profile.aff
 
+/LeU Live con Pack Prova/AdjustableContainer/
+/LeU Live con Pack Prova/Lumen et Umbra UI/*.lua
+/LeU Live con Pack Prova/Lumen et Umbra UI/icons/
+/LeU Live con Pack Prova/log/
+/LeU Live con Pack Prova/map/
+/LeU Live con Pack Prova/map downloads/
+/LeU Live con Pack Prova/profile.aff
+
 /LeU Prova/AdjustableContainer/
 /LeU Prova/log/
 /LeU Prova/profile.aff
 /LeU Prova/Lumen et Umbra UI/*.lua
 !/LeU Prova/Lumen et Umbra UI/map.lua
-
 /LeU Prova/ssl_tsl
 /LeU Prova/Lumen et Umbra UI/parameters.lua
 /LeU Prova/discordApplicationId
