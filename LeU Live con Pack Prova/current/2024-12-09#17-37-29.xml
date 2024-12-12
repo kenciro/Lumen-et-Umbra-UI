@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Live con Pack Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -402,9 +402,9 @@ ui.fUpdateRoom()</script>
 				</Trigger>
 			</TriggerGroup>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Affects Capture</name>
+				<name>Affects</name>
 				<script>ui.fDebug("[trig] Affect start")
-ui.actAffects = {}
+ui.affects = {}
 enableTrigger("affects_invalid")
 enableTrigger("affects_valid")
 enableTrigger("affects_end")</script>
@@ -427,7 +427,7 @@ enableTrigger("affects_end")</script>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>affects_invalid</name>
 					<script>ui.fDebug("[trig] Affect_invalid")
-setTriggerStayOpen("Affects Capture", 1)</script>
+setTriggerStayOpen("Affects", 1)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>1</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -462,11 +462,19 @@ setTriggerStayOpen("Affects Capture", 1)</script>
 					<script>ui.fDebug("[trig] Affect_valid")
 local name = string.trim(matches[2])
 local duration = tonumber(string.trim(matches[3]))
-if (matches[4] == "round") then
-  duration = duration / 10
-end
-ui.actAffects[name] = duration
-setTriggerStayOpen("Affects Capture", 1)</script>
+
+ui.affects[name] = {}
+ui.affects[name].duration = duration
+ui.affects[name].isRound = (matches[4] == "round") 
+--
+-- not yet used
+ui.affects[name].category         = ""
+ui.affects[name].color            = ""
+ui.affects[name].isNegative       = ""
+ui.affects[name].type             = 0
+
+setTriggerStayOpen("Affects", 1)
+</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>1</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -4476,15 +4484,6 @@ function ui.fUpdateAffects()
   --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
   }
   --
-  -- Fast affect
-  local fastAffects = {
-    ["In Combattimento"] = '&lt;span style="font-size:10px"&gt;⚔&lt;/span&gt;',
-    ["Panico!"]          = '&lt;span style="font-size:10px"&gt;🏃&lt;/span&gt;',
-  }
-  --
-  ui.affects = {}
-  ui.fastAffects = ""
-  --
   -- Simulation (for debug)
   if (ui.enDebug &gt;= 2) then
     for i=1, math.random(1, 30) do
@@ -4497,32 +4496,18 @@ function ui.fUpdateAffects()
       else
         ui.affects[name].color    = "$c00"..(i)
       end
-      ui.affects[name].dispelResistance = math.random(0, 100)
       ui.affects[name].duration         = math.random(0, 15) - 10
       ui.affects[name].isNegative       = math.random(0, 100)
       if (math.random(0, 1) == 0) then ui.affects[name].isRound = true else ui.affects[name].isRound = false end;
-      ui.affects[name].stacks           = math.random(0, 100)
       ui.affects[name].type             = math.random(0, 100)
       --
       orderTable[#orderTable+1] = name
     end
-  elseif (gmcp) and (gmcp.char) and (gmcp.char.affects) then
-    --
-    -- GMCP
-    for affect in pairs(gmcp.char.affects) do
-      local name = gmcp.char.affects[affect].name 
-      --
-      ui.affects[name] = {}
-      ui.affects[name].category         = gmcp.char.affects[affect].category
-      ui.affects[name].color            = gmcp.char.affects[affect].color
-      ui.affects[name].dispelResistance = gmcp.char.affects[affect].dispelResistance
-      ui.affects[name].duration         = gmcp.char.affects[affect].duration
-      ui.affects[name].isNegative       = gmcp.char.affects[affect].isNegative
-      ui.affects[name].isRound          = gmcp.char.affects[affect].isRound
-      ui.affects[name].stacks           = gmcp.char.affects[affect].stacks
-      ui.affects[name].type             = gmcp.char.affects[affect].type
-      --
-      orderTable[#orderTable+1] = name
+  else
+    for affect in pairs(ui.affects) do
+      if (ui.affects[affect].duration &gt; 0) then
+        orderTable[#orderTable+1] = affect
+      end
     end
   end
   --
@@ -4561,7 +4546,7 @@ function ui.fUpdateAffects()
       -- Permanent
       if (ui.affects[affect].duration &lt; 0) then
         durationColor = "white"
-        ui.affects[affect].duration = "&lt;b&gt;P&lt;/b&gt;"
+        ui.affects[affect].strDuration = "&lt;b&gt;P&lt;/b&gt;"
         duration = "Permanente"
       else
         --
@@ -4576,129 +4561,113 @@ function ui.fUpdateAffects()
         -- In round or  tick
         if (ui.affects[affect].isRound) then
           duration = ui.affects[affect].duration.." round"
-          ui.affects[affect].duration = ui.affects[affect].duration.."r"
+          ui.affects[affect].strDuration = ui.affects[affect].duration.."r"
         else
           duration = ui.affects[affect].duration.." tick"
-          ui.affects[affect].duration = ui.affects[affect].duration.."T"
+          ui.affects[affect].strDuration = ui.affects[affect].duration.."T"
         end
       end
       --
-      -- Fast Affects
-      if (table.contains(fastAffects, affect)) then
-        ui.fastAffects = ui.fastAffects.." - "..fastAffects[affect]..":"..ui.affects[affect].duration;
-      --
       -- Normal Affects
-      else
-        local icon = nil
-        local BGColor = nil
-        local FGColor = "black";
-        local shortName = nil
-        local CCS = GUI.CSS.ItemText
+      local icon = nil
+      local BGColor = nil
+      local FGColor = "black";
+      local shortName = nil
+      local CCS = GUI.CSS.ItemText
+      --
+      -- Pre-load icon, BG volor and short name form predefinited table (if exists)
+      if table.contains(pre_defined_affects, affect) then
         --
-        -- Pre-load icon, BG volor and short name form predefinited table (if exists)
-        if table.contains(pre_defined_affects, affect) then
-          --
-          -- Pre-ShortName
-          if (pre_defined_affects[affect].shortName) then
-            shortName = pre_defined_affects[affect].shortName
-          end
-          --
-          -- Pre-FG Color
-          if (pre_defined_affects[affect].FGcolor) then
-            FGColor = pre_defined_affects[affect].FGcolor
-          end
-          --
-          -- Pre-Icon
-          if (pre_defined_affects[affect].icon) and (io.exists(ui.files.icons.path..pre_defined_affects[affect].icon)) then
-            icon = ui.files.icons.path..pre_defined_affects[affect].icon;
-          end
-          --
-          -- Pre-BG Color
-          if (pre_defined_affects[affect].BGcolor) then
-            BGColor = pre_defined_affects[affect].BGcolor
-          end
+        -- Pre-ShortName
+        if (pre_defined_affects[affect].shortName) then
+          shortName = pre_defined_affects[affect].shortName
         end
         --
-        -- Short Name
-        if (not shortName) then
-          shortName = ui.fRemoveArticle(affect);
-        end
-        GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
-        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..string.gsub(shortName, "(%a)([%w_']*)", ui.fTitleCase))
-        --
-        -- Icon
-        if (icon) then
-          CCS = CCS..[[
-                  border-image: url("]]..icon..[[") 0px stretch;
-                ]]
+        -- Pre-FG Color
+        if (pre_defined_affects[affect].FGcolor) then
+          FGColor = pre_defined_affects[affect].FGcolor
         end
         --
-        -- BG color
-        if (not BGColor) then
-          if (ui.affects[affect].color) then
-            BGColor = ui.fGetColor(ui.affects[affect].color)
-          else
-  		      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
-  		      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-  		      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
-  		      --
-            BGColor = string.format("#%02X%02X%02X", R, G, B)
-          end
+        -- Pre-Icon
+        if (pre_defined_affects[affect].icon) and (io.exists(ui.files.icons.path..pre_defined_affects[affect].icon)) then
+          icon = ui.files.icons.path..pre_defined_affects[affect].icon;
         end
         --
+        -- Pre-BG Color
+        if (pre_defined_affects[affect].BGcolor) then
+          BGColor = pre_defined_affects[affect].BGcolor
+        end
+      end
+      --
+      -- Short Name
+      if (not shortName) then
+        shortName = ui.fRemoveArticle(affect);
+      end
+      GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
+      GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..string.gsub(shortName, "(%a)([%w_']*)", ui.fTitleCase))
+      --
+      -- Icon
+      if (icon) then
         CCS = CCS..[[
-                background-color: ]]..BGColor..[[;
+                border-image: url("]]..icon..[[") 0px stretch;
               ]]
-        GUI.Affects.Main["Affect"..i].text:setStyleSheet(CCS)
-        --
-        GUI.Affects.Main["Affect"..i]:setStyleSheet([[QLabel{
-          ]]..GUI.CSS.Item..[[
-          background-color: ]]..BGColor..[[;
-        }]])
-        --
-        GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
-        GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].duration)
-        --
-        -- Dispel Resistance
-        GUI.Affects.Main["Affect"..i].dispelResistance:echo("&lt;center&gt;"..ui.affects[affect].dispelResistance)
-        --
-        -- Stack
-        GUI.Affects.Main["Affect"..i].stacks:echo("&lt;center&gt;"..ui.affects[affect].stacks)
-        --
-        -- ToolTip
-        local toolTip = ""
-        --
-        if ui.fHasbit(ui.affects[affect].type, 1) then toolTip = toolTip.."Aura " end
-        if ui.fHasbit(ui.affects[affect].type, 2) then toolTip = toolTip.."Affliction " end
-        if ui.fHasbit(ui.affects[affect].type, 3) then toolTip = toolTip.."Control " end
-        if ui.fHasbit(ui.affects[affect].type, 4) then toolTip = toolTip.."Hinder " end
-        if ui.fHasbit(ui.affects[affect].type, 5) then toolTip = toolTip.."Immunity " end
-        if ui.fHasbit(ui.affects[affect].type, 6) then toolTip = toolTip.."Arcane " end
-        if ui.fHasbit(ui.affects[affect].type, 7) then toolTip = toolTip.."Divine " end
-        if ui.fHasbit(ui.affects[affect].type, 8) then toolTip = toolTip.."Elemental " end
-        if ui.fHasbit(ui.affects[affect].type, 9) then toolTip = toolTip.."Physical " end
-        if (toolTip == "") then toolTip = "-" else toolTip = "&amp;lt;"..string.trim(toolTip).."&amp;gt;" end
-        --
-        toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(affect)..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-                        '&lt;i&gt;'..toolTip..'&lt;/i&gt;&lt;/p&gt;'..
-                        '&lt;lu&gt;'..
-                        '&lt;li&gt;▷ '..ui.affects[affect].dispelResistance.. ' resistenza&lt;/li&gt;'..
-                        '&lt;li&gt;▷ '..ui.affects[affect].stacks..' stack&lt;/li&gt;'..
-                        '&lt;/lu&gt;'..
-                        --stat..
-                        '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;'
-        GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
-        --
-        --
-        GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
-        GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
-        GUI.Affects.Main["Affect"..i]:show();
-        --
-        c = c + 1
-        if (c &gt; tot_c) then
-          c = 1;
-          r = r + 1
+      end
+      --
+      -- BG color
+      if (not BGColor) then
+        if (ui.affects[affect].color) then
+          BGColor = ui.fGetColor(ui.affects[affect].color)
+        else
+		      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+		      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+		      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+		      --
+          BGColor = string.format("#%02X%02X%02X", R, G, B)
         end
+      end
+      --
+      CCS = CCS..[[
+              background-color: ]]..BGColor..[[;
+            ]]
+      GUI.Affects.Main["Affect"..i].text:setStyleSheet(CCS)
+      --
+      GUI.Affects.Main["Affect"..i]:setStyleSheet([[QLabel{
+        ]]..GUI.CSS.Item..[[
+        background-color: ]]..BGColor..[[;
+      }]])
+      --
+      GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
+      GUI.Affects.Main["Affect"..i].duration:echo("&lt;center&gt;"..ui.affects[affect].strDuration)
+      --
+      -- ToolTip
+      local toolTip = ""
+      --
+      if ui.fHasbit(ui.affects[affect].type, 1) then toolTip = toolTip.."Aura " end
+      if ui.fHasbit(ui.affects[affect].type, 2) then toolTip = toolTip.."Affliction " end
+      if ui.fHasbit(ui.affects[affect].type, 3) then toolTip = toolTip.."Control " end
+      if ui.fHasbit(ui.affects[affect].type, 4) then toolTip = toolTip.."Hinder " end
+      if ui.fHasbit(ui.affects[affect].type, 5) then toolTip = toolTip.."Immunity " end
+      if ui.fHasbit(ui.affects[affect].type, 6) then toolTip = toolTip.."Arcane " end
+      if ui.fHasbit(ui.affects[affect].type, 7) then toolTip = toolTip.."Divine " end
+      if ui.fHasbit(ui.affects[affect].type, 8) then toolTip = toolTip.."Elemental " end
+      if ui.fHasbit(ui.affects[affect].type, 9) then toolTip = toolTip.."Physical " end
+      if (toolTip == "") then toolTip = "-" else toolTip = "&amp;lt;"..string.trim(toolTip).."&amp;gt;" end
+      --
+      toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(affect)..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
+                      '&lt;i&gt;'..toolTip..'&lt;/i&gt;&lt;/p&gt;'..
+                      --stat..
+                      '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;'
+      GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
+      --
+      --
+      GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
+      GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
+      GUI.Affects.Main["Affect"..i]:show();
+      --
+      c = c + 1
+      if (c &gt; tot_c) then
+        c = 1;
+        r = r + 1
       end
     end
   end
@@ -4707,8 +4676,8 @@ end
 --
 function ui.fTickUpdateAffects()
   ui.fDebug("ui.fTickUpdateAffects()");
-  for affect in pairs(ui.actAffects) do
-    ui.actAffects[affect] = ui.actAffects[affect] - 1
+  for affect in pairs(ui.affects) do
+    ui.affects[affect].duration = ui.affects[affect].duration - 1
   end
   ui.fUpdateAffects()
 end</script>
@@ -7532,7 +7501,6 @@ function ui.fUpdatePlayer()
   }
   --
   ui.previous.player = ui.previous.player or ui.player;
-  ui.previous.fastAffects = ui.previous.fastAffects or ui.fastAffects;
   --
   -- for debug
   if (ui.enDebug &gt;= 2) then
@@ -7655,7 +7623,6 @@ function ui.fUpdatePlayer()
   end
   --
   ui.previous.player = ui.player;
-  ui.previous.fastAffects = ui.fastAffects;
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -8511,31 +8478,6 @@ end</script>
     GUI.Affects.Main["Affect"..i].text:enableClickthrough() -- for tooltip
     GUI.Affects.Main["Affect"..i].text:setStyleSheet(GUI.CSS.ItemText)
     GUI.Affects.Main["Affect"..i].text:setFontSize(7);
-    --
-    -- Dispel Resistance
-    GUI.Affects.Main["Affect"..i].dispelResistance = Geyser.Label:new2({
-      name = "GUI.Affects.Main.Affect"..i..".dispelResistance",
-      x = -28,
-      y = 2,
-      width = 26,
-      height = "50%-2",
-    }, GUI.Affects.Main["Affect"..i])
-    GUI.Affects.Main["Affect"..i].dispelResistance:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].dispelResistance:setStyleSheet(GUI.CSS.ItemTopRight)
-    GUI.Affects.Main["Affect"..i].dispelResistance:setFgColor("cyan")
-    GUI.Affects.Main["Affect"..i].dispelResistance:setFontSize(7);
-    --
-    -- Stacks
-    GUI.Affects.Main["Affect"..i].stacks = Geyser.Label:new2({
-      name = "GUI.Affects.Main.Affect"..i..".stacks",
-      x = -28, y = "50%",
-      width = 26,
-      height = "50%-2",
-    }, GUI.Affects.Main["Affect"..i])
-    GUI.Affects.Main["Affect"..i].stacks:enableClickthrough() -- for tooltip
-    GUI.Affects.Main["Affect"..i].stacks:setStyleSheet(GUI.CSS.ItemBottomRight)
-    GUI.Affects.Main["Affect"..i].stacks:setFgColor("orange")
-    GUI.Affects.Main["Affect"..i].stacks:setFontSize(7);
     --
     GUI.Affects.Main["Affect"..i]:hide()
   end
@@ -9789,8 +9731,6 @@ ui.files = {
     name = "variables.lua",
   },
 }
---
-ui.fastAffects = "";
 --
 -- Modifier for keybind
 ui.keyb_modifier = {
