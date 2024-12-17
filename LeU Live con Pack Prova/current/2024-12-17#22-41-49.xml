@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>305</borderLeftWidth>
-			<borderRightWidth>347</borderRightWidth>
+			<borderRightWidth>505</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -71,9 +71,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2098,8 +2098,8 @@ if (matches[3]) then
 else
   cecho(ui.fTitle("Dimensioni font"))
   cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Chat")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.chat.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(4)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n\n");
+  cecho(ui.fGetNumberFormattedText(2)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
+  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n\n");
   ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
 end</script>
 				<command></command>
@@ -6268,7 +6268,6 @@ function ui.fAddSpace(s, l, mode)
     end
   end
   --
-  display(ansiString, ansiStringLen)
   return spaceL..s..spaceR
 end
 --
@@ -6362,7 +6361,7 @@ function ui.fUpdateGMCP(event, ...)
     -- Wait for first gmcp pack to load setting from cheracter name
     if (ui.setting == nil) and (gmcp.MSDP) and (gmcp.MSDP.CHARACTER_NAME) then
       ui.setting = string.lower(gmcp.MSDP.CHARACTER_NAME)
-      display(ui.setting)
+      --
       if (ui.fLoadLocalSetting()) then
         ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(ui.setting).." e' stato caricato correttamente.")
       elseif (ui.fSaveSetting()) then
@@ -7563,8 +7562,8 @@ function ui.fGetPreDefinitedParameters()
       },
       chat = {
         type = "all",
-        split = false,    
-        fontSize = 8,
+        split = "horizontal",    
+        fontSize = 10,
       },
       endowment = {
         transparent = false,
@@ -7573,7 +7572,7 @@ function ui.fGetPreDefinitedParameters()
         transparent = false,
       },
       help = {
-        fontSize = 8,
+        fontSize = 10,
       },
       keybind = {
         fontSize = 6,
@@ -7585,7 +7584,7 @@ function ui.fGetPreDefinitedParameters()
         transparent = false,
       },
       room = {
-        fontSize = 7,
+        fontSize = 10,
         transparent = false,
       },
       targets = {
@@ -8124,7 +8123,6 @@ function ui.fSaveSetting()
   local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), ui.setting)
   --
   if (path ~= nil) then
-    display("ui.fDeleteDirectory(path)")
     ui.fDeleteDirectory(path)
   end
   --
@@ -8816,10 +8814,11 @@ end</script>
   -- Affects
   GUI.Affects = Adjustable.Container:new2({
     name = "GUI.Affects",
-    x = -730,
-    y = 340,
-    width = 200,
-    height = 300,
+    attached = "right",
+    x = -500,
+    y = "15%",
+    width = 300,
+    height = "35%",
     titleText ="Effetti",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -8929,9 +8928,9 @@ end</script>
     name = "GUI.AliasButtons",
     attached = "right",
     x = -500,
-    y = "87%",
+    y = 0,
     width = 500,
-    height = "13%",
+    height = "15%",
     titleText ="Pulsanti alias",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9208,10 +9207,10 @@ end</script>
   GUI.Endowment = Adjustable.Container:new2({
     name = "GUI.Endowment",
     attached = "right",
-    x = -500,
-    y = "58%",
-    width = 500,
-    height = "29%",
+    x = -200,
+    y = "15%",
+    width = 200,
+    height = "85%",
     titleText ="Equipaggiamento",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9354,10 +9353,11 @@ end</script>
   -- Group Members
   GUI.Group = Adjustable.Container:new2({
     name = "GUI.Group",
-    x = -730,
-    y = 20,
-    width = 200,
-    height = 300,
+    attached = "right",
+    x = -500,
+    y = "50%",
+    width = 300,
+    height = "35%",
     titleText ="Gruppo",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9903,11 +9903,11 @@ end</script>
   -- Room
   GUI.Room = Adjustable.Container:new2({
     name = "GUI.Room",
-    attached = "right",
-    x = -500,
-    y = "29%",
-    width = 500,
-    height = "29%",
+    attached = "left",
+    x = 0,
+    y = "55%",
+    width = 300,
+    height = "15%",
     titleText ="Stanza",
     titleTxtColor = "orange",
     buttonsize = 12,
@@ -9959,9 +9959,9 @@ end</script>
   -- Target
   GUI.TargetButtons = Adjustable.Container:new2({
     name = "GUI.TargetButtons",
-    attached = "left",
-    x = 0,
-    y = "55%",
+    attached = "right",
+    x = -500,
+    y = "85%",
     width = 300,
     height = "15%",
     titleText ="Target",
@@ -10114,6 +10114,8 @@ if (ui.fInitDataDirectory()) then
     --
     -- For drawing all target buttons
     ui.fUpdateAllTargetButtons()
+    ui.fUpdateAliasButton()
+    ui.fUpdateChat()
     --
     -- Check if the generic_mapper package is installed and if so uninstall it
     if table.contains(getPackages(), "generic_mapper") then
