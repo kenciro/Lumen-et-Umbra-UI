@@ -18,8 +18,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>306</borderLeftWidth>
-			<borderRightWidth>313</borderRightWidth>
+			<borderLeftWidth>307</borderLeftWidth>
+			<borderRightWidth>383</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -51,6 +51,7 @@
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#000000</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
+			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
 			<mMapInfoBg alpha="255">#969696</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
@@ -84,6 +85,10 @@
 			<profileShortcut key="Disconnect">Alt+D</profileShortcut>
 			<profileShortcut key="Reconnect">Alt+R</profileShortcut>
 			<profileShortcut key="Close profile">Alt+W</profileShortcut>
+			<profileShortcut key="Toggle Time Stamps">Ctrl+Alt+T</profileShortcut>
+			<profileShortcut key="Toggle Replay">Ctrl+Alt+R</profileShortcut>
+			<profileShortcut key="Toggle Logging">Ctrl+Alt+L</profileShortcut>
+			<profileShortcut key="Toggle Emergency Stop">Ctrl+Alt+S</profileShortcut>
 			<stopwatches />
 		</Host>
 	</HostPackage>
@@ -640,6 +645,7 @@ ui.fUpdateEndowment()
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Group</name>
 				<script>ui.fDebug("[trig] Group start")
+--
 ui.group = {}
 enableTrigger("group_valid")
 enableTrigger("group_end")</script>
@@ -697,6 +703,7 @@ setTriggerStayOpen("Group", 1)</script>
 				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>group_end</name>
 					<script>ui.fDebug("[trig] group_end")
+--
 disableTrigger("group_valid")
 disableTrigger("group_end")
 --
@@ -712,9 +719,11 @@ ui.fUpdateGroup()</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
+						<string>^(?!I membri del tuo gruppo)\S+</string>
 						<string>^$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
+						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
@@ -780,15 +789,15 @@ ui.fUpdateRoom()</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Position</name>
 				<script>local pos2number = {
-["sud-ovest"] = 1,
-["sud"] = 2,
-["sud-est"] = 3,
-["ovest"] = 4,
-["centro"] = 5,
-["est"] = 6,
-["nord-ovest"] = 7,
-["nord"] = 8,
-["nord-est"] = 9,
+  ["sud-ovest"]  = 1,
+  ["sud"]        = 2,
+  ["sud-est"]    = 3,
+  ["ovest"]      = 4,
+  ["centro"]     = 5,
+  ["est"]        = 6,
+  ["nord-ovest"] = 7,
+  ["nord"]       = 8,
+  ["nord-est"]   = 9,
 }
 ui.room = ui.room or {}
 ui.room.position = pos2number[matches[2]] or matches[2] or ""
@@ -2839,12 +2848,12 @@ elseif (subCommand == "import") then
   end
 --
 -- Rimuove il singolo setting
-elseif (subCommand == "remove") then
-  if (ui.fRemoveSetting(setting)) then
-    ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato rimosso.")
-  else
-    ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato rimosso.")
-  end
+--elseif (subCommand == "remove") then
+--  if (ui.fRemoveSetting(setting)) then
+--    ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato rimosso.")
+--  else
+--    ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato rimosso.")
+--  end
 else
   ui.fError("Parametro non previsto ("..subCommand..").")
 end</script>
@@ -2890,7 +2899,7 @@ else
       local char = string.lower(in_path:sub(idx, idx))
       for j=1, number do
         if (backwards) then
-          out_path = ui.dirReverse[char]..out_path
+          out_path = ui.validExit[char].reverse..out_path
         else
           out_path = out_path..char
         end
@@ -4544,7 +4553,7 @@ function ui.fUpdateAffects()
     end
   else
     for affect in pairs(ui.affects) do
-      if (ui.affects[affect].duration &gt; 0) then
+      if (ui.affects[affect].duration &gt;= 0) then
         orderTable[#orderTable+1] = affect
       end
     end
@@ -7197,10 +7206,9 @@ Dall'elenco dei settings è possibile visualizzare il nome del profilo Mudlet e 
 &lt;yellow&gt;Configurazione:&lt;r&gt;
   &lt;command&gt;uis[etting]&lt;/command&gt;                           Per visualizzare l'elenco di tutti i setting disponibili
   &lt;command&gt;uis[etting]&lt;/command&gt; &lt;profile&gt;&lt;numero profilo&gt;&lt;/profile&gt; &lt;command&gt;import&lt;/command&gt;   Per importare un setting
-  &lt;command&gt;uis[etting]&lt;/command&gt; &lt;profile&gt;&lt;numero profilo&gt;&lt;/profile&gt; &lt;command&gt;remove&lt;/command&gt;   Per rimuovere un setting
 
 Il &lt;profile&gt;&lt;numero profilo&gt;&lt;/profile&gt; da uilizzare è il numero visibile nell'elenco dei setting.
-Non è possibile importare o eliminare i setting attualmente in uso, anche se vengono visualizzati nell'elenco.
+Non è possibile importare i setting attualmente in uso, anche se vengono visualizzati nell'elenco.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -7864,11 +7872,10 @@ function ui.fUpdateOpponent()
   if (ui.opponent.name ~= "") then
     --
     -- Showed name
-    title = ui.opponent.name;
+    title = string.gsub(ui.opponent.name, "(\$c%d+)", "");
     --
-    -- Name
-    ui.opponent.name = string.gsub(ui.opponent.name, "(\$c%d+)", "")
-    ui.opponent.name = ui.fRemoveArticle(ui.opponent.name)
+    -- Name 
+    ui.opponent.name = ui.fRemoveArticle(title)
     ui.opponent.name = string.gsub(ui.opponent.name, " ", "-")
     --
     GUI.Opponent.Main.Health.front:echo(ui.opponent.name)
@@ -8115,7 +8122,7 @@ function ui.fUpdatePlayer()
     playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
   end
   --
-  GUI.Player.Main.Health:setValue(math.min(math.max(0, ui.player.hp), ui.player.maxhp), ui.player.maxhp,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Health:setValue(math.min(math.max(0, ui.player.hp), ui.player.maxhp), ui.player.maxhp,"&lt;p align=right&gt;"..ui.player.hp.."/"..ui.player.maxhp.." - "..hpPerc.."%  &lt;/p&gt;")
   --
   -- Mana
   ui.player.mana = tonumber(ui.player.mana)
@@ -8126,14 +8133,14 @@ function ui.fUpdatePlayer()
     playSoundFile(ui.files.sounds.path..[[cast.wav]], 10)
   end
   --
-  GUI.Player.Main.Mana:setValue(math.min(math.max(0, ui.player.mana), ui.player.maxmana), ui.player.maxmana, "&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Mana:setValue(math.min(math.max(0, ui.player.mana), ui.player.maxmana), ui.player.maxmana, "&lt;p align=right&gt;"..ui.player.mana.."/"..ui.player.maxmana.." - "..manaPerc.."%  &lt;/p&gt;")
   --
   -- Stamina
   ui.player.mov = tonumber(ui.player.mov)
   ui.player.maxmov = tonumber(ui.player.maxmov)
   local staminaPerc = math.floor(100 * ui.player.mov / ui.player.maxmov); 
   --
-  GUI.Player.Main.Stamina:setValue(math.min(math.max(0, ui.player.mov), ui.player.maxmov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
+  GUI.Player.Main.Stamina:setValue(math.min(math.max(0, ui.player.mov), ui.player.maxmov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."%  &lt;/p&gt;")
   --
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
@@ -9079,7 +9086,7 @@ end</script>
 					<script>function ui.fIncrementTickTimer(time_left)
   if time_left &lt; 0 then
     ui.fTickUpdateAffects()
-    time_left = 75;
+    time_left = 75 + time_left;
   end
   --
   if (ui.handlers.ticktimer) then
@@ -9088,6 +9095,7 @@ end</script>
   end
   ui.handlers.ticktimer = tempTimer(1, function() ui.fIncrementTickTimer(time_left - 1) end)
   --
+  GUI.Player.TickCounter:echo("&lt;center&gt;"..time_left)
   GUI.Player.Main.Tick:setValue(time_left, 75)
 end
 </script>
@@ -10180,7 +10188,7 @@ end</script>
     width = -2,
     height = 5,
   },GUI.Player.Main)
-  GUI.Player.Main.Tick:setValue(0, 74)
+  GUI.Player.Main.Tick:setValue(0, 75)
   --
   GUI.Player.Main.Tick.front:echo("")
   --
@@ -11273,6 +11281,23 @@ end</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
+			<Script isActive="yes" isFolder="no">
+				<name>Tick cunter</name>
+				<packageName></packageName>
+				<script>  --
+  -- Level
+  GUI.Player.TickCounter = Geyser.Label:new2({
+    name = "GUI.Player.TickCounter",
+    x = -15,
+    y = "0%-2",
+    width = 10,
+    height = 10,
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.TickCounter:setStyleSheet("background: transparent;");
+  GUI.Player.TickCounter:enableClickthrough()</script>
+				<eventHandlerList />
+			</Script>
 		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage>
