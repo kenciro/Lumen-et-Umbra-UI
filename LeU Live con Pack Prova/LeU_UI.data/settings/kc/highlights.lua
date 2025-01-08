@@ -1,9 +1,10 @@
-return {{[ [[chiave]] ] = {2},[ [[argento]] ] = {3},[ [[ghiaccio]] ] = {4},[ [[fiamme]] ] = {5},[ [[chiavi]] ] = {6},[ [[fuoco]] ] = {7},[ [[oro]] ] = {8},},
-{[ [[color]] ] = [[white]],},
+return {{[ [[fiamme]] ] = {2},[ [[oro]] ] = {3},[ [[argento]] ] = {4},[ [[ghiaccio]] ] = {5},[ [[chiavi]] ] = {6},[ [[fuoco]] ] = {7},[ [[chiave]] ] = {8},[ [[fulmine]] ] = {9},},
+{[ [[color]] ] = [[red]],},
+{[ [[color]] ] = [[gold]],},
 {[ [[color]] ] = [[LavenderBlush]],},
 {[ [[color]] ] = [[cyan]],},
-{[ [[color]] ] = [[red]],},
 {[ [[color]] ] = [[white]],},
 {[ [[color]] ] = [[red]],},
+{[ [[color]] ] = [[white]],},
 {[ [[color]] ] = [[gold]],},
 }

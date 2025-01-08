@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no">
 			<name>LeU Live con Pack Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>307</borderLeftWidth>
-			<borderRightWidth>383</borderRightWidth>
+			<borderLeftWidth>306</borderLeftWidth>
+			<borderRightWidth>0</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -617,7 +617,6 @@ setTriggerStayOpen("Equipment", 1)
 					<script>ui.fDebug("[trig] Equipment_end")
 disableTrigger("equipment_valid")
 disableTrigger("equipment_end")
-ui.parameters.widgets.endowment.type = "equip"
 ui.fUpdateEndowment()
 </script>
 					<triggerType>0</triggerType>
@@ -890,7 +889,7 @@ Questo Luogotenente ha come special skill un raggio di energia pura che va evita
 Per evitarlo basta essere in un positioning diverso da quello dove indirizza il raggio. 
 ]]
 local direction = getPosition(matches[2])
-local actualPosition = getPosition(ui.position)
+local actualPosition = ui.room.position or 5
 cecho("\n&lt;white:red&gt; * RAGGIO * &lt;reset&gt; Spostarsi da "..matches[2].." ("..direction..") (se uguale)\n")
 if (actualPosition == direction) then
   if (actualPosition == 5) then
@@ -1101,7 +1100,7 @@ enableTrigger("multi_loot_end")</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_valid</name>
 						<script>setTriggerStayOpen("multi_loot", 1)</script>
 						<triggerType>0</triggerType>
@@ -1125,7 +1124,7 @@ enableTrigger("multi_loot_end")</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_end</name>
 						<script>disableTrigger("multi_loot_valid")
 disableTrigger("multi_loot_end")
@@ -5363,99 +5362,135 @@ end</script>
 function ui.fUpdateChat()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateChat()")
   --
-  if (ui.parameters.widgets.chat.type == "all") then
-    GUI.Chat.Button_split:show();
-    --
-    if (ui.parameters.widgets.chat.split == "horizontal") then
-      GUI.Chat.Main.All:hide()
-      --
-      GUI.Chat.Main.Private:move(0, 0);
-      GUI.Chat.Main.Private:resize("100%", "50%-4")
-      GUI.Chat.Main.Private:show()
-      --
-      GUI.Chat.Split_line:move(0, "50%-2");
-      GUI.Chat.Split_line:resize("100%", 4)
-      GUI.Chat.Split_line:show()
-      --
-      GUI.Chat.Main.Public:move(0, "50%+4");
-      GUI.Chat.Main.Public:resize("100%", "50%-4")
-      GUI.Chat.Main.Public:show()
-      --
-      GUI.Chat:setTitle("Chat [private - pubblic]")
-    --
-    elseif (ui.parameters.widgets.chat.split == "vertical") then
-      GUI.Chat.Main.All:hide()
-      --
-      GUI.Chat.Main.Private:move(0, 0);
-      GUI.Chat.Main.Private:resize("50%-4", "100%")
-      GUI.Chat.Main.Private:show()
-      --
-      GUI.Chat.Split_line:move("50%-2", 0);
-      GUI.Chat.Split_line:resize(4, "100%")
-      GUI.Chat.Split_line:show()
-      --
-      GUI.Chat.Main.Public:move("50%+4", 0);
-      GUI.Chat.Main.Public:resize("50%-4", "100%")
-      GUI.Chat.Main.Public:show()
-      --
-      GUI.Chat:setTitle("Chat [private | pubblic]")
-    --
-    else
-      GUI.Chat.Main.All:move(0, 0);
-      GUI.Chat.Main.All:resize("100%", "100%")
-      GUI.Chat.Main.All:show()
-      --
-      GUI.Chat.Main.Public:hide()
-      --
-      GUI.Chat.Split_line:hide()
-      --
-      GUI.Chat.Main.Private:hide()
-      --
-      GUI.Chat:setTitle("Chat [private + pubblic]")
-    end
+  local x = "0";
+  local y = "0";
   --
-  elseif (ui.parameters.widgets.chat.type == "public") then
-    GUI.Chat.Button_split:hide();
-    --
+  if (ui.parameters.widgets.chat.split == "vertical") then
     GUI.Chat.Main.All:hide()
     --
-    GUI.Chat.Main.Public:move(0, 0);
-    GUI.Chat.Main.Public:resize("100%", "100%")
-    GUI.Chat.Main.Public:show()
+    GUI.Chat.Main.PrivateHeader:move(x, y);
+    GUI.Chat.Main.PrivateHeader:resize("100%", 20)
+    GUI.Chat.Main.PrivateHeader:show()
     --
-    GUI.Chat.Split_line:hide()
+    if (ui.parameters.widgets.chat.collapsePrivate) then
+      if (ui.parameters.widgets.chat.collapsePublic) then
+        GUI.Chat.Main.Private:resize("100%", "50%-22")
+        y = "50%"
+      else
+        GUI.Chat.Main.Private:resize("100%", "100%-42")
+        y = "-20"
+      end
+      GUI.Chat.Main.Private:move(0, 21);
+      GUI.Chat.Main.Private:show()
+    else
+      GUI.Chat.Main.Private:hide()
+      y = "21"
+    end
     --
-    GUI.Chat.Main.Private:hide()
+    GUI.Chat.Main.PublicHeader:move(x, y);
+    GUI.Chat.Main.PublicHeader:resize("100%", 20)
+    GUI.Chat.Main.PublicHeader:show()
     --
-    GUI.Chat:setTitle("Chat [pubblic]")
+    if (ui.parameters.widgets.chat.collapsePublic) then
+      if (ui.parameters.widgets.chat.collapsePrivate) then
+        GUI.Chat.Main.Public:move(0, "50%+21");
+        GUI.Chat.Main.Public:resize("100%", "50%-21")
+      else
+        GUI.Chat.Main.Public:move(0, 42);
+        GUI.Chat.Main.Public:resize("100%", "100%-42")
+      end
+      GUI.Chat.Main.Public:show()
+    else
+      GUI.Chat.Main.Public:hide()
+    end
+    --
+    GUI.Chat:setTitle("Chat [private - pubblic]")
+  --
+  elseif (ui.parameters.widgets.chat.split == "horizontal") then
+    GUI.Chat.Main.All:hide()
+    --
+    GUI.Chat.Main.PrivateHeader:move(x, y);
+    GUI.Chat.Main.PrivateHeader:resize(20, "100%")
+    GUI.Chat.Main.PrivateHeader:show()
+    --
+    if (ui.parameters.widgets.chat.collapsePrivate) then
+      if (ui.parameters.widgets.chat.collapsePublic) then
+        GUI.Chat.Main.Private:resize("50%-22", "100%")
+        x = "50%"
+      else
+        GUI.Chat.Main.Private:resize("100%-42", "100%")
+        x = "-20"
+      end
+      GUI.Chat.Main.Private:move(21, 0);
+      GUI.Chat.Main.Private:show()
+    else
+      x = "21"
+      GUI.Chat.Main.Private:hide()
+    end
+    --
+    GUI.Chat.Main.PublicHeader:move(x, y);
+    GUI.Chat.Main.PublicHeader:resize(20, "100%")
+    GUI.Chat.Main.PublicHeader:show()
+    --
+    if (ui.parameters.widgets.chat.collapsePublic) then
+      if (ui.parameters.widgets.chat.collapsePrivate) then
+        GUI.Chat.Main.Public:move("50%+21", 0);
+        GUI.Chat.Main.Public:resize("50%-21", "100%")
+      else
+        GUI.Chat.Main.Public:move(42, 0);
+        GUI.Chat.Main.Public:resize("100%-42", "100%")
+      end
+      GUI.Chat.Main.Public:show()
+    else
+      GUI.Chat.Main.Public:hide()
+    end
+    --
+    GUI.Chat:setTitle("Chat [private | pubblic]")
+  --
   else
-    GUI.Chat.Button_split:hide();
+    GUI.Chat.Main.All:move(0, 0);
+    GUI.Chat.Main.All:resize("100%", "100%")
+    GUI.Chat.Main.All:show()
     --
-    GUI.Chat.Main.All:hide()
+    GUI.Chat.Main.PrivateHeader:hide()
     --
     GUI.Chat.Main.Public:hide()
     --
-    GUI.Chat.Split_line:hide()
+    GUI.Chat.Main.PublicHeader:hide()
     --
-    GUI.Chat.Main.Private:move(0, 0);
-    GUI.Chat.Main.Private:resize("100%", "100%")
-    GUI.Chat.Main.Private:show()
+    GUI.Chat.Main.Private:hide()
     --
-    GUI.Chat:setTitle("Chat [private]")
+    GUI.Chat:setTitle("Chat [private + pubblic]")
   end
   --
-  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
+  if (ui.parameters.widgets.chat.collapsePrivate) then
+    GUI.Chat.Main.PrivateHeader:echo("[-] Private")
+  else
+    GUI.Chat.Main.PrivateHeader:echo("[+] Private")
+  end
+  --
+  if (ui.parameters.widgets.chat.collapsePublic) then
+    GUI.Chat.Main.PublicHeader:echo("[-] Public")
+  else
+    GUI.Chat.Main.PublicHeader:echo("[+] Public")
+  end
+  --
+  GUI.Chat.Main.All:scrollUp()
+  GUI.Chat.Main.All:scrollDown()
+  --
+  GUI.Chat.Main.Public:scrollUp()
+  GUI.Chat.Main.Public:scrollDown()
+  --
+  GUI.Chat.Main.Private:scrollUp()
+  GUI.Chat.Main.Private:scrollDown()
+  --
 end
 --
-function ui.fChatTypeClicked()
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fChatTypeClicked()")
-  --
-  if (ui.parameters.widgets.chat.type == "all") then
-    ui.parameters.widgets.chat.type = "public"
-  elseif (ui.parameters.widgets.chat.type == "public") then
-    ui.parameters.widgets.chat.type = "private"
-  else
-    ui.parameters.widgets.chat.type = "all"
+function ui.fClickHandler(sender)
+  if (sender == 'Private') then
+    ui.parameters.widgets.chat.collapsePrivate = not (ui.parameters.widgets.chat.collapsePrivate or false);
+  elseif (sender == 'Public') then
+    ui.parameters.widgets.chat.collapsePublic = not (ui.parameters.widgets.chat.collapsePublic or false);
   end
   --
   ui.fUpdateChat()
@@ -5740,6 +5775,14 @@ end
   --
   GUI = {}
   GUI.CSS = {}
+  --
+  -- Chat Header
+  GUI.CSS.ChatHeader = [[
+    margin: 0px;
+    background-color: grey;
+    padding: 2px;
+    color: white;
+  ]]
   --
   -- Item
   GUI.CSS.Item = [[
@@ -7432,8 +7475,9 @@ function ui.fHelp(cmd)
     GUI.Help.Main.Console:cecho(line.."\n")
   end
   GUI.Help:show()
-  GUI.Help.Main.Console:enableScrolling ()
-  GUI.Help.Main.Console:scrollTo(1)
+  GUI.Help.Main.Console:enableScrolling()
+  GUI.Help.Main.Console:scrollUp()
+  GUI.Help.Main.Console:scrollDown()
 end
 --
 function ui.fHelp_links(htext, hlinktext, hurl, hcaption)
@@ -7972,8 +8016,9 @@ function ui.fGetPreDefinitedParameters()
         transparent = false,
       },
       chat = {
-        type = "all",
-        split = "horizontal",    
+        split = "vertical",
+        collapsePrivate = true,
+        collapsePublic = true,    
         fontSize = 10,
       },
       endowment = {
@@ -8145,6 +8190,11 @@ function ui.fUpdatePlayer()
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
   GUI.Player.Main.Experience:setValue(math.min(math.max(0, ui.player.experience), 300000000), 300000000, "")
+  if (ui.player.experience == 300000000) then
+    GUI.Player.Main.ExperienceLabel:echo("")
+  else
+    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..ui.player.experience.."&lt;/p&gt;")
+  end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
@@ -9095,7 +9145,13 @@ end</script>
   end
   ui.handlers.ticktimer = tempTimer(1, function() ui.fIncrementTickTimer(time_left - 1) end)
   --
-  GUI.Player.TickCounter:echo("&lt;center&gt;"..time_left)
+  --local ratio = (75 - time_left) / 75
+  --GUI.Player.Main.TickLabel:setStyleSheet([[
+  --  border-radius: 5px;
+  --  background: qconicalgradient(cx:0.5, cy:0.5, angle: 90, stop:0 black, stop:]]..ratio..[[ transparent stop:]]..ratio+0.01 ..[[ red);
+  --]])
+  --
+  GUI.Player.Main.TickLabel:echo("&lt;p align=right&gt;"..time_left.."&lt;/p&gt;")
   GUI.Player.Main.Tick:setValue(time_left, 75)
 end
 </script>
@@ -9520,7 +9576,7 @@ end</script>
   -- Button "Split"
   GUI.Chat.Button_split = Geyser.Label:new2({
     name = "GUI.Chat.Button_split",
-    x = -133, 
+    x = -75, 
     y = 4,
     width = 40,
     height = 12,
@@ -9529,29 +9585,6 @@ end</script>
   GUI.Chat.Button_split:setFontSize(6)
   GUI.Chat.Button_split:echo("&lt;center&gt;split");
   GUI.Chat.Button_split:setClickCallback("ui.fChatSplitClicked")
-  --
-  -- Button "Type"
-  GUI.Chat.Button_type = Geyser.Label:new2({
-    name = "GUI.Chat.Button_type",
-    x = -89, 
-    y = 4,
-    width = 40,
-    height = 12,
-  },GUI.Chat)
-  GUI.Chat.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
-  GUI.Chat.Button_type:setFontSize(6)
-  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
-  GUI.Chat.Button_type:setClickCallback("ui.fChatTypeClicked")
-  --
-  -- Button "Type"
-  GUI.Chat.Split_line = Geyser.Label:new2({
-    name = "GUI.Chat.Split_line",
-    x = 0, 
-    y = "50%-2",
-    width = "100%",
-    height = 4,
-  },GUI.Chat.Border)
-  GUI.Chat.Split_line:setStyleSheet(GUI.CSS.Border);
   --
   -- Console "All"
   GUI.Chat.Main.All = Geyser.MiniConsole:new2({
@@ -9567,19 +9600,18 @@ end</script>
   GUI.Chat.Main.All:setBgColor(30, 24, 24)
   GUI.Chat.Main.All:setFontSize(ui.parameters.widgets.chat.fontSize)
   --
-  -- Console "Public"
-  GUI.Chat.Main.Public = Geyser.MiniConsole:new2({
-    name = 'GUI.Chat.Main.Public',
-    x=0,
-    y=0,
+  -- Header "Private"
+  GUI.Chat.Main.PrivateHeader = Geyser.Label:new2(
+  {
+    name = "GUI.Chat.Main.PrivateHeader",
+    x = 0, 
+    y = 0,
     width = "100%", 
-    height = "100%",
-    autoWrap = true,
-    scrollBar = true,
+    height = 20,
   }, GUI.Chat.Main)
-  GUI.Chat.Main.Public:setColor(30, 24, 24)
-  GUI.Chat.Main.Public:setBgColor(30, 24, 24)
-  GUI.Chat.Main.Public:setFontSize(ui.parameters.widgets.chat.fontSize)
+  GUI.Chat.Main.PrivateHeader:setStyleSheet(GUI.CSS.ChatHeader)
+  GUI.Chat.Main.PrivateHeader:echo("[-] Private")
+  GUI.Chat.Main.PrivateHeader:setClickCallback(ui.fClickHandler, "Private")
   --
   -- Console "Private"
   GUI.Chat.Main.Private = Geyser.MiniConsole:new2({
@@ -9594,6 +9626,43 @@ end</script>
   GUI.Chat.Main.Private:setColor(30, 24, 24)
   GUI.Chat.Main.Private:setBgColor(30, 24, 24)
   GUI.Chat.Main.Private:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Header "Public"
+  GUI.Chat.Main.PublicHeader = Geyser.Label:new2(
+  {
+    name = "GUI.Chat.Main.PublicHeader",
+    x = 0, 
+    y = 0,
+    width = "100%", 
+    height = 20,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.PublicHeader:setStyleSheet(GUI.CSS.ChatHeader)
+  GUI.Chat.Main.PublicHeader:echo("[-] Public")
+  GUI.Chat.Main.PublicHeader:setClickCallback(ui.fClickHandler, "Public")
+  --
+  -- Console "Public"
+  GUI.Chat.Main.Public = Geyser.MiniConsole:new2({
+    name = 'GUI.Chat.Main.Public',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.Public:setColor(30, 24, 24)
+  GUI.Chat.Main.Public:setBgColor(30, 24, 24)
+  GUI.Chat.Main.Public:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Split line
+  --GUI.Chat.Split_line = Geyser.Label:new2({
+  --  name = "GUI.Chat.Split_line",
+  --  x = 0, 
+  --  y = "50%-2",
+  --  width = "100%",
+  --  height = 4,
+  --},GUI.Chat.Border)
+  --GUI.Chat.Split_line:setStyleSheet(GUI.CSS.Border);
   --
   -- Wrapping function
   local Minimize = GUI.Chat.minimize
@@ -10202,6 +10271,19 @@ end</script>
     border-radius: 1px;
   ]])
   --
+  -- Tick value
+  GUI.Player.Main.TickLabel = Geyser.Label:new2({
+    name = "GUI.Player.Main.TickLabel",
+    x = -15,
+    y = "0%-2",
+    width = 10,
+    height = 10,
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.Main.TickLabel:setStyleSheet([[background: transparent;]]);
+  GUI.Player.Main.TickLabel:enableClickthrough()
+  GUI.Player.Main.TickLabel:echo("&lt;p align=right&gt;??&lt;/p&gt;")
+  --
   -- Health
   GUI.Player.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Health",
@@ -10291,6 +10373,19 @@ end</script>
     background-color: purple;
     border-radius: 1px;
   ]])
+  --
+  -- Experience value
+  GUI.Player.Main.ExperienceLabel = Geyser.Label:new2({
+    name = "GUI.Player.Main.ExperienceLabel",
+    x = -105,
+    y = -8,
+    width = 100,
+    height = 10,
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.Main.ExperienceLabel:setStyleSheet([[background: transparent;]]);
+  GUI.Player.Main.ExperienceLabel:enableClickthrough()
+  GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;??&lt;/p&gt;")
   --
   -- Wrapping function
   local Minimize = GUI.Player.minimize
@@ -11242,7 +11337,7 @@ end</script>
 end
 --
 function sposta(direction)
-  local actualPosition = getPosition(ui.position)
+  local actualPosition =ui.room.position or 5
   if (actualPosition==direction) then
     cecho("\n&lt;white:green&gt;Movimento non necessario. Sei gia' in ("..actualPosition..")&lt;reset&gt;",false)
   else
@@ -11281,23 +11376,6 @@ end</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
-			<Script isActive="yes" isFolder="no">
-				<name>Tick cunter</name>
-				<packageName></packageName>
-				<script>  --
-  -- Level
-  GUI.Player.TickCounter = Geyser.Label:new2({
-    name = "GUI.Player.TickCounter",
-    x = -15,
-    y = "0%-2",
-    width = 10,
-    height = 10,
-    fontSize = 6,
-  }, GUI.Player.Main)
-  GUI.Player.TickCounter:setStyleSheet("background: transparent;");
-  GUI.Player.TickCounter:enableClickthrough()</script>
-				<eventHandlerList />
-			</Script>
 		</ScriptGroup>
 	</ScriptPackage>
 	<KeyPackage>
