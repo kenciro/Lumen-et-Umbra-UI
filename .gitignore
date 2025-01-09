@@ -1,19 +1,3 @@
-/LeU Live/AdjustableContainer/
-/LeU Live/Lumen et Umbra UI/*.lua
-/LeU Live/Lumen et Umbra UI/icons/
-/LeU Live/log/
-/LeU Live/map/
-/LeU Live/map downloads/
-/LeU Live/profile.aff
-
-/LeU Live con Pack Prova/AdjustableContainer/
-/LeU Live con Pack Prova/Lumen et Umbra UI/*.lua
-/LeU Live con Pack Prova/Lumen et Umbra UI/icons/
-/LeU Live con Pack Prova/log/
-/LeU Live con Pack Prova/map/
-/LeU Live con Pack Prova/map downloads/
-/LeU Live con Pack Prova/profile.aff
-
 /LeU Prova/AdjustableContainer/
 /LeU Prova/log/
 /LeU Prova/profile.aff
@@ -28,11 +12,3 @@
 /LeU Prova/profile.ini
 /LeU Live/command_history_main
 
-/LeU Live con Pack Prova/command_history_main
-/LeU Live con Pack Prova/discordApplicationId
-/LeU Live con Pack Prova/irc_channels
-/LeU Live con Pack Prova/telegram_options.lua
-/LeU Live con Pack Prova/telegram downloads/versions.lua
-/LeU Live con Pack Prova/irc_nick
-/LeU Live con Pack Prova/discordInviteURL
-/LeU Live con Pack Prova/telegram downloads/

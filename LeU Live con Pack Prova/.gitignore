@@ -1,15 +1,15 @@
 /AdjustableContainer/
 /log/
-/Lumen et Umbra UI/icons/
 /map/
 /map downloads/
 /telegram downloads/
 
-/Lumen et Umbra UI/*.lua
 /autolog
 /autoreconnect
 /command_history_main
 /description
+/discordApplicationId
+/discordInviteURL
 /discordserveroptin
 /encoding
 /irc_channels
