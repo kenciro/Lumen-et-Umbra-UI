@@ -1,2 +1,18 @@
+/AdjustableContainer/
+/log/
+/Lumen et Umbra UI/icons/
+/map/
+/map downloads/
+/telegram downloads/
+
+/Lumen et Umbra UI/*.lua
 /command_history_main
+/discordserveroptin
+/irc_channels
+/irc_nick
+/login
+/profile.aff
+/profile.dic
 /profile.ini
+/telegram_options.lua
+
