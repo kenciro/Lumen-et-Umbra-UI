@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mShowInfo="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.1" mLineSize="7.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="12.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="0" playerRoomOuterDiameter="120" playerRoomInnerDiameter="70" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no">
 			<name>LeU Live con Pack Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,9 +18,9 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>306</borderLeftWidth>
+			<borderLeftWidth>207</borderLeftWidth>
 			<borderRightWidth>0</borderRightWidth>
-			<wrapAt>120</wrapAt>
+			<wrapAt>150</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
 			<mBgColor>#000000</mBgColor>
@@ -70,8 +70,9 @@
 			<mWhite2>#c0c0c0</mWhite2>
 			<mLightWhite2>#ffffff</mLightWhite2>
 			<mSpellDic>it_IT</mSpellDic>
-			<mLineSize>7.0</mLineSize>
-			<mRoomSize>0.1</mRoomSize>
+			<mLineSize>12.0</mLineSize>
+			<mRoomSize>0.9</mRoomSize>
+			<mapInfoContributor>Full</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1100,7 +1101,7 @@ enableTrigger("multi_loot_end")</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_valid</name>
 						<script>setTriggerStayOpen("multi_loot", 1)</script>
 						<triggerType>0</triggerType>
@@ -1124,7 +1125,7 @@ enableTrigger("multi_loot_end")</script>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
-					<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>multi_loot_end</name>
 						<script>disableTrigger("multi_loot_valid")
 disableTrigger("multi_loot_end")
@@ -1403,9 +1404,11 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>First AID (automatico)</name>
-				<script>send("first")</script>
+				<script>send("first")
+-- Puoi medicarti di nuovo.
+-- Riesci ad applicare rapidamente dei bendaggi sulle tue ferite. </script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1591,8 +1594,27 @@ end</script>
 				<name>LOG + Auto update effets</name>
 				<script>local str = "";
 --
+--
+if (matches[1] == "Puoi medicarti di nuovo.") then
+  ui.affects["primo soccorso"] = {
+    category = "",
+    duration = -1,
+    isNegative = "",
+    isRound = true,
+    type = 0
+  }
+  send("first")
+elseif (rex.match(matches[1], [[Riesci ad applicare rapidamente dei bendaggi sulle tue ferite.]])) then
+  ui.affects["primo soccorso"] = {
+    category = "",
+    duration = 5,
+    isNegative = "",
+    isRound = treu,
+    type = 0
+  }
+--
 -- scudo di fuoco
-if (matches[1] == "La tua pelle ha acquistato la consistenza del ghiaccio.") then
+elseif (matches[1] == "La tua pelle ha acquistato la consistenza del ghiaccio.") then
   ui.affects["scudo di ghiaccio"] = {
     category = "",
     duration = 3,
@@ -1728,7 +1750,22 @@ elseif (matches[1] == "Senti di poter sferrare di nuovo un pugno cinetico.") the
 --
 -- avvelena lame
 elseif (matches[1] == "Sulle tue lame non rimane piu' traccia di veleno.") then
+  ui.affects["avvelena"] = {
+    category = "",
+    duration = -1,
+    isNegative = "",
+    isRound = false,
+    type = 0
+  }
   expandAlias("enve lee")
+elseif (matches[1] == "Le tue lame grondano di veleno adesso!") then
+  ui.affects["avvelena"] = {
+    category = "",
+    duration = 2,
+    isNegative = "",
+    isRound = false,
+    type = 0
+  }
 --
 -- free cast
 elseif (matches[1] == "La tua mente si apre per un istante all'infinito!") then
@@ -1782,6 +1819,9 @@ ui.fUpdateAffects()</script>
 					<string>Sulle tue lame non rimane piu' traccia di veleno.</string>
 					<string>La tua pelle ha perso la consistenza del ghiaccio.</string>
 					<string>La tua pelle ha acquistato la consistenza del ghiaccio.</string>
+					<string>Le tue lame grondano di veleno adesso!</string>
+					<string>Puoi medicarti di nuovo.</string>
+					<string>(Riesci ad applicare rapidamente dei bendaggi sulle tue ferite.*)</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>3</integer>
@@ -1804,6 +1844,9 @@ ui.fUpdateAffects()</script>
 					<integer>3</integer>
 					<integer>3</integer>
 					<integer>3</integer>
+					<integer>3</integer>
+					<integer>3</integer>
+					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -2192,8 +2235,8 @@ cecho(str)</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Eldorado</name>
-				<script>local msg = string.lower(matches[2])
-if (msg == "una fitta foresta dominata da una sagoma imponente") then
+				<script>local msg = string.trim(string.lower(matches[2]))
+if (msg == "una fitta foresta dominata da una sagoma imponente.") then
   msg = "da alma civitas : .s10ws9w3n10wusws2ws2wn (n giungla)"
 
 elseif (msg == "tutto il globo, ma su niente") then
@@ -4507,30 +4550,6 @@ function ui.fUpdateAffects()
   local tot_r, tot_c, total
   local orderTable = {}
   --
-  -- Pre defined affect 
-  local pre_defined_affects = {
-    ["velocita` della luce"]        = {                        BGcolor = "cyan" },
-  --  ["[CD] Nuovo Dungeon"]        = {icon = "skill_115.png", color = "blue", shortName = "CD Dung" },
-  --  ["[CD] Nuova Missione"]       = {icon = "skill_115.png", color = "blue", shortName = "CD Miss" },  
-  --  ["avvelena"]                  = {icon = nil,             color = "YellowGreen", shortName = "Vel" },
-  --  ["chiaroveggenza"]            = {icon = nil,             color = "magenta", shortName = "Chiaro" },  
-  --  ["colpo psichico"]            = {icon = nil,             color = "magenta", shortName = "Colpo PSI" },  
-  --  ["forza psichica"]            = {icon = "skill_9.png",   color = "OrangeRed", shortName = "PSI Str" },
-  --  ["individua il magico"]       = {icon = 'Skill_322.png', color = "DarkOrchid", shortName = "Ind. mag." },
-  --  ["individua il male"]         = {icon = 'skill_72.png',  color = "DarkOrchid", shortName = "Ind. mal." },
-  --  ["individua invisibile"]      = {icon = "Skill_312.png", color = "DarkOrchid", shortName = "Ind. inv." },
-  --  ["levitazione"]               = {icon = "skill_156.png", color = "blue", shortName = "Lev" },
-  --  ["nuotare (cooldown)"]        = {icon = "skill_110.png", color = "blue", shortName = "Swim" },
-  --  ["percepisci vita"]           = {icon = "skill_44.png",  color = "DarkOrchid", shortName = "True Live" },
-  --  ["primo soccorso"]            = {icon = nil,             color = "green", shortName = "First AID" },  
-  --  ["santuario"]                 = {icon = "Skill_243.png", color = "white", shortName = "Sanc" },
-  --  ["scarica di adrenalina"]     = {icon = "Skill_472.png", color = "yellow", shortName = "PSI Dro" },
-  --  ["scopri le trappole"]        = {icon = "skill_166.png", color = "brown", shortName = "Det. trap" },
-  --  ["mantello di fiamme"]        = {icon = "fireshield.png", BGcolor = "firebrick", FGcolor = "yellow", shortName = "PSI Fire" },
-  --  ["scudo psichico"]            = {icon = "skill_168.png", color = "cyan", shortName = "PSI Shield" },
-  --  ["vera vista"]                = {icon = "Skill_264.png", color = "DarkOrchid", shortName = "Vera Vista" },
-  }
-  --
   -- Simulation (for debug)
   if (ui.enDebug &gt;= 2) then
     for i=1, math.random(1, 30) do
@@ -4616,61 +4635,24 @@ function ui.fUpdateAffects()
       end
       --
       -- Normal Affects
-      local icon = nil
       local BGColor = nil
       local FGColor = "black";
-      local shortName = nil
+      local shortName = ui.fRemoveArticle(affect);
       local CCS = GUI.CSS.ItemText
       --
-      -- Pre-load icon, BG volor and short name form predefinited table (if exists)
-      if table.contains(pre_defined_affects, affect) then
-        --
-        -- Pre-ShortName
-        if (pre_defined_affects[affect].shortName) then
-          shortName = pre_defined_affects[affect].shortName
-        end
-        --
-        -- Pre-FG Color
-        if (pre_defined_affects[affect].FGcolor) then
-          FGColor = pre_defined_affects[affect].FGcolor
-        end
-        --
-        -- Pre-Icon
-        if (pre_defined_affects[affect].icon) and (io.exists(ui.files.icons.path..pre_defined_affects[affect].icon)) then
-          icon = ui.files.icons.path..pre_defined_affects[affect].icon;
-        end
-        --
-        -- Pre-BG Color
-        if (pre_defined_affects[affect].BGcolor) then
-          BGColor = pre_defined_affects[affect].BGcolor
-        end
-      end
-      --
       -- Short Name
-      if (not shortName) then
-        shortName = ui.fRemoveArticle(affect);
-      end
       GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
       GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..string.gsub(shortName, "(%a)([%w_']*)", ui.fTitleCase))
       --
-      -- Icon
-      if (icon) then
-        CCS = CCS..[[
-                border-image: url("]]..icon..[[") 0px stretch;
-              ]]
-      end
-      --
       -- BG color
-      if (not BGColor) then
-        if (ui.affects[affect].color) then
-          BGColor = ui.fGetColor(ui.affects[affect].color)
-        else
-		      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
-		      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-		      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
-		      --
-          BGColor = string.format("#%02X%02X%02X", R, G, B)
-        end
+      if (ui.affects[affect].color) then
+        BGColor = ui.fGetColor(ui.affects[affect].color)
+      else
+	      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+	      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+	      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+	      --
+        BGColor = string.format("#%02X%02X%02X", R, G, B)
       end
       --
       CCS = CCS..[[
@@ -4690,7 +4672,6 @@ function ui.fUpdateAffects()
       local toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(affect)..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
                       '&lt;i&gt;'..duration..'&lt;/i&gt;&lt;/p&gt;'
       GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
-      --
       --
       GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
       GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
@@ -5373,6 +5354,8 @@ function ui.fUpdateChat()
     GUI.Chat.Main.PrivateHeader:show()
     --
     if (ui.parameters.widgets.chat.collapsePrivate) then
+      GUI.Chat.Main.Private:move(0, 21);
+      --
       if (ui.parameters.widgets.chat.collapsePublic) then
         GUI.Chat.Main.Private:resize("100%", "50%-22")
         y = "50%"
@@ -5380,7 +5363,6 @@ function ui.fUpdateChat()
         GUI.Chat.Main.Private:resize("100%", "100%-42")
         y = "-20"
       end
-      GUI.Chat.Main.Private:move(0, 21);
       GUI.Chat.Main.Private:show()
     else
       GUI.Chat.Main.Private:hide()
@@ -5778,10 +5760,14 @@ end
   --
   -- Chat Header
   GUI.CSS.ChatHeader = [[
-    margin: 0px;
-    background-color: grey;
-    padding: 2px;
-    color: white;
+    QLabel{
+      border: 1px outset rgba(]]..ui.colors.wBorder..[[, 0.7); 
+      border-radius: 2px;
+      background-color: rgb(]]..ui.colors.wButton..[[);
+    }
+    QLabel::hover{
+      background-color: rgb(]]..ui.colors.wButtonHover..[[);
+    }
   ]]
   --
   -- Item
@@ -6731,7 +6717,8 @@ function ui.fAddSpace(s, l, mode)
   return spaceL..s..spaceR
 end
 --
-function ui.fWindowResize(eventName, containerName)
+function ui.fWindowResize()
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fWindowResize()")
   ui.fUpdateAffects()
   ui.fUpdateAliasButton()
   ui.fUpdateEndowment()
@@ -9378,8 +9365,8 @@ end</script>
   end
   --
   function GUI.Affects:resize(...)
+    Resize(GUI.Affects, ...)
     ui.fUpdateAffects()
-    return Resize(GUI.Affects, ...)
   end
   --
 end</script>
@@ -9541,8 +9528,8 @@ end</script>
   end
   --
   function GUI.AliasButtons:resize(...)
+    Resize(GUI.AliasButtons, ...)
     ui.fUpdateAliasButton()
-    return Resize(GUI.AliasButtons, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -9821,8 +9808,8 @@ end</script>
   end
   --
   function GUI.Endowment:resize(...)
+    Resize(GUI.Endowment, ...)
     ui.fUpdateEndowment()
-    return Resize(GUI.Endowment, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -10005,8 +9992,8 @@ end</script>
   end
   --
   function GUI.Group:resize(...)
+    Resize(GUI.Group, ...)
     ui.fUpdateGroup()
-    return Resize(GUI.Group, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -10562,8 +10549,8 @@ end</script>
   end
   --
   function GUI.TargetButtons:resize(...)
+    Resize(GUI.TargetButtons, ...)
     ui.fRefreshTargetButtonsWidget()
-    return Resize(GUI.TargetButtons, ...)
   end
 end</script>
 					<eventHandlerList />
@@ -10572,7 +10559,28 @@ end</script>
 			<Script isActive="yes" isFolder="no">
 				<name>Init</name>
 				<packageName></packageName>
-				<script>--
+				<script>if (ui) and (ui.handlers) then 
+    -- Events:
+    -- gmcp (MSDP) event
+    ui.fDebug("[&lt;white&gt;init&lt;r&gt;] unregister events")
+    if (ui.handlers.fUpdateGMCP) then
+      killAnonymousEventHandler(ui.handlers.fUpdateGMCP)
+      ui.handlers.fUpdateGMCP = nil
+    end
+    --
+    -- Resize main window event
+    if (ui.handlers.fWindowResize) then
+      killAnonymousEventHandler(ui.handlers.fWindowResize)
+      ui.handlers.fWindowResize = nil
+    end
+    --
+    -- Connection event
+    if (ui.handlers.fConnection) then
+      killAnonymousEventHandler(ui.handlers.fConnection)
+      ui.handlers.fConnection = nil
+    end
+end
+--
 -- Init structures
 ui.initStructures()
 --
@@ -10639,24 +10647,12 @@ if (ui.fInitDataDirectory()) then
     -- Events:
     -- gmcp (MSDP) event
     ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
-    if (ui.handlers.fUpdateGMCP) then
-      killAnonymousEventHandler(ui.handlers.fUpdateGMCP)
-      ui.handlers.fUpdateGMCP = nil
-    end
     ui.handlers.fUpdateGMCP  = registerAnonymousEventHandler("gmcp.MSDP", "ui.fUpdateGMCP");
     --
     -- Resize main window event
-    if (ui.handlers.fWindowResize) then
-      killAnonymousEventHandler(ui.handlers.fWindowResize)
-      ui.handlers.fWindowResize = nil
-    end
-    ui.handlers.fWindowResize = registerAnonymousEventHandler("sysWindowResizeEvent", ui.fWindowResize)
+    ui.handlers.fWindowResize = registerAnonymousEventHandler("sysWindowResizeEvent", "ui.fWindowResize")
     --
     -- Connection event
-    if (ui.handlers.fConnection) then
-      killAnonymousEventHandler(ui.handlers.fConnection)
-      ui.handlers.fConnection = nil
-    end
     ui.handlers.fConnection = registerAnonymousEventHandler("sysConnectionEvent", "ui.fConnection")
     --
     ui.fDebug("[&lt;white&gt;init&lt;r&gt;] ... end UI init!")

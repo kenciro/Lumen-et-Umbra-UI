@@ -1,4 +1,4 @@
-return {{[ [[enablePugno]] ] = true,[ [[freeCast]] ] = false,[ [[autoAttackArea]] ] = false,[ [[autoAttack]] ] = true,[ [[page]] ] = [[a]],[ [[widgets]] ] = {2},},
+return {{[ [[enablePugno]] ] = true,[ [[freeCast]] ] = false,[ [[autoAttackArea]] ] = true,[ [[autoAttack]] ] = true,[ [[page]] ] = [[a]],[ [[widgets]] ] = {2},},
 {[ [[endowment]] ] = {3},[ [[keybind]] ] = {4},[ [[group]] ] = {5},[ [[aliasButton]] ] = {6},[ [[chat]] ] = {7},[ [[player]] ] = {8},[ [[help]] ] = {9},[ [[affects]] ] = {10},[ [[targets]] ] = {11},[ [[room]] ] = {12},[ [[opponent]] ] = {13},},
 {[ [[type]] ] = [[equip]],[ [[transparent]] ] = true,},
 {[ [[fontSize]] ] = 6,},
