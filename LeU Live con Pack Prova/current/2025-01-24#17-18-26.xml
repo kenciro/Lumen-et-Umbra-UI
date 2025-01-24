@@ -19,8 +19,8 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>306</borderLeftWidth>
-			<borderRightWidth>478</borderRightWidth>
-			<wrapAt>150</wrapAt>
+			<borderRightWidth>484</borderRightWidth>
+			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
 			<mBgColor>#000000</mBgColor>
@@ -51,8 +51,8 @@
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#000000</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
-			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
-			<mMapInfoBg alpha="255">#969696</mMapInfoBg>
+			<mRoomCollisionBorderColor>#aa0000</mRoomCollisionBorderColor>
+			<mMapInfoBg alpha="64">#808080</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
 			<mRed2>#800000</mRed2>
@@ -1271,7 +1271,7 @@ send("get all.coin "..ui.nCad..".cad")</script>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Porta chiusa</name>
 					<script>ui.direction = ui.direction or ""
-expandAlias("open "..matches[2].." "..ui.direction)
+expandAlias("op "..matches[2].." "..ui.direction)
 </script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -4752,11 +4752,12 @@ function ui.fUpdateAffects()
       if (ui.affects[affect].color) then
         BGColor = ui.fGetColor(ui.affects[affect].color)
       else
-	      local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
-	      local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
-	      local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
+	      --local R = 9 * ((string.byte(shortName, 1) or 0x0) - 0x61) -- Primo carattere o 0 se la frase è vuota
+	      --local G = 9 * ((string.byte(shortName, 2) or 0x0) - 0x61) -- Secondo carattere o 0 se la frase ha meno di 2 caratteri
+	      --local B = 9 * ((string.byte(shortName, 3) or 0x0) - 0x61) -- Terzo carattere o 0 se la frase ha meno di 3 caratteri
 	      --
-        BGColor = string.format("#%02X%02X%02X", R, G, B)
+        --BGColor = string.format("#%02X%02X%02X", R, G, B)
+        BGColor = durationColor
       end
       --
       CCS = CCS..[[
@@ -12771,6 +12772,106 @@ ui.speedwalk = {
 -- Mapper
 ui.fInitMapperWidget()
 ui.fInitMapper()</script>
+					<eventHandlerList />
+				</Script>
+				<Script isActive="yes" isFolder="no">
+					<name>test</name>
+					<packageName></packageName>
+					<script>function ui.fUpdateRoom()
+  local fw, fh = calcFontSize("GUI.Room.Main.Console")
+  local maxChar = math.floor(GUI.Room.Main.Console:get_width() / fw)
+  local lastDir = nil;
+  --
+  ui.room = ui.room or {}
+  ui.room.exitCaptured = ui.room.exitCaptured or ""
+  ui.room.name = ui.room.name or ""
+  ui.room.position = ui.room.position or 5 -- centro
+  ui.room.type = ui.room.type or ""
+  ui.room.exits = {}
+  ui.room.otherExits = {}
+  --
+  -- Generate directiones table
+  for dir in string.gmatch(ui.room.exitCaptured, "[^%s]+") do
+    dir = string.lower(dir)
+    if (ui.validExit[dir]) then
+      lastDir = ui.validExit[dir].short;
+      ui.room.exits[lastDir] = {};
+    elseif (dir == "(chiuso)") then
+      if (lastDir) then
+        ui.room.exits[lastDir].close = true;
+      end
+    elseif (dir == "(segreto)") then
+      if (lastDir) then
+        ui.room.exits[lastDir].secret = true;
+      end
+    else
+      table.insert(ui.room.otherExits, "▷ "..dir)      
+    end
+  end
+  --
+  clearWindow("GUI.Room.Main.Console")
+  --
+  -- Room name
+  GUI.Room:setTitle(ui.room.name.." - "..ui.room.type)
+  --
+  -- Exits and Position
+  GUI.Room.Main.Console:cecho("  ┌───"..ui.fGetToken(ui.room.exits, "n").."───"..ui.fGetToken(ui.room.exits, "u").."    &lt;cyan&gt;"..(ui.room.otherExits[1] or "").."&lt;r&gt;\n")
+  GUI.Room.Main.Console:cecho("  │"..ui.fDrawRoomLine(1).."│    &lt;cyan&gt;"..(ui.room.otherExits[2] or "").."&lt;r&gt;\n")
+  GUI.Room.Main.Console:cecho("  "..ui.fGetToken(ui.room.exits, "w")..ui.fDrawRoomLine(2)..ui.fGetToken(ui.room.exits, "e").."    &lt;cyan&gt;"..(ui.room.otherExits[3] or "").."&lt;r&gt;\n")
+  GUI.Room.Main.Console:cecho("  │"..ui.fDrawRoomLine(3).."│    &lt;cyan&gt;"..(ui.room.otherExits[4] or "").."&lt;r&gt;\n")
+  GUI.Room.Main.Console:cecho("  "..ui.fGetToken(ui.room.exits, "d").."───"..ui.fGetToken(ui.room.exits, "s").."───┘    &lt;cyan&gt;"..(ui.room.otherExits[5] or "").."&lt;r&gt;\n")
+  --
+  -- Other exits
+  local idx = 6;
+  while (ui.room.otherExits[idx]) do
+     GUI.Room.Main.Console:cecho("               &lt;cyan&gt;"..(ui.room.otherExits[idx]).."&lt;r&gt;\n")
+     idx = idx + 1
+  end
+end
+--
+local fUpdateRoom = ui.fUpdateRoom
+--
+function ui.fUpdateRoom(...)
+  fUpdateRoom(...)
+  if (ui.speedwalk.path) then
+    local roomId = getPlayerRoom()
+    local i = 1
+    --
+    while (i &lt;= #ui.speedwalk.path) and (ui.speedwalk.path[i] ~= roomId) do
+      i = i + 1;    
+    end
+    --
+    while (i &lt;= #ui.speedwalk.path) and (ui.speedwalk.path[i] == roomId) do
+      i = i + 1;    
+    end 
+    --
+    if (i &lt; #ui.speedwalk.path) then
+      local exits = getRoomExits(roomId)
+      local specialExits = getSpecialExits(roomId)
+      local nextRoom = ui.speedwalk.path[i]
+      --
+      if (not table.is_empty(exits)) then
+        for k,v in pairs(exits) do
+          if (v == nextRoom) then
+            cecho(" &lt;red&gt;[&lt;white&gt;[&lt;blue&gt;[&lt;r&gt; "..ui.validExit[k].color..ui.validExit[k].tokenOpen.."&lt;r&gt; &lt;blue&gt;]&lt;white&gt;]&lt;red&gt;]&lt;r&gt;" )
+          end
+        end
+      end
+      --
+      if (not table.is_empty(specialExits)) then
+        for k,v in pairs(specialExits) do
+          for n, d in pairs(v) do
+            if (k == nextRoom) then
+              cecho(" &lt;red&gt;[&lt;white&gt;[&lt;blue&gt;[&lt;r&gt; "..n.."&lt;r&gt; &lt;blue&gt;]&lt;white&gt;]&lt;red&gt;]&lt;r&gt;" )
+            end
+          end
+        end
+      end
+    elseif (i == #ui.speedwalk.path) then
+      cecho(" &lt;red&gt;[&lt;white&gt;[&lt;blue&gt;[&lt;r&gt; &lt;red&gt;X&lt;r&gt; &lt;blue&gt;]&lt;white&gt;]&lt;red&gt;]&lt;r&gt;" )
+    end
+  end  
+end</script>
 					<eventHandlerList />
 				</Script>
 			</ScriptGroup>
