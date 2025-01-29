@@ -1,2 +1,2 @@
-return {{[ [[bag]] ] = [[via-lattea]],[ [[bag2]] ] = [[baule]],[ [[target]] ] = [[]],[ [[bag1]] ] = [[baule]],},
+return {{[ [[bag2]] ] = [[baule]],[ [[bag]] ] = [[via-lattea]],[ [[target]] ] = [[]],[ [[bag1]] ] = [[baule]],},
 }

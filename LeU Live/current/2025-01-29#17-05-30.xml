@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="12.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="1" playerRoomOuterDiameter="200" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="12.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="1" playerRoomOuterDiameter="200" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Live</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>306</borderLeftWidth>
-			<borderRightWidth>484</borderRightWidth>
+			<borderRightWidth>481</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -74,6 +74,7 @@
 			<mRoomSize>0.9</mRoomSize>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2844,33 +2845,18 @@ local subCommand = matches[3] or ""
 -- Mostra tutti i profiles
 if (subCommand == "") then
   ui.fShowAllSettings()
--- Carica setting
---elseif (subCommand == "load") then
---  if (ui.fLoadLocalSetting(setting)) then
---    ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato caricato.")
---  else
---    ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato caricato.")
---  end
 elseif (subCommand == "import") then
   if (ui.fImportSetting(setting)) then
     ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato importato.")
   else
     ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato importato.")
   end
---
--- Rimuove il singolo setting
---elseif (subCommand == "remove") then
---  if (ui.fRemoveSetting(setting)) then
---    ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato rimosso.")
---  else
---    ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato rimosso.")
---  end
 else
   ui.fError("Parametro non previsto ("..subCommand..").")
 end</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:uis(?:e(?:t(?:t(?:i(?:n(?:g)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
+				<regex>^(?i)(?:uiset(?:t(?:i(?:n(?:g)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Speedwalk (./..)</name>
@@ -7054,17 +7040,14 @@ ui.help.help = [[
   &lt;link variable&gt;uiv[ariables]&lt;/link&gt;  ▷ Comando per gestione le variabili
 
 &lt;yellow&gt;Altri comandi:&lt;r&gt;
-  &lt;link walk&gt;.&lt;/link&gt; oppure
-  &lt;link walk&gt;..&lt;/link&gt;           ▷ Comandi di walk e speedwalk
-  &lt;link target&gt;g0..g9&lt;/link&gt; oppure
-  &lt;link target&gt;o0&lt;/link&gt; oppure
-  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
-  &lt;link button&gt;uib[uttons]&lt;/link&gt;  ▷ Comando per la gestione dei pulsanti del widget Button
-  &lt;link color&gt;uic[olors]&lt;/link&gt;   ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
-  &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt; ▷ Comando per la gestione della dimensione dei font di aluni widget
-  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
-  &lt;link profile&gt;uip[rofiles]&lt;/link&gt; ▷ Comando per la gestione dei profili
-  &lt;link widget&gt;uiw[idget]&lt;/link&gt;   ▷ Comando per il ripristino dei widget chiusi
+  &lt;link walk&gt;.&lt;/link&gt; o &lt;link walk&gt;..&lt;/link&gt;                 ▷ Comandi di walk e speedwalk
+  &lt;link target&gt;g0..g9&lt;/link&gt; o &lt;link target&gt;o0&lt;/link&gt; o &lt;link target&gt;t1..t4&lt;/link&gt; ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link button&gt;uib[uttons]&lt;/link&gt;              ▷ Comando per la gestione dei pulsanti del widget Button
+  &lt;link color&gt;uic[olors]&lt;/link&gt;               ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
+  &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt;             ▷ Comando per la gestione della dimensione dei font di aluni widget
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;              ▷ Comando per la gestione dei tasti rapidi per aliases e targets
+  &lt;link setting&gt;uiset[ting]&lt;/link&gt;              ▷ Comando per importare i setting da altri profili
+  &lt;link widget&gt;uiw[idget]&lt;/link&gt;               ▷ Comando per il ripristino dei widget chiusi
 ]]
 --
 ui.help.affects = [[
@@ -12771,7 +12754,9 @@ ui.speedwalk = {
 --
 -- Mapper
 ui.fInitMapperWidget()
-ui.fInitMapper()</script>
+ui.fInitMapper()
+GUI.Mapper:restore()
+GUI.Mapper:show()</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
