@@ -10,6 +10,6 @@ Mudlet profiles folder for Lumen et Umbra MUD user interface development.
   	- **Prova**
   		Packages for Lumen et Umbra next alpha version
 - **LeU Live**
-	Last Lumen et Umbra Mudlet profile before merge with **LeU Prova**
+	Last Lumen et Umbra Mudlet profile for actual online version
 - **LeU Prova**
 	Last Lumen et Umbra Mudlet profile for next alpha version
