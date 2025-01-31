@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>306</borderLeftWidth>
-			<borderRightWidth>481</borderRightWidth>
+			<borderRightWidth>483</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>12.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -3688,7 +3688,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)blumezzanotte|animeperdute(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:blumezzanotte|animeperdute)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio cangiante, Colosseo</name>
@@ -3699,7 +3699,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)cangiante|colosseo(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:cangiante|colosseo)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio giallo e verde, Necrofagi</name>
@@ -3710,7 +3710,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)gialloeverde|necrofagi(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:gialloeverde|necrofagi)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio granito, Mani</name>
@@ -3721,7 +3721,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)granito|nani(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:granito|nani)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio, Abisso, Manticore</name>
@@ -3765,7 +3765,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)grigioscuro|moria(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:grigioscuro|moria)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio marrone sporco, Lycantropia</name>
@@ -3776,7 +3776,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)marronesporco|lycantropia(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:marronesporco|lycantropia)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio oro, torre, Torremagia</name>
@@ -3788,7 +3788,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)oro|torremagia(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:oro|torremagia)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio rosso bruciato, Old Thalos, Lamie</name>
@@ -3821,7 +3821,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)verdeerba|syracusa(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:verdeerba|syracusa)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde foresta, Barriera, Pilastri</name>
@@ -3832,7 +3832,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:verdeforesta|barriera|pilastri)(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:verdeforesta)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde scuro, Roo, Aborigeni</name>
@@ -3854,7 +3854,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)verdesmeraldo|grecia(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:verdesmeraldo|grecia)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Allania</name>
@@ -4259,6 +4259,82 @@ ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)tempiodannati(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>Pilastri dell'equilibrio</name>
+				<script>--[[
+
+e;
+BOOS e RETTILE
+Stana BOSS, flee
+get Pergamena Armonia
+tt armonia
+RECITE PERGAMENA QHH
+ga CADAVERE
+Room L'ULTIMO PORTALE 
+op EAST
+OPEN FORZIERE;GET ALL FORZIERE;ENTER TUNNEL
+]]
+local path = {
+  "astral",
+  ".un2wnuw2uwds;es",
+  "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;')",
+  ".2ns;lua cecho('Ripeti fino a &lt;red&gt;IL SENTIERO&lt;r&gt;')",
+  "s;op monolito;",
+  "d;bl carceriere",
+  "get globo cad;op portale;n",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;.su;op barriera",
+  "track difensore-caos;lua cecho('Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;red&gt;un corpulento Difensore del Caos&lt;r&gt;')",
+  "lua cecho('Andare alla room &lt;red&gt;Inquietudine....&lt;r&gt;')",
+  "op lastra",
+  "d;bl Kh'ryf",
+  "ga cad;.u2s3w;",
+  
+  "get roccia sacca;op pilastro;ent pilastro",
+  "track capogilda-spiriti;lua cecho('Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;red&gt;il Capogilda degli spiriti&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre di pietra&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2e2n;ent pilastro;.4n",
+  
+  "get trasparente sacca;op pilastro;ent pilastro",
+  "track capogilda-lich;lua cecho('Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;red&gt;il Capogilda dei cavalcanubi&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;Una piccola torre bianca&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2e2s;ent pilastro;.5e",
+  
+  "get fuoco sacca;op pilastro;ent pilastro",
+  "track capogilda-assassini;lua cecho('Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;red&gt;il Capogilda degli assassini&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Rossa&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2w2s;ent pilastro;.4s",
+
+  "get azzurro sacca;op pilastro;ent pilastro",
+  "track capogilda-gnoll;lua cecho('Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;red&gt;il Capogilda gnoll&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Azzurra&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2w2n;ent pilastro;.2w",
+  
+  "dig terreno;d;g all.scheggia;join scheggia 2.scheggia 3.scheggia 4.scheggia;op PORTALE;s",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;uno strano Vortice&lt;r&gt;')",
+  "ga vortice;.nunne;g chiave armonia;op serratura;",
+  
+  ".ee;bl bufalo",
+  ".ee;op portale;",
+  "e;kill akho",
+  "ll;cut cespuglio;d;op tabernacolo;ga tabernacolo;.ue;op altare e;",
+  "get pergamena armonia;tt pergamena";
+  "e",
+  "recita pergamena qhh", 
+}
+ui.fExecutePath(path, matches[2])</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)pilastri(?:\s+(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
