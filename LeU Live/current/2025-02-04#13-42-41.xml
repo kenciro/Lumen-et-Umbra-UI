@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="12.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="1" playerRoomOuterDiameter="200" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="yes" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="auto" mRawStreamDump="yes" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd#HH-mm-ss" mAlertOnNewData="yes" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="no" mEnableMSDP="no" mEnableMSP="no" mEnableMTTS="yes" mEnableMNES="no" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="no" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="12.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="yes" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="Google" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="yes" mSslIgnoreSelfSigned="yes" mSslIgnoreAll="yes" mAskTlsAvailable="no" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="no" playerRoomPrimaryColor="#ffff0000" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="1" playerRoomOuterDiameter="200" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="500" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="None" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Live</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -4278,49 +4278,49 @@ OPEN FORZIERE;GET ALL FORZIERE;ENTER TUNNEL
 local path = {
   "astral",
   ".un2wnuw2uwds;es",
-  "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;')",
-  ".2ns;lua cecho('Ripeti fino a &lt;red&gt;IL SENTIERO&lt;r&gt;')",
+  "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;orange&gt;Miliziani del Caos&lt;r&gt;')",
+  ".2ns;lua cecho('Ripeti fino a raggiungere &lt;orange&gt;IL SENTIERO&lt;r&gt;')",
   "s;op monolito;",
   "d;bl carceriere",
   "get globo cad;op portale;n",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;Alterazione&lt;r&gt;')",
   "ga alterazione;.su;op barriera",
-  "track difensore-caos;lua cecho('Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;red&gt;un corpulento Difensore del Caos&lt;r&gt;')",
-  "lua cecho('Andare alla room &lt;red&gt;Inquietudine....&lt;r&gt;')",
+  "track difensore-caos;lua cecho('Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;orange&gt;un corpulento Difensore del Caos&lt;r&gt;')",
+  "lua cecho('Andare alla room &lt;orange&gt;Inquietudine....&lt;r&gt;')",
   "op lastra",
-  "d;bl Kh'ryf",
+  "d;bu",
   "ga cad;.u2s3w;",
   
   "get roccia sacca;op pilastro;ent pilastro",
-  "track capogilda-spiriti;lua cecho('Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;red&gt;il Capogilda degli spiriti&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre di pietra&lt;r&gt;')",
+  "track capogilda-spiriti;lua cecho('Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;orange&gt;il Capogilda degli spiriti&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;orange&gt;La Torre di pietra&lt;r&gt;')",
   "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;Alterazione&lt;r&gt;')",
   "ga alterazione;p scheggia;.us2e2n;ent pilastro;.4n",
   
   "get trasparente sacca;op pilastro;ent pilastro",
-  "track capogilda-lich;lua cecho('Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;red&gt;il Capogilda dei cavalcanubi&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;Una piccola torre bianca&lt;r&gt;')",
+  "track capogilda-lich;lua cecho('Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;orange&gt;il Capogilda dei cavalcanubi&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;orange&gt;Una piccola torre bianca&lt;r&gt;')",
   "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;Alterazione&lt;r&gt;')",
   "ga alterazione;p scheggia;.us2e2s;ent pilastro;.5e",
   
   "get fuoco sacca;op pilastro;ent pilastro",
-  "track capogilda-assassini;lua cecho('Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;red&gt;il Capogilda degli assassini&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Rossa&lt;r&gt;')",
+  "track capogilda-assassini;lua cecho('Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;orange&gt;il Capogilda degli assassini&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;orange&gt;La Torre Rossa&lt;r&gt;')",
   "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;Alterazione&lt;r&gt;')",
   "ga alterazione;p scheggia;.us2w2s;ent pilastro;.4s",
 
   "get azzurro sacca;op pilastro;ent pilastro",
-  "track capogilda-gnoll;lua cecho('Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;red&gt;il Capogilda gnoll&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Azzurra&lt;r&gt;')",
+  "track capogilda-gnoll;lua cecho('Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;orange&gt;il Capogilda gnoll&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;orange&gt;La Torre Azzurra&lt;r&gt;')",
   "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;Alterazione&lt;r&gt;')",
   "ga alterazione;p scheggia;.us2w2n;ent pilastro;.2w",
   
   "dig terreno;d;g all.scheggia;join scheggia 2.scheggia 3.scheggia 4.scheggia;op PORTALE;s",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;uno strano Vortice&lt;r&gt;')",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;orange&gt;uno strano Vortice&lt;r&gt;')",
   "ga vortice;.nunne;g chiave armonia;op serratura;",
   
   ".ee;bl bufalo",
@@ -4773,7 +4773,7 @@ function ui.fUpdateAffects()
     else
       local duration = ""
       local affect = orderTable[i]
-      local durationColor = "green"
+      local durationColor = "LimeGreen"
       --
       -- Permanent
       if (ui.affects[affect].duration &lt; 0) then
@@ -4783,10 +4783,8 @@ function ui.fUpdateAffects()
       else
         --
         if (ui.affects[affect].duration &lt; 1) then
-          durationColor = "red"
-        elseif (ui.affects[affect].duration &lt; 3) then
           durationColor = "orange"
-        elseif  (ui.affects[affect].duration &lt; 5) then
+        elseif (ui.affects[affect].duration &lt; 2) then
           durationColor = "yellow"
         end
         --
@@ -6258,7 +6256,7 @@ function ui.fUpdateEndowment()
         BGColor = "white"
       elseif (t == "U") then
         t = "Non comune"
-        BGColor = "lime"
+        BGColor = "LimeGreen"
       elseif (t == "R") then
         t = "Raro"
         BGColor = "rgb(58,120,242)"
