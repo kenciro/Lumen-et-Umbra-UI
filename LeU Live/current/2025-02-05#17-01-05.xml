@@ -18,7 +18,7 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>306</borderLeftWidth>
+			<borderLeftWidth>304</borderLeftWidth>
 			<borderRightWidth>483</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
@@ -74,7 +74,6 @@
 			<mRoomSize>0.9</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4692,7 +4691,36 @@ send("get all "..ui.getAllCadNum..".cad")
 			<ScriptGroup isActive="yes" isFolder="yes">
 				<name>Functions</name>
 				<packageName></packageName>
-				<script>ui = ui or {}
+				<script>--[[
+RELEASE 
+
+05.02.2025
+- Corretto speedwalk, il comando ".." non sempre funzionava.
+- Corretto visualizzazione del widget gruppo con modalità compact off
+- Corretto titolo del widget Opponent con nomi colorati (tipo Grottesche)
+- Corretto il colore di visualizzazione degli effetti attivi.
+- Aggiunto il valore numerico del tick al relativo gauge nel widget Player
+- Aggiunto il valore numerico degli exp al relativo gauge nel widget Player (sparisce in automatico al raggiungiemnto del valore massimo)
+- Miglioramenti del widget Chat (visualizzazione a tab collassabili)
+- Miglioramenti del resize dei widget.
+- Miglioramenti del caricamento del profilo.
+- Miglioramenti vari minori
+
+23.12.2024
+- Corretto il fastidioso bug di bordi e box che a volte sparivano inspiegabilmente.
+- Corretto il riposizionamento dei widget alla prima installazione
+- Miglioramento del sistema di Alias e Variabili (comando uialias e uivariables)
+- Miglioramenti grafici generali
+- Miglioramente dell'help (comando uihelp)
+- Aggiunta di Alias ricorsivi
+- Aggiunto il pulsante trapsarenza bordi per alcuni widget per poterli sovrapporre nella parte non usata dello scroll
+- Aggiunta la gestione indipendente delle impostazioni (alias, variabili, highliths, etc) per ogni personaggio nello stesso profilo.
+- Aggiunto il comando uisetting per importare le impostazioni (alias, variabili, highliths, etc) di altri profili mudlet che utilizzano i vecchi pack. Retro-compatibile con il pack di prova.
+- Unione dei widget chat pubblica e chat privata in un unico widget splittabile orizzontalmente o verticalmente (a scelta)
+- Diverse varie ed eventuai
+]]
+
+ui = ui or {}
 ui.enDebug = 0 -- 0 = Off, 1 = Text only, 2 = simulate values</script>
 				<eventHandlerList />
 				<Script isActive="yes" isFolder="no">
@@ -6975,9 +7003,9 @@ function ui.fUpdateGMCP(event, ...)
       ui.setting = string.lower(gmcp.MSDP.CHARACTER_NAME)
       --
       if (ui.fLoadLocalSetting()) then
-        ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(ui.setting).." e' stato caricato correttamente.")
+        ui.fEcho2n("Setting di "..ui.fGetSettingNameFormattedText(ui.setting).." caricato correttamente.")
       elseif (ui.fSaveSetting()) then
-        ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(ui.setting).." e' stato creato correttamente.")
+        ui.fEcho2n("Detting di "..ui.fGetSettingNameFormattedText(ui.setting).." creato correttamente.")
       else
         ui.fError("Impossibile caricare/creare il setting "..ui.fGetSettingNameFormattedText(ui.setting)..".")
       end
@@ -8526,10 +8554,10 @@ function ui.fInitSettings()
   local lfs = require("lfs")
   --
   if (lfs.chdir(ui.files.settings.path)) then
-    ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."Settings&lt;orange&gt; inizializzata correttamente.&lt;r&gt;")
+    ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."settings&lt;orange&gt; inizializzata correttamente.&lt;r&gt;")
     return true
   elseif (lfs.mkdir(ui.files.settings.path)) then
-    ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."Settings&lt;orange&gt; creata correttamente.&lt;r&gt;")
+    ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."settings&lt;orange&gt; creata correttamente.&lt;r&gt;")
     return true
   else
     ui.fEchon("&lt;red&gt; - Impossibile caricare la cartella "..ui.colors.settingName.."Settings&lt;red&gt;.&lt;r&gt;")
@@ -8966,7 +8994,7 @@ end</script>
   ui.variables = {}
   --
   -- GMCP
-  gmcp = {}
+  gmcp = gmcp or {}
   --
   --
   ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Structures") 
@@ -9283,22 +9311,18 @@ end</script>
 					<name>Tick</name>
 					<packageName></packageName>
 					<script>function ui.fIncrementTickTimer(time_left)
-  if time_left &lt; 0 then
-    ui.fTickUpdateAffects()
-    time_left = 75 + time_left;
-  end
   --
   if (ui.handlers.ticktimer) then
     killTimer(ui.handlers.ticktimer)
     ui.handlers.ticktimer = nil
   end
-  ui.handlers.ticktimer = tempTimer(1, function() ui.fIncrementTickTimer(time_left - 1) end)
   --
-  --local ratio = (75 - time_left) / 75
-  --GUI.Player.Main.TickLabel:setStyleSheet([[
-  --  border-radius: 5px;
-  --  background: qconicalgradient(cx:0.5, cy:0.5, angle: 90, stop:0 black, stop:]]..ratio..[[ transparent stop:]]..ratio+0.01 ..[[ red);
-  --]])
+  if (time_left &lt; 0) then
+    ui.fTickUpdateAffects()
+    time_left = 75 + time_left;
+  end
+  --
+  ui.handlers.ticktimer = tempTimer(1, function() ui.fIncrementTickTimer(time_left - 1) end)
   --
   GUI.Player.Main.TickLabel:echo("&lt;p align=right&gt;"..time_left.."&lt;/p&gt;")
   GUI.Player.Main.Tick:setValue(time_left, 75)
@@ -9924,7 +9948,8 @@ end</script>
     GUI.Endowment.Main["Item"..i].Text:enableClickthrough() -- for tooltip
     GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
     GUI.Endowment.Main["Item"..i].Text:setFontSize(7);
-    GUI.Endowment.Main["Item"..i].Text:setFgColor("black")    --
+    GUI.Endowment.Main["Item"..i].Text:setFgColor("black")
+    --
     -- Level
     GUI.Endowment.Main["Item"..i].Level = Geyser.Label:new2({
       name = "GUI.Endowment.Main.Item"..i..".Level",
@@ -9938,7 +9963,7 @@ end</script>
     GUI.Endowment.Main["Item"..i].Level:setFgColor("green")
     GUI.Endowment.Main["Item"..i].Level:setFontSize(7);
     --
-    -- Slot
+    -- Status
     GUI.Endowment.Main["Item"..i].Status = Geyser.Label:new2({
       name = "GUI.Endowment.Main.Item"..i..".Status",
       x = -32,
@@ -12044,11 +12069,11 @@ function ui.fHighlightRoom(roomId, HighlightPath)
     if (table.is_empty(specialExits)) then
       --
       -- ... without special exits
-      highlightRoom(roomId, 255,255,0, 255,255,0, 1.2, 64, 64)
+      highlightRoom(roomId, 255,255,0, 255,255,0, 2, 64, 64)
     else
       --
       -- ... with special exits
-      highlightRoom(roomId, 255,255,0, 0,255,255, 1.2, 64, 128)
+      highlightRoom(roomId, 255,255,0, 0,255,255, 2, 64, 128)
     end
   elseif (not table.is_empty(specialExits)) then
     --
