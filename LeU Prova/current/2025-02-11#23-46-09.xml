@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>476</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Cascadia Code,13,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Cascadia Code,13,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6622,8 +6622,6 @@ function ui.fUpdateGroup()
         maxhp    = 100,
         mana     = math.random(0, 100),
         maxmana  = 100,
-        mov      = math.random(0, 100),
-        maxmov   = 100,
         pov      = math.random(0, 100),
         maxpov   = 100,
         roomPos  = math.random(1, 9),
@@ -6641,8 +6639,6 @@ function ui.fUpdateGroup()
           maxhp    = gmcp.char.group[member].maxhp or 0,
           mana     = gmcp.char.group[member].mana or 0,
           maxmana  = gmcp.char.group[member].maxmana or 0,
-          mov      = gmcp.char.group[member].mov or 0,
-          maxmov   = gmcp.char.group[member].maxmov or 0,
           pow      = gmcp.char.group[member].pow or 0,
           maxpow   = gmcp.char.group[member].maxpow or 0,
           roomPos  = gmcp.char.group[member].roomPos or 0,
@@ -6665,7 +6661,7 @@ function ui.fUpdateGroup()
       ui.fAssignTargetButton("g"..mod, nil)
     else
       --
-      GUI.Group.Main["g"..mod]:resize(w - distance, h - distance)
+      GUI.Group.Main["g"..mod]:resize(w - distance, h - distance);
       GUI.Group.Main["g"..mod]:move(distance + (c-1)*w, distance + (r-1)*h)
       --
       if (ui.group[i].isLeader) then
@@ -6676,7 +6672,7 @@ function ui.fUpdateGroup()
       --
       GUI.Group.Main["g"..mod].Health:setValue(math.max(0, ui.group[i].hp), ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."&lt;/p&gt;")
       GUI.Group.Main["g"..mod].Mana:setValue(math.max(0, ui.group[i].mana), ui.group[i].maxmana)
-      GUI.Group.Main["g"..mod].Stamina:setValue(math.max(0, ui.group[i].mov), ui.group[i].maxmov)
+      GUI.Group.Main["g"..mod].Stamina:setValue(math.max(0, ui.group[i].pow), ui.group[i].maxpow)
       --
       GUI.Group.Main["g"..mod]:show();
       ui.fAssignTargetButton("g"..mod, ui.group[i].name)
@@ -8096,7 +8092,7 @@ function ui.fInitMapper()
 end</script>
 					<eventHandlerList />
 				</Script>
-				<Script isActive="no" isFolder="no">
+				<Script isActive="yes" isFolder="no">
 					<name>Map \ Overland</name>
 					<packageName></packageName>
 					<script>function ui.fUpdateOverand()
@@ -8444,8 +8440,6 @@ function ui.fUpdatePlayer()
     maxhp          = 1,
     mana           = 1,
     maxmana        = 1,
-    mov            = 1,
-    maxmov         = 1,
     pow            = 1,
     maxpow         = 1,
     
@@ -8472,8 +8466,6 @@ function ui.fUpdatePlayer()
     ui.player.maxhp          = 100
     ui.player.mana           = math.random(0, 100)
     ui.player.maxmana        = 100
-    ui.player.mov            = math.random(0, 100)
-    ui.player.maxmov         = 100
     ui.player.pow            = math.random(0, 100)
     ui.player.maxpow         = 100
     
@@ -8587,12 +8579,18 @@ function ui.fUpdatePlayer()
   --
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
-  ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
-  ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
+  if (ui.player.experience &gt;= 200000000) then
+    ui.player.experience = -tonumber(ui.player.toNext)
+    ui.player.toNext = 100000000
+  else
+    ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
+    ui.player.toNext = math.max(ui.player.toNext, ui.player.experience)  
+  end
+  --
   if (ui.player.experience ~= ui.previous.player.experience) or
      (ui.player.toNext  ~= ui.previous.player.toNext) then
     GUI.Player.Main.Experience:setValue(math.min(math.max(0, ui.player.experience), ui.player.toNext), ui.player.toNext, "")
-    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..ui.player.toNext.."&lt;/p&gt;")
+    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..ui.player.experience.."&lt;/p&gt;")
   end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
@@ -9739,18 +9737,21 @@ end</script>
   local Resize = GUI.Affects.resize
   --
   function GUI.Affects:minimize(...)
+    local ret = Minimize(GUI.Affects)
     GUI.Affects.Main:hide()
-    return Minimize(GUI.Affects)
+    return ret
   end
   --
   function GUI.Affects:restore(...)
+    local ret = Restore(GUI.Affects)
     GUI.Affects.Main:show()
-    return Restore(GUI.Affects)
+    return ret
   end
   --
   function GUI.Affects:resize(...)
+    local ret = Resize(GUI.Affects, ...)
     ui.fUpdateAffects()
-    return Resize(GUI.Affects, ...)
+    return ret
   end
   --
 end</script>
@@ -9900,18 +9901,21 @@ end</script>
   local Resize = GUI.AliasButtons.resize
   --
   function GUI.AliasButtons:minimize(...)
+    local ret = Minimize(GUI.AliasButtons)
     GUI.AliasButtons.Main:hide()
-    return Minimize(GUI.AliasButtons)
+    return ret
   end
   --
   function GUI.AliasButtons:restore(...)
+    local ret = Restore(GUI.AliasButtons)
     GUI.AliasButtons.Main:show()
-    return Restore(GUI.AliasButtons)
+    return ret
   end
   --
   function GUI.AliasButtons:resize(...)
+    local ret = Resize(GUI.AliasButtons, ...)
     ui.fUpdateAliasButton()
-    return Resize(GUI.AliasButtons, ...)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10028,13 +10032,15 @@ end</script>
   local Restore = GUI.Chat.restore
   --
   function GUI.Chat:minimize(...)
+    local ret = Minimize(GUI.Chat)
     GUI.Chat.Main:hide()
-    return Minimize(GUI.Chat)
+    return ret
   end
   --
   function GUI.Chat:restore(...)
+    local ret = Restore(GUI.Chat)
     GUI.Chat.Main:show()
-    return Restore(GUI.Chat)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10123,18 +10129,21 @@ end</script>
   local Resize = GUI.Cooldowns.resize
   --
   function GUI.Cooldowns:minimize(...)
+    local ret = Minimize(GUI.Cooldowns)
     GUI.Cooldowns.Main:hide()
-    return Minimize(GUI.Cooldowns)
+    return ret
   end
   --
   function GUI.Cooldowns:restore(...)
+    local ret = Restore(GUI.Cooldowns)
     GUI.Cooldowns.Main:show()
-    return Restore(GUI.Cooldowns)
+    return ret
   end
   --
   function GUI.Cooldowns:resize(...)
+    local ret = Resize(GUI.Cooldowns, ...)
     ui.fUpdateCooldowns()
-    return Resize(GUI.Cooldowns, ...)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10270,18 +10279,21 @@ end</script>
   local Resize = GUI.Endowment.resize
   --
   function GUI.Endowment:minimize(...)
+    local ret = Minimize(GUI.Endowment)
     GUI.Endowment.Main:hide()
-    return Minimize(GUI.Endowment)
+    return ret
   end
   --
   function GUI.Endowment:restore(...)
+    local ret = Restore(GUI.Endowment)
     GUI.Endowment.Main:show()
-    return Restore(GUI.Endowment)
+    return ret
   end
   --
   function GUI.Endowment:resize(...)
+    local ret = Resize(GUI.Endowment, ...)
     ui.fUpdateEndowment()
-    return Resize(GUI.Endowment, ...)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10423,12 +10435,12 @@ end</script>
     GUI.Group.Main["g"..mod].Stamina:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-      background-color: rgba(0, 250, 0, .2);
+      background-color: rgba(204, 85, 0, .2);
     ]])
     GUI.Group.Main["g"..mod].Stamina.back:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
-      background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
+      background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ffa500, stop: 0.65 #e86100, stop: 1 #ff8c00);
     ]])
     GUI.Group.Main["g"..mod].Stamina.front:enableClickthrough()
     --
@@ -10452,18 +10464,21 @@ end</script>
   local Resize = GUI.Group.resize
   --
   function GUI.Group:minimize(...)
+    local ret = Minimize(GUI.Group)
     GUI.Group.Main:hide()
-    return Minimize(GUI.Group)
+    return ret
   end
   --
   function GUI.Group:restore(...)
+    local ret = Restore(GUI.Group)
     GUI.Group.Main:show()
-    return Restore(GUI.Group)
+    return ret
   end
   --
   function GUI.Group:resize(...)
+    local ret = Resize(GUI.Group, ...)
     ui.fUpdateGroup()
-    return Resize(GUI.Group, ...)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10512,13 +10527,15 @@ end</script>
   local Restore = GUI.Help.restore
   --
   function GUI.Help:minimize(...)
+    local ret = Minimize(GUI.Help)
     GUI.Help.Main:hide()
-    return Minimize(GUI.Help)
+    return ret
   end
   --
   function GUI.Help:restore(...)
+    local ret = Restore(GUI.Help)
     GUI.Help.Main:show()
-    return Restore(GUI.Help)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10578,13 +10595,15 @@ end</script>
   local Restore = GUI.Mapper.restore
   --
   function GUI.Mapper:minimize(...)
+    local ret = Minimize(GUI.Mapper)
     GUI.Mapper.Main:hide()
-    return Minimize(GUI.Mapper)
+    return ret
   end
   --
   function GUI.Mapper:restore(...)
+    local ret = Restore(GUI.Mapper)
     GUI.Mapper.Main:show()
-    return Restore(GUI.Mapper)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10700,13 +10719,15 @@ end</script>
   local Restore = GUI.Opponent.restore
   --
   function GUI.Opponent:minimize(...)
+    local ret = Minimize(GUI.Opponent)
     GUI.Opponent.Main:hide()
-    return Minimize(GUI.Opponent)
+    return ret
   end
   --
   function GUI.Opponent:restore(...)
+    local ret = Restore(GUI.Opponent)
     GUI.Opponent.Main:show()
-    return Restore(GUI.Opponent)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10934,13 +10955,15 @@ end</script>
   local Restore = GUI.Player.restore
   --
   function GUI.Player:minimize(...)
+    local ret = Minimize(GUI.Player)
     GUI.Player.Main:hide()
-    return Minimize(GUI.Player)
+    return ret
   end
   --
   function GUI.Player:restore(...)
+    local ret = Restore(GUI.Player)
     GUI.Player.Main:show()
-    return Restore(GUI.Player)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -10990,13 +11013,15 @@ end</script>
   local Restore = GUI.Room.restore
   --
   function GUI.Room:minimize(...)
+    local ret = Minimize(GUI.Room)
     GUI.Room.Main:hide()
-    return Minimize(GUI.Room)
+    return ret
   end
   --
   function GUI.Room:restore(...)
+    local ret = Restore(GUI.Room)
     GUI.Room.Main:show()
-    return Restore(GUI.Room)
+    return ret
   end
 end</script>
 					<eventHandlerList />
@@ -11094,18 +11119,21 @@ end</script>
   local Resize = GUI.TargetButtons.resize
   --
   function GUI.TargetButtons:minimize(...)
+    local ret = Minimize(GUI.TargetButtons)
     GUI.TargetButtons.Main:hide()
-    return Minimize(GUI.TargetButtons)
+    return ret 
   end
   --
   function GUI.TargetButtons:restore(...)
+    local ret = Restore(GUI.TargetButtons)
     GUI.TargetButtons.Main:show()
-    return Restore(GUI.TargetButtons)
+    return ret
   end
   --
   function GUI.TargetButtons:resize(...)
+    local ret = Resize(GUI.TargetButtons, ...)
     ui.fUpdateTargetButtons()
-    return Resize(GUI.TargetButtons, ...)
+    return ret
   end
 end</script>
 					<eventHandlerList />
