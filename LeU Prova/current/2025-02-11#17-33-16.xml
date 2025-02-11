@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="no" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -15,11 +15,11 @@
 			<url>new-leu.leu.it</url>
 			<serverPackageName>nothing</serverPackageName>
 			<serverPackageVersion>-1</serverPackageVersion>
-			<port>6667</port>
+			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>316</borderLeftWidth>
-			<borderRightWidth>391</borderRightWidth>
+			<borderLeftWidth>309</borderLeftWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>100</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -51,6 +51,7 @@
 			<mFgColor2>#c0c0c0</mFgColor2>
 			<mBgColor2>#1e1818</mBgColor2>
 			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
+			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
 			<mMapInfoBg alpha="127">#3c3030</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
@@ -72,8 +73,8 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -87,6 +88,10 @@
 			<profileShortcut key="Disconnect">Alt+D</profileShortcut>
 			<profileShortcut key="Reconnect">Alt+R</profileShortcut>
 			<profileShortcut key="Close profile">Alt+W</profileShortcut>
+			<profileShortcut key="Toggle Time Stamps">Ctrl+Alt+T</profileShortcut>
+			<profileShortcut key="Toggle Replay">Ctrl+Alt+R</profileShortcut>
+			<profileShortcut key="Toggle Logging">Ctrl+Alt+L</profileShortcut>
+			<profileShortcut key="Toggle Emergency Stop">Ctrl+Alt+S</profileShortcut>
 			<stopwatches />
 		</Host>
 	</HostPackage>
@@ -642,7 +647,7 @@ ui.fUpdateRoom()</script>
 			<regexCodeList />
 			<regexCodePropertyList />
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Apertura porte</name>
+				<name>Porte</name>
 				<script></script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -657,15 +662,9 @@ ui.fUpdateRoom()</script>
 				<regexCodeList />
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Porta chiusa</name>
-					<script>ui.direction = ui.direction or ""
-ui.door = {
-  name = matches[2],
-  pick = true,
-  doorbash = true,
-}
---
-expandAlias("open "..ui.door.name.." "..ui.direction)</script>
+					<name>Porta chiusa a chiave</name>
+					<script>ui.direction = ui.direction or ''
+expandAlias("open "..matches[2].." "..ui.direction)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -684,42 +683,21 @@ expandAlias("open "..ui.door.name.." "..ui.direction)</script>
 					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Chiave, Doorbash or Pick</name>
-					<script>if (matches[2] == "scassinarla") then
-  ui.door.pick = false;
-elseif  (matches[2] == "sfondata") then
-  ui.door.doorbash = false;
-else
-  ui.door.key = matches[2];
-end</script>
+					<name>Door</name>
+					<script>ui.door = {
+  name = matches[2],
+  direction = ui.direction or "",
+  pick = true,
+  doorbash = true,
+}
+--
+enableTrigger("no_pick")
+enableTrigger("no_bash")
+enableTrigger("key")
+enableTrigger("door_end")</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>E` impossibile (scassinarla).</string>
-						<string>E` troppo robusta per essere (sfondata).</string>
-						<string>Il meccanismo di chiusura sembra adatto a (.*)\.</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-						<integer>1</integer>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Porta chiusa a chiave</name>
-					<script>ui.direction = ui.direction or ''
-expandAlias("unlock "..matches[2].." "..ui.direction)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
+					<mStayOpen>1</mStayOpen>
 					<mCommand></mCommand>
 					<packageName></packageName>
 					<mFgColor>#ff0000</mFgColor>
@@ -735,18 +713,110 @@ expandAlias("unlock "..matches[2].." "..ui.direction)</script>
 						<integer>1</integer>
 						<integer>1</integer>
 					</regexCodePropertyList>
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+						<name>no_pick</name>
+						<script>ui.door.pick = false;
+setTriggerStayOpen("Door", 1)</script>
+						<triggerType>0</triggerType>
+						<conditonLineDelta>0</conditonLineDelta>
+						<mStayOpen>0</mStayOpen>
+						<mCommand></mCommand>
+						<packageName></packageName>
+						<mFgColor>#ff0000</mFgColor>
+						<mBgColor>#ffff00</mBgColor>
+						<mSoundFile></mSoundFile>
+						<colorTriggerFgColor>#000000</colorTriggerFgColor>
+						<colorTriggerBgColor>#000000</colorTriggerBgColor>
+						<regexCodeList>
+							<string>E` impossibile scassinarla.</string>
+						</regexCodeList>
+						<regexCodePropertyList>
+							<integer>1</integer>
+						</regexCodePropertyList>
+					</Trigger>
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+						<name>no_bash</name>
+						<script>ui.door.doorbash = false;
+setTriggerStayOpen("Door", 1)</script>
+						<triggerType>0</triggerType>
+						<conditonLineDelta>0</conditonLineDelta>
+						<mStayOpen>0</mStayOpen>
+						<mCommand></mCommand>
+						<packageName></packageName>
+						<mFgColor>#ff0000</mFgColor>
+						<mBgColor>#ffff00</mBgColor>
+						<mSoundFile></mSoundFile>
+						<colorTriggerFgColor>#000000</colorTriggerFgColor>
+						<colorTriggerBgColor>#000000</colorTriggerBgColor>
+						<regexCodeList>
+							<string>E` troppo robusta per essere sfondata.</string>
+						</regexCodeList>
+						<regexCodePropertyList>
+							<integer>1</integer>
+						</regexCodePropertyList>
+					</Trigger>
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+						<name>key</name>
+						<script>ui.door.key = matches[2];
+setTriggerStayOpen("Door", 1)</script>
+						<triggerType>0</triggerType>
+						<conditonLineDelta>0</conditonLineDelta>
+						<mStayOpen>0</mStayOpen>
+						<mCommand></mCommand>
+						<packageName></packageName>
+						<mFgColor>#ff0000</mFgColor>
+						<mBgColor>#ffff00</mBgColor>
+						<mSoundFile></mSoundFile>
+						<colorTriggerFgColor>#000000</colorTriggerFgColor>
+						<colorTriggerBgColor>#000000</colorTriggerBgColor>
+						<regexCodeList>
+							<string>Il meccanismo di chiusura sembra adatto a (.*)\.</string>
+						</regexCodeList>
+						<regexCodePropertyList>
+							<integer>1</integer>
+						</regexCodePropertyList>
+					</Trigger>
+					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+						<name>door_end</name>
+						<script>if (ui.door.key) then
+  expandAlias("unlock "..ui.door.name.." "..ui.door.direction)
+elseif (ui.door.pick) then
+  expandAlias("pick "..ui.door.name.." "..ui.door.direction) 
+elseif (ui.door.doorbash) then
+  expandAlias("doorbash "..ui.door.name.." "..ui.door.direction) 
+else
+  setDoor(ui.room.id, ui.door.direction, 3)
+end
+disableTrigger("no_pick")
+disableTrigger("no_bash")
+disableTrigger("key")
+disableTrigger("door_end")</script>
+						<triggerType>0</triggerType>
+						<conditonLineDelta>0</conditonLineDelta>
+						<mStayOpen>0</mStayOpen>
+						<mCommand></mCommand>
+						<packageName></packageName>
+						<mFgColor>#ff0000</mFgColor>
+						<mBgColor>#ffff00</mBgColor>
+						<mSoundFile></mSoundFile>
+						<colorTriggerFgColor>#000000</colorTriggerFgColor>
+						<colorTriggerBgColor>#000000</colorTriggerBgColor>
+						<regexCodeList>
+							<string>^$</string>
+						</regexCodeList>
+						<regexCodePropertyList>
+							<integer>1</integer>
+						</regexCodePropertyList>
+					</Trigger>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Non hai la chiave giusta.</name>
-					<script>ui.direction = ui.direction or ''
-if (ui.door.pick) then
-  expandAlias("pick "..ui.door.name.." "..ui.direction) 
+					<script>if (ui.door.pick) then
+  expandAlias("pick "..ui.door.name.." "..ui.door.direction) 
 elseif (ui.door.doorbash) then
-  expandAlias("doorbash "..ui.door.name.." "..ui.direction) 
+  expandAlias("doorbash "..ui.door.name.." "..ui.door.direction) 
 else
-  setDoor(ui.room.id, ui.direction, 3)
-  echo("\n")
-  ui.fEchon("Impossibile da scassinare o sfondare (&lt;white&gt;"..(ui.door.key or "&lt;orange&gt;Non esiste chiave").."&lt;r&gt;)")
+  setDoor(ui.room.id, ui.door.direction, 3)
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -5004,99 +5074,136 @@ end</script>
 function ui.fUpdateChat()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateChat()")
   --
-  if (ui.parameters.widgets.chat.type == "all") then
-    GUI.Chat.Button_split:show();
-    --
-    if (ui.parameters.widgets.chat.split == "horizontal") then
-      GUI.Chat.Main.All:hide()
-      --
-      GUI.Chat.Main.Private:move(0, 0);
-      GUI.Chat.Main.Private:resize("100%", "50%-4")
-      GUI.Chat.Main.Private:show()
-      --
-      GUI.Chat.Split_line:move(0, "50%-2");
-      GUI.Chat.Split_line:resize("100%", 4)
-      GUI.Chat.Split_line:show()
-      --
-      GUI.Chat.Main.Public:move(0, "50%+4");
-      GUI.Chat.Main.Public:resize("100%", "50%-4")
-      GUI.Chat.Main.Public:show()
-      --
-      GUI.Chat:setTitle("Chat [private - pubblic]")
-    --
-    elseif (ui.parameters.widgets.chat.split == "vertical") then
-      GUI.Chat.Main.All:hide()
-      --
-      GUI.Chat.Main.Private:move(0, 0);
-      GUI.Chat.Main.Private:resize("50%-4", "100%")
-      GUI.Chat.Main.Private:show()
-      --
-      GUI.Chat.Split_line:move("50%-2", 0);
-      GUI.Chat.Split_line:resize(4, "100%")
-      GUI.Chat.Split_line:show()
-      --
-      GUI.Chat.Main.Public:move("50%+4", 0);
-      GUI.Chat.Main.Public:resize("50%-4", "100%")
-      GUI.Chat.Main.Public:show()
-      --
-      GUI.Chat:setTitle("Chat [private | pubblic]")
-    --
-    else
-      GUI.Chat.Main.All:move(0, 0);
-      GUI.Chat.Main.All:resize("100%", "100%")
-      GUI.Chat.Main.All:show()
-      --
-      GUI.Chat.Main.Public:hide()
-      --
-      GUI.Chat.Split_line:hide()
-      --
-      GUI.Chat.Main.Private:hide()
-      --
-      GUI.Chat:setTitle("Chat [private + pubblic]")
-    end
+  local x = "0";
+  local y = "0";
   --
-  elseif (ui.parameters.widgets.chat.type == "public") then
-    GUI.Chat.Button_split:hide();
-    --
+  if (ui.parameters.widgets.chat.split == "vertical") then
     GUI.Chat.Main.All:hide()
     --
-    GUI.Chat.Main.Public:move(0, 0);
-    GUI.Chat.Main.Public:resize("100%", "100%")
-    GUI.Chat.Main.Public:show()
+    GUI.Chat.Main.PrivateHeader:move(x, y);
+    GUI.Chat.Main.PrivateHeader:resize("100%", 20)
+    GUI.Chat.Main.PrivateHeader:show()
     --
-    GUI.Chat.Split_line:hide()
+    if (ui.parameters.widgets.chat.collapsePrivate) then
+      GUI.Chat.Main.Private:move(0, 21);
+      --
+      if (ui.parameters.widgets.chat.collapsePublic) then
+        GUI.Chat.Main.Private:resize("100%", "50%-22")
+        y = "50%"
+      else
+        GUI.Chat.Main.Private:resize("100%", "100%-42")
+        y = "-20"
+      end
+      GUI.Chat.Main.Private:show()
+    else
+      GUI.Chat.Main.Private:hide()
+      y = "21"
+    end
     --
-    GUI.Chat.Main.Private:hide()
+    GUI.Chat.Main.PublicHeader:move(x, y);
+    GUI.Chat.Main.PublicHeader:resize("100%", 20)
+    GUI.Chat.Main.PublicHeader:show()
     --
-    GUI.Chat:setTitle("Chat [pubblic]")
+    if (ui.parameters.widgets.chat.collapsePublic) then
+      if (ui.parameters.widgets.chat.collapsePrivate) then
+        GUI.Chat.Main.Public:move(0, "50%+21");
+        GUI.Chat.Main.Public:resize("100%", "50%-21")
+      else
+        GUI.Chat.Main.Public:move(0, 42);
+        GUI.Chat.Main.Public:resize("100%", "100%-42")
+      end
+      GUI.Chat.Main.Public:show()
+    else
+      GUI.Chat.Main.Public:hide()
+    end
+    --
+    GUI.Chat:setTitle("Chat [private - pubblic]")
+  --
+  elseif (ui.parameters.widgets.chat.split == "horizontal") then
+    GUI.Chat.Main.All:hide()
+    --
+    GUI.Chat.Main.PrivateHeader:move(x, y);
+    GUI.Chat.Main.PrivateHeader:resize(20, "100%")
+    GUI.Chat.Main.PrivateHeader:show()
+    --
+    if (ui.parameters.widgets.chat.collapsePrivate) then
+      if (ui.parameters.widgets.chat.collapsePublic) then
+        GUI.Chat.Main.Private:resize("50%-22", "100%")
+        x = "50%"
+      else
+        GUI.Chat.Main.Private:resize("100%-42", "100%")
+        x = "-20"
+      end
+      GUI.Chat.Main.Private:move(21, 0);
+      GUI.Chat.Main.Private:show()
+    else
+      x = "21"
+      GUI.Chat.Main.Private:hide()
+    end
+    --
+    GUI.Chat.Main.PublicHeader:move(x, y);
+    GUI.Chat.Main.PublicHeader:resize(20, "100%")
+    GUI.Chat.Main.PublicHeader:show()
+    --
+    if (ui.parameters.widgets.chat.collapsePublic) then
+      if (ui.parameters.widgets.chat.collapsePrivate) then
+        GUI.Chat.Main.Public:move("50%+21", 0);
+        GUI.Chat.Main.Public:resize("50%-21", "100%")
+      else
+        GUI.Chat.Main.Public:move(42, 0);
+        GUI.Chat.Main.Public:resize("100%-42", "100%")
+      end
+      GUI.Chat.Main.Public:show()
+    else
+      GUI.Chat.Main.Public:hide()
+    end
+    --
+    GUI.Chat:setTitle("Chat [private | pubblic]")
+  --
   else
-    GUI.Chat.Button_split:hide();
+    GUI.Chat.Main.All:move(0, 0);
+    GUI.Chat.Main.All:resize("100%", "100%")
+    GUI.Chat.Main.All:show()
     --
-    GUI.Chat.Main.All:hide()
+    GUI.Chat.Main.PrivateHeader:hide()
     --
     GUI.Chat.Main.Public:hide()
     --
-    GUI.Chat.Split_line:hide()
+    GUI.Chat.Main.PublicHeader:hide()
     --
-    GUI.Chat.Main.Private:move(0, 0);
-    GUI.Chat.Main.Private:resize("100%", "100%")
-    GUI.Chat.Main.Private:show()
+    GUI.Chat.Main.Private:hide()
     --
-    GUI.Chat:setTitle("Chat [private]")
+    GUI.Chat:setTitle("Chat [private + pubblic]")
   end
   --
-  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
+  if (ui.parameters.widgets.chat.collapsePrivate) then
+    GUI.Chat.Main.PrivateHeader:echo("[-] Private")
+  else
+    GUI.Chat.Main.PrivateHeader:echo("[+] Private")
+  end
+  --
+  if (ui.parameters.widgets.chat.collapsePublic) then
+    GUI.Chat.Main.PublicHeader:echo("[-] Public")
+  else
+    GUI.Chat.Main.PublicHeader:echo("[+] Public")
+  end
+  --
+  GUI.Chat.Main.All:scrollUp()
+  GUI.Chat.Main.All:scrollDown()
+  --
+  GUI.Chat.Main.Public:scrollUp()
+  GUI.Chat.Main.Public:scrollDown()
+  --
+  GUI.Chat.Main.Private:scrollUp()
+  GUI.Chat.Main.Private:scrollDown()
+  --
 end
 --
-function ui.fChatTypeClicked()
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fChatTypeClicked()")
-  --
-  if (ui.parameters.widgets.chat.type == "all") then
-    ui.parameters.widgets.chat.type = "public"
-  elseif (ui.parameters.widgets.chat.type == "public") then
-    ui.parameters.widgets.chat.type = "private"
-  else
-    ui.parameters.widgets.chat.type = "all"
+function ui.fClickHandler(sender)
+  if (sender == 'Private') then
+    ui.parameters.widgets.chat.collapsePrivate = not (ui.parameters.widgets.chat.collapsePrivate or false);
+  elseif (sender == 'Public') then
+    ui.parameters.widgets.chat.collapsePublic = not (ui.parameters.widgets.chat.collapsePublic or false);
   end
   --
   ui.fUpdateChat()
@@ -7543,16 +7650,16 @@ function ui.fHighlightRoom(roomId, HighlightPath)
     if (table.is_empty(specialExits)) then
       --
       -- ... without special exits
-      highlightRoom(roomId, 255,255,0, 255,255,0, 1.2, 64, 64)
+      highlightRoom(roomId, 255,255,0, 255,255,0, 1.5, 64, 64)
     else
       --
       -- ... with special exits
-      highlightRoom(roomId, 255,255,0, 0,255,255, 1.2, 64, 128)
+      highlightRoom(roomId, 255,255,0, 0,255,255, 1.5, 64, 128)
     end
   elseif (not table.is_empty(specialExits)) then
     --
     -- Highlight rooms with special exits
-    highlightRoom(roomId, 0,255,255, 0,255,255, 0.6, 64, 128)
+    highlightRoom(roomId, 0,255,255, 0,255,255, 1.5, 64, 128)
   else
     --
     -- Unhighlight rooms
@@ -7989,7 +8096,7 @@ function ui.fInitMapper()
 end</script>
 					<eventHandlerList />
 				</Script>
-				<Script isActive="yes" isFolder="no">
+				<Script isActive="no" isFolder="no">
 					<name>Map \ Overland</name>
 					<packageName></packageName>
 					<script>function ui.fUpdateOverand()
@@ -8207,9 +8314,10 @@ function ui.fGetPreDefinitedParameters()
         transparent = false,
       },
       chat = {
-        type = "all",
-        split = false,    
-        fontSize = 8,
+        split = "vertical",
+        collapsePrivate = true,
+        collapsePublic = true,    
+        fontSize = 10,
       },
       cooldowns = {
         transparent = false,
@@ -8387,8 +8495,6 @@ function ui.fUpdatePlayer()
     ui.player.maxhp          = gmcp.char.vitals.maxhp or ui.player.maxhp
     ui.player.mana           = gmcp.char.vitals.mana or ui.player.mana
     ui.player.maxmana        = gmcp.char.vitals.maxmana or ui.player.maxmana
-    ui.player.mov            = gmcp.char.vitals.mov or ui.player.mov
-    ui.player.maxmov         = gmcp.char.vitals.maxmov or ui.player.maxmov
     ui.player.pow            = gmcp.char.vitals.pow or ui.player.pow
     ui.player.maxpow         = gmcp.char.vitals.maxpow or ui.player.maxpow
     
@@ -8419,6 +8525,7 @@ function ui.fUpdatePlayer()
   ui.player.secsToTick = tonumber(ui.player.secsToTick)
   if (ui.player.secsToTick ~= ui.previous.player.secsToTick) then
     GUI.Player.Main.Tick:setValue(math.max(0, ui.player.secsToTick), 74, "")
+    GUI.Player.Main.TickLabel:echo("&lt;p align=right&gt;"..ui.player.secsToTick.."&lt;/p&gt;")
     --
     -- Cooldowns soften (every seconds)
     if (not table.is_empty(ui.cooldowns)) then
@@ -8478,16 +8585,6 @@ function ui.fUpdatePlayer()
       GUI.Player.Main.Power:setValue(math.min(math.max(0, ui.player.pow), ui.player.maxpow), ui.player.maxpow, "&lt;p align=right&gt;"..ui.player.pow.."/"..ui.player.maxpow.." - "..powerPerc.."% &lt;/p&gt;")
   end
   --
-  -- Stamina
-  ui.player.mov = tonumber(ui.player.mov)
-  ui.player.maxmov = tonumber(ui.player.maxmov)
-  if (ui.player.mov ~= ui.previous.player.mov) or
-     (ui.player.maxmov  ~= ui.previous.player.maxmov) then
-      local staminaPerc = math.floor(100 * ui.player.mov / ui.player.maxmov); 
-      --
-      GUI.Player.Main.Stamina:setValue(math.min(math.max(0, ui.player.mov), ui.player.maxmov), ui.player.maxmov, "&lt;p align=right&gt;"..ui.player.mov.."/"..ui.player.maxmov.." - "..staminaPerc.."% &lt;/p&gt;")
-  end
-  --
   -- Experience
   ui.player.experience = tonumber(ui.player.experience)
   ui.player.toNext = tonumber(ui.player.toNext) + ui.player.experience
@@ -8495,6 +8592,7 @@ function ui.fUpdatePlayer()
   if (ui.player.experience ~= ui.previous.player.experience) or
      (ui.player.toNext  ~= ui.previous.player.toNext) then
     GUI.Player.Main.Experience:setValue(math.min(math.max(0, ui.player.experience), ui.player.toNext), ui.player.toNext, "")
+    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..ui.player.toNext.."&lt;/p&gt;")
   end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
@@ -9847,7 +9945,7 @@ end</script>
   -- Button "Split"
   GUI.Chat.Button_split = Geyser.Label:new2({
     name = "GUI.Chat.Button_split",
-    x = -133, 
+    x = -75, 
     y = 4,
     width = 40,
     height = 12,
@@ -9856,29 +9954,6 @@ end</script>
   GUI.Chat.Button_split:setFontSize(6)
   GUI.Chat.Button_split:echo("&lt;center&gt;split");
   GUI.Chat.Button_split:setClickCallback("ui.fChatSplitClicked")
-  --
-  -- Button "Type"
-  GUI.Chat.Button_type = Geyser.Label:new2({
-    name = "GUI.Chat.Button_type",
-    x = -89, 
-    y = 4,
-    width = 40,
-    height = 12,
-  },GUI.Chat)
-  GUI.Chat.Button_type:setStyleSheet(GUI.CSS.WidgetButton);
-  GUI.Chat.Button_type:setFontSize(6)
-  GUI.Chat.Button_type:echo("&lt;center&gt;"..ui.parameters.widgets.chat.type);
-  GUI.Chat.Button_type:setClickCallback("ui.fChatTypeClicked")
-  --
-  -- Button "Type"
-  GUI.Chat.Split_line = Geyser.Label:new2({
-    name = "GUI.Chat.Split_line",
-    x = 0, 
-    y = "50%-2",
-    width = "100%",
-    height = 4,
-  },GUI.Chat.Border)
-  GUI.Chat.Split_line:setStyleSheet(GUI.CSS.Border);
   --
   -- Console "All"
   GUI.Chat.Main.All = Geyser.MiniConsole:new2({
@@ -9894,19 +9969,18 @@ end</script>
   GUI.Chat.Main.All:setBgColor(30, 24, 24)
   GUI.Chat.Main.All:setFontSize(ui.parameters.widgets.chat.fontSize)
   --
-  -- Console "Public"
-  GUI.Chat.Main.Public = Geyser.MiniConsole:new2({
-    name = 'GUI.Chat.Main.Public',
-    x=0,
-    y=0,
+  -- Header "Private"
+  GUI.Chat.Main.PrivateHeader = Geyser.Label:new2(
+  {
+    name = "GUI.Chat.Main.PrivateHeader",
+    x = 0, 
+    y = 0,
     width = "100%", 
-    height = "100%",
-    autoWrap = true,
-    scrollBar = true,
+    height = 20,
   }, GUI.Chat.Main)
-  GUI.Chat.Main.Public:setColor(30, 24, 24)
-  GUI.Chat.Main.Public:setBgColor(30, 24, 24)
-  GUI.Chat.Main.Public:setFontSize(ui.parameters.widgets.chat.fontSize)
+  GUI.Chat.Main.PrivateHeader:setStyleSheet(GUI.CSS.ChatHeader)
+  GUI.Chat.Main.PrivateHeader:echo("[-] Private")
+  GUI.Chat.Main.PrivateHeader:setClickCallback(ui.fClickHandler, "Private")
   --
   -- Console "Private"
   GUI.Chat.Main.Private = Geyser.MiniConsole:new2({
@@ -9921,6 +9995,33 @@ end</script>
   GUI.Chat.Main.Private:setColor(30, 24, 24)
   GUI.Chat.Main.Private:setBgColor(30, 24, 24)
   GUI.Chat.Main.Private:setFontSize(ui.parameters.widgets.chat.fontSize)
+  --
+  -- Header "Public"
+  GUI.Chat.Main.PublicHeader = Geyser.Label:new2(
+  {
+    name = "GUI.Chat.Main.PublicHeader",
+    x = 0, 
+    y = 0,
+    width = "100%", 
+    height = 20,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.PublicHeader:setStyleSheet(GUI.CSS.ChatHeader)
+  GUI.Chat.Main.PublicHeader:echo("[-] Public")
+  GUI.Chat.Main.PublicHeader:setClickCallback(ui.fClickHandler, "Public")
+  --
+  -- Console "Public"
+  GUI.Chat.Main.Public = Geyser.MiniConsole:new2({
+    name = 'GUI.Chat.Main.Public',
+    x=0,
+    y=0,
+    width = "100%", 
+    height = "100%",
+    autoWrap = true,
+    scrollBar = true,
+  }, GUI.Chat.Main)
+  GUI.Chat.Main.Public:setColor(30, 24, 24)
+  GUI.Chat.Main.Public:setBgColor(30, 24, 24)
+  GUI.Chat.Main.Public:setFontSize(ui.parameters.widgets.chat.fontSize)
   --
   -- Wrapping function
   local Minimize = GUI.Chat.minimize
@@ -10678,7 +10779,7 @@ end</script>
     width = -2,
     height = 5,
   },GUI.Player.Main)
-  GUI.Player.Main.Tick:setValue(0, 74)
+  GUI.Player.Main.Tick:setValue(0, 75)
   --
   GUI.Player.Main.Tick.front:echo("")
   --
@@ -10692,13 +10793,26 @@ end</script>
     border-radius: 1px;
   ]])
   --
+  -- Tick value
+  GUI.Player.Main.TickLabel = Geyser.Label:new2({
+    name = "GUI.Player.Main.TickLabel",
+    x = -15,
+    y = "0%-2",
+    width = 10,
+    height = 10,
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.Main.TickLabel:setStyleSheet([[background: transparent;]]);
+  GUI.Player.Main.TickLabel:enableClickthrough()
+  GUI.Player.Main.TickLabel:echo("&lt;p align=right&gt;??&lt;/p&gt;")
+  --
   -- Health
   GUI.Player.Main.Health = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Health",
     x = 2,
-    y = 6,
+    y = 7,
     width = -2,
-    height = "40%-12",
+    height = "50%-14",
   },GUI.Player.Main)
   GUI.Player.Main.Health:setValue(0, 100)
   --
@@ -10726,7 +10840,7 @@ end</script>
   GUI.Player.Main.Round = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Round",
     x = 2,
-    y = "40%-6",
+    y = "50%-6",
     width = -2,
     height = 5,
   }, GUI.Player.Main)
@@ -10746,9 +10860,9 @@ end</script>
   GUI.Player.Main.Mana = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Mana",
     x = 2,
-    y = "40%",
+    y = "50%+1",
     width = -2,
-    height = "20%-3",
+    height = "25%-5",
   },GUI.Player.Main)
   GUI.Player.Main.Mana:setValue(0, 100)
   --
@@ -10761,13 +10875,13 @@ end</script>
   ]])
   GUI.Player.Main.Mana.front:echo("Mana")
   --
-  -- Power (used for energy)
+  -- Energy
   GUI.Player.Main.Power = Geyser.Gauge:new2({
-    name = "GUI.Player.Power",
+    name = "GUI.Player.Main.Power",
     x = 2,
-    y = "60%-2",
+    y = "75%-2",
     width = -2,
-    height = "20%-3",
+    height = "25%-5",
   },GUI.Player.Main)
   GUI.Player.Main.Power:setValue(0, 100)
   --
@@ -10780,32 +10894,13 @@ end</script>
   ]])
   GUI.Player.Main.Power.front:echo("Energia")
   --
-  -- Stamina (used for moviment)
-  GUI.Player.Main.Stamina = Geyser.Gauge:new2({
-    name = "GUI.Player.Main.Stamina",
-    x = 2,
-    y = "80%-4",
-    width = -2,
-    height = "20%-3",
-  },GUI.Player.Main)
-  GUI.Player.Main.Stamina:setValue(0, 100)
-  --
-  GUI.Player.Main.Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
-    background-color: rgba(0, 250, 0, .2);
-  ]])
-  --
-  GUI.Player.Main.Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
-    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #00aa00, stop: 0.65 #006600, stop: 1 #008800);
-  ]])
-  GUI.Player.Main.Stamina.front:echo("Movimento")
-  --
   -- Experience 
   GUI.Player.Main.Experience = Geyser.Gauge:new2({
     name = "GUI.Player.Main.Experience",
     x = 2, 
     y = -6,
     width = -2,
-    height = 6,
+    height = 5,
   },GUI.Player.Main)
   GUI.Player.Main.Experience:setValue(0, 100)
   --
@@ -10820,6 +10915,19 @@ end</script>
     background-color: purple;
     border-radius: 1px;
   ]])
+  --
+  -- Experience value
+  GUI.Player.Main.ExperienceLabel = Geyser.Label:new2({
+    name = "GUI.Player.Main.ExperienceLabel",
+    x = -105,
+    y = -8,
+    width = 100,
+    height = 10,
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.Main.ExperienceLabel:setStyleSheet([[background: transparent;]]);
+  GUI.Player.Main.ExperienceLabel:enableClickthrough()
+  GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;??&lt;/p&gt;")
   --
   -- Wrapping function
   local Minimize = GUI.Player.minimize
@@ -11223,6 +11331,18 @@ ui.fDebug("[init] CSS")
 --
 GUI = GUI or {}
 GUI.CSS = GUI.CSS or {}
+--
+-- Chat Header
+GUI.CSS.ChatHeader = [[
+  QLabel{
+    border: 1px outset rgba(]]..ui.colors.wBorder..[[, 0.7); 
+    border-radius: 2px;
+    background-color: rgb(]]..ui.colors.wButton..[[);
+  }
+  QLabel::hover{
+    background-color: rgb(]]..ui.colors.wButtonHover..[[);
+  }
+]]
 --
 -- Item
 GUI.CSS.Item = [[
