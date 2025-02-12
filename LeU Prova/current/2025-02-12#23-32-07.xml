@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>476</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Noto Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -5703,7 +5703,7 @@ function ui.fUpdateEndowment()
       local item = orderTable[i]
       --
       -- Status color
-      local statusColor = "white"
+      local statusColor = "black"
       local status = string.gsub(ui.equipment[item].status, "%%", "")
       --
       status = tonumber(status);
@@ -7149,18 +7149,15 @@ ui.help.help = [[
   &lt;link variable&gt;uiv[ariables]&lt;/link&gt;  ▷ Comando per gestione le variabili     &lt;link track&gt;uit[rack]&lt;/link&gt;  ▷ Comando per tracciare il percorso a una stanza
 
 &lt;yellow&gt;Altri comandi:&lt;r&gt;
-  &lt;link walk&gt;.&lt;/link&gt;,
-  &lt;link walk&gt;..&lt;/link&gt;           ▷ Comandi di walk e speedwalk
-  &lt;link target&gt;g0..g9&lt;/link&gt;,
-  &lt;link target&gt;o0&lt;/link&gt;,
-  &lt;link target&gt;t1..t4&lt;/link&gt;       ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
-  &lt;link button&gt;uib[uttons]&lt;/link&gt;  ▷ Comando per la gestione dei pulsanti del widget Button
-  &lt;link color&gt;uic[olors]&lt;/link&gt;   ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
-  &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt; ▷ Comando per la gestione della dimensione dei font di aluni widget
-  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;  ▷ Comando per la gestione dei tasti rapidi per aliases e targets
-  &lt;link profile&gt;uip[rofiles]&lt;/link&gt; ▷ Comando per la gestione dei profili
-  &lt;link reply&gt;uir[eply]&lt;/link&gt;    ▷ Comando per rispondere velocemente all'ultimo messsaggio ricevuto
-  &lt;link widget&gt;uiw[idget]&lt;/link&gt;   ▷ Comando per il ripristino dei widget chiusi
+  &lt;link walk&gt;.&lt;/link&gt; o &lt;link walk&gt;..&lt;/link&gt;                 ▷ Comandi di walk e speedwalk
+  &lt;link target&gt;g0..g9&lt;/link&gt; o &lt;link target&gt;o0&lt;/link&gt; o &lt;link target&gt;t1..t4&lt;/link&gt; ▷ Comandi per la gestione della variabile &lt;var&gt;target&lt;/var&gt;
+  &lt;link button&gt;uib[uttons]&lt;/link&gt;              ▷ Comando per la gestione dei pulsanti del widget Button
+  &lt;link color&gt;uic[olors]&lt;/link&gt;               ▷ Comando per la visualizzazione dei colori disponibili per gli highlights
+  &lt;link fontsize&gt;uif[ontsize]&lt;/link&gt;             ▷ Comando per la gestione della dimensione dei font di aluni widget
+  &lt;link keybind&gt;uik[eibind]&lt;/link&gt;              ▷ Comando per la gestione dei tasti rapidi per aliases e targets
+  &lt;link setting&gt;uiset[ting]&lt;/link&gt;              ▷ Comando per importare i setting da altri profili
+  &lt;link reply&gt;uir[eply]&lt;/link&gt;                ▷ Comando per rispondere velocemente all'ultimo messsaggio ricevuto
+  &lt;link widget&gt;uiw[idget]&lt;/link&gt;               ▷ Comando per il ripristino dei widget chiusi
 ]]
 --
 ui.help.affects = [[
@@ -7351,7 +7348,7 @@ ui.help.fontsize = [[
 &lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;uif[ontsize]&lt;/command&gt; &lt;input&gt;&lt;widget&gt;&lt;/input&gt; &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt;
 
-I &lt;input&gt;&lt;widget&gt;&lt;/input&gt; a cui è possibile cambiare la &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt; del font sono: &lt;input&gt;all&lt;/input&gt; (per tutti contemporaneamente), &lt;input&gt;chat&lt;/input&gt;, &lt;input&gt;help&lt;/input&gt;, &lt;input&gt;overland&lt;/input&gt;, o &lt;input&gt;room&lt;/input&gt;.
+I &lt;input&gt;&lt;widget&gt;&lt;/input&gt; a cui è possibile cambiare la &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt; del font sono: &lt;input&gt;all&lt;/input&gt; (per tutti contemporaneamente), &lt;input&gt;chat&lt;/input&gt;, &lt;input&gt;help&lt;/input&gt; o &lt;input&gt;room&lt;/input&gt;.
 
 La &lt;input&gt;&lt;dimensione&gt;&lt;/input&gt; del font deve essere un valore compreso tra &lt;varValue&gt;1&lt;/varValue&gt; e &lt;varValue&gt;30&lt;/varValue&gt;.
 
@@ -7487,20 +7484,22 @@ Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
 ui.help.player = [[
-&lt;title&gt;Widget Player&lt;/title&gt;Il widget Player visualizza automaticamente (via GMCP) i dati del personaggio in gioco relativi a nome, razza, classe, livello, HP (barra rossa), mana (barra blu), energia (barra gialla) e movimanto (barra verde). Inoltre è possibile tenere sotto controlo il tick counter (barra sopra la barra HP), il round counter (barra sotto la barra HP) e l'esperienza (barra sotto la barra del movimento).
+&lt;title&gt;Widget Player&lt;/title&gt;Il widget Player visualizza automaticamente (via GMCP) i dati del personaggio in gioco relativi a nome, razza, classe, livello, HP (barra rossa), mana (barra blu) e energia (barra gialla). Inoltre è possibile tenere sotto controlo il tick counter (barra sopra la barra HP), il round counter (barra sotto la barra HP) e l'esperienza (barra sotto la barra del movimento).
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
-ui.help.profile = [[
-&lt;title&gt;Profili&lt;/title&gt;Tramite l'utilizzo dei profili è possibile salvare alias, highlights, target e variabili  
+ui.help.setting = [[
+&lt;title&gt;Setting&lt;/title&gt;Tramite l'utilizzo dei setting è possibile importare &lt;link alias&gt;alias&lt;/link&gt;, &lt;link highlight&gt;highlights&lt;/link&gt;, &lt;link targets&gt;target&lt;/link&gt; e &lt;link variable&gt;variables&lt;/link&gt; da un qualsiasi profilo di muddlet precedentemente salvato.
+Il nome del personaggio con cui è stato effetuaro il login viene usato come nome del setting. I settings vengono creati automaticamente in ogni profilo Mudlet, per ogni personaggio. 
+Dall'elenco dei settings è possibile visualizzare il nome del profilo Mudlet e il personaggio a cui fa riferimento.
 
 &lt;yellow&gt;Configurazione:&lt;r&gt;
-  &lt;command&gt;uip[rofiles]&lt;/command&gt;                   Per visualizzare l'elenco dei disponibili
-  &lt;command&gt;uip[rofiles] load&lt;/command&gt; &lt;profile&gt;&lt;profilo&gt;&lt;/profile&gt;    Per caricare un profile
-  &lt;command&gt;uip[rofiles] save&lt;/command&gt; &lt;profile&gt;&lt;profilo&gt;&lt;/profile&gt;    Per salvare i dati in uso su un profilo
-  &lt;command&gt;uip[rofiles] remove&lt;/command&gt; &lt;profile&gt;&lt;profilo&gt;&lt;/profile&gt;  Per rimuovere un profilo
-  &lt;command&gt;uip[rofiles] remove_all&lt;/command&gt;        Per eliminare tutti i profile
+  &lt;command&gt;uis[etting]&lt;/command&gt;                           Per visualizzare l'elenco di tutti i setting disponibili
+  &lt;command&gt;uis[etting]&lt;/command&gt; &lt;profile&gt;&lt;numero profilo&gt;&lt;/profile&gt; &lt;command&gt;import&lt;/command&gt;   Per importare un setting
+
+Il &lt;profile&gt;&lt;numero profilo&gt;&lt;/profile&gt; da uilizzare è il numero visibile nell'elenco dei setting.
+Non è possibile importare i setting attualmente in uso, anche se viene visualizzato nell'elenco.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -7617,8 +7616,6 @@ Tramite il comando "&lt;command&gt;..&lt;/command&gt;" oltre che ripercorrere un
 &lt;yellow&gt;Utilizzo:&lt;r&gt;
   &lt;command&gt;.&lt;/command&gt;&lt;percorso&gt;   Per eseguire il percorso specificato
   &lt;command&gt;..&lt;/command&gt;&lt;percorso&gt;  Per eseguire il percorso specificato all'indietro
-  &lt;command&gt;.&lt;/command&gt;             Per ripercorere i propri passi (massimo 50 locazioni)
-  &lt;command&gt;..&lt;/command&gt;            Per ripercorere i propri passi all'indietro (massimo 50 locazioni)
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
