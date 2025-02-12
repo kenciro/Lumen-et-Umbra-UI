@@ -1,2 +1,2 @@
-return {{[ [[bag]] ] = [[borsa-conservante]],[ [[bag2]] ] = [[sacca]],[ [[target]] ] = [[]],[ [[stat]] ] = [[int]],[ [[weapon]] ] = [[bacchetta]],},
+return {{[ [[bag]] ] = [[via-lattea]],[ [[bag3]] ] = [[eroe]],[ [[bag2]] ] = [[equilibrio]],[ [[target]] ] = [[]],[ [[stat]] ] = [[int]],[ [[weapon]] ] = [[bacchetta]],},
 }

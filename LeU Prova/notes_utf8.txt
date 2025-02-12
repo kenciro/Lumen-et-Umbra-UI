@@ -2,6 +2,7 @@ TODO:
 - rimuofere fontsize su endowment
 - importare profile
 - rinonimare il gouge stamina del widget group in power
+- Rimuovere profili e tutto cio' che ne deriva
 
 Aree da salvare:
 
