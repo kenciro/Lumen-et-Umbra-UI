@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>476</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2353,9 +2353,9 @@ local out_path = ""
 local backwards = (matches[2] == ".")
 --
 local function ui_fGetNextNumber(text, index)
-  local number = ""
-  --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui_fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
+  --
+  local number = ""
   --
   index = tonumber(index or 1)
   while (index&lt;=text:len()) and (string.match(string.lower(text:sub(index, index)), "[0123456789]")) do
@@ -2382,7 +2382,7 @@ else
       local char = string.lower(in_path:sub(idx, idx))
       for j=1, number do
         if (backwards) then
-          out_path = ui.dirReverse[char]..out_path
+          out_path = ui.validExit[char].reverse..out_path
         else
           out_path = out_path..char
         end
@@ -6592,7 +6592,7 @@ function ui.fUpdateGroup()
   local max_w = 250;
   local w_h = GUI.Group.Main:get_height() - distance;
   local w_w = GUI.Group.Main:get_width() -  distance;
-  local h = distance + 50;
+  local h = distance + 45;
   local w = distance + min_w;
   local x = 0
   local y = 0
@@ -6635,6 +6635,8 @@ function ui.fUpdateGroup()
           pow      = gmcp.char.group[member].pow or 0,
           maxpow   = gmcp.char.group[member].maxpow or 0,
           roomPos  = gmcp.char.group[member].roomPos or 0,
+          inRoomName = gmcp.char.group[member].inRoomName or "",
+          inRoomVNum = gmcp.char.group[member].inRoomVNum or nil,
         }
       end
     end
@@ -6668,6 +6670,8 @@ function ui.fUpdateGroup()
       GUI.Group.Main["g"..mod].Health:setValue(math.max(0, ui.group[i].hp), ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."  &lt;/p&gt;")
       GUI.Group.Main["g"..mod].Mana:setValue(math.max(0, ui.group[i].mana), ui.group[i].maxmana)
       GUI.Group.Main["g"..mod].Stamina:setValue(math.max(0, ui.group[i].pow), ui.group[i].maxpow)
+      --
+      GUI.Group.Main["g"..mod].inRoomName:echo(ui.group[i].inRoomName)
       --
       GUI.Group.Main["g"..mod]:show();
       ui.fAssignTargetButton("g"..mod, ui.group[i].name)
@@ -10349,13 +10353,19 @@ function ui.fUpdateSingleTargetButton(button)
       child.keybind:echo("&lt;p align=right&gt;"..keybind.."&lt;/p&gt;")
       --
       -- CCS
-      if (type == "g") or (type == "o") then
-        --CCS = GUI.CSS.BorderPlayer;
+      if (type == "g") then
         CCS = [[
           border-radius: 4px; 
         ]]
-        bgColor      = "150, 0, 0, 0.4"
-        bgColorHover = "150, 0, 0, 1"
+        bgColor      = "0, 128, 0, 0.3"
+        bgColorHover = "0, 128, 0, 0.8"
+      --
+      elseif (type == "o") then
+        CCS = [[
+          border-radius: 4px; 
+        ]]
+        bgColor      = "150, 0, 0, 0.3"
+        bgColorHover = "150, 0, 0, 0.8"
       --
       elseif (type == "t") then
         GUI.TargetButtons.Main[button]:echo("&lt;center&gt;"..target)
@@ -11404,7 +11414,7 @@ end</script>
     GUI.Group.Main["g"..mod].index:setFontSize(ui.parameters.widgets.keybind.fontSize)
     GUI.Group.Main["g"..mod].index:echo("g"..mod.."")
     --
-    -- Index
+    -- Member
     GUI.Group.Main["g"..mod].Member = Geyser.Label:new2({
       name = "GUI.Group.Main.g"..mod..".Member",
       x = 22, 
@@ -11414,7 +11424,7 @@ end</script>
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Member:enableClickthrough()
     GUI.Group.Main["g"..mod].Member:setStyleSheet(GUI.CSS.Keybind);
-    GUI.Group.Main["g"..mod].Member:setFontSize(ui.parameters.widgets.keybind.fontSize)
+    GUI.Group.Main["g"..mod].Member:setFontSize(7)
     GUI.Group.Main["g"..mod].Member:echo("")
     --
     -- Member Health Gauges
@@ -11423,7 +11433,7 @@ end</script>
       x = 2,
       y = 11,
       width = -2,
-      height = 15,
+      height = 18,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Health:setValue(0, 100)
     GUI.Group.Main["g"..mod].Health:enableClickthrough()
@@ -11442,49 +11452,67 @@ end</script>
     GUI.Group.Main["g"..mod].Mana = Geyser.Gauge:new2({
       name = "GUI.Group.Main.g"..mod..".Mana",
       x = 2,
-      y = 27,
-      width = -2,
-      height = 6,
+      y = 30,
+      width = "50%-3",
+      height = 5,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Mana:setValue(0, 100)
     GUI.Group.Main["g"..mod].Mana:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Mana.back:setStyleSheet(GUI.CSS.GaugeBack..[[
       background-color: rgba(0, 0, 250, .3);
+      border-radius: 2px;
     ]])
     GUI.Group.Main["g"..mod].Mana.back:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Mana.front:setStyleSheet(GUI.CSS.GaugeFront..[[
       background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #0000ee, stop: 0.65 #000099, stop: 1 #0000bb);
+      border-radius: 1px;
     ]])
     GUI.Group.Main["g"..mod].Mana.front:enableClickthrough()
     --
     -- Member Stamina Gauges
     GUI.Group.Main["g"..mod].Stamina = Geyser.Gauge:new2({
       name = "GUI.g"..mod..".Stamina",
-      x = 2,
-      y = 34,
+      x = "50%+1",
+      y = 30,
       width = -2,
-      height = 6,
+      height = 5,
     }, GUI.Group.Main["g"..mod])
     GUI.Group.Main["g"..mod].Stamina:setValue(0, 100)
     GUI.Group.Main["g"..mod].Stamina:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Stamina.back:setStyleSheet(GUI.CSS.GaugeBack..[[
       background-color: rgba(204, 85, 0, .2);
+      border-radius: 2px;
     ]])
     GUI.Group.Main["g"..mod].Stamina.back:enableClickthrough()
     --
     GUI.Group.Main["g"..mod].Stamina.front:setStyleSheet(GUI.CSS.GaugeFront..[[
       background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ffa500, stop: 0.65 #e86100, stop: 1 #ff8c00);
+      border-radius: 1px;
     ]])
     GUI.Group.Main["g"..mod].Stamina.front:enableClickthrough()
+    --
+    -- inRoomName
+    GUI.Group.Main["g"..mod].inRoomName = Geyser.Label:new2({
+      name = "GUI.Group.Main.g"..mod..".inRoomName",
+      x = 2,
+      y = -12,
+      width = -10,
+      height = 10,
+    }, GUI.Group.Main["g"..mod])
+    GUI.Group.Main["g"..mod].inRoomName:enableClickthrough()
+    GUI.Group.Main["g"..mod].inRoomName:setStyleSheet(GUI.CSS.Keybind);
+    GUI.Group.Main["g"..mod].inRoomName:setFontSize(7);
+    GUI.Group.Main["g"..mod].inRoomName:setFgColor("yellow");
+    GUI.Group.Main["g"..mod].inRoomName:echo("--")
     --
     -- Keybid
     GUI.Group.Main["g"..mod].keybind = Geyser.Label:new2({
       name = "GUI.Group.Main.g"..mod..".keybind",
       x = 30,
-      y = -10,
+      y = -12,
       width = -10,
       height = 10,
     }, GUI.Group.Main["g"..mod])
