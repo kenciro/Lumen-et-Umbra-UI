@@ -1,2 +1,2 @@
-return {{[ [[health_max]] ] = 595,[ [[bag]] ] = [[baule]],[ [[mana]] ] = 644,[ [[mana_max]] ] = 684,[ [[ac]] ] = -19,[ [[bag2]] ] = [[baule]],[ [[level]] ] = 50,[ [[target]] ] = [[]],[ [[character_name]] ] = [[Kc]],[ [[health]] ] = 593,[ [[money]] ] = 48265,[ [[alignment]] ] = 1000,[ [[bag1]] ] = [[zaino]],[ [[lastSpell]] ] = [[pelle di pietra]],[ [[opponent_level]] ] = 0,[ [[movement]] ] = 108,[ [[experience]] ] = 107699664,[ [[opponent_health_max]] ] = 100,[ [[movement_max]] ] = 108,[ [[opponent_name]] ] = [[]],[ [[opponent_health]] ] = 0,[ [[weapon]] ] = [[MoonShatter]],},
+return {{[ [[bag]] ] = [[lattea]],[ [[bag2]] ] = [[baule]],[ [[target]] ] = [[]],[ [[bag1]] ] = [[baule]],[ [[weapon]] ] = [[MoonShatter]],},
 }

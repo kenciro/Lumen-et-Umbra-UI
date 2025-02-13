@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffff5500" playerRoomStyle="3" playerRoomOuterDiameter="150" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>476</borderRightWidth>
+			<borderLeftWidth>309</borderLeftWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -4090,7 +4090,7 @@ lst_vNum = vNum+100</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>myprompt</name>
-				<script>send("set prompt %K $c0009%h$c0015:$c0001%H $c0012%m$c0015:$c0004%M $c0010%v$c0015:$c0002%V $c0011%e$c0015:$c0003%E $c0015[%S$c0015] %n:%c $c0009%N$c0015:$c0009%C $c0014%x$c0015&gt;")</script>
+				<script>send("set prompt [mBas][%K[mBas]] [mBas][$c0009%h$c0015[mBas]/$c0001%H[mBas]] [mBas][$c0012%m$c0015[mBas]/$c0004%M[mBas]] [mBas][$c0011%e$c0015[mBas]/$c0003%E[mBas]] [mBas][%S$c0015[mBas]] ")</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>myprompt</regex>
@@ -4217,17 +4217,19 @@ function ui.fUpdateAffects()
     for affect in pairs(gmcp.char.affects) do
       local name = gmcp.char.affects[affect].name 
       --
-      ui.affects[name] = {}
-      ui.affects[name].category         = gmcp.char.affects[affect].category
-      ui.affects[name].color            = gmcp.char.affects[affect].color
-      ui.affects[name].dispelResistance = gmcp.char.affects[affect].dispelResistance
-      ui.affects[name].duration         = gmcp.char.affects[affect].duration
-      ui.affects[name].isNegative       = gmcp.char.affects[affect].isNegative
-      ui.affects[name].isRound          = gmcp.char.affects[affect].isRound
-      ui.affects[name].stacks           = gmcp.char.affects[affect].stacks
-      ui.affects[name].type             = gmcp.char.affects[affect].type
-      --
-      orderTable[#orderTable+1] = name
+      if (ui.affects[name] == nil) then
+        ui.affects[name] = {}
+        ui.affects[name].category         = gmcp.char.affects[affect].category
+        ui.affects[name].color            = gmcp.char.affects[affect].color
+        ui.affects[name].dispelResistance = gmcp.char.affects[affect].dispelResistance
+        ui.affects[name].duration         = gmcp.char.affects[affect].duration
+        ui.affects[name].isNegative       = gmcp.char.affects[affect].isNegative
+        ui.affects[name].isRound          = gmcp.char.affects[affect].isRound
+        ui.affects[name].stacks           = gmcp.char.affects[affect].stacks
+        ui.affects[name].type             = gmcp.char.affects[affect].type
+        --
+        orderTable[#orderTable+1] = name
+      end
     end
   end
   --
@@ -5716,7 +5718,7 @@ function ui.fUpdateEndowment()
       elseif (status &lt; 80) then
         statusColor = "yellow"
       elseif (status &lt; 100) then
-        statusColor = "green"
+        statusColor = "ansiYellow"
       end
       --      --
       -- Number
@@ -5725,6 +5727,18 @@ function ui.fUpdateEndowment()
       -- Status
       GUI.Endowment.Main["Item"..i].Status:setFgColor(statusColor)
       GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
+
+  --
+  --local ratio = (75 - time_left) / 75
+  --status = 100 - status;
+  --GUI.Endowment.Main["Item"..i].Status:setStyleSheet([[
+  --  border: 1px inset rgb(]]..ui.colors.wBorder..[[);
+  --  border-top: none;
+  --  border-bottom-left-radius: 5px;
+  --  border-bottom-right-radius: 10px;
+  --  background: qconicalgradient(cx:0.5, cy:0.5, angle: 90, stop:0 black, stop:]]..status..[[ transparent stop:]]..status+0.01 ..[[ red);
+  --]])
+  --
       --
       -- Name
       GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..string.gsub(ui.fRemoveArticle(ui.equipment[item].name), "(%a)([%w_']*)", ui.fTitleCase));
@@ -11264,7 +11278,8 @@ end</script>
     GUI.Endowment.Main["Item"..i].Text:enableClickthrough() -- for tooltip
     GUI.Endowment.Main["Item"..i].Text:setStyleSheet(GUI.CSS.ItemText)
     GUI.Endowment.Main["Item"..i].Text:setFontSize(7);
-    GUI.Endowment.Main["Item"..i].Text:setFgColor("black")    --
+    GUI.Endowment.Main["Item"..i].Text:setFgColor("black")
+    --
     -- Level
     GUI.Endowment.Main["Item"..i].Level = Geyser.Label:new2({
       name = "GUI.Endowment.Main.Item"..i..".Level",
@@ -11275,7 +11290,7 @@ end</script>
     }, GUI.Endowment.Main["Item"..i])
     GUI.Endowment.Main["Item"..i].Level:enableClickthrough() -- for tooltip
     GUI.Endowment.Main["Item"..i].Level:setStyleSheet(GUI.CSS.ItemTopRight)
-    GUI.Endowment.Main["Item"..i].Level:setFgColor("green")
+    GUI.Endowment.Main["Item"..i].Level:setFgColor("LimeGreen")
     GUI.Endowment.Main["Item"..i].Level:setFontSize(7);
     --
     -- Status
