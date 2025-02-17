@@ -1,2 +1,2 @@
-return {{[ [[bag]] ] = [[lattea]],[ [[bag2]] ] = [[baule]],[ [[target]] ] = [[]],[ [[bag1]] ] = [[baule]],[ [[weapon]] ] = [[MoonShatter]],},
+return {{[ [[bag]] ] = [[lattea]],[ [[bag1]] ] = [[baule]],[ [[bag2]] ] = [[baule]],[ [[target]] ] = [[]],[ [[weapon]] ] = [[MoonShatter]],},
 }
