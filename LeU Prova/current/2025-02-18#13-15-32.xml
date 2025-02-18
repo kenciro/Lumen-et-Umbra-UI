@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="yes" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,9 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Area</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1196,7 +1195,7 @@ sposta(5)</script>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList />
 				<regexCodePropertyList />
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Lame psioniche</name>
 					<script>expandAlias("uik pugno remove")
 expandAlias("uik as f3")</script>
@@ -1211,13 +1210,15 @@ expandAlias("uik as f3")</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>Convogli la tua energia mentale nelle tue armi, che lampeggiano di energia! </string>
+						<string>Convogli la tua energia mentale nelle tue armi, che lampeggiano di energia! [Permanente]</string>
+						<string>Stai gia concentrando la tua energia mentale nelle armi che impugni! </string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>3</integer>
+						<integer>3</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Mano di energia</name>
 					<script>expandAlias("uik as remove")
 expandAlias("uik pugno f3")</script>
@@ -1232,7 +1233,7 @@ expandAlias("uik pugno f3")</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>Convogli la tua energia mentale, creando una mano gigante di energia! </string>
+						<string>Convogli la tua energia mentale, creando una mano gigante di energia! [Permanente]</string>
 						<string>Hai gia` una mano gigante di energia ad accompagnarti! </string>
 					</regexCodeList>
 					<regexCodePropertyList>
@@ -1258,14 +1259,13 @@ expandAlias("uik pugno f3")</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Stand (automatico)</name>
-					<script>echo("\n")
-ui.fEchon("Trig Auto stand")
---
-if (not ui.wasCmdStandSended) then
-  expandAlias("stand")
-  ui.wasCmdStandSended = true;
+					<script>--
+if (ui.waitForStand) then
+  ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;white&gt;Wait for stand&lt;r&gt;")
 else
-  ui.fEchon("Command stand already sended")
+  ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;green&gt;STAND&lt;r&gt;")
+  expandAlias("stand", false)
+  ui.waitForStand = true;
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1284,6 +1284,7 @@ end</script>
 						<string>Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. </string>
 						<string>Tramortito dagli eventi, avrai bisogno di del tempo per riprenderti. </string>
 						<string>Hai bisogno di alzarti in piedi per usare le tue abilita`!</string>
+						<string> .* ti manda a gambe all'aria .*</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>3</integer>
@@ -1292,13 +1293,12 @@ end</script>
 						<integer>3</integer>
 						<integer>3</integer>
 						<integer>3</integer>
+						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Ti alzi.</name>
-					<script>if (ui.wasCmdStandSended) then
-  ui.wasCmdStandSended = nil;
-end</script>
+					<script>ui.waitForStand = nil;</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -6745,7 +6745,7 @@ function ui.fUpdateGroup()
   end
   --
   if (ui.room) and (ui.room.area) then
-    ui.fRefreshArea(ui.room.area)
+    ui.fRefreshArea(getAreaTable()[string.trim(ui.room.area)])
   end
   --
   ui.fUpdateAllTargetButtons()
@@ -9019,9 +9019,7 @@ function ui.fRedrawArea(areaName, expand, maxLevel)
   end
 end
 --
-function ui.fRefreshArea(areaName)
-  local areas = getAreaTable()
-  local areaID = areas[string.trim(areaName)]
+function ui.fRefreshArea(areaID)
   local rooms = getAreaRooms(areaID)
   --
   for _,id in ipairs(rooms) do
@@ -9101,7 +9099,7 @@ function ui.fUpdateMapper()
     --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
-      ui.fRefreshArea(ui.room.area);
+      ui.fRefreshArea(getAreaTable()[string.trim(ui.room.area)]);
     end
     -- 
     -- Redraw Area
@@ -12301,7 +12299,13 @@ end</script>
 			<Script isActive="yes" isFolder="no">
 				<name>Init</name>
 				<packageName></packageName>
-				<script>function ui.fLogin(...)
+				<script>function ui.fMapAreaChanged(event, areaId, areaId_from)
+  areaId = tonumber(areaId);
+  
+  ui.fRefreshArea(areaId);
+end
+
+function ui.fLogin(...)
   if (gmcp.char.base.name) then
     --
     ui.setting = string.lower(gmcp.char.base.name)
@@ -12477,6 +12481,8 @@ function ui.fInit()
       -- Resize main window
       ui.handlers.fWindowResize = registerAnonymousEventHandler("sysWindowResizeEvent", ui.fWindowResize)
       --
+      -- Map changed in mapper widget
+      ui.handlers.fMapAreaChanged = registerAnonymousEventHandler("sysMapAreaChanged", ui.fMapAreaChanged)  
       --
       ui.fEcho("&lt;orange&gt; - Caricamento 'Lumen et Umbra UI' (rel. "..ui.release..") completato.&lt;r&gt;\n")
       --
@@ -13515,17 +13521,7 @@ function cleanRoomsDoors()
     end
   end
   echo("Done\n")
-end
-
-function ui.fCiao(par1, par2, par3)
-  par1 = par1 or "";
-  par2 = par2 or "";
-  par3 = par3 or "";
-  
-  ui.fRefreshArea(getAreaTableSwap()[par2])
-end
-
-miotest = registerAnonymousEventHandler("sysMapAreaChanged", ui.fCiao)      </script>
+end    </script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="no" isFolder="no">
