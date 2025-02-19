@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,9 +72,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1838,7 +1836,11 @@ end
 				<name>Room name</name>
 				<script>local name = matches[2]
 --
-cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt; ")
+if (ui.room) and (ui.room.id) then
+  cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
+end
+--
+echo(" ")
 cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
 --echo(" ")
 --cechoLink(ui.cLink("I"), [[expandAlias("uiinfo ]]..name..[[")]], "Info su '"..name.."'", true)
@@ -2083,37 +2085,20 @@ end</script>
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
-  ui.fEcho2n("Specificare il nome o l'ID della stanza da raggiungere")   
+  ui.fRoomInfo()
 else
-  local result = searchRoom(room)
+  local result = ui.fSearchRoom(room)
   local count = 0
-  local roomId = 0
+  local roomId
   --
-  if (type(result) == 'string') then
-    -- 
-    -- Search for ID: Convert search from ID in search from text (validate ID)
-    result = searchRoom(result, true, true)
-    if (not table.is_empty(result)) then
-      roomId = tonumber(room)    
-    end
-  else
-    --
-    -- Search for Name: 
-    for k, v in pairs(result) do
-      count = count + 1
-      if (count == 1) then
-        roomId = tonumber(k)
-      end
-    end
+  for rId, _ in pairs(result) do 
+    roomId = rId
+    count = count + 1 
   end
   --
-  -- Multiple results
-  if (count &gt; 1) then
-    ui.fShowRooms(result)
-    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
-  --
-  -- Single result
-  elseif (roomId) and (roomId &gt; 0) then  
+  if (count == 0) then
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  elseif (count == 1) then
     local walkPath = {}
     local walkDirs = {}
     --
@@ -2125,12 +2110,11 @@ else
       ui.fHighlightSpeedWalk(walkPath)
       ui.fError("Impossibile da raggiungere")
     end
-  --
-  -- Zero result
   else
-    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+    ui.fShowRooms(result)
   end
-end</script>
+end
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uig(?:o)?)(?:\s+(.*))?$</regex>
@@ -2177,40 +2161,21 @@ end</script>
 if (room == "") then
   ui.fRoomInfo()
 else
-  local result = searchRoom(room)
+  local result = ui.fSearchRoom(room)
   local count = 0
-  local roomId = 0
+  local roomId
   --
-  if (type(result) == 'string') then
-    -- 
-    -- Search for ID: Convert search from ID in search from text (validate ID)
-    result = searchRoom(result, true, true)
-    if (not table.is_empty(result)) then
-      roomId = tonumber(room)    
-    end
-  else
-    --
-    -- Search for Name: 
-    for k, v in pairs(result) do
-      count = count + 1
-      if (count == 1) then
-        roomId = tonumber(k)
-      end
-    end
+  for rId, _ in pairs(result) do 
+    roomId = rId
+    count = count + 1 
   end
   --
-  -- Multiple results
-  if (count &gt; 1) then
-    ui.fShowRooms(result)
-    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
-  --
-  -- Single result
-  elseif (roomId) and (roomId &gt; 0) then  
-    ui.fRoomInfo(roomId)
-  --
-  -- Zero result
-  else
+  if (count == 0) then
     ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  elseif (count == 1) then
+    ui.fRoomInfo(roomId)
+  else
+    ui.fShowRooms(result)
   end
 end</script>
 				<command></command>
@@ -2402,29 +2367,7 @@ ui.fUpdateAllTargetButtons()
 if (room == "") then
   ui.fEcho2n("Specificare il nome o l'ID della stanza da cercare")   
 else
-  local result = searchRoom(room)
-  local count = 0
-  local roomId = 0
-  --
-  if (type(result) == 'string') then
-    -- 
-    -- Search for ID: Convert search from ID in search from text (validate ID)
-    result = searchRoom(result, true, true)
-    if (not table.is_empty(result)) then
-      roomId = tonumber(room)    
-    end
-  else
-    --
-    -- Search for Name: 
-    for k, v in pairs(result) do
-      count = count + 1
-      if (count == 1) then
-        roomId = tonumber(k)
-      end
-    end
-  end
-  --
-  ui.fShowRooms(result)
+  ui.fShowRooms(ui.fSearchRoom(room))
 end</script>
 				<command></command>
 				<packageName></packageName>
@@ -2572,37 +2515,20 @@ end</script>
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
-  ui.fEcho2n("Specificare il nome o l'ID della stanza da tracciare")   
+  ui.fRoomInfo()
 else
-  local result = searchRoom(room)
+  local result = ui.fSearchRoom(room)
   local count = 0
-  local roomId = 0
+  local roomId
   --
-  if (type(result) == 'string') then
-    -- 
-    -- Search for ID: Convert search from ID in search from text (validate ID)
-    result = searchRoom(result, true, true)
-    if (not table.is_empty(result)) then
-      roomId = tonumber(room)    
-    end
-  else
-    --
-    -- Search for Name: 
-    for k, v in pairs(result) do
-      count = count + 1
-      if (count == 1) then
-        roomId = tonumber(k)
-      end
-    end
+  for rId, _ in pairs(result) do 
+    roomId = rId
+    count = count + 1 
   end
   --
-  -- Multiple results
-  if (count &gt; 1) then
-    ui.fShowRooms(result)
-    ui.fEcho2n("Troppi risultati. Specificare il nome o l'ID di una stanza")
-  --
-  -- Single result
-  elseif (roomId) and (roomId &gt; 0) then  
+  if (count == 0) then
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  elseif (count == 1) then
     local walkPath = {}
     local walkDirs = {}
     --
@@ -2616,12 +2542,11 @@ else
       ui.fHighlightSpeedWalk(walkPath)
       ui.fError("Impossibile da raggiungere")
     end
-  --
-  -- Zero result
   else
-    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+    ui.fShowRooms(result)
   end
-end</script>
+end
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uit(?:r(?:a(?:c(?:k)?)?)?)?)(?:\s+(.*))?$</regex>
@@ -8345,6 +8270,22 @@ local move_vectors = {
   up    = {  1,  1,  0},
   down  = { -1, -1,  0}
 }
+function ui.fSearchRoom(room_or_id)
+  local result = {}
+  local s = searchRoom(room_or_id)
+  --
+  -- Search for ID: Convert search from ID in search from text (validate ID)
+  if (type(s) == 'string') then
+    if (not rex.match(s, [[searchRoom: (.*)]])) then
+      room_or_id = tonumber(room_or_id)
+      result[room_or_id] = s
+    end
+  else
+    result = table.deepcopy(s);
+  end
+  --
+  return result
+end
 --
 -- Show a list of rooms
 function ui.fShowRooms(rooms)
@@ -14016,17 +13957,11 @@ end
 					<keyType>4</keyType>
 					<value></value>
 					<valueType>5</valueType>
-					<Variable>
-						<name>1</name>
-						<keyType>3</keyType>
-						<value>send([[Up]])</value>
-						<valueType>4</valueType>
-					</Variable>
 				</VariableGroup>
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Up</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
