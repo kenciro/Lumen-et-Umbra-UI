@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>365</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,7 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1258,12 +1260,15 @@ expandAlias("uik pugno f3")</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Stand (automatico)</name>
-					<script>--
+					<script>-- Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. 
+-- Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. 
 if (ui.waitForStand) then
   ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;white&gt;Wait for stand&lt;r&gt;")
 else
   ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;green&gt;STAND&lt;r&gt;")
+  expandAlias("qclear", false)
   expandAlias("stand", false)
+  expandAlias("l", false)
   ui.waitForStand = true;
 end</script>
 					<triggerType>0</triggerType>
@@ -1280,14 +1285,10 @@ end</script>
 						<string>Prima forse dovresti alzarti, non credi?</string>
 						<string>Ti devi alzare per lanciare quest'incantesimo.</string>
 						<string>Nah... Sei troppo rilassato...</string>
-						<string>Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. </string>
-						<string>Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. </string>
 						<string>Hai bisogno di alzarti in piedi per usare le tue abilita`!</string>
 						<string>^.* ti manda a gambe all'aria .*$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
-						<integer>3</integer>
-						<integer>3</integer>
 						<integer>3</integer>
 						<integer>3</integer>
 						<integer>3</integer>
@@ -1358,7 +1359,7 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Flee (automatico)</name>
 				<script>send("flee", false)</script>
 				<triggerType>0</triggerType>
@@ -1635,7 +1636,7 @@ cecho(str)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Eldorado</name>
 				<script>local msg = string.lower(matches[2])
 if (msg == "una fitta foresta dominata da una sagoma imponente") then
@@ -3402,7 +3403,7 @@ ui.fExecutePath(path, matches[2])</script>
 				<regex>^(?i)verdeerba|syracusa(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>Specchio verde foresta, Barriera, Pilastri</name>
+				<name>Specchio verde foresta, Barriera</name>
 				<script>local path = {
   "astral",
   ".unwwnuwuuwds;es",
@@ -3410,7 +3411,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:verdeforesta|barriera|pilastri)(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:verdeforesta|barriera)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde scuro, Roo, Aborigeni</name>
@@ -3835,6 +3836,69 @@ ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)tempiodannati(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>Pilastri</name>
+				<script>local path = {
+  "astral",
+  ".un2wnuw2uwds;es",
+  "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;')",
+  ".2ns;lua cecho('Ripeti fino a &lt;red&gt;IL SENTIERO&lt;r&gt;')",
+  "s;op monolito;",
+  "d;bl carceriere",
+  "get globo cad;op portale;n",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;.su;op barriera",
+  "track difensore-caos;lua cecho('Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;red&gt;un corpulento Difensore del Caos&lt;r&gt;')",
+  "lua cecho('Andare alla room &lt;red&gt;Inquietudine....&lt;r&gt;')",
+  "op lastra",
+  "d;bl Kh'ryf",
+  "ga cad;.u2s3w;",
+  
+  "get roccia sacca;op pilastro;ent pilastro",
+  "track capogilda-spiriti;lua cecho('Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;red&gt;il Capogilda degli spiriti&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre di pietra&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2e2n;ent pilastro;.4n",
+  
+  "get trasparente sacca;op pilastro;ent pilastro",
+  "track capogilda-lich;lua cecho('Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;red&gt;il Capogilda dei cavalcanubi&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;Una piccola torre bianca&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2e2s;ent pilastro;.5e",
+  
+  "get fuoco sacca;op pilastro;ent pilastro",
+  "track capogilda-assassini;lua cecho('Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;red&gt;il Capogilda degli assassini&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Rossa&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2w2s;ent pilastro;.4s",
+
+  "get azzurro sacca;op pilastro;ent pilastro",
+  "track capogilda-gnoll;lua cecho('Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;red&gt;il Capogilda gnoll&lt;r&gt;')",
+  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Azzurra&lt;r&gt;')",
+  "op n;n;op glifo;d;",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
+  "ga alterazione;p scheggia;.us2w2n;ent pilastro;.2w",
+  
+  "dig terreno;d;g all.scheggia;join scheggia 2.scheggia 3.scheggia 4.scheggia;op PORTALE;s",
+  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;uno strano Vortice&lt;r&gt;')",
+  "ga vortice;.nunne;g chiave armonia;op serratura;",
+  
+  ".ee;bl bufalo",
+  ".ee;op portale;",
+  "e;kill akho",
+  "ll;cut cespuglio;d;op tabernacolo;ga tabernacolo;.ue;op altare e;",
+  "get pergamena armonia;tt pergamena";
+  "e",
+  "recita pergamena qhh", 
+}
+ui.fExecutePath(path, matches[2])</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)pilastri(?:\s+(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -10322,8 +10386,8 @@ function ui.fClickTarget(sender, data)
       local clickedMember = ui.targets[sender].target
       for _, member in pairs(ui.group) do
         if (member.name == clickedMember) then
-          if (member.inRoomName) and (member.inRoomName ~= "") then
-            expandAlias("uisearch "..member.inRoomName)
+          if (member.inRoomVNum) then
+            expandAlias("uisearch "..member.inRoomVNum)
           end
         end
       end
