@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,12,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
@@ -73,8 +73,8 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
 			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -340,7 +340,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -415,7 +415,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -3910,7 +3910,6 @@ ui.fExecutePath(path, matches[2])</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>Attacco automatico</name>
 				<script>local opt = matches[2] or ""
-local attack = false
 local perc = tonumber(ui.player.hp) / (tonumber(ui.player.maxhp) / 100.0) 
 --
 if (opt == "+") then
@@ -3922,24 +3921,17 @@ elseif (opt == "a") then
 elseif (opt == "s") then
   ui.parameters.autoAttackArea = false;
 else
-  attack = true
-end
---
-if (attack) then
   local opponent = '';
+  local firstAttack = false;
   local attack = 'bl';
   --
   -- Fuori dal combattimento...
   if (ui.opponent.name == '') then
     -- .. primo mob a tiro
     for _, mob in pairs(ui.room.mobs) do
-      opponent = string.gsub(opponent, "$crk%d%d%d%d%d%d%d%d", "")
-      opponent = string.gsub(mob.key, " ", "-")
-      --
-      -- Mano di energia attiva
-      if (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
-        attack = 'bash';
-      end
+      opponent = string.gsub(mob.key, "$crk%d%d%d%d%d%d%d%d", "")
+      opponent = string.gsub(opponent, " ", "-")
+      firstAttack = true;
       --
       break 
     end
@@ -3961,9 +3953,10 @@ if (attack) then
         expandAlias("cel", false)
       end
     end
+    --
   else
     --
-    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;red&gt;"..opponent)  
+    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;red&gt;"..opponent)
     --
     -- LightSpeed
     if (ui.affects["velocita` della luce"]) then
@@ -3977,7 +3970,7 @@ if (attack) then
       elseif (ui.affects["mantello di fiamme"] == nil) then
         expandAlias("flame", false)
       --
-      -- ripristino energia
+      -- Ripristino energia
       elseif (ui.player.pow &lt;= 80) then
         expandAlias("cani 1", false)      
       --
@@ -3986,12 +3979,8 @@ if (attack) then
         expandAlias("as "..opponent, false)
       --
       -- Mano di energia attiva, ma in cooldowns
-      -- elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"]) then
-      --   expandAlias("lampo "..opponent, false)
-      --
-      -- Mano di energia attiva e sono in combattimento
-      -- elseif (ui.affects["mano di energia"]) and (attack == 'bl') then 
-      --   expandAlias("pugno "..opponent, false)
+      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) and (not firstAttack) then
+        expandAlias("morsa "..opponent, false)
       --
       -- 
       else
@@ -4009,8 +3998,11 @@ if (attack) then
       expandAlias("cr "..opponent, false)
     --
     -- Normal attack
+    elseif (firstAttack) and (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
+      expandAlias("bash "..opponent, false)
+    --
     else
-      expandAlias(attack.." "..opponent, false)
+      expandAlias("bl "..opponent, false)
     end
     echo("\n") 
     --
@@ -5950,7 +5942,7 @@ end</script>
 					<name>Generic</name>
 					<packageName></packageName>
 					<script>function ui.fInitDataDirectory()
-  local lfs = require("lfs")
+  --local lfs = require("lfs")
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
   --
@@ -6267,7 +6259,7 @@ function ui.fExecutePath(table, option)
 end
 --
 function ui.fDeleteDirectory(dir)
-  local lfs = require('lfs')
+  --local lfs = require('lfs')
   --
   local function deletedir(dir)
     for file in lfs.dir(dir) do
@@ -10145,7 +10137,7 @@ end
 function ui.fInitSettings()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitSettings()")
   --
-  local lfs = require("lfs")
+  --local lfs = require("lfs")
   --
   if (lfs.chdir(ui.files.settings.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."settings&lt;orange&gt; inizializzata correttamente.&lt;r&gt;")
@@ -10163,7 +10155,7 @@ end
 function ui.fGetSettingsList()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fGetSettingsList()")
   --
-  local lfs = require("lfs")
+  --local lfs = require("lfs")
   local settings = {}
   ui.setting = ui.setting or ""
   --
@@ -10354,7 +10346,7 @@ end
 function ui.fSaveSetting()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fSaveSetting()")
   --
-  local lfs = require("lfs")
+  --local lfs = require("lfs")
   local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), ui.setting)
   --
   if (path ~= nil) then
@@ -12411,7 +12403,7 @@ end
 function ui.fInitDataDirectory()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
   --
-  local lfs = require("lfs")
+  --local lfs = require("lfs")
   --
   if (lfs.chdir(ui.files.data.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; inizializzata correttamente.")
