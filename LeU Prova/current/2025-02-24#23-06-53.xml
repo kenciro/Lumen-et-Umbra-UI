@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>377</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>365</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -1259,8 +1259,7 @@ expandAlias("uik pugno f3")</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Stand (automatico)</name>
-					<script>-- Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. 
--- Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. 
+					<script>-- ^.* ti manda a gambe all'aria .*$
 if (ui.waitForStand) then
   ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;white&gt;Wait for stand&lt;r&gt;")
 else
@@ -1285,14 +1284,16 @@ end</script>
 						<string>Ti devi alzare per lanciare quest'incantesimo.</string>
 						<string>Nah... Sei troppo rilassato...</string>
 						<string>Hai bisogno di alzarti in piedi per usare le tue abilita`!</string>
-						<string>^.* ti manda a gambe all'aria .*$</string>
+						<string>Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. </string>
+						<string>Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. </string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>3</integer>
 						<integer>3</integer>
 						<integer>3</integer>
 						<integer>3</integer>
-						<integer>1</integer>
+						<integer>3</integer>
+						<integer>3</integer>
 					</regexCodePropertyList>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
