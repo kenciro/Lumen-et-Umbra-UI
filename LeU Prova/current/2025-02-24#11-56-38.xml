@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -340,7 +340,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -415,7 +415,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -5941,53 +5941,53 @@ end</script>
 				<Script isActive="yes" isFolder="no">
 					<name>Generic</name>
 					<packageName></packageName>
-					<script>--
-function ui.fGenOrderedIndex( t )
-  local orderedIndex = {}
+					<script>function ui.fOrderedPairs(t, state)
   --
-  for key in pairs(t) do
-    table.insert(orderedIndex, key)
+  local function ui_fGenOrderedIndex(t)
+    local orderedIndex = {}
+    --
+    for key in pairs(t) do
+      table.insert(orderedIndex, key)
+    end
+    --
+    table.sort(orderedIndex)
+    --
+    return orderedIndex
   end
   --
-  table.sort(orderedIndex)
-  --
-  return orderedIndex
-end
---
-function ui.fOrderedNext(t, state)
-  -- Equivalent of the next function, but returns the keys in the alphabetic
-  -- order. We use a temporary ordered key table that is stored in the
-  -- table being iterated.
-  local key = nil
-  --
-  if (state == nil) then
+  local function ui_fOrderedNext(t, state)
+    -- Equivalent of the next function, but returns the keys in the alphabetic
+    -- order. We use a temporary ordered key table that is stored in the
+    -- table being iterated.
+    local key = nil
     --
-    -- First time, generate the index
-    t.__orderedIndex = ui.fGenOrderedIndex(t)
-    key = t.__orderedIndex[1]
-  else
-    --
-    -- Fetch the next value
-    for i = 1,table.getn(t.__orderedIndex) do
-      if t.__orderedIndex[i] == state then
-        key = t.__orderedIndex[i+1]
+    if (state == nil) then
+      --
+      -- First time, generate the index
+      t.__orderedIndex = ui_fGenOrderedIndex(t)
+      key = t.__orderedIndex[1]
+    else
+      --
+      -- Fetch the next value
+      for i = 1,table.getn(t.__orderedIndex) do
+        if t.__orderedIndex[i] == state then
+          key = t.__orderedIndex[i+1]
+        end
       end
     end
+    --
+    if (key) then
+      return key, t[key]
+    end
+    --
+    -- No more value to return, cleanup
+    t.__orderedIndex = nil
+    --
+    return
   end
   --
-  if (key) then
-    return key, t[key]
-  end
-  --
-  -- No more value to return, cleanup
-  t.__orderedIndex = nil
-  --
-  return
-end
---
-function ui.fOrderedPairs(t, state)
   -- Equivalent of the pairs() function on tables. Allows to iterate in order
-  return ui.fOrderedNext, t, state
+  return ui_fOrderedNext, t, state
 end
 --
 function ui.fFormatEcho(text, level)
@@ -6013,11 +6013,6 @@ end
 --
 function ui.fEcho2n(text, level)
   cecho(ui.fFormatEcho(text, level).."\n\n")
-end
---
-function ui.fDecho(text)
-  text = copy2decho(ui.echo..ui.colors.text)..text..copy2decho("&lt;r&gt;").."\n\n"
-  decho(text)
 end
 --
 function ui.fDebug(text, level)
@@ -6107,52 +6102,8 @@ function ui.fRemoveArticle(text)
 end
 --
 function ui.fParsingItem(text)
-  --local status = 8
   --
   text = string.gsub(text, "%.%.%.", "")
-  --[[
-  if (string.find(text, "indistruttibil")) then
-    text = string.gsub(text, "E` indistruttibile!", "")
-    text = string.gsub(text, "Sono indistruttibili!", "")
-    status = 9
-  elseif (string.find(text, "in condizioni eccellenti")) then
-    text = string.gsub(text, "E` in condizioni eccellenti", "")
-    text = string.gsub(text, "Sono in condizioni eccellenti", "")
-    status = 8
-  elseif (string.find(text, "in ottime condizioni")) then
-    text = string.gsub(text, "E` in ottime condizioni", "")
-    text = string.gsub(text, "Sono in ottime condizioni", "")
-    status = 7
-  elseif (string.find(text, "danni superficiali")) then
-    text = string.gsub(text, "Presenta danni superficiali", "")
-    text = string.gsub(text, "Presentano danni superficiali", "")
-    status = 6
-  elseif (string.find(text, "danneggiat")) then
-    text = string.gsub(text, "E` danneggiato ed usurato", "")
-    text = string.gsub(text, "Sono danneggiati ed usurati", "")
-    status = 5
-  elseif (string.find(text, "in pessime condizioni")) then
-    text = string.gsub(text, "E` in pessime condizioni", "")
-    text = string.gsub(text, "Sono in pessime condizioni", "")
-    status = 4
-  elseif (string.find(text, "bisogno di essere riparat")) then
-    text = string.gsub(text, "Ha bisogno di essere riparato", "")
-    text = string.gsub(text, "Hanno bisogno di essere riparati", "")
-    status = 3
-  elseif (string.find(text, "per cadere in pezzi")) then
-    text = string.gsub(text, "Sta per cadere in pezzi", "")
-    text = string.gsub(text, "Stanno per cadere in pezzi", "")
-    status = 2
-  elseif (string.find(text, "rompersi da un momento all'altro")) then
-    text = string.gsub(text, "Potrebbe rompersi da un momento all'altro!", "")
-    text = string.gsub(text, "Potrebbero rompersi da un momento all'altro!", "")
-    status = 1
-  elseif (string.find(text, "in frantumi. Inutilizzabil")) then
-    text = string.gsub(text, "E` in frantumi. Inutilizzabile!", "")
-    text = string.gsub(text, "Sono in frantumi. Inutilizzabili!", "")
-    status = 0
-  end
-  ]]
   --
   local good = string.find(text, "luce blu")
   if (good) then
@@ -6185,9 +6136,8 @@ function ui.fParsingItem(text)
   end
   --
   text = string.gsub(text, "&lt;[%d,:]+&gt;&lt;r&gt;", "")
-  --text = ui.fRemoveArticle(text)
   --
-  return text, --[[status,]] good, evil, bright, noisy, brittle
+  return text, good, evil, bright, noisy, brittle
 end
 --
 function ui.fGetCommandFormattedText(command)
@@ -6246,24 +6196,18 @@ function ui.fExecutePath(table, option)
 end
 --
 function ui.fDeleteDirectory(dir)
-  --local lfs = require('lfs')
-  --
-  local function deletedir(dir)
-    for file in lfs.dir(dir) do
-      local file_path = dir..'/'..file
-      --
-      if (file ~= ".") and (file ~= "..") then
-        if (lfs.attributes(file_path, 'mode') == 'file') then
-          os.remove(file_path)
-        elseif (lfs.attributes(file_path, 'mode') == 'directory') then
-          deletedir(file_path)
-        end
+  for file in lfs.dir(dir) do
+    local file_path = dir..'/'..file
+    --
+    if (file ~= ".") and (file ~= "..") then
+      if (lfs.attributes(file_path, 'mode') == 'file') then
+        os.remove(file_path)
+      elseif (lfs.attributes(file_path, 'mode') == 'directory') then
+        deletedir(file_path)
       end
     end
-    lfs.rmdir(dir)
   end
-  --
-  deletedir(dir)
+  lfs.rmdir(dir)
 end
 --
 function ui.fCopyFile(old_path, new_path)
@@ -6517,15 +6461,6 @@ function ui.fLevelColor(opponentLevel, playerLevel)
   end
   --
   return color
-end
---
-function ui.fDirExist(dir)
-   local currentdir = lfs.currentdir()
-   local ret = lfs.chdir(dir)
-   -- Restore dir
-   lfs.chdir(currentdir)
-   --
-   return ret
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -10132,9 +10067,7 @@ end
 function ui.fInitSettings()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitSettings()")
   --
-  --local lfs = require("lfs")
-  --
-  if (ui.fDirExist(ui.files.settings.path)) then
+  if (io.exists(ui.files.settings.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."settings&lt;orange&gt; inizializzata correttamente.&lt;r&gt;")
     return true
   elseif (lfs.mkdir(ui.files.settings.path)) then
@@ -10150,15 +10083,14 @@ end
 function ui.fGetSettingsList()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fGetSettingsList()")
   --
-  --local lfs = require("lfs")
   local settings = {}
   ui.setting = ui.setting or ""
   --
   -- Overcome saved settings version (for retro-compatibility)
   local settingsDir = getMudletHomeDir().."/../../profilesLeu/"
-  if (ui.fDirExist(settingsDir)) then
+  if (io.exists(settingsDir)) then
     for s in lfs.dir(settingsDir) do
-      if (s ~= ".") and (s ~= "..") and (ui.fDirExist(settingsDir..s)) then
+      if (s ~= ".") and (s ~= "..") and (io.exists(settingsDir..s)) then
         local index = #settings+1 
         settings[index] = {}
         settings[index].setting = s
@@ -10170,13 +10102,13 @@ function ui.fGetSettingsList()
   end 
   --
   local mudletProfileDir = getMudletHomeDir().."/../"
-  if (ui.fDirExist(mudletProfileDir)) then
+  if (io.exists(mudletProfileDir)) then
     for p in lfs.dir(mudletProfileDir) do
-      if (p ~= ".") and (p ~= "..") and (ui.fDirExist(mudletProfileDir..p)) then
+      if (p ~= ".") and (p ~= "..") and (io.exists(mudletProfileDir..p)) then
         --
         -- Actual overcome settings version (for retro-compatibility)
         settingsDir = mudletProfileDir..p.."/Lumen et Umbra UI/"
-        if (ui.fDirExist(settingsDir)) then
+        if (io.exists(settingsDir)) then
           local index = #settings+1 
           settings[index] = {}
           settings[index].setting = "&lt;senza nome&gt;"
@@ -10187,9 +10119,9 @@ function ui.fGetSettingsList()
         --
         -- Actual settings version
         settingsDir = mudletProfileDir..p.."/LeU_UI.data/settings/"
-        if (ui.fDirExist(settingsDir)) then
+        if (io.exists(settingsDir)) then
           for s in lfs.dir(settingsDir) do
-            if (s ~= ".") and (s ~= "..") and (ui.fDirExist(settingsDir..s)) then
+            if (s ~= ".") and (s ~= "..") and (io.exists(settingsDir..s)) then
               local index = #settings+1 
               settings[index] = {}
               settings[index].setting = s
@@ -10341,7 +10273,6 @@ end
 function ui.fSaveSetting()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fSaveSetting()")
   --
-  --local lfs = require("lfs")
   local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), ui.setting)
   --
   if (path ~= nil) then
@@ -11380,6 +11311,22 @@ end</script>
                                           end)
   GUI.Endowment.Button_hide:setToolTip("Transparent", 10)
   --
+  -- Button "Refresh"
+  GUI.Endowment.Button_refresh = Geyser.Label:new2({
+    name = "GUI.Endowment.Button_refresh",
+    x = -89, 
+    y = 4,
+    width = 40,
+    height = 12,
+  },GUI.Endowment)
+  GUI.Endowment.Button_refresh:setStyleSheet(GUI.CSS.WidgetButton);
+  GUI.Endowment.Button_refresh:setFontSize(6)
+  GUI.Endowment.Button_refresh:echo("&lt;center&gt;Refresh");
+  GUI.Endowment.Button_refresh:setClickCallback(function()
+                                                  expandAlias("eq")
+                                                  expandAlias("eq stat")
+                                                end)
+  --
   -- 25x Slot
   for i=1, 25 do
     --
@@ -12398,9 +12345,7 @@ end
 function ui.fInitDataDirectory()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
   --
-  --local lfs = require("lfs")
-  --
-  if (ui.fDirExist(ui.files.data.path)) then
+  if (io.exists(ui.files.data.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; inizializzata correttamente.")
     return true
   elseif (lfs.mkdir(ui.files.data.path)) then
@@ -14012,7 +13957,7 @@ end
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>West</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
