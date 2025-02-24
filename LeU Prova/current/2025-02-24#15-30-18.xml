@@ -72,9 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Exits</mapInfoContributor>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1266,7 +1265,7 @@ if (ui.waitForStand) then
   ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;white&gt;Wait for stand&lt;r&gt;")
 else
   ui.fEchon("&lt;orange&gt;Trig Auto stand: &lt;green&gt;STAND&lt;r&gt;")
-  expandAlias("qclear", false)
+  --expandAlias("qclear", false)
   expandAlias("stand", false)
   expandAlias("l", false)
   ui.waitForStand = true;
@@ -1277,7 +1276,7 @@ end</script>
 					<mCommand></mCommand>
 					<packageName></packageName>
 					<mFgColor>transparent</mFgColor>
-					<mBgColor>#404040</mBgColor>
+					<mBgColor>#aa0000</mBgColor>
 					<mSoundFile></mSoundFile>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -1305,7 +1304,7 @@ end</script>
 					<mCommand></mCommand>
 					<packageName></packageName>
 					<mFgColor>transparent</mFgColor>
-					<mBgColor>#404040</mBgColor>
+					<mBgColor>#005500</mBgColor>
 					<mSoundFile></mSoundFile>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -2083,7 +2082,7 @@ end</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Go To Room</name>
-				<script>local room = matches[2] or ""
+				<script>local room = matches[2] or ui.room.id
 --
 if (room == "") then
   ui.fRoomInfo()
@@ -3930,7 +3929,7 @@ else
     -- .. primo mob a tiro
     for _, mob in pairs(ui.room.mobs) do
       opponent = string.gsub(mob.key, "$crk%d%d%d%d%d%d%d%d", "")
-      opponent = string.gsub(opponent, " ", "-")
+      opponent = string.gsub(opponent, " .*", "")
       firstAttack = true;
       --
       break 
@@ -3939,6 +3938,7 @@ else
   -- In combattimento
   else
     opponent = ui.opponent.name
+    opponent = string.gsub(opponent, "-.*", "")
   end
   --
   --
@@ -3979,7 +3979,7 @@ else
         expandAlias("as "..opponent, false)
       --
       -- Mano di energia attiva, ma in cooldowns
-      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) and (not firstAttack) then
+      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
         expandAlias("morsa "..opponent, false)
       --
       -- 
@@ -3997,10 +3997,11 @@ else
     elseif (ui.player.pow &lt; 40) then
       expandAlias("cr "..opponent, false)
     --
-    -- Normal attack
-    elseif (firstAttack) and (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
+    -- Bash
+    elseif (ui.affects["velocita` della luce"] == nil) and (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
       expandAlias("bash "..opponent, false)
     --
+    -- Normal attack
     else
       expandAlias("bl "..opponent, false)
     end
@@ -4195,6 +4196,22 @@ send(ui.direction, false)</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(a|alto|b|basso|d|down|e|est|east|n|nord|north|o|ovest|s|sud|south|u|up|w|west)$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>gt</name>
+				<script>local command = matches[2]
+local message = " $c0006"..string.trim(matches[3] or "")
+--
+if (command == '1') then
+  command = "gt"
+else
+  command = "ct"
+end
+
+expandAlias(command..message)</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(1|2)(.+)$</regex>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
@@ -6698,7 +6715,7 @@ function ui.fUpdateGroup()
       GUI.Group.Main["g"..mod].Mana:setValue(math.max(0, ui.group[i].mana), ui.group[i].maxmana)
       GUI.Group.Main["g"..mod].Stamina:setValue(math.max(0, ui.group[i].pow), ui.group[i].maxpow)
       --
-      if (ui.group[i].inRoomVNum == tonumber(ui.room.id)) then 
+      if (ui.room) and (ui.room.id) and (ui.group[i].inRoomVNum == tonumber(ui.room.id)) then 
         ui.group[i].inRoomName = '';
       end
       GUI.Group.Main["g"..mod].inRoomName:echo(ui.group[i].inRoomName)
