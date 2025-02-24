@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6461,6 +6461,15 @@ function ui.fLevelColor(opponentLevel, playerLevel)
   end
   --
   return color
+end
+--
+function ui.fFolderExists(folder)
+  local currentdir = lfs.currentdir()
+  local ret = lfs.chdir(folder)
+  --
+  lfs.chdir(currentdir)
+  --
+  return ret
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -10067,7 +10076,7 @@ end
 function ui.fInitSettings()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitSettings()")
   --
-  if (io.exists(ui.files.settings.path)) then
+  if (ui.fFolderExists(ui.files.settings.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella "..ui.colors.settingName.."settings&lt;orange&gt; inizializzata correttamente.&lt;r&gt;")
     return true
   elseif (lfs.mkdir(ui.files.settings.path)) then
@@ -10088,9 +10097,9 @@ function ui.fGetSettingsList()
   --
   -- Overcome saved settings version (for retro-compatibility)
   local settingsDir = getMudletHomeDir().."/../../profilesLeu/"
-  if (io.exists(settingsDir)) then
+  if (ui.fFolderExists(settingsDir)) then
     for s in lfs.dir(settingsDir) do
-      if (s ~= ".") and (s ~= "..") and (io.exists(settingsDir..s)) then
+      if (s ~= ".") and (s ~= "..") and (ui.fFolderExists(settingsDir..s)) then
         local index = #settings+1 
         settings[index] = {}
         settings[index].setting = s
@@ -10102,13 +10111,13 @@ function ui.fGetSettingsList()
   end 
   --
   local mudletProfileDir = getMudletHomeDir().."/../"
-  if (io.exists(mudletProfileDir)) then
+  if (ui.fFolderExists(mudletProfileDir)) then
     for p in lfs.dir(mudletProfileDir) do
-      if (p ~= ".") and (p ~= "..") and (io.exists(mudletProfileDir..p)) then
+      if (p ~= ".") and (p ~= "..") and (ui.fFolderExists(mudletProfileDir..p)) then
         --
         -- Actual overcome settings version (for retro-compatibility)
         settingsDir = mudletProfileDir..p.."/Lumen et Umbra UI/"
-        if (io.exists(settingsDir)) then
+        if (ui.fFolderExists(settingsDir)) then
           local index = #settings+1 
           settings[index] = {}
           settings[index].setting = "&lt;senza nome&gt;"
@@ -10119,9 +10128,9 @@ function ui.fGetSettingsList()
         --
         -- Actual settings version
         settingsDir = mudletProfileDir..p.."/LeU_UI.data/settings/"
-        if (io.exists(settingsDir)) then
+        if (ui.fFolderExists(settingsDir)) then
           for s in lfs.dir(settingsDir) do
-            if (s ~= ".") and (s ~= "..") and (io.exists(settingsDir..s)) then
+            if (s ~= ".") and (s ~= "..") and (ui.fFolderExists(settingsDir..s)) then
               local index = #settings+1 
               settings[index] = {}
               settings[index].setting = s
@@ -12310,8 +12319,8 @@ function ui.fLogin(...)
       cechoLink(ui.cLink("uisetting"), [[expandAlias("uisetting")]], "Esegui i comando 'uisetting'", true) 
       cecho("&lt;orange&gt; per importare le impostazioni di un profilo esistente...&lt;r&gt;\n")
     else
-      ui.setting = nil
       ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting)..".")
+      ui.setting = nil
     end
   end
   --
@@ -12345,7 +12354,7 @@ end
 function ui.fInitDataDirectory()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
   --
-  if (io.exists(ui.files.data.path)) then
+  if (ui.fFolderExists(ui.files.data.path)) then
     ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; inizializzata correttamente.")
     return true
   elseif (lfs.mkdir(ui.files.data.path)) then
