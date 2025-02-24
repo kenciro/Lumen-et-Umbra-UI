@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.8" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Exits</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -12309,44 +12309,73 @@ end
 
 function ui.fLogin(...)
   if (gmcp.char.base.name) then
-    --
-    ui.setting = string.lower(gmcp.char.base.name)
-    if (ui.fLoadLocalSetting()) then
-      ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; caricate correttamente.")
-    elseif (ui.fSaveSetting()) then
-      ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; create correttamente.")
-      ui.fEcho("&lt;orange&gt; - Usa il comando ");
-      cechoLink(ui.cLink("uisetting"), [[expandAlias("uisetting")]], "Esegui i comando 'uisetting'", true) 
-      cecho("&lt;orange&gt; per importare le impostazioni di un profilo esistente...&lt;r&gt;\n")
-    else
-      ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting)..".")
-      ui.setting = nil
+    local newSetting = string.lower(gmcp.char.base.name)
+    if (ui.setting == nil) or (ui.setting ~= newSetting) then
+      --
+      ui.setting = newSetting
+      --
+      -- Load existing Setting
+      if (ui.fLoadLocalSetting()) then
+        ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; caricate correttamente.")
+        --
+        ui.fEcho("&lt;orange&gt; - Usa il comando ");
+        cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui il comando 'uihelp'", true) 
+        cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
+      --
+      -- Create new Setting
+      elseif (ui.fSaveSetting()) then
+        ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; create correttamente.")
+        ui.fEcho("&lt;orange&gt; - Usa il comando ");
+        cechoLink(ui.cLink("uisetting"), [[expandAlias("uisetting")]], "Esegui il comando 'uisetting'", true) 
+        cecho("&lt;orange&gt; per importare le impostazioni di un profilo esistente...&lt;r&gt;\n")
+        --
+        ui.fEcho("&lt;orange&gt; - Usa il comando ");
+        cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui il comando 'uihelp'", true) 
+        cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
+      --
+      -- Error creating Setting
+      else
+        ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting)..".")
+        ui.setting = nil
+      end
     end
   end
   --
   if (ui.setting) then
-    
     ui.player.name = gmcp.char.base.name;
     --
-    -- Kill login event
-    if (ui.handlers) and (ui.handlers.fLogin) then
-      killAnonymousEventHandler(ui.handlers.fLogin)
-      ui.handlers.fLogin = nil
+    -- gmcp.char
+    if (ui.handlers.fUpdateGMCP_char == nil) then
+      ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
+      ui.handlers.fUpdateGMCP_char  = registerAnonymousEventHandler("gmcp.char", "ui.fUpdateGMCP");
     end
     --
-    -- gmcp.char
-    ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
-    ui.handlers.fUpdateGMCP_char  = registerAnonymousEventHandler("gmcp.char", "ui.fUpdateGMCP");
-    --
     -- gmcp.room
-    ui.handlers.fUpdateGMCP_room = registerAnonymousEventHandler("gmcp.room", "ui.fUpdateGMCP")
+    if (ui.handlers.fUpdateGMCP_room == nil) then
+      ui.handlers.fUpdateGMCP_room = registerAnonymousEventHandler("gmcp.room", "ui.fUpdateGMCP")
+    end
     --
     -- gmcp.overland
-    ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland", "ui.fUpdateGMCP")
+    if (ui.handlers.fUpdateGMCP_overland == nil) then
+      ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland", "ui.fUpdateGMCP")
+    end
+  else
     --
-    ui.fEcho("&lt;orange&gt; - Digitare ");
-    cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui i comando 'uihelp'", true) 
-    cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
+    -- Kill events
+    if (ui.handlers) and (ui.handlers.fUpdateGMCP_char) then
+      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_char)
+      ui.handlers.fUpdateGMCP_char = nil
+    end
+    --
+    if (ui.handlers) and (ui.handlers.fUpdateGMCP_room) then
+      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_room)
+      ui.handlers.fUpdateGMCP_room = nil
+    end
+    --
+    if (ui.handlers) and (ui.handlers.fUpdateGMCP_overland) then
+      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_overland)
+      ui.handlers.fUpdateGMCP_overland = nil
+    end
   end
 end
 --
@@ -12473,7 +12502,7 @@ function ui.fInit()
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
       --
       -- Connection
-      ui.handlers.fInit = registerAnonymousEventHandler("sysConnectionEvent", "ui.fInit")
+      --ui.handlers.fInit = registerAnonymousEventHandler("sysConnectionEvent", ui.fLogin)
       --
       -- Login
       ui.handlers.fLogin  = registerAnonymousEventHandler("gmcp.char.base", ui.fLogin);
@@ -13966,7 +13995,7 @@ end
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>West</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
