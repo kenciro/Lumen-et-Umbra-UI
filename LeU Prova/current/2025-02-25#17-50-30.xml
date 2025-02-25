@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>365</borderRightWidth>
+			<borderLeftWidth>309</borderLeftWidth>
+			<borderRightWidth>377</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
+			<mDisplayFont>Ubuntu Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4114,7 +4114,7 @@ if (not varNameError) then
 end</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(\d+)\*\s*(.*)</regex>
+				<regex>^\*(\d+)\s*(.*)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Multi loot</name>
@@ -9034,17 +9034,20 @@ function ui.fUpdateMapper()
     --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
+      local areas = getAreaTable()
+      local areaId = areas[string.trim(ui.room.area)]
+      local areaPreId = areas[string.trim(ui.previous.room.area)]
+      local zoom = getMapZoom(areaPreId)
+      --
+      setMapZoom(zoom, areaId)
       -- 
       -- ... and area mutable.
       if (ui.room.area == 'Il Dungeon di Bosco Verde ') or -- need end space
          (ui.room.area == 'Instancing') or
          (ui.room.area == 'Random Dungeons') then 
-        --
-        -- Clear area
-        local areas = getAreaTable()
-        local areaId = areas[string.trim(ui.room.area)]
         local rooms = getAreaRooms(areaId)
         --
+        -- Clear area
         for _, roomId in pairs(rooms) do
           deleteRoom(roomId)
         end
