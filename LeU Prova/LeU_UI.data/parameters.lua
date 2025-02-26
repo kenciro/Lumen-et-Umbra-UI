@@ -1,6 +1,6 @@
 return {{[ [[page]] ] = [[a]],[ [[widgets]] ] = {2},},
 {[ [[endowment]] ] = {3},[ [[overland]] ] = {4},[ [[keybind]] ] = {5},[ [[group]] ] = {6},[ [[aliasButton]] ] = {7},[ [[chat]] ] = {8},[ [[targets]] ] = {9},[ [[player]] ] = {10},[ [[help]] ] = {11},[ [[affects]] ] = {12},[ [[cooldowns]] ] = {13},[ [[mapper]] ] = {14},[ [[room]] ] = {15},[ [[opponent]] ] = {16},},
-{[ [[type]] ] = [[equip]],[ [[fontSize]] ] = 8,[ [[transparent]] ] = true,},
+{[ [[type]] ] = [[name]],[ [[fontSize]] ] = 8,[ [[transparent]] ] = true,},
 {[ [[fontSize]] ] = 10,},
 {[ [[fontSize]] ] = 6,},
 {[ [[transparent]] ] = true,},

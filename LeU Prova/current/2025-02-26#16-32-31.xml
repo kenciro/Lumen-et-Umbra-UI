@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.8</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -418,7 +418,6 @@ setTriggerStayOpen("Equipment", 1)
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
-ui.parameters.widgets.endowment.type = "equip"
 ui.fUpdateEndowment()
 --
 disableTrigger("equipment_valid")
@@ -5847,7 +5846,11 @@ function ui.fUpdateEndowment()
   --
       --
       -- Name
-      GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..string.gsub(ui.fRemoveArticle(ui.equipment[item].name), "(%a)([%w_']*)", ui.fTitleCase));
+      if (ui.parameters.widgets.endowment.type == "name") then
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..string.gsub(ui.fRemoveArticle(ui.equipment[item].name), "(%a)([%w_']*)", ui.fTitleCase));
+      else
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].slot);
+      end
       --
       -- Level
       GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
@@ -5944,13 +5947,17 @@ end
 function ui.fEndowmentTypeClicked()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fEndowmentTypeClicked()")
   --
-  if (ui.parameters.widgets.endowment.type == "equip") then
-    ui.parameters.widgets.endowment.type = "inv"
+  if (ui.parameters.widgets.endowment.type == "name") then
+    ui.parameters.widgets.endowment.type = "slot"
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Name");
   else
-    ui.parameters.widgets.endowment.type = "equip"
+    ui.parameters.widgets.endowment.type = "name"
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Slot");
   end
   --
-  ui.fUpdateEndowment()
+  --
+  expandAlias("eq")
+  expandAlias("eq stat")  -- Chiamerà ui.fUpdateEndowment()
   --
   ui.fSaveFileParameters()
 end</script>
@@ -9036,7 +9043,7 @@ function ui.fUpdateMapper()
     if (ui.room.area ~= ui.previous.room.area) then
       local areas = getAreaTable()
       local areaId = areas[string.trim(ui.room.area)]
-      local areaPreId = areas[string.trim(ui.previous.room.area)]
+      local areaPreId = areas[string.trim(ui.previous.room.area or ui.room.area)]
       local zoom = getMapZoom(areaPreId)
       --
       setMapZoom(zoom, areaId)
@@ -9372,6 +9379,7 @@ function ui.fGetPreDefinitedParameters()
         transparent = false,
       },
       endowment = {
+        type = "name",
         transparent = false,
       },
       group = {
@@ -9468,8 +9476,10 @@ function ui.fDifTimerPlayer(time_left)
   --
   if (time_left &gt; 0) then
     ui.handlers.fDifTimerPlayer = tempTimer(time_left, function() ui.fDifTimerPlayer(0.0) end)
+    GUI.Player.Main.Health.textDif:show();
     GUI.Player.Main.Health.dif:show()
   else
+    GUI.Player.Main.Health.textDif:hide();
     GUI.Player.Main.Health.dif:hide()
   end
 end
@@ -9584,12 +9594,14 @@ function ui.fUpdatePlayer()
   end
   --
   -- HP
+  local hpDif = 0;
   ui.player.hp = tonumber(ui.player.hp)
   ui.player.maxhp = tonumber(ui.player.maxhp)
   if (ui.player.hp  ~= ui.previous.player.hp) or
      (ui.player.maxhp  ~= ui.previous.player.maxhp) then
     local hpPerc = math.floor(100 * ui.player.hp / ui.player.maxhp); 
     --
+    hpDif = ui.player.hp - ui.previous.player.hp
     if (hpPerc &lt;= 40) then
       playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
     end
@@ -9650,35 +9662,37 @@ function ui.fUpdatePlayer()
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
   if (hpGaugeWidthDif ~= 0) then
-    local x, y, w, h, txt, CSS
+    local x, y, w, h, CSS
     --
     if (hpGaugeWidthDif &lt; 0) then
       x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - 3
       y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y()
       w = -hpGaugeWidthDif
       h = GUI.Player.Main.Health.front:get_height()
-      txt = "- -"
       CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(255, 0, 0, 0.8);
         background-color: rgba(255, 0, 0, 0.4);
       ]]
+      GUI.Player.Main.Health.textDif:setFgColor("red")
     else
       x = GUI.Player.Main.Health.front:get_x() - GUI.Player.Main:get_x() + GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
       y = GUI.Player.Main.Health.front:get_y() - GUI.Player.Main:get_y()
       w = hpGaugeWidthDif
       h = GUI.Player.Main.Health.front:get_height()
-      txt = "++"
       CSS = GUI.CSS.GaugeFront..[[
         qproperty-alignment: 'AlignRight';
         border: 1px solid rgba(0, 255, 0, 0.8);
         background-color: rgba(0, 255, 0, 0.4);
       ]]
+      GUI.Player.Main.Health.textDif:setFgColor("green")
     end
+    --
+    GUI.Player.Main.Health.textDif:echo(hpDif)
     --
     GUI.Player.Main.Health.dif:move(x, y);
     GUI.Player.Main.Health.dif:resize(w, h)
-    GUI.Player.Main.Health.dif:echo(txt)
+    --GUI.Player.Main.Health.dif:echo("")
     GUI.Player.Main.Health.dif:setStyleSheet(CSS)
     --
     ui.fDifTimerPlayer(1.5)
@@ -11101,7 +11115,7 @@ end</script>
   },GUI.Chat)
   GUI.Chat.Button_split:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Chat.Button_split:setFontSize(6)
-  GUI.Chat.Button_split:echo("&lt;center&gt;split");
+  GUI.Chat.Button_split:echo("&lt;center&gt;Split");
   GUI.Chat.Button_split:setClickCallback("ui.fChatSplitClicked")
   --
   -- Console "All"
@@ -11351,12 +11365,12 @@ end</script>
   },GUI.Endowment)
   GUI.Endowment.Button_refresh:setStyleSheet(GUI.CSS.WidgetButton);
   GUI.Endowment.Button_refresh:setFontSize(6)
-  GUI.Endowment.Button_refresh:echo("&lt;center&gt;Refresh");
-  GUI.Endowment.Button_refresh:setClickCallback(function()
-                                                  expandAlias("eq")
-                                                  expandAlias("eq stat")
-                                                end)
-  --
+  GUI.Endowment.Button_refresh:setClickCallback("ui.fEndowmentTypeClicked")
+  if (ui.parameters.widgets.endowment.type == "name") then
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Name");
+  else
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Slot");
+  end  --
   -- 25x Slot
   for i=1, 25 do
     --
@@ -11871,7 +11885,7 @@ end</script>
   ]])
   GUI.Opponent.Main.Health.front:enableClickthrough()
   --
-  --
+  -- Health difference
   GUI.Opponent.Main.Health.dif = Geyser.Label:new2({
     name = "GUI.Opponent.Main.Health.dif",
     x = 0,
@@ -12026,7 +12040,7 @@ end</script>
   ]])
   GUI.Player.Main.Health.front:echo("Vita")
   --
-  --
+  -- Health difference
   GUI.Player.Main.Health.dif = Geyser.Label:new2({
     name = "GUI.Player.Main.Health.dif",
     x = 0,
@@ -12036,6 +12050,21 @@ end</script>
   }, GUI.Player.Main)
   GUI.Player.Main.Health.dif:setFontSize(5)
   GUI.Player.Main.Health.dif:hide();
+  --
+  -- Health difference text
+  GUI.Player.Main.Health.textDif = Geyser.Label:new2({
+    name = "GUI.Player.Main.Health.textDif",
+    x = 4,
+    y = 9,
+    width = -6,
+    height = "50%-12",
+    fontSize = 6,
+  }, GUI.Player.Main)
+  GUI.Player.Main.Health.textDif:setStyleSheet([[
+      qproperty-alignment: 'AlignRight';
+      background-color: rgba(0, 0, 0, 0);
+    ]])
+  GUI.Player.Main.Health.textDif:hide();  
   --
   -- Round
   GUI.Player.Main.Round = Geyser.Gauge:new2({
