@@ -73,8 +73,6 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
 			<mapInfoContributor>User data</mapInfoContributor>
-			<mapInfoContributor>Special exits</mapInfoContributor>
-			<mapInfoContributor>Exits</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -838,15 +836,17 @@ end</script>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Comandi speciali per aprire uscite</name>
 					<script>local actions = {
-  ['abbassi'] = 'abbassa',
-  ['apri']    = 'apri',
-  ['giri']    = 'gira',
-  ['ruoti']   = 'ruota',  
-  ['scavi']   = 'scava',
-  ['sollevi'] = 'solleva',
-  ['spingi']  = 'spingi',
-  ['tagli']   = 'taglia',
-  ['tiri']    = 'tira',
+  ['abbassi']  = 'abbassa',
+  ['apri']     = 'apri',
+--  ['forzi']    = 'pick',
+  ['giri']     = 'gira',
+  ['ruoti']    = 'ruota',  
+--  ['sblocchi'] = 'doorbash',
+  ['scavi']    = 'scava',
+  ['sollevi']  = 'solleva',
+  ['spingi']   = 'spingi',
+  ['tagli']    = 'taglia',
+  ['tiri']     = 'tira',
 }
 local action    = string.lower(ui.fRemoveArticle(matches[2]))
 local object    = string.lower(ui.fRemoveArticle(matches[3]))
@@ -856,10 +856,17 @@ echo('\n')
 if (actions[action]) then
   action = actions[action]; 
   if (ui.validExit[direction]) then
+    local cmd
+    --
     direction = ui.validExit[direction].short;
-    setRoomUserData(ui.room.id, direction, action..' '..object..' '..direction)
+    if (action == 'pick') then
+      cmd = action..' '..object..' '..direction..';open '..object..' '..direction;
+    else
+      cmd = action..' '..object..' '..direction;
+    end
+    setRoomUserData(ui.room.id, direction, cmd)
     setDoor(ui.room.id, direction, 2)
-    ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..action..' '..object..' '..direction..'&lt;r&gt;')
+    ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..cmd..'&lt;r&gt;')
   else
     ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
   end
@@ -3247,6 +3254,17 @@ oppure dalla piazza di Talonia run s; d; sss; wsswwsssssssswwsee
 				<command></command>
 				<packageName></packageName>
 				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>Scatole Nere</name>
+					<script>local path = {
+  "dw gitana-_ask",
+  ".w2s;ask vecchietto ingredienti",
+}
+ui.fExecutePath(path, matches[2])</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^(?i)scatole(?:\s+(.*))?$</regex>
+				</Alias>
 			</AliasGroup>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio bianco latte, Alma</name>
@@ -3646,17 +3664,6 @@ expandAlias("get monete cassa")</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(shik)$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>Scatole Nere</name>
-				<script>local path = {
-  "dw gitana-_ask",
-  ".w2s;ask vecchietto ingredienti",
-}
-ui.fExecutePath(path, matches[2])</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)scatole(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Deadhame</name>
@@ -8649,7 +8656,7 @@ function ui.fSpeedWalk(path, dirs)
         ui.fEchon(dir)
       end
       -- Send command
-      send(dir, false)
+      expandAlias(dir, false)
       --
       table.remove(dirs, 1)
       table.remove(path, 1)
@@ -8748,7 +8755,7 @@ function ui.fPrepareSpeedWalk(path, dirs)
     --
     -- Go through dirs to find doors that need opened, etc
     -- add in necessary extra commands to dirs table
-    local k = 1
+    --[[ local k = 1
     while (k &lt;= #d) do
       local id, dir = p[k], d[k]
       if (ui.validExit[dir]) then
@@ -8763,6 +8770,7 @@ function ui.fPrepareSpeedWalk(path, dirs)
       k = k + 1
       p[k] = tonumber(p[k])
     end
+    ]]
   end
   --
   return p, d
@@ -14084,7 +14092,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>West</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
