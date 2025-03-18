@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -660,29 +660,9 @@ ui.fUpdateRoom()</script>
 				<regexCodeList />
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Porta chiusa a chiave</name>
-					<script>ui.direction = ui.direction or ''
-expandAlias("open "..matches[2].." "..ui.direction)</script>
-					<triggerType>0</triggerType>
-					<conditonLineDelta>0</conditonLineDelta>
-					<mStayOpen>0</mStayOpen>
-					<mCommand></mCommand>
-					<packageName></packageName>
-					<mFgColor>#ff0000</mFgColor>
-					<mBgColor>#ffff00</mBgColor>
-					<mSoundFile></mSoundFile>
-					<colorTriggerFgColor>#000000</colorTriggerFgColor>
-					<colorTriggerBgColor>#000000</colorTriggerBgColor>
-					<regexCodeList>
-						<string>^(?:Il|Lo|La|I|Gli|Le) (\S*) (?:e`|sono) chius[aeio].</string>
-					</regexCodeList>
-					<regexCodePropertyList>
-						<integer>1</integer>
-					</regexCodePropertyList>
-				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Door</name>
-					<script>ui.door = {
+					<script>display(command)
+ui.door = {
   name = matches[2],
   direction = ui.direction or "",
   pick = true,
@@ -769,22 +749,47 @@ setTriggerStayOpen("Door", 1)</script>
 						<colorTriggerBgColor>#000000</colorTriggerBgColor>
 						<regexCodeList>
 							<string>Il meccanismo di chiusura sembra adatto a (.*)\.</string>
+							<string>Non vedi serrature o meccanismi di chiusura.</string>
 						</regexCodeList>
 						<regexCodePropertyList>
+							<integer>1</integer>
 							<integer>1</integer>
 						</regexCodePropertyList>
 					</Trigger>
 					<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 						<name>door_end</name>
-						<script>if (ui.door.key) then
-  expandAlias("unlock "..ui.door.name.." "..ui.door.direction)
-elseif (ui.door.pick) then
-  expandAlias("pick "..ui.door.name.." "..ui.door.direction) 
-elseif (ui.door.doorbash) then
-  expandAlias("doorbash "..ui.door.name.." "..ui.door.direction) 
-else
-  setDoor(ui.room.id, ui.door.direction, 3)
+						<script>local action = nil
+--
+setRoomUserData(ui.room.id, ui.door.direction, ui.door.name)
+--
+if (ui.door.key) then
+  setRoomUserData(ui.room.id, ui.door.direction.."_key", ui.door.key)
+  action = "unlock"
 end
+--
+-- Prefered action "Pick" (if available)
+if (ui.door.pick) then
+  action = "pick"
+elseif (ui.door.doorbash) then
+  action = "doorbash"
+end
+--
+if (action) then
+  setRoomUserData(ui.room.id, ui.door.direction.."_action", action)
+end
+--
+setDoor(ui.room.id, ui.door.direction, 2)
+--
+-- Non mnada comandi, aggiorna solo le info della port
+--
+--if (ui.door.key) then
+--  expandAlias("unlock "..ui.door.name.." "..ui.door.direction)
+--elseif (ui.door.pick) then
+--  expandAlias("pick "..ui.door.name.." "..ui.door.direction) 
+--elseif (ui.door.doorbash) then
+--  expandAlias("doorbash "..ui.door.name.." "..ui.door.direction)
+--end
+--
 disableTrigger("no_pick")
 disableTrigger("no_bash")
 disableTrigger("key")
@@ -808,13 +813,66 @@ disableTrigger("door_end")</script>
 					</Trigger>
 				</Trigger>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>[Apri] [qualcosa], liberando il percorso verso [direzione].</name>
+					<script>local actions = {
+  ['abbassi'] = 'abbassa',
+  ['apri']    = 'apri',
+  ['giri']    = 'gira',
+  ['ruoti']   = 'ruota',  
+  ['scavi']   = 'scava',
+  ['sollevi'] = 'solleva',
+  ['spingi']  = 'spingi',
+  ['tagli']   = 'taglia',
+  ['tiri']    = 'tira',
+}
+--
+local action    = string.lower(ui.fRemoveArticle(matches[2]))
+local object    = string.lower(ui.fRemoveArticle(matches[3]))
+local direction = string.lower(ui.fRemoveArticle(matches[4]))
+--
+if (actions[action]) then
+  action = actions[action]; 
+  if (ui.validExit[direction]) then
+    direction = ui.validExit[direction].short;
+    --
+    setRoomUserData(ui.room.id, direction, object)
+    setRoomUserData(ui.room.id, direction.."_action", action)
+    --
+    setDoor(ui.room.id, direction, 2)
+    --
+    echo('\n')
+    ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'_action&lt;r&gt; = &lt;green&gt;'..action..'&lt;r&gt;')
+  else
+    echo('\n')
+    ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
+  end
+else
+  echo('\n')
+  ui.fError('&lt;green&gt;'..action..'&lt;r&gt; non è un azione riconosciuta. Aggiornare la tabella del trigger')
+end</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^(\S*) (.*), liberando il percorso verso (.*).$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Non hai la chiave giusta.</name>
 					<script>if (ui.door.pick) then
   expandAlias("pick "..ui.door.name.." "..ui.door.direction) 
 elseif (ui.door.doorbash) then
   expandAlias("doorbash "..ui.door.name.." "..ui.door.direction) 
-else
-  setDoor(ui.room.id, ui.door.direction, 3)
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -833,46 +891,10 @@ end</script>
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-					<name>Comandi speciali per aprire uscite</name>
-					<script>local actions = {
-  ['abbassi']  = 'abbassa',
-  ['apri']     = 'apri',
---  ['forzi']    = 'pick',
-  ['giri']     = 'gira',
-  ['ruoti']    = 'ruota',  
---  ['sblocchi'] = 'doorbash',
-  ['scavi']    = 'scava',
-  ['sollevi']  = 'solleva',
-  ['spingi']   = 'spingi',
-  ['tagli']    = 'taglia',
-  ['tiri']     = 'tira',
-}
-local action    = string.lower(ui.fRemoveArticle(matches[2]))
-local object    = string.lower(ui.fRemoveArticle(matches[3]))
-local direction = string.lower(ui.fRemoveArticle(matches[4]))
---
-echo('\n')
-if (actions[action]) then
-  action = actions[action]; 
-  if (ui.validExit[direction]) then
-    local cmd
-    --
-    direction = ui.validExit[direction].short;
-    if (action == 'pick') then
-      cmd = action..' '..object..' '..direction..';open '..object..' '..direction;
-    else
-      cmd = action..' '..object..' '..direction;
-    end
-    setRoomUserData(ui.room.id, direction, cmd)
-    setDoor(ui.room.id, direction, 2)
-    ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'&lt;r&gt; = &lt;green&gt;'..cmd..'&lt;r&gt;')
-  else
-    ui.fError('&lt;green&gt;'..direction..'&lt;r&gt; non è un uscita valida')
-  end
-else
-  ui.fError('&lt;green&gt;'..action..'&lt;r&gt; non è un azione riconosciuta. Aggiornare la tabella del trigger')
-end</script>
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>Uscita chiusa</name>
+					<script>ui.direction = ui.direction or ''
+expandAlias("open "..matches[2].." "..ui.direction)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -884,7 +906,7 @@ end</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>^(\S*) (.*), liberando il percorso verso (.*).$</string>
+						<string>^(?:Il|Lo|La|I|Gli|Le) (\S*) (?:e`|sono) chius[aeio].</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -4198,10 +4220,16 @@ lst_vNum = vNum+100</script>
 				<script>ui.direction = ui.validExit[string.lower(matches[2])].short;
 local userData = getAllRoomUserData(ui.room.id)
 --
+-- Exist a user data called as direction
 if (not table.is_empty(userData)) and (userData[ui.direction]) then
-  send(userData[ui.direction])
+  if (userData[ui.direction.."_action"]) then
+    send(userData[ui.direction.."_action"].." "..userData[ui.direction].." "..ui.direction)
+  else
+    send("open "..userData[ui.direction].." "..ui.direction)
+  end
 end
-send(ui.direction, false)</script>
+--
+send(ui.direction)</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(a|alto|b|basso|d|down|e|est|east|n|nord|north|o|ovest|s|sud|south|u|up|w|west)$</regex>
@@ -13610,7 +13638,31 @@ function cleanRoomsDoors()
     end
   end
   echo("Done\n")
-end    </script>
+end    
+--
+function cleanUserData(direction)
+  local userData = getAllRoomUserData(ui.room.id)
+  --
+  -- Exist a user data called as direction
+  if (not table.is_empty(userData)) then
+    local key = direction
+    if (clearRoomUserDataItem(ui.room.id, key)) then
+      ui.fEchon("Rimosso: "..key)
+    end
+    --
+    key = direction.."_action"
+    if (clearRoomUserDataItem(ui.room.id, key)) then
+      ui.fEchon("Rimosso: "..key)
+    end
+    --
+    key = direction.."_key"
+    if (clearRoomUserDataItem(ui.room.id, key)) then
+      ui.fEchon("Rimosso: "..key)
+    end
+  end
+  --
+  setDoor(ui.room.id, direction, 0)
+end</script>
 				<eventHandlerList />
 			</Script>
 			<Script isActive="no" isFolder="no">
