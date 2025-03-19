@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>377</borderRightWidth>
+			<borderRightWidth>381</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -339,7 +340,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -414,7 +415,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -778,7 +779,7 @@ if (action) then
   setRoomUserData(ui.room.id, ui.door.direction.."_action", action)
 end
 --
-setDoor(ui.room.id, ui.door.direction, 2)
+setDoor(ui.room.id, ui.validExit[ui.door.direction].door, 2)
 --
 -- Non mnada comandi, aggiorna solo le info della port
 --
@@ -838,7 +839,7 @@ if (actions[action]) then
     setRoomUserData(ui.room.id, direction, object)
     setRoomUserData(ui.room.id, direction.."_action", action)
     --
-    setDoor(ui.room.id, direction, 2)
+    setDoor(ui.room.id, ui.validExit[direction].door, 2)
     --
     echo('\n')
     ui.fEcho2n('Aggiornata uscita &lt;yellow&gt;'..direction..'_action&lt;r&gt; = &lt;green&gt;'..action..'&lt;r&gt;')
@@ -7899,12 +7900,12 @@ end</script>
   }
   --
   ui.validExit = {
-    down  = {short = "d", long = "down",  reverse = "u", tokenOpen = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
-    east  = {short = "e", long = "east",  reverse = "w", tokenOpen = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
-    north = {short = "n", long = "north", reverse = "s", tokenOpen = "△", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;green&gt;", dColor = "&lt;0,255,0:30,24,24&gt;",},
-    south = {short = "s", long = "south", reverse = "n", tokenOpen = "▽", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;blue&gt;", dColor = "&lt;0,0,255:30,24,24&gt;",},
-    up    = {short = "u", long = "up",    reverse = "d", tokenOpen = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
-    west  = {short = "w", long = "west",  reverse = "e", tokenOpen = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
+    down  = {short = "d", long = "down",  door = "down", reverse = "u", tokenOpen = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
+    east  = {short = "e", long = "east",  door = "e",    reverse = "w", tokenOpen = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
+    north = {short = "n", long = "north", door = "n",    reverse = "s", tokenOpen = "△", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;green&gt;", dColor = "&lt;0,255,0:30,24,24&gt;",},
+    south = {short = "s", long = "south", door = "s",    reverse = "n", tokenOpen = "▽", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;blue&gt;", dColor = "&lt;0,0,255:30,24,24&gt;",},
+    up    = {short = "u", long = "up",    door = "up",   reverse = "d", tokenOpen = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
+    west  = {short = "w", long = "west",  door = "w",    reverse = "e", tokenOpen = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
   }
   --
   ui.validExit["basso"] = ui.validExit.down
@@ -10108,29 +10109,32 @@ function ui.fUpdateRoom()
     -- Objects
     if (table.size(ui.room.objects) &gt; 0) then
       for _, object in pairs(ui.room.objects) do
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    "&lt;green&gt;O&lt;r&gt; "..
-                                    ui.fConvertColorString(object.desc).."&lt;r&gt;\n")        
+        GUI.Room.Main.Console:cecho("&lt;green&gt;O&lt;r&gt; "..
+                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
+                                    "\n")        
       end
     end
     --
     -- Charapter
     if (table.size(ui.room.players) &gt; 0) then
       for _, player in pairs(ui.room.players) do
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    "&lt;yellow&gt;P&lt;r&gt; "..
+        GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
+                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    ui.fConvertColorString(player.desc).."&lt;r&gt; "..
                                     "[&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;] "..
-                                    ui.fConvertColorString(player.desc).."&lt;r&gt;\n")
+                                    "\n")
       end
     end  
     --
     -- Mobs
     if (table.size(ui.room.mobs) &gt; 0) then
       for _, mob in pairs(ui.room.mobs) do
-        GUI.Room.Main.Console:cecho("&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    "&lt;red&gt;M&lt;r&gt; "..
+        GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
+                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                    "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
                                     "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;] "..
-                                    ui.fConvertColorString(mob.desc).."&lt;r&gt;\n")
+                                    "\n")
       end
     end
   end
@@ -13621,7 +13625,7 @@ function cleanRoomsDoors()
         ui.fEcho("Porte &lt;orange&gt;eliminate&lt;r&gt; in "..roomId)        
         for d, x in pairs(doors) do
           echo(" - "..d..": "..x)
-          setDoor(roomId, d, 0)
+          setDoor(ui.room.id, ui.validExit[d].door, 0)
         end
         echo("\n")
       end
@@ -13631,7 +13635,7 @@ function cleanRoomsDoors()
         ui.fEcho("Porte &lt;green&gt;aggiunte&lt;r&gt; in: "..roomId)
         for d, x in pairs(userData) do
           echo(" - "..d..": "..x)
-          setDoor(roomId, d, 2)
+          setDoor(ui.room.id, ui.validExit[d].door, 2)
         end
         echo("\n")
       end
@@ -13661,7 +13665,7 @@ function cleanUserData(direction)
     end
   end
   --
-  setDoor(ui.room.id, direction, 0)
+  setDoor(ui.room.id, ui.validExit[direction].door, 0)
 end</script>
 				<eventHandlerList />
 			</Script>
