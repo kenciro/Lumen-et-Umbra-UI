@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="50" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>309</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderRightWidth>379</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,9 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
-			<mapInfoContributor>Room</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -340,7 +339,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -415,7 +414,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -1421,16 +1420,16 @@ dir = ui.validExit[dir].short
 if (string.find(str, "arriva da")) or
    (string.find(str, "arriva volando da")) then
   if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho("&lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].tokenOpen.." &lt;orange&gt;"..name)
+    cecho("&lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token.." &lt;orange&gt;"..name)
   else
-    cecho("&lt;orange&gt;"..name.." &lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].tokenOpen)
+    cecho("&lt;orange&gt;"..name.." &lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token)
   end
 elseif (string.find(str, "va verso")) or
        (string.find(str, "vola verso")) then
   if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho("&lt;green&gt;"..ui.validExit[dir].tokenOpen.." &lt;ForestGreen&gt;"..name)
+    cecho("&lt;green&gt;"..ui.validExit[dir].token.." &lt;ForestGreen&gt;"..name)
   else
-    cecho("&lt;ForestGreen&gt;"..name.." &lt;green&gt;"..ui.validExit[dir].tokenOpen)
+    cecho("&lt;ForestGreen&gt;"..name.." &lt;green&gt;"..ui.validExit[dir].token)
   end
 elseif (string.find(str, "si alza")) then
   cecho("&lt;red&gt;↑↑↑ &lt;orange&gt;"..name.." &lt;red&gt;↑↑↑")
@@ -2116,37 +2115,37 @@ end</script>
 				<name>UI Go To Room</name>
 				<script>local room = matches[2] or ui.room.id
 --
-if (room == "") then
-  ui.fRoomInfo()
-else
-  local result = ui.fSearchRoom(room)
-  local count = 0
-  local roomId
-  --
-  for rId, _ in pairs(result) do 
-    roomId = rId
-    count = count + 1 
-  end
-  --
-  if (count == 0) then
-    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
-  elseif (count == 1) then
-    local walkPath = {}
-    local walkDirs = {}
-    --
-    if getPath(getPlayerRoom(), roomId) then
-      walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
-      doSpeedWalk()
-    else
-      -- Remove last SpeedWalk 
-      ui.fHighlightSpeedWalk(walkPath)
-      ui.fError("Impossibile da raggiungere")
-    end
-  else
-    ui.fShowRooms(result)
-  end
+if (matches[2] == nil) then
+  ui.fEcho2n("Specificare il nome o l'ID della stanza dove andare")
 end
-</script>
+--
+local result = ui.fSearchRoom(room)
+local count = 0
+local roomId
+--
+for rId, _ in pairs(result) do 
+  roomId = rId
+  count = count + 1 
+end
+--
+if (count == 0) then
+  ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+elseif (count == 1) then
+  local walkPath = {}
+  local walkDirs = {}
+  --
+  ui.speedwalk.path = {}
+  if getPath(getPlayerRoom(), roomId) then
+    walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
+    --
+    doSpeedWalk()
+  else
+    ui.fError("Impossibile da raggiungere")
+  end
+  ui.fHighlightArea(ui.room.areaId)
+else
+  ui.fShowRooms(result)
+end</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uig(?:o)?)(?:\s+(.*))?$</regex>
@@ -2397,7 +2396,7 @@ ui.fUpdateAllTargetButtons()
 				<script>local room = matches[2] or ""
 --
 if (room == "") then
-  ui.fEcho2n("Specificare il nome o l'ID della stanza da cercare")   
+  ui.fEcho2n("Specificare il nome o l'ID della stanza da cercare")
 else
   ui.fShowRooms(ui.fSearchRoom(room))
 end</script>
@@ -2545,35 +2544,36 @@ end</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Track Room</name>
 				<script>local room = matches[2] or ""
+local room_2 = matches[3] or ""
 --
 if (room == "") then
-  ui.fRoomInfo()
+  ui.fEcho2n("Specificare il nome o l'ID della stanza da tracciare")
 else
   local result = ui.fSearchRoom(room)
   local count = 0
   local roomId
   --
   for rId, _ in pairs(result) do 
-    roomId = rId
     count = count + 1 
   end
   --
   if (count == 0) then
     ui.fError("La stanza non esiste o non è stata ancora esplorata.")
   elseif (count == 1) then
+    local roomId, roomName = next(result);
     local walkPath = {}
     local walkDirs = {}
     --
+    ui.speedwalk.path = {}
     if getPath(getPlayerRoom(), roomId) then
       walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
       -- 
-      ui.fHighlightSpeedWalk(walkPath)
-      ui.fEcho2n("Un nuovo sentiero è stato tracciato")
+      ui.fEcho2n("Un nuovo sentiero per &lt;cyan&gt;"..ui.fConvertColorString(roomName).." &lt;r&gt;a &lt;yellow&gt;"..getRoomAreaName(getRoomArea(roomId)).."&lt;r&gt; è stato tracciato")
     else
-      -- Remove last SpeedWalk 
-      ui.fHighlightSpeedWalk(walkPath)
       ui.fError("Impossibile da raggiungere")
     end
+    --
+    ui.fHighlightArea(ui.room.areaId)
   else
     ui.fShowRooms(result)
   end
@@ -2581,7 +2581,7 @@ end
 </script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:uit(?:r(?:a(?:c(?:k)?)?)?)?)(?:\s+(.*))?$</regex>
+				<regex>^(?i)(?:uit(?:r(?:a(?:c(?:k)?)?)?)?)(?:\s+(.*))?(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Variables</name>
@@ -6778,7 +6778,7 @@ function ui.fUpdateGroup()
   end
   --
   if (ui.room) and (ui.room.area) then
-    ui.fRefreshArea(getAreaTable()[string.trim(ui.room.area)])
+    ui.fHighlightArea(ui.room.areaId)
   end
   --
   ui.fUpdateAllTargetButtons()
@@ -7900,12 +7900,12 @@ end</script>
   }
   --
   ui.validExit = {
-    down  = {short = "d", long = "down",  door = "down", reverse = "u", tokenOpen = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
-    east  = {short = "e", long = "east",  door = "e",    reverse = "w", tokenOpen = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
-    north = {short = "n", long = "north", door = "n",    reverse = "s", tokenOpen = "△", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;green&gt;", dColor = "&lt;0,255,0:30,24,24&gt;",},
-    south = {short = "s", long = "south", door = "s",    reverse = "n", tokenOpen = "▽", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;blue&gt;", dColor = "&lt;0,0,255:30,24,24&gt;",},
-    up    = {short = "u", long = "up",    door = "up",   reverse = "d", tokenOpen = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
-    west  = {short = "w", long = "west",  door = "w",    reverse = "e", tokenOpen = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
+    down  = {short = "d", long = "down",  door = "down", reverse = "u", token = "⤦", tokenClose = "□", tokenAbsent = "└", tokenFrom = "◆", tokenSecret = "S", color = "&lt;white&gt;", dColor = "&lt;255,255,255:30,24,24&gt;",},
+    east  = {short = "e", long = "east",  door = "e",    reverse = "w", token = "▷", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;yellow&gt;", dColor = "&lt;255,255,0:30,24,24&gt;",},
+    north = {short = "n", long = "north", door = "n",    reverse = "s", token = "△", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;green&gt;", dColor = "&lt;0,255,0:30,24,24&gt;",},
+    south = {short = "s", long = "south", door = "s",    reverse = "n", token = "▽", tokenClose = "□", tokenAbsent = "─", tokenFrom = "◆", tokenSecret = "S", color = "&lt;blue&gt;", dColor = "&lt;0,0,255:30,24,24&gt;",},
+    up    = {short = "u", long = "up",    door = "up",   reverse = "d", token = "⤤", tokenClose = "□", tokenAbsent = "┐", tokenFrom = "◆", tokenSecret = "S", color = "&lt;cyan&gt;", dColor = "&lt;0,255,255:30,24,24&gt;",},
+    west  = {short = "w", long = "west",  door = "w",    reverse = "e", token = "◁", tokenClose = "□", tokenAbsent = "│", tokenFrom = "◆", tokenSecret = "S", color = "&lt;magenta&gt;", dColor = "&lt;255,0,255:30,24,24&gt;",},
   }
   --
   ui.validExit["basso"] = ui.validExit.down
@@ -8267,7 +8267,6 @@ local iColor = {
   ["room"]      = '&lt;cyan&gt;',
   ["text"]      = '&lt;ansiMagenta&gt;',
   ["special"]   = '&lt;orange&gt;',
-  
 }
 --
 local terrain_types = {
@@ -8533,7 +8532,7 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           outString = outString..iColor["text"].."Uscite:\n"
           for k,v in pairs(exits) do
             local exitIdArea = getRoomArea(v)
-            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long
+            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].token.." "..ui.validExit[k].long
             -- Doors
             if (doors[ui.validExit[k].short]) then
               outString = outString.." "..iColor["text"].."["..getDoorStatus(doors[ui.validExit[k].short])..iColor["text"].."]"
@@ -8584,7 +8583,7 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
         else
           outString = outString..iColor["text"].."Porte:\n"
           for k,v in pairs(doors) do
-            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].tokenOpen.." "..ui.validExit[k].long
+            outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].token.." "..ui.validExit[k].long
             if (v == 1) then
               outString = outString.." "..iColor["text"].."(&lt;green&gt;Aperta"..iColor["text"]..")\n"
             elseif (v == 2) then
@@ -8611,7 +8610,7 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
             if (not table.is_empty(entranceExits)) then
               for k2,v2 in pairs(entranceExits) do
                 if (v2 == id) then
-                  sEntrance = sEntrance..ui.validExit[k2].color..ui.validExit[k2].tokenOpen.." "..ui.validExit[k2].long.." "
+                  sEntrance = sEntrance..ui.validExit[k2].color..ui.validExit[k2].token.." "..ui.validExit[k2].long.." "
                 end      
               end
             end 
@@ -8640,10 +8639,50 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
         if (table.is_empty(userData)) then
           outString = outString..iColor["text"].."Non ci sono note.\n"
         else
-          outString = outString..iColor["text"].."Note:\n"
-          for k,v in pairs(userData) do
-            outString = outString.."  "..iColor["room"]..k..iColor["text"].." = &lt;white&gt;"..v.."&lt;r&gt;\n"
+          local function readUserData(userData, direction)
+            local dir = 'x';
+            local name = '???';
+            local action = '???';
+            local key = '';
+            --
+            if (userData[direction]) then
+              dir = ui.validExit[direction].token;
+              name = userData[direction] 
+            end
+            
+            if (userData[direction.."_action"]) then
+              action = userData[direction.."_action"]
+            end
+            
+            if (userData[direction.."_key"]) then
+              key = " ("..userData[direction.."_key"]..")"
+            end
+                        
+            return dir.." "..action.." "..name..key;
           end
+          
+          outString = outString..iColor["text"].."Note:\n"
+          if (userData['n']) then
+            outString = outString.."  "..readUserData(userData, 'n').."\n"
+          end
+          if (userData['e']) then
+            outString = outString.."  "..readUserData(userData, 'e').."\n"
+          end
+          if (userData['s']) then
+            outString = outString.."  "..readUserData(userData, 's').."\n"
+          end
+          if (userData['w']) then
+            outString = outString.."  "..readUserData(userData, 'w').."\n"
+          end
+          if (userData['u']) then
+            outString = outString.."  "..readUserData(userData, 'u').."\n"
+          end
+          if (userData['d']) then
+            outString = outString.."  "..readUserData(userData, 'd').."\n"
+          end
+          --for k,v in pairs(userData) do
+          --  outString = outString.."  "..iColor["room"]..k..iColor["text"].." = &lt;white&gt;"..v.."&lt;r&gt;\n"
+          --end
         end
       end
     else
@@ -8709,7 +8748,7 @@ function ui.fSpeedWalk(path, dirs)
 end
 --
 -- Highlight a single room
-function ui.fHighlightRoom(roomId, HighlightPath)
+function ui.fHighlightRoom(roomId)
   local specialExits = getSpecialExits(roomId)
   local actualRoomId = tonumber(ui.room.id or "-1")
   --
@@ -8731,11 +8770,10 @@ function ui.fHighlightRoom(roomId, HighlightPath)
   --
   if (table.contains(memberRoom, roomId)) then
     --
-    -- Highlight member group in other room...
+    -- Highlight a member group in other room...
     highlightRoom(roomId, 0,255,0, 0,255,0, 1.5, 128, 128)
-
   --
-  elseif (HighlightPath) and (table.contains(ui.speedwalk.path, roomId)) then
+  elseif (table.contains(ui.speedwalk.path, roomId)) then
     --
     -- Highlight speedWalk path...
     highlightRoom(roomId, 255,255,255, 255,255,255, 1.5, 128, 128)
@@ -8746,24 +8784,12 @@ function ui.fHighlightRoom(roomId, HighlightPath)
   end
 end
 --
--- Highlight new path
-function ui.fHighlightSpeedWalk(path)
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fHighlightSpeedWalk(..)")
+-- Highlight Area
+function ui.fHighlightArea(areaID)
+  local rooms = getAreaRooms(areaID)
   --
-  ui.speedwalk.path = ui.speedwalk.path or {}
-  path = path or {}
-  --
-  -- Unhighlight old path
-  for _, id in pairs(ui.speedwalk.path) do
-    ui.fHighlightRoom(id, false)
-  end
-  --
-  ui.speedwalk.path = {}
-  ui.speedwalk.path = table.deepcopy(path)
-  --
-  -- Highlight new path
-  for _, id in pairs(ui.speedwalk.path) do
-    ui.fHighlightRoom(id, true)
+  for _,id in ipairs(rooms) do
+    ui.fHighlightRoom(id)
   end
 end
 --
@@ -8775,8 +8801,6 @@ function ui.fPrepareSpeedWalk(path, dirs)
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fPrepareSpeedWalk(..)")
   --
-  roomId = tonumber(roomId)
-  --
   if (#p ~= 0) then
     --
     -- Insert actual\start position
@@ -8784,23 +8808,23 @@ function ui.fPrepareSpeedWalk(path, dirs)
     --
     -- Go through dirs to find doors that need opened, etc
     -- add in necessary extra commands to dirs table
-    --[[ local k = 1
-    while (k &lt;= #d) do
-      local id, dir = p[k], d[k]
-      if (ui.validExit[dir]) then
-        local userData = getAllRoomUserData(id)
-        --
-        if (userData[ui.validExit[dir].short]) then
-          table.insert(p, k, id)
-          table.insert(d, k, userData[ui.validExit[dir].short])
-          k = k + 1
-        end
-      end
-      k = k + 1
+    for k = 1, #p do
+      --local id, dir = p[k], d[k]
+      --if (ui.validExit[dir]) then
+      --  local userData = getAllRoomUserData(id)
+      --  --
+      --  if (userData[ui.validExit[dir].short]) then
+      --    table.insert(p, k, id)
+      --    table.insert(d, k, userData[ui.validExit[dir].short])
+      --    k = k + 1
+      --  end
+      --end
       p[k] = tonumber(p[k])
     end
-    ]]
   end
+  --
+  ui.speedwalk.path = {} 
+  ui.speedwalk.path = table.deepcopy(p)
   --
   return p, d
 end
@@ -8810,9 +8834,6 @@ function doSpeedWalk()
   local path, dirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] doSpeedWalk()")
-  --
-  -- Highlight new speedWalk (and unhighlight oldest)
-  ui.fHighlightSpeedWalk(path)
   --
   -- Execute speedwalk
   if (#path ~= 0) then
@@ -9050,19 +9071,6 @@ function ui.fRedrawArea(areaName, expand, maxLevel)
   end
 end
 --
-function ui.fRefreshArea(areaID)
-  local rooms = getAreaRooms(areaID)
-  --
-  for _,id in ipairs(rooms) do
-    -- Refresh special exit (portal)
-    -- local specialExits = getSpecialExits(id)
-    -- if (not table.is_empty(specialExits)) then
-    --  setExitStub(id, "out", true)
-    -- end
-    ui.fHighlightRoom(id, true)
-  end
-end
---
 function ui.fUpdateMapper()
   --
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdateMapper(..)")
@@ -9072,37 +9080,39 @@ function ui.fUpdateMapper()
     -- Invalid ui.room
     if (ui.room.id == nil) then
       return
-
+    --
     -- Service room
     elseif (ui.room.id &lt;= 0) then
       ui.room.id = 10; -- not used room
     end
     --
+    -- Create new room if not exist
+    if (not getRoomName(ui.room.id)) then
+      fUpdateRoom(ui.room, ui.previous.room)
+    end
+    --
+    -- Save areaId (after fUpdateRoom() it will surely exist)
+    ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
+    display(ui.room.areaId)
+    --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
-      local areas = getAreaTable()
-      local areaId = areas[string.trim(ui.room.area)]
-      local areaPreId = areas[string.trim(ui.previous.room.area or ui.room.area)]
-      local zoom = getMapZoom(areaPreId)
+      local zoom = getMapZoom(ui.previous.room.areaId or ui.room.areaId)
       --
-      setMapZoom(zoom, areaId)
+      -- Set map zoom
+      setMapZoom(zoom, ui.room.areaId)
       -- 
-      -- ... and area mutable.
+      -- if is mutable area
       if (ui.room.area == 'Il Dungeon di Bosco Verde ') or -- need end space
          (ui.room.area == 'Instancing') or
          (ui.room.area == 'Random Dungeons') then 
-        local rooms = getAreaRooms(areaId)
+        local rooms = getAreaRooms(ui.room.areaId)
         --
         -- Clear area
         for _, roomId in pairs(rooms) do
           deleteRoom(roomId)
         end
       end
-    end
-    --
-    -- Create new room if not exist
-    if (not getRoomName(ui.room.id)) then
-      fUpdateRoom(ui.room, ui.previous.room)
     end
     --
     -- Update color and character from terrain
@@ -9131,6 +9141,7 @@ function ui.fUpdateMapper()
     end
     --
     -- Update special exits
+    setExitStub(ui.room.id, "out", false)
     if not (table.is_empty(ui.room.otherExits)) then
       for dir, id in pairs(ui.room.otherExits) do
         addSpecialExit(ui.room.id, id, "ent "..dir)
@@ -9143,7 +9154,7 @@ function ui.fUpdateMapper()
     --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
-      ui.fRefreshArea(getAreaTable()[string.trim(ui.room.area)]);
+      ui.fHighlightArea(ui.room.areaId);
     end
     -- 
     -- Redraw Area
@@ -9792,7 +9803,7 @@ function ui.fDrawRoomLine(line)
   if (ui.track == nil) or (ui.track == "") then
     icon = "&lt;white&gt;⨂&lt;r&gt;"
   else
-    icon = ui.validExit[ui.track].color..ui.validExit[ui.track].tokenOpen.."&lt;r&gt;"
+    icon = ui.validExit[ui.track].color..ui.validExit[ui.track].token.."&lt;r&gt;"
   end
   --
   -- Line 1
@@ -9827,7 +9838,7 @@ function ui.fGetToken(exits, exit)
       --
       -- Normal exit
       else
-        token = ui.validExit[exit].color..ui.validExit[exit].tokenOpen.."&lt;r&gt;"
+        token = ui.validExit[exit].color..ui.validExit[exit].token.."&lt;r&gt;"
       end
     --
     -- No exit
@@ -9892,6 +9903,7 @@ function ui.fUpdateRoom()
     ui.room.subArea = ui.fConvertColorString(gmcp.room.info.subzone or "") or ui.room.subArea
     ui.room.terrain = ui.fConvertColorString(gmcp.room.info.terrain or "") or ui.room.terrain
     ui.room.isOnMap = gmcp.room.info.isOnMap or ui.room.isOnMap
+    ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
     --
     ui.player.roomPos = ui.player.roomPos or 5
     --
@@ -10015,9 +10027,9 @@ function ui.fUpdateRoom()
         exitsDestinationId[k] = ui.validExit[k].color..ui.fAddSpace(""..v, 5).."&lt;r&gt;"
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == v) then
-          exitsAsString[idx] = "&lt;white&gt;["..ui.validExit[k].color..ui.validExit[k].tokenOpen.."&lt;white&gt;]&lt;r&gt;"..ui.fConvertColorString(getRoomName(v) or "???")
+          exitsAsString[idx] = "&lt;white&gt;["..ui.validExit[k].color..ui.validExit[k].token.."&lt;white&gt;]&lt;r&gt;"..ui.fConvertColorString(getRoomName(v) or "???")
         else
-          exitsAsString[idx] = " "..ui.validExit[k].color..ui.validExit[k].tokenOpen.."&lt;r&gt; "..ui.fConvertColorString(getRoomName(v) or "???")
+          exitsAsString[idx] = " "..ui.validExit[k].color..ui.validExit[k].token.."&lt;r&gt; "..ui.fConvertColorString(getRoomName(v) or "???")
         end
         -- Exits command
         exitsCommand[idx] = ui.validExit[k].long
@@ -12395,10 +12407,9 @@ end</script>
 				<packageName></packageName>
 				<script>function ui.fMapAreaChanged(event, areaId, areaId_from)
   areaId = tonumber(areaId);
-  
-  ui.fRefreshArea(areaId);
+  ui.fHighlightArea(areaId);
 end
-
+--
 function ui.fLogin(...)
   if (gmcp.char.base.name) then
     local newSetting = string.lower(gmcp.char.base.name)
@@ -13644,7 +13655,7 @@ function cleanRoomsDoors()
   echo("Done\n")
 end    
 --
-function cleanUserData(direction)
+function clearDoor(direction)
   local userData = getAllRoomUserData(ui.room.id)
   --
   -- Exist a user data called as direction
@@ -14148,7 +14159,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>West</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
