@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>365</borderRightWidth>
+			<borderLeftWidth>201</borderLeftWidth>
+			<borderRightWidth>243</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,12,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -590,11 +590,11 @@ disableTrigger("identification_end")</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Track</name>
 				<script>ui.fDebug("[trig] Track")
 --
-ui.track = ui.track or ""
+ui.track = ""
 --
 if (matches[2]) and (ui.validExit[string.lower(matches[2])]) then
   ui.track = ui.validExit[string.lower(matches[2])].short
@@ -661,8 +661,7 @@ ui.fUpdateRoom()</script>
 				<regexCodePropertyList />
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Door</name>
-					<script>display(command)
-ui.door = {
+					<script>ui.door = {
   name = matches[2],
   direction = ui.direction or "",
   pick = true,
@@ -1389,48 +1388,33 @@ setTriggerStayOpen("Invasioni", 1)</script>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Flee (automatico)</name>
-				<script>send("flee", false)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Sei paralizzato dal panico! Non puoi fuggire!</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>3</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Movimento MOB</name>
 				<script>local str = matches[1]
 local name = ui.fRemoveArticle(matches[2])
 local dir = string.trim(string.lower(matches[3] or ""))
+--
 selectString(str, 1)
 replace("")
+--
+name = string.gsub(name, "(%a)([%w_']*)", ui.fTitleCase)
 dir = ui.validExit[dir].short
+--
 if (string.find(str, "arriva da")) or
    (string.find(str, "arriva volando da")) then
-  if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho("&lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token.." &lt;orange&gt;"..name)
-  else
-    cecho("&lt;orange&gt;"..name.." &lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token)
-  end
+  --if (dir == "w") or (dir == "d") or (dir == "s") then
+    cecho("&lt;red&gt;▷ &lt;orange&gt;"..name.."&lt;red&gt; ◁&lt;r&gt;")
+  --else
+  --  cecho("&lt;orange&gt;"..name.." &lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token)
+  --end
 elseif (string.find(str, "va verso")) or
        (string.find(str, "vola verso")) then
-  if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho("&lt;green&gt;"..ui.validExit[dir].token.." &lt;ForestGreen&gt;"..name)
-  else
-    cecho("&lt;ForestGreen&gt;"..name.." &lt;green&gt;"..ui.validExit[dir].token)
-  end
+  local t = ui.validExit[dir].color..ui.validExit[dir].token
+  --if (dir == "w") or (dir == "d") or (dir == "s") then
+    cecho(t.." &lt;ForestGreen&gt;"..name.." "..t.."&lt;r&gt;")
+  --else
+  --  cecho("&lt;ForestGreen&gt;"..name..ui.validExit[dir].color..ui.validExit[dir].token)
+  --end
 elseif (string.find(str, "si alza")) then
   cecho("&lt;red&gt;↑↑↑ &lt;orange&gt;"..name.." &lt;red&gt;↑↑↑")
 else --if (string.find(str, "appare")) then
@@ -1569,17 +1553,24 @@ dreplace(qtt.." " ..liv.." "..str)</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Aure</name>
 				<script>local aura = matches[2]
+--
 deleteLine()
+--
 if (aura == "luce") then
   cecho(" &lt;white&gt;(&lt;r&gt;o&lt;white&gt;)&lt;r&gt;")
+--
 elseif (aura == "ghiaccio") then
   cecho(" &lt;cyan&gt;(&lt;r&gt;o&lt;cyan&gt;)&lt;r&gt;")
+--
 elseif (aura == "elettric") then
   cecho(" &lt;blue&gt;(&lt;r&gt;o&lt;blue&gt;)&lt;r&gt;")
+--
 elseif (aura == "fiammeggiante") then
   cecho(" &lt;red&gt;(&lt;r&gt;o&lt;red&gt;)&lt;r&gt;")
+--
 elseif (aura == "oscurita") then
   cecho(" &lt;DimGrey&gt;(&lt;r&gt;o&lt;DimGrey&gt;)&lt;r&gt;")
+--
 elseif (aura == "copie") then
   cecho(" &lt;purple&gt;(&lt;r&gt;o&lt;purple&gt;)&lt;r&gt;")
 end</script>
@@ -1914,16 +1905,16 @@ cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..na
 				<script>local alias = matches[2] or ""
 local value = matches[3] or ""
 --
--- Mostra tutti gli aliases
+-- Shows all aliases
 if (alias == "") then
   ui.fShowAllAliases()
 --
--- Rimuove tutti gli aliases
+-- Delete all aliases
 elseif (alias == "remove_all") then
   ui.fRemoveAllAliases()
   ui.fEcho2n("Tutti gli alias sono stati rimossi.")
 --
--- Mostra il singolo alias
+-- Show single alias
 elseif (value == "") then
   if (ui.aliases[alias]) then
     ui.fEcho2n(ui.fGetAliasFormattedText(alias))
@@ -1931,7 +1922,7 @@ elseif (value == "") then
     ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non esiste.")
   end
 --
--- Rimuove il singolo alias
+-- Remove single alias
 elseif value == "remove" then
   if (ui.fRemoveAlias(alias)) then
     ui.fEcho2n("L'alias "..ui.fGetAliasNameFormattedText(alias).." e' stato rimosso.")
@@ -1939,7 +1930,7 @@ elseif value == "remove" then
     ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non esiste.")
   end
 --
--- Crea o modifica l'alias
+-- Create o modify an alias
 else
   local alreadyExist = ui.aliases[alias];
   local result, output = ui.fAddAlias(alias, value)
@@ -1957,8 +1948,7 @@ else
 end
 --
 ui.fSaveFileAliases()
-ui.fUpdateAliasButton()
-</script>
+ui.fUpdateAliasButton()</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uia(?:l(?:i(?:a(?:s(?:e(?:s)?)?)?)?)?)?)(?:\s+(\w*)\s*(.*))?$</regex>
@@ -1968,16 +1958,16 @@ ui.fUpdateAliasButton()
 				<script>local button = matches[2] or ""
 local alias = matches[3] or ""
 --
--- Mostra tutti gli alias button
+-- Shows all alias button
 if (button == "") then
   ui.fShowAllAliasButtons()
 --
--- Rimuove tutti gli alias buttons
+-- Delete all alias buttons
 elseif (button == "remove_all") then
   ui.fRemoveAllAliasButtons()
   ui.fEcho2n("Tutti i pulsanti alias sono stati rimossi.")
 --
--- Mostra il singolo alias button
+-- Show single alias button
 elseif (alias == "") then
   local type, number = ui.fExpandButton(button)
   if (type == "a") or (type == "b") or (type == "c") then
@@ -1994,7 +1984,7 @@ elseif (alias == "") then
     ui.fError(ui.fGetAliasButtonFormattedText(button).." non è un pulsante valido.")
   end
 --
--- Rimuove il singolo alias button
+-- Delete single alias button
 elseif (alias == "remove") then
   local result = ui.fRemoveAliasButton(button)
   if (result == -2) then
@@ -2007,7 +1997,7 @@ elseif (alias == "remove") then
     ui.fError("Errore non previsto.")
   end
 --
--- Crea o modifica l'alias button
+-- Create o modify an alias button
 else
   local result = ui.fAssignAliasButton(button, alias)
   if (result == -2) then
@@ -2049,36 +2039,51 @@ local fontsize = tonumber(matches[3] or -1)
 --
 if (matches[3]) then
   if (fontsize &gt;= 1) and (fontsize &lt;= 30) then
+    --
+    -- ALL
     if (windows == "all") then
+      --
       -- Chat
       GUI.Chat.Main.All:setFontSize(fontsize)
       GUI.Chat.Main.Public:setFontSize(fontsize)
       GUI.Chat.Main.Private:setFontSize(fontsize)
       ui.parameters.widgets.chat.fontSize = fontsize
+      --
       -- Help
       GUI.Help.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.help.fontSize = fontsize
+      --
       -- Overland
       GUI.Mapper.Main.Overland:setFontSize(fontsize)
       ui.parameters.widgets.overland.fontSize = fontsize
+      --
       -- Room
       GUI.Room.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.room.fontSize = fontsize
-      --
+    --
+    -- Chat widget
     elseif (windows == "chat") then
       GUI.Chat.Main.All:setFontSize(fontsize)
       GUI.Chat.Main.Public:setFontSize(fontsize)
       GUI.Chat.Main.Private:setFontSize(fontsize)
       ui.parameters.widgets.chat.fontSize = fontsize
+    --
+    -- Help widget
     elseif (windows == "help") then
       GUI.Help.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.help.fontSize = fontsize
+    --
+    -- Overland widget
     elseif (windows == "overland") then
       GUI.Mapper.Main.Overland:setFontSize(fontsize)
       ui.parameters.widgets.overland.fontSize = fontsize
+    --
+    -- Room widget
     elseif (windows == "room") then
       GUI.Room.Main.Console:setFontSize(fontsize)
       ui.parameters.widgets.room.fontSize = fontsize
+    --
+    -- No existing widget
     else
       fontsize = 0
       ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
@@ -2099,6 +2104,7 @@ if (matches[3]) then
   else
     ui.fError("La dimensione del font e' errata: Usare un valore compreso tra "..ui.fGetCommandFormattedText("1").." e "..ui.fGetCommandFormattedText("30")..".")
   end
+--
 else
   cecho(ui.fTitle("Dimensioni font"))
   cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Chat")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.chat.fontSize).."\n");
@@ -2115,6 +2121,7 @@ end</script>
 				<name>UI Go To Room</name>
 				<script>local room = matches[2] or ui.room.id
 --
+-- No parameters
 if (matches[2] == nil) then
   ui.fEcho2n("Specificare il nome o l'ID della stanza dove andare")
 end
@@ -2123,12 +2130,16 @@ local result = ui.fSearchRoom(room)
 local count = 0
 local roomId
 --
+-- Count search result
 for rId, _ in pairs(result) do 
   count = count + 1 
 end
 --
+-- Not found
 if (count == 0) then
   ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+--
+-- Single result found
 elseif (count == 1) then
   local roomId, roomName = next(result);  -- next = first an only
   local walkPath = {}
@@ -2142,10 +2153,13 @@ elseif (count == 1) then
   else
     ui.fError("Impossibile da raggiungere")
   end
+--
+-- Multiple result
 else
   ui.fShowRooms(result)
 end
 --
+-- In any case update Area
 ui.fHighlightArea(ui.room.areaId)</script>
 				<command></command>
 				<packageName></packageName>
@@ -2155,74 +2169,61 @@ ui.fHighlightArea(ui.room.areaId)</script>
 				<name>UI Help</name>
 				<script>local helpselect = string.lower(matches[2] or "")
 --
+--
 if (helpselect == "") then
   ui.fHelp()
+--
+-- uihelp for uialias
 elseif (rex.match(helpselect, [[(?i)(?:uia(?:l(?:i(?:a(?:s(?:e(?:s)?)?)?)?)?)?)$]])) then
   ui.fHelp("alias")
+--
+--  uihelp for uibutton
 elseif (rex.match(helpselect, [[(?i)(uib(?:u(?:t(?:t(?:o(?:n(?:s)?)?)?)?)?)?)$]])) then
   ui.fHelp("button")
+--
+--  uihelp for uicolor
 elseif (rex.match(helpselect, [[(?i)(?:uic(?:o(?:l(?:o(?:r(?:s?)?)?)?)?)?)$]])) then
   ui.fHelp("color")
+--
+--  uihelp for uifontsize
 elseif (rex.match(helpselect, [[(?i)(?:uif(?:o(?:n(?:t(?:s(?:i(?:z(?:e)?)?)?)?)?)?)?)$]])) then
   ui.fHelp("fontsize")
+--
+--  uihelp for uihighlight
 elseif (rex.match(helpselect, [[(?i)(?:uihi(?:g(?:h(?:l(?:i(?:g(?:h(?:t(?:s)?)?)?)?)?)?)?)?)$]])) then
   ui.fHelp("highlight")
+--
+--  uihelp for uikeybind
 elseif (rex.match(helpselect, [[(?i)(?:uik(?:e(?:y(?:b(?:i(?:n(?:d)?)?)?)?)?)?)$]])) then
   ui.fHelp("keybind")
+--
+--  uihelp for target buttons
 elseif (rex.match(helpselect, [[(?i)(?:t(?:a(?:r(?:g(?:e(?:t(?:s)?)?)?)?)?)?)$]])) then
   ui.fHelp("target")
+--
+--  uihelp for uiprofile
 elseif (rex.match(helpselect, [[(?i)(?:uip(?:r(?:o(?:f(?:i(?:l(?:(?:e)?s)?)?)?)?)?)?)$]])) then
   ui.fHelp("profile")
+--
+--  uihelp for uivariable
 elseif (rex.match(helpselect, [[(?i)(?:uiv(?:a(?:r(?:i(?:a(?:b(?:l(?:e)?)?)?)?)?)?)?|]]..ui.varID..[[)$]])) then
   ui.fHelp("variable")
+--
+--  uihelp for . or ..
 elseif (rex.match(helpselect, [[^\.(?:\.)?$]])) then
   ui.fHelp("walk")
+--
+--  uihelp for widget
 elseif (rex.match(helpselect, [[(?i)(?:uiw(?:i(?:d(?:g(?:e(?:t?)?)?)?)?)?)$]])) then
   ui.fHelp("widget")
+--
+-- no help for this command
 else
   ui.fHelp(helpselect)
 end</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uih(?:e(?:l(?:p)?)?)?)(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>UI Info room</name>
-				<script>local room = matches[2] or ""
---
-if (room == "") then
-  ui.fRoomInfo()
-else
-  local result = ui.fSearchRoom(room)
-  local count = 0
-  local roomId
-  --
-  for rId, _ in pairs(result) do 
-    roomId = rId
-    count = count + 1 
-  end
-  --
-  if (count == 0) then
-    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
-  elseif (count == 1) then
-    ui.fRoomInfo(roomId)
-  else
-    ui.fShowRooms(result)
-  end
-end</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)(?:uii(?:n(?:f(?:o)?)?)?)(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>UI Reply</name>
-				<script>if (ui.reply) then
-  local msg = matches[2] or ""
-  expandAlias("telep "..ui.reply.." "..msg)
-end</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)(?:uir(?:e(?:p(?:l(?:y)?)?)?)?)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Highlights</name>
@@ -2242,28 +2243,33 @@ if (color ~= "") and (color ~= "remove") then
     color = ""
   end
 end
--- Mostra tutti gli highlights
+--
+-- Shows all highlights
 if (text == "") and (color == "") then
   ui.fShowAllHighlights()
--- Rimuove tutti gli highlights
+--
+-- Delete all highlights
 elseif (text == "remove_all") then
   ui.fRemoveAllHighlights()
   ui.fEcho2n("Tutti gli highlight sono stati eliminati.")
--- Rimuove il singolo highlight
+--
+-- Delete single highlight
 elseif (color == "remove") then
   if (ui.fRemoveHighlight(text)) then
     ui.fEcho2n("L'highlight e' stato rimosso.")
   else
     ui.fError("L'highlight '"..text.."' non esiste.")
   end
--- Mostra il singolo highlight
+--
+-- Show single highlight
 elseif (color == "") then
   if (ui.highlights[text]) then
     ui.fEcho2n(ui.fGetHighlightFormattedText(text))
   else
     ui.fError("L'highlight '"..text.."' non esiste.")
   end
--- Crea o modifica l'Highlight
+--
+-- Create or modify a Highlight
 else
   local alreadyExist = ui.highlights[text];
   local result = ui.fAddHighlight(text, color)
@@ -2288,21 +2294,60 @@ ui.fSaveFileHighlights()</script>
 				<regex>^(?i)(?:uihi(?:g(?:h(?:l(?:i(?:g(?:h(?:t(?:s)?)?)?)?)?)?)?)?)(?:\s?(.*)\s?( \w+))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
+				<name>UI Info room</name>
+				<script>local room = matches[2] or ""
+--
+-- No parameters... show info about actual room
+if (room == "") then
+  ui.fRoomInfo()
+else
+  local result = ui.fSearchRoom(room)
+  local count = 0
+  local roomId
+  --
+  -- Count search result
+  for rId, _ in pairs(result) do 
+    roomId = rId
+    count = count + 1 
+  end
+  --
+  -- Not found
+  if (count == 0) then
+    ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+  --
+  -- Single result found
+  elseif (count == 1) then
+    ui.fRoomInfo(roomId)
+  --
+  -- Multiple result
+  else
+    ui.fShowRooms(result)
+  end
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)(?:uii(?:n(?:f(?:o)?)?)?)(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
 				<name>UI Keybind</name>
 				<script>local element = matches[2] or ""
 local key1 = matches[3] or ""
 local key2 = matches[4] or ""
 local key3 = matches[5] or ""
 local isValid, mod1, mod2, key, keybind = ui.fGetKeyb(key1, key2, key3)
--- Mostra tutti i keybind associati a targetselement e aliases
+--
+-- Shows all keybind
 if (element == "") then
   ui.fShowAllKeyb()
--- Rimuove tutti i keybind associati a argets e aliases
+--
+-- Delete all keybind
 elseif (element == "remove_all") then
   ui.fRemoveAllKeyb()
   ui.fEcho2n("Tutti i tasti rapidi sono stati rimossi.")
--- Mostra il singolo keybind
+--
+-- Show single keybind
 elseif (key1 == "") then
+  --
   -- Target
   if (ui.targets[element]) then
     if (ui.targets[element].keybId) then
@@ -2310,6 +2355,7 @@ elseif (key1 == "") then
     else
       ui.fEcho2n("Nessun tasto rapido è assegnato al target "..ui.fGetTargetFormattedText(element)..".")
     end
+  --
   -- Alias
   elseif (ui.aliases[element]) then
     if (ui.aliases[element].keybId) then
@@ -2320,9 +2366,11 @@ elseif (key1 == "") then
   else
     ui.fError("L'alias "..ui.fGetAliasNameFormattedText(element).." non esiste.")
   end
--- Rimuove il singolo keybind
+--
+-- Delete single keybind
 elseif key1 == "remove" then
   local result
+  --
   -- Target
   if (ui.targets[element]) then
     keybind = ui.targets[element].keybind
@@ -2336,6 +2384,7 @@ elseif key1 == "remove" then
     else
       ui.fError("Errore non previsto.")
     end
+  --
   -- Alias
   elseif (ui.aliases[element]) then
     keybind = ui.aliases[element].keybind
@@ -2352,7 +2401,8 @@ elseif key1 == "remove" then
   else
     ui.fError("L'alias "..ui.fGetAliasNameFormattedText(element).." non esiste o non è associato a nessun tasto rapido.")
   end
--- Crea o modifica il keybind
+--
+-- Create or delete a keybind
 else
   local result, keybind, isTarget
   if (ui.targets[element]) then
@@ -2393,6 +2443,18 @@ ui.fUpdateAllTargetButtons()
 				<regex>^(?i)(?:uik(?:e(?:y(?:b(?:i(?:n(?:d)?)?)?)?)?)?)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)(?:\s*(\w+)?|$)</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
+				<name>UI Reply</name>
+				<script>if (ui.reply) then
+  local msg = matches[2] or ""
+  expandAlias("send "..ui.reply.." "..msg)
+else
+  ui.fError("Nessuno a cui rispondere.")
+end</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)(?:uir(?:e(?:p(?:l(?:y)?)?)?)?)(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
 				<name>UI Search Room</name>
 				<script>local room = matches[2] or ""
 --
@@ -2409,9 +2471,12 @@ end</script>
 				<name>UI Setting</name>
 				<script>local setting = matches[2] or ""
 local subCommand = matches[3] or ""
--- Mostra tutti i profiles
+--
+-- Shows all profiles
 if (subCommand == "") then
   ui.fShowAllSettings()
+--
+-- Import a profile
 elseif (subCommand == "import") then
   if (ui.fImportSetting(setting)) then
     ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato importato.")
@@ -2428,10 +2493,6 @@ end</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>UI Speedwalk (./..)</name>
 				<script>ui.fDebug("[alias] UI Speedwalk")
---
-local in_path = string.lower(matches[3] or "")
-local out_path = ""
-local backwards = (matches[2] == ".")
 --
 local function ui_fGetNextNumber(text, index)
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui_fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
@@ -2451,17 +2512,24 @@ local function ui_fGetNextNumber(text, index)
   return number, index
 end
 --
+local in_path = string.lower(matches[3] or "")
+local out_path = ""
+local backwards = (matches[2] == ".")
+--
 if (in_path == "") then
   ui.fEcho2n("Specificare un percorso.")
 else
+  --
   -- Speedwalk
   local number
   local idx = 1
-  while (idx&lt;=in_path:len()) do
+  --
+  -- Formatting
+  while (idx &lt;= in_path:len()) do
     number, idx = ui_fGetNextNumber(in_path, idx)
-    if (idx&lt;=in_path:len()) then
+    if (idx &lt;= in_path:len()) then
       local char = string.lower(in_path:sub(idx, idx))
-      for j=1, number do
+      for j = 1, number do
         if (backwards) then
           out_path = ui.validExit[char].reverse..out_path
         else
@@ -2478,9 +2546,9 @@ if (backwards) then
 else
   ui.fDebug("[alias] UI Speedwalk (Forward) - in: "..in_path.." - out: "..out_path)
 end
--- Execute out path
+--
+-- Execute
 for j=1, out_path:len() do
-  -- Execute Ui Direction alias
   expandAlias(out_path:sub(j, j), false); 
 end</script>
 				<command></command>
@@ -2547,6 +2615,7 @@ end</script>
 				<script>local room = matches[2] or ui.room.id
 local room_2 = matches[3] or "" -- TODO
 --
+-- No parameters
 if (matches[2] == nil) then
   ui.fEcho2n("Specificare il nome o l'ID della stanza da tracciare")
 end
@@ -2555,12 +2624,16 @@ local result = ui.fSearchRoom(room)
 local count = 0
 local roomId
 --
+-- Count search result
 for rId, _ in pairs(result) do 
   count = count + 1 
 end
 --
+-- Not found
 if (count == 0) then
   ui.fError("La stanza non esiste o non è stata ancora esplorata.")
+--
+-- Single result found
 elseif (count == 1) then
   local roomId, roomName = next(result);  -- next = first an only
   local walkPath = {}
@@ -2576,10 +2649,13 @@ elseif (count == 1) then
   else
     ui.fError("Impossibile da raggiungere")
   end
+--
+-- Multiple result
 else
   ui.fShowRooms(result)
 end
 --
+-- In any case update Area
 ui.fHighlightArea(ui.room.areaId)</script>
 				<command></command>
 				<packageName></packageName>
@@ -2589,21 +2665,25 @@ ui.fHighlightArea(ui.room.areaId)</script>
 				<name>UI Variables</name>
 				<script>local variable = matches[2]
 local value = matches[3]
--- Mostra tutte le variabili
+--
+-- Shows all variables
 if variable == nil or variable == "" then
   ui.fShowAllVar()
--- Rimuove tutte le variabili
+--
+-- Delete all variables
 elseif variable == "remove_all" then
   ui.fRemoveAllVariables();
   ui.fEcho2n("Tutte le variabili sono state eliminate.")
--- Mostra la singola variabile
+--
+-- Show single variable
 elseif value == nil or value == "" then
   if ui.variables[variable] then
     ui.fEcho2n(ui.fGetVarFormattedText(variable))
   else
     ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." non esiste.")
   end
--- Rimuove la singola variabile
+--
+-- Delete single variable
 elseif value == "remove" then
   if not ui.variables[variable] then
     ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." non esiste.")
@@ -2614,7 +2694,8 @@ elseif value == "remove" then
     ui.variables[variable] = nil
     ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." e' stata rimossa.")
   end
--- Crea o modifica la variabile
+--
+-- Create or modify a variable
 else
   if (ui.variables[variable])then
     ui.variables[variable] = value
@@ -2652,6 +2733,7 @@ ui.fSaveFileVariables()</script>
 }
 local widget = string.lower(matches[2] or "")
 --
+-- No parameters
 if (widget == "") then
   ui.fEcho("Usare ")
   cechoLink(ui.cLink("all"), [[expandAlias("uiw all")]], "uiwidget all", true);
@@ -2661,6 +2743,7 @@ if (widget == "") then
   end
   cecho("\n")
 --
+-- Restore all wigets
 elseif (widget == "all") then
   for _, w in pairs(widgets) do
     w:restore();
@@ -2668,11 +2751,13 @@ elseif (widget == "all") then
   end
   ui.fEcho2n("Tutti i widget sono stati ripristinati.")
 --
+-- Restore specific widget
 elseif (widgets[widget]) then
   widgets[widget]:restore();
   widgets[widget]:show();
   ui.fEcho2n("Il widget "..ui.fGetCommandFormattedText(widget).." e' stato ripristinato.")
 --
+-- No widget exist
 else
   ui.fEcho("Nome widget errato. Usare: ")
   cechoLink(ui.cLink("all"), [[expandAlias("uiw all")]], "uiwidget all", true);
@@ -4232,7 +4317,7 @@ if (not table.is_empty(userData)) and (userData[ui.direction]) then
   end
 end
 --
-send(ui.direction)</script>
+send(ui.direction, false)</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(a|alto|b|basso|d|down|e|est|east|n|nord|north|o|ovest|s|sud|south|u|up|w|west)$</regex>
@@ -9099,7 +9184,6 @@ function ui.fUpdateMapper()
     --
     -- Save areaId (after fUpdateRoom() it will surely exist)
     ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
-    display(ui.room.areaId)
     --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
@@ -9546,22 +9630,29 @@ function ui.fUpdatePlayer()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fUpdatePlayer()")
   --
   -- init vars
-  ui.player.class          = ui.player.class       or ""
-  ui.player.experience     = ui.player.experience  or 1
-  ui.player.gold           = ui.player.gold        or 0
-  ui.player.level          = ui.player.level       or 0
-  ui.player.name           = ui.player.name        or ""
-  ui.player.race           = ui.player.race        or ""
-  ui.player.toNext         = ui.player.toNext      or 1
-  ui.player.hp             = ui.player.hp          or 1
-  ui.player.maxhp          = ui.player.maxhp       or 1
-  ui.player.mana           = ui.player.mana        or 1
-  ui.player.maxmana        = ui.player.maxmana     or 1
-  ui.player.pow            = ui.player.pow         or 1
-  ui.player.maxpow         = ui.player.maxpow      or 1
-  ui.player.roundMax       = ui.player.roundMax    or 4
-  ui.player.roundTicker    = ui.player.roundTicker or 0
-  ui.player.secsToTick     = ui.player.secsToTick  or 0
+  ui.player = {
+    class          = "",
+    experience     = 1,
+    gold           = 0,
+    level          = 0,
+    name           = "",
+    race           = "",
+    toNext         = 1,
+
+    hp             = 1,
+    maxhp          = 1,
+    mana           = 1,
+    maxmana        = 1,
+    pow            = 1,
+    maxpow         = 1,
+    
+    roundMax       = 4,
+    roundTicker    = 0,
+    
+    secsToTick     = 0,
+    
+    roomPos        = ui.player.roomPos or 5,
+  }
   --
   ui.previous.player = ui.previous.player or ui.player;
   ui.previous.fastAffects = ui.previous.fastAffects or ui.fastAffects;
@@ -9588,28 +9679,30 @@ function ui.fUpdatePlayer()
     
     ui.player.secsToTick     = math.random(0, 74)
     
-  elseif (gmcp) and (gmcp.char) and (gmcp.char.base) then
-    ui.player.class          = gmcp.char.base.class or ui.player.class
-    ui.player.experience     = gmcp.char.base.experience or ui.player.experience
-    ui.player.gold           = gmcp.char.base.gold or ui.player.gold
-    ui.player.level          = gmcp.char.base.level or ui.player.level
-    ui.player.name           = gmcp.char.base.name or ui.player.name
-    ui.player.race           = gmcp.char.base.race or ui.player.race
-    ui.player.toNext         = gmcp.char.base.toNext or ui.player.toNext
-  end
-  
-  if (gmcp) and (gmcp.char) and (gmcp.char.vitals) then
-    ui.player.hp             = gmcp.char.vitals.hp or ui.player.hp
-    ui.player.maxhp          = gmcp.char.vitals.maxhp or ui.player.maxhp
-    ui.player.mana           = gmcp.char.vitals.mana or ui.player.mana
-    ui.player.maxmana        = gmcp.char.vitals.maxmana or ui.player.maxmana
-    ui.player.pow            = gmcp.char.vitals.pow or ui.player.pow
-    ui.player.maxpow         = gmcp.char.vitals.maxpow or ui.player.maxpow
+  elseif (gmcp) and (gmcp.char) then
+    if (gmcp.char.base) then
+      ui.player.class          = gmcp.char.base.class or ui.player.class
+      ui.player.experience     = gmcp.char.base.experience or ui.player.experience
+      ui.player.gold           = gmcp.char.base.gold or ui.player.gold
+      ui.player.level          = gmcp.char.base.level or ui.player.level
+      ui.player.name           = gmcp.char.base.name or ui.player.name
+      ui.player.race           = gmcp.char.base.race or ui.player.race
+      ui.player.toNext         = gmcp.char.base.toNext or ui.player.toNext
+    end
     
-    ui.player.roundMax       = gmcp.char.vitals.roundMax or ui.player.roundMax
-    ui.player.roundTicker    = gmcp.char.vitals.roundTicker or ui.player.roundTicker
-    
-    ui.player.secsToTick     = gmcp.char.vitals.secsToTick or ui.player.secsToTick
+    if (gmcp.char.vitals) then
+      ui.player.hp             = gmcp.char.vitals.hp or ui.player.hp
+      ui.player.maxhp          = gmcp.char.vitals.maxhp or ui.player.maxhp
+      ui.player.mana           = gmcp.char.vitals.mana or ui.player.mana
+      ui.player.maxmana        = gmcp.char.vitals.maxmana or ui.player.maxmana
+      ui.player.pow            = gmcp.char.vitals.pow or ui.player.pow
+      ui.player.maxpow         = gmcp.char.vitals.maxpow or ui.player.maxpow
+      
+      ui.player.roundMax       = gmcp.char.vitals.roundMax or ui.player.roundMax
+      ui.player.roundTicker    = gmcp.char.vitals.roundTicker or ui.player.roundTicker
+      
+      ui.player.secsToTick     = gmcp.char.vitals.secsToTick or ui.player.secsToTick
+    end
   end
   --
   -- Tittle
@@ -14010,79 +14103,79 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<keyModifier>536870912</keyModifier>
 			</Key>
 			<Key isActive="yes" isFolder="no">
-				<name>ALT + keypad + 1 (get all cad)</name>
+				<name>keypad + 7 (get all cad)</name>
 				<packageName></packageName>
 				<script>expandAlias("ll")</script>
 				<command></command>
-				<keyCode>49</keyCode>
-				<keyModifier>671088640</keyModifier>
-			</Key>
-			<Key isActive="yes" isFolder="no">
-				<name>ALT + keypad + 5 (cerca)</name>
-				<packageName></packageName>
-				<script></script>
-				<command>cerca</command>
-				<keyCode>53</keyCode>
-				<keyModifier>671088640</keyModifier>
+				<keyCode>55</keyCode>
+				<keyModifier>536870912</keyModifier>
 			</Key>
 			<KeyGroup isActive="yes" isFolder="yes">
-				<name>Look at direction  (control + keypad)</name>
+				<name>Look at direction</name>
 				<packageName></packageName>
 				<script></script>
 				<command></command>
 				<keyCode>-1</keyCode>
 				<keyModifier>0</keyModifier>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 1</name>
+					<name>ALT + keypad 1</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look down</command>
 					<keyCode>49</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 2</name>
+					<name>ALT + keypad 2</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look south</command>
 					<keyCode>50</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 4</name>
+					<name>ALT + keypad 4</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look west</command>
 					<keyCode>52</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 6</name>
+					<name>ALT + keypad + 5 (cerca)</name>
+					<packageName></packageName>
+					<script></script>
+					<command>cerca</command>
+					<keyCode>53</keyCode>
+					<keyModifier>671088640</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>ALT + keypad 6</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look east</command>
 					<keyCode>54</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 8</name>
+					<name>ALT + keypad 8</name>
 					<packageName></packageName>
 					<script></script>
 					<command>look north</command>
 					<keyCode>56</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + keypad 9</name>
+					<name>ALT + keypad 9</name>
 					<packageName></packageName>
 					<script></script>
 					<command>loo up</command>
 					<keyCode>57</keyCode>
-					<keyModifier>603979776</keyModifier>
+					<keyModifier>671088640</keyModifier>
 				</Key>
 			</KeyGroup>
 			<KeyGroup isActive="yes" isFolder="yes">
-				<name>Mapper</name>
+				<name>Mapper - Offline movment</name>
 				<packageName></packageName>
 				<script></script>
 				<command></command>
@@ -14129,7 +14222,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 					<keyModifier>738197504</keyModifier>
 				</Key>
 				<Key isActive="yes" isFolder="no">
-					<name>CTRL + alt + keypad + 9</name>
+					<name>CTRL + ALT + keypad + 9</name>
 					<packageName></packageName>
 					<script>offlinePlayerMove ("u")</script>
 					<command></command>
@@ -14160,7 +14253,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>West</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>

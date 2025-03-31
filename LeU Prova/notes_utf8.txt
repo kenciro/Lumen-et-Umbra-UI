@@ -26,25 +26,53 @@ Room ID	Area		Note
 24740	Deadhame			7500mo (andando al forziere di moria di uigo, forse una teleport)
 4198	Miniere di Moria		forziere
 
-La Forgia
-- “pdebug mats” per aggiungerti materiali in banca (utile per fare test)
-- quando hai fatto pdebug, puoi vedere la cassetta (comando cassetta) con gli elementi disponibili
-- dalla banca puoi ritirare gli elementi che ti serviranno (es. withdrwaw bismuto)
-- “pdebug forgia” per accedere al laboratorio (si esce andando down, che porta ad Alma)
-- metti gli elementi necessari nel calderone
-- a questo punto ti metti in eq un oggetto su cui vuoi lavorare
-- ora puoi effettivamente cominciare a lavorare con il comando “infondi”
-- ti troverai dentro un menu e potrai scegliere quale attività fare (ad esempio alzare di livello un certo oggetto)
-- per fare qualsiasi altra cosa (ad es. mettere altri oggetti in eq o mandare messaggi) dovrai prima uscire dal menu
+------------------------------------------------------------------
+TOKEN
 
-Le ricette
-- Le ricette si ottengono con due tipi di elementi: materiali e coadiuvanti
-- i materiali sono gli elementi strettamente necessari
-- i coadiuvanti servono ad indirizzare/modificare/migliorare le ricette (in generale, se qualcosa è una fiala/sacchetto/ampolla/bottiglietta è facile sia un coadiuvante)
-- quando identifichi qualcosa ti dice che tipo di elemento è
-- Una volta completata la ricetta, i coadiuvanti possono rimanere (non sempre vengono consumati completamente), mentre i materiali base spariscono (vengono usati tutti sempre)
+    eventStrings.insert(std::make_pair(DAMAGE_MISS, "M"));
+    eventStrings.insert(std::make_pair(DAMAGE_GLANCE, "G"));
+    eventStrings.insert(std::make_pair(DAMAGE_DODGE, "D"));
+    eventStrings.insert(std::make_pair(DAMAGE_PARRY, "P"));
+    eventStrings.insert(std::make_pair(DAMAGE_CRITICAL, "C"));
+    eventStrings.insert(std::make_pair(DAMAGE_EXCEPTIONAL, "L"));
+    eventStrings.insert(std::make_pair(DAMAGE_EVASION, "E"));
+    eventStrings.insert(std::make_pair(DAMAGE_LOW_RES, "r"));
+    eventStrings.insert(std::make_pair(DAMAGE_HIGH_RES, "R"));
+    eventStrings.insert(std::make_pair(DAMAGE_MAX_RES, "X"));
+    eventStrings.insert(std::make_pair(DAMAGE_SUSC, "S"));
+    eventStrings.insert(std::make_pair(DAMAGE_SHIELDBLOCK, "B"));
+------------------------------------------------------------------
+SLOT
 
-Alcune trasmutazioni base:
+[Arcano]
+[Infuocato]
+
+[Innato]
+Non può essere modificato in alcun modo, è una proprietà base dell'oggetto. Non può essere migliorato. Zero varianza.
+
+[Progressivo]
+Può essere migliorato, scala con il livello dell'oggetto. Non si può cambiare la statistica. Zero varianza.
+
+[Cardinale]
+Può essere solo Potere Magico o Bonus al Danno Fisico. Può essere invertito con una tramsutazione.
+
+[Incantato]
+Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat affini ad un pg SP. Varianza Standard.
+
+[Brutale]
+Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat affini ad un pg Dam. Varianza Standard.
+
+[Resiliente]
+Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat difensive. Varianza Standard.
+
+[Volatile]
+Può essere migliorato, scala, si può cambiare la statistica. Varianza molto alta. Può rollare tutto.
+
+[Profetico]
+Specifico degli oggetti Destino, seguiranno altre informazioni a riguardo.
+
+------------------------------------------------------------------
+TRASMUTAZIONI
 
 Rigenerazione
 Rerolla quel che si può rerollare sull'oggetto. Se un potere è preservato, non lo modifica e rimuove lo stato di preservazione. Richiede 1 sfera di energia entropica.
@@ -54,16 +82,17 @@ Trasforma i poteri di tipo Cardinale da Dam a SP o viceversa. Richiede 1 Inverti
 
 Modellare il Fato
 Rolla un potere di tipo Profetico, dandogli sostanza se vuoto, o modificando la statistica se già presente. Il risultato è influenzato dall'uso dei coadiuvanti. Non modifica lo stato di preservazione, non influenza poteri preservati.
-[10:01]
-una nota importante - queste cose sono un tentativo di standardizzare il sistema oggetti di LeU
-[10:01]
-tutto funzionerà così
-[10:01]
-da liv 1 a liv 50 all'endgame etc.
-[10:03]
-Oggetti Destino
 
+Oggetti Destino
 Gli oggetti Destino ora hanno un potere Cardinale e 4 poteri Profetici.
 Il potere Cardinale è rollato random nel momento in cui vengono acquistati, i poteri Profetici potete impostarli voi tramite Modellare il Fato.
 
 Oltre alla trasmutazione, i poteri Profetici hanno un costo molto basso per essere Preservati, e la trasmutazione specifica per modellarli non modifica lo stato di preservazione. Questo dovrebbe consentirvi controllo completo nel costruirli come volete (come ora), e nel modificarli come preferite nel tempo (che ora non potete fare)
+------------------------------------------------------------------
+RICETTE
+
+- Le ricette si ottengono con due tipi di elementi: materiali e coadiuvanti
+- i materiali sono gli elementi strettamente necessari
+- i coadiuvanti servono ad indirizzare/modificare/migliorare le ricette (in generale, se qualcosa è una fiala/sacchetto/ampolla/bottiglietta è facile sia un coadiuvante)
+- quando identifichi qualcosa ti dice che tipo di elemento è
+- Una volta completata la ricetta, i coadiuvanti possono rimanere (non sempre vengono consumati completamente), mentre i materiali base spariscono (vengono usati tutti sempre)
