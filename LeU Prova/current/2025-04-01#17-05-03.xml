@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>201</borderLeftWidth>
-			<borderRightWidth>243</borderRightWidth>
+			<borderLeftWidth>315</borderLeftWidth>
+			<borderRightWidth>383</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4047,11 +4047,13 @@ else
   if (ui.opponent.name == '') then
     -- .. primo mob a tiro
     for _, mob in pairs(ui.room.mobs) do
-      opponent = string.gsub(mob.key, "$crk%d%d%d%d%d%d%d%d", "")
-      opponent = string.gsub(opponent, " .*", "")
-      firstAttack = true;
-      --
-      break 
+      if (mob.counter &gt; 0) then
+        opponent = string.gsub(mob.key, "$crk%d%d%d%d%d%d%d%d", "")
+        opponent = string.gsub(opponent, " .*", "")
+        firstAttack = true;
+        --
+        break 
+      end
     end
   --
   -- In combattimento
@@ -4183,33 +4185,6 @@ local function nextStep(origin)
 end
 --
 expandAlias(steps[nextStep(ui.origins[1])])
-
---if (table.contains(ui.origins, "e")) then
---  if (table.contains(ui.room.exits, "south")) then dirTo = "s"
---  elseif (table.contains(ui.room.exits, "west")) then dirTo = "w"
---  elseif (table.contains(ui.room.exits, "north")) then dirTo = "n"
---  else dirTo = "e"
---  end
---elseif (table.contains(ui.origins, "s")) then
---  if (table.contains(ui.room.exits, "west")) then dirTo = "w"
---  elseif (table.contains(ui.room.exits, "north")) then dirTo = "n"
---  elseif (table.contains(ui.room.exits, "east")) then dirTo = "e"
---  else dirTo = "s"
---  end
---elseif (table.contains(ui.origins, "w")) then
---  if (table.contains(ui.room.exits, "north")) then dirTo = "n"
---  elseif (table.contains(ui.room.exits, "east")) then dirTo = "e"
---  elseif (table.contains(ui.room.exits, "south")) then dirTo = "s"
---  else dirTo = "w"
---  end
---else
---  if (table.contains(ui.room.exits, "east")) then dirTo = "e"
---  elseif (table.contains(ui.room.exits, "south")) then dirTo = "s"
---  elseif (table.contains(ui.room.exits, "west")) then dirTo = "w"
---  else dirTo = "n"
---  end
---end
--- echo("Arrivi da "..ui.dirToken[dirFrom].." e vai verso "..ui.dirToken[dirTo]..".")
 </script>
 				<command></command>
 				<packageName></packageName>
@@ -6530,18 +6505,18 @@ function ui.fAddMain(sender, CSS_Border, CSS_Main)
   end
 end
 --
-function ui.fAddSpace(s, l, mode)
+function ui.fAddSpace(s, l, align)
   local sl
   --
   s = s or "";
-  mode = mode or "c"
+  align = align or "c"
   sl = s:len()
   --
   if (sl &lt; l) then
     for i = sl+1, l do
-      if (mode == "l") then
+      if (align == "r") then
         s = " "..s
-      elseif (mode == "r") then
+      elseif (align == "l") then
         s = s.." "
       elseif (i%2==0) then
         s = s.." "
@@ -6679,6 +6654,7 @@ function ui.fUpdateGMCP(event, ...)
       --
       if (not ui.fTableCompare(gmcp.char.group, ui.previous.gmcp.char.group)) then
         ui.fUpdateGroup();
+        ui.fUpdateRoom();
         --
         ui.previous.gmcp.char.group = {}
         ui.previous.gmcp.char.group = table.deepcopy(gmcp.char.group);
@@ -6834,16 +6810,17 @@ function ui.fUpdateGroup()
       GUI.Group.Main["g"..mod]:hide()
       ui.fAssignTargetButton("g"..mod, nil)
     else
-      ui.group[i].name = string.gsub(ui.group[i].name, "(\$c%d+)", "")
-      ui.group[i].name = ui.fRemoveArticle(ui.group[i].name)
       --
       GUI.Group.Main["g"..mod]:resize(w - distance, h - distance);
       GUI.Group.Main["g"..mod]:move(distance + (c-1)*w, distance + (r-1)*h)
       --
+      local nameShowed = string.gsub(ui.group[i].name, "(\$c%d+)", "")
+      nameShowed = ui.fRemoveArticle(nameShowed)
+
       if (ui.group[i].isLeader) then
-        GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;".."👑 "..ansi2string(ui.group[i].name.." 👑"))
+        GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;".."👑 "..ansi2string(nameShowed.." 👑"))
       else
-        GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(ui.group[i].name))
+        GUI.Group.Main["g"..mod].Member:echo("&lt;center&gt;"..ansi2string(nameShowed))
       end
       --
       GUI.Group.Main["g"..mod].Health:setValue(math.max(0, ui.group[i].hp), ui.group[i].maxhp, "&lt;p align=right&gt;"..ui.group[i].hp.."/"..ui.group[i].maxhp.."  &lt;/p&gt;")
@@ -6856,7 +6833,7 @@ function ui.fUpdateGroup()
       GUI.Group.Main["g"..mod].inRoomName:echo(ui.group[i].inRoomName)
       --
       GUI.Group.Main["g"..mod]:show();
-      ui.fAssignTargetButton("g"..mod, ui.group[i].name)
+      ui.fAssignTargetButton("g"..mod, nameShowed)
       --
       c = c + 1
       if (c &gt; tot_c) then
@@ -7539,9 +7516,11 @@ ui.help.color = [[
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
 --
-ui.help.endowment = [[&lt;title&gt;Widget Endowment&lt;/title&gt;Il widget Endowment visualizza i dati relativi all'equipaggiamento e si aggiorna manualmente con il comando &lt;command&gt;equipment&lt;/command&gt;. Ogni elemento del widget rappresenta un pezzo dell'equipaggiamento indossato ed è composto dal suo nome (al centro), il numero dello slot che occupa (in alto a sinistra), il nome dello slot che occupa (i basso a sinistra, abbreviato a 3 lettere), il suo livello di potenza (in alto a destra) e la sua percentuale di usura (in basso a destra). La percentuale di usura determina anche il colore del bordo dell'elemento (100%=grigio poi &lt;green&gt;verde&lt;r&gt;, &lt;yellow&gt;giallo&lt;r&gt;, &lt;orange&gt;arancione&lt;r&gt;, &lt;red&gt;rosso&lt;r&gt;, &lt;brown&gt;marrone&lt;r&gt;).
+ui.help.endowment = [[&lt;title&gt;Widget Endowment&lt;/title&gt;Il widget Endowment visualizza i dati relativi all'equipaggiamento e si aggiorna (via trigger) con il comando &lt;command&gt;equipment&lt;/command&gt;. Ogni elemento del widget rappresenta un pezzo dell'equipaggiamento indossato ed è composto dal suo nome (al centro), il numero dello slot che occupa (in alto a sinistra), il nome dello slot che occupa (i basso a sinistra, abbreviato a 3 lettere), il suo livello di potenza (in alto a destra) e la sua percentuale di usura (in basso a destra).
 
-Rimanendo con il cursore del mouse su un elemento è possibile visualizzare un tooltip con le caratteristiche principali del pezzo selezionato. Queste informazioni vengono ricaricate automaticamente con il comando &lt;command&gt;equipment statistic&lt;/command&gt;. Inoltre il tooltip visualizzarà nella parte inferiore anche le statistiche dell'ultimo oggetto identificato, per permettere un paragone veloce e diretto.
+Tramite il pulsante SLOT/NOME posto sulla barra del titolo del widget è possibile passare dalla visualizzazione del nome alla visualizzazione dello slot, e viceversa. Alla pressione del pulsante vengono inviati al mud i comandi &lt;command&gt;equipment&lt;/command&gt; e &lt;command&gt;equipment statistic&lt;/command&gt; in modo da aggiornare automaticamente la visualizzazione del widget. 
+
+Rimanendo con il cursore del mouse su un elemento è possibile visualizzare un tooltip con le caratteristiche principali del pezzo selezionato. Queste informazioni vengono ricaricate automaticamente con il comando &lt;command&gt;equipment statistic&lt;/command&gt;. Inoltre nella parte inferiore del tooltip verranno visualizzate anche le statistiche dell'ultimo oggetto identificato, per permettere un paragone veloce e diretto.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -7715,7 +7694,7 @@ Il widget è composto da un quadrato in formato ASCII che rappresenta la stanza 
 
 A fianco al quadrato e riportata una legenda della stanza dalla quale è possibile visualizzare il nome e l'ID della stanza attuale e il nome delle stanze a cui fanno riferimento le uscite. Da questa leggenda è possibile spostarsi ad una stanza adiacente clickando sul nome della destinazione.
 
-Sotto il quadrato vengono riportate altre informazioni relative alla stanza tra cui le uscite speciali o portali (se presenti) ai quali si può entrare clickandoci sopra, l'elendo degli oggetti, dei giocatori e dei MOB (in questo ordine) presenti in stanza.
+Sotto il quadrato vengono riportate altre informazioni relative alla stanza tra cui le uscite speciali o portali (nei quali si può entrare clickando sopra il nome), l'elendo degli &lt;i&gt;oggetti&lt;r&gt; (&lt;DimGrey&gt;O&lt;r&gt;), dei componenti del gruppo (&lt;green&gt;G&lt;r&gt;), dei giocatori (&lt;yellow&gt;P&lt;r&gt;) e dei &lt;b&gt;MOB&lt;r&gt; (&lt;red&gt;B&lt;r&gt;), in questo ordine.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -8362,7 +8341,6 @@ local terrain_types = {
   -- Used to make rooms of different terrain types have different colors
   -- add a new entry for each terrain type, and set the color with RGB values
   -- each id value must be unique, terrain types not listed here will use mapper default color
-  -- not used if you define these in a map XML file
   ["Acque Basse"]      = {id =  18, r =   0, g = 153, b = 153 },
   ["Acque Profonde"]   = {id =  19, r =   0, g =   0, b = 153 },
   ["Costa"]            = {id =  20, r = 153, g = 153, b =   0 },
@@ -8407,15 +8385,6 @@ local terrain_types = {
   ["Imbarcazione"]     = {id =  59, r = 153, g = 153, b =   0 },
 }
 --
-local move_vectors = {
-  --         X   Y   Z
-  north = {  0,  1,  0},
-  south = {  0, -1,  0},
-  east  = {  1,  0,  0},
-  west  = { -1,  0,  0},
-  up    = {  1,  1,  0},
-  down  = { -1, -1,  0}
-}
 function ui.fSearchRoom(room_or_id)
   local result = {}
   local s = searchRoom(room_or_id)
@@ -8456,105 +8425,6 @@ function ui.fShowRooms(rooms)
     echo("\n")
     ui.fEchon(iColor["text"].."Trovate &lt;white&gt;"..counter..iColor["text"].." stanze");
   end
-end
---
--- Create a room and try to place it in a valid position
-local function fUpdateRoom(room, prev)
-  local coords = { 0, 0, 0 }
-  local areas = getAreaTable()
-  local areaID = areas[string.trim(room.area)]
-  --
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] fUpdateRoom(..)")
-  --
-  -- Create Room
-  addRoom(room.id)
-  --
-  -- Set room name (remove colors)
-  local name = string.gsub(room.name, "$C", "$c")
-  name = string.gsub(name, "$c%d%d%d%d", "")
-	setRoomName(room.id, name)
-  --
-  if (not areaID) then
-    -- Create Area if not exist
-    areaID = addAreaName(room.area)
-  end
-  --
-  -- Positions
-  if (ui.map[room.id] ~= nil ) then
-    --
-    -- Get room positions among pre-stored positions
-    coords = { 
-      ui.map[room.id].x or 0,
-      ui.map[room.id].y or 0,
-      ui.map[room.id].z or 0
-    }
-  --
-  elseif (room.area == prev.area) then
-    --
-    -- Determinate room position (if last room is from same area)
-    coords = {getRoomCoordinates(prev.id)}
-    local shift = {0,0,0}
-    for k,v in pairs(room.exits) do
-      if v == prev.id and move_vectors[k] then
-        --
-        -- C'è almeno un collegamento con la staza di provenienza a "..k.."... ricalcolo shift
-        for n = 1,3 do
-          shift[n] = shift[n] + move_vectors[k][n]
-        end
-      end
-    end
-    --
-    -- Shift = 0 0 0
-    if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
-      --
-      -- Aggiungo direzione di provenienza = ui.origins
-      if (#ui.origins &gt; 0) then
-        for _, dir in pairs(ui.origins) do
-          if (exitValid[dir]) then
-            shift[1] = shift[1] + move_vectors[dir][1]
-            shift[2] = shift[2] + move_vectors[dir][2]
-            shift[3] = shift[3] + move_vectors[dir][3]
-          end
-        end
-      --else
-        -- Non c'è direzione di provenienza. Possibile teleport.
-        --setRoomChar(prev.id, "T")     
-      end
-    end
-    --
-    -- Again Shift = 0 0 0
-    if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
-      --
-      -- Force top-right position
-      shift = {-1,-1,0} 
-    end
-    --
-    coords[1] = coords[1] - shift[1]
-    coords[2] = coords[2] - shift[2]
-    coords[3] = coords[3] - shift[3]
-    --
-    -- map stretching
-    local overlap = getRoomsByPosition(areaID,coords[1],coords[2],coords[3])
-    if not table.is_empty(overlap) then
-      local rooms = getAreaRooms(areaID)
-      local rcoords
-      for _,id in ipairs(rooms) do
-        rcoords = {getRoomCoordinates(id)}
-        for n = 1,3 do
-          if shift[n] ~= 0 and (rcoords[n] - coords[n]) * shift[n] &lt;= 0 then
-            rcoords[n] = rcoords[n] - shift[n]
-          end
-        end
-        setRoomCoordinates(id,rcoords[1],rcoords[2],rcoords[3])
-      end
-    end
-  end
-  --
-  -- Associate area to room
-  setRoomArea(room.id, areaID)
-  --
-  -- Set coordinates
-  setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
 end
 --
 -- Returns colored text based on door type
@@ -8751,6 +8621,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           end
           
           outString = outString..iColor["text"].."Note:\n"
+          if (userData['u']) then
+            outString = outString.."  "..readUserData(userData, 'u').."\n"
+          end
           if (userData['n']) then
             outString = outString.."  "..readUserData(userData, 'n').."\n"
           end
@@ -8762,9 +8635,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           end
           if (userData['w']) then
             outString = outString.."  "..readUserData(userData, 'w').."\n"
-          end
-          if (userData['u']) then
-            outString = outString.."  "..readUserData(userData, 'u').."\n"
           end
           if (userData['d']) then
             outString = outString.."  "..readUserData(userData, 'd').."\n"
@@ -8785,6 +8655,52 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
     return string.gsub(outString, "\&lt;%w+\&gt;", "")
   else
     cecho(ui.fConvertColorString(outString.."\n"))
+  end
+end
+--
+-- Highlight a single room
+function ui.fHighlightRoom(roomId)
+  local specialExits = getSpecialExits(roomId)
+  local actualRoomId = tonumber(ui.room.id or "-1")
+  --
+  roomId = tonumber(roomId)
+  --
+  local memberRoom = {}
+  --
+  if (gmcp) and (gmcp.char) and (gmcp.char.group) then
+    for member in pairs(gmcp.char.group) do
+      if (gmcp.char.group[member].inRoomVNum) then
+        local inRoomVNum = gmcp.char.group[member].inRoomVNum
+        inRoomVNum = tonumber(inRoomVNum)
+        if (inRoomVNum ~= actualRoomId) then        
+          table.insert(memberRoom, gmcp.char.group[member].inRoomVNum)
+        end
+      end
+    end
+  end  
+  --
+  if (table.contains(memberRoom, roomId)) then
+    --
+    -- Highlight a member group in other room...
+    highlightRoom(roomId, 0,255,0, 0,255,0, 1.5, 128, 128)
+  --
+  elseif (table.contains(ui.speedwalk.path, roomId)) then
+    --
+    -- Highlight speedWalk path...
+    highlightRoom(roomId, 255,255,255, 255,255,255, 1.5, 128, 128)
+  else
+    --
+    -- Unhighlight rooms
+    unHighlightRoom(roomId)
+  end
+end
+--
+-- Highlight Area
+function ui.fHighlightArea(areaID)
+  local rooms = getAreaRooms(areaID)
+  --
+  for _,id in ipairs(rooms) do
+    ui.fHighlightRoom(id)
   end
 end
 --
@@ -8833,52 +8749,6 @@ function ui.fSpeedWalk(path, dirs)
   -- Time out
   else
     ui.fEchon("Speedwalk interrotto.")
-  end
-end
---
--- Highlight a single room
-function ui.fHighlightRoom(roomId)
-  local specialExits = getSpecialExits(roomId)
-  local actualRoomId = tonumber(ui.room.id or "-1")
-  --
-  roomId = tonumber(roomId)
-  --
-  local memberRoom = {}
-  --
-  if (gmcp) and (gmcp.char) and (gmcp.char.group) then
-    for member in pairs(gmcp.char.group) do
-      if (gmcp.char.group[member].inRoomVNum) then
-        local inRoomVNum = gmcp.char.group[member].inRoomVNum
-        inRoomVNum = tonumber(inRoomVNum)
-        if (inRoomVNum ~= actualRoomId) then        
-          table.insert(memberRoom, gmcp.char.group[member].inRoomVNum)
-        end
-      end
-    end
-  end  
-  --
-  if (table.contains(memberRoom, roomId)) then
-    --
-    -- Highlight a member group in other room...
-    highlightRoom(roomId, 0,255,0, 0,255,0, 1.5, 128, 128)
-  --
-  elseif (table.contains(ui.speedwalk.path, roomId)) then
-    --
-    -- Highlight speedWalk path...
-    highlightRoom(roomId, 255,255,255, 255,255,255, 1.5, 128, 128)
-  else
-    --
-    -- Unhighlight rooms
-    unHighlightRoom(roomId)
-  end
-end
---
--- Highlight Area
-function ui.fHighlightArea(areaID)
-  local rooms = getAreaRooms(areaID)
-  --
-  for _,id in ipairs(rooms) do
-    ui.fHighlightRoom(id)
   end
 end
 --
@@ -9063,7 +8933,7 @@ end
 function ui.fDrawRoom(areaId, roomId, x, y, entry, maxLevel)
   if (maxLevel ~= nil) then
     if (level &lt; maxLevel) then    
-      ui.fDebug(ui.fAddSpace(""..(level+1)..") ", level+4, 'l'));
+      ui.fDebug(ui.fAddSpace(""..(level+1)..") ", level+4, 'r'));
     else
       return
     end
@@ -9161,6 +9031,112 @@ function ui.fRedrawArea(areaName, expand, maxLevel)
     ui.fDebug('Area non trovata ('..areaName..')')
   end
 end
+--
+-- Create a room and try to place it in a valid position
+local function fUpdateRoom(room, prev)
+  local coords = { 0, 0, 0 }
+  local areas = getAreaTable()
+  local areaID = areas[string.trim(room.area)]
+  local move_vectors = {
+    --         X   Y   Z
+    north = {  0,  1,  0},
+    south = {  0, -1,  0},
+    east  = {  1,  0,  0},
+    west  = { -1,  0,  0},
+    up    = {  1,  1,  0},
+    down  = { -1, -1,  0}
+  }
+  --
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] fUpdateRoom(..)")
+  --
+  -- Create Room
+  addRoom(room.id)
+  --
+  -- Set room name (remove colors)
+  local name = string.gsub(room.name, "$C", "$c")
+  name = string.gsub(name, "$c%d%d%d%d", "")
+	setRoomName(room.id, name)
+  --
+  if (not areaID) then
+    -- Create Area if not exist
+    areaID = addAreaName(room.area)
+  end
+  --
+  -- Positions from file
+  if (ui.map[room.id] ~= nil ) then
+    --
+    -- Get room positions among pre-stored positions
+    coords = { 
+      ui.map[room.id].x or 0,
+      ui.map[room.id].y or 0,
+      ui.map[room.id].z or 0
+    }
+  --
+  elseif (room.area == prev.area) then
+    local shift = { 0, 0, 0 }
+    --
+    -- Determinate room position (if last room is from same area)
+    coords = { getRoomCoordinates(prev.id) }
+    for k,v in pairs(room.exits) do
+      if v == prev.id and move_vectors[k] then
+        --
+        -- C'è almeno un collegamento con la staza di provenienza a "..k.."... ricalcolo shift
+        for n = 1,3 do
+          shift[n] = shift[n] + move_vectors[k][n]
+        end
+      end
+    end
+    --
+    -- Shift = 0 0 0
+    if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
+      --
+      -- Aggiungo direzione di provenienza = ui.origins
+      if (#ui.origins &gt; 0) then
+        for _, dir in pairs(ui.origins) do
+          if (exitValid[dir]) then
+            shift[1] = shift[1] + move_vectors[dir][1]
+            shift[2] = shift[2] + move_vectors[dir][2]
+            shift[3] = shift[3] + move_vectors[dir][3]
+          end
+        end
+      end
+    end
+    --
+    -- Again Shift = 0 0 0
+    if (shift[1] == 0) and (shift[2] == 0) and (shift[3] == 0)then
+      --
+      -- Force top-right position
+      shift = {-1,-1,0} 
+    end
+    --
+    coords[1] = coords[1] - shift[1]
+    coords[2] = coords[2] - shift[2]
+    coords[3] = coords[3] - shift[3]
+    --
+    -- map stretching
+    local overlap = getRoomsByPosition(areaID,coords[1],coords[2],coords[3])
+    if not table.is_empty(overlap) then
+      local rooms = getAreaRooms(areaID)
+      local rcoords
+      for _,id in ipairs(rooms) do
+        rcoords = {getRoomCoordinates(id)}
+        for n = 1,3 do
+          if shift[n] ~= 0 and (rcoords[n] - coords[n]) * shift[n] &lt;= 0 then
+            rcoords[n] = rcoords[n] - shift[n]
+          end
+        end
+        setRoomCoordinates(id,rcoords[1],rcoords[2],rcoords[3])
+      end
+    end
+  end
+  --
+  -- Associate area to room
+  setRoomArea(room.id, areaID)
+  --
+  -- Set coordinates
+  setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
+end
+--
 --
 function ui.fUpdateMapper()
   --
@@ -9966,6 +9942,30 @@ function ui.fNextTrack(id)
   return -1;
 end
 --
+local function getExitNumber(exits, number)
+  local n = 0
+  local exitOrder = { [1] = "up", [2] = "north", [3] = "west", [4] = "east", [5] = "south", [6] = "down" }
+  --
+  for i=1, 6 do
+    if (exits[exitOrder[i]] ~= nil) then
+      n = n + 1;
+    end
+    --
+    if (n == number) then
+      local ret
+      if (exits[exitOrder[i]] == ui.fNextTrack(ui.room.id)) then
+        ret = "&lt;white&gt;["..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.."&lt;white&gt;]&lt;r&gt;"
+      else
+        ret = " "..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.." &lt;r&gt;"
+      end
+      ret = ret..ui.fConvertColorString(getRoomName(exits[exitOrder[i]]) or "???")
+      
+      return ret
+    end
+  end
+  return "";
+end
+--
 function ui.fUpdateRoom()
   local token
   --
@@ -10106,79 +10106,45 @@ function ui.fUpdateRoom()
     else
       --
       -- Mapper
-      local exitsAsString = {}
-      local exitsDestinationId = {}
-      local exitsCommand = {}
-      local idx = 1
+      local showId = false;
+      local whiteSpace = ""
+      local fw, fh = calcFontSize("GUI.Room.Main.Console")
+      local maxChar = math.floor(GUI.Room.Main.Console:get_width() / fw)
+      local exitId = {}
+      local str = ""
       --
-      -- Prepare Line 1: End of path
-      if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        GUI.Room.Main.Console:cecho("&lt;white&gt;[⨂]&lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;\n");
+      if (showId) then
+        whiteSpace = "     "
+        exitId = { 
+          u = ui.fAddSpace(""..(   ui.room.exits["up"] or whiteSpace), 5, 'l'), 
+          n = ui.fAddSpace(""..(ui.room.exits["north"] or whiteSpace), 5, 'c'),
+          w = ui.fAddSpace(""..( ui.room.exits["west"] or whiteSpace), 5, 'r'),
+          e = ui.fAddSpace(""..( ui.room.exits["east"] or whiteSpace), 5, 'l'),
+          s = ui.fAddSpace(""..(ui.room.exits["south"] or whiteSpace), 5, 'c'),
+          d = ui.fAddSpace(""..( ui.room.exits["down"] or whiteSpace), 5, 'r') }
       else
-        GUI.Room.Main.Console:cecho("&lt;white&gt; ⨂ &lt;cyan&gt;"..ui.room.name.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;\n");
+        whiteSpace = ""
+        exitId = { u = whiteSpace, n = whiteSpace, w = whiteSpace, e = whiteSpace, s = whiteSpace, d = whiteSpace }
       end
       --
-      -- Prepare other line
-      exitsAsString[idx] = ""
-      idx = idx + 1
-      for k,v in pairs(ui.room.exits) do
-        exitsDestinationId[k] = ui.validExit[k].color..ui.fAddSpace(""..v, 5).."&lt;r&gt;"
-        -- Next step in path
-        if (ui.fNextTrack(ui.room.id) == v) then
-          exitsAsString[idx] = "&lt;white&gt;["..ui.validExit[k].color..ui.validExit[k].token.."&lt;white&gt;]&lt;r&gt;"..ui.fConvertColorString(getRoomName(v) or "???")
-        else
-          exitsAsString[idx] = " "..ui.validExit[k].color..ui.validExit[k].token.."&lt;r&gt; "..ui.fConvertColorString(getRoomName(v) or "???")
-        end
-        -- Exits command
-        exitsCommand[idx] = ui.validExit[k].long
-        idx = idx + 1
+      if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
+        str = "&lt;white&gt;[⨂]&lt;r&gt;".."&lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
+      else
+        str = "&lt;white&gt; ⨂ &lt;r&gt;".."&lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
       end
       --
-      -- Line 1
-      GUI.Room.Main.Console:cecho("        "..(exitsDestinationId["north"] or "     ").."   "..(exitsDestinationId["up"] or "     ").."   ")
-      GUI.Room.Main.Console:cecho((exitsAsString[1] or "").."\n")    
-      --
-      -- Line 2
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").."         ")
-      if (exitsAsString[2]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[2], [[expandAlias("]]..exitsCommand[2]..[[")]], "Vai a "..exitsCommand[2], true)
+      if (showId) then
+        str = str.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;";
       end
-      GUI.Room.Main.Console:cecho("\n")
+      GUI.Room.Main.Console:cecho(str.."\n")          
       --
-      -- Line 3
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fDrawRoomLine(1).."│         ")
-      if (exitsAsString[3]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[3], [[expandAlias("]]..exitsCommand[3]..[[")]], "Vai a "..exitsCommand[3], true)
-      end
-      GUI.Room.Main.Console:cecho("\n")
-      --
-      -- Line 4
-      GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["west"] or "     ").." "..ui.fGetToken(ui.room.exits, "west")..ui.fDrawRoomLine(2)..ui.fGetToken(ui.room.exits, "east").." "..(exitsDestinationId["east"] or "     ").."   ")
-      if (exitsAsString[4]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[4], [[expandAlias("]]..exitsCommand[4]..[[")]], "Vai a "..exitsCommand[4], true)
-      end
-      GUI.Room.Main.Console:cecho("\n")
-      --
-      -- Line 5
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      │"..ui.fDrawRoomLine(3).."│         ")
-      if (exitsAsString[5]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[5], [[expandAlias("]]..exitsCommand[5]..[[")]], "Vai a "..exitsCommand[5], true)
-      end
-      GUI.Room.Main.Console:cecho("\n")
-      --
-      -- Line 6
-      GUI.Room.Main.Console:cecho("&lt;r&gt;      "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘         ")
-      if (exitsAsString[6]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[6], [[expandAlias("]]..exitsCommand[6]..[[")]], "Vai a "..exitsCommand[6], true)
-      end
-      GUI.Room.Main.Console:cecho("\n")
-      --
-      -- Line 7
-      GUI.Room.Main.Console:cecho("&lt;r&gt;"..(exitsDestinationId["down"] or "     ").."   "..(exitsDestinationId["south"] or "     ").."           ")
-      if (exitsAsString[7]) then
-        GUI.Room.Main.Console:cechoLink(exitsAsString[7], [[expandAlias("]]..exitsCommand[7]..[[")]], "Vai a "..exitsCommand[7], true)
-      end
-      GUI.Room.Main.Console:cecho("\n\n")
+      GUI.Room.Main.Console:cecho(" "..whiteSpace.."   "..exitId["n"].."   "..exitId["u"].."\n")          
+      GUI.Room.Main.Console:cecho(" "..whiteSpace.." ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").." "..whiteSpace.." "..getExitNumber(ui.room.exits, 1).."\n");
+      GUI.Room.Main.Console:cecho(" "..whiteSpace.." │"..ui.fDrawRoomLine(1).."│ "..whiteSpace.." "..getExitNumber(ui.room.exits, 2).."\n");
+      GUI.Room.Main.Console:cecho(" "..exitId["w"].." "..ui.fGetToken(ui.room.exits, "west")..ui.fDrawRoomLine(2)..ui.fGetToken(ui.room.exits, "east").." "..exitId["e"].." "..getExitNumber(ui.room.exits, 3).."\n");
+      GUI.Room.Main.Console:cecho(" "..whiteSpace.." │"..ui.fDrawRoomLine(3).."│ "..whiteSpace.." "..getExitNumber(ui.room.exits, 4).."\n");
+      GUI.Room.Main.Console:cecho(" "..whiteSpace.." "..ui.fGetToken(ui.room.exits, "down").."───"..ui.fGetToken(ui.room.exits, "south").."───┘ "..whiteSpace.." "..getExitNumber(ui.room.exits, 5).."\n");
+      GUI.Room.Main.Console:cecho(" "..exitId["d"].."   "..exitId["s"].."         "..getExitNumber(ui.room.exits, 6).."\n");
       --
       GUI.Mapper.Main.Mapper:show();
       GUI.Mapper.Main.Overland:hide();
@@ -10212,32 +10178,82 @@ function ui.fUpdateRoom()
     -- Objects
     if (table.size(ui.room.objects) &gt; 0) then
       for _, object in pairs(ui.room.objects) do
-        GUI.Room.Main.Console:cecho("&lt;green&gt;O&lt;r&gt; "..
-                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
-                                    "\n")        
+        if (object.counter == 1) then
+          GUI.Room.Main.Console:cecho("&lt;DimGrey&gt;O&lt;r&gt; "..
+                                      "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
+                                      "\n")
+        else
+          GUI.Room.Main.Console:cecho("&lt;DimGrey&gt;O&lt;r&gt; "..
+                                      "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                      "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
+                                      "\n")
+        end
+      end
+    end
+    --
+    -- Group
+    if (table.size(ui.group) &gt; 0) then
+      for _, member in pairs(ui.group) do
+        -- between Charapter
+        if (table.size(ui.room.players) &gt; 0) then
+          for _, player in pairs(ui.room.players) do
+            if (member.name == player.desc) then
+              GUI.Room.Main.Console:cecho("&lt;green&gt;G&lt;r&gt; "..
+                                          ui.fConvertColorString(player.desc)..
+                                          " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
+              player.counter = player.counter - 1
+              break
+            end
+          end
+        end
+        -- between mobs
+        if (table.size(ui.room.mobs) &gt; 0) then
+          for _, mob in pairs(ui.room.mobs) do
+            if (member.name == mob.desc) then
+              GUI.Room.Main.Console:cecho("&lt;green&gt;G&lt;r&gt; "..
+                                          ui.fConvertColorString(mob.desc)..
+                                          " [&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
+              mob.counter = mob.counter - 1
+              break
+            end
+          end
+        end
       end
     end
     --
     -- Charapter
     if (table.size(ui.room.players) &gt; 0) then
       for _, player in pairs(ui.room.players) do
-        GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
-                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    ui.fConvertColorString(player.desc).."&lt;r&gt; "..
-                                    "[&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;] "..
-                                    "\n")
+        if (player.counter &gt; 0) then
+          if (player.counter == 1) then
+            GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
+                                        ui.fConvertColorString(player.desc)..
+                                        " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
+          else
+            GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
+                                        "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                        ui.fConvertColorString(player.desc)..
+                                        " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
+          end
+        end
       end
     end  
     --
     -- Mobs
     if (table.size(ui.room.mobs) &gt; 0) then
       for _, mob in pairs(ui.room.mobs) do
-        GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
-                                    "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                    "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
-                                    "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;] "..
-                                    "\n")
+        if (mob.counter &gt; 0) then
+          if (mob.counter == 1) then
+            GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
+                                        "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
+                                        "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
+          else
+            GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
+                                        "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
+                                        "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
+                                        "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
+          end
+        end
       end
     end
   end
@@ -10492,7 +10508,9 @@ function ui.fClickTarget(sender, data)
     elseif (data.button == "RightButton") and (type == "g") then
       local clickedMember = ui.targets[sender].target
       for _, member in pairs(ui.group) do
-        if (member.name == clickedMember) then
+        local name = string.gsub(member.name, "(\$c%d+)", "")
+        name = ui.fRemoveArticle(name)
+        if (name == clickedMember) then
           if (member.inRoomVNum) then
             expandAlias("uisearch "..member.inRoomVNum)
           end
@@ -14253,7 +14271,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>West</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
