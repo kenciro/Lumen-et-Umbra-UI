@@ -2160,7 +2160,8 @@ else
 end
 --
 -- In any case update Area
-ui.fHighlightArea(ui.room.areaId)</script>
+ui.fHighlightArea(ui.room.areaId)
+ui.fUpdateRoom()</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uig(?:o)?)(?:\s+(.*))?$</regex>
@@ -2656,7 +2657,8 @@ else
 end
 --
 -- In any case update Area
-ui.fHighlightArea(ui.room.areaId)</script>
+ui.fHighlightArea(ui.room.areaId)
+ui.fUpdateRoom()</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^(?i)(?:uit(?:r(?:a(?:c(?:k)?)?)?)?)(?:\s+(.*))?(?:\s+(.*))?$</regex>
@@ -9830,15 +9832,6 @@ end</script>
   local isPlayerPos = (ui.player.roomPos == position)
   local isPlayersPos = false
   local isMobPos = false 
-  local icon = ""
-  --
-  -- Player icon or track direction
-  if (ui.track == nil) or (ui.track == "") then
-    icon = "⨂"
-  else
-    icon = ui.validExit[ui.track].token
-  end
-  --
   -- Players
   for _, player in pairs(ui.room.players) do
     if (player.roomPos == position) then
@@ -9853,25 +9846,21 @@ end</script>
     end
   end
   --
-  --      
+  --
   if (isPlayerPos) and (isPlayersPos) and (isMobPos) then -- Player, others players anc mob(s)
-    return "&lt;brown&gt;"..icon.."&lt;r&gt;"
+    return "&lt;brown&gt;◉&lt;r&gt;"
   elseif (isPlayerPos) and (isPlayersPos) then            -- Player and others players
-    return "&lt;gold&gt;"..icon.."&lt;r&gt;"
+    return "&lt;orange&gt;○&lt;r&gt;"
   elseif (isPlayerPos) and (isMobPos) then                -- Player anc mob(s)
-    return "&lt;orange&gt;"..icon.."&lt;r&gt;"
+    return "&lt;orange&gt;◉&lt;orange&gt;"
   elseif (isPlayersPos) and (isMobPos) then               -- others players anc mob(s)
-    return "&lt;orange&gt;M&lt;r&gt;"
+    return "&lt;orange&gt;⬤&lt;r&gt;"
   elseif (isMobPos) then                                  -- Mob(s) only
-    return "&lt;red&gt;M&lt;r&gt;"
+    return "&lt;red&gt;⬤&lt;r&gt;"
   elseif (isPlayersPos) then                              -- Others players only
-    return "&lt;yellow&gt;P&lt;r&gt;"
+    return "&lt;yellow&gt;○&lt;r&gt;"
   elseif (isPlayerPos) then                               -- Player only
-    if (ui.track == nil) or (ui.track == "") then
-      return "&lt;white&gt;"..icon.."&lt;r&gt;"
-    else
-      return ui.validExit[ui.track].color..icon.."&lt;r&gt;"
-    end
+    return "&lt;white&gt;○&lt;r&gt;"
   else
     return "&lt;DimGrey&gt;"..position.."&lt;r&gt;"                   -- Others ??
   end
@@ -9954,11 +9943,11 @@ local function getExitNumber(exits, number)
     if (n == number) then
       local ret
       if (exits[exitOrder[i]] == ui.fNextTrack(ui.room.id)) then
-        ret = "&lt;white&gt;["..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.."&lt;white&gt;]&lt;r&gt;"
+        ret = "&lt;b&gt;&lt;white&gt;("..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.."&lt;white&gt;) "
       else
-        ret = " "..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.." &lt;r&gt;"
+        ret = " "..ui.validExit[exitOrder[i]].color..ui.validExit[exitOrder[i]].token.."&lt;r&gt; "
       end
-      ret = ret..ui.fConvertColorString(getRoomName(exits[exitOrder[i]]) or "???")
+      ret = ret..ui.fConvertColorString(getRoomName(exits[exitOrder[i]]) or "???").."&lt;r&gt;"
       
       return ret
     end
@@ -10127,10 +10116,16 @@ function ui.fUpdateRoom()
         exitId = { u = whiteSpace, n = whiteSpace, w = whiteSpace, e = whiteSpace, s = whiteSpace, d = whiteSpace }
       end
       --
+      -- Player icon or track direction
+      local icon = "○"
+      if (ui.track) and (ui.track ~= "") then
+        icon = ui.validExit[ui.track].token
+      end
+      --
       if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        str = "&lt;white&gt;[⨂]&lt;r&gt;".."&lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
+        str = "&lt;b&gt;&lt;white&gt;("..icon..") &lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
       else
-        str = "&lt;white&gt; ⨂ &lt;r&gt;".."&lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
+        str = "&lt;white&gt;"..icon.." &lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
       end
       --
       if (showId) then
@@ -10156,11 +10151,12 @@ function ui.fUpdateRoom()
         otherExit = string.gsub(otherExit, "(%a)([%w_']*)", ui.fTitleCase)
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == idOtherExit) then
-          GUI.Room.Main.Console:cechoLink("&lt;white&gt;[&lt;orange&gt;▷&lt;white&gt;]&lt;orange&gt;"..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cechoLink("&lt;b&gt;&lt;white&gt;(&lt;r&gt;&lt;orange&gt;⦽&lt;b&gt;&lt;white&gt;)&lt;orange&gt; "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cecho(" &lt;b&gt;"..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."&lt;r&gt;\n")
         else
-          GUI.Room.Main.Console:cechoLink("&lt;orange&gt; ▷ "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cechoLink("&lt;orange&gt;⦽ "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cecho(" "..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."\n")
         end
-        GUI.Room.Main.Console:cecho(" "..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."\n")
       end
       GUI.Room.Main.Console:echo("\n")
     end
