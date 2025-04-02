@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>383</borderRightWidth>
+			<borderLeftWidth>332</borderLeftWidth>
+			<borderRightWidth>365</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -9724,7 +9724,7 @@ function ui.fUpdatePlayer()
     local hpPerc = math.floor(100 * ui.player.hp / ui.player.maxhp); 
     --
     hpDif = ui.player.hp - ui.previous.player.hp
-    if (hpPerc &lt;= 40) then
+    if (hpPerc &lt;= 40) and (ui.player.hp &lt; ui.previous.player.hp) then
       playSoundFile(ui.files.sounds.path..[[hurt.wav]], 10)
     end
     --
@@ -9745,8 +9745,7 @@ function ui.fUpdatePlayer()
   -- Mana
   ui.player.mana = tonumber(ui.player.mana)
   ui.player.maxmana = tonumber(ui.player.maxmana)
-  if (ui.player.mana ~= ui.previous.player.mana) or
-     (ui.player.maxmana  ~= ui.previous.player.maxmana) then
+  if (ui.player.mana ~= ui.previous.player.mana) or (ui.player.maxmana ~= ui.previous.player.maxmana) then
     local manaPerc = math.floor(100 * ui.player.mana / ui.player.maxmana); 
     --
     if (ui.player.mana &lt; ui.previous.player.mana) then
@@ -9847,20 +9846,20 @@ end</script>
   end
   --
   --
-  if (isPlayerPos) and (isPlayersPos) and (isMobPos) then -- Player, others players anc mob(s)
-    return "&lt;brown&gt;◉&lt;r&gt;"
-  elseif (isPlayerPos) and (isPlayersPos) then            -- Player and others players
-    return "&lt;orange&gt;○&lt;r&gt;"
+  if (isPlayerPos) and (isMobPos) and (isPlayersPos) then -- Player, others players anc mob(s)
+    return "&lt;orange&gt;Ⓧ&lt;r&gt;"
   elseif (isPlayerPos) and (isMobPos) then                -- Player anc mob(s)
-    return "&lt;orange&gt;◉&lt;orange&gt;"
-  elseif (isPlayersPos) and (isMobPos) then               -- others players anc mob(s)
-    return "&lt;orange&gt;⬤&lt;r&gt;"
-  elseif (isMobPos) then                                  -- Mob(s) only
-    return "&lt;red&gt;⬤&lt;r&gt;"
-  elseif (isPlayersPos) then                              -- Others players only
-    return "&lt;yellow&gt;○&lt;r&gt;"
+    return "&lt;red&gt;Ⓜ&lt;orange&gt;"
+  elseif (isPlayerPos) and (isPlayersPos) then            -- Player and others players
+    return "&lt;yellow&gt;Ⓟ&lt;r&gt;"
   elseif (isPlayerPos) then                               -- Player only
-    return "&lt;white&gt;○&lt;r&gt;"
+    return "&lt;white&gt;◯&lt;r&gt;"
+  elseif (isPlayersPos) and (isMobPos) then               -- others players anc mob(s)
+    return "&lt;orange&gt;X&lt;r&gt;"
+  elseif (isMobPos) then                                  -- Mob(s) only
+    return "&lt;red&gt;M&lt;r&gt;"
+  elseif (isPlayersPos) then                              -- Others players only
+    return "&lt;yellow&gt;P&lt;r&gt;"
   else
     return "&lt;DimGrey&gt;"..position.."&lt;r&gt;"                   -- Others ??
   end
@@ -10132,6 +10131,7 @@ function ui.fUpdateRoom()
         str = str.." &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;";
       end
       GUI.Room.Main.Console:cecho(str.."\n")          
+      --
       --
       GUI.Room.Main.Console:cecho(" "..whiteSpace.."   "..exitId["n"].."   "..exitId["u"].."\n")          
       GUI.Room.Main.Console:cecho(" "..whiteSpace.." ┌───"..ui.fGetToken(ui.room.exits, "north").."───"..ui.fGetToken(ui.room.exits, "up").." "..whiteSpace.." "..getExitNumber(ui.room.exits, 1).."\n");
