@@ -18,8 +18,8 @@
 			<port>7000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>332</borderLeftWidth>
-			<borderRightWidth>365</borderRightWidth>
+			<borderLeftWidth>315</borderLeftWidth>
+			<borderRightWidth>383</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1398,27 +1398,23 @@ selectString(str, 1)
 replace("")
 --
 name = string.gsub(name, "(%a)([%w_']*)", ui.fTitleCase)
-dir = ui.validExit[dir].short
 --
 if (string.find(str, "arriva da")) or
    (string.find(str, "arriva volando da")) then
-  --if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho("&lt;red&gt;▷ &lt;orange&gt;"..name.."&lt;red&gt; ◁&lt;r&gt;")
-  --else
-  --  cecho("&lt;orange&gt;"..name.." &lt;red&gt;"..ui.validExit[ui.validExit[dir].reverse].token)
-  --end
+  dir = ui.validExit[dir].reverse
+  dir = ui.validExit[dir].token
+  cecho("&lt;red&gt;"..dir.."&lt;r&gt; &lt;orange&gt;"..name.."&lt;r&gt; &lt;red&gt;"..dir.."&lt;r&gt;")
 elseif (string.find(str, "va verso")) or
        (string.find(str, "vola verso")) then
-  local t = ui.validExit[dir].color..ui.validExit[dir].token
-  --if (dir == "w") or (dir == "d") or (dir == "s") then
-    cecho(t.." &lt;ForestGreen&gt;"..name.." "..t.."&lt;r&gt;")
-  --else
-  --  cecho("&lt;ForestGreen&gt;"..name..ui.validExit[dir].color..ui.validExit[dir].token)
-  --end
+  dir = ui.validExit[dir].short
+  dir = ui.validExit[dir].token
+  cecho("&lt;green&gt;"..dir.."&lt;r&gt; &lt;ForestGreen&gt;"..name.." &lt;green&gt;"..dir.."&lt;r&gt;")
 elseif (string.find(str, "si alza")) then
-  cecho("&lt;red&gt;↑↑↑ &lt;orange&gt;"..name.." &lt;red&gt;↑↑↑")
+  dir = "↑↑↑" 
+  cecho("&lt;red&gt;"..dir.."&lt;r&gt; &lt;orange&gt;"..name.." &lt;red&gt;"..dir.."&lt;r&gt;")
 else --if (string.find(str, "appare")) then
-  cecho("&lt;red&gt;*** &lt;orange&gt;"..name.." &lt;red&gt;***")
+  dir = "***" 
+  cecho("&lt;red&gt;"..dir.."&lt;r&gt; &lt;orange&gt;"..name.." &lt;red&gt;"..dir.."&lt;r&gt;")
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -7696,7 +7692,7 @@ Il widget è composto da un quadrato in formato ASCII che rappresenta la stanza 
 
 A fianco al quadrato e riportata una legenda della stanza dalla quale è possibile visualizzare il nome e l'ID della stanza attuale e il nome delle stanze a cui fanno riferimento le uscite. Da questa leggenda è possibile spostarsi ad una stanza adiacente clickando sul nome della destinazione.
 
-Sotto il quadrato vengono riportate altre informazioni relative alla stanza tra cui le uscite speciali o portali (nei quali si può entrare clickando sopra il nome), l'elendo degli &lt;i&gt;oggetti&lt;r&gt; (&lt;DimGrey&gt;O&lt;r&gt;), dei componenti del gruppo (&lt;green&gt;G&lt;r&gt;), dei giocatori (&lt;yellow&gt;P&lt;r&gt;) e dei &lt;b&gt;MOB&lt;r&gt; (&lt;red&gt;B&lt;r&gt;), in questo ordine.
+Sotto il quadrato vengono riportate altre informazioni relative alla stanza tra cui le uscite speciali o portali (nei quali si può entrare clickando sopra il nome), l'elendo degli &lt;i&gt;oggetti&lt;r&gt; (&lt;DimGrey&gt;o&lt;r&gt;), dei componenti del gruppo (&lt;green&gt;g&lt;r&gt;), dei giocatori (&lt;yellow&gt;p&lt;r&gt;) e dei &lt;b&gt;MOB&lt;r&gt; (&lt;red&gt;m&lt;r&gt;), in questo ordine.
 
 Ritorna alla pagina principale dell'&lt;link help&gt;help&lt;/link&gt;.
 ]]
@@ -9819,22 +9815,35 @@ function ui.fUpdatePlayer()
     ui.fDifTimerPlayer(1.5)
   end
   --
-  ui.previous.player = ui.player;
-  ui.previous.fastAffects = ui.fastAffects;
+  ui.previous.player = {}
+  ui.previous.player = table.deepcopy(ui.player);
+  ui.previous.fastAffects = {}
+  ui.previous.fastAffects = table.deepcopy(ui.fastAffects);
 end</script>
 					<eventHandlerList />
 				</Script>
 				<Script isActive="yes" isFolder="no">
 					<name>Room</name>
 					<packageName></packageName>
-					<script>function ui.fDrawRoomPosition(position)
+					<script>local cPo   = "&lt;orange&gt;۩&lt;r&gt;"     -- Portals 
+local cO    = "&lt;DimGrey&gt;o&lt;r&gt;"    -- Objects
+local cM    = "&lt;red&gt;m&lt;r&gt;"        -- Mobs
+local cG    = "&lt;green&gt;g&lt;r&gt;"      -- Groupe member
+local cP    = "&lt;white&gt;◯&lt;r&gt;"      -- Player ●⬤◉◯○◯○◯
+local cOp   = "&lt;yellow&gt;p&lt;r&gt;"     -- Other Players
+local cPOpM = "&lt;orange&gt;ⓧ&lt;r&gt;"    -- Player, Other Players and Mobs 🅧 Ⓧ ⓧ
+local cPM   = "&lt;red&gt;ⓜ&lt;orange&gt;"  -- Player and Mobs 🅜 Ⓜ ⓜ
+local cPOp  = "&lt;yellow&gt;ⓟ&lt;r&gt;"    -- Player and Other Players 🅟 Ⓟ ⓟ
+local cOpM  = "&lt;orange&gt;x&lt;r&gt;"     -- Other PLayers and Mobs
+--
+function ui.fDrawRoomPosition(position)
   local isPlayerPos = (ui.player.roomPos == position)
-  local isPlayersPos = false
+  local isOPlayersPos = false
   local isMobPos = false 
   -- Players
   for _, player in pairs(ui.room.players) do
     if (player.roomPos == position) then
-      isPlayersPos = true
+      isOPlayersPos = true
     end
   end
   --
@@ -9846,20 +9855,20 @@ end</script>
   end
   --
   --
-  if (isPlayerPos) and (isMobPos) and (isPlayersPos) then -- Player, others players anc mob(s)
-    return "&lt;orange&gt;Ⓧ&lt;r&gt;"
+  if (isPlayerPos) and (isMobPos) and (isOPlayersPos) then -- Player, others players anc mob(s)
+    return cPOpM
   elseif (isPlayerPos) and (isMobPos) then                -- Player anc mob(s)
-    return "&lt;red&gt;Ⓜ&lt;orange&gt;"
-  elseif (isPlayerPos) and (isPlayersPos) then            -- Player and others players
-    return "&lt;yellow&gt;Ⓟ&lt;r&gt;"
+    return cPM
+  elseif (isPlayerPos) and (isOPlayersPos) then            -- Player and others players
+    return cPOp
   elseif (isPlayerPos) then                               -- Player only
-    return "&lt;white&gt;◯&lt;r&gt;"
-  elseif (isPlayersPos) and (isMobPos) then               -- others players anc mob(s)
-    return "&lt;orange&gt;X&lt;r&gt;"
+    return cP
+  elseif (isOPlayersPos) and (isMobPos) then               -- others players anc mob(s)
+    return cOpM
   elseif (isMobPos) then                                  -- Mob(s) only
-    return "&lt;red&gt;M&lt;r&gt;"
-  elseif (isPlayersPos) then                              -- Others players only
-    return "&lt;yellow&gt;P&lt;r&gt;"
+    return cM
+  elseif (isOPlayersPos) then                              -- Others players only
+    return cOp
   else
     return "&lt;DimGrey&gt;"..position.."&lt;r&gt;"                   -- Others ??
   end
@@ -10116,15 +10125,15 @@ function ui.fUpdateRoom()
       end
       --
       -- Player icon or track direction
-      local icon = "○"
+      local icon = cP
       if (ui.track) and (ui.track ~= "") then
         icon = ui.validExit[ui.track].token
       end
       --
       if (ui.speedwalk.path[#ui.speedwalk.path] == ui.room.id) then
-        str = "&lt;b&gt;&lt;white&gt;("..icon..") &lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
+        str = "&lt;white&gt;&lt;b&gt;(&lt;r&gt;"..icon.."&lt;white&gt;&lt;b&gt;)&lt;r&gt; &lt;cyan&gt;&lt;b&gt;"..ui.room.name.."&lt;r&gt;";
       else
-        str = "&lt;white&gt;"..icon.." &lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
+        str = "&lt;white&gt;"..icon.."&lt;r&gt; &lt;cyan&gt;"..ui.room.name.."&lt;r&gt;";
       end
       --
       if (showId) then
@@ -10151,10 +10160,12 @@ function ui.fUpdateRoom()
         otherExit = string.gsub(otherExit, "(%a)([%w_']*)", ui.fTitleCase)
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == idOtherExit) then
-          GUI.Room.Main.Console:cechoLink("&lt;b&gt;&lt;white&gt;(&lt;r&gt;&lt;orange&gt;⦽&lt;b&gt;&lt;white&gt;)&lt;orange&gt; "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cechoLink("&lt;b&gt;&lt;white&gt;(&lt;r&gt;"..cPo.."&lt;b&gt;&lt;white&gt;)"..
+                                          " &lt;orange&gt;"..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
           GUI.Room.Main.Console:cecho(" &lt;b&gt;"..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."&lt;r&gt;\n")
         else
-          GUI.Room.Main.Console:cechoLink("&lt;orange&gt;⦽ "..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
+          GUI.Room.Main.Console:cechoLink(cPo..
+                                          " &lt;orange&gt;"..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
           GUI.Room.Main.Console:cecho(" "..ui.fConvertColorString(getRoomName(idOtherExit) or "???").."\n")
         end
       end
@@ -10175,14 +10186,12 @@ function ui.fUpdateRoom()
     if (table.size(ui.room.objects) &gt; 0) then
       for _, object in pairs(ui.room.objects) do
         if (object.counter == 1) then
-          GUI.Room.Main.Console:cecho("&lt;DimGrey&gt;O&lt;r&gt; "..
-                                      "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
-                                      "\n")
+          GUI.Room.Main.Console:cecho(cO..
+                                      " &lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")
         else
-          GUI.Room.Main.Console:cecho("&lt;DimGrey&gt;O&lt;r&gt; "..
-                                      "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                      "&lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt; "..
-                                      "\n")
+          GUI.Room.Main.Console:cecho(cO..
+                                      " &lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt;"..
+                                      " &lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")
         end
       end
     end
@@ -10194,8 +10203,8 @@ function ui.fUpdateRoom()
         if (table.size(ui.room.players) &gt; 0) then
           for _, player in pairs(ui.room.players) do
             if (member.name == player.desc) then
-              GUI.Room.Main.Console:cecho("&lt;green&gt;G&lt;r&gt; "..
-                                          ui.fConvertColorString(player.desc)..
+              GUI.Room.Main.Console:cecho(cG..
+                                          " "..ui.fConvertColorString(player.desc)..
                                           " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
               player.counter = player.counter - 1
               break
@@ -10206,8 +10215,8 @@ function ui.fUpdateRoom()
         if (table.size(ui.room.mobs) &gt; 0) then
           for _, mob in pairs(ui.room.mobs) do
             if (member.name == mob.desc) then
-              GUI.Room.Main.Console:cecho("&lt;green&gt;G&lt;r&gt; "..
-                                          ui.fConvertColorString(mob.desc)..
+              GUI.Room.Main.Console:cecho(cG..
+                                          " "..ui.fConvertColorString(mob.desc)..
                                           " [&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
               mob.counter = mob.counter - 1
               break
@@ -10222,13 +10231,13 @@ function ui.fUpdateRoom()
       for _, player in pairs(ui.room.players) do
         if (player.counter &gt; 0) then
           if (player.counter == 1) then
-            GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
-                                        ui.fConvertColorString(player.desc)..
+            GUI.Room.Main.Console:cecho(cOp..
+                                        " "..ui.fConvertColorString(player.desc)..
                                         " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
           else
-            GUI.Room.Main.Console:cecho("&lt;yellow&gt;P&lt;r&gt; "..
-                                        "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                        ui.fConvertColorString(player.desc)..
+            GUI.Room.Main.Console:cecho(cOp..
+                                        " &lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(player.counter).."&lt;ansiMagenta&gt;]&lt;r&gt;"..
+                                        " "..ui.fConvertColorString(player.desc)..
                                         " [&lt;cyan&gt;Liv&lt;r&gt; &lt;white&gt;"..ui.fdigitNumber(player.level).."&lt;r&gt;]\n")
           end
         end
@@ -10240,14 +10249,14 @@ function ui.fUpdateRoom()
       for _, mob in pairs(ui.room.mobs) do
         if (mob.counter &gt; 0) then
           if (mob.counter == 1) then
-            GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
-                                        "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
-                                        "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
+            GUI.Room.Main.Console:cecho(cM..
+                                        " &lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt;"..
+                                        " [&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
           else
-            GUI.Room.Main.Console:cecho("&lt;red&gt;M&lt;r&gt; "..
-                                        "&lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt; "..
-                                        "&lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt; "..
-                                        "[&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
+            GUI.Room.Main.Console:cecho(cM..
+                                        " &lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(mob.counter).."&lt;ansiMagenta&gt;]&lt;r&gt;"..
+                                        " &lt;b&gt;"..ui.fConvertColorString(mob.desc).."&lt;r&gt;"..
+                                        " [&lt;cyan&gt;Liv&lt;r&gt; &lt;"..ui.fLevelColor(mob.level, ui.player.level).."&gt;"..ui.fdigitNumber(mob.level).."&lt;r&gt;]\n")
           end
         end
       end
@@ -14267,7 +14276,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>South</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
