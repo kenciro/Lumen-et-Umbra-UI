@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="'&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU Prova</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,6 +72,7 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
@@ -339,7 +340,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -414,7 +415,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -6593,6 +6594,40 @@ function ui.fFolderExists(folder)
   lfs.chdir(currentdir)
   --
   return ret
+end
+--
+function ui.updateAllWidgets()
+  --
+  -- Update Target Buttons
+  ui.fUpdateAllTargetButtons()
+  --
+  --  Opponent and Groups are also targets. Widgets needed before updating
+  ui.fUpdateOpponent()
+  ui.fUpdateGroup()
+  --
+  -- Chat widget
+  ui.fUpdateChat()
+  --
+  -- Player widget
+  ui.fUpdatePlayer()
+  --
+  -- Alias Button widget
+  ui.fUpdateAliasButton()
+  --
+  -- Affects widget
+  ui.fUpdateAffects()
+  --
+  -- Map/Compass widget
+  ui.fUpdateRoom()
+  --
+  -- Cooldowns
+  ui.fUpdateCooldowns()
+  --
+  -- Endowment widget
+  ui.fUpdateEndowment()
+  --
+  -- Help widget
+  GUI.Help:hide()
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -8029,7 +8064,7 @@ end</script>
   ui.highlights = {}
   -- 
   -- Map coordinates
-  ui.map = {}
+  ui.map = ui.map or {}
   --
   -- Opponent
   ui.opponent = {}
@@ -8068,6 +8103,9 @@ end</script>
   ui.variables = ui.variables or {}
   ui.fRemoveAllVariables()
   ui.variables = {}
+  --
+  --  Tracker
+  ui.track = ""
   --
   -- GMCP
   gmcp = {}
@@ -8702,6 +8740,13 @@ function ui.fHighlightArea(areaID)
   end
 end
 --
+--
+function ui.fMapAreaChanged(event, areaId, areaId_from)
+  areaId = tonumber(areaId);
+  --
+  ui.fHighlightArea(areaId);
+end
+--
 -- Performs speedwalk recursively checking for individual rooms reached
 function ui.fSpeedWalk(path, dirs)
   local roomId = ui.room.id or getPlayerRoom()
@@ -9064,6 +9109,7 @@ local function fUpdateRoom(room, prev)
   if (ui.map[room.id] ~= nil ) then
     --
     -- Get room positions among pre-stored positions
+    ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] fUpdateRoom(..) - Get room positions among pre-stored positions")
     coords = { 
       ui.map[room.id].x or 0,
       ui.map[room.id].y or 0,
@@ -9074,6 +9120,7 @@ local function fUpdateRoom(room, prev)
     local shift = { 0, 0, 0 }
     --
     -- Determinate room position (if last room is from same area)
+    ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] fUpdateRoom(..) - Determinate room position")
     coords = { getRoomCoordinates(prev.id) }
     for k,v in pairs(room.exits) do
       if v == prev.id and move_vectors[k] then
@@ -10274,6 +10321,22 @@ function ui.fGetSettingNameFormattedText(setting)
 end
 --
 --
+function ui.fInitDataDirectory()
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
+  --
+  if (ui.fFolderExists(ui.files.data.path)) then
+    ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; inizializzata correttamente.")
+    return true
+  elseif (lfs.mkdir(ui.files.data.path)) then
+    ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; creata correttamente.")
+    return true
+  else
+    ui.fEchon("&lt;red&gt; - Impossibile caricare la cartella &lt;white&gt;dati&lt;red&gt;.")
+  end
+  return false
+end
+--
+--
 function ui.fInitSettings()
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitSettings()")
   --
@@ -10388,12 +10451,16 @@ function ui.fContainSetting(settings, profile, setting)
   return nil;
 end
 --
-function ui.fLoadLocalSetting()
+function ui.fLoadLocalSetting(setting)
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fLoadLocalSetting()")
   --
-  local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), ui.setting)
+  local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), setting)
   --
   if (path) then
+    --
+    -- Init structures
+    ui.initStructures()
+    ui.setting = setting
     --
     -- Load variables
     ui.fReadFileVariables()
@@ -10406,32 +10473,6 @@ function ui.fLoadLocalSetting()
     --
     -- Load Highlights
     ui.fReadFileHighlights()
-    --
-    -- Update Target Buttons
-    ui.fRefreshTargetButtonsWidget()
-    --
-    --  Opponent and Groups are also targets. Widgets needed before updating
-    ui.fUpdateAllTargetButtons()
-    ui.fUpdateOpponent()
-    ui.fUpdateGroup()
-    --
-    -- Update Chat
-    ui.fUpdateChat()
-    --
-    -- Update Player
-    ui.fUpdatePlayer()
-    --
-    -- Update Alias Button
-    ui.fUpdateAliasButton()
-    --
-    -- Update Affects
-    ui.fUpdateAffects()
-    --
-    -- Update Room
-    ui.fUpdateRoom()
-    --
-    -- Update Endowment
-    ui.fUpdateEndowment()
     --
     return true
   end
@@ -10460,7 +10501,7 @@ function ui.fImportSetting(number)
   local settings = ui.fGetSettingsList()
   number = tonumber(number or 0)
   --
-  if (number &gt; 0) and (number &lt;= #settings) and (settings[number]) and (not settings[number].actual) then
+  if (ui.setting) and (number &gt; 0) and (number &lt;= #settings) and (settings[number]) and (not settings[number].actual) then
     ui.fCopyFile(settings[number].path..ui.files.aliases.name,    ui.files.settings.path..ui.setting.."/"..ui.files.aliases.name)
     ui.fCopyFile(settings[number].path..ui.files.highlights.name, ui.files.settings.path..ui.setting.."/"..ui.files.highlights.name)
     ui.fCopyFile(settings[number].path..ui.files.targets.name,    ui.files.settings.path..ui.setting.."/"..ui.files.targets.name)
@@ -10472,7 +10513,7 @@ function ui.fImportSetting(number)
     ui.fRemoveAllAliases()
     ui.fRemoveAllVariables()
     --
-    ui.fLoadLocalSetting()
+    ui.fLoadLocalSetting(ui.setting)
     --
     return true
   end
@@ -10480,16 +10521,33 @@ function ui.fImportSetting(number)
   return nil
 end
 --
-function ui.fSaveSetting()
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fSaveSetting()")
+function ui.fCreateSetting(setting)
+  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fCreateSetting()")
   --
-  local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), ui.setting)
+  local path = ui.fContainSetting(ui.fGetSettingsList(), getProfileName(), setting)
   --
   if (path ~= nil) then
     ui.fDeleteDirectory(path)
   end
   --
-  if (lfs.mkdir(ui.files.settings.path..ui.setting)) then
+  if (lfs.mkdir(ui.files.settings.path..setting)) then
+    --
+    -- Init structures
+    ui.initStructures()
+    ui.setting = setting
+    --
+    -- Load variables
+    ui.fReadFileVariables()
+    --
+    -- Load targets
+    ui.fReadFileTargets()
+    --
+    -- Load Aliases
+    ui.fReadFileAliases()
+    --
+    -- Load Highlights
+    ui.fReadFileHighlights()
+    --
     return true
   end
   --
@@ -12519,100 +12577,86 @@ end</script>
 			<Script isActive="yes" isFolder="no">
 				<name>Init</name>
 				<packageName></packageName>
-				<script>function ui.fMapAreaChanged(event, areaId, areaId_from)
-  areaId = tonumber(areaId);
-  ui.fHighlightArea(areaId);
-end
---
+				<script>--
 function ui.fLogin(...)
   if (gmcp.char.base.name) then
     local newSetting = string.lower(gmcp.char.base.name)
+    local loadNewProfile = false;
+    --
+    --ui.player.name = gmcp.char.base.name;
     if (ui.setting == nil) or (ui.setting ~= newSetting) then
       --
-      ui.setting = newSetting
-      --
       -- Load existing Setting
-      if (ui.fLoadLocalSetting()) then
-        ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; caricate correttamente.")
+      if (ui.fLoadLocalSetting(newSetting)) then
+        ui.setting = newSetting
         --
-        ui.fEcho("&lt;orange&gt; - Usa il comando ");
-        cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui il comando 'uihelp'", true) 
-        cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
+        ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fGetSettingNameFormattedText(newSetting).."&lt;orange&gt; caricate correttamente.")
+        --
+        loadNewProfile = true;
       --
       -- Create new Setting
-      elseif (ui.fSaveSetting()) then
-        ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting).."&lt;orange&gt; create correttamente.")
+      elseif (ui.fCreateSetting(newSetting)) then
+        ui.setting = newSetting
+        --
+        ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fGetSettingNameFormattedText(newSetting).."&lt;orange&gt; create correttamente.")
+        --
         ui.fEcho("&lt;orange&gt; - Usa il comando ");
         cechoLink(ui.cLink("uisetting"), [[expandAlias("uisetting")]], "Esegui il comando 'uisetting'", true) 
         cecho("&lt;orange&gt; per importare le impostazioni di un profilo esistente...&lt;r&gt;\n")
         --
-        ui.fEcho("&lt;orange&gt; - Usa il comando ");
-        cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui il comando 'uihelp'", true) 
-        cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
-      --
-      -- Error creating Setting
+        loadNewProfile = true;
       else
-        ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(ui.setting)..".")
+        --
+        -- Error creating Setting
+        ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(newSetting)..".")
+        --
+        -- Kill events
+        if (ui.handlers) and (ui.handlers.fUpdateGMCP_char) then
+          killAnonymousEventHandler(ui.handlers.fUpdateGMCP_char)
+          ui.handlers.fUpdateGMCP_char = nil
+        end
+        --
+        if (ui.handlers) and (ui.handlers.fUpdateGMCP_room) then
+          killAnonymousEventHandler(ui.handlers.fUpdateGMCP_room)
+          ui.handlers.fUpdateGMCP_room = nil
+        end
+        --
+        if (ui.handlers) and (ui.handlers.fUpdateGMCP_overland) then
+          killAnonymousEventHandler(ui.handlers.fUpdateGMCP_overland)
+          ui.handlers.fUpdateGMCP_overland = nil
+        end
+        --
         ui.setting = nil
       end
       --
-      -- Variable to init every login
-      ui.track = ""
+      -- New Profile
+      if (loadNewProfile) then
+        --
+        -- gmcp.char
+        if (ui.handlers.fUpdateGMCP_char == nil) then
+          ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register GMCP events")
+          ui.handlers.fUpdateGMCP_char  = registerAnonymousEventHandler("gmcp.char", "ui.fUpdateGMCP");
+        end
+        --
+        -- gmcp.room
+        if (ui.handlers.fUpdateGMCP_room == nil) then
+          ui.handlers.fUpdateGMCP_room = registerAnonymousEventHandler("gmcp.room", "ui.fUpdateGMCP")
+        end
+        --
+        -- gmcp.overland
+        if (ui.handlers.fUpdateGMCP_overland == nil) then
+          ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland", "ui.fUpdateGMCP")
+        end
+        --
+        -- Update all widgets
+        ui.updateAllWidgets()
+        --
+        ui.fEcho("&lt;orange&gt; - Usa il comando ");
+        cechoLink(ui.cLink("uihelp"), [[expandAlias("uihelp")]], "Esegui il comando 'uihelp'", true) 
+        cecho("&lt;orange&gt; per iniziare...&lt;r&gt;\n")
+      end
     end
   end
-  --
-  if (ui.setting) then
-    ui.player.name = gmcp.char.base.name;
-    --
-    -- gmcp.char
-    if (ui.handlers.fUpdateGMCP_char == nil) then
-      ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
-      ui.handlers.fUpdateGMCP_char  = registerAnonymousEventHandler("gmcp.char", "ui.fUpdateGMCP");
-    end
-    --
-    -- gmcp.room
-    if (ui.handlers.fUpdateGMCP_room == nil) then
-      ui.handlers.fUpdateGMCP_room = registerAnonymousEventHandler("gmcp.room", "ui.fUpdateGMCP")
-    end
-    --
-    -- gmcp.overland
-    if (ui.handlers.fUpdateGMCP_overland == nil) then
-      ui.handlers.fUpdateGMCP_overland = registerAnonymousEventHandler("gmcp.overland", "ui.fUpdateGMCP")
-    end
-  else
-    --
-    -- Kill events
-    if (ui.handlers) and (ui.handlers.fUpdateGMCP_char) then
-      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_char)
-      ui.handlers.fUpdateGMCP_char = nil
-    end
-    --
-    if (ui.handlers) and (ui.handlers.fUpdateGMCP_room) then
-      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_room)
-      ui.handlers.fUpdateGMCP_room = nil
-    end
-    --
-    if (ui.handlers) and (ui.handlers.fUpdateGMCP_overland) then
-      killAnonymousEventHandler(ui.handlers.fUpdateGMCP_overland)
-      ui.handlers.fUpdateGMCP_overland = nil
-    end
-  end
-end
---
---
-function ui.fInitDataDirectory()
-  ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui.fInitDataDirectory()")
-  --
-  if (ui.fFolderExists(ui.files.data.path)) then
-    ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; inizializzata correttamente.")
-    return true
-  elseif (lfs.mkdir(ui.files.data.path)) then
-    ui.fEchon("&lt;orange&gt; - Cartella &lt;white&gt;dati&lt;orange&gt; creata correttamente.")
-    return true
-  else
-    ui.fEchon("&lt;red&gt; - Impossibile caricare la cartella &lt;white&gt;dati&lt;red&gt;.")
-  end
-  return false
 end
 --
 -- Connection Event
@@ -12663,31 +12707,22 @@ function ui.fInit()
       -- Target Buttons widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Target Buttons widget")
       ui.fInitTargetButtonsWidget()
-      ui.fUpdateAllTargetButtons()
-      --
-      --  Opponent and Groups are also targets. Widgets needed before updating
-      ui.fUpdateOpponent()
-      ui.fUpdateGroup()
       --
       -- Chat widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Chat widget")
       ui.fInitChatWidget()
-      ui.fUpdateChat()
       --
       -- Player widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Player widget")
       ui.fInitPlayerWidget()
-      ui.fUpdatePlayer()
       --
       -- Alias Button widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Alias Buttons widget")
       ui.fInitAliasButtonsWidget()
-      ui.fUpdateAliasButton()
       --
       -- Affects widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Affects widget")
       ui.fInitAffectsWidget()
-      ui.fUpdateAffects()
       --
       -- Mapper widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Mapper widget")
@@ -12697,22 +12732,18 @@ function ui.fInit()
       -- Map/Compass widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Room widget")
       ui.fInitRoomWidget()
-      ui.fUpdateRoom()
       --
       -- Cooldowns
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Cooldowns widget")
       ui.fInitCooldownsWidget()
-      ui.fUpdateCooldowns()
       --
       -- Endowment widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Endowment widget")
       ui.fInitEndowmentWidget()
-      ui.fUpdateEndowment()
       --
       -- Help widget
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Help widget")
       ui.fInitHelpWidget()
-      GUI.Help:hide()
       --
       -- GMCP
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] setMergeTables()")
@@ -12720,9 +12751,6 @@ function ui.fInit()
       --
       -- Events:
       ui.fDebug("[&lt;white&gt;init&lt;r&gt;] Register events")
-      --
-      -- Connection
-      --ui.handlers.fInit = registerAnonymousEventHandler("sysConnectionEvent", ui.fLogin)
       --
       -- Login
       ui.handlers.fLogin  = registerAnonymousEventHandler("gmcp.char.base", ui.fLogin);
@@ -12732,6 +12760,9 @@ function ui.fInit()
       --
       -- Map changed in mapper widget
       ui.handlers.fMapAreaChanged = registerAnonymousEventHandler("sysMapAreaChanged", ui.fMapAreaChanged)  
+      --
+      -- Update all widgets
+      ui.updateAllWidgets()
       --
       ui.fEcho("&lt;orange&gt; - Caricamento 'Lumen et Umbra UI' (rel. "..ui.release..") completato.&lt;r&gt;\n")
       --
@@ -14276,7 +14307,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>South</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
