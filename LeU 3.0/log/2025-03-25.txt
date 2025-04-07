@@ -1,0 +1,5098 @@
+Log di sessione a partire 12:44:53 su martedì, 25 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-23#17-31-39map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.07s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.08s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-23#17-31-39map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.10s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Log di sessione a partire 12:46:02 su martedì, 25 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-25#12-44-58map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.05s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.08s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-25#12-44-58map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.08s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+[ INFO ]  - Scorrimento a schermo diviso attivato. Premi <CTRL>+<INVIO> per annullare.
+look
+Mi dispiace ma non ci sono personaggi con questo nome.
+Nome ('nuovo' per nuovo personaggio): kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+La Reception - Al chiuso [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+[-] [3641/3641] [690/690] [185/200] [-]
+[  UI  ]  - Impostazioni per kyrus caricate correttamente.
+[  UI  ]  - Usa il comando [uihelp] per iniziare...
+1
+who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 4
+
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+Il Signore Oscuro sta devastando un antico regno!
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3641/3641] [690/690] [200/200] [-]att
+Hai 134 anni e 3 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [97].
+Assorbi 32.05% del danno fisico e 24.38% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [142] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 164.02%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` sufficiente [39].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +63 [Media: 118]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +63 [Media: 118]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +63 [Media: 118]
+
+
+[-] [3641/3641] [690/690] [200/200] [-]scpre
+Pardon?
+
+[-] [3641/3641] [690/690] [200/200] [-]score
+Hai 134 anni e 3 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 3641/3641 punti ferita, 690/690 mana e 200/200 energia.
+Hai 222218630 punti esperienza, di cui 22218630 volatili.
+Hai 711215 Monete d'Oro, 2987 Astralite, e 100016 Residuum.
+Hai 104514 Diamanti, 28469 Smeraldi, 75947 Rubini, e 75735 Zaffiri.
+Indossi un totale di 31 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:      22218630/100000000 (23%)      
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 47 giorni e 19 ore.
+Sei in piedi.
+
+[-] [3641/3641] [690/690] [200/200] [-]eff
+Effetti Attivi: 
+Nessuno! 
+
+
+[-] [3641/3641] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+[ 2] |U| una spada robusta del gladiatore...E` in condizioni eccellenti
+Tot. Peso trasportato  : 278 su 900 etti
+Oggetti in inventario : 2 su 50
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non lasciare maaai deluuusa... Una doonna a Syracusaaa!'
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco beve un sorso da una bottiglia.
+
+[-] [3641/3641] [690/690] [200/200] [-]ju spa
+Distruggi spa 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 6 Residuum.
+
+[-] [3641/3641] [690/690] [200/200] [-]x
+[  UI  ] x » exam
+Esaminare che cosa ?
+
+[-] [3641/3641] [690/690] [200/200] [-]xx
+[  UI  ] xx[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] xx[ 2] » exam &bag2=equilibrio
+[  UI  ] xx[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in lo zaino dell'Equilibrio.
+Quando ci guardi dentro, vedi:
+zaino (trasportato) : 
+[ 1] |T| lo scettro di Ravenloft...Ha un alone luminoso [3]
+[ 4] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 5] |T| una Lama di Pietra affilata [4]
+[ 9] |T| un asso di fiori...E` in condizioni eccellenti
+[10] |T| un asso di quadri...E` in condizioni eccellenti
+[11] |T| un asso di cuori [2]
+[13] |T| un asso di picche...E` in condizioni eccellenti
+[14] |T| una borsa magica...Ha un alone luminoso...E` in condizioni eccellenti
+[15] |T| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
+[16] |T| alcuni attrezzi da scasso...E` in condizioni eccellenti...Sembra molto fragile
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco si alza in piedi.
+
+[-] [3641/3641] [690/690] [200/200] [-]xxx
+[  UI  ] xxx[ 1] » g &bag3=eroe » get #eroe &bag=via-lattea
+[  UI  ] xxx[ 2] » exam &bag3=eroe
+[  UI  ] xxx[ 3] » p &bag3=eroe » put #eroe &bag=via-lattea
+Prendi il baule dell'eroe da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in il baule dell'eroe.
+Quando ci guardi dentro, vedi:
+baule (trasportato) : 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti il baule dell'eroe in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non lasciare maaai deluuusa... Una doonna a Syracusaaa!'
+
+[-] [3641/3641] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3641/3641] [690/690] [200/200] [-]who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 4
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un potente drago ha preso possesso di una gigantesca caverna!
+
+[-] [3641/3641] [690/690] [200/200] [-]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[13] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[16] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[17] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco si alza in piedi.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Il Signore Oscuro sta devastando un antico regno!
+Un ubriaco si siede.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco beve un sorso da una bottiglia.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non lasciare maaai deluuusa... Una doonna a Syracusaaa!'
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3641/3641] [690/690] [200/200] [-]uia
+
+[  UI  ] Aliases
+----------------
+[ 1] [X] [as] » mind 'assalto psionico' &target
+[ 2] [X] [astral] » mind 'viaggio probabilistico'
+[ 3] [X] [autoattack] » aa
+[ 4] [X] [bash] » mind 'schiaffo violento' &target
+[ 5] [X] [bl] » mind 'colpo psichico' &target
+[ 6] [X] [blink] » mind 'cancella la mente' &target
+[ 7] [X] [buff] » mano / minibuff
+[ 8] [X] [cani] » mind 'cannibalizzare'
+[ 9] [X] [cel] » mind 'riparazione cellulare'
+[10] [X] [cham] » mind 'camaleonte'
+[11] [X] [chiaro] » mind 'chiaroveggenza'
+[12] [X] [co] » close # / open #
+[13] [X] [cr] » mind 'morsa psichica' &target
+[14] [X] [disarm] » gg scasso / tt scasso / usa scasso # / rr scasso / pp scasso
+[15] [X] [dro] » mind 'scarica di adrenalina'
+[16] [X] [es] » enter specchio
+[17] [X] [ext] » mind 'percezione extrasensoriale'
+[18] [X] [flame] » mind 'mantello di fiamme'
+[19] [X] [g] » get # &bag=via-lattea
+[20] [X] [ga] » get all
+[21] [X] [gg] » g &bag2=equilibrio / get # &bag2=equilibrio / p &bag2=equilibrio
+[22] [X] [ggg] » g &bag3=eroe / get # &bag3=eroe / p &bag3=eroe
+[23] [X] [goalma] » uigo 3001
+[24] [X] [gogreylin] » uigo 6246
+[25] [X] [golame] » uigo 20033
+[26] [X] [ident] » ispeziona # ident
+[27] [X] [lame] » mind 'lame psioniche' 
+[28] [X] [lampo] » mind 'lampo di energia' &target
+[29] [X] [mano] » mind 'mano di energia'
+[30] [X] [mfc] » mind 'manipola fiamme' convoglia
+[31] [X] [mfe] » mind 'manipola fiamme' espandi
+[32] [X] [mfp] » mind 'manipola fiamme' potenzia
+[33] [X] [minibuff] » flame / rin / shield
+[34] [X] [morsa] » mind 'morsa brutale' &target
+[35] [X] [op] » unlock # / open #
+[36] [X] [over] » mind 'mente oltre il corpo'
+[37] [X] [p] » put # &bag=via-lattea
+[38] [X] [pi] » mind 'pensiero imponente' &target
+[39] [X] [pp] » g &bag2=equilibrio / put # &bag2=equilibrio / p &bag2=equilibrio
+[40] [X] [ppp] » g &bag3=eroe / put # &bag3=eroe / p &bag3=eroe
+[41] [X] [psi] » mind 'invisibilita psichica'
+[42] [X] [pugno] » mind 'pugno serrato' &target
+[43] [X] [rin] » mind 'rinforzo psichico' &stat=int
+[44] [X] [rr] » rem # / wi &weapon=moonshatter
+[45] [X] [sanc] » gg raven / tt raven / usa scettro / rr raven / pp raven
+[46] [X] [scry] » mind 'visione'
+[47] [X] [sense] » mind 'senso del pericolo'
+[48] [X] [shield] » mind 'scudo psichico'
+[49] [X] [tt] » rem &weapon=moonshatter / tieni #
+[50] [X] [ub] » mind 'colpo superiore'
+[51] [X] [vuoto] » mind 'vuoto mentale' &target
+[52] [X] [x] » exam
+[53] [X] [xx] » g &bag2=equilibrio / exam &bag2=equilibrio / p &bag2=equilibrio
+[54] [X] [xxx] » g &bag3=eroe / exam &bag3=eroe / p &bag3=eroe
+
+
+Un ubriaco si alza in piedi.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non mi sento troppo bene...'
+
+[-] [3641/3641] [690/690] [200/200] [-]uia x exam &bag
+[  UI  ] L'alias x è stato modificato: x » exam &bag=via-lattea.
+
+x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3641/3641] [690/690] [200/200] [-]x giulietta
+[  UI  ] x » exam #giulietta
+Seria e compassata, non commette errori...
+Giulietta e` molto alta e robusta.
+Giulietta e` in condizioni eccellenti.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3641/3641] [690/690] [200/200] [-]x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[-] [3641/3641] [690/690] [200/200] [-]xx
+[  UI  ] xx[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] xx[ 2] » exam &bag2=equilibrio
+[  UI  ] xx[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in lo zaino dell'Equilibrio.
+Quando ci guardi dentro, vedi:
+zaino (trasportato) : 
+[ 1] |T| lo scettro di Ravenloft...Ha un alone luminoso [3]
+[ 4] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 5] |T| una Lama di Pietra affilata [4]
+[ 9] |T| un asso di fiori...E` in condizioni eccellenti
+[10] |T| un asso di quadri...E` in condizioni eccellenti
+[11] |T| un asso di cuori [2]
+[13] |T| un asso di picche...E` in condizioni eccellenti
+[14] |T| una borsa magica...Ha un alone luminoso...E` in condizioni eccellenti
+[15] |T| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
+[16] |T| alcuni attrezzi da scasso...E` in condizioni eccellenti...Sembra molto fragile
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]xxx
+[  UI  ] xxx[ 1] » g &bag3=eroe » get #eroe &bag=via-lattea
+[  UI  ] xxx[ 2] » exam &bag3=eroe
+[  UI  ] xxx[ 3] » p &bag3=eroe » put #eroe &bag=via-lattea
+Prendi il baule dell'eroe da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in il baule dell'eroe.
+Quando ci guardi dentro, vedi:
+baule (trasportato) : 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti il baule dell'eroe in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[-] [3641/3641] [690/690] [200/200] [-]x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non mi sento troppo bene...'
+
+[-] [3641/3641] [690/690] [200/200] [-]xx
+[  UI  ] xx[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] xx[ 2] » exam &bag2=equilibrio
+[  UI  ] xx[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in lo zaino dell'Equilibrio.
+Quando ci guardi dentro, vedi:
+zaino (trasportato) : 
+[ 1] |T| lo scettro di Ravenloft...Ha un alone luminoso [3]
+[ 4] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 5] |T| una Lama di Pietra affilata [4]
+[ 9] |T| un asso di fiori...E` in condizioni eccellenti
+[10] |T| un asso di quadri...E` in condizioni eccellenti
+[11] |T| un asso di cuori [2]
+[13] |T| un asso di picche...E` in condizioni eccellenti
+[14] |T| una borsa magica...Ha un alone luminoso...E` in condizioni eccellenti
+[15] |T| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
+[16] |T| alcuni attrezzi da scasso...E` in condizioni eccellenti...Sembra molto fragile
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]xxx
+[  UI  ] xxx[ 1] » g &bag3=eroe » get #eroe &bag=via-lattea
+[  UI  ] xxx[ 2] » exam &bag3=eroe
+[  UI  ] xxx[ 3] » p &bag3=eroe » put #eroe &bag=via-lattea
+Prendi il baule dell'eroe da la borsa della Via Lattea.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non vedi nulla di speciale in il baule dell'eroe.
+Quando ci guardi dentro, vedi:
+baule (trasportato) : 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Metti il baule dell'eroe in la borsa della Via Lattea
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3641/3641] [690/690] [200/200] [-]d
+d
+1
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+apri porta w
+w
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+1
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]events
+
+Eventi Quest Rilevanti:
+--------------------------------------------------
+[ 11 ] [Invasione] [16:42:03] Uno squarcio tra le realta` si e` aperto presso [Deadhame]
+[ 12 ] [Invasione] [17:15:53] Uno squarcio tra le realta` si e` aperto presso [La Scacchiera]
+[ 13 ] [Invasione] [17:49:45] Uno squarcio tra le realta` si e` aperto presso [Sauria ]
+[ 14 ] [Invasione] [18:23:35] Uno squarcio tra le realta` si e` aperto presso [Vulcano]
+[ 15 ] [Invasione] [18:57:25] Uno squarcio tra le realta` si e` aperto presso [Roo, la terra a testa in giu']
+[ 16 ] 21:02:28 Bosco-dei-Sogni-[Inizio] - Arlank ha raccolto l'illusione.
+[ 17 ] 22:00:23 Vate-del-Caos-[Inizio] - Arlank ha raccolto una chiave intermittente.
+[ 18 ] [Errante-Ingaggio] [21:04:11] Arlank ha ingaggiato [Tifone, il Dio dei giganti]
+[ 19 ] 21:23:25 Ravenloft-[Inizio] - Arlank ha raccolto delle piccole forbicine.
+[ 20 ] 21:39:49 Dunwich-[Inizio] - Arlank ha raccolto un zampa uncinata.
+[ 21 ] 21:42:22 UNDEFINED - Arlank ha raccolto una chiave corrosa.
+
+--------------------------------------------------
+
+[-] [3641/3641] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+1
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+Il martello da guerra di Huma e' qui in terra....Ha un alone luminoso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+1
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+1
+La via della Gloria - Citta' #3004 [S]
+E' una grande via lastricata in marmo bianco. File di alberi intervallati da
+colonne anch'esse bianche costeggiano la strada. Indubbiamente e' opera di un
+grande architetto e di valenti costruttori. Sulle colonne commemorative ci
+sono (almeno cosi' ti sembra di intuire) raffigurati alcuni attimi salienti
+della storia dell'Impero.
+Uscite: North, South.
+Una guardia cittadina controlla la zona. [Liv 50] [2]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Porta Settentrionale
+South - La Piazza della Gloria
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+1
+Porta Settentrionale - Citta' #3085 [S]
+La Porta Settentrionale connette la citta' di Alma con le terre del nord.
+Scavata nelle possenti mura e' una porta molto frequentata da carriaggi e
+carovane.
+Uscite: North [porta], East, South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Settentrionali di Alma
+East - Le Mura di Alma
+South - La via della Gloria
+West - Le Mura di Alma
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+apri porta n
+n
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+apri porta n
+n
+1
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Non c'e` nulla da aprire in quella direzione.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+27
+
+Lasci Alma, entrando in Via Flaminia.
+
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] buff[ 1] » mano » mind 'mano di energia'
+[  UI  ] buff[ 2] » minibuff[ 1] » flame » mind 'mantello di fiamme'
+[  UI  ]                    [ 2] » rin » mind 'rinforzo psichico' &stat=int
+[  UI  ]                    [ 3] » shield » mind 'scudo psichico'
+Convogli la tua energia mentale, creando una mano gigante di energia! 
+
+[H] [3641/3641] [640/690] [200/200] []look
+
+Recuperi rapidamente le tue forze. [34] 
+
+[H] [3641/3641] [674/690] [200/200] []
+[H] [3641/3641] [649/690] [200/200] [F80]
+Concentri la tua energia mentale per potenziare il tuo fisico. 
+
+[H] [3641/3641] [634/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [669/708] [200/200] [F80]
+[H] [3641/3641] [659/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [694/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [14] 
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il sole cala lentamente scomparendo dietro l'orizzonte orientale.
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il Signore Oscuro sta devastando un antico regno!
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+La notte e` iniziata stendendo il suo velo oscuro.
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il Signore dei Draghi sta portando morte e distruzione in un villaggio!
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Un potente drago ha preso possesso di una gigantesca caverna!
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il tuo scudo psichico svanisce. 
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il Signore Oscuro sta devastando un antico regno!
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Un lieve vento magico avvolge Via Flaminia, per un istante soltanto.
+La luna crescente comincia a sorgere dall'orizzonte.
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+
+Il Signore dei Draghi sta portando morte e distruzione in un villaggio!
+
+[H] [3641/3641] [708/708] [200/200] [F80]look
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+
+[H] [3641/3641] [708/708] [200/200] [F80]eff
+Effetti Attivi: 
+
+Rinforzo Psichico, da Kyrus, per 10 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x80), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F80]score
+Hai 134 anni e 3 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 3641/3641 punti ferita, 708/708 mana e 200/200 energia.
+Hai 222218630 punti esperienza, di cui 22218630 volatili.
+Hai 711215 Monete d'Oro, 2987 Astralite, e 100022 Residuum.
+Hai 104514 Diamanti, 28469 Smeraldi, 75947 Rubini, e 75735 Zaffiri.
+Indossi un totale di 31 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:      22218630/100000000 (23%)      
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 47 giorni e 19 ore.
+Sei in piedi.
+
+[H] [3641/3641] [708/708] [200/200] [F80]att
+Hai 134 anni e 3 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [97].
+Assorbi 32.05% del danno fisico e 24.38% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [148] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 164.02%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` sufficiente [39].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +65 [Media: 120]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +65 [Media: 120]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +65 [Media: 120]
+
+
+[H] [3641/3641] [708/708] [200/200] [F80]inv
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F80]l
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+
+[H] [3641/3641] [708/708] [200/200] [F80]events
+
+Eventi Quest Rilevanti:
+--------------------------------------------------
+[ 11 ] [Invasione] [16:42:03] Uno squarcio tra le realta` si e` aperto presso [Deadhame]
+[ 12 ] [Invasione] [17:15:53] Uno squarcio tra le realta` si e` aperto presso [La Scacchiera]
+[ 13 ] [Invasione] [17:49:45] Uno squarcio tra le realta` si e` aperto presso [Sauria ]
+[ 14 ] [Invasione] [18:23:35] Uno squarcio tra le realta` si e` aperto presso [Vulcano]
+[ 15 ] [Invasione] [18:57:25] Uno squarcio tra le realta` si e` aperto presso [Roo, la terra a testa in giu']
+[ 16 ] 21:02:28 Bosco-dei-Sogni-[Inizio] - Arlank ha raccolto l'illusione.
+[ 17 ] 22:00:23 Vate-del-Caos-[Inizio] - Arlank ha raccolto una chiave intermittente.
+[ 18 ] [Errante-Ingaggio] [21:04:11] Arlank ha ingaggiato [Tifone, il Dio dei giganti]
+[ 19 ] 21:23:25 Ravenloft-[Inizio] - Arlank ha raccolto delle piccole forbicine.
+[ 20 ] 21:39:49 Dunwich-[Inizio] - Arlank ha raccolto un zampa uncinata.
+[ 21 ] 21:42:22 UNDEFINED - Arlank ha raccolto una chiave corrosa.
+
+--------------------------------------------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 4
+
+
+[H] [3641/3641] [708/708] [200/200] [F80]eff
+Effetti Attivi: 
+
+Rinforzo Psichico, da Kyrus, per 9 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x80), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F80]look
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+
+[H] [3641/3641] [708/708] [200/200] [F80]s
+s
+1
+
+Lasci Via Flaminia, entrando in Alma.
+
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+n
+27
+
+Lasci Alma, entrando in Via Flaminia.
+
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+n
+27
+La via Flaminia - Pianura #4304 [S]
+Prosegui il tuo cammino lungo la via Flaminia, il traffico di mercanti e'
+sempre intenso.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'incrocio
+South - La via Flaminia
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+n
+27
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite] [2]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+East - La Pineta
+South - La via Flaminia
+West - La radura
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bash » mind 'schiaffo violento' #guardia
+l
+
+La mano di forza si apre impatta brutalmente una guardia imperiale, sbattendoluna guardia imperiale in terra con uno
+schiaffo! 
+
+[H6] [3641/3641] [678/708] [200/200] [CF80]
+
+Una guardia imperiale ti devasta squarciandoti due volte sul piede destro. [110(55x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+
+[H5] [3531/3641] [678/708] [200/200] [CF78]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+[Diritto: Kyrus] Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+[Diritto: Kyrus] Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+
+[H5] [3531/3641] [678/708] [200/200] [CF78]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [343LS]
+
+[H560%] [3531/3641] [678/708] [170/200] [CF78]
+
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale ti squarcia senza causare danno una volta sulla gamba sinistra. [Mr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {221(74x3)GLS}
+Un mercante ti colpisce senza causare danno una volta sul petto. [Mr]
+un mercante viene ridotto ad un mucchietto di carbone {185CLS}
+una guardia imperiale corre eroicamente in soccorso di una guardia imperiale! 
+Polverizzi una guardia imperiale impattandolo tre volte sulla spalla. [266(89x3)r3]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [185(62x3)]
+Una guardia imperiale ti demolisce colpendoti due volte in testa. [225(113x2)r2]
+Hai ucciso un mercante! R.I.P. 
+Hai ottenuto un guardiabraccia!
+Ottieni 42 monete d'oro e ricevi 100 punti esperienza.
+
+[H460%] [3306/3641] [678/708] [170/200] [CF74]
+
+Una guardia imperiale ti devasta squarciandoti una volta sul petto. [49r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {72}
+
+[H460%] [3257/3641] [678/708] [170/200] [CF73]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo.
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [2]
+
+[H460%] [3257/3641] [678/708] [170/200] [CF73]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+La tua mente si apre per un istante all'infinito! 
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! 
+
+[H4Lightspeed!] [3257/3641] [678/708] [140/200] [CF73]
+
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [51r]
+Una guardia imperiale ti demolisce colpendoti due volte sul piede destro. [207(104x2)r2B2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {145(73x2)}
+Una guardia imperiale ti demolisce colpendoti due volte sul corpo. [222(111x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {237(119x2)C2}
+Demolisci una guardia imperiale impattandolo tre volte sul corpo. [339(113x3)CLr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [216(72x3)L2S2]
+Una guardia imperiale ti demolisce colpendoti due volte sul piede sinistro. [228(114x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {145(73x2)}
+
+[H3Lightspeed!] [2549/3641] [678/708] [140/200] [CF67]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale ti demolisce colpendoti due volte sulla schiena. [226(113x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+Una guardia imperiale ti demolisce colpendoti due volte in testa. [217(109x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {144(72x2)}
+Distruggi una guardia imperiale impattandolo tre volte sulla gamba sinistra. [419(140x3)C2Lr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [345(115x3)C3]
+Una guardia imperiale ti demolisce colpendoti due volte sul collo. [230(115x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {145(73x2)}
+
+[H2Lightspeed!] [1876/3641] [678/708] [140/200] [CF61]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale ti distrugge colpendoti due volte in testa. [279(140x2)Lr2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {166(83x2)LS}
+Una guardia imperiale ti demolisce colpendoti due volte sulla mano destra. [220(110x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {166(83x2)LS}
+Polverizzi una guardia imperiale impattandolo tre volte sul piede destro. [255(85x3)r3]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [194(65x3)]
+Una guardia imperiale ti distrugge colpendoti due volte sul piede sinistro. [275(138x2)Lr2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo.
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [3]
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+[  UI  ] ub » mind 'colpo superiore'
+Hai bisogno di alzarti in piedi per usare le tue abilita`![  UI  ] Trig Auto stand: STAND
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+Ti alzi.
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo.
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [3]
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+
+[H1Lightspeed!] [1102/3641] [678/708] [140/200] [CF55]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Puoi di nuovo utilizzare mano di energia.
+Una guardia imperiale ti distrugge colpendoti due volte sulla mano sinistra. [272(136x2)Lr2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+Una guardia imperiale ti demolisce colpendoti due volte sullo stomaco. [222(111x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+Distruggi una guardia imperiale impattandolo tre volte sulla gamba sinistra. [393(131x3)C2r3]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [219(73x3)LS]
+Una guardia imperiale ti demolisce colpendoti due volte sulla mano destra. [226(113x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {145(73x2)}
+
+[HLightspeed!] [382/3641] [678/708] [140/200] [CF49]
+[  UI  ] ub » mind 'colpo superiore'
+un mercante viene distrutto dalla tua ondata psichica! [1322S]
+una guardia imperiale viene colpito dalla tua ondata psichica! [2144(1072x2)]
+una guardia imperiale viene distrutto dalla tua ondata psichica! [1071]
+Hai ucciso un mercante! R.I.P. 
+Hai ucciso una guardia imperiale! R.I.P. 
+Hai ottenuto un robusto elmo!
+Ottieni 2069 monete d'oro e ricevi 150100 punti esperienza.
+
+[H] [382/3641] [653/708] [140/200] [CF49]
+[  UI  ] ub » mind 'colpo superiore'
+una guardia imperiale viene colpito dalla tua ondata psichica! [1741(871x2)C]
+
+[H] [382/3641] [628/708] [140/200] [CF49]
+1
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [73Lr]
+Demolisci una guardia imperiale impattandolo tre volte sulla schiena. [348(116x3)CLr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [232(77x3)LS]
+Una guardia imperiale ti demolisce colpendoti due volte sul corpo. [216(108x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {248(124x2)CL2S2}
+Una guardia imperiale ti uccide colpendoti una volta sul braccio destro. [113r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {118C}
+Sei morto! Peccato... 
+Hai perso 22368830 punti esperienza.
+Kyrus e` stato ucciso da una guardia imperiale presso L'incrocio.
+Sei di nuovo pienamente vulnerabile al controllo! 
+La tua forza psichicamente indotta svanisce. 
+Il tuo manto di fiamme svanisce. 
+La mano di energia scompare lentamente nel nulla. 
+Disorientato, realizzi di trovarti presso Il Foro Imperiale. 
+
+[-] [3641/3641] [628/690] [140/200] [-]
+
+Recuperi rapidamente le tue forze. [34] [40] 
+
+[-] [3641/3641] [662/690] [180/200] [-]look
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+Il martello da guerra di Huma e' qui in terra....Ha un alone luminoso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+
+[-] [3641/3641] [662/690] [180/200] [-]n
+n
+1
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una guardia cittadina controlla la zona. [Liv 50]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[-] [3641/3641] [662/690] [180/200] [-]n
+n
+1
+La via della Gloria - Citta' #3004 [S]
+E' una grande via lastricata in marmo bianco. File di alberi intervallati da
+colonne anch'esse bianche costeggiano la strada. Indubbiamente e' opera di un
+grande architetto e di valenti costruttori. Sulle colonne commemorative ci
+sono (almeno cosi' ti sembra di intuire) raffigurati alcuni attimi salienti
+della storia dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, South.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Una guardia cittadina controlla la zona. [Liv 50]
+-----------------
+Uscite visibili:
+North - Porta Settentrionale
+South - La Piazza della Gloria
+-----------------
+
+[-] [3641/3641] [662/690] [180/200] [-]
+
+Recuperi rapidamente le tue forze. [28] [20] 
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+1
+Porta Settentrionale - Citta' #3085 [S]
+La Porta Settentrionale connette la citta' di Alma con le terre del nord.
+Scavata nelle possenti mura e' una porta molto frequentata da carriaggi e
+carovane.
+Alcuni bracieri illuminano l'entrata alla citta'.
+Uscite: North [porta], East, South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Settentrionali di Alma
+East - Le Mura di Alma
+South - La via della Gloria
+West - Le Mura di Alma
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+apri porta n
+n
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+1
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+27
+
+Lasci Alma, entrando in Via Flaminia.
+
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+27
+La via Flaminia - Pianura #4304 [S]
+Prosegui il tuo cammino lungo la via Flaminia, il traffico di mercanti e'
+sempre intenso.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'incrocio
+South - La via Flaminia
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+n
+27
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+Un riflesso dell'anima di Kyrus si trova qui in terra....Ha un alone luminoso
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite] [2]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+East - La Pineta
+South - La via Flaminia
+West - La radura
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]tocca rif
+Sfiori il riflesso della tua anima, che si dissolve e torna a far parte di te. 
+Ricevi 20131947 punti esperienza.
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+La luna tramonta lentamente.
+
+[-] [3641/3641] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |C| un robusto elmo...E` in condizioni eccellenti
+[ 2] |T| un guardiabraccia...E` in condizioni eccellenti
+[ 3] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 280 su 900 etti
+Oggetti in inventario : 3 su 50
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] buff[ 1] » mano » mind 'mano di energia'
+[  UI  ] buff[ 2] » minibuff[ 1] » flame » mind 'mantello di fiamme'
+[  UI  ]                    [ 2] » rin » mind 'rinforzo psichico' &stat=int
+[  UI  ]                    [ 3] » shield » mind 'scudo psichico'
+Convogli la tua energia mentale, creando una mano gigante di energia! 
+
+[H] [3641/3641] [640/690] [200/200] []
+[H] [3641/3641] [615/690] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [34] 
+
+[H] [3641/3641] [649/690] [200/200] [F80]
+Concentri la tua energia mentale per potenziare il tuo fisico. 
+
+[H] [3641/3641] [634/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [669/708] [200/200] [F80]
+[H] [3641/3641] [659/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [694/708] [200/200] [F80]look
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+
+[H] [3641/3641] [694/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [14] 
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bash » mind 'schiaffo violento' #guardia
+l
+
+La mano di forza si apre impatta brutalmente una guardia imperiale, sbattendoluna guardia imperiale in terra con uno
+schiaffo! 
+
+[H6] [3641/3641] [678/708] [200/200] [CF80]
+
+Il Signore Oscuro sta devastando un antico regno!
+
+[H6] [3641/3641] [678/708] [200/200] [CF80]
+
+Una guardia imperiale ti distrugge colpendoti due volte in testa. [267(134x2)Lr2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {144(72x2)}
+
+[H5] [3374/3641] [678/708] [200/200] [CF78]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+
+[H5] [3374/3641] [678/708] [200/200] [CF78]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [330LS]
+
+[H560%] [3374/3641] [678/708] [170/200] [CF78]
+
+Demolisci una guardia imperiale impattandolo tre volte sulla spalla. [370(123x3)CLr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [331(110x3)CL2S2]
+Una guardia imperiale ti demolisce colpendoti una volta sulla schiena. [108r]
+una guardia imperiale viene ridotto ad un mucchietto di carbone {119C}
+Hai ucciso una guardia imperiale! R.I.P. 
+Hai ottenuto il rosario di Char, il Monaco!
+Hai ottenuto un Sesterzio di Bronzo!
+Ottieni 2340 monete d'oro e ricevi 150000 punti esperienza.
+
+[H460%] [3266/3641] [678/708] [170/200] [CF77]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+
+[H460%] [3266/3641] [678/708] [170/200] [CF77]look
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+
+[H460%] [3266/3641] [678/708] [170/200] [CF77]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+La tua mente si apre per un istante all'infinito! 
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! 
+
+[H3Lightspeed!] [3266/3641] [678/708] [140/200] [CF77]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H3Lightspeed!] [3266/3641] [678/708] [140/200] [CF77]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [50r]
+Polverizzi una guardia imperiale impattandolo due volte sul braccio destro. [168(84x2)r2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [246(123x2)CL2S2]
+Uccidi una guardia imperiale impattandolo una volta sul braccio destro. [112L]
+Hai ucciso una guardia imperiale! R.I.P. 
+Hai ottenuto un Sesterzio di Bronzo!
+Hai ottenuto una lancia grezza rinforzata in bronzo!
+Ottieni 1762 monete d'oro e ricevi 150000 punti esperienza.
+
+[H2Lightspeed!] [3216/3641] [678/708] [140/200] [CF77]
+[  UI  ] autoattack » aa » Non ci sono mob da attaccare
+
+deop all
+i
+
+Puoi di nuovo utilizzare mano di energia.
+
+[HLightspeed!] [3216/3641] [678/708] [140/200] [cF77]
+Pardon?
+
+[HLightspeed!] [3216/3641] [678/708] [140/200] [cF77]
+Stai trasportando:
+[ 1] |U| un Sesterzio di Bronzo [2]
+[ 3] |C| una lancia grezza rinforzata in bronzo...E` in condizioni eccellenti
+[ 4] |R| il rosario di Char, il Monaco...E` in condizioni eccellenti
+[ 5] |C| un robusto elmo...E` in condizioni eccellenti
+[ 6] |T| un guardiabraccia...E` in condizioni eccellenti
+[ 7] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 286 su 900 etti
+Oggetti in inventario : 7 su 50
+
+[HLightspeed!] [3216/3641] [678/708] [140/200] [cF77]
+[  UI  ] autoattack » aa » guardia (LightSpeed)
+[  UI  ] morsa » mind 'morsa brutale' #guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+La tua mano di energia pura stritola una guardia imperiale in una terribile morsa! 
+Senti le ossa di una guardia imperiale cedere sotto la presa della tua mano di energia! 
+
+[H2] [3216/3641] [653/708] [140/200] [CF77]
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [513CLS]
+
+[H260%] [3216/3641] [653/708] [110/200] [CF77]
+
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Un mercante di spezie ti colpisce di striscio una volta sulla mano destra. [1rB]
+un mercante di spezie viene ridotto ad un mucchietto di carbone {112LS}
+una guardia imperiale ti manda a gambe all'aria [49r]
+Demolisci una guardia imperiale impattandolo tre volte sul braccio destro. [369(123x3)CLr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [250(83x3)C]
+Una guardia imperiale ti demolisce colpendoti due volte sulla spalla. [257(129x2)Lr2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {191(96x2)C}
+Hai ucciso un mercante di spezie! R.I.P. 
+Ottieni 55 monete d'oro e ricevi 100 punti esperienza.
+
+[H160%] [2909/3641] [653/708] [110/200] [CF74]
+
+Puoi di nuovo utilizzare mano di energia.
+Demolisci una guardia imperiale impattandolo tre volte sullo stomaco. [310(103x3)Lr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [266(89x3)L2S2]
+Una guardia imperiale ti demolisce colpendoti due volte sul petto. [208(104x2)r2B]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {166(83x2)LS}
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [3]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bash » mind 'schiaffo violento' #guardia
+l
+
+Hai bisogno di alzarti in piedi per usare le tue abilita`![  UI  ] Trig Auto stand: STAND
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [3]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+Ti alzi.
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [3]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H60%] [2701/3641] [653/708] [110/200] [CF72]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bash » mind 'schiaffo violento' #guardia
+l
+
+La mano di forza si apre impatta brutalmente una guardia imperiale, sbattendoluna guardia imperiale in terra con uno
+schiaffo! [427LS]
+
+[H660%] [2701/3641] [623/708] [110/200] [CF72]
+
+Demolisci una guardia imperiale impattandolo tre volte sulla spalla. [285(95x3)Lr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [270(90x3)CLS]
+Una guardia imperiale ti demolisce colpendoti due volte sulla mano destra. [223(112x2)r2]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {187(94x2)L2S2}
+Sei di nuovo pienamente vulnerabile al controllo! 
+
+[H560%] [2478/3641] [623/708] [110/200] [CF70]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [3]
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+
+[H560%] [2478/3641] [623/708] [110/200] [CF70]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [330LS]
+
+[H590%] [2478/3641] [623/708] [80/200] [CF70]
+
+Distruggi una guardia imperiale impattandolo tre volte sulla gamba destra. [392(131x3)C2Lr2]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [152(76x2)LS]
+una guardia imperiale e` svenuto, ma si riprendera` prima o poi. 
+una guardia imperiale viene trafitto mortalmente dalla tua lancia di ghiaccio. [100C]
+Hai ucciso una guardia imperiale! R.I.P. 
+Hai ottenuto un Sesterzio d'Argento!
+Hai ottenuto un Sesterzio di Bronzo!
+Hai ottenuto una robusta bacchetta magica da allenamento!
+Ottieni 3113 monete d'oro e ricevi 150000 punti esperienza.
+
+[H490%] [2478/3641] [623/708] [80/200] [CF70]
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [4]
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+
+[H490%] [2478/3641] [623/708] [80/200] [CF70]deo all
+Pardon?
+
+[H490%] [2478/3641] [623/708] [80/200] [CF70]u
+u
+Non puoi andare da quella parte.
+
+[H490%] [2478/3641] [623/708] [80/200] [CF70]
+
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+
+[H390%] [2478/3641] [623/708] [80/200] [cF70]deo all
+Pardon?
+
+[H390%] [2478/3641] [623/708] [80/200] [cF70]depo all
+Depositi 3 un Sesterzio di Bronzo.
+Depositi 1 un Sesterzio d'Argento.
+
+
+[H390%] [2478/3641] [623/708] [80/200] [cF70]i
+Stai trasportando:
+[ 1] |C| una robusta bacchetta magica da allenamento...E` in condizioni eccellenti
+[ 2] |C| una lancia grezza rinforzata in bronzo...E` in condizioni eccellenti
+[ 3] |R| il rosario di Char, il Monaco...E` in condizioni eccellenti
+[ 4] |C| un robusto elmo...E` in condizioni eccellenti
+[ 5] |T| un guardiabraccia...E` in condizioni eccellenti
+[ 6] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 285 su 900 etti
+Oggetti in inventario : 6 su 50
+
+[H290%] [2478/3641] [623/708] [80/200] [cF70]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+ju -
+[H190%] [2478/3641] [623/708] [80/200] [F70]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]ju -
+Non puoi distruggere un contenitore pieno.
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]ju -
+Non puoi distruggere un contenitore pieno.
+
+[H190%] [2478/3641] [623/708] [80/200] [F70]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H190%] [2564/3641] [708/708] [80/200] [F70]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 4 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 19 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x70), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H190%] [2564/3641] [708/708] [80/200] [F70]
+
+Puoi di nuovo utilizzare mano di energia.
+Recuperi rapidamente le tue forze. [182] [40] 
+
+[H90%] [2746/3641] [708/708] [120/200] [F70]score
+Hai 134 anni e 3 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 2746/3641 punti ferita, 708/708 mana e 120/200 energia.
+Hai 220582047 punti esperienza, di cui 20582047 volatili.
+Hai 720596 Monete d'Oro, 2987 Astralite, e 100214 Residuum.
+Hai 104514 Diamanti, 28469 Smeraldi, 75947 Rubini, e 75735 Zaffiri.
+Indossi un totale di 31 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:      20582047/100000000 (21%)      
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 47 giorni e 19 ore.
+Sei in piedi.
+
+[H90%] [2746/3641] [708/708] [120/200] [F70]
+
+Un potente drago ha preso possesso di una gigantesca caverna!
+
+[H90%] [2746/3641] [708/708] [120/200] [F70]first
+Pardon?
+
+[H90%] [2746/3641] [708/708] [120/200] [F70]
+
+Recuperi rapidamente le tue forze. [182] [40] 
+
+[H90%] [2928/3641] [708/708] [160/200] [F70]l
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [4]
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+
+[H90%] [2928/3641] [708/708] [160/200] [F70]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 4 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 19 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x70), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H90%] [2928/3641] [708/708] [160/200] [F70]
+
+Recuperi rapidamente le tue forze. [182] [40] 
+
+[H90%] [3110/3641] [708/708] [200/200] [F70]uia
+
+[  UI  ] Aliases
+----------------
+[ 1] [X] [as] » mind 'assalto psionico' &target
+[ 2] [X] [astral] » mind 'viaggio probabilistico'
+[ 3] [X] [autoattack] » aa
+[ 4] [X] [bash] » mind 'schiaffo violento' &target
+[ 5] [X] [bl] » mind 'colpo psichico' &target
+[ 6] [X] [blink] » mind 'cancella la mente' &target
+[ 7] [X] [buff] » mano / minibuff
+[ 8] [X] [cani] » mind 'cannibalizzare'
+[ 9] [X] [cel] » mind 'riparazione cellulare'
+[10] [X] [cham] » mind 'camaleonte'
+[11] [X] [chiaro] » mind 'chiaroveggenza'
+[12] [X] [co] » close # / open #
+[13] [X] [cr] » mind 'morsa psichica' &target
+[14] [X] [disarm] » gg scasso / tt scasso / usa scasso # / rr scasso / pp scasso
+[15] [X] [dro] » mind 'scarica di adrenalina'
+[16] [X] [es] » enter specchio
+[17] [X] [ext] » mind 'percezione extrasensoriale'
+[18] [X] [flame] » mind 'mantello di fiamme'
+[19] [X] [g] » get # &bag=via-lattea
+[20] [X] [ga] » get all
+[21] [X] [gg] » g &bag2=equilibrio / get # &bag2=equilibrio / p &bag2=equilibrio
+[22] [X] [ggg] » g &bag3=eroe / get # &bag3=eroe / p &bag3=eroe
+[23] [X] [goalma] » uigo 3001
+[24] [X] [gogreylin] » uigo 6246
+[25] [X] [golame] » uigo 20033
+[26] [X] [ident] » ispeziona # ident
+[27] [X] [lame] » mind 'lame psioniche' 
+[28] [X] [lampo] » mind 'lampo di energia' &target
+[29] [X] [mano] » mind 'mano di energia'
+[30] [X] [mfc] » mind 'manipola fiamme' convoglia
+[31] [X] [mfe] » mind 'manipola fiamme' espandi
+[32] [X] [mfp] » mind 'manipola fiamme' potenzia
+[33] [X] [minibuff] » flame / rin / shield
+[34] [X] [morsa] » mind 'morsa brutale' &target
+[35] [X] [op] » unlock # / open #
+[36] [X] [over] » mind 'mente oltre il corpo'
+[37] [X] [p] » put # &bag=via-lattea
+[38] [X] [pi] » mind 'pensiero imponente' &target
+[39] [X] [pp] » g &bag2=equilibrio / put # &bag2=equilibrio / p &bag2=equilibrio
+[40] [X] [ppp] » g &bag3=eroe / put # &bag3=eroe / p &bag3=eroe
+[41] [X] [psi] » mind 'invisibilita psichica'
+[42] [X] [pugno] » mind 'pugno serrato' &target
+[43] [X] [rin] » mind 'rinforzo psichico' &stat=int
+[44] [X] [rr] » rem # / wi &weapon=moonshatter
+[45] [X] [sanc] » gg raven / tt raven / usa scettro / rr raven / pp raven
+[46] [X] [scry] » mind 'visione'
+[47] [X] [sense] » mind 'senso del pericolo'
+[48] [X] [shield] » mind 'scudo psichico'
+[49] [X] [tt] » rem &weapon=moonshatter / tieni #
+[50] [X] [ub] » mind 'colpo superiore'
+[51] [X] [vuoto] » mind 'vuoto mentale' &target
+[52] [X] [x] » exam &bag=via-lattea
+[53] [X] [xx] » g &bag2=equilibrio / exam &bag2=equilibrio / p &bag2=equilibrio
+[54] [X] [xxx] » g &bag3=eroe / exam &bag3=eroe / p &bag3=eroe
+
+
+Recuperi rapidamente le tue forze. [182] 
+
+[H90%] [3292/3641] [708/708] [200/200] [F70]
+
+Recuperi rapidamente le tue forze. [182] 
+
+[H90%] [3474/3641] [708/708] [200/200] [F70]g
+[  UI  ] g » get # &bag=via-lattea
+Non c'e` nessun via-lattea qui.
+
+[H90%] [3474/3641] [708/708] [200/200] [F70]
+
+Recuperi rapidamente le tue forze. [167] 
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]look
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [4]
+[Diritto: Kyrus] Il cadavere di un mercante di spezie giace al suolo.
+[Diritto: Kyrus] Un mucchio di ossa e polvere e` qui in terra.
+[Diritto: Kyrus] Il cadavere di un mercante giace al suolo. [2]
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 4 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 19 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x70), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88| 99%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87| 99%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18| 99%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91| 99%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[13] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[16] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[17] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50| 99%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]golame
+[  UI  ] golame » uigo 20033[  UI  ] Prosegui lungo il percorso andando verso south
+s
+
+27
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+apri porta s
+s
+
+Lasci Via Flaminia, entrando in Alma.
+
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+E` gia` aperta.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+Porta Settentrionale - Citta' #3085 [S]
+La Porta Settentrionale connette la citta' di Alma con le terre del nord.
+Scavata nelle possenti mura e' una porta molto frequentata da carriaggi e
+carovane.
+Alcuni bracieri illuminano l'entrata alla citta'.
+Uscite: North [porta], East, South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Settentrionali di Alma
+East - Le Mura di Alma
+South - La via della Gloria
+West - Le Mura di Alma
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+La via della Gloria - Citta' #3004 [S]
+E' una grande via lastricata in marmo bianco. File di alberi intervallati da
+colonne anch'esse bianche costeggiano la strada. Indubbiamente e' opera di un
+grande architetto e di valenti costruttori. Sulle colonne commemorative ci
+sono (almeno cosi' ti sembra di intuire) raffigurati alcuni attimi salienti
+della storia dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, South.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Porta Settentrionale
+South - La Piazza della Gloria
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Una guardia cittadina controlla la zona. [Liv 50] [2]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso west
+w
+4
+
+Lasci Alma, entrando in Alma Nord.
+
+Viale degli Eroi - Citta' #3353 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+La strada passa tra edifici maestosi, in particolare noti il palazzo
+dedicato ai clan verso nord. Questa via e' stata dedicata
+dall'Impero agli Eroi che hanno solcato e che solcheranno
+queste terre.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [porta] (chiuso), East, South [porta] (chiuso), West.
+-----------------
+Uscite visibili:
+North - Il palazzo delle Gilde competitive (chiuso)
+East - La Piazza della Gloria
+South - Il palazzo delle Gilde contemplative (chiuso)
+West - Viale degli Eroi
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso north
+apri porta n
+n
+Apri la porta, liberando il percorso verso nord.
+[  UI  ] Aggiornata uscita n_action = apri
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+4
+[  UI  ] ent lama
+Il palazzo delle Gilde competitive - Al chiuso #3361 [S]
+Questa sala e' dedicata a tutte le gilde competitive del mondo, alcune piu'
+famose, altre meno conosciute, alcune potenti in battaglia, altre dedite
+all'esplorazione e alla conoscenza. Molti oggetti dedicati alle gilde sono qui
+donati probabilmente dagli adepti: ce ne sono di molti tipi: statue, quadri, o
+semplici oggetti conquistati in guerra o importanti per qualche motivo. A
+intervalli regolari, lungo l'intero perimetro della sala, si aprono rutilanti
+e colorati portali mistici in grado di portarti direttamente agli ingressi
+delle varie gilde.
+Uscite: South [porta], Arkangeli, Jedi, Lama&Pietra, Luce, Mercenari, Spettri, Tuono, Vampiri, Vendicatori.
+-----------------
+Uscite visibili:
+South - Viale degli Eroi
+Arkangeli - Il cancello dell'Eden
+Jedi - La Gradinata dell'Equilibrio
+Lama&Pietra - L'ingresso alla Gilda di Lama e Pietra
+Luce - Il ponte sul fossato
+Mercenari - La Congregazione dei Mercenari
+Spettri - L'ingresso della Torre degli Spettri
+Tuono - L'entrata della Fortezza del Tuono
+Vampiri - La via per il castello nero
+Vendicatori - L'ingresso alla tana dei Vendicatori
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+13
+[  UI  ] Prosegui lungo il percorso andando verso north
+n
+
+Lasci Alma Nord, entrando in Le Gilde di Lumen et Umbra.
+
+L'ingresso alla Gilda di Lama e Pietra - Al chiuso #20025 [S]
+Di fronte a te si trova un edificio interamente costruito con grosse pietre
+grigie venate di rosso. Nella parete c'e' una grande entrata, non sbarrata da
+porte o cancelli. Sul lato destro dell'entrata e' scolpito nella roccia il
+regolamento della gilda, mentre sul lato sinistro una lista di nomi e' incisa
+sulla lama di un'enorme spada.
+Uscite: North, South.
+La Spada della gilda di Lama e Pietra e' qui.
+Biff, l'uccisore di Draghi e` qui, in piedi. [Liv 40]
+La bella Alistar e' qui davanti all'ingresso della gilda [Liv 50]
+-----------------
+Uscite visibili:
+North - Il Salone della Gilda di Lama e Pietra
+South - Il bosco bruciato
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+13
+Il Salone della Gilda di Lama e Pietra - Al chiuso #20026 [S]
+Sei in un salone a pianta pentagonale. In ogni angolo si trova uno scranno di
+legno. Sulla parte superiore di ogni parete c'e' posto per un affresco, ma
+solo uno e' realizzato. Sul soffitto la cupola e' dipinta.
+Uscite: East, South, West [porta] (chiuso).
+C'e' una grande bacheca piena di avvisi appesa al muro.
+Il Codice della gilda di Lama e Pietra e' qui. [2]
+Sirea, il saggio, e' pronto a condividere con te le sue conoscenze... [Liv 50]
+-----------------
+Uscite visibili:
+East - Il disco della vita
+South - L'ingresso alla Gilda di Lama e Pietra
+West - Il ripostiglio (chiuso)
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso east
+e
+13
+[  UI  ] Prosegui lungo il percorso andando verso down
+d
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta], East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+13
+La Forgia di Lama e Pietra - Al chiuso #20033 [S]
+Sei in un gigantesco antro, quasi istintivamente volgi lo sguardo verso l'alto
+per cercare di dare una dimensione a questo luogo, ma senza troppo successo...
+non si riesce a vedere il soffitto. Il pavimento e' fatto di marmo striato di
+vari colori. Il calore e' intensissimo, contro la parete c'e' una grossa
+forgia in cui scintilla un fuoco magico dai bagliori bluastri. Del fumo blu
+sale verso l'alto, non riesci a capire dove. Un'enorme incudine istoriata di
+rune fatte in metallo magico luminescente e' al centro della stanza, mentre un
+armadio con strumenti metallurgici galleggia libero a tre metri d'altezza.
+Uscite: South, Up.
+George il Sapiente e' qui, sapendo... [Liv 50] (o) (o) (o)
+Una figura gigantesca ti osserva immobile tenendo le braccia incrociate. (o) (o) (o)
+-----------------
+Uscite visibili:
+South - Il Forziere di Lama e Pietra
+Up - Il disco della vita
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Sei arrivato alla fine del percorso
+ripara
+Weland, il fabbro ripara con notevole maestria il tuo equipaggiamento.
+[Weland, il fabbro] dice 'Splendido! Ho risparmiato molti materiali. Il tuo equipaggiamento e` come nuovo!'
+Dai 1430 monete d'oro a Weland, il fabbro.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]score
+Hai 134 anni e 3 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 3641/3641 punti ferita, 708/708 mana e 200/200 energia.
+Hai 220582047 punti esperienza, di cui 20582047 volatili.
+Hai 719166 Monete d'Oro, 2987 Astralite, e 100214 Residuum.
+Hai 104514 Diamanti, 28469 Smeraldi, 75947 Rubini, e 75735 Zaffiri.
+Indossi un totale di 31 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:      20582047/100000000 (21%)      
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 47 giorni e 19 ore.
+Sei in piedi.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]cassetta
+Custodisci in banca i seguenti materiali:
+   1 un lingotto d'argento
+   1 un lingotto di ossidiana
+   1 un frammento celestiale
+   1 un frammento infernale
+   1 un frammento di adamantio
+   1 un frammento di ebanite
+   6 un Omamori dedicato ad Ashura
+   4 un frammento di Trama purissimo
+   1 una semisfera iridescente
+  52 una sfera iridescente
+   2 un monile dorato triangolare
+   1 un cristallo di Ethereum frastagliato
+   8 un frammento di monile dorato
+  38 un concentrato di essenza caotica
+   4 una sfera di caos rutilante
+   1 un cristallo di Ethereum luminoso
+   7 un rocchetto di purissimo filo d'argento
+   2 un cristallo di Ethereum pungente
+   1 un cristallo di Ethereum contundente
+ 181 un Sesterzio di Bronzo
+  43 un Sesterzio d'Argento
+  41 un Sesterzio d'Oro
+  19 un Sesterzio di Mithril
+   1 un Sesterzio d'Adamantio
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+
+Un potente drago ha preso possesso di una gigantesca caverna!
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+
+Il Signore dei Draghi sta portando morte e distruzione in un villaggio!
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]xx
+[  UI  ] xx[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] xx[ 2] » exam &bag2=equilibrio
+[  UI  ] xx[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Non vedi nulla di speciale in lo zaino dell'Equilibrio.
+Quando ci guardi dentro, vedi:
+zaino (trasportato) : 
+[ 1] |T| lo scettro di Ravenloft...Ha un alone luminoso [3]
+[ 4] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 5] |T| una Lama di Pietra affilata [4]
+[ 9] |T| un asso di fiori...E` in condizioni eccellenti
+[10] |T| un asso di quadri...E` in condizioni eccellenti
+[11] |T| un asso di cuori [2]
+[13] |T| un asso di picche...E` in condizioni eccellenti
+[14] |T| una borsa magica...Ha un alone luminoso...E` in condizioni eccellenti
+[15] |T| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
+[16] |T| alcuni attrezzi da scasso...E` in condizioni eccellenti...Sembra molto fragile
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]xxx
+[  UI  ] xxx[ 1] » g &bag3=eroe » get #eroe &bag=via-lattea
+[  UI  ] xxx[ 2] » exam &bag3=eroe
+[  UI  ] xxx[ 3] » p &bag3=eroe » put #eroe &bag=via-lattea
+Prendi il baule dell'eroe da la borsa della Via Lattea.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Non vedi nulla di speciale in il baule dell'eroe.
+Quando ci guardi dentro, vedi:
+baule (trasportato) : 
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Metti il baule dell'eroe in la borsa della Via Lattea
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]gg ricetta
+[  UI  ] gg[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] gg[ 2] » get #ricetta &bag2=equilibrio
+[  UI  ] gg[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Prendi Ricetta: Incantamento Minore da lo zaino dell'Equilibrio.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]leggi ricetta
+Non vedi nulla di speciale in Ricetta: Incantamento Minore.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]x ricetta
+[  UI  ] x » exam #ricetta
+Non vedi nulla di speciale in Ricetta: Incantamento Minore.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]inspez ricetta
+Pardon?
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]ispe ricetta
+Osservi attentamente Ricetta: Incantamento Minore.
+
+Le sue parole chiave sono ricetta incantamento minore pergamena.
+
+Se fosse in terra, lo vedresti come:
+Una pergamena con istruzioni per un processo alchemico e` qui in terra.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+
+Il Signore dei Draghi sta portando morte e distruzione in un villaggio!
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]uigo sul terzo gradino
+[  UI  ] Prosegui lungo il percorso andando verso up
+u
+13
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta], East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso east
+e
+13
+[  UI  ] ent nonritorno
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+-----------------
+Uscite visibili:
+West - Il disco della vita
+Il punto di NON RITORNO - Il punto di NON RITORNO
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+56
+[  UI  ] Prosegui lungo il percorso andando verso east
+e
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Sanctum .
+
+Il punto di NON RITORNO - Acque Profonde #6658 [S]
+Sei all'estremita' est del grande oceano, ti sembra che l'acqua venga tutta
+attratta verso est dove cade in una specie di grande cascata...se non vuoi
+cascare anche tu vedi di evitare di andare verso est!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - In mare aperto
+East - L'estremo est del mondo
+South - In mare aperto
+West - Isola dei Giganti
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+56
+[  UI  ] Prosegui lungo il percorso andando verso east
+e
+L'estremo est del mondo - Acque Profonde #6659 [S]
+La corrente e il vento ti trascinano verso il limite est dell'enorme tavola
+che e' il mondo! Non c'e' modo di tornare indietro... stai per
+cadereeeeeeeeeeeeeeeeeeeeee.....
+Uscite: East.
+-----------------
+Uscite visibili:
+East - La terra degli esploratori delusi
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+56
+[  UI  ] Prosegui lungo il percorso andando verso north
+n
+La terra degli esploratori delusi - Sconosciuto #6660 [S]
+Dopo essere caduto oltre il limite est del mondo, sei finito in cio' che
+sembra una sorta di immondezzaio. Vari resti di navi riposano qui in rovina,
+mentre alcuni marinai ed esploratori, che con te si trovano qui, non fanno
+altro che maledire un tale Cristoforo Colombo.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - I corridoi dell'infinito
+South - Sala giochi di Karkas
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+56
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+I corridoi dell'infinito - Sconosciuto #6696 [S]
+Sei ovunque, e in nessun luogo. Togliti di qui prima di diventare pazzo.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Sul bordo del Vuoto Astrale
+East - Fiume delle Anime Perdute
+South - Il Foro Imperiale
+West - Un'abitazione privata
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+
+Lasci Sanctum , entrando in Alma.
+
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+Il martello da guerra di Huma e' qui in terra....Ha un alone luminoso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Un frate che indossa una tunica nera ti passa accanto. [Liv 16][Elite]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un legionario e' in cerca d'impiego. [Liv 34]
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv 58][Elite] (o) (o)
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+Via Meridionalis - Citta' #3052 [S]
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Alcune fiaccole sono state accese per illuminare la strada.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Platea Popolorum
+South - Via Meridionalis
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+Via Meridionalis - Citta' #3053 [S]
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Verso un lato della strada, in basso
+noti una discarica. Senti il rumore dello scorrere dell'acqua verso est, ti
+giri e vedi una stradina che porta verso il fiume Lys.
+Alcune fiaccole sono state accese per illuminare la strada.
+Uscite: North, East, South, Down.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - Via Meridionalis
+East - Scendendo verso il fiume Lys
+South - Il Ponte Bianco
+Down - La discarica
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+Il Ponte Bianco - Citta' #3054 [S]
+Sei su di uno splendido ponte di marmo bianco che passa sopra il fiume che
+bagna Alma Civitas. Riccamente decorato da fregi e sculture di vario tipo e'
+diventato nel tempo uno dei monumenti di cui la citta' va piu' orgogliosa.
+Dei bracieri sono stati accesi per illuminare il ponte.
+Uscite: North, South.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Via Meridionalis
+South - Porta Meridionale
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+apri porta s
+s
+Porta Meridionale - Citta' #3071 [S]
+Stai passando sotto i bastioni che delimitano la porta meridionale della
+citta'. Sventola la bandiera di Alma sul posto di guardia. Di qui si controlla
+l'entrata sud della citta'. L'edificio e' cupo e fortificato.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East, South [porta], West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Il Ponte Bianco
+East - Le Mura di Alma
+South - Al di fuori delle Porte Meridionali di Alma
+West - Le Mura di Alma
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+E` gia` aperta.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+1
+[  UI  ] Prosegui lungo il percorso andando verso south
+s
+Al di fuori delle Porte Meridionali di Alma - Pianura #3096 [S]
+Sei fuori delle mura di Alma Civitas. A sud inizia la Via Appia che porta
+nelle zone meridionali dell'Impero.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North [porta], South.
+-----------------
+Uscite visibili:
+North - Porta Meridionale
+South - La via Appia
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+12
+[  UI  ] Prosegui lungo il percorso andando verso west
+w
+
+Lasci Alma, entrando in La via Appia.
+
+La via Appia - Pianura #4501 [S]
+Qui inizia la famosa via Appia. E' la piu' grande e meglio pavimentata delle
+strade imperiali per permettere il transito degli eserciti e dei convogli che
+legano Alma con la citta' di Capua, la seconda roccaforta imperiale.
+Nonostante il fitto traffico e pattugliamento, la via Appia e' un posto
+notoriamente pericoloso di notte per le creature che abitano i boschi che essa
+attraversa. Verso ovest, si apre una stradina che serpeggia tra i campi.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Meridionali di Alma
+East - La via appia
+West - Una stradina lastricata
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+38
+
+Lasci La via Appia, entrando in L'Accademia Astrale.
+
+Una stradina lastricata - Al chiuso #24505 [S]
+La strada che stai percorrendo e` chiaramente di nuova ed eccellente fattura,
+eppure non ti sembra di aver notato lavori di costruzione recentemente.
+La pavimentazione e` composta di pietre simmetriche e levigate, disposte
+con cura nel formare geometrie dall'estetica complessa e ricercata, quasi
+ad accompagnare il percorso serpeggiante tra le alture disseminate
+nell'agro spazioso che circonda Alma Civitas. Due lunghe file di mattoncini
+bianchi delimitano la carreggiata, guidando il tuo sguardo fino ad un cancello,
+lontano, ma gia` ben distinguibile.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via Appia
+West - Un cancello su un cortile disadorno
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[  UI  ] Prosegui lungo il percorso andando verso west
+w
+38
+[  UI  ] Prosegui lungo il percorso andando verso west
+open open cancello w w
+w
+Un cancello su un cortile disadorno - Al chiuso #24506 [S]
+Dopo qualche minuto di passeggio, giungi infine di fronte ad un grosso cancello
+in ferro battuto di pregevole fattura, con decorazioni che richiamano gli stessi
+motivi che hai osservato sul lastricato del viottolo percorso fin qui.
+Sembra essere l'unico modo per accedere... ad un cortile completamente vuoto,
+circondato da un alto muro di cinta, anch'esso di nuovissima fattura, evidente
+per il bianco intenso della pittura. Non sembra esserci un meccanismo di
+chiusura, il cancello si puo` aprire semplicemente spingendo con delicatezza.
+Uscite: East, West [cancello] (chiuso).
+-----------------
+Uscite visibili:
+East - Una stradina lastricata
+West - All'interno del cortile (chiuso)
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Non vedi niente del genere.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Il cancello e` chiuso.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]w
+open open cancello w w
+w
+Non vedi niente del genere.
+
+[  UI  ] Speedwalk interrotto.
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Il cancello e` chiuso.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]op cancello w
+[  UI  ] op[ 1] » unlock #cancello w
+[  UI  ] op[ 2] » open #cancello w
+Non sembra esserci nessuna toppa per la chiave.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+Sfiori appena il cancello, che risponde immediatamente al tuo gesto.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]w
+open open cancello w w
+w
+Non vedi niente del genere.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+38
+All'interno del cortile - Al chiuso #24507 [S]
+Oltrepassi il cancello, entrando nel cortile disadorno, cercando con lo sguardo
+qualcosa che valga la pena di osservare. La pavimentazione, a differenza 
+della stradina, e` qui liscia e regolare, composta da grosse piastre quadrate 
+di pietra levigata, molto piu` adeguata ad un interno che ad un cortile.
+Avanzando, ti rendi conto che questo luogo offre qualcosa in piu` di quel che
+mostra ad un primo sguardo: lievi scariche elettriche attraversano costantemente
+l'aria, densa di un'energia magica che non ricordi di aver percepito altrove.
+Tre gradini in marmo giacciono isolati sul lato sinistro.
+Uscite: North, East.
+-----------------
+Uscite visibili:
+North - Sul terzo gradino
+East - Un cancello su un cortile disadorno
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]n
+n
+38
+Sul terzo gradino - Al chiuso #24508 [S]
+Non appena poggi i piedi sul terzo gradino, la realta` che ti circonda inizia
+a mutare e distorcersi. Un edificio sembra continuamente materializzarsi 
+di fronte a te, senza mai riuscirci completamente, scomponendosi in molteplici
+copie di se stesso, ognuna leggermente diversa dall'altra, vuoi per forma,
+vuoi per colore, vuoi per i pochi dettagli che riesci appena a distinguere.
+Ogni copia presenta pero` una struttura simile: una ampia base piramidale
+dal cui centro si innalza un'alta torre, circondata da una rampa di scale
+al suo esterno. Davanti ai tuoi occhi si alternano infinite immagini di una
+porta. Potresti provare a varcare la soglia.
+Uscite: South, Soglia.
+-----------------
+Uscite visibili:
+South - All'interno del cortile
+Soglia - Oltre la soglia
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]ent soglia
+38
+Oltre la soglia - Al chiuso #24509 [S]
+Oltrepassi quella che dovrebbe essere la soglia, timoroso che il tuo piede
+affondi nel vuoto, oltre il terzo gradino. Per fortuna, invece, impatta solido.
+Ti trovi in una stanza cubica, bianca da farti stringere gli occhi.
+Un lieve ronzio permea l'aria, non c'e` traccia della porta dietro di te.
+
+[Una voce] annuncia 'Decontaminazione in corso. Si prega di attendere.'
+
+Uscite visibili:
+Nessuna!
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+38
+
+Con uno scatto metallico, due prese d'aria si aprono sui lati opposti
+della stanza, ed un fruscio sostenuto accompagna l'emissione di un fumo
+biancastro, inodore. Un fascio di luce verde attraversa tutta la stanza,
+scorrendo sul tuo corpo da capo a piedi. Puoi percepirne distintamente
+il calore quando ti sfiora la pelle.
+
+Dopo una manciata di lunghissimi secondi, la procedura sembra terminare.
+
+[Una voce] annuncia 'Decontaminazione Completa.'
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+38
+
+Le pareti della stanza si fanno traslucide prima, andando poi a scomparire
+completamente, lasciando spazio ad un ambiente ampio e inaspettatamente
+affollato, di cui inizi a cogliere i dettagli mano a mano che i tuoi occhi si
+riprendono dal bianco abbagliante.
+
+[Una voce] annuncia 'Benvenuto nell'Accademia Astrale.'
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+38
+
+Voci, movimento costante, persone in camice azzurro che si muovono
+indaffarate da una parte all'altra dell'edificio, giovani di diverse razze
+che discutono della prossima lezione. Di tanto in tanto, una persona
+accanto a te appare traslucida per pochi istanti, prima di scomparire,
+mentre altre appaiono accompagnate da un lieve ronzio elettrico. 
+Diversi tempi, diversi mondi, realta`  parallele convergono instancabilmente 
+in questo luogo di studio e ricerca. Un pannello trasparente recante le 
+indicazioni per i vari reparti fluttua poco distante da te.
+Uscite: North, East, South, West.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]look
+Al centro della sala principale - Al chiuso #24510 [S]
+Voci, movimento costante, persone in camice azzurro che si muovono
+indaffarate da una parte all'altra dell'edificio, giovani di diverse razze
+che discutono della prossima lezione. Di tanto in tanto, una persona
+accanto a te appare traslucida per pochi istanti, prima di scomparire,
+mentre altre appaiono accompagnate da un lieve ronzio elettrico. 
+Diversi tempi, diversi mondi, realta`  parallele convergono instancabilmente 
+in questo luogo di studio e ricerca. Un pannello trasparente recante le 
+indicazioni per i vari reparti fluttua poco distante da te.
+Uscite: North, East, South, West.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+
+Alcuni studenti parlano tra loro a voce bassa.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 2] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 2 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+
+Alcuni studenti parlano tra loro a voce bassa.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]w
+w
+38
+Verso le Aule di Apprendimento - Al chiuso #24518 [S]
+Un breve corridoio, finora riservato agli studenti, termina in una stanzetta
+circolare, che a sua volta presenta due uscite: una scala a chiocciola che
+dal centro sale verso i quartieri privati di studenti e Magister, ed un grosso
+portone in acciaio, tenuto aperto da un fermaporte, verso l'Aula Magna.
+Uscite: East, West, Up.
+-----------------
+Uscite visibili:
+East - Al centro della sala principale
+West - L'Aula Magna
+Up - Ingresso ai quartieri privati
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]u
+u
+38
+Ingresso ai quartieri privati - Al chiuso #24529 [S]
+Ti inerpichi sulla scala a chiocciola per verificare l'evoluzione della
+situazione. La sala e` stata completamente ripulita, non ci sono piu` tracce
+di combattimenti. Le pareti sono state rinnovate, e l'ambiente nel complesso
+e` stato rimesso a nuovo. Una placca dorata su una parete e` tutto cio`
+che rimane degli eventi che hanno sconvolto questo luogo in passato.
+Uscite: Down, Portone.
+Un elfo vestito in una massiccia armatura di piastre controlla la situazione. [Liv 60] (o)
+-----------------
+Uscite visibili:
+Down - Verso le Aule di Apprendimento
+Portone - Verso il tuo appartamento
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]enter portone
+38
+Verso il tuo appartamento - Al chiuso #24530 [S]
+Passeggi per i corridoi del dormitorio, ben mantenuti e puliti, senza
+perdere tempo, per raggiungere il piccolo appartamento astrale che
+ti e` stato riservato all'Accademia. I corridoi mutano forma e dimensione
+attorno a te, semplificandoti l'opera e conducendoti rapidamente a
+destinazione.
+Uscite visibili:
+Nessuna!
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+103
+[  LUA  ] - error in event handler for gmcp.room:
+            <setExitStub: roomId doesn't exist>
+103
+
+Un luogo di passaggio - Al chiuso #40100 [S]
+Uno stretto corridoio dalle pareti bianche separa due porte, una fronte l'altra.
+Una rampa di scale scende verso il buio, oltre il dominio della luce soffusa,
+senza fonte apparente, che consente visibilita` pure in assenza di finestre.
+Uscite: East [porta] (chiuso), West, Down.
+
+Lasci L'Accademia Astrale, entrando in Laboratorio Personale.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]e
+e
+La porta e` chiusa.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]e
+e
+La porta e` chiusa.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]o pporta e
+La porta verso ovest e` saldamente chiusa, ne` ti sembra ci sia alcun
+modo di aprirla in questo momento. Una targa in metallo di fianco
+riporta il messaggio: "Lavori in corso."
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]look
+Un luogo di passaggio - Al chiuso #40100 [S]
+Uno stretto corridoio dalle pareti bianche separa due porte, una fronte l'altra.
+Una rampa di scale scende verso il buio, oltre il dominio della luce soffusa,
+senza fonte apparente, che consente visibilita` pure in assenza di finestre.
+Uscite: East [porta] (chiuso), West, Down.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]e
+e
+La porta e` chiusa.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]open porta e
+Apri la porta, liberando il percorso verso est.
+[  UI  ] Aggiornata uscita e_action = apri
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]e
+apri porta e
+e
+E` gia` aperta.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+103
+Laboratorio Alchemico - Al chiuso #40101 [S]
+Ti trovi all'interno di una piccola stanza, in confortevole penombra dai toni
+celesti e gradevole silenzio, appena riempito da un tenue crepitio e lievi
+movimenti d'aria. Fiale ed alambicchi, in gran parte vuoti ed impolverati,
+son distribuiti su un numero non chiaro di scaffali, a colmare tutto lo spazio
+che resta tra grossi libri in importanti rilegature. Solo una piccola finestra
+si apre verso l'esterno.
+Uscite: West.
+Un robusto tavolo da lavoro occupa gran parte dello spazio libero.
+Utilizza il comando infondi per metterti al lavoro.
+-----------------
+Uscite visibili:
+West - Un luogo di passaggio
+-----------------
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Selezione non valida.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 2] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 2 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[13] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[16] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[17] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]rem moon
+Smetti di usare MoonShatter, lo Scettro.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 2] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+[ 3] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 3 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+1) MoonShatter, lo Scettro
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Scegli di lavorare su MoonShatter, lo Scettro.
+Stai lavorando su MoonShatter, lo Scettro.
+La sua tipologia e` Arma, di rarita` Comune.
+
+Percorso Invasione del Caos (1/4): (23) 24 25 26 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +17 Potere Magico
+[2][Arcano I       ] Incantesimo su Arma: lancia di ghiaccio
+[3][Incantato      ] +14 Penetrazione (13...18)
+[4][Volatile       ] +20 Resistenza alla Perforazione (12...20)
+[5][Volatile       ] +20 Danno Perforazione (12...20)
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+6
+Hai dato il comando: '6'.
+
+Hai bisogno di tenere in mano una Ricetta per questa operazione.
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su MoonShatter, lo Scettro.
+La sua tipologia e` Arma, di rarita` Comune.
+
+Percorso Invasione del Caos (1/4): (23) 24 25 26 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +17 Potere Magico
+[2][Arcano I       ] Incantesimo su Arma: lancia di ghiaccio
+[3][Incantato      ] +14 Penetrazione (13...18)
+[4][Volatile       ] +20 Resistenza alla Perforazione (12...20)
+[5][Volatile       ] +20 Danno Perforazione (12...20)
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su MoonShatter, lo Scettro.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]tieni ricetta
+Prendi Ricetta: Incantamento Minore in mano.
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 2] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 2 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+[  UI  ] autoattack » aa » Non ci sono mob da attaccare
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+1) MoonShatter, lo Scettro
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Scegli di lavorare su MoonShatter, lo Scettro.
+Stai lavorando su MoonShatter, lo Scettro.
+La sua tipologia e` Arma, di rarita` Comune.
+
+Percorso Invasione del Caos (1/4): (23) 24 25 26 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +17 Potere Magico
+[2][Arcano I       ] Incantesimo su Arma: lancia di ghiaccio
+[3][Incantato      ] +14 Penetrazione (13...18)
+[4][Volatile       ] +20 Resistenza alla Perforazione (12...20)
+[5][Volatile       ] +20 Danno Perforazione (12...20)
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+6
+Hai dato il comando: '6'.
+
+
+Una combinazione dei materiali ed un processo descritto in dettaglio
+sono in grado di aggiungere un potere casuale Progressivo all'oggetto,
+a patto che meno di 4 poteri siano presenti in partenza.
+
+Eseguire la Ricetta Incantamento Minore costa:
+  2500 Monete d'Oro (7931402 a disposizione)
+  200 Residuum (100214 a disposizione)
+  5 un Sesterzio di Bronzo (181 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+
+Stai lavorando su MoonShatter, lo Scettro.
+La sua tipologia e` Arma, di rarita` Comune.
+
+Percorso Invasione del Caos (1/4): (23) 24 25 26 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +17 Potere Magico
+[2][Arcano I       ] Incantesimo su Arma: lancia di ghiaccio
+[3][Incantato      ] +14 Penetrazione (13...18)
+[4][Volatile       ] +20 Resistenza alla Perforazione (12...20)
+[5][Volatile       ] +20 Danno Perforazione (12...20)
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su MoonShatter, lo Scettro.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]
+[H90%] [3641/3641] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 2] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 2 su 50
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[13] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[16] <afferrato>         [U|  0|100%] Ricetta: Incantamento Minore
+[17] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 71.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3641/3641] [708/708] [200/200] [F70]rem cappa
+Smetti di usare una cappa di cristallo.
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]ident cappa
+[  UI  ] ident » ispeziona #cappa ident
+Ricordi le caratteristiche di una cappa di cristallo:
+una cappa di cristallo (cappa cristallo craft cinque), Tipologia: Armatura.
+Indossabilita` : Attorno.
+Rarita`        : Comune
+Contribuisce Non Limitato (0) al limite per gli oggetti indossabili.
+Percorso Cimelio Imperiale (1/1): (15) 
+
+Garantisce un bonus all'Armatura di 5.
+
+Conferisce i Poteri:
+[1][Innato         ] +2 Resistenza al Fisico
+[2][Innato         ] +6 Resistenza al Fisico
+[3][Innato         ] +75 Punti Ferita
+[4][Innato         ] +7 Resistenza al Magico
+
+Richiede Livello 50 per essere utilizzato.
+Pesa 1 etti e vale 100001 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 41.
+Personalizzato per Kyrus.
+
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+[  UI  ] autoattack » aa » Non ci sono mob da attaccare
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]
+
+Un potente drago ha preso possesso di una gigantesca caverna!
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+1) una cappa di cristallo
+2) MoonShatter, lo Scettro
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Scegli di lavorare su una cappa di cristallo.
+Stai lavorando su una cappa di cristallo.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Cimelio Imperiale (1/1): (15) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +2 Resistenza al Fisico
+[2][Innato         ] +6 Resistenza al Fisico
+[3][Innato         ] +75 Punti Ferita
+[4][Innato         ] +7 Resistenza al Magico
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+6
+Hai dato il comando: '6'.
+
+
+Una combinazione dei materiali ed un processo descritto in dettaglio
+sono in grado di aggiungere un potere casuale Progressivo all'oggetto,
+a patto che meno di 4 poteri siano presenti in partenza.
+
+Eseguire la Ricetta Incantamento Minore costa:
+  2500 Monete d'Oro (7931402 a disposizione)
+  200 Residuum (100214 a disposizione)
+  5 un Sesterzio di Bronzo (181 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+una cappa di cristallo non reagisce, qualcosa e` andato storto.
+
+Hai eseguito Incantamento Minore su una cappa di cristallo!
+
+Batti [INVIO] per continuare.
+
+Il tuo scudo psichico svanisce. 
+
+
+Stai lavorando su una cappa di cristallo.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Cimelio Imperiale (1/1): (15) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Innato         ] +2 Resistenza al Fisico
+[2][Innato         ] +6 Resistenza al Fisico
+[3][Innato         ] +75 Punti Ferita
+[4][Innato         ] +7 Resistenza al Magico
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+[ INFO ]  - Scorrimento a schermo diviso attivato. Premi <CTRL>+<INVIO> per annullare.
+i
+Hai dato il comando: 'i'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su una cappa di cristallo.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su una cappa di cristallo.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+i
+Hai dato il comando: 'i'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su una cappa di cristallo.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]
+[H90%] [3566/3566] [708/708] [200/200] [F70]rem guanti
+Smetti di usare i Guanti degli Inferi.
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]ident guanti
+[  UI  ] ident » ispeziona #guanti ident
+Ricordi le caratteristiche di i Guanti degli Inferi:
+i Guanti degli Inferi (guanti inferi sp), Tipologia: Armatura.
+Indossabilita` : Mani.
+Rarita`        : Comune
+Contribuisce Non Limitato (0) al limite per gli oggetti indossabili.
+Percorso Leggende Dimenticate (1/3): (23) 24 25 
+
+Garantisce un bonus all'Armatura di 4.
+
+Conferisce i Poteri:
+[1][Innato         ] +10 Potere Magico
+[2][Innato         ] +12 Precisione
+[3][Innato         ] +16 Colpo Critico
+[4][Innato         ] +12 Letalita`
+[5][Innato         ] +8 Resistenza al Fisico
+
+Richiede Livello 50 per essere utilizzato.
+Pesa 6 etti e vale 0 monete d'oro.
+Indice di danneggiamento: Indistruttibile.
+Il livello di potenza complessivo di questo oggetto e` 68.
+E` assicurato contro le transazioni involontarie.
+Personalizzato per Kyrus.
+
+
+[H90%] [3566/3566] [708/708] [200/200] [F70]rem corazz
+Smetti di usare una corazza di scaglie di drago.
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]ident coraz
+[  UI  ] ident » ispeziona #coraz ident
+Ricordi le caratteristiche di una corazza di scaglie di drago:
+una corazza di scaglie di drago (corazza scaglie drago), Tipologia: Armatura.
+Indossabilita` : Corpo.
+Rarita`        : Comune
+Contribuisce Non Limitato (0) al limite per gli oggetti indossabili.
+Percorso Leggende Dimenticate (1/3): (23) 24 25 
+
+Garantisce un bonus all'Armatura di 10.
+
+Conferisce i Poteri:
+[1][Innato         ] +50 Resistenza all'Impatto
+[2][Innato         ] +80 Punti Ferita
+[3][Innato         ] +35 Resistenza all'Acido
+[4][Innato         ] +12 Colpo Critico
+[5][Innato         ] +15 Vitalita`
+
+Richiede Livello 50 per essere utilizzato.
+Pesa 20 etti e vale 40000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 77.
+E` assicurato contro le transazioni involontarie.
+Personalizzato per Kyrus.
+
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]
+
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 2] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 3] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 4] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 5] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 5 su 50
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]
+
+Il Signore Oscuro sta devastando un antico regno!
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[ 9] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[10] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[11] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[12] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[13] <afferrato>         [U|  0|100%] Ricetta: Incantamento Minore
+[14] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[15] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[16] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[17] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[18] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 62.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]rem mante
+Non stai usando niente del genere.
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]rem mante
+Non stai usando niente del genere.
+
+[H90%] [3486/3486] [708/708] [200/200] [F70]rem manto
+Smetti di usare un manto degli antichi tomi.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]ident manto
+[  UI  ] ident » ispeziona #manto ident
+Ricordi le caratteristiche di un manto degli antichi tomi:
+un manto degli antichi tomi (manto antichi tomi), Tipologia: Armatura.
+Indossabilita` : Schiena.
+Rarita`        : Astrale
+Contribuisce Inestimabile (3) al limite per gli oggetti indossabili.
+Percorso Veterano dei Piani (8/8): 16 17 18 19 20 21 22 (23) 
+
+Garantisce un bonus all'Armatura di 1.
+
+Conferisce i Poteri:
+[1][Progressivo    ] +150 Punti Ferita
+[2][Progressivo    ] +8 Potere Magico
+[3][Progressivo    ] +16 Precisione
+[4][Progressivo    ] +16 Colpo Critico
+[5][Progressivo    ] +3% Eff. Corpo a Corpo (Magico)
+
+Richiede Livello 50 per essere utilizzato.
+Pesa 0 etti e vale 95000 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 71.
+Personalizzato per Kyrus.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 2] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 3] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 4] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 5] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 6] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 6 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 2] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 3] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 4] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 5] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 6] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 6 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[ 9] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[10] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[11] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[12] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[13] <afferrato>         [U|  0|100%] Ricetta: Incantamento Minore
+[14] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[15] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[16] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[17] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 59.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]inv
+Stai trasportando:
+[ 1] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 2] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 3] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 4] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 5] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 6] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 6 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]att
+Hai 134 anni e 3 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti molto ben corazzato [77].
+Assorbi 27.03% del danno fisico e 21.80% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [122].
+Hai buono [49] bonus al danno fisico e straordinario [113] potere magico.
+La tua possibilita` di colpo critico e` 20.86%, per un moltiplicatore di 161.95%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` mediocre [24].
+La tua capacita` di penetrare le resistenze e` ottima [64].
+Porti 2 attacchi ogni round:
+  Mani nude: 1d2 +24 [Media: 25]
+  Mani nude: 1d2 +24 [Media: 25]
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 18|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[ 9] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[10] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[11] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[12] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[13] <afferrato>         [U|  0|100%] Ricetta: Incantamento Minore
+[14] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[15] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[16] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[17] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 59.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]rem 3
+Smetti di usare un medaglione dell'apprendista.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]ident meda
+[  UI  ] ident » ispeziona #meda ident
+Ricordi le caratteristiche di un medaglione dell'apprendista:
+un medaglione dell'apprendista (medaglione apprendista), Tipologia: Armatura.
+Indossabilita` : Collo.
+Rarita`        : Comune
+Contribuisce Raffinato (1) al limite per gli oggetti indossabili.
+Percorso Veterano (2/8): 10 (11) 12 13 14 15 16 17 
+
+Garantisce un bonus all'Armatura di 2.
+
+Conferisce i Poteri:
+[1][Progressivo    ] +6 Vitalita`
+[2][Cardinale      ] +4 Potere Magico
+[3][Progressivo    ] +6 Letalita`
+
+Richiede Livello 28 per essere utilizzato.
+Pesa 1 etti e vale 0 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 18.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+[  UI  ] autoattack » aa » Non ci sono mob da attaccare
+
+infondi
+Hai dato il comando: 'infondi'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+1) un medaglione dell'apprendista
+2) un manto degli antichi tomi
+3) una corazza di scaglie di drago
+4) i Guanti degli Inferi
+5) una cappa di cristallo
+6) MoonShatter, lo Scettro
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Scegli di lavorare su un medaglione dell'apprendista.
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (2/8): 10 (11) 12 13 14 15 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +6 Vitalita`
+[2][Cardinale      ] +4 Potere Magico
+[3][Progressivo    ] +6 Letalita`
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+6
+Hai dato il comando: '6'.
+
+
+Una combinazione dei materiali ed un processo descritto in dettaglio
+sono in grado di aggiungere un potere casuale Progressivo all'oggetto,
+a patto che meno di 4 poteri siano presenti in partenza.
+
+Eseguire la Ricetta Incantamento Minore costa:
+  2500 Monete d'Oro (7928902 a disposizione)
+  200 Residuum (100014 a disposizione)
+  5 un Sesterzio di Bronzo (176 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+un medaglione dell'apprendista risplende appena per un istante.
+
+Hai eseguito Incantamento Minore su un medaglione dell'apprendista!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (2/8): 10 (11) 12 13 14 15 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +6 Vitalita`
+[2][Cardinale      ] +4 Potere Magico
+[3][Progressivo    ] +6 Letalita`
+[4][Progressivo    ] +65 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (2/8): 10 (11) 12 13 14 15 16 17 
+
+Aumentare di livello questo oggetto costa:
+  1400 Monete d'Oro (7926402 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (3/8): 10 11 (12) 13 14 15 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +6 Vitalita`
+[2][Cardinale      ] +4 Potere Magico
+[3][Progressivo    ] +6 Letalita`
+[4][Progressivo    ] +70 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+[ INFO ]  - Scorrimento a schermo diviso attivato. Premi <CTRL>+<INVIO> per annullare.
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (3/8): 10 11 (12) 13 14 15 16 17 
+
+Aumentare di livello questo oggetto costa:
+  1600 Monete d'Oro (7925002 a disposizione)
+  25 Zaffiri (75735 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (4/8): 10 11 12 (13) 14 15 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +7 Vitalita`
+[2][Cardinale      ] +4 Potere Magico
+[3][Progressivo    ] +7 Letalita`
+[4][Progressivo    ] +75 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (4/8): 10 11 12 (13) 14 15 16 17 
+
+Aumentare di livello questo oggetto costa:
+  1800 Monete d'Oro (7923402 a disposizione)
+  35 Zaffiri (75710 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (5/8): 10 11 12 13 (14) 15 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +7 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +7 Letalita`
+[4][Progressivo    ] +80 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (5/8): 10 11 12 13 (14) 15 16 17 
+
+Aumentare di livello questo oggetto costa:
+  2000 Monete d'Oro (7921602 a disposizione)
+  10 Rubini (75947 a disposizione)
+  50 Zaffiri (75675 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (6/8): 10 11 12 13 14 (15) 16 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +8 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +8 Letalita`
+[4][Progressivo    ] +85 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (6/8): 10 11 12 13 14 (15) 16 17 
+
+Aumentare di livello questo oggetto costa:
+  2500 Monete d'Oro (7919602 a disposizione)
+  15 Rubini (75937 a disposizione)
+  75 Zaffiri (75625 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+1
+Hai dato il comando: '1'.
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (7/8): 10 11 12 13 14 15 (16) 17 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +9 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +9 Letalita`
+[4][Progressivo    ] +90 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+Percorso Veterano (7/8): 10 11 12 13 14 15 (16) 17 
+
+Aumentare di livello questo oggetto costa:
+  2500 Monete d'Oro (7917102 a disposizione)
+  20 Rubini (75922 a disposizione)
+  100 Zaffiri (75550 a disposizione)
+  1 un Sesterzio di Bronzo (171 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai aumentato un medaglione dell'apprendista di livello!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+1
+Hai dato il comando: '1'.
+
+Stai aumentando il livello dell'oggetto
+L'oggetto e` gia` al suo massimo potenziale nel suo percorso.
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+3
+    
+[ ALERT ] - Socket disconnesso.
+            Motivo: L'host remoto ha chiuso la connessione
+[ INFO ]  - Tempo di connessione: 00:30:03.144
+                
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+Ritrovi il senso della realta' ma sei un po' stordito.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |C| un medaglione dell'apprendista...E` in condizioni eccellenti
+[ 2] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 3] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 4] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 5] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 6] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 7] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 7 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 4] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 5] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 6] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 7] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[ 8] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[ 9] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[10] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[11] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[12] <afferrato>         [U|  0|100%] Ricetta: Incantamento Minore
+[13] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[14] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[15] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[16] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 58.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |C| un medaglione dell'apprendista...E` in condizioni eccellenti
+[ 2] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 3] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 4] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 5] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 6] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 7] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 7 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]ident meda
+[  UI  ] ident » ispeziona #meda ident
+Ricordi le caratteristiche di un medaglione dell'apprendista:
+un medaglione dell'apprendista (medaglione apprendista), Tipologia: Armatura.
+Indossabilita` : Collo.
+Rarita`        : Comune
+Contribuisce Inestimabile (3) al limite per gli oggetti indossabili.
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+
+Garantisce un bonus all'Armatura di 2.
+
+Conferisce i Poteri:
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+Richiede Livello 42 per essere utilizzato.
+Pesa 1 etti e vale 0 monete d'oro.
+Indice di danneggiamento: 0/100
+Il livello di potenza complessivo di questo oggetto e` 41.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]look
+Laboratorio Alchemico - Al chiuso #40101 [S]
+Ti trovi all'interno di una piccola stanza, in confortevole penombra dai toni
+celesti e gradevole silenzio, appena riempito da un tenue crepitio e lievi
+movimenti d'aria. Fiale ed alambicchi, in gran parte vuoti ed impolverati,
+son distribuiti su un numero non chiaro di scaffali, a colmare tutto lo spazio
+che resta tra grossi libri in importanti rilegature. Solo una piccola finestra
+si apre verso l'esterno.
+Uscite: West.
+Un robusto tavolo da lavoro occupa gran parte dello spazio libero.
+Utilizza il comando infondi per metterti al lavoro.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]infondi
+Ti avvicini al robusto tavolo da lavoro.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Non hai ancora iniziato a lavorare.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+1
+Hai dato il comando: '1'.
+
+Seleziona un oggetto
+Hai con te a disposizione:
+1) un medaglione dell'apprendista
+2) un manto degli antichi tomi
+3) una corazza di scaglie di drago
+4) i Guanti degli Inferi
+5) una cappa di cristallo
+6) MoonShatter, lo Scettro
+
+Indica la tua scelta o [INVIO] per tornare indietro:
+->
+
+1
+Hai dato il comando: '1'.
+Scegli di lavorare su un medaglione dell'apprendista.
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale      ] +5 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+3
+Hai dato il comando: '3'.
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale      ] +5 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+1
+Hai dato il comando: '1'.
+Stai interagendo con il potere 1
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Vitalita`
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 1
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Vitalita`
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  16500 Residuum (99814 a disposizione)
+  1 una sfera di Astralite trasparente (0 a disposizione)
+  5 un Sesterzio di Mithril (19 a disposizione)
+
+Non hai risorse a sufficienza per questa operazione.
+Batti [INVIO] per continuare.
+
+
+Stai interagendo con il potere 1
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Vitalita`
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+1
+Hai dato il comando: '1'.
+Stai interagendo con il potere 1
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Vitalita`
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  1 un monile dorato triangolare (2 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+no
+Hai dato il comando: 'no'.
+Stai interagendo con il potere 1
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Vitalita`
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale      ] +5 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 0 su 3
+Effetto : +5 Potere Magico
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 0 su 3
+Effetto : +5 Potere Magico
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  16500 Residuum (99814 a disposizione)
+  10 un Sesterzio d'Oro (41 a disposizione)
+  5 un Sesterzio di Mithril (19 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Il potere 2 e` ora livello 1.
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale I    ] +6 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+3
+Hai dato il comando: '3'.
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale I    ] +6 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 1 su 3
+Effetto : +6 Potere Magico
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 1 su 3
+Effetto : +6 Potere Magico
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  24500 Residuum (83314 a disposizione)
+  15 un Sesterzio d'Oro (31 a disposizione)
+  8 un Sesterzio di Mithril (14 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Il potere 2 e` ora livello 2.
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale II   ] +6 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+3
+Hai dato il comando: '3'.
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale II   ] +6 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 2 su 3
+Effetto : +6 Potere Magico
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 2 su 3
+Effetto : +6 Potere Magico
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  35000 Residuum (58814 a disposizione)
+  1 un frammento di Trama purissimo (4 a disposizione)
+  20 un Sesterzio d'Oro (16 a disposizione)
+  10 un Sesterzio di Mithril (6 a disposizione)
+
+Non hai risorse a sufficienza per questa operazione.
+Batti [INVIO] per continuare.
+
+
+Stai interagendo con il potere 2
+
+Tipo    : Cardinale
+Livello : 2 su 3
+Effetto : +6 Potere Magico
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale II   ] +6 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+3
+Hai dato il comando: '3'.
+Stai interagendo con il potere 3
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Letalita`
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 3
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Letalita`
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  16500 Residuum (58814 a disposizione)
+  1 una sfera di Astralite trasparente (0 a disposizione)
+  5 un Sesterzio di Mithril (6 a disposizione)
+
+Non hai risorse a sufficienza per questa operazione.
+Batti [INVIO] per continuare.
+
+
+Stai interagendo con il potere 3
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +10 Letalita`
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale II   ] +6 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+4
+Hai dato il comando: '4'.
+Stai interagendo con il potere 4
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +95 Punti Ferita
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+2
+Hai dato il comando: '2'.
+Stai interagendo con il potere 4
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +95 Punti Ferita
+Stato   : Libero
+
+Per questa operazione, hai bisogno di:
+  16500 Residuum (58814 a disposizione)
+  1 una sfera di Astralite trasparente (0 a disposizione)
+  5 un Sesterzio di Mithril (6 a disposizione)
+
+Non hai risorse a sufficienza per questa operazione.
+Batti [INVIO] per continuare.
+
+
+Stai interagendo con il potere 4
+
+Tipo    : Progressivo
+Livello : 0 su 3
+Effetto : +95 Punti Ferita
+Stato   : Libero
+
+1) Preserva questo potere
+2) Migliora questo potere
+
+Come vuoi interagire con questo potere?
+ ->
+
+
+Puoi interagire con uno dei seguenti poteri:
+1) [Progressivo    ] +10 Vitalita`
+2) [Cardinale II   ] +6 Potere Magico
+3) [Progressivo    ] +10 Letalita`
+4) [Progressivo    ] +95 Punti Ferita
+
+Seleziona il potere con cui interagire
+ ->
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale II   ] +6 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+5
+Hai dato il comando: '5'.
+Stai valutando di invertire la cardinalita` di un medaglione dell'apprendista.
+
+Invertire la cardinalita` di questo oggetto costa:
+  17000 Monete d'Oro (7914602 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+
+un medaglione dell'apprendista prende una tinta rossastra per un istante.
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale II   ] +6 Danno Fisico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+5
+Hai dato il comando: '5'.
+Stai valutando di invertire la cardinalita` di un medaglione dell'apprendista.
+
+Invertire la cardinalita` di questo oggetto costa:
+  17000 Monete d'Oro (7897602 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+
+un medaglione dell'apprendista prende una tinta celeste per un istante.
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale II   ] +6 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+4
+Hai dato il comando: '4'.
+Stai valutando di rigenerare i poteri di un medaglione dell'apprendista.
+
+Rigenerare i poteri di questo oggetto costa:
+  1700 Monete d'Oro (7880602 a disposizione)
+
+
+Sei sicuro di voler procedere? (si / no)
+->
+
+si
+Hai dato il comando: 'si'.
+Hai rigenerato i poteri di un medaglione dell'apprendista!
+
+Batti [INVIO] per continuare.
+
+
+Stai lavorando su un medaglione dell'apprendista.
+La sua tipologia e` Armatura, di rarita` Comune.
+
+Percorso Veterano (8/8): 10 11 12 13 14 15 16 (17) 
+Elenco dei poteri (evidenziati se modificabili):
+[1][Progressivo    ] +10 Vitalita`
+[2][Cardinale II   ] +6 Potere Magico
+[3][Progressivo    ] +10 Letalita`
+[4][Progressivo    ] +95 Punti Ferita
+
+1) Aumenta il livello
+2) Riduci il livello
+3) Interagisci con un Potere specifico
+4) Rigenera i Poteri modificabili
+5) Inverti la Polarita` Cardinale
+6) Esegui una Trasmutazione Speciale
+
+Indica la tua scelta:
+->
+
+
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+i
+Hai dato il comando: 'i'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+eq
+Hai dato il comando: 'eq'.
+Stai operando al tuo Laboratorio Alchemico.
+
+Laboratorio Alchemico
+Stai lavorando su un medaglione dell'apprendista.
+
+1) Seleziona un oggetto
+2) Modifica l'oggetto selezionato
+
+Indica la tua scelta o [INVIO] per uscire:
+->
+
+
+Ti allontani dal robusto tavolo da lavoro.
+
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |C| un medaglione dell'apprendista...E` in condizioni eccellenti
+[ 2] |A| un manto degli antichi tomi...E` in condizioni eccellenti
+[ 3] |T| una corazza di scaglie di drago...E` in condizioni eccellenti
+[ 4] |T| i Guanti degli Inferi...E` indistruttibile!
+[ 5] |T| una cappa di cristallo...E` in condizioni eccellenti
+[ 6] |T| MoonShatter, lo Scettro...Ha un alone luminoso...E` indistruttibile!
+[ 7] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 7 su 50
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]rem ricetta
+Smetti di usare Ricetta: Incantamento Minore.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]
+
+Il Signore dei Draghi sta portando morte e distruzione in un villaggio!
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]pp ricetta
+[  UI  ] pp[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] pp[ 2] » put #ricetta &bag2=equilibrio
+[  UI  ] pp[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]
+Metti Ricetta: Incantamento Minore in lo zaino dell'Equilibrio
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[H90%] [3336/3336] [708/708] [200/200] [F70]wear all
+Ti metti un medaglione dell'apprendista intorno al collo.
+Ti metti un manto degli antichi tomi sulle spalle.
+Indossi una corazza di scaglie di drago.
+Metti i Guanti degli Inferi sulle mani.
+Ti avvolgi con una cappa di cristallo.
+Impugni MoonShatter, lo Scettro.
+Hai gia` qualcosa sulle tue spalle.
+
+[H90%] [3336/3736] [708/708] [200/200] [F70]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H90%] [3336/3736] [708/708] [200/200] [F70]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [C| 43|100%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[13] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[16] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[17] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 80.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H90%] [3336/3736] [708/708] [200/200] [F70]
+
+Recuperi rapidamente le tue forze. [186] 
+
+[H90%] [3522/3736] [708/708] [200/200] [F70]
+
+Recuperi rapidamente le tue forze. [186] 
+
+[H90%] [3708/3736] [708/708] [200/200] [F70]
+
+Recuperi rapidamente le tue forze. [28] 
+
+[H90%] [3736/3736] [708/708] [200/200] [F70]lua savemap()
+[  LUA  ] - object: <Esecuzione codice LUA da prompt comandi> funzione:<Alias73>
+            <[string "return savemap()"]:1: attempt to call global 'savemap' (a nil value)>
+lua saveMap()

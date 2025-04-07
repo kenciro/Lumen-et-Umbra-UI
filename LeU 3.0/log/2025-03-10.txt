@@ -1,0 +1,2898 @@
+Log di sessione a partire 17:08:10 su lunedì, 10 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-07#16-24-12map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.06s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.10s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-07#16-24-12map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.08s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+La locanda - Al chiuso [S]
+Il pavimento di questa grande Sala e' composto da diverse lastre levigate di
+pietra con venature gialle e argento che ti ricordano i gioielli di una dama.
+Le pareti sono invece ricoperte da antichi pannelli lisci in legno di rovere
+sulle quali piccoli quadri descrivono ambienti naturali ed alcune scene di
+battaglie. Sulla parete orientale dei semplici drappi colorati adornano una
+serie di ampi finestroni da cui si vede un verde bosco e, pi�lontananza,
+gli sbuffi di fumo dei camini e dei fumaioli dei palazzi di Alma Civitas. Il
+lato occidentale della sala ospita invece al suo centro un enorme camino
+acceso che irradia un piacevole calore ed una serie di comodi divanetti di
+raso e velluto. Diversi avventori sono presenti nella stanza anche se non puoi
+non notare una massiccia figura solitaria seduta nei pressi del camino che ti
+osserva sorseggiando una strana bevanda scura mentre vicino a lui una donna fa
+ruotare agilmente su un tavolino una piccola costruzione fatta con le carte da
+gioco. In fondo alla stanza un largo bancone decorato e' posto al centro tra
+due archi di palissandro bianco decorato: dal delizioso odore indubbiamente da
+uno si accede alla cucina, alla cantina ed alla dispensa, mentre dall'altro si
+vede un corridoio con due file ordinate di porte. Una bella ragazza dai
+capelli rossi con il viso pieno di lentiggini canticchiando gira per la stanza
+servendo boccali di birra, bicchieri di vino e succulente pietanze ai diversi
+ospiti presenti.
+Uscite: Down.
+Simonetta, la locandiera, e' qui per servirti. [Liv 50]
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+Recuperi rapidamente le tue forze. [15] 
+
+[  UI  ]  - Impostazioni per kyrus caricate correttamente.
+[  UI  ]  - Usa il comando [uihelp] per iniziare...
+[-] [3641/3641] [690/690] [200/200] [-]who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 4
+
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La locanda - Al chiuso #20032 [S]
+Il pavimento di questa grande Sala e' composto da diverse lastre levigate di
+pietra con venature gialle e argento che ti ricordano i gioielli di una dama.
+Le pareti sono invece ricoperte da antichi pannelli lisci in legno di rovere
+sulle quali piccoli quadri descrivono ambienti naturali ed alcune scene di
+battaglie. Sulla parete orientale dei semplici drappi colorati adornano una
+serie di ampi finestroni da cui si vede un verde bosco e, pi�lontananza,
+gli sbuffi di fumo dei camini e dei fumaioli dei palazzi di Alma Civitas. Il
+lato occidentale della sala ospita invece al suo centro un enorme camino
+acceso che irradia un piacevole calore ed una serie di comodi divanetti di
+raso e velluto. Diversi avventori sono presenti nella stanza anche se non puoi
+non notare una massiccia figura solitaria seduta nei pressi del camino che ti
+osserva sorseggiando una strana bevanda scura mentre vicino a lui una donna fa
+ruotare agilmente su un tavolino una piccola costruzione fatta con le carte da
+gioco. In fondo alla stanza un largo bancone decorato e' posto al centro tra
+due archi di palissandro bianco decorato: dal delizioso odore indubbiamente da
+uno si accede alla cucina, alla cantina ed alla dispensa, mentre dall'altro si
+vede un corridoio con due file ordinate di porte. Una bella ragazza dai
+capelli rossi con il viso pieno di lentiggini canticchiando gira per la stanza
+servendo boccali di birra, bicchieri di vino e succulente pietanze ai diversi
+ospiti presenti.
+Uscite: Down.
+Simonetta, la locandiera, e' qui per servirti. [Liv 50]
+
+[-] [3641/3641] [690/690] [200/200] [-]d
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta], East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+-----------------
+Uscite visibili:
+West - Il disco della vita
+Il punto di NON RITORNO - Il punto di NON RITORNO
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+
+[-] [3641/3641] [690/690] [200/200] [-]uigo 3001
+[  UI  ] ent nonritorno
+[  UI  ] Prosegui lungo il percorso andando verso east
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Sanctum .
+
+Il punto di NON RITORNO - Acque Profonde #6658 [S]
+Sei all'estremita' est del grande oceano, ti sembra che l'acqua venga tutta
+attratta verso est dove cade in una specie di grande cascata...se non vuoi
+cascare anche tu vedi di evitare di andare verso est!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - In mare aperto
+East - L'estremo est del mondo
+South - In mare aperto
+West - Isola dei Giganti
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+L'estremo est del mondo - Acque Profonde #6659 [S]
+La corrente e il vento ti trascinano verso il limite est dell'enorme tavola
+che e' il mondo! Non c'e' modo di tornare indietro... stai per
+cadereeeeeeeeeeeeeeeeeeeeee.....
+Uscite: East.
+-----------------
+Uscite visibili:
+East - La terra degli esploratori delusi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+La terra degli esploratori delusi - Sconosciuto #6660 [S]
+Dopo essere caduto oltre il limite est del mondo, sei finito in cio' che
+sembra una sorta di immondezzaio. Vari resti di navi riposano qui in rovina,
+mentre alcuni marinai ed esploratori, che con te si trovano qui, non fanno
+altro che maledire un tale Cristoforo Colombo.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - I corridoi dell'infinito
+South - Sala giochi di Karkas
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+[  UI  ] Prosegui lungo il percorso andando verso south
+I corridoi dell'infinito - Sconosciuto #6696 [S]
+Sei ovunque, e in nessun luogo. Togliti di qui prima di diventare pazzo.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Sul bordo del Vuoto Astrale
+East - Fiume delle Anime Perdute
+South - Il Foro Imperiale
+West - Un'abitazione privata
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Sei arrivato alla fine del percorso
+
+Lasci Sanctum , entrando in Alma.
+
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ spazzino
+un ubriaco sorride felice.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+La via delle Gilde - Citta' #3011 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. A nord c'e' la Gilda dei Guerrieri mentre a sud si
+erge il Tempio sacro ai Paladini di Jolnit.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda dei Guerrieri
+East - Platea Quadrata
+South - L'entrata al Tempio di Jolnit
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+La via delle Gilde - Citta' #3017 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. Qui i giovani avventurieri trovano i maestri che
+possono aiutarli ad affinare le loro arti. A nord si eleva al cielo il Tempio
+sacro a Benem, mentre verso sud c'e' la misteriosa gilda di coloro che sanno
+sfruttare la propria energia mentale.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'entrata al Tempio sacro a Benem
+East - La via delle Gilde
+South - L'entrata al Tempio della Mente
+West - La Piazza delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+La Piazza delle Gilde - Citta' #3023 [S]
+Una piccola ma elegante piazza collega i grandi edifici delle gilde molto
+frequentati. I tuoi passi risuonano sul curioso acciottolato. Le bandiere
+dell'Impero garriscono sugli edifici piu' alti. Una grande targa in marmo
+attira lo sguardo. Verso sud si apre una via che porta verso il Colosseo.
+Dei bracieri accesi provvedono ad illuminare la piazza.
+Uscite: North, East, South, West.
+C'e` una maglia formata da sottili catene di ferro intrecciate qui in terra.
+C'e' un elmo di ferro qui in terra.
+Ci sono dei gambali di ferro qui in terra.
+Ci sono dei guanti di maglia di ferro qui in terra.
+Un paio di maniche di maglia di ferro sono qui in terra.
+Un piccolo scudo rotondo in legno e` qui in terra.
+Una spada lunga e' qui in terra.
+Uno spadone a due mani e' qui in terra.
+Un pettorale di piastre metalliche e' qui in terra.
+C'e' un elmo d'acciaio qui in terra.
+Ci sono dei gambali di piastre metalliche qui in terra.
+Ci sono dei guanti composti da piastre metalliche qui in terra.
+Un paio di maniche composte da piastre metalliche sono qui in terra.
+Un ampio scudo rotondo in legno giace qui al suolo.
+Un pettorale in piastre di bronzo e` stato appoggiato qui.
+C'e' un elmo di bronzo qui in terra.
+Ci sono dei gambali di bronzo qui in terra.
+Ci sono dei guanti di bronzo qui in terra.
+Un paio di maniche di bronzo sono qui in terra.
+Un corto ma affilato gladio imperiale riluce qui in terra.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Viale degli Eroi
+East - La via delle Gilde
+South - La Piazza delle Fiere
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un velo di oscurita` cala nuovamente appena la luna tramonta.
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La via delle Gilde - Citta' #3017 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. Qui i giovani avventurieri trovano i maestri che
+possono aiutarli ad affinare le loro arti. A nord si eleva al cielo il Tempio
+sacro a Benem, mentre verso sud c'e' la misteriosa gilda di coloro che sanno
+sfruttare la propria energia mentale.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'entrata al Tempio sacro a Benem
+East - La via delle Gilde
+South - L'entrata al Tempio della Mente
+West - La Piazza delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La via delle Gilde - Citta' #3011 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. A nord c'e' la Gilda dei Guerrieri mentre a sud si
+erge il Tempio sacro ai Paladini di Jolnit.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda dei Guerrieri
+East - Platea Quadrata
+South - L'entrata al Tempio di Jolnit
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] buff[ 1] » mano » mind 'mano di energia'
+[  UI  ] buff[ 2] » minibuff[ 1] » flame » mind 'mantello di fiamme'
+[  UI  ]                    [ 2] » rin » mind 'rinforzo psichico' &stat=int
+[  UI  ]                    [ 3] » shield » mind 'scudo psichico'
+Convogli la tua energia mentale, creando una mano gigante di energia! 
+
+[H] [3641/3641] [640/690] [200/200] []
+Convochi un mantello di fiamme ad avvolgerti. 
+
+[H] [3641/3641] [615/690] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [34] 
+
+[H] [3641/3641] [649/690] [200/200] [F80]
+Il dio dei Giganti si appresta a scalare l'Olimpo per distruggere gli dei!
+Concentri la tua energia mentale per potenziare il tuo fisico. 
+
+[H] [3641/3641] [634/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [669/708] [200/200] [F80]
+Erigi uno scudo mentale intorno al tuo corpo. 
+
+[H] [3641/3641] [659/708] [200/200] [F80]
+
+◁ legionario
+spazzino ◁
+
+[H] [3641/3641] [659/708] [200/200] [F80]look
+
+Recuperi rapidamente le tue forze. [35] 
+
+[H] [3641/3641] [694/708] [200/200] [F80]n
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+
+[H] [3641/3641] [694/708] [200/200] [F80]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [694/708] [200/200] [F80]
+
+Recuperi rapidamente le tue forze. [14] 
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Una guardia cittadina controlla la zona. [Liv 50] [2]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+La via della Gloria - Citta' #3004 [S]
+E' una grande via lastricata in marmo bianco. File di alberi intervallati da
+colonne anch'esse bianche costeggiano la strada. Indubbiamente e' opera di un
+grande architetto e di valenti costruttori. Sulle colonne commemorative ci
+sono (almeno cosi' ti sembra di intuire) raffigurati alcuni attimi salienti
+della storia dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, South.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+-----------------
+Uscite visibili:
+North - Porta Settentrionale
+South - La Piazza della Gloria
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]uigo
+n
+Porta Settentrionale - Citta' #3085 [S]
+La Porta Settentrionale connette la citta' di Alma con le terre del nord.
+Scavata nelle possenti mura e' una porta molto frequentata da carriaggi e
+carovane.
+Alcuni bracieri illuminano l'entrata alla citta'.
+Uscite: North [porta], East, South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Settentrionali di Alma
+East - Le Mura di Alma
+South - La via della Gloria
+West - Le Mura di Alma
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+apri porta n
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+
+Lasci Alma, entrando in Via Flaminia.
+
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+La via Flaminia - Pianura #4304 [S]
+Prosegui il tuo cammino lungo la via Flaminia, il traffico di mercanti e'
+sempre intenso.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'incrocio
+South - La via Flaminia
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+Un grosso spadone a due mani e' in terra. [3]
+In terra e' stata lasciata una corazza di maglia. [3]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+East - La Pineta
+South - La via Flaminia
+West - La radura
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+La via Flaminia - Pianura #4307 [S]
+La Flaminia si snoda con eleganza da nord a sud.
+Uscite: North, South.
+Un grosso spadone a due mani e' in terra.
+In terra e' stata lasciata una corazza di maglia.
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - L'incrocio
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+La via Flaminia - Pianura #4308 [S]
+Sei giunto ad un bivio. La Flaminia piega verso est, ad ovest inizia una
+strata sterrata che non sembra molto frequentata. Sul lato est della strada
+vedi varie statue di antichi dei, alcuni sono in rovina ma uno sembra
+perdurare alle insidie del tempo.
+Uscite: East, South, West.
+Un grosso spadone a due mani e' in terra. [2]
+In terra e' stata lasciata una corazza di maglia. [2]
+In terra c'e' un vaso pieno di spezie.
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+-----------------
+Uscite visibili:
+East - La via Flaminia
+South - La via Flaminia
+West - Strada sui colli #4308 [S]
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+Non puoi andare da quella parte.
+
+[H] [3641/3641] [708/708] [200/200] [F80]n
+Non puoi andare da quella parte.
+
+[H] [3641/3641] [708/708] [200/200] [F80]w
+
+△ mercante
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+Strada sui colli - Pianura #4309 [S]
+La strada si inerpica attraverso delle vicine colline. Ad un certo punto noti
+una chiesa abbandonata verso nord, la strada prosegue ad ovest.
+Uscite: North [portone] (chiuso), East, South, West.
+Una corazza nera da cui pendono alcune ossa legate e' in terra. [4]
+C'e' uno scudo largo qui in terra. [4]
+Una lunga spada di acciaio e' al suolo. [4]
+Uno stendardo rappresentante un teschio rosso in campo nero
+e' in terra. [4]
+In terra noti vari mucchi di sostanze organiche.
+Un giovane Paladino dell'ordine del Sangue ti osserva. [Liv 15][Elite] (o)
+-----------------
+Uscite visibili:
+North - La chiesa delle ombre (chiuso)
+East - La via Flaminia
+South - Il cancello del cimitero
+West - Le colline
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F80]
+[  UI  ] autoattack » aa » Balzaq
+[  UI  ] bash » mind 'schiaffo violento' #Balzaq
+l
+
+La mano di forza si apre impatta brutalmente Balzaq il paladino, sbattendolBalzaq il paladino in terra con uno schiaffo!
+[515 CS]
+Tramortito dagli eventi, Balzaq il paladino ha bisogno di un po` di tempo per riprendersi. 
+Hai ucciso Balzaq il paladino! R.I.P. 
+L'urlo di morte di Balzaq il paladino ti gela il sangue nelle vene. 
+Hai ottenuto un martello leggero da allenamento!
+Ottieni 278 monete d'oro e ricevi 3350 punti esperienza.
+In un cofanetto di preziosi, trovi 4 Zaffiri.
+
+[H6] [3641/3641] [678/708] [200/200] [CF80]e
+Strada sui colli - Pianura #4309 [S]
+La strada si inerpica attraverso delle vicine colline. Ad un certo punto noti
+una chiesa abbandonata verso nord, la strada prosegue ad ovest.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di Balzaq il paladino giace al suolo.
+[Diritto: Kyrus] Una corazza nera da cui pendono alcune ossa legate e' in terra. [4]
+[Diritto: Kyrus] C'e' uno scudo largo qui in terra. [4]
+[Diritto: Kyrus] Una lunga spada di acciaio e' al suolo. [4]
+[Diritto: Kyrus] Uno stendardo rappresentante un teschio rosso in campo nero
+e' in terra. [4]
+[Diritto: Kyrus] In terra noti vari mucchi di sostanze organiche.
+
+[H6] [3641/3641] [678/708] [200/200] [CF80]
+La via Flaminia - Pianura #4308 [S]
+Sei giunto ad un bivio. La Flaminia piega verso est, ad ovest inizia una
+strata sterrata che non sembra molto frequentata. Sul lato est della strada
+vedi varie statue di antichi dei, alcuni sono in rovina ma uno sembra
+perdurare alle insidie del tempo.
+Uscite: East, South, West.
+Un grosso spadone a due mani e' in terra. [2]
+In terra e' stata lasciata una corazza di maglia. [2]
+In terra c'e' un vaso pieno di spezie.
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3] [2]
+-----------------
+Uscite visibili:
+East - La via Flaminia
+South - La via Flaminia
+West - Strada sui colli #4308 [S]
+-----------------
+
+[H5] [3641/3641] [678/708] [200/200] [cF80]e
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - Il punto di sosta
+East - Una piccola radura
+West - La via Flaminia
+-----------------
+
+[H5] [3641/3641] [678/708] [200/200] [cF80]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! 
+
+[H560%] [3641/3641] [678/708] [170/200] [CF80]
+
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [70 Lr]
+Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. [  UI  ] Trig Auto stand: STAND
+Demolisci una guardia imperiale impattandolo sul corpo. [101 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [54]
+Polverizzi una guardia imperiale impattandolo sul collo. [81 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [103 LS]
+Demolisci una guardia imperiale impattandolo sulla mano destra. [97 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [69]
+Una guardia imperiale ti demolisce colpendoti sul corpo. [100 rB]
+Ti proteggi dall'attacco di una guardia imperiale con il tuo scudo! [16]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+Una guardia imperiale ti demolisce colpendoti sul piede destro. [114 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+
+[H460%] [3357/3641] [678/708] [170/200] [CF78]
+
+guardia imperiale ▽
+Polverizzi una guardia imperiale impattandolo sul piede destro. [90 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [71]
+Polverizzi una guardia imperiale impattandolo sulla mano sinistra. [80 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [58]
+Demolisci una guardia imperiale impattandolo sul collo. [91 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [65]
+Una guardia imperiale ti demolisce colpendoti sulla gamba sinistra. [105 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Una guardia imperiale ti demolisce colpendoti sul braccio sinistro. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {92 LS}
+
+[H360%] [3142/3641] [678/708] [170/200] [CF76]
+
+Polverizzi una guardia imperiale impattandolo sulla gamba destra. [89 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [109 C]
+Distruggi una guardia imperiale impattandolo sul piede sinistro. [165 Cr]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [79 LS]
+Demolisci una guardia imperiale impattandolo sulla mano destra. [95 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [73]
+Una guardia imperiale ti demolisce colpendoti sul corpo. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {53 G}
+Una guardia imperiale ti demolisce colpendoti sulla gamba destra. [112 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+
+[H260%] [2920/3641] [678/708] [170/200] [CF74]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H260%] [2920/3641] [678/708] [170/200] [CF74]
+Ti alzi.
+
+[H260%] [2920/3641] [678/708] [170/200] [CF74]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+Una guardia imperiale e' qui a controllo della via Flaminia. [Liv 54][Elite]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H260%] [2920/3641] [678/708] [170/200] [CF74]
+
+Una guardia imperiale ti massacra squarciandoti sulla spalla. [46 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {114 C}
+
+[H260%] [2874/3641] [678/708] [170/200] [CF73]look
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [2]
+
+[H260%] [2874/3641] [678/708] [170/200] [CF73]
+
+Una guardia imperiale smette di usare uno spadone a due mani.
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [50 r]
+Tramortito dagli eventi, avrai bisogno di qualche momento per riprenderti. [  UI  ] Trig Auto stand: STAND
+Una guardia imperiale ti distrugge colpendoti sullo stomaco. [151 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+Una guardia imperiale ti demolisce colpendoti in testa. [108 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+Demolisci una guardia imperiale impattandolo sul piede destro. [124 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [95 LS]
+Demolisci una guardia imperiale impattandolo sulla gamba sinistra. [100 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [73]
+Demolisci una guardia imperiale impattandolo sul collo. [114 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [75]
+Una guardia imperiale ti distrugge colpendoti sul petto. [151 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+Una guardia imperiale ti demolisce colpendoti sulla gamba sinistra. [100 rB]
+Ti proteggi dall'attacco di una guardia imperiale con il tuo scudo! [16]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {91 LS}
+
+[H160%] [2314/3641] [678/708] [170/200] [CF69]look
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+Puoi di nuovo utilizzare mano di energia.
+Una guardia imperiale ti demolisce colpendoti sul piede sinistro. [104 rB]
+Ti proteggi dall'attacco di una guardia imperiale con il tuo scudo! [17]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+Una guardia imperiale ti distrugge colpendoti sul collo. [158 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Demolisci una guardia imperiale impattandolo sulla schiena. [116 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [125 C]
+Demolisci una guardia imperiale impattandolo sullo stomaco. [102 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [76]
+Distruggi una guardia imperiale impattandolo sulla spalla. [144 Cr]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [70]
+Una guardia imperiale ti demolisce colpendoti sulla spalla. [109 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {149 CLS}
+Una guardia imperiale ti demolisce colpendoti sul braccio sinistro. [107 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+
+[H60%] [1836/3641] [678/708] [170/200] [CF65]
+Ti alzi.
+
+[H60%] [1836/3641] [678/708] [170/200] [CF65]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [2]
+
+[H60%] [1836/3641] [678/708] [170/200] [CF65]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite] [2]
+
+[H60%] [1836/3641] [678/708] [170/200] [CF65]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bash » mind 'schiaffo violento' #guardia
+l
+
+La mano di forza si apre impatta brutalmente una guardia imperiale, sbattendoluna guardia imperiale in terra con uno
+schiaffo! [666 CLS]
+Tramortito dagli eventi, una guardia imperiale ha bisogno di un po` di tempo per riprendersi. 
+
+[H660%] [1836/3641] [648/708] [170/200] [CF65]
+
+Una guardia imperiale ti demolisce colpendoti sulla mano sinistra. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+Una guardia imperiale ti demolisce colpendoti sul petto. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Polverizzi una guardia imperiale impattandolo sul piede sinistro. [80 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [109 C]
+Polverizzi una guardia imperiale impattandolo sul piede destro. [90 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [86 LS]
+Demolisci una guardia imperiale impattandolo sullo stomaco. [124 Cr]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [101 LS]
+Una guardia imperiale ti demolisce colpendoti sulla gamba destra. [109 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Una guardia imperiale ti demolisce colpendoti sul braccio destro. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+
+[H560%] [1397/3641] [648/708] [170/200] [CF61]look
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H560%] [1397/3641] [648/708] [170/200] [CF61]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H560%] [1397/3641] [648/708] [170/200] [CF61]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+La tua mente si apre per un istante all'infinito! 
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [270]
+
+[H5Lightspeed!] [1397/3641] [648/708] [140/200] [CF61]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [50 r]
+Grazie ad un impeto di volonta`, mantieni il controllo delle tue azioni! 
+Una guardia imperiale ti demolisce colpendoti sul braccio destro. [110 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+Una guardia imperiale ti demolisce colpendoti sulla gamba sinistra. [109 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Uccidi una guardia imperiale impattandolo sul collo. [96 r]
+Sei di nuovo pienamente vulnerabile al controllo! 
+Hai ucciso una guardia imperiale! R.I.P. 
+L'urlo di morte di una guardia imperiale ti gela il sangue nelle vene. 
+Hai ottenuto una lancia grezza rinforzata in bronzo!
+Ottieni 3774 monete d'oro e ricevi 250000 punti esperienza.
+
+[H4Lightspeed!] [1128/3641] [648/708] [140/200] [CF59]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Una guardia imperiale e` seduto qui, in terra. [Liv 54][Elite]
+
+[H4Lightspeed!] [1128/3641] [648/708] [140/200] [CF59]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H4Lightspeed!] [1128/3641] [648/708] [140/200] [CF59]
+[  UI  ] cr » mind 'morsa psichica' &target
+Non c'e` nessuno qui con questo nome.
+
+[H4Lightspeed!] [1128/3641] [648/708] [140/200] [CF59]
+[  UI  ] autoattack » aa » guardia (LightSpeed)
+[  UI  ] cel » mind 'riparazione cellulare'
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+Il tuo pensiero viaggia alla velocita della luce! 
+Convogli la tua energia mentale, rimarginando rapidamente le tue ferite. [1906 CL]
+
+[H4] [3034/3641] [608/708] [140/200] [CF59]
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [405 C]
+
+[H460%] [3034/3641] [608/708] [110/200] [CF59]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale si alza velocemente. 
+Demolisci una guardia imperiale impattandolo sulla mano destra. [95 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [145 CLS]
+Polverizzi una guardia imperiale impattandolo sul corpo. [77 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [73]
+Devasti una guardia imperiale impattandolo sulla gamba destra. [62 Gr]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [81]
+Una guardia imperiale ti distrugge colpendoti sulla schiena. [156 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Una guardia imperiale ti distrugge colpendoti in testa. [158 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+
+[H360%] [2720/3641] [608/708] [110/200] [CF57]look
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H360%] [2720/3641] [608/708] [110/200] [CF57]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo.
+[Diritto: Kyrus] Una guardia imperiale sta combattendo contro di te! [Liv 54][Elite]
+
+[H360%] [2720/3641] [608/708] [110/200] [CF57]
+[  UI  ] autoattack » aa » guardia
+[  UI  ] bl » mind 'colpo psichico' #guardia
+l
+
+La tua mente si apre per un istante all'infinito! 
+Colpisci la mente di una guardia imperiale con un'esplosione di energia psionica! [315 LS]
+
+[H3Lightspeed!] [2720/3641] [608/708] [80/200] [CF57]
+
+Una guardia imperiale grida 'A me, compagni! Ho bisogno del vostro aiuto!'
+una guardia imperiale ti manda a gambe all'aria [50 r]
+Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. [  UI  ] Trig Auto stand: STAND
+Polverizzi una guardia imperiale impattandolo in testa. [74 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [74]
+Demolisci una guardia imperiale impattandolo sulla mano destra. [94 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [173 CLS]
+Polverizzi una guardia imperiale impattandolo sulla schiena. [85 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [72]
+Una guardia imperiale ti demolisce colpendoti sulla spalla. [114 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {71}
+Una guardia imperiale ti demolisce colpendoti sullo stomaco. [109 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {115 C}
+L'energia planare si affievolisce e scompare. 
+
+[H2Lightspeed!] [2447/3641] [608/708] [80/200] [CF55]
+
+Demolisci una guardia imperiale impattandolo in testa. [124 L]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [64]
+Polverizzi una guardia imperiale impattandolo sul corpo. [78 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [72]
+Devasti una guardia imperiale impattandolo in testa. [63 Gr]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [106 C]
+Una guardia imperiale ti demolisce colpendoti sul braccio sinistro. [108 r]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+Una guardia imperiale ti distrugge colpendoti sulla mano destra. [156 Lr]
+una guardia imperiale viene avvolto dalle fiamme che ti circondano {70}
+
+[H1Lightspeed!] [2269/3641] [708/708] [80/200] [CF53]
+
+Puoi di nuovo utilizzare mano di energia.
+Demolisci una guardia imperiale impattandolo sulla gamba sinistra. [96 r]
+Scagli una lancia di ghiaccio verso una guardia imperiale, trafiggendolo! [145 CLS]
+Uccidi una guardia imperiale impattandolo sul piede sinistro. [86 r]
+Hai ucciso una guardia imperiale! R.I.P. 
+L'urlo di morte di una guardia imperiale ti gela il sangue nelle vene. 
+Hai ottenuto un grezzo guardiabraccia!
+Ottieni 2248 monete d'oro e ricevi 250000 punti esperienza.
+
+[HLightspeed!] [2269/3641] [708/708] [80/200] [CF53]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+
+[HLightspeed!] [2269/3641] [708/708] [80/200] [CF53]
+Sei gia` in piedi.
+
+[HLightspeed!] [2269/3641] [708/708] [80/200] [CF53]
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+
+[HLightspeed!] [2269/3641] [708/708] [80/200] [CF53]
+[  UI  ] autoattack » aa » Non ci sono mob da attaccare
+[  UI  ] cel » mind 'riparazione cellulare'
+Il tuo pensiero viaggia alla velocita della luce! 
+Convogli la tua energia mentale, rimarginando rapidamente le tue ferite. [1174 L]
+
+[H] [3443/3641] [668/708] [80/200] [CF53]
+
+▷ mercante
+
+[H] [3443/3641] [668/708] [80/200] [cF53]look
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+
+[H] [3443/3641] [668/708] [80/200] [cF53]
+
+L'energia planare si affievolisce e scompare. 
+
+[H] [3443/3641] [668/708] [80/200] [cF53]ll
+get all 1.cadavere
+get all 2.cadavere
+Prendi una corazza di maglia da il cadavere di una guardia imperiale.
+Prendi uno spadone a due mani da il cadavere di una guardia imperiale.
+
+[H] [3443/3641] [668/708] [80/200] [cF53]
+Prendi una corazza di maglia da il cadavere di una guardia imperiale.
+Prendi uno spadone a due mani da il cadavere di una guardia imperiale.
+
+[H] [3443/3641] [668/708] [80/200] [cF53]i
+Stai trasportando:
+[ 1] |T| uno spadone a due mani [2]
+[ 3] |T| una corazza di maglia [2]
+[ 5] |C| un grezzo guardiabraccia...E` in condizioni eccellenti
+[ 6] |C| una lancia grezza rinforzata in bronzo...E` in condizioni eccellenti
+[ 7] |C| un martello leggero da allenamento...E` in condizioni eccellenti
+[ 8] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 336 su 900 etti
+Oggetti in inventario : 8 su 50
+
+[H] [3443/3641] [668/708] [80/200] [cF53]
+
+Sei di nuovo pienamente vulnerabile al controllo! 
+
+[H] [3443/3641] [668/708] [80/200] [F53]
+
+Recuperi rapidamente le tue forze. [182] [35] [40] 
+
+[H] [3625/3641] [703/708] [120/200] [F53]*7 ju -
+ju -
+ju -
+ju -
+ju -
+ju -
+ju -
+ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 48 Residuum.
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+Ottieni 6 Residuum.
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+
+mercante △
+
+[H] [3625/3641] [703/708] [120/200] [F53]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 4] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 5] <in testa>          [S| 88| 99%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[ 9] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[10] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[11] <attorno al corpo>  [T| 41| 99%] una cappa di cristallo
+[12] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[13] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[14] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[16] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[17] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[18] <orecchio sinistro> [A| 50| 99%] un orecchino d'argento brillante
+[19] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[20] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H] [3625/3641] [703/708] [120/200] [F53]
+
+Recuperi rapidamente le tue forze. [16] [5] [40] 
+
+[H] [3641/3641] [708/708] [160/200] [F53]e
+Una piccola radura - Prato #4390 [S]
+Sei nel centro di una piccola radura lungo l'importante Via Flaminia, verso
+sud vedi un grande ed imponente edificio, verso ovest la Flaminia stessa.
+Uscite: South, West.
+-----------------
+Uscite visibili:
+South - La Congregazione dei Mercenari
+West - La via Flaminia
+-----------------
+
+[H] [3641/3641] [708/708] [160/200] [F53]
+
+Il Signore Oscuro sta devastando un antico regno!
+
+[H] [3641/3641] [708/708] [160/200] [F53]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 4 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 19 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x53), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [160/200] [F53]
+
+Recuperi rapidamente le tue forze. [40] 
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+Il Signore dei Vampiri sta portando morte e distruzione in un luogo di culto!
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via Flaminia - Pianura #4312 [S]
+La strada prosegue verso nord ed ovest. Ad est c'e' un piccolo spiazzo.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di una guardia imperiale giace al suolo. [2]
+-----------------
+Uscite visibili:
+North - Il punto di sosta
+East - Una piccola radura
+West - La via Flaminia
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via Flaminia - Pianura #4308 [S]
+Sei giunto ad un bivio. La Flaminia piega verso est, ad ovest inizia una
+strata sterrata che non sembra molto frequentata. Sul lato est della strada
+vedi varie statue di antichi dei, alcuni sono in rovina ma uno sembra
+perdurare alle insidie del tempo.
+Uscite: East, South, West.
+Un grosso spadone a due mani e' in terra. [2]
+In terra e' stata lasciata una corazza di maglia. [2]
+In terra c'e' un vaso pieno di spezie.
+-----------------
+Uscite visibili:
+East - La via Flaminia
+South - La via Flaminia
+West - Strada sui colli #4308 [S]
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+Strada sui colli - Pianura #4309 [S]
+La strada si inerpica attraverso delle vicine colline. Ad un certo punto noti
+una chiesa abbandonata verso nord, la strada prosegue ad ovest.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di Balzaq il paladino giace al suolo.
+Una corazza nera da cui pendono alcune ossa legate e' in terra. [4]
+C'e' uno scudo largo qui in terra. [4]
+Una lunga spada di acciaio e' al suolo. [4]
+Uno stendardo rappresentante un teschio rosso in campo nero
+e' in terra. [4]
+In terra noti vari mucchi di sostanze organiche.
+-----------------
+Uscite visibili:
+North - La chiesa delle ombre (chiuso)
+East - La via Flaminia
+South - Il cancello del cimitero
+West - Le colline
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La via Flaminia - Pianura #4308 [S]
+Sei giunto ad un bivio. La Flaminia piega verso est, ad ovest inizia una
+strata sterrata che non sembra molto frequentata. Sul lato est della strada
+vedi varie statue di antichi dei, alcuni sono in rovina ma uno sembra
+perdurare alle insidie del tempo.
+Uscite: East, South, West.
+Un grosso spadone a due mani e' in terra. [2]
+In terra e' stata lasciata una corazza di maglia. [2]
+In terra c'e' un vaso pieno di spezie.
+-----------------
+Uscite visibili:
+East - La via Flaminia
+South - La via Flaminia
+West - Strada sui colli #4308 [S]
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La via Flaminia - Pianura #4307 [S]
+La Flaminia si snoda con eleganza da nord a sud.
+Uscite: North, South.
+Un grosso spadone a due mani e' in terra.
+In terra e' stata lasciata una corazza di maglia.
+Vedi un mercante che viaggia portandosi le sue mercanzie in spalla. [Liv 3]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - L'incrocio
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+L'incrocio - Pianura #4302 [S]
+Qui la flaminia interseca un sentiero che si inoltra nei boschi ad est ed
+ovest della strada.
+Uscite: North, East, South, West.
+Un grosso spadone a due mani e' in terra. [3]
+In terra e' stata lasciata una corazza di maglia. [3]
+Vedi un mercante di spezie fermarsi un momento a riposare e poi riprendere il
+suo viaggio. [Liv 3]
+-----------------
+Uscite visibili:
+North - La via Flaminia
+East - La Pineta
+South - La via Flaminia
+West - La radura
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La via Flaminia - Pianura #4301 [S]
+Davanti a te si snoda l'antica via Flaminia. Interamente pavimentata, e' un
+largo nastro di marmo che punta dritto verso nord. Un traffico continuo di
+persone, carovane e cavalieri affolla la zona vicino ad Alma.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Al di fuori delle Porte Settentrionali di Alma
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+
+Lasci Via Flaminia, entrando in Alma.
+
+Al di fuori delle Porte Settentrionali di Alma - Pianura #3089 [S]
+Ti trovi appena fuori le mura di Alma Civitas. Ai tuoi occhi si presenta una
+vasta campagna. Da qui inizia la via Flaminia, una delle piu' antiche strade
+imperiali che collega la capitale con il nord.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South [porta].
+-----------------
+Uscite visibili:
+North - La via Flaminia
+South - Porta Settentrionale
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+apri porta s
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+apri porta s
+Porta Settentrionale - Citta' #3085 [S]
+La Porta Settentrionale connette la citta' di Alma con le terre del nord.
+Scavata nelle possenti mura e' una porta molto frequentata da carriaggi e
+carovane.
+Alcuni bracieri illuminano l'entrata alla citta'.
+Uscite: North [porta], East, South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Settentrionali di Alma
+East - Le Mura di Alma
+South - La via della Gloria
+West - Le Mura di Alma
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Non c'e` nulla da aprire in quella direzione.
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La via della Gloria - Citta' #3004 [S]
+E' una grande via lastricata in marmo bianco. File di alberi intervallati da
+colonne anch'esse bianche costeggiano la strada. Indubbiamente e' opera di un
+grande architetto e di valenti costruttori. Sulle colonne commemorative ci
+sono (almeno cosi' ti sembra di intuire) raffigurati alcuni attimi salienti
+della storia dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, South.
+Una guardia cittadina controlla la zona. [Liv 50]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+-----------------
+Uscite visibili:
+North - Porta Settentrionale
+South - La Piazza della Gloria
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una guardia cittadina controlla la zona. [Liv 50]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+guardia cittadina △
+guardia imperiale △
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+
+Lasci Alma, entrando in Alma Nord.
+
+La via Pannonica - Citta' #3300 [S]
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Alcune fiaccole pannonike sono state accese per illuminare la via.
+Uscite: North, East, South, West.
+Una tunika pannonica e' stata abbandonata qui.
+Un paio di comuni calzari di cuoio e' qui
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+-----------------
+Uscite visibili:
+North - La Piramide Marmorea
+East - La via Pannonica
+South - La piccola piazzetta
+West - La Piazza della Gloria
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La via Pannonica - Citta' #3301 [S]
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Alcune fiaccole pannonike sono state accese per illuminare la via.
+Uscite: North, East, South, West.
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10]
+-----------------
+Uscite visibili:
+North - Il Museo Pannonico
+East - La piazzetta Pannonica
+South - L'Ambasciata di Pannonia
+West - La via Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La piazzetta Pannonica - Citta' #3302 [S]
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Alcune fiaccole pannonike sono state accese per illuminare la piazza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il Banco di Pannonia
+East - La Stazione di Posta
+South - La via Pannonica
+West - La via Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La Stazione di Posta - Al chiuso #3312 [S]
+C'e' molta animazione nell'atrio della Stazione di Posta.  Gente
+sorridente ed ammiccante entra nella locazione vicina per
+raggiungere le mete piu' disparate. C'e' un manifesto appeso
+ad una parete ed un elenco appeso ad un'altra parete.
+Non hai mai visto tanta confusione...
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - L'interno della Stazione di Posta
+West - La piazzetta Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+L'interno della Stazione di Posta - Al chiuso #3314 [S]
+Sei all'interno della Stazione di Posta. 
+Appeso alla parete c'e' un grande CARTELLO con le
+ISTRUZIONI per utilizzare il servizio di collegamenti
+pannonico-koatto.   Dopo aver seguito le istruzioni puoi
+muoverti verso est nella sezione partenze per raggiungere
+la destinazione prescelta. C'e' parekkia gente e  molto
+movimento.
+Uscite: East, West.
+L'addetto alle partenze e' qui ad organizzare e far rispettare gli orari. [Liv 10]
+-----------------
+Uscite visibili:
+East - Sezione Partenze
+West - La Stazione di Posta
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La Stazione di Posta - Al chiuso #3312 [S]
+C'e' molta animazione nell'atrio della Stazione di Posta.  Gente
+sorridente ed ammiccante entra nella locazione vicina per
+raggiungere le mete piu' disparate. C'e' un manifesto appeso
+ad una parete ed un elenco appeso ad un'altra parete.
+Non hai mai visto tanta confusione...
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - L'interno della Stazione di Posta
+West - La piazzetta Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La piazzetta Pannonica - Citta' #3302 [S]
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Alcune fiaccole pannonike sono state accese per illuminare la piazza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il Banco di Pannonia
+East - La Stazione di Posta
+South - La via Pannonica
+West - La via Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via Pannonica - Citta' #3301 [S]
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Alcune fiaccole pannonike sono state accese per illuminare la via.
+Uscite: North, East, South, West.
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10]
+-----------------
+Uscite visibili:
+North - Il Museo Pannonico
+East - La piazzetta Pannonica
+South - L'Ambasciata di Pannonia
+West - La via Pannonica
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via Pannonica - Citta' #3300 [S]
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Alcune fiaccole pannonike sono state accese per illuminare la via.
+Uscite: North, East, South, West.
+Una tunika pannonica e' stata abbandonata qui.
+Un paio di comuni calzari di cuoio e' qui
+-----------------
+Uscite visibili:
+North - La Piramide Marmorea
+East - La via Pannonica
+South - La piccola piazzetta
+West - La Piazza della Gloria
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+
+Lasci Alma Nord, entrando in Alma.
+
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una guardia cittadina controlla la zona. [Liv 50]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+
+Lasci Alma, entrando in Alma Nord.
+
+Viale degli Eroi - Citta' #3353 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+La strada passa tra edifici maestosi, in particolare noti il palazzo
+dedicato ai clan verso nord. Questa via e' stata dedicata
+dall'Impero agli Eroi che hanno solcato e che solcheranno
+queste terre.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [porta] (chiuso), East, South [porta] (chiuso), West.
+-----------------
+Uscite visibili:
+North - Il palazzo delle Gilde competitive (chiuso)
+East - La Piazza della Gloria
+South - Il palazzo delle Gilde contemplative (chiuso)
+West - Viale degli Eroi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+Viale degli Eroi - Citta' #3354 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+La strada passa tra edifici maestosi e fastosi. Questa via e'
+stata dedicata dall'Impero agli Eroi che hanno solcato e che
+solcheranno queste terre.
+Verso nord, il robusto portone del palazzo delle Gilde.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [portone] (chiuso), East, South [porta] (chiuso), West.
+-----------------
+Uscite visibili:
+North - Il palazzo storico delle Gilde (chiuso)
+East - Viale degli Eroi
+South - Il palazzo delle Gilde e dei Clan perduti (chiuso)
+West - La Piazzetta dell'Alleanza
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La Piazzetta dell'Alleanza - Citta' #3352 [S]
+La piazzetta e' lastricata col prezioso porfido ed e' molto
+caratteristica. Alcuni edifici di foggia e grandezza diverse
+la circondano dandole una patina di raffinata eleganza.
+In basso vedi un tombino che conduce alla rete fognaria della
+citta'.
+Uscite: East, South, West [porta] (chiuso), Down [tombino] (chiuso).
+-----------------
+Uscite visibili:
+East - Viale degli Eroi
+South - Viale degli Eroi
+West - Il palazzo degli antichi Eroi (chiuso)
+Down - Scendendo verso le fogne (chiuso)
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+apri porta w
+Apri la porta, liberando il percorso verso ovest.
+[  UI  ] Aggiornata uscita w = apri porta w
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Il palazzo degli antichi Eroi - Al chiuso #3362 [S]
+Questa sala e' dedicata agli eroi che da piu' tempo calpestano
+il suolo del nostro mondo ed a coloro che piu' degli altri si
+sono distinti in imprese eroiche spinti dalla propria ambizione
+o dalla generosita' che moltissime volte li ha portati a difendere
+Alma dalle vari minacce che l'attanagliavano.
+Al centro della sala c'e' una placca d'argento sui cui vengono,
+nel corso del tempo, incisi i nomi dei piu' valorosi.
+Uscite: East [porta].
+-----------------
+Uscite visibili:
+East - La Piazzetta dell'Alleanza
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+apri porta e
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+La Piazzetta dell'Alleanza - Citta' #3352 [S]
+La piazzetta e' lastricata col prezioso porfido ed e' molto
+caratteristica. Alcuni edifici di foggia e grandezza diverse
+la circondano dandole una patina di raffinata eleganza.
+In basso vedi un tombino che conduce alla rete fognaria della
+citta'.
+Uscite: East, South, West [porta], Down [tombino] (chiuso).
+-----------------
+Uscite visibili:
+East - Viale degli Eroi
+South - Viale degli Eroi
+West - Il palazzo degli antichi Eroi
+Down - Scendendo verso le fogne (chiuso)
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Viale degli Eroi - Citta' #3355 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+Questa via e' stata dedicata dall'Impero agli Eroi che hanno
+solcato e che solcheranno queste terre.
+Verso ovest il portale di un maestoso tempio dedicato a tutte
+le divinita' si erge verso il cielo.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West [portone] (chiuso).
+-----------------
+Uscite visibili:
+North - La Piazzetta dell'Alleanza
+East - L'Altare dei tuoi Desideri
+South - Viale degli Eroi
+West - L'entrata al Tempio degli Dei (chiuso)
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Viale degli Eroi - Citta' #3356 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+La strada passa tra edifici maestosi e fastosi. Questa via e'
+stata dedicata dall'Impero agli Eroi che hanno solcato e che
+solcheranno queste terre. Ad est vedi la maestosa Cattedrale
+di Alma Civitas, mentre ad ovest un altro grande edificio si
+erge verso il cielo.
+Uscite: North, East [portone], South, West [portone] (chiuso).
+-----------------
+Uscite visibili:
+North - Viale degli Eroi
+East - La Cattedrale di Alma Civitas
+South - La Piazza delle Gilde
+West - Il Palazzo delle Religioni (chiuso)
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+
+Lasci Alma Nord, entrando in Alma.
+
+La Piazza delle Gilde - Citta' #3023 [S]
+Una piccola ma elegante piazza collega i grandi edifici delle gilde molto
+frequentati. I tuoi passi risuonano sul curioso acciottolato. Le bandiere
+dell'Impero garriscono sugli edifici piu' alti. Una grande targa in marmo
+attira lo sguardo. Verso sud si apre una via che porta verso il Colosseo.
+Dei bracieri accesi provvedono ad illuminare la piazza.
+Uscite: North, East, South, West.
+C'e` una maglia formata da sottili catene di ferro intrecciate qui in terra.
+C'e' un elmo di ferro qui in terra.
+Ci sono dei gambali di ferro qui in terra.
+Ci sono dei guanti di maglia di ferro qui in terra.
+Un paio di maniche di maglia di ferro sono qui in terra.
+Un piccolo scudo rotondo in legno e` qui in terra.
+Una spada lunga e' qui in terra.
+Uno spadone a due mani e' qui in terra.
+Un pettorale di piastre metalliche e' qui in terra.
+C'e' un elmo d'acciaio qui in terra.
+Ci sono dei gambali di piastre metalliche qui in terra.
+Ci sono dei guanti composti da piastre metalliche qui in terra.
+Un paio di maniche composte da piastre metalliche sono qui in terra.
+Un ampio scudo rotondo in legno giace qui al suolo.
+Un pettorale in piastre di bronzo e` stato appoggiato qui.
+C'e' un elmo di bronzo qui in terra.
+Ci sono dei gambali di bronzo qui in terra.
+Ci sono dei guanti di bronzo qui in terra.
+Un paio di maniche di bronzo sono qui in terra.
+Un corto ma affilato gladio imperiale riluce qui in terra.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Viale degli Eroi
+East - La via delle Gilde
+South - La Piazza delle Fiere
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Verso il Colle Palatino - Citta' #3094 [S]
+Stai camminando su un graziosa stradina che si sta arrampicando su uno dei
+colli di Alma Civitas. Ti stai addentrando nella zona piu' bella di Alma,
+quella delle Terme e del Parco.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La Piazza delle Fiere
+South - Il Colle Palatino
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+
+Lasci Alma, entrando in Alma Sud e Terme.
+
+Il Colle Palatino - Pianura #3100 [S]
+Sei al limitare del colle che domina il fiume e la citta' di Alma. Ad est
+inizia la passeggiata che corre lungo il corso d'acqua. Verso sud c'e' il
+Ponte Augustus che passa sopra il fiume Lys. Ad ovest sta un edificio chiuso e
+poco frequentato.
+Alcuni bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West [porta] (chiuso).
+-----------------
+Uscite visibili:
+North - Verso il Colle Palatino
+East - La passeggiata
+South - Il Ponte Augustus
+West - Il Senatus Consultus (chiuso)
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+
+Lasci Alma Sud e Terme, entrando in Alma.
+
+Verso il Colle Palatino - Citta' #3094 [S]
+Stai camminando su un graziosa stradina che si sta arrampicando su uno dei
+colli di Alma Civitas. Ti stai addentrando nella zona piu' bella di Alma,
+quella delle Terme e del Parco.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La Piazza delle Fiere
+South - Il Colle Palatino
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+
+Lasci Alma, entrando in Il Colosseum.
+
+Colosseum Ianua - Citta' #1400 [S]
+Si staglia davanti a te uno dei piu' grandi capolavori architettonici voluti
+dall'imperatore in persona: Il Colosseo! Il piu' grande edificio mai costruito
+da mani umane. Formato da enormi lastre marmoree ed ampie arcate, si alza per
+decine di metri sovrastando anche le torri di guardia del muro cittadino.
+Dall'interno provengono le grida eccitate del pubblico, il ruggito delle belve
+ed il clangore delle armi. Una insegna campeggia sull'ingresso.
+Uscite: East, West.
+Tarquinio il custode dell'imperatore veglia sull'ingresso. [Liv 55][Elite] (o)
+-----------------
+Uscite visibili:
+East - La Piazza delle Fiere
+West - Lo sguardo dell'impero
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+
+Lasci Il Colosseum, entrando in Alma.
+
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+▽ legionario
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+legionario ◁
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La via dei Gladiatori - Citta' #3056 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via dei Gladiatori
+West - La Piazza delle Fiere
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+La via dei Gladiatori - Citta' #3055 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento. A sud vedi una taverna, mentre a nord
+vi e' una torre altissima.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [portone] (chiuso), East, South, West.
+Un frate che indossa una tunica nera ti passa accanto. [Liv 16][Elite]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Torre del Cielo (chiuso)
+East - Platea Popolorum
+South - Al bar "Tigri e Leoni"
+West - La via dei Gladiatori
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via dei Gladiatori - Citta' #3055 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento. A sud vedi una taverna, mentre a nord
+vi e' una torre altissima.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [portone] (chiuso), East, South, West.
+Un frate che indossa una tunica nera ti passa accanto. [Liv 16][Elite]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Torre del Cielo (chiuso)
+East - Platea Popolorum
+South - Al bar "Tigri e Leoni"
+West - La via dei Gladiatori
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+n
+[H] [3641/3641] [708/708] [200/200] [F53]
+Il portone e` chiuso.
+open portone n
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Il portone e` serrato.
+Il meccanismo di chiusura sembra adatto a la chiave della Torre del Cielo.
+E` impossibile scassinarla.
+E` troppo robusta per essere sfondata.
+
+unlock portone n
+[H] [3641/3641] [708/708] [200/200] [F53]
+Non hai la chiave giusta.
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via delle Gilde - Citta' #3011 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. A nord c'e' la Gilda dei Guerrieri mentre a sud si
+erge il Tempio sacro ai Paladini di Jolnit.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda dei Guerrieri
+East - Platea Quadrata
+South - L'entrata al Tempio di Jolnit
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+L'entrata al Tempio di Jolnit - Tempio #3015 [S]
+Ti trovi all'ingresso del rinomato Tempio del sacro ordine dei Paladini. Sulle
+colonne del Tempio una serie di icone raffigurano le persone che portarono in
+passato questo ordine alla somma gloria e splendore. I Paladini di oggi si
+ispirano alle loro gesta. Il ricordo di quegli eroi infonde loro coraggio e
+forza di spirito per affrontare quelle Forze delle Tenebre che da sempre
+cercano di oscurare questo mondo.
+Uscite: North, South.
+Un Paladino esperto protegge l'ingresso al Tempio. [Liv 50] (o) (o)
+-----------------
+Uscite visibili:
+North - La via delle Gilde
+South - Il Tempio di Jolnit
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La guardia della gilda scuote la testa e ti impedisce il passaggio.
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+La guardia della gilda scuote la testa e ti impedisce il passaggio.
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+La via delle Gilde - Citta' #3011 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. A nord c'e' la Gilda dei Guerrieri mentre a sud si
+erge il Tempio sacro ai Paladini di Jolnit.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda dei Guerrieri
+East - Platea Quadrata
+South - L'entrata al Tempio di Jolnit
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La via delle Gilde - Citta' #3017 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. Qui i giovani avventurieri trovano i maestri che
+possono aiutarli ad affinare le loro arti. A nord si eleva al cielo il Tempio
+sacro a Benem, mentre verso sud c'e' la misteriosa gilda di coloro che sanno
+sfruttare la propria energia mentale.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'entrata al Tempio sacro a Benem
+East - La via delle Gilde
+South - L'entrata al Tempio della Mente
+West - La Piazza delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+L'entrata al Tempio della Mente - Tempio #3021 [S]
+Il luogo in cui ti trovi e' poco arredato. C'e' il minimo indispensabile per
+far vedere che questi locali sono abitati da qualcuno. E' molto evidente che
+chi ci vive non bada molto ai piaceri materiali, ma ha trovato il senso della
+vita nella meditazione e nell'esercizio della mente.
+Uscite: North, South.
+Un uomo in meditazione protegge l'entrata. [Liv 21]
+-----------------
+Uscite visibili:
+North - La via delle Gilde
+South - L'Altare della Mente
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+L'Altare della Mente - Tempio #3022 [S]
+Un luogo semplice ed austero. Solo alcuni mobili di legno scuro riempiono il
+locale, e sono a loro volta ingombri di pergamene, calamai ed altri attrezzi
+per scrivere. Il silenzio e' interrotto soltanto dal sommesso borbottio di un
+Maestro che sta meditando. Questa e' la gilda degli psionici, qui si impara ad
+imbrigliare i poteri della propria mente!
+Uscite: North.
+Padus il Maestro degli Psionici e' qui in meditazione. [Liv 55] (o)
+-----------------
+Uscite visibili:
+North - L'entrata al Tempio della Mente
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Non puoi andare da quella parte.
+
+[H] [3641/3641] [708/708] [200/200] [F53]prac
+Chiedi a Padus di insegnarti la sua arte.
+[Livello 1 ] Percezione Extrasensoriale    [Mediocre      40%]
+[Livello 1 ] Morsa Psichica                [Perfetta     100%]
+[Livello 1 ] Mantello di Fiamme            [Perfetta     100%]
+[Livello 5 ] Colpo Psichico                [Perfetta     100%]
+[Livello 5 ] Lame Psioniche                [Superba       88%][Classe Principale]
+[Livello 6 ] Rinforzo Psichico             [Superba       94%]
+[Livello 7 ] Visione                       [Superba       88%]
+[Livello 7 ] Cannibalizzare                [Perfetta     100%]
+[Livello 8 ] Camaleonte                    [Eccezionale   82%]
+[Livello 10] Scudo Psichico                [Perfetta     100%]
+[Livello 12] Assalto Psionico              [Superba       94%][Classe Principale]
+[Livello 14] Riparazione Cellulare         [Perfetta     100%]
+[Livello 14] Mente Oltre il Corpo          [Sufficiente   52%]
+[Livello 15] Colpo Superiore               [Superba       88%]
+[Livello 15] Invisibilita Psichica         [Buona         76%]
+[Livello 18] Pensiero Imponente            [Mediocre      40%]
+[Livello 20] Viaggio Probabilistico        [Superba       88%]
+[Livello 20] Maestria con lo Scudo         [Mediocre      40%]
+[Livello 20] Scarica di Adrenalina         [Eccezionale   82%]
+[Livello 21] Mano di Energia               [Superba       94%]
+[Livello 21] Cancella la Mente             [Mediocre      40%]
+[Livello 23] Senso del Pericolo            [Eccezionale   82%]
+[Livello 25] Schiaffo Violento             [Perfetta     100%]
+[Livello 30] Chiaroveggenza                [Sufficiente   46%]
+[Livello 30] Armi a due Mani               [Mediocre      40%]
+[Livello 31] Manipola Fiamme               [Superba       94%][Classe Principale]
+[Livello 38] Lampo di Energia              [Perfetta     100%]
+[Livello 40] Ambidestria                   [Mediocre      40%]
+[Livello 48] Morsa Brutale                 [Perfetta     100%]
+[Livello 49] Pugno Serrato                 [Mediocre      40%]
+[Livello 50] Vuoto Mentale                 [Sufficiente   52%]
+
+[H] [3641/3641] [708/708] [200/200] [F53]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F53]over
+[  UI  ] over » mind 'mente oltre il corpo'
+Sfrutti la tua concentrazione per quietare i bisogni del tuo corpo 
+
+[H] [3641/3641] [683/708] [200/200] [F53]
+
+Recuperi rapidamente le tue forze. [25] 
+
+[H] [3641/3641] [708/708] [200/200] [F53]over
+[  UI  ] over » mind 'mente oltre il corpo'
+Sfrutti la tua concentrazione per quietare i bisogni del tuo corpo 
+
+[H] [3641/3641] [683/708] [200/200] [F53]over
+[  UI  ] over » mind 'mente oltre il corpo'
+
+Recuperi rapidamente le tue forze. [25] 
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+Perdi la tua concentrazione!
+Impari dai tuoi errori! Mente Oltre Il Corpo migliora. ( 58 / 100 ) 
+
+[H] [3641/3641] [696/708] [200/200] [F53]n
+e
+e
+look
+
+Recuperi rapidamente le tue forze. [12] 
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+L'entrata al Tempio della Mente - Tempio #3021 [S]
+Il luogo in cui ti trovi e' poco arredato. C'e' il minimo indispensabile per
+far vedere che questi locali sono abitati da qualcuno. E' molto evidente che
+chi ci vive non bada molto ai piaceri materiali, ma ha trovato il senso della
+vita nella meditazione e nell'esercizio della mente.
+Uscite: North, South.
+Un uomo in meditazione protegge l'entrata. [Liv 21]
+-----------------
+Uscite visibili:
+North - La via delle Gilde
+South - L'Altare della Mente
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+La via delle Gilde - Citta' #3017 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. Qui i giovani avventurieri trovano i maestri che
+possono aiutarli ad affinare le loro arti. A nord si eleva al cielo il Tempio
+sacro a Benem, mentre verso sud c'e' la misteriosa gilda di coloro che sanno
+sfruttare la propria energia mentale.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - L'entrata al Tempio sacro a Benem
+East - La via delle Gilde
+South - L'entrata al Tempio della Mente
+West - La Piazza delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+La via delle Gilde - Citta' #3011 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. A nord c'e' la Gilda dei Guerrieri mentre a sud si
+erge il Tempio sacro ai Paladini di Jolnit.
+Dei bracieri posti lungo la via illuminano la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda dei Guerrieri
+East - Platea Quadrata
+South - L'entrata al Tempio di Jolnit
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+
+[H] [3641/3641] [708/708] [200/200] [F53]s
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]att
+Hai 133 anni e 6 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [110].
+Assorbi 33.79% del danno fisico e 25.42% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [144] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 162.99%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` sufficiente [33].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 4
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 4] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 5] <in testa>          [S| 88| 99%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[ 9] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[10] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[11] <attorno al corpo>  [T| 41| 99%] una cappa di cristallo
+[12] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[13] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[14] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[16] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[17] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[18] <orecchio sinistro> [A| 50| 99%] un orecchino d'argento brillante
+[19] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[20] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+△ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F53]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F53]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 3 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 18 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x53), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+▽ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F53]att
+Hai 133 anni e 6 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [110].
+Assorbi 33.79% del danno fisico e 25.42% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [144] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 162.99%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` sufficiente [33].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]l
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+
+[H] [3641/3641] [708/708] [200/200] [F53]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 3 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 18 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x53), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+spazzino ▷
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [3641/3641] [708/708] [200/200] [F53]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F53]l
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+△ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F53]eff
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 3 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 18 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x53), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+spazzino ▷
+
+[H] [3641/3641] [708/708] [200/200] [F53]att
+Hai 133 anni e 6 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [110].
+Assorbi 33.79% del danno fisico e 25.42% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [144] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 162.99%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` sufficiente [33].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]inv
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F53]eff
+
+spazzino ◁
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+Effetti Attivi: 
+
+Scudo Psichico, da Kyrus, per 2 Tick
+  +15 Classe Armatura
+
+Rinforzo Psichico, da Kyrus, per 17 Tick
+  +6 Intelligenza
+
+Mantello di Fiamme (x53), da Kyrus, permanente
+
+Mano di Energia, da Kyrus, permanente
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]l
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+
+[H] [3641/3641] [708/708] [200/200] [F53]whoz
+
++------------------------------------------------------------------------------+
+|                              Giocatori in Zona                               |
++------------------------------------------------------------------------------+
+Kyrus                     - Platea Quadrata 
+
++------------------------------------------------------------------------------+
+Totale giocatori visibili: 1
+Picco massimo giocatori  : 4
+
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+◁ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F53]look
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+spazzino ◁
+
+[H] [3641/3641] [708/708] [200/200] [F53]n
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+apri porta e
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]u
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+-----------------
+Uscite visibili:
+East - L'ufficio dello Scriba
+Down - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]e
+L'ufficio dello Scriba - Al chiuso #3009 [S]
+Praticamente una libreria fornitissima. Pile e pile di libri, manoscritti,
+pergamene ed altre strane cose riempiono fino al soffitto gli scaffali di
+legno massiccio. Hai la sensazione che lo scriba intento nel suo lavoro,
+conosca a memoria ogni singolo pezzo di pergamena che vedi. Qui e' dove gli
+avventurieri di passaggio possono lasciare note e messaggi agli altri amici e
+compagni. Un cartello e' poggiato sul banco dello scriba.
+Uscite: West.
+Lo Scriba di Alma smista la posta con efficienza. [Liv 51] (o)
+-----------------
+Uscite visibili:
+West - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]w
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+-----------------
+Uscite visibili:
+East - L'ufficio dello Scriba
+Down - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+[un ubriaco] dice 'Non lasciare maaai deluuusa... Una doonna a Syracusaaa!'
+
+[H] [3641/3641] [708/708] [200/200] [F53]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[H] [3641/3641] [708/708] [200/200] [F53]
+
+Un ubriaco beve un sorso da una bottiglia.
+
+[H] [3641/3641] [708/708] [200/200] [F53]rent
+
+[Giulietta] ti dice 'L'affitto e` offerto gratuitamente agli avventurieri!'
+[Giulietta] ti dice 'Hai 39 oggetti con te, puoi conservarne un massimo di 400.'
+[Giulietta] ti dice 'Hai 30 oggetti preziosi, la tua cassaforte puo` ospitarne 51.'
+
+Giulietta mette le tue cose nella cassaforte e ti accompagna in stanza.
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+e
+    
+[ ALERT ] - Socket disconnesso.
+            Motivo: L'host remoto ha chiuso la connessione
+[ INFO ]  - Tempo di connessione: 00:04:55.043

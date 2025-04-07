@@ -1,0 +1,5160 @@
+Log di sessione a partire 14:57:55 su lunedì, 31 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-28#17-44-40map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.05s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-28#17-44-40map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+La Reception - Al chiuso [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3736/3736] [690/690] [185/200] [-]
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+[-] [3736/3736] [690/690] [185/200] [-]
+
+un ubriaco ha il singhiozzo: *HIC*
+
+[  UI  ]  - Impostazioni per kyrus caricate correttamente.
+[  UI  ]  - Usa il comando [uihelp] per iniziare...
+[-] [3736/3736] [690/690] [185/200] [-]who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+            Gran Maestro Ps [L&P] : Kyrus [Lava&Piega]
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 1
+
+
+[-] [3736/3736] [690/690] [185/200] [-]
+
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+[un ubriaco] dice 'Non lasciare maaai deluuusa... Una doonna a Syracusaaa!'
+
+[-] [3736/3736] [690/690] [200/200] [-]events
+
+Eventi Quest Rilevanti:
+--------------------------------------------------
+
+[ 1 ] [Invasione] [13:27:28] Uno squarcio tra le realta` si e` aperto presso [Le fogne di Palanthas]
+[ 2 ] [Invasione] [14:01:17] Uno squarcio tra le realta` si e` aperto presso [Roo, la terra a testa in giu']
+[ 3 ] [Invasione] [14:35:07] Uno squarcio tra le realta` si e` aperto presso [Lycantropia ]
+
+--------------------------------------------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti un rumore continuo di carte e fogli che vengono appallottolati.
+
+Un ubriaco beve un sorso da una bottiglia.
+
+[-] [3736/3736] [690/690] [200/200] [-]eff
+Effetti Attivi: 
+Nessuno! 
+
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+
+[-] [3736/3736] [690/690] [200/200] [-]d
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv 58][Elite] (o) (o)
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv 58][Elite] (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una guardia cittadina controlla la zona. [Liv 50]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via del Mercato - Citta' #3095 [S]
+Una stretta via animatissima. Qui comincia il grande quartiere del mercato
+dove si puo' trovare di tutto, basta che sia in quel momento disponibile e si
+abbiano i soldi. C'e' una grande folla che si aggira per questa via alla
+ricerca dei piu' svariati oggetti da comprare. Da nord senti provenire un gran
+profumo di pane appena sfornato, mentre a sud c'e' un Bazar che espone tutta
+la sua merce per invogliare i passanti a fermarsi.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Taberna Pistoris
+East - La via del Mercato
+South - Taberna Mercatoris
+West - Platea Quadrata
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via del Mercato - Negozio #3033 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. La via si getta ad est su una
+piazza. Una targa in legno con iscrizioni in argento e' in bella mostra nel
+negozio a sud, mentre a nord sembra esserci un fabbro.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La bottega del Fabbro
+East - La Piazza del Mercato
+South - La bottega del Mago
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La Piazza del Mercato - Citta' #3034 [S]
+Sei al centro della Piazza del Mercato. Innumerevoli bancarelle sono disposte
+tutte intorno alla piazza ed i mercanti si sgolano pur di riuscire ad attirare
+l'attenzione dei passanti. Qui si vende frutta, verdura e altri generi di
+prima necessita' che non si addicono ad un avventuriero come te. Quindi fissi
+bene lo zaino sulle spalle e ti rimetti in cammino. A nord inizia la via
+pannonika.
+La piazza e' illuminata da diversi bracieri accesi.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La via Pannonica
+East - La via del Mercato
+South - La Banca di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via del Mercato - Citta' #3035 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. A nord c'e' un gran negozio
+fornitissimo di armi mentre a sud un guerriero potra' trovare sicuramente
+l'armatura adatta alle sue necessita'. Verso ovest la via arriva alla Piazza
+del Mercato, ad est vedi le Porte Orientali di Alma.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Taberna Armorum
+East - Porta Victoria
+South - Taberna Vestis
+West - La Piazza del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Porta Victoria - Citta' #3060 [S]
+Stai passando sotto il possenti torri che delimitano la porta orientale di
+Alma. Costruita dall'Imperatore dopo la vittoria sui Galli e' il simbolo dei
+trionfi nei campi di battaglie su quel popolo barbaro. Molte guardie imperiali
+custodiscono l'ingresso. Ad ovest entri nella citta' di Alma e ad est inizia
+la Via Cassia.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East [porta], South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Le Mura di Alma
+East - Al di fuori delle Porte Orientali di Alma
+South - Le Mura di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Al di fuori delle Porte Orientali di Alma - Pianura #3090 [S]
+Sei al di fuori delle mura di Alma Civitas. Una vasta campagna si apre davanti
+ai tuoi occhi. Verso est inizia la Via Cassia.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: East, West [porta].
+-----------------
+Uscite visibili:
+East - La via Cassia
+West - Porta Victoria
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Porta Victoria - Citta' #3060 [S]
+Stai passando sotto il possenti torri che delimitano la porta orientale di
+Alma. Costruita dall'Imperatore dopo la vittoria sui Galli e' il simbolo dei
+trionfi nei campi di battaglie su quel popolo barbaro. Molte guardie imperiali
+custodiscono l'ingresso. Ad ovest entri nella citta' di Alma e ad est inizia
+la Via Cassia.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East [porta], South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Le Mura di Alma
+East - Al di fuori delle Porte Orientali di Alma
+South - Le Mura di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Citta' #3035 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. A nord c'e' un gran negozio
+fornitissimo di armi mentre a sud un guerriero potra' trovare sicuramente
+l'armatura adatta alle sue necessita'. Verso ovest la via arriva alla Piazza
+del Mercato, ad est vedi le Porte Orientali di Alma.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Taberna Armorum
+East - Porta Victoria
+South - Taberna Vestis
+West - La Piazza del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La Piazza del Mercato - Citta' #3034 [S]
+Sei al centro della Piazza del Mercato. Innumerevoli bancarelle sono disposte
+tutte intorno alla piazza ed i mercanti si sgolano pur di riuscire ad attirare
+l'attenzione dei passanti. Qui si vende frutta, verdura e altri generi di
+prima necessita' che non si addicono ad un avventuriero come te. Quindi fissi
+bene lo zaino sulle spalle e ti rimetti in cammino. A nord inizia la via
+pannonika.
+La piazza e' illuminata da diversi bracieri accesi.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La via Pannonica
+East - La via del Mercato
+South - La Banca di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Negozio #3033 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. La via si getta ad est su una
+piazza. Una targa in legno con iscrizioni in argento e' in bella mostra nel
+negozio a sud, mentre a nord sembra esserci un fabbro.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La bottega del Fabbro
+East - La Piazza del Mercato
+South - La bottega del Mago
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Citta' #3095 [S]
+Una stretta via animatissima. Qui comincia il grande quartiere del mercato
+dove si puo' trovare di tutto, basta che sia in quel momento disponibile e si
+abbiano i soldi. C'e' una grande folla che si aggira per questa via alla
+ricerca dei piu' svariati oggetti da comprare. Da nord senti provenire un gran
+profumo di pane appena sfornato, mentre a sud c'e' un Bazar che espone tutta
+la sua merce per invogliare i passanti a fermarsi.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Taberna Pistoris
+East - La via del Mercato
+South - Taberna Mercatoris
+West - Platea Quadrata
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una guardia cittadina controlla la zona. [Liv 50]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via dei Gladiatori - Citta' #3055 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento. A sud vedi una taverna, mentre a nord
+vi e' una torre altissima.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [portone] (chiuso), East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Un legionario e' in cerca d'impiego. [Liv 34]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Torre del Cielo (chiuso)
+East - Platea Popolorum
+South - Al bar "Tigri e Leoni"
+West - La via dei Gladiatori
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via dei Gladiatori - Citta' #3056 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via dei Gladiatori
+West - La Piazza delle Fiere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Alma, entrando in Il Colosseum.
+
+Colosseum Ianua - Citta' #1400 [S]
+Si staglia davanti a te uno dei piu' grandi capolavori architettonici voluti
+dall'imperatore in persona: Il Colosseo! Il piu' grande edificio mai costruito
+da mani umane. Formato da enormi lastre marmoree ed ampie arcate, si alza per
+decine di metri sovrastando anche le torri di guardia del muro cittadino.
+Dall'interno provengono le grida eccitate del pubblico, il ruggito delle belve
+ed il clangore delle armi. Una insegna campeggia sull'ingresso.
+Uscite: East, West.
+Tarquinio il custode dell'imperatore veglia sull'ingresso. [Liv 55][Elite] (o)
+-----------------
+Uscite visibili:
+East - La Piazza delle Fiere
+West - Lo sguardo dell'impero
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci Il Colosseum, entrando in Alma.
+
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via dei Gladiatori - Citta' #3056 [S]
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: East, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+East - La via dei Gladiatori
+West - La Piazza delle Fiere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La Piazza delle Fiere - Citta' #3058 [S]
+Sei in una bella piazza lastricata in mattonelle di marmo bianco. Al centro
+della piazza uno splendido mosaico ricorda la vittoria dell'uomo contro la
+razza malvagia dei minotauri. Verso ovest c'e' l'entrata al Colosseo, zona
+dove i giovani avventurieri fanno le prime esperienze di combattimento.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Piazza delle Gilde
+East - La via dei Gladiatori
+South - Verso il Colle Palatino
+West - Colosseum Ianua
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+La Piazza delle Gilde - Citta' #3023 [S]
+Una piccola ma elegante piazza collega i grandi edifici delle gilde molto
+frequentati. I tuoi passi risuonano sul curioso acciottolato. Le bandiere
+dell'Impero garriscono sugli edifici piu' alti. Una grande targa in marmo
+attira lo sguardo. Verso sud si apre una via che porta verso il Colosseo.
+Dei bracieri accesi provvedono ad illuminare la piazza.
+Uscite: North, East, South, West.
+Un frate che indossa una tunica nera ti passa accanto. [Liv 16][Elite]
+-----------------
+Uscite visibili:
+North - Viale degli Eroi
+East - La via delle Gilde
+South - La Piazza delle Fiere
+West - La via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via delle Gilde - Citta' #3024 [S]
+E' una strada lastricata di sampietrini che porta dal centro di Alma fino alle
+porte occidentali della citta'. Costruita di recente questa via ospita alcune
+delle gilde dell'Impero. Qui i giovani avventurieri trovano i maestri che
+possono aiutarli ad affinare le loro arti. A nord e' stato costruito il Tempio
+del Drago Nascente, mentre a sud vedi la Gilda delle arti magiche. Verso ovest
+ci sono le porte occidentali di Alma.
+Alcuni bracieri sono stati accesi per illuminare la strada.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il Tempio del Drago Nascente
+East - La Piazza delle Gilde
+South - L'entrata alla Gilda dei Maghi
+West - Porta Splendente
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Porta Splendente - Citta' #3079 [S]
+Le mura circondano ciclopiche la citta' e la proteggono da ogni insidia
+esterna. In esse e' ricavata una porta da una grata di ferro che protegge la
+strada che esce da Alma verso ovest. In quella direzione c'e' anche un ponte
+sul fiume Lys.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East, South, West [porta].
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Le Mura di Alma
+East - La via delle Gilde
+South - Le Mura di Alma
+West - Al di fuori delle Porte Occidentali di Alma
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Al di fuori delle Porte Occidentali di Alma - Pianura #3088 [S]
+Sei appena fuori delle mura di Alma Civitas. Da qui, verso ovest, inizia la
+Via del Mare che arriva fino ad Ostia.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: East [porta], West.
+-----------------
+Uscite visibili:
+East - Porta Splendente
+West - La via del Mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Alma, entrando in Elfo Sgozzato e Warren.
+
+La via del Mare - Pianura #4403 [S]
+Sei appena fuori delle porte ovest di Alma. La luce del tramonto spunta oltre
+le cime dei pini marini che si scorgono in lontananza. La Via del Mare
+prosegue tranquilla attraverso dei verdi campi coltivati per sparire ad ovest
+oltre un piccolo colle nella pineta. Verso sud c'e' un piccolo bosco di
+antiche quercie.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Al di fuori delle Porte Occidentali di Alma
+South - Il querceto
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del mare - Pianura #4404 [S]
+La strada prosegue verso ovest ed est attraverso la ricca campagna circostante.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Un sentiero impolverato
+East - La via del Mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del mare - Pianura #4405 [S]
+La strada qui costeggia il fiume Tiberis che scorre placido verso 
+ovest. Una biforcazione conduce ad un ponte sul fiume verso nord.
+C'e' un cartello all'incrocio.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il ponte dei disperati
+East - La via del mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il ponte dei disperati - Pianura #4406 [S]
+Questo antico ponte attraversa il fiume Tiberis in un punto particolarmente
+alto e pericoloso. La corrente scorre veloce e tumultuosa sollevando spruzzi
+di spuma fino al bordo del ponte ove, a causa dell'erosione del tempo, le
+ringhiere sono del tutto mancanti.
+Uscite: North, South, Down.
+-----------------
+Uscite visibili:
+North - Al bordo della palude
+South - La via del mare
+Down - Nel canale
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via del mare - Pianura #4405 [S]
+La strada qui costeggia il fiume Tiberis che scorre placido verso 
+ovest. Una biforcazione conduce ad un ponte sul fiume verso nord.
+C'e' un cartello all'incrocio.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il ponte dei disperati
+East - La via del mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via del mare - Pianura #4404 [S]
+La strada prosegue verso ovest ed est attraverso la ricca campagna circostante.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Un sentiero impolverato
+East - La via del Mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via del Mare - Pianura #4403 [S]
+Sei appena fuori delle porte ovest di Alma. La luce del tramonto spunta oltre
+le cime dei pini marini che si scorgono in lontananza. La Via del Mare
+prosegue tranquilla attraverso dei verdi campi coltivati per sparire ad ovest
+oltre un piccolo colle nella pineta. Verso sud c'e' un piccolo bosco di
+antiche quercie.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Al di fuori delle Porte Occidentali di Alma
+South - Il querceto
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci Elfo Sgozzato e Warren, entrando in Alma.
+
+Al di fuori delle Porte Occidentali di Alma - Pianura #3088 [S]
+Sei appena fuori delle mura di Alma Civitas. Da qui, verso ovest, inizia la
+Via del Mare che arriva fino ad Ostia.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: East [porta], West.
+-----------------
+Uscite visibili:
+East - Porta Splendente
+West - La via del Mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Alma, entrando in Elfo Sgozzato e Warren.
+
+La via del Mare - Pianura #4403 [S]
+Sei appena fuori delle porte ovest di Alma. La luce del tramonto spunta oltre
+le cime dei pini marini che si scorgono in lontananza. La Via del Mare
+prosegue tranquilla attraverso dei verdi campi coltivati per sparire ad ovest
+oltre un piccolo colle nella pineta. Verso sud c'e' un piccolo bosco di
+antiche quercie.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Al di fuori delle Porte Occidentali di Alma
+South - Il querceto
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+La luna piena comincia a sorgere dall'orizzonte.
+  
+..Il velo tra le realta' torna al suo stato originale..
+    ..Velocemente com'era apparso, tutto scompare..
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La via del Mare - Pianura #4403 [S]
+Sei appena fuori delle porte ovest di Alma. La luce del tramonto spunta oltre
+le cime dei pini marini che si scorgono in lontananza. La Via del Mare
+prosegue tranquilla attraverso dei verdi campi coltivati per sparire ad ovest
+oltre un piccolo colle nella pineta. Verso sud c'e' un piccolo bosco di
+antiche quercie.
+Uscite: East, South, West.
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci Elfo Sgozzato e Warren, entrando in Alma.
+
+Al di fuori delle Porte Occidentali di Alma - Pianura #3088 [S]
+Sei appena fuori delle mura di Alma Civitas. Da qui, verso ovest, inizia la
+Via del Mare che arriva fino ad Ostia.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: East [porta], West.
+-----------------
+Uscite visibili:
+East - Porta Splendente
+West - La via del Mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Alma, entrando in Elfo Sgozzato e Warren.
+
+La via del Mare - Pianura #4403 [S]
+Sei appena fuori delle porte ovest di Alma. La luce del tramonto spunta oltre
+le cime dei pini marini che si scorgono in lontananza. La Via del Mare
+prosegue tranquilla attraverso dei verdi campi coltivati per sparire ad ovest
+oltre un piccolo colle nella pineta. Verso sud c'e' un piccolo bosco di
+antiche quercie.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Al di fuori delle Porte Occidentali di Alma
+South - Il querceto
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del mare - Pianura #4404 [S]
+La strada prosegue verso ovest ed est attraverso la ricca campagna circostante.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Un sentiero impolverato
+East - La via del Mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del mare - Pianura #4405 [S]
+La strada qui costeggia il fiume Tiberis che scorre placido verso 
+ovest. Una biforcazione conduce ad un ponte sul fiume verso nord.
+C'e' un cartello all'incrocio.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il ponte dei disperati
+East - La via del mare
+West - La via del mare
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il ponte dei disperati - Pianura #4406 [S]
+Questo antico ponte attraversa il fiume Tiberis in un punto particolarmente
+alto e pericoloso. La corrente scorre veloce e tumultuosa sollevando spruzzi
+di spuma fino al bordo del ponte ove, a causa dell'erosione del tempo, le
+ringhiere sono del tutto mancanti.
+Uscite: North, South, Down.
+-----------------
+Uscite visibili:
+North - Al bordo della palude
+South - La via del mare
+Down - Nel canale
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Al bordo della palude - Pianura #4407 [S]
+Mentre verso sud senti il rumore delle acque del Tiberis, verso nord si stende
+una desolata palude nera, immobile e sileziosa... Ad est vedi ergersi sul
+bordo della palude una strana costruzione, da un pennone che si trova nel
+cortile antestante alla costruzione pende qualcosa.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Nella palude
+East - L'insegna della Locanda
+South - Il ponte dei disperati
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+L'insegna della Locanda - Citta' oscura #4481 [S]
+Ti trovi nel cortile antistante una vecchia e trasandata locanda. Vari mucchi
+di immondizia imbrattano il luogo e l'odore e' ben lontano dall'essere
+gradevole. Al centro del cortile, in cima ad un pennone di legno alto almeno
+sei metri, sta appeso il cadavere mummificato di un elfo, macabra insegna
+d'ingresso alla locanda. C'e' anche una grata apparentemente chiusa che porta
+chissa' dove.
+Uscite: East, South, West, Down [grata] (chiuso).
+C'e` un vecchio pozzo al centro del cortile.
+-----------------
+Uscite visibili:
+East - La Locanda dell'Elfo Sgozzato
+South - Le stalle
+West - Al bordo della palude
+Down - La stanzetta circolare (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La Locanda dell'Elfo Sgozzato - Negozio #4483 [S]
+Ti trovi all'interno della locanda dell'Elfo Sgozzato, luogo poco
+raccomandabile frequentato da gente ancor meno raccomandabile. La peggior
+feccia della criminalita' umana, insieme alle razze piu' truculente e
+sanguinarie chiamano questo luogo casa. Verso sud noti una piccola porta.
+Uscite: North, East, South [porta] (chiuso), West, Up.
+[!] Uno strano stregone coboldo e' qui recitando strane preghiere. [Liv 50] (o) (o)
+-----------------
+Uscite visibili:
+North - Davanti al Bancone
+East - Tra i tavoli
+South - Il magazzino delle armi (chiuso)
+West - L'insegna della Locanda
+Up - La Reception
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+L'insegna della Locanda - Citta' oscura #4481 [S]
+Ti trovi nel cortile antistante una vecchia e trasandata locanda. Vari mucchi
+di immondizia imbrattano il luogo e l'odore e' ben lontano dall'essere
+gradevole. Al centro del cortile, in cima ad un pennone di legno alto almeno
+sei metri, sta appeso il cadavere mummificato di un elfo, macabra insegna
+d'ingresso alla locanda. C'e' anche una grata apparentemente chiusa che porta
+chissa' dove.
+Uscite: East, South, West, Down [grata] (chiuso).
+C'e` un vecchio pozzo al centro del cortile.
+-----------------
+Uscite visibili:
+East - La Locanda dell'Elfo Sgozzato
+South - Le stalle
+West - Al bordo della palude
+Down - La stanzetta circolare (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Le stalle - Al chiuso #4482 [S]
+Ti trovi nelle stalle della locanda dell'Elfo Sgozzato. Un paio di cavalli ti
+esaminano con curiosita' mentre mangiano un po' di biada. Paglia e' sparsa un
+po' ovunque. A volte i viandanti che non posseggono nulla o che non hanno i
+soldi per pagare la locanda vengono qui per dormire.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'insegna della Locanda
+South - La radura del carro
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+
+Lasci Elfo Sgozzato e Warren, entrando in Il villaggio dei gitani.
+
+La radura del carro - Al chiuso #16166 [S]
+Le stalle si affacciano su una radura a forma circolare circondata da alcuni
+alberi spogli. Il terreno e' coperto di fetide immondizie e dei solchi profondi
+corrono tutt'intorno al perimetro della radura. A lasciarli deve essere stato
+un aratro o forse un carro. Appena ti avvicinani agli alberi noti che su uno di 
+essi e' stato inchiodato un cartello.
+Uscite: North.
+-----------------
+Uscite visibili:
+North - Le stalle
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+
+Lasci Il villaggio dei gitani, entrando in Elfo Sgozzato e Warren.
+
+Le stalle - Al chiuso #4482 [S]
+Ti trovi nelle stalle della locanda dell'Elfo Sgozzato. Un paio di cavalli ti
+esaminano con curiosita' mentre mangiano un po' di biada. Paglia e' sparsa un
+po' ovunque. A volte i viandanti che non posseggono nulla o che non hanno i
+soldi per pagare la locanda vengono qui per dormire.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'insegna della Locanda
+South - La radura del carro
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+L'insegna della Locanda - Citta' oscura #4481 [S]
+Ti trovi nel cortile antistante una vecchia e trasandata locanda. Vari mucchi
+di immondizia imbrattano il luogo e l'odore e' ben lontano dall'essere
+gradevole. Al centro del cortile, in cima ad un pennone di legno alto almeno
+sei metri, sta appeso il cadavere mummificato di un elfo, macabra insegna
+d'ingresso alla locanda. C'e' anche una grata apparentemente chiusa che porta
+chissa' dove.
+Uscite: East, South, West, Down [grata] (chiuso).
+C'e` un vecchio pozzo al centro del cortile.
+-----------------
+Uscite visibili:
+East - La Locanda dell'Elfo Sgozzato
+South - Le stalle
+West - Al bordo della palude
+Down - La stanzetta circolare (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]d
+solleva grata d
+Sollevi la grata, liberando il percorso verso il basso.
+[  UI  ] Aggiornata uscita d_action = solleva
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+La stanzetta circolare - Dungeon #4480 [S]
+C'e' una piccola scala qui che conduce ad una grata all'esterno. Nella stanza,
+dal soffitto altissimo, c'e' una sedia di legno malandata e un tavolaccio. A
+sud un cunicolo si addentra nel buio.
+Dalla grata filtra la luce del lunare.
+Uscite: South, Up [grata].
+Una guardia di Warren e' qui con un sorriso malvagio. [Liv 12]
+-----------------
+Uscite visibili:
+South - Un fetido cunicolo
+Up - L'insegna della Locanda
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+[la guardia di Warren] urla 'Ti uccidero`!'
+La guardia di Warren ti squarcia di striscio una volta sul petto. [5r]
+
+[-] [3731/3736] [690/690] [200/200] [C]s
+Non puoi! Stai combattendo per la tua vita!
+
+[-] [3731/3736] [690/690] [200/200] [C]
+
+La guardia di Warren ti squarcia di striscio due volte sulla schiena. [9(5x2)r2B2]
+Ti proteggi dall'attacco di la guardia di Warren con il tuo scudo! [2(1x2)]
+Uccidi la guardia di Warren impattandolo una volta in testa. [162LS]
+Hai ucciso la guardia di Warren! R.I.P. 
+L'urlo di morte di la guardia di Warren ti gela il sangue nelle vene. 
+Ricevi 2400 punti esperienza.
+
+[-] [3722/3736] [690/690] [200/200] [C]s
+
+Lasci Elfo Sgozzato e Warren, entrando in Le fogne di Alma .
+
+Un fetido cunicolo - Dungeon #12592 [S]
+E' sempre tutto buio e non vedi niente che sporcizia e roccia. A nord ti
+sembra vedere un vago chiarore.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La stanzetta circolare
+South - Un fetido cunicolo
+-----------------
+
+[-] [3722/3736] [690/690] [200/200] [C]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3722/3736] [690/690] [200/200] [c]
+
+  
+... Il velo tra le realta` si assottiglia presso Orshingal ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Un fetido cunicolo - Dungeon #12591 [S]
+E' sempre tutto buio e non vedi niente che sporcizia e roccia.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Un fetido cunicolo
+South - Un fetido cunicolo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Un fetido cunicolo - Dungeon #12590 [S]
+E' sempre tutto buio e non vedi niente che sporcizia e roccia. Ad est vedi una
+porticina: qualcuno si e' scomodato di creare una intelaiatura nel cunicolo
+per incassarcela, quindi dietro c'e' sicuramente una stanza di qualche genere.
+Uscite: North, East [porticina], South.
+-----------------
+Uscite visibili:
+North - Un fetido cunicolo
+East - Il laboratorio di Bangfizzle
+South - Un fetido cunicolo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Un fetido cunicolo - Dungeon #12589 [S]
+E' sempre tutto buio e non vedi niente che sporcizia e roccia.
+Uscite: North, South.
+Un grosso scassinatore si sta pulendo i denti con un pezzo di metallo
+piegato. [Liv 23]
+-----------------
+Uscite visibili:
+North - Un fetido cunicolo
+South - La biforcazione nel cunicolo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La biforcazione nel cunicolo - Dungeon #12588 [S]
+Qui il cunicolo svolta a gomito e si biforca, in teoria andando verso est
+dovresti avvicinarti ad Alma, mentre a nord nella zona della locanda dell'Elfo
+Sgozzato. A sud puoi trovare la leggendaria citta' sotterranea di Warren che
+si dice estendersi per la parte orientale fin sotto Alma Civitas ed ospitare i
+reietti e le razze oscure. Se sei una creatura buona faresti bene a non
+proseguire oltre, se ci tieni alla vita!
+Uscite: North, East, South.
+Percepisci una forma di vita invisibile qui intorno.
+-----------------
+Uscite visibili:
+North - Un fetido cunicolo
+East - Un fetido cunicolo
+South - L'ingresso occidentale a Warren
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+L'ingresso occidentale a Warren - Citta' oscura #12595 [S]
+Qui il cunicolo si allarga in una grande sala, illuminata da torce fissate
+alle pareti. Verso sud c'e' un enorme portone di legno, con sopra scritto
+nella lingua oscura la parola 'WARREN'. Non sembra essere una grande
+presentazione per una citta', tutto pare essere molto decadente, oltre che
+puzzolente, eppure senti un gran vociare oltre la porta. Non c'e' altro a
+parte una sedia consunta, probabilmente il criterio di accesso alla citta' e'
+semplice, se sei troppo buono e' meglio stare alla larga!
+Uscite: North, South [portone] (chiuso).
+Una guardia di Warren e' qui con un sorriso malvagio. [Liv 12]
+Il Capo della Guardia di Warren e' qui davanti a te. [Liv 23]
+-----------------
+Uscite visibili:
+North - La biforcazione nel cunicolo
+South - La strada verso la via delle Gilde (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+apri portone s
+
+[la guardia di Warren] urla 'Ti uccidero`!'
+La guardia di Warren ti squarcia di striscio tre volte sul collo. [15(5x3)Lr3B]
+Ti proteggi dall'attacco di la guardia di Warren con il tuo scudo! [1]
+Uccidi la guardia di Warren impattandolo una volta sullo stomaco. [129S]
+Hai ucciso la guardia di Warren! R.I.P. 
+L'urlo di morte di la guardia di Warren ti gela il sangue nelle vene. 
+Ottieni 53 monete d'oro e ricevi 2400 punti esperienza.
+
+[-] [3721/3736] [690/690] [200/200] [C]
+Apri il portone, liberando il percorso verso sud.
+[  UI  ] Aggiornata uscita s_action = apri
+
+
+[-] [3721/3736] [690/690] [200/200] [C]
+
+Lasci Le fogne di Alma , entrando in Elfo Sgozzato e Warren.
+
+La strada verso la via delle Gilde - Citta' oscura #4460 [S]
+Qui il pavimento e' malamente lastricato ed il soffitto e' piu' alto. Si
+direbbe una vera e propria galleria che si allarga ad est ed a sud, anche se
+sembra chiaro che nessun carro puo' entrare ed uscire dalla citta'. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [portone], East, South.
+-----------------
+Uscite visibili:
+North - L'ingresso occidentale a Warren
+East - La via delle gilde
+South - Le salmerie
+-----------------
+
+[-] [3721/3736] [690/690] [200/200] [C]e
+La via delle gilde - Citta' oscura #4455 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un orco pesantemente armato sta pattugliando la citta'. [Liv 25]
+-----------------
+Uscite visibili:
+North - La Gilda dei Ladri
+East - La via delle gilde
+South - La Gilda dei Chierici
+West - La strada verso la via delle Gilde
+-----------------
+
+[-] [3721/3736] [690/690] [200/200] [c]e
+La via delle gilde - Citta' oscura #4454 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un povero monello arranca piegato alla tua sinistra. [Liv 2]
+-----------------
+Uscite visibili:
+North - La Gilda dei Guerrieri
+East - Il Quadrivio
+South - La Gilda dei Maghi
+West - La via delle gilde
+-----------------
+
+[-] [3721/3736] [690/690] [200/200] [c]e
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La piazza secondaria
+East - La piazza principale
+South - I quartieri residenziali
+West - La via delle gilde
+-----------------
+
+[-] [3721/3736] [690/690] [200/200] [c]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+
+[-] [3721/3736] [690/690] [200/200] [c]
+
+▷ Attivista Roditori ◁
+
+[-] [3721/3736] [690/690] [200/200] [-]
+
+▷ Guardia Milizia ◁
+
+[-] [3721/3736] [690/690] [200/200] [-]
+
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Attivista Roditori ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+La guardia della milizia ti squarcia per bene tre volte sul petto. [55(18x3)Lr3]
+la guardia della milizia porta un colpo ben caricato! 
+la guardia della milizia riesce a colpirti con la sua arma, che dolore! [44rB]
+Ti proteggi dall'attacco di la guardia della milizia con il tuo scudo! [11]
+Distruggi la guardia della milizia impattandolo due volte in testa. [312(156x2)LS2]
+Scagli una lancia di ghiaccio verso la guardia della milizia, trafiggendolo! [71S]
+la guardia della milizia viene trafitto mortalmente dalla tua lancia di ghiaccio. [85S]
+Hai ucciso la guardia della milizia! R.I.P. 
+L'urlo di morte di la guardia della milizia ti gela il sangue nelle vene. 
+Ricevi 8500 punti esperienza.
+
+[-] [3637/3736] [690/690] [200/200] [C]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+
+[-] [3637/3736] [690/690] [200/200] [C]
+
+Senti un sacco di rumore vicino.
+
+
+[-] [3637/3736] [690/690] [200/200] [c]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+
+[-] [3637/3736] [690/690] [200/200] [c]x cad
+[  UI  ] x » exam #cad
+Non vedi nulla di speciale in il cadavere di la guardia della milizia.
+Quando ci guardi dentro, vedi:
+cadavere (trasportato) : 
+[ 1] |T| un'ascia nera...E` in condizioni eccellenti
+[ 2] |T| un paio di guanti di piastre neri...E` in condizioni eccellenti
+[ 3] |T| dei pantaloni in pelle...umana!...E` in condizioni eccellenti
+[ 4] |T| un elmo di piastre nero...E` in condizioni eccellenti
+[ 5] |T| un'armatura di piastre nera...E` in condizioni eccellenti
+
+[-] [3637/3736] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3637/3736] [690/690] [200/200] [-]
+
+Recuperi rapidamente le tue forze. [99] 
+
+[-] [3736/3736] [690/690] [200/200] [-]x
+[  UI  ] x » exam &bag=via-lattea
+Non vedi nulla di speciale in la borsa della Via Lattea.
+Quando ci guardi dentro, vedi:
+borsa (trasportato) : 
+[ 1] |T| il baule dell'eroe...E` indistruttibile!
+[ 2] |T| lo zaino dell'Equilibrio...E` indistruttibile!
+
+[-] [3736/3736] [690/690] [200/200] [-]xx
+[  UI  ] xx[ 1] » g &bag2=equilibrio » get #equilibrio &bag=via-lattea
+[  UI  ] xx[ 2] » exam &bag2=equilibrio
+[  UI  ] xx[ 3] » p &bag2=equilibrio » put #equilibrio &bag=via-lattea
+Prendi lo zaino dell'Equilibrio da la borsa della Via Lattea.
+▷ Ragtras, Sindaco Warren ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Non vedi nulla di speciale in lo zaino dell'Equilibrio.
+Quando ci guardi dentro, vedi:
+zaino (trasportato) : 
+[ 1] |T| alcuni attrezzi da scasso...E` in condizioni eccellenti...Sembra molto fragile
+[ 2] |T| un simbolo sacro a Benem...Ha un alone luminoso...E` indistruttibile!
+[ 3] |T| una borsa magica...Ha un alone luminoso...E` in condizioni eccellenti
+[ 4] |T| lo scettro di Ravenloft...Ha un alone luminoso [3]
+[ 7] |T| un asso di picche...E` in condizioni eccellenti
+[ 8] |T| un asso di cuori [2]
+[10] |T| un asso di quadri...E` in condizioni eccellenti
+[11] |T| un asso di fiori...E` in condizioni eccellenti
+[12] |T| una Lama di Pietra affilata [4]
+[16] |U| Ricetta: Incantamento Minore...E` in condizioni eccellenti
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Metti lo zaino dell'Equilibrio in la borsa della Via Lattea
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti un sacco di rumore vicino.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]xxx
+[  UI  ] xxx[ 1] » g &bag3=eroe » get #eroe &bag=via-lattea
+[  UI  ] xxx[ 2] » exam &bag3=eroe
+[  UI  ] xxx[ 3] » p &bag3=eroe » put #eroe &bag=via-lattea
+Prendi il baule dell'eroe da la borsa della Via Lattea.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Non vedi nulla di speciale in il baule dell'eroe.
+Quando ci guardi dentro, vedi:
+baule (trasportato) : 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Metti il baule dell'eroe in la borsa della Via Lattea
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti un rumore continuo di papiri srotolati e riarrotolati.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88| 97%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87| 97%] l'anello degli Angeli
+[ 3] <al collo>          [C| 43| 93%] un medaglione dell'apprendista
+[ 4] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 5] <sul corpo>         [T| 77| 95%] una corazza di scaglie di drago
+[ 6] <in testa>          [S| 88| 99%] l'Elmo del Manipolatore dei Piani
+[ 7] <sulle gambe>       [A| 75| 99%] dei gambali decorati in oro
+[ 8] <ai piedi>          [S| 91| 96%] gli Stivali del Guaritore dei Piani
+[ 9] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[10] <sulle braccia>     [S| 91| 99%] gli Spallacci del Manipolatore dei Piani
+[11] <come scudo>        [S| 95| 99%] il Pavese del Difensore dei Piani
+[12] <attorno al corpo>  [T| 41| 98%] una cappa di cristallo
+[13] <alla vita>         [S| 91| 98%] la Cintura del Guaritore dei Piani
+[14] <polso destro>      [T| 87| 93%] il bracciale degli Angeli Astrali
+[15] <polso sinistro>    [T| 87| 98%] il bracciale degli Angeli Astrali
+[16] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[17] <sulla schiena>     [A| 71| 97%] un manto degli antichi tomi
+[18] <orecchio destro>   [A| 47| 94%] un gioiello d'oro massiccio
+[19] <orecchio sinistro> [A| 50| 97%] un orecchino d'argento brillante
+[20] <sul viso>          [A| 75| 98%] una visiera d'oro massiccio
+[21] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 80.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Ragtras, Sindaco Warren ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+  
+... Il velo che protegge Orshingal si fa sempre piu` sottile ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti qualcuno urlare ordini qui vicino.
+
+Senti un rumore continuo di papiri srotolati e riarrotolati.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti un sacco di rumore vicino.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Ragtras, Sindaco Warren ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+△ Ragtras, Sindaco Warren △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+La via delle gilde - Citta' oscura #4454 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un povero monello arranca piegato alla tua sinistra. [Liv 2]
+L'attivista si batte per l'euguaglianza fra razze oscure e uomini. [Liv 4]
+-----------------
+Uscite visibili:
+North - La Gilda dei Guerrieri
+East - Il Quadrivio
+South - La Gilda dei Maghi
+West - La via delle gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via delle gilde - Citta' oscura #4455 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un orco pesantemente armato sta pattugliando la citta'. [Liv 25]
+-----------------
+Uscite visibili:
+North - La Gilda dei Ladri
+East - La via delle gilde
+South - La Gilda dei Chierici
+West - La strada verso la via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La strada verso la via delle Gilde - Citta' oscura #4460 [S]
+Qui il pavimento e' malamente lastricato ed il soffitto e' piu' alto. Si
+direbbe una vera e propria galleria che si allarga ad est ed a sud, anche se
+sembra chiaro che nessun carro puo' entrare ed uscire dalla citta'. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [portone], East, South.
+-----------------
+Uscite visibili:
+North - L'ingresso occidentale a Warren
+East - La via delle gilde
+South - Le salmerie
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via delle gilde - Citta' oscura #4455 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un orco pesantemente armato sta pattugliando la citta'. [Liv 25]
+-----------------
+Uscite visibili:
+North - La Gilda dei Ladri
+East - La via delle gilde
+South - La Gilda dei Chierici
+West - La strada verso la via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via delle gilde - Citta' oscura #4454 [S]
+Qui prosegue l'enorme caverna, offrendo agli abitanti gli insegnamenti delle
+gilde. Il pavimento e' abbastanza ben lastricato qui. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North [porta], East, South [porta], West.
+Un povero monello arranca piegato alla tua sinistra. [Liv 2]
+L'attivista si batte per l'euguaglianza fra razze oscure e uomini. [Liv 4]
+-----------------
+Uscite visibili:
+North - La Gilda dei Guerrieri
+East - Il Quadrivio
+South - La Gilda dei Maghi
+West - La via delle gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il Quadrivio - Citta' oscura #4474 [S]
+Questo e' il punto in cui si incrociano le due stradone principali in cui e'
+suddiviso questo enorme complesso sotterraneo. Al centro c'e' una piccola
+vasca di raccolta dell'acqua piovana che cola dal soffitto della caverna,
+proveniente chissa' da quale complesso di canali di scolo. C'e' un via vai di
+persone di ogni razza, per lo piu' feccia poco raccomandabile o poveri
+miserabili senza piu' una vita civile ed emarginati dal mondo. Eppure
+l'atmosfera sembra operosa ed in un certo qual modo allegra, anche se la
+decadenza si avverte ovunque, come la puzza del resto. Puzza di ogni tipo,
+liquami, rifiuti, sudore e' talmente tanta e varia che dopo un po' quasi ti
+pare abituartici. Il chiasso ed il vociare sono quasi assordanti. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, East, South, West.
+[Diritto: Kyrus] Il cadavere di la guardia della milizia giace al suolo.
+-----------------
+Uscite visibili:
+North - La piazza secondaria
+East - La piazza principale
+South - I quartieri residenziali
+West - La via delle gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+I quartieri residenziali - Citta' oscura #4463 [S]
+Qui prosegue l'enorme caverna, dove dorme la popolazione meno povera. Il
+pavimento e' ben tenuto qui. Non c'e' molta folla in effetti in questa zona.
+Ci sono edifici in muratura a nord e a sud. Quello a nord e' il piu' bello
+della citta' quindi desumi che sia la casa o l'ufficio del sindaco. Ci sono
+torce alle pareti e puoi notare dei condotti di areazione posti sui lati del
+corridoio in alto, che probabilmente sbucano da qualche parte garantendo il
+ricambio d'aria, che comunque mantiene un'odore fetido e di fogna.
+Uscite: North, East [porta] (chiuso), South, West [porta].
+-----------------
+Uscite visibili:
+North - Il Quadrivio
+East - il Municipio (chiuso)
+South - I quartieri popolari
+West - Il dormitorio
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+I quartieri popolari - Citta' oscura #4479 [S]
+Qui prosegue l'enorme caverna, dove dorme la gran parte della popolazione. Il
+pavimento e' piuttosto fatiscente qui. Non c'e' molta folla in effetti in
+questa zona. Ci sono baracche a nord e a sud. Ci sono torce alle pareti e puoi
+notare dei condotti di areazione posti sui lati del corridoio in alto, che
+probabilmente sbucano da qualche parte garantendo il ricambio d'aria, che
+comunque mantiene un'odore fetido e di fogna.
+Uscite: North, East [porta], South, West [porta].
+Una povera monella arranca piegata alla tua destra. [Liv 2]
+-----------------
+Uscite visibili:
+North - I quartieri residenziali
+East - La baracca
+South - La strada verso la citta'
+West - La baracca
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La strada verso la citta' - Citta' oscura #4477 [S]
+Qui il pavimento e' malamente lastricato ed il soffitto e' piu' alto. Si
+direbbe una vera e propria galleria, anche se sembra chiaro che nessun carro
+puo' entrare ed uscire dalla citta'. Ci sono torce alle pareti e puoi notare
+dei condotti di areazione posti sui lati del corridoio in alto, che
+probabilmente sbucano da qualche parte garantendo il ricambio d'aria, che
+comunque mantiene un'odore fetido e di fogna.
+Ora che e' notte c'e' ancora piu' confusione!
+Uscite: North, South [portone] (chiuso).
+-----------------
+Uscite visibili:
+North - I quartieri popolari
+South - L'ingresso meridionale a Warren (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+apri portone s
+Apri il portone, liberando il percorso verso sud.
+[  UI  ] Aggiornata uscita s_action = apri
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+L'ingresso meridionale a Warren - Citta' oscura #4478 [S]
+Sei giunto all'ingresso meridionale della grande citta' sotterranea di Warren,
+rifugio delle razze oscure, dei derelitti e dei reietti della societa'. A sud
+puoi vedere un cunicolo addentrarsi nel buio. Le pareti sono smussate e
+lavorate dalla roccia viva e in alcune parti ci sono tracce di intonacatura,
+ma il lavoro non e' mai stato completato, come se inizialmente si volessero
+fare le cose in grande, salvo subentrare esigenze piu' essenziali di vita. Il
+portone e' in legno e robusto e riporta la scritta 'WARREN' nella lingua
+oscura.
+E' molto buio qui.
+Uscite: North [portone], South.
+Una guardia di Warren e' qui con un sorriso malvagio. [Liv 12] [2]
+-----------------
+Uscite visibili:
+North - La strada verso la citta'
+South - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+
+Lasci Elfo Sgozzato e Warren, entrando in La via Appia.
+
+Il cunicolo sotterraneo - Sottosuolo #4578 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Verso nord vedi
+un'apertura ed uno spazio molto piu' ampio ed anche una luce. Senti un gran
+numero di voci e rumori, come di un centro abitato, verso nord. Non c'e' altro
+qui dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - L'ingresso meridionale a Warren
+South - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il cunicolo sotterraneo - Sottosuolo #4577 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Qui il cunicolo gira a
+gomito. Senti un vociare molto forte verso nord. Non c'e' altro qui dentro, se
+non terra, roccia, qualche insetto e aria stantia.
+Uscite: North, East.
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+East - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il cunicolo sotterraneo - Sottosuolo #4576 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Senti un confuso vociare
+verso nord ovest. Non c'e' altro qui dentro, se non terra, roccia, qualche
+insetto e aria stantia.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Il cunicolo sotterraneo
+West - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il cunicolo sotterraneo - Sottosuolo #4575 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Non c'e' altro qui
+dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Il cunicolo sotterraneo
+West - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il cunicolo sotterraneo - Sottosuolo #4574 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Non c'e' altro qui
+dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Il cunicolo sotterraneo
+West - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il cunicolo sotterraneo - Sottosuolo #4573 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Qui il cunicolo gira a
+gomito. Non c'e' altro qui dentro, se non terra, roccia, qualche insetto e
+aria stantia.
+Uscite: South, West.
+-----------------
+Uscite visibili:
+South - Il cunicolo sotterraneo
+West - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il cunicolo sotterraneo - Sottosuolo #4572 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Non c'e' altro qui
+dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+South - Il cunicolo sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il cunicolo sotterraneo - Sottosuolo #4571 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Non c'e' altro qui
+dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+South - Il vano sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il vano sotterraneo - Dungeon #4569 [S]
+Questo vano e' stato scavato da una razza intelligente, ci sono dei mattoni
+piuttosto grezzi ma ancora in discrete condizioni sulle pareti che sono state
+scavate e spianate. C'e' una scaletta che conduce ad una botola verso l'alto.
+Mentre un lungo e stretto cunicolo si avventura nel buio a nord.
+Uscite: North, Up [botola] (chiuso).
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+Up - Una piccola grotta (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]u
+spingi botola u
+Spingi la botola, liberando il percorso verso l'alto.
+[  UI  ] Aggiornata uscita u_action = spingi
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Una piccola grotta - Caverna #4568 [S]
+E' una piccola grotta, forse rifugio occasionale di qualche animale di media
+taglia. Non vedi nulla se non un po' di muschio sulle pareti, della terra
+smossa e qualche osso.
+Uscite: South, Down.
+-----------------
+Uscite visibili:
+South - La via appia
+Down - Il vano sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via appia - Foresta #4503 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma. A nord vedi una
+piccola caverna.
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Una piccola grotta
+South - La via appia
+West - La via appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Una piccola grotta - Caverna #4568 [S]
+E' una piccola grotta, forse rifugio occasionale di qualche animale di media
+taglia. Non vedi nulla se non un po' di muschio sulle pareti, della terra
+smossa e qualche osso.
+Uscite: South, Down.
+-----------------
+Uscite visibili:
+South - La via appia
+Down - Il vano sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]d
+solleva botola d
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Il vano sotterraneo - Dungeon #4569 [S]
+Questo vano e' stato scavato da una razza intelligente, ci sono dei mattoni
+piuttosto grezzi ma ancora in discrete condizioni sulle pareti che sono state
+scavate e spianate. C'e' una scaletta che conduce ad una botola verso l'alto.
+Mentre un lungo e stretto cunicolo si avventura nel buio a nord.
+Uscite: North, Up [botola].
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+Up - Una piccola grotta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il cunicolo sotterraneo - Sottosuolo #4570 [S]
+Percorri il cunicolo leggermente chinato. E' stato scavato da braccia umane (o
+umanoidi) senza badare all'estetica. In pratica e' un grosso buco nel terreno
+e non escludi possa crollare da un momento all'altro. Non c'e' altro qui
+dentro, se non terra, roccia, qualche insetto e aria stantia.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+South - Il vano sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il vano sotterraneo - Dungeon #4569 [S]
+Questo vano e' stato scavato da una razza intelligente, ci sono dei mattoni
+piuttosto grezzi ma ancora in discrete condizioni sulle pareti che sono state
+scavate e spianate. C'e' una scaletta che conduce ad una botola verso l'alto.
+Mentre un lungo e stretto cunicolo si avventura nel buio a nord.
+Uscite: North, Up [botola].
+-----------------
+Uscite visibili:
+North - Il cunicolo sotterraneo
+Up - Una piccola grotta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]u
+spingi botola u
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Una piccola grotta - Caverna #4568 [S]
+E' una piccola grotta, forse rifugio occasionale di qualche animale di media
+taglia. Non vedi nulla se non un po' di muschio sulle pareti, della terra
+smossa e qualche osso.
+Uscite: South, Down.
+-----------------
+Uscite visibili:
+South - La via appia
+Down - Il vano sotterraneo
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via appia - Foresta #4503 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma. A nord vedi una
+piccola caverna.
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Una piccola grotta
+South - La via appia
+West - La via appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via appia - Foresta #4504 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma. Il bosco e' cosi'
+alto e fitto che la luce del sole non arriva quasi piu' qui. Da un varco fra
+gli alberi, un sentiero si inoltra nel bosco verso ovest.
+Uscite: North, South, West.
+Un vecchio frate passeggia qui nella zona. [Liv 10]
+-----------------
+Uscite visibili:
+North - La via appia
+South - La via appia
+West - La stradina nel bosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via appia - Foresta #4505 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma. Il bosco e' cosi'
+alto e fitto che la luce del sole non arriva quasi piu' qui.
+Uscite: North, East, West.
+Un legionario di pattuglia passa di qui. [Liv 25]
+-----------------
+Uscite visibili:
+North - La via appia
+East - Il sentiero verde
+West - La via appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via appia - Foresta #4506 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma. Il bosco e' cosi'
+alto e fitto che la luce del sole non arriva quasi piu' qui.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via appia
+West - La via appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via appia - Foresta #4507 [S]
+La strada si snoda attraverso il fitto bosco a sud di Alma.
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - La via appia
+South - La via Appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Non puoi andare da quella parte.
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via Appia - Collina #4511 [S]
+La strada qui inizia una brusca curva verso est salendo sulle vicine colline.
+Da qui si inizia a scorgere la costa ovest e lo scintillio dei riflessi del
+mare.
+Uscite: North, East.
+Una strana creatura avvolta nell'ombra ti assale ferocemente! [Liv 15] [2]
+-----------------
+Uscite visibili:
+North - La via appia
+East - Il tempio di Giove
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il tempio di Giove - Tempio #4512 [S]
+Ti trovi sulla sommita' di una collinetta che domina un piccolo paesello. Qui
+si erge il mitico tempio del dio Giove "Anxur". Una stupenda vista sul mare
+completa il paesaggio. La superba statua del dio e' rivolta verso il mare e
+sembra viva.
+Uscite: East, West.
+Simbolo dell'immortalita' la statua di Anxur si erge verso il cielo! [Liv 50][Elite]
+-----------------
+Uscite visibili:
+East - La via Flacca
+West - La via Appia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via Flacca - Costa #4513 [S]
+La via Appia cede ora il passo ad una strada molto piu' piccola, ma
+altrettanto ben tenuta. La strada si snoda lungo costa per molte leghe,
+passando vicino ad interessanti contrafforti calcarei e piccole guarnigioni
+imperiali. A spiovere sulla costa, verso est, vedi un imponente maniero.
+Uscite: East [cancello] (chiuso), South, West.
+-----------------
+Uscite visibili:
+East - La roccaforte delle fiamme (chiuso)
+South - La montagna Spaccata
+West - Il tempio di Giove
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La montagna Spaccata - Montagna #4514 [S]
+Ti trovi ora su una impressionante montagna a picco sul mare che presenta una
+profonda spaccatura nel mezzo. Una serie di scalette conduce giu' per la
+montagna ad un tempio dei sacerdoti del polipo.
+Uscite: North, West, Down (segreto).
+-----------------
+Uscite visibili:
+North - La via Flacca
+West - La via Flacca
+Down - Una scaletta nella roccia (segreto)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via Flacca - Costa #4515 [S]
+La strada si snoda lungo costa per molte leghe, passando vicino ad
+interessanti contrafforti calcarei e piccole guarnigioni imperiali.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La montagna Spaccata
+West - La via flacca
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via flacca - Costa #4516 [S]
+La strada effettua una brusca curva verso sud in corrispondenza di uno
+strapiombo sul mare.
+Uscite: North, East, South.
+Un legionario di pattuglia passa di qui. [Liv 25]
+-----------------
+Uscite visibili:
+North - La Gilda degli Esploratori
+East - La via Flacca
+South - La via Flacca
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via Flacca - Pianura #4517 [S]
+La strada qui si allarga e prosegue decisa in direzione nord-sud. Il traffico
+aumenta e capisci che ti stai avvicinanado alla famosa citta' di Capua.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - La via flacca
+South - Il trivio
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il trivio - Pianura #4518 [S]
+Giungi ad un grande incrocio. La via Flacca inizia verso nord. Verso sud parte
+un sentiero che si inoltra nei boschi campani e verso est scorgi un piccolo
+abitato'. C'e' un cartello all'incrocio.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - La via Flacca
+East - Un sentiero buio
+South - L'ingresso alla foresta di pietra
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci La via Appia, entrando in La Contea.
+
+Un sentiero buio - Foresta #1100 [S]
+Procedi attraverso la foresta fitta e oscura su di un sentiero 
+scarsamente illuminato. Davanti a te senti indistinti i rumori di un 
+villaggio.
+In terra c'e' una grossa placca di marmo.
+Uscite: North, West.
+-----------------
+Uscite visibili:
+North - Un sentiero buio
+West - Il trivio
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Mentre esamini la zona vedi atterrare un Cavalca-Grifone del 
+servizio aviano elfico in sella al suo grifone, con un gesto ti 
+invita a salire a bordo.
+Fai presto, se desideri, si fermera' solo pochi secondi!
+
+Per salire a bordo vai Up.
+Uscite: North, West, Up.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+  
+... Il velo che protegge Orshingal si fa sempre piu` sottile ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci La Contea, entrando in La via Appia.
+
+Il trivio - Pianura #4518 [S]
+Giungi ad un grande incrocio. La via Flacca inizia verso nord. Verso sud parte
+un sentiero che si inoltra nei boschi campani e verso est scorgi un piccolo
+abitato'. C'e' un cartello all'incrocio.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - La via Flacca
+East - Un sentiero buio
+South - L'ingresso alla foresta di pietra
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci La via Appia, entrando in La Contea.
+
+Un sentiero buio - Foresta #1100 [S]
+Procedi attraverso la foresta fitta e oscura su di un sentiero 
+scarsamente illuminato. Davanti a te senti indistinti i rumori di un 
+villaggio.
+In terra c'e' una grossa placca di marmo.
+Uscite: North, West.
+-----------------
+Uscite visibili:
+North - Un sentiero buio
+West - Il trivio
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Mentre esamini la zona vedi atterrare un Cavalca-Grifone del 
+servizio aviano elfico in sella al suo grifone, con un gesto ti 
+invita a salire a bordo.
+Fai presto, se desideri, si fermera' solo pochi secondi!
+
+Per salire a bordo vai Up.
+Uscite: North, West, Up.
+
+[-] [3736/3736] [690/690] [200/200] [-]u
+
+Lasci La Contea, entrando in Aviani Elfici.
+
+A bordo di un grifone del Servizio Aviano Elfico - Al chiuso #262 [S]
+Il cavalca-grifoni d'un tratto da' uno strattone alle redini del suo 
+destriero che subito con pochi battiti delle grandi ali riprende 
+quota.
+
+"La prossima fermata e' l'Accampamento degli Aviani Elfici!"
+Uscite visibili:
+Nessuna!
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Al momento stai sorvolando il bosco che si trova ad est di Alma, in 
+lontananza ti sembra di vedere una altra torre attorno alla quale si 
+avvolge un gigantesco serpente.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Dopo aver attraversato alcune nubi vi trovate a sorvolare 
+l'accampamento degli Aviani Elfici. Il cavalca-grifoni esamina per un 
+attimo i dintorni.
+
+"Stiamo per atterrare,"ti dice,"che il mio destriero 
+ e' alquanto stanco e necessita di riposo."
+
+Poi d'un tratto hai un senso di vuoto allo stomaco quando l'ufficiale 
+comincia a far planare la sua cavalcatura.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Atterrate dolcemente al suolo.
+Vi trovate nei pressi di una delle stalle dell'accampamento degli 
+Aviani Elfici.
+Il cavaliere aviano smonta di sella dal suo grifone, poi ti da una 
+mano a scendere. Quindi toglie la grande sella dal dorso dell'animale.
+"Se necessiti ancora di viaggiare, potrai trovare altri 
+ cavalieri disposti ad accompagnarti presso il cortile 
+ principale ad est."
+Detto qesto l'ufficiale elfico ti sorride e poi si allontana insieme 
+al suo grifone.
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+Presso le Stalle - Al chiuso #288 [S]
+Sei nei pressi delle stalle dell'accampamento degli Aviani Elfici.
+Ti guardi un attimo intorno, ci sono vari ufficiali elfici che badano 
+ai loro destrieri. Verso est vedi il cortile principale 
+dell'accampamento.
+Uscite: East.
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+L'accampamento degli Aviani Elfici - Foresta #280 [S]
+Quale miglior mezzo per muoversi per i reami se non essere trasportati 
+dai generosissimi elfi dell'Aviazione Elfica? Qui ci sono moltissimi 
+ufficiali dell'aviazione elfica che attendono solo di accompagnarti 
+dove desideri. Uno dei cavalca-grifoni ti invita a saltare in sella 
+al suo destriero.
+In terra noti una grossa placca di marmo.
+Uscite: North, East [porta], South, West, Up.
+-----------------
+Uscite visibili:
+North - La via Cassia
+East - La Taverna degli Aviani Elfici
+South - L'accampamento degli Aviani Elfici
+Up - Decollo!
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+
+Lasci Aviani Elfici, entrando in Via Cassia.
+
+La via Cassia - Pianura #4201 [S]
+Stai camminando lungo cio' che un tempo era noto come Via Cassia, un tempo
+pavimentata fino ai monti del Corno. Ora ha decisamente bisogno di
+manutenzione... i grossi pietroni che la formavano ormai sono stati scalzati,
+alcuni sono buttati al lato della strada... dopo le grandi guerre furono
+depredati per ricostruire le case. Comunque e' di qui che si deve passare se
+si vuole giungere alla lontana piana di Talonia. Verso sud noti una grossa
+radura dove tra tende e costruzioni in legno sembrano esseri radunati dei
+Cavalca-Grifoni elfici.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - La via Cassia
+South - L'accampamento degli Aviani Elfici
+West - Al di fuori delle Porte Orientali di Alma
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via Cassia - Pianura #4202 [S]
+La strada si snoda da est ad ovest. le mattonelle sono anche qui scalzate o
+assenti, la pavimentazione oltremodo rovinata rende il camminare disagevole. A
+sud vedi una piccola casa bianca.
+Uscite: East, South [barriera] (chiuso), West.
+-----------------
+Uscite visibili:
+East - La via Cassia
+South - La sala lucente (chiuso)
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+unlock barriera s
+Non hai la chiave giusta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+La barriera e` chiusa.
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+unlock barriera s
+Non hai la chiave giusta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+La barriera e` chiusa.
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La via Cassia - Pianura #4203 [S]
+Un ampia curva, delimitata dalla prima pietra miliare, piega la Cassia verso
+nord. A ovest le mura di Alma sono vicine e ben visibili. A est la via
+costeggia un fittissimo bosco.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+South - Il ponte sul fossato
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+
+Lasci Via Cassia, entrando in Le Gilde di Lumen et Umbra.
+
+Il ponte sul fossato - Pianura #20100 [S]
+Innanzi a te si erge il maestoso castello dell'Ordine della Luce. Baluardo di
+difesa contro le forze del male, nel corso dei secoli, nonostante numerosi
+assedi non e' mai caduto, grazie alla valorosa difesa di Cavalieri e
+Combattenti. Sulla torre principale svetta la bandiera recante l'emblema della
+Gilda. Un profondo fossato circonda tutto il castello, a cui puo' pertanto
+accedersi solamente passando per il ponte levatoio. A guardia del ponte si
+erge un possente Cavaliere.
+La luna rischiara soffusamente le bianche mura del castello.
+Uscite: North, South [portone].
+Vedi una splendida bandiera con un grande emblema ricamato sopra.
+Il Cavaliere Bianco e' qui nella sua lucente armatura. [Liv 50]
+-----------------
+Uscite visibili:
+North - La via Cassia
+South - La Sala dei Cavalieri della Luce
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Via Cassia.
+
+La via Cassia - Pianura #4203 [S]
+Un ampia curva, delimitata dalla prima pietra miliare, piega la Cassia verso
+nord. A ovest le mura di Alma sono vicine e ben visibili. A est la via
+costeggia un fittissimo bosco.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+South - Il ponte sul fossato
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+La via Cassia - Pianura #4204 [S]
+Dopo parecchie pietre miliari, vedi un sentiero che si inoltra nei boschi ad
+est di Alma mentre un viottolo si dirama verso ovest dove puoi scorgere alcune
+colonne e una strana costruzione. La Cassia continua in direzione Nord-Sud
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+East - Il bosco di Alma
+South - La via Cassia
+West - Il colonnato della gilda dei Filosofi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il bosco di Alma - Foresta #4205 [S]
+Una stupenda pineta circonda la zona piu' fitta del bosco di Alma. Il luogo
+sembrerebbe essere sicuro.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco di Alma
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il bosco di Alma - Foresta #4206 [S]
+In questo punto della pineta inizia il bosco vero e proprio, molto fitto e
+quasi impenetrabile. Verso sud continua comunque un largo sentiero.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+South - Il sentiero
+West - Il bosco di Alma
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il sentiero - Pianura #4207 [S]
+Un largo sentiero si fa strada nel fitto del bosco. Dove portera'? Non
+sembrano esserci centri abitati in questa direzione.
+Uscite: North, East, South, West.
+Un gigantesco millepiedi razzola qui attorno. [Liv 2]
+Enrico, il giovane fabbro esperto in riparazioni e' qui. [Liv 20]
+-----------------
+Uscite visibili:
+North - Il bosco di Alma
+South - La biforcazione
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Millepiedi Gigante ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La biforcazione - Pianura #4208 [S]
+Il sentiero piega bruscamente verso Est scomparendo dietro alcune curve. Verso
+sud si intravede una debole traccia in mezzo alla parte piu' scura e fitta del
+bosco.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Il sentiero
+East - I dossi
+South - Il bosco fitto
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il bosco fitto - Foresta #4210 [S]
+Forzando la via atraverso il fittissimo bosco, riesci a procedere lungo il
+sentiero che corre in direzione nord-sud. Ad est il bosco si fa meno fitto.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La biforcazione
+East - Nel bosco
+South - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+Il bosco fitto - Foresta #4211 [S]
+Forzando la via attraverso il fittissimo bosco, giungi ai piedi di un
+colossale albero. Verso sud vedi un piccolo laghetto.
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Il bosco fitto
+South - Il laghetto
+West - Parte dell'albero colossale
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Vuoi camminare attraverso agli alberi ?
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il bosco fitto - Foresta #4210 [S]
+Forzando la via atraverso il fittissimo bosco, riesci a procedere lungo il
+sentiero che corre in direzione nord-sud. Ad est il bosco si fa meno fitto.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La biforcazione
+East - Nel bosco
+South - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Un sentiero nel sottobosco - Foresta #4270 [S]
+Un sentiero si inoltra tra gli alberi. Il profumo della resina ti solletica il
+naso, i raggi del sole che filtrano tra le fronde ti accarezzano le braccia.
+Ti rendi conto che in quest'angolo del bosco regna una pace quasi innaturale.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Un sentiero nel sottobosco - Foresta #4271 [S]
+Il sentiero continua, curvando tra i tronchi coperti di edera, guidando il tuo
+cammino verso una radura che si apre all'improvviso alla fine del percorso.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - L'entrata della Fortezza del Tuono
+East - Un sentiero nel sottobosco
+West - La tomba del Primo Cavaliere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+
+Lasci Via Cassia, entrando in Le Gilde di Lumen et Umbra.
+
+L'entrata della Fortezza del Tuono - Al chiuso #20200 [S]
+Sulla sommita` del picco sorge una fortezza di incredibile maestosita`.
+Ti addentri nell'ampio cortile, superando le possenti mura di granito,
+da cui si staccano torrioni imponenti. Al centro del cortile, protetta
+da un secondo ordine di mura, sorge la Fortezza vera e propria, rifugio
+e dimora dei Cavalieri del Tuono, e delle Saette Danzanti.
+Uscite: North, East, South, West.
+Accanto al portone, fissata a una bassa colonna, e` stata posta
+una piastra d'argento, su cui sono incisi alcuni nomi.
+Un cavaliere e` di guardia al portale della fortezza. [Liv 50] (o)
+-----------------
+Uscite visibili:
+North - All'interno della Fortezza
+South - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Via Cassia.
+
+Un sentiero nel sottobosco - Foresta #4271 [S]
+Il sentiero continua, curvando tra i tronchi coperti di edera, guidando il tuo
+cammino verso una radura che si apre all'improvviso alla fine del percorso.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - L'entrata della Fortezza del Tuono
+East - Un sentiero nel sottobosco
+West - La tomba del Primo Cavaliere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Un sentiero nel sottobosco - Foresta #4270 [S]
+Un sentiero si inoltra tra gli alberi. Il profumo della resina ti solletica il
+naso, i raggi del sole che filtrano tra le fronde ti accarezzano le braccia.
+Ti rendi conto che in quest'angolo del bosco regna una pace quasi innaturale.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il bosco fitto - Foresta #4210 [S]
+Forzando la via atraverso il fittissimo bosco, riesci a procedere lungo il
+sentiero che corre in direzione nord-sud. Ad est il bosco si fa meno fitto.
+Uscite: North, East, South, West.
+Un gigantesco millepiedi razzola qui attorno. [Liv 2]
+-----------------
+Uscite visibili:
+North - La biforcazione
+East - Nel bosco
+South - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci Via Cassia, entrando in La foresta delle lucertole.
+
+Nel bosco - Foresta #1901 [S]
+L'aria qui e` molto calda ed umida. Senti il suono di strani animali in
+lontananza... sembra arrivare da est.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Il limite della foresta
+West - Il bosco fitto
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il limite della foresta - Foresta #1902 [S]
+Gli alberi e le felci crescono molto fitte. Il sentiero, verso est, diventa
+impervio e piu` si inoltra nella foresta, piu` e` invaso dalle piante.
+Uscite: East, West.
+C'e` un cartello appeso ad un albero.
+Un gigantesco millepiedi razzola qui attorno. [Liv 2]
+-----------------
+Uscite visibili:
+East - Il sentiero nella foresta
+West - Nel bosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il sentiero nella foresta - Foresta #1903 [S]
+Gli alberi sono altissimi e non permettono alla luce di passare. Piccoli 
+raggi di luce riescono, tuttavia, a rischiarare il piccolo sentiero che stai
+seguendo.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La curva nel sentiero
+West - Il limite della foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La curva nel sentiero - Foresta #1904 [S]
+Il terreno qui e` stato liberato da quasi tutto il sottobosco. Ti guardi
+intorno cercando, con un po` di apprensione, chi puo` aver fatto tutto questo
+lavoro.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+L'aracnouccello fa schioccare le sue chele. [Liv 20]
+-----------------
+Uscite visibili:
+North - La stanza delle evocazioni (chiuso)
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - La curva nel sentiero
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il sentiero nella foresta - Foresta #1918 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il sentiero nella foresta - Foresta #1920 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North, East, South, West.
+C'e` un grosso anaconda arrotolato qui sull'erba. [Liv 40]
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il sentiero nella foresta - Foresta #1918 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+L'aracnouccello fa schioccare le sue chele. [Liv 20]
+-----------------
+Uscite visibili:
+North - La stanza delle evocazioni (chiuso)
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - La curva nel sentiero
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+l'aracnouccello ti morde!
+L'aracnouccello ti punge per bene tre volte sul corpo. [45(15x3)Lr3]
+Distruggi l'aracnouccello impattandola una volta sul collo. [135S]
+Scagli una lancia di ghiaccio verso l'aracnouccello, trafiggendola! [85S]
+Uccidi l'aracnouccello impattandola una volta sullo stomaco. [141S]
+Hai ucciso l'aracnouccello! R.I.P. 
+L'urlo di morte di l'aracnouccello ti gela il sangue nelle vene. 
+Ottieni 47 monete d'oro e ricevi 4500 punti esperienza.
+
+[-] [3691/3736] [690/690] [200/200] [C]n
+unlock portone n
+Non hai la chiave giusta.
+
+[-] [3691/3736] [690/690] [200/200] [C]
+Il portone e` chiuso.
+
+[-] [3691/3736] [690/690] [200/200] [C]look
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di l'aracnouccello giace al suolo.
+
+[-] [3691/3736] [690/690] [200/200] [c]w
+La curva nel sentiero - Foresta #1904 [S]
+Il terreno qui e` stato liberato da quasi tutto il sottobosco. Ti guardi
+intorno cercando, con un po` di apprensione, chi puo` aver fatto tutto questo
+lavoro.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3691/3736] [690/690] [200/200] [c]
+
+  
+... Il velo che protegge Orshingal si fa sempre piu` sottile ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [c]look
+La curva nel sentiero - Foresta #1904 [S]
+Il terreno qui e` stato liberato da quasi tutto il sottobosco. Ti guardi
+intorno cercando, con un po` di apprensione, chi puo` aver fatto tutto questo
+lavoro.
+Uscite: North, East, West.
+
+[-] [3736/3736] [690/690] [200/200] [c]e
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di l'aracnouccello giace al suolo.
+-----------------
+Uscite visibili:
+North - La stanza delle evocazioni (chiuso)
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - La curva nel sentiero
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [c]look
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di l'aracnouccello giace al suolo.
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il sentiero nella foresta - Foresta #1918 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il sentiero nella foresta - Foresta #1916 [S]
+Sei su un sentiero largo e comodo da percorrere, ma le molte curve ti
+confondono.
+Senti i rumori della foresta intorno ed un basso rombo in lontananza.
+Uscite: North [portone] (chiuso), East, South, West.
+[Diritto: Kyrus] Il cadavere di l'aracnouccello giace al suolo.
+-----------------
+Uscite visibili:
+North - La stanza delle evocazioni (chiuso)
+East - Il sentiero nella foresta
+South - Il sentiero nella foresta
+West - La curva nel sentiero
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La curva nel sentiero - Foresta #1904 [S]
+Il terreno qui e` stato liberato da quasi tutto il sottobosco. Ti guardi
+intorno cercando, con un po` di apprensione, chi puo` aver fatto tutto questo
+lavoro.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il sentiero nella foresta
+East - Il sentiero nella foresta
+West - Il sentiero nella foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il sentiero nella foresta - Foresta #1903 [S]
+Gli alberi sono altissimi e non permettono alla luce di passare. Piccoli 
+raggi di luce riescono, tuttavia, a rischiarare il piccolo sentiero che stai
+seguendo.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La curva nel sentiero
+West - Il limite della foresta
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il limite della foresta - Foresta #1902 [S]
+Gli alberi e le felci crescono molto fitte. Il sentiero, verso est, diventa
+impervio e piu` si inoltra nella foresta, piu` e` invaso dalle piante.
+Uscite: East, West.
+C'e` un cartello appeso ad un albero.
+Un gigantesco millepiedi razzola qui attorno. [Liv 2]
+-----------------
+Uscite visibili:
+East - Il sentiero nella foresta
+West - Nel bosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Nel bosco - Foresta #1901 [S]
+L'aria qui e` molto calda ed umida. Senti il suono di strani animali in
+lontananza... sembra arrivare da est.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Il limite della foresta
+West - Il bosco fitto
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci La foresta delle lucertole, entrando in Via Cassia.
+
+Il bosco fitto - Foresta #4210 [S]
+Forzando la via atraverso il fittissimo bosco, riesci a procedere lungo il
+sentiero che corre in direzione nord-sud. Ad est il bosco si fa meno fitto.
+Uscite: North, East, South, West.
+Un gigantesco millepiedi razzola qui attorno. [Liv 2]
+-----------------
+Uscite visibili:
+North - La biforcazione
+East - Nel bosco
+South - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Un sentiero nel sottobosco - Foresta #4270 [S]
+Un sentiero si inoltra tra gli alberi. Il profumo della resina ti solletica il
+naso, i raggi del sole che filtrano tra le fronde ti accarezzano le braccia.
+Ti rendi conto che in quest'angolo del bosco regna una pace quasi innaturale.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Un sentiero nel sottobosco - Foresta #4271 [S]
+Il sentiero continua, curvando tra i tronchi coperti di edera, guidando il tuo
+cammino verso una radura che si apre all'improvviso alla fine del percorso.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - L'entrata della Fortezza del Tuono
+East - Un sentiero nel sottobosco
+West - La tomba del Primo Cavaliere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La tomba del Primo Cavaliere - Foresta #4272 [S]
+Nella pace di questa radura, riposa solitaria una tomba. Dal marmo emerge una
+figura distesa mirabilmente scolpita, immortalata nel sonno eterno. Le mani
+giunte sul petto stringono l'elsa di uno spadone d'argento saldato nel marmo;
+d'argento e' anche l'elmo, che mette in risalto la nobilta' dei lineamenti di
+quel volto. Sul piedistallo, noti una placca d'argento.
+Uscite: East.
+-----------------
+Uscite visibili:
+East - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Un sentiero nel sottobosco - Foresta #4271 [S]
+Il sentiero continua, curvando tra i tronchi coperti di edera, guidando il tuo
+cammino verso una radura che si apre all'improvviso alla fine del percorso.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - L'entrata della Fortezza del Tuono
+East - Un sentiero nel sottobosco
+West - La tomba del Primo Cavaliere
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Un sentiero nel sottobosco - Foresta #4270 [S]
+Un sentiero si inoltra tra gli alberi. Il profumo della resina ti solletica il
+naso, i raggi del sole che filtrano tra le fronde ti accarezzano le braccia.
+Ti rendi conto che in quest'angolo del bosco regna una pace quasi innaturale.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+Il bosco fitto - Foresta #4210 [S]
+Forzando la via atraverso il fittissimo bosco, riesci a procedere lungo il
+sentiero che corre in direzione nord-sud. Ad est il bosco si fa meno fitto.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La biforcazione
+East - Nel bosco
+South - Il bosco fitto
+West - Un sentiero nel sottobosco
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+La biforcazione - Pianura #4208 [S]
+Il sentiero piega bruscamente verso Est scomparendo dietro alcune curve. Verso
+sud si intravede una debole traccia in mezzo alla parte piu' scura e fitta del
+bosco.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Il sentiero
+East - I dossi
+South - Il bosco fitto
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il sentiero - Pianura #4207 [S]
+Un largo sentiero si fa strada nel fitto del bosco. Dove portera'? Non
+sembrano esserci centri abitati in questa direzione.
+Uscite: North, East, South, West.
+Enrico, il giovane fabbro esperto in riparazioni e' qui. [Liv 20]
+-----------------
+Uscite visibili:
+North - Il bosco di Alma
+South - La biforcazione
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+Il bosco di Alma - Foresta #4206 [S]
+In questo punto della pineta inizia il bosco vero e proprio, molto fitto e
+quasi impenetrabile. Verso sud continua comunque un largo sentiero.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+South - Il sentiero
+West - Il bosco di Alma
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Il bosco di Alma - Foresta #4205 [S]
+Una stupenda pineta circonda la zona piu' fitta del bosco di Alma. Il luogo
+sembrerebbe essere sicuro.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+East - Il bosco di Alma
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via Cassia - Pianura #4204 [S]
+Dopo parecchie pietre miliari, vedi un sentiero che si inoltra nei boschi ad
+est di Alma mentre un viottolo si dirama verso ovest dove puoi scorgere alcune
+colonne e una strana costruzione. La Cassia continua in direzione Nord-Sud
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+East - Il bosco di Alma
+South - La via Cassia
+West - Il colonnato della gilda dei Filosofi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Via Cassia, entrando in Le Gilde di Lumen et Umbra.
+
+Il colonnato della gilda dei Filosofi - Al chiuso #20075 [S]
+Percorri un lungo viale contornato da alte colonne in porfido e marmo
+bianco che sembrano condurre verso un luogo non ben definito.
+Intanto la materia e le forme attorno a te cominciano a rarefarsi e si
+dissolvono in un vortice etereo e nebuloso che confonde il tuo animo e
+turba le tue certezze. Il tutto ha l' aria vagamente minacciosa....
+forse sei ancora in tempo per tornare indietro.
+Uscite: East, West.
+Su una delle colonne noti una targa di marmo.
+Il Libro della gilda dei Filosofi e' qui.
+Un vecchio canuto e dalla barba lanuginosa ti osserva appoggiato ad
+una colonna. [Liv 50]
+-----------------
+Uscite visibili:
+East - La via Cassia
+West - L'Apeiron
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Via Cassia.
+
+La via Cassia - Pianura #4204 [S]
+Dopo parecchie pietre miliari, vedi un sentiero che si inoltra nei boschi ad
+est di Alma mentre un viottolo si dirama verso ovest dove puoi scorgere alcune
+colonne e una strana costruzione. La Cassia continua in direzione Nord-Sud
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+East - Il bosco di Alma
+South - La via Cassia
+West - Il colonnato della gilda dei Filosofi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+La via Cassia - Pianura #4212 [S]
+La via Cassia procede in direzione nord-sud. Vari punti di ristoro e
+bancarelle ambulanti si incontrano lungo la strada. Vedi una costruzione in
+lontananza a nordovest e un'altra non lontano a nord, accanto alla base delle
+montagne.
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Inizio delle montagne
+South - La via Cassia
+West - Una strada secondaria
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Via Cassia, entrando in La magione ducale.
+
+Una strada secondaria - Pianura #6116 [S]
+Cammini lungo una strada di medie dimensioni che si diparte dalla grande 
+via Cassia. Intorno a te scorgi vasti campi coltivati a frumento e segale, 
+interrotti qua e la' da alcuni boschetti di frassini.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via Cassia
+West - Una strada secondaria
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+
+Lasci La magione ducale, entrando in Via Cassia.
+
+La via Cassia - Pianura #4212 [S]
+La via Cassia procede in direzione nord-sud. Vari punti di ristoro e
+bancarelle ambulanti si incontrano lungo la strada. Vedi una costruzione in
+lontananza a nordovest e un'altra non lontano a nord, accanto alla base delle
+montagne.
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Inizio delle montagne
+South - La via Cassia
+West - Una strada secondaria
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via Cassia - Pianura #4204 [S]
+Dopo parecchie pietre miliari, vedi un sentiero che si inoltra nei boschi ad
+est di Alma mentre un viottolo si dirama verso ovest dove puoi scorgere alcune
+colonne e una strana costruzione. La Cassia continua in direzione Nord-Sud
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+East - Il bosco di Alma
+South - La via Cassia
+West - Il colonnato della gilda dei Filosofi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]s
+La via Cassia - Pianura #4203 [S]
+Un ampia curva, delimitata dalla prima pietra miliare, piega la Cassia verso
+nord. A ovest le mura di Alma sono vicine e ben visibili. A est la via
+costeggia un fittissimo bosco.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La via Cassia
+South - Il ponte sul fossato
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via Cassia - Pianura #4202 [S]
+La strada si snoda da est ad ovest. le mattonelle sono anche qui scalzate o
+assenti, la pavimentazione oltremodo rovinata rende il camminare disagevole. A
+sud vedi una piccola casa bianca.
+Uscite: East, South [barriera] (chiuso), West.
+-----------------
+Uscite visibili:
+East - La via Cassia
+South - La sala lucente (chiuso)
+West - La via Cassia
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via Cassia - Pianura #4201 [S]
+Stai camminando lungo cio' che un tempo era noto come Via Cassia, un tempo
+pavimentata fino ai monti del Corno. Ora ha decisamente bisogno di
+manutenzione... i grossi pietroni che la formavano ormai sono stati scalzati,
+alcuni sono buttati al lato della strada... dopo le grandi guerre furono
+depredati per ricostruire le case. Comunque e' di qui che si deve passare se
+si vuole giungere alla lontana piana di Talonia. Verso sud noti una grossa
+radura dove tra tende e costruzioni in legno sembrano esseri radunati dei
+Cavalca-Grifoni elfici.
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - La via Cassia
+South - L'accampamento degli Aviani Elfici
+West - Al di fuori delle Porte Orientali di Alma
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+
+Lasci Via Cassia, entrando in Alma.
+
+Al di fuori delle Porte Orientali di Alma - Pianura #3090 [S]
+Sei al di fuori delle mura di Alma Civitas. Una vasta campagna si apre davanti
+ai tuoi occhi. Verso est inizia la Via Cassia.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: East, West [porta].
+-----------------
+Uscite visibili:
+East - La via Cassia
+West - Porta Victoria
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Porta Victoria - Citta' #3060 [S]
+Stai passando sotto il possenti torri che delimitano la porta orientale di
+Alma. Costruita dall'Imperatore dopo la vittoria sui Galli e' il simbolo dei
+trionfi nei campi di battaglie su quel popolo barbaro. Molte guardie imperiali
+custodiscono l'ingresso. Ad ovest entri nella citta' di Alma e ad est inizia
+la Via Cassia.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East [porta], South, West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Le Mura di Alma
+East - Al di fuori delle Porte Orientali di Alma
+South - Le Mura di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Citta' #3035 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. A nord c'e' un gran negozio
+fornitissimo di armi mentre a sud un guerriero potra' trovare sicuramente
+l'armatura adatta alle sue necessita'. Verso ovest la via arriva alla Piazza
+del Mercato, ad est vedi le Porte Orientali di Alma.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - Taberna Armorum
+East - Porta Victoria
+South - Taberna Vestis
+West - La Piazza del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La Piazza del Mercato - Citta' #3034 [S]
+Sei al centro della Piazza del Mercato. Innumerevoli bancarelle sono disposte
+tutte intorno alla piazza ed i mercanti si sgolano pur di riuscire ad attirare
+l'attenzione dei passanti. Qui si vende frutta, verdura e altri generi di
+prima necessita' che non si addicono ad un avventuriero come te. Quindi fissi
+bene lo zaino sulle spalle e ti rimetti in cammino. A nord inizia la via
+pannonika.
+La piazza e' illuminata da diversi bracieri accesi.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+North - La via Pannonica
+East - La via del Mercato
+South - La Banca di Alma
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Negozio #3033 [S]
+La via e' frequentatissima. Imbonitori magnificano a gran voce la propria
+merce cercando di richiamare l'attenzione. La via si getta ad est su una
+piazza. Una targa in legno con iscrizioni in argento e' in bella mostra nel
+negozio a sud, mentre a nord sembra esserci un fabbro.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - La bottega del Fabbro
+East - La Piazza del Mercato
+South - La bottega del Mago
+West - La via del Mercato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+La via del Mercato - Citta' #3095 [S]
+Una stretta via animatissima. Qui comincia il grande quartiere del mercato
+dove si puo' trovare di tutto, basta che sia in quel momento disponibile e si
+abbiano i soldi. C'e' una grande folla che si aggira per questa via alla
+ricerca dei piu' svariati oggetti da comprare. Da nord senti provenire un gran
+profumo di pane appena sfornato, mentre a sud c'e' un Bazar che espone tutta
+la sua merce per invogliare i passanti a fermarsi.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - Taberna Pistoris
+East - La via del Mercato
+South - Taberna Mercatoris
+West - Platea Quadrata
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]w
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv 58][Elite] (o) (o)
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Seneca △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sta riflettendo sulla situazione.
+△ Seneca △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca picchietta il piede per terra con impazienza.
+[Seneca] dice 'Il Sindaco di Alma ha vietato i combattimenti nella sua citta`!'
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+La luna tramonta lentamente.
+  
+... Il velo che protegge Orshingal si fa sempre piu` sottile ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sbadiglia.
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+▽ Seneca ▽
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ▷
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Guardia Imperiale ◁
+  
+... Il velo che protegge Orshingal si fa sempre piu` sottile ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+  
+... Infine, uno squarcio si apre, inondando Orshingal d'orrore ...
+  
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca rimbalza di qua e di la'.
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Seneca △
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Il sole comincia a sorgere dall'orizzonte.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+Il giorno e` iniziato e la luce del sole comincia a splendere.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+◁ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+◁ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+△ Seneca △
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sta riflettendo sulla situazione.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca picchietta il piede per terra con impazienza.
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti una persona anziana borbottare qualcosa qui vicino.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un lieve vento magico avvolge Alma, per un istante soltanto.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+▷ Guardia Imperiale ◁
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Frate Nero ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Leonessa ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+Il sole e` esattamente sopra di te.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Leonessa ▽
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Cucciolo Leone ◁
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Cucciolo Leone ▽
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Frate Nero ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Cucciolo Leone ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Cucciolo Leone ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Cucciolo Leone ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Cucciolo Leone ▽
+◁ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+
+Il frate ti guarda con l'aria sommessa.
+
+[Il frate nero] ti dice 'Ricordati che devi morire!'
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+
+Il frate ti guarda con l'aria sommessa.
+
+[Il frate nero] ti dice 'Ricordati che devi morire!'
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+
+Il frate ti guarda con l'aria sommessa.
+
+[Il frate nero] ti dice 'Ricordati che devi morire!'
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Frate Nero △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti alcune parole di strane preghiere.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+△ Legionario △
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Cucciolo Leone ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Cucciolo Leone ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[Seneca] dice 'Se avessi saputo... se solo avessi saputo...'
+[Seneca] dice '...non avrei mai osato...'
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Seneca △
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+
+[Seneca] dice 'Se avessi saputo... se solo avessi saputo...'
+[Seneca] dice '...non avrei mai osato...'
+
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sta riflettendo sulla situazione.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+▷ Guardia Imperiale ◁
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+[Seneca] dice 'Tenete quegli animali fuori della citta`!'
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti alcune parole di strane preghiere.
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sbadiglia.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+▷ Guardia Cittadina ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Seneca sbadiglia.
+▷ Seneca ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Cittadina ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Seneca ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti alcune parole di strane preghiere.
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Senti alcune parole di strane preghiere.
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ◁
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Cittadina △
+◁ Legionario ◁
+▷ Guardia Imperiale ◁
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Il sole cala lentamente scomparendo dietro l'orizzonte orientale.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Cittadina △
+◁ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Legionario ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Legionario △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Cittadina △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Guardia Imperiale △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+La notte e` iniziata stendendo il suo velo oscuro.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Cittadina ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Guardia Imperiale ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+
+Il frate ti guarda con l'aria sommessa.
+
+[Il frate nero] ti dice 'Ricordati che devi morire!'
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+△ Spazzino △
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Frate Nero ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Spazzino ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Seneca ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▽ Seneca ▽
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Guardia Imperiale ▷
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]eff
+Effetti Attivi: 
+Nessuno! 
+
+
+[-] [3736/3736] [690/690] [200/200] [-]events
+
+Eventi Quest Rilevanti:
+--------------------------------------------------
+
+[ 1 ] [Invasione] [13:27:28] Uno squarcio tra le realta` si e` aperto presso [Le fogne di Palanthas]
+[ 2 ] [Invasione] [14:01:17] Uno squarcio tra le realta` si e` aperto presso [Roo, la terra a testa in giu']
+[ 3 ] [Invasione] [14:35:07] Uno squarcio tra le realta` si e` aperto presso [Lycantropia ]
+[ 4 ] [Invasione] [15:08:57] Uno squarcio tra le realta` si e` aperto presso [Orshingal]
+
+--------------------------------------------------
+
+[-] [3736/3736] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+◁ Legionario ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+▷ Legionario ◁
+▷ Spazzino ◁
+
+[-] [3736/3736] [690/690] [200/200] [-]n
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]golame
+[  UI  ] golame » uigo 20033[  UI  ] Prosegui lungo il percorso andando verso west
+apri porta w
+
+E` gia` aperta.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+[  UI  ] Prosegui lungo il percorso andando verso west
+La Piazza della Gloria - Citta' #3003 [S]
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Una guardia cittadina controlla la zona. [Liv 50]
+-----------------
+Uscite visibili:
+North - La via della Gloria
+East - La via Pannonica
+South - Il Foro Imperiale
+West - Viale degli Eroi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+apri porta n
+
+Lasci Alma, entrando in Alma Nord.
+
+Viale degli Eroi - Citta' #3353 [S]
+Stai camminando su di un viale costeggiato da due file di pini.
+La strada passa tra edifici maestosi, in particolare noti il palazzo
+dedicato ai clan verso nord. Questa via e' stata dedicata
+dall'Impero agli Eroi che hanno solcato e che solcheranno
+queste terre.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North [porta] (chiuso), East, South [porta] (chiuso), West.
+-----------------
+Uscite visibili:
+North - Il palazzo delle Gilde competitive (chiuso)
+East - La Piazza della Gloria
+South - Il palazzo delle Gilde contemplative (chiuso)
+West - Viale degli Eroi
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Apri la porta, liberando il percorso verso nord.
+[  UI  ] Aggiornata uscita n_action = apri
+
+
+[-] [3736/3736] [690/690] [200/200] [-]
+Il palazzo delle Gilde competitive - Al chiuso #3361 [S]
+Questa sala e' dedicata a tutte le gilde competitive del mondo, alcune piu'
+famose, altre meno conosciute, alcune potenti in battaglia, altre dedite
+all'esplorazione e alla conoscenza. Molti oggetti dedicati alle gilde sono qui
+donati probabilmente dagli adepti: ce ne sono di molti tipi: statue, quadri, o
+semplici oggetti conquistati in guerra o importanti per qualche motivo. A
+intervalli regolari, lungo l'intero perimetro della sala, si aprono rutilanti
+e colorati portali mistici in grado di portarti direttamente agli ingressi
+delle varie gilde.
+Uscite: South [porta], Arkangeli, Jedi, Lama&Pietra, Luce, Mercenari, Spettri, Tuono, Vampiri, Vendicatori.
+-----------------
+Uscite visibili:
+South - Viale degli Eroi
+Arkangeli - Il cancello dell'Eden
+Jedi - La Gradinata dell'Equilibrio
+Lama&Pietra - L'ingresso alla Gilda di Lama e Pietra
+Luce - Il ponte sul fossato
+Mercenari - La Congregazione dei Mercenari
+Spettri - L'ingresso della Torre degli Spettri
+Tuono - L'entrata della Fortezza del Tuono
+Vampiri - La via per il castello nero
+Vendicatori - L'ingresso alla tana dei Vendicatori
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] ent lama
+[  UI  ] Prosegui lungo il percorso andando verso north
+
+Lasci Alma Nord, entrando in Le Gilde di Lumen et Umbra.
+
+L'ingresso alla Gilda di Lama e Pietra - Al chiuso #20025 [S]
+Di fronte a te si trova un edificio interamente costruito con grosse pietre
+grigie venate di rosso. Nella parete c'e' una grande entrata, non sbarrata da
+porte o cancelli. Sul lato destro dell'entrata e' scolpito nella roccia il
+regolamento della gilda, mentre sul lato sinistro una lista di nomi e' incisa
+sulla lama di un'enorme spada.
+Uscite: North, South.
+La Spada della gilda di Lama e Pietra e' qui.
+Biff, l'uccisore di Draghi e` qui, in piedi. [Liv 40]
+La bella Alistar e' qui davanti all'ingresso della gilda [Liv 50]
+-----------------
+Uscite visibili:
+North - Il Salone della Gilda di Lama e Pietra
+South - Il bosco bruciato
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+Il Salone della Gilda di Lama e Pietra - Al chiuso #20026 [S]
+Sei in un salone a pianta pentagonale. In ogni angolo si trova uno scranno di
+legno. Sulla parte superiore di ogni parete c'e' posto per un affresco, ma
+solo uno e' realizzato. Sul soffitto la cupola e' dipinta.
+Uscite: East, South, West [porta] (chiuso).
+C'e' una grande bacheca piena di avvisi appesa al muro.
+Il Codice della gilda di Lama e Pietra e' qui. [2]
+Sirea, il saggio, e' pronto a condividere con te le sue conoscenze... [Liv 50]
+-----------------
+Uscite visibili:
+East - Il disco della vita
+South - L'ingresso alla Gilda di Lama e Pietra
+West - Il ripostiglio (chiuso)
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso down
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta] (chiuso), East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda (chiuso)
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]
+[  UI  ] Sei arrivato alla fine del percorso
+La Forgia di Lama e Pietra - Al chiuso #20033 [S]
+Sei in un gigantesco antro, quasi istintivamente volgi lo sguardo verso l'alto
+per cercare di dare una dimensione a questo luogo, ma senza troppo successo...
+non si riesce a vedere il soffitto. Il pavimento e' fatto di marmo striato di
+vari colori. Il calore e' intensissimo, contro la parete c'e' una grossa
+forgia in cui scintilla un fuoco magico dai bagliori bluastri. Del fumo blu
+sale verso l'alto, non riesci a capire dove. Un'enorme incudine istoriata di
+rune fatte in metallo magico luminescente e' al centro della stanza, mentre un
+armadio con strumenti metallurgici galleggia libero a tre metri d'altezza.
+Uscite: South, Up.
+George il Sapiente e' qui, sapendo... [Liv 50] (o) (o) (o)
+Una figura gigantesca ti osserva immobile tenendo le braccia incrociate. (o) (o) (o)
+-----------------
+Uscite visibili:
+South - Il Forziere di Lama e Pietra
+Up - Il disco della vita
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]ripara
+Weland, il fabbro ripara con notevole maestria il tuo equipaggiamento.
+[Weland, il fabbro] dice 'Splendido! Ho risparmiato molti materiali. Il tuo equipaggiamento e` come nuovo!'
+Dai 11227 monete d'oro a Weland, il fabbro.
+
+[-] [3736/3736] [690/690] [200/200] [-]l
+La Forgia di Lama e Pietra - Al chiuso #20033 [S]
+Sei in un gigantesco antro, quasi istintivamente volgi lo sguardo verso l'alto
+per cercare di dare una dimensione a questo luogo, ma senza troppo successo...
+non si riesce a vedere il soffitto. Il pavimento e' fatto di marmo striato di
+vari colori. Il calore e' intensissimo, contro la parete c'e' una grossa
+forgia in cui scintilla un fuoco magico dai bagliori bluastri. Del fumo blu
+sale verso l'alto, non riesci a capire dove. Un'enorme incudine istoriata di
+rune fatte in metallo magico luminescente e' al centro della stanza, mentre un
+armadio con strumenti metallurgici galleggia libero a tre metri d'altezza.
+Uscite: South, Up.
+George il Sapiente e' qui, sapendo... [Liv 50] (o) (o) (o)
+Una figura gigantesca ti osserva immobile tenendo le braccia incrociate. (o) (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]score
+Hai 135 anni e 12 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 3736/3736 punti ferita, 690/690 mana e 200/200 energia.
+Hai 201489800 punti esperienza, di cui 1489800 volatili.
+Hai 730788 Monete d'Oro, 2987 Astralite, e 59921 Residuum.
+Hai 104533 Diamanti, 28499 Smeraldi, 75907 Rubini, e 75472 Zaffiri.
+Indossi un totale di 33 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:       1489800/100000000 (2%)       
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 48 giorni e 4 ore.
+Sei in piedi.
+
+[-] [3736/3736] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La Forgia di Lama e Pietra - Al chiuso #20033 [S]
+Sei in un gigantesco antro, quasi istintivamente volgi lo sguardo verso l'alto
+per cercare di dare una dimensione a questo luogo, ma senza troppo successo...
+non si riesce a vedere il soffitto. Il pavimento e' fatto di marmo striato di
+vari colori. Il calore e' intensissimo, contro la parete c'e' una grossa
+forgia in cui scintilla un fuoco magico dai bagliori bluastri. Del fumo blu
+sale verso l'alto, non riesci a capire dove. Un'enorme incudine istoriata di
+rune fatte in metallo magico luminescente e' al centro della stanza, mentre un
+armadio con strumenti metallurgici galleggia libero a tre metri d'altezza.
+Uscite: South, Up.
+George il Sapiente e' qui, sapendo... [Liv 50] (o) (o) (o)
+Una figura gigantesca ti osserva immobile tenendo le braccia incrociate. (o) (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]u
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta] (chiuso), East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda (chiuso)
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]e
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+-----------------
+Uscite visibili:
+West - Il disco della vita
+Il punto di NON RITORNO - Il punto di NON RITORNO
+-----------------
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]look
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+
+[-] [3736/3736] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 276 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3736/3736] [690/690] [200/200] [-]att
+Hai 135 anni e 12 mesi. Sei alto 81 centimetri e pesi 79 chili. 
+Ti senti corazzato come un Dragone [97].
+Assorbi 32.05% del danno fisico e 24.38% del danno magico.
+Utilizzi le tue abilita` con inarrivabile precisione [150].
+Hai ottimo [67] bonus al danno fisico e inarrivabile [144] potere magico.
+La tua possibilita` di colpo critico e` 27.46%, per un moltiplicatore di 164.69%.
+Il moltiplicatore dei colpi critici che subisci e` ridotto di 0.00%.
+La tua vitalita` e` buona [43].
+La tua capacita` di penetrare le resistenze e` eccezionale [78].
+Porti 3 attacchi ogni round:
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+  Arma primaria (MoonShatter, lo Scettro): 10d10 +64 [Media: 119]
+
+
+[-] [3736/3736] [690/690] [200/200] [-]

@@ -1,0 +1,4269 @@
+Log di sessione a partire 09:54:18 su martedì, 4 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-02-27#22-54-28map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.09s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.11s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-02-27#22-54-28map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.06s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+La locanda - Al chiuso [S]
+Il pavimento di questa grande Sala e' composto da diverse lastre levigate di
+pietra con venature gialle e argento che ti ricordano i gioielli di una dama.
+Le pareti sono invece ricoperte da antichi pannelli lisci in legno di rovere
+sulle quali piccoli quadri descrivono ambienti naturali ed alcune scene di
+battaglie. Sulla parete orientale dei semplici drappi colorati adornano una
+serie di ampi finestroni da cui si vede un verde bosco e, pi�lontananza,
+gli sbuffi di fumo dei camini e dei fumaioli dei palazzi di Alma Civitas. Il
+lato occidentale della sala ospita invece al suo centro un enorme camino
+acceso che irradia un piacevole calore ed una serie di comodi divanetti di
+raso e velluto. Diversi avventori sono presenti nella stanza anche se non puoi
+non notare una massiccia figura solitaria seduta nei pressi del camino che ti
+osserva sorseggiando una strana bevanda scura mentre vicino a lui una donna fa
+ruotare agilmente su un tavolino una piccola costruzione fatta con le carte da
+gioco. In fondo alla stanza un largo bancone decorato e' posto al centro tra
+due archi di palissandro bianco decorato: dal delizioso odore indubbiamente da
+uno si accede alla cucina, alla cantina ed alla dispensa, mentre dall'altro si
+vede un corridoio con due file ordinate di porte. Una bella ragazza dai
+capelli rossi con il viso pieno di lentiggini canticchiando gira per la stanza
+servendo boccali di birra, bicchieri di vino e succulente pietanze ai diversi
+ospiti presenti.
+Uscite: Down.
+Simonetta, la locandiera, e' qui per servirti. [Liv 50]
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+[-] [3641/3641] [690/690] [185/200] [-]
+[  UI  ]  - Impostazioni per kyrus caricate correttamente.
+[  UI  ]  - Usa il comando [uihelp] per iniziare...
+
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]l
+La locanda - Al chiuso #20032 [S]
+Il pavimento di questa grande Sala e' composto da diverse lastre levigate di
+pietra con venature gialle e argento che ti ricordano i gioielli di una dama.
+Le pareti sono invece ricoperte da antichi pannelli lisci in legno di rovere
+sulle quali piccoli quadri descrivono ambienti naturali ed alcune scene di
+battaglie. Sulla parete orientale dei semplici drappi colorati adornano una
+serie di ampi finestroni da cui si vede un verde bosco e, pi�lontananza,
+gli sbuffi di fumo dei camini e dei fumaioli dei palazzi di Alma Civitas. Il
+lato occidentale della sala ospita invece al suo centro un enorme camino
+acceso che irradia un piacevole calore ed una serie di comodi divanetti di
+raso e velluto. Diversi avventori sono presenti nella stanza anche se non puoi
+non notare una massiccia figura solitaria seduta nei pressi del camino che ti
+osserva sorseggiando una strana bevanda scura mentre vicino a lui una donna fa
+ruotare agilmente su un tavolino una piccola costruzione fatta con le carte da
+gioco. In fondo alla stanza un largo bancone decorato e' posto al centro tra
+due archi di palissandro bianco decorato: dal delizioso odore indubbiamente da
+uno si accede alla cucina, alla cantina ed alla dispensa, mentre dall'altro si
+vede un corridoio con due file ordinate di porte. Una bella ragazza dai
+capelli rossi con il viso pieno di lentiggini canticchiando gira per la stanza
+servendo boccali di birra, bicchieri di vino e succulente pietanze ai diversi
+ospiti presenti.
+Uscite: Down.
+Simonetta, la locandiera, e' qui per servirti. [Liv 50]
+
+[-] [3641/3641] [690/690] [200/200] [-]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[-] [3641/3641] [690/690] [200/200] [-]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 4] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 5] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75|100%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[ 9] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[10] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[11] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[12] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[13] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[14] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[16] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[17] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[18] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[19] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[20] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]eff
+Effetti Attivi: 
+Nessuno! 
+
+
+[-] [3641/3641] [690/690] [200/200] [-]d
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta] (chiuso), East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda (chiuso)
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+-----------------
+Uscite visibili:
+West - Il disco della vita
+Il punto di NON RITORNO - Il punto di NON RITORNO
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]accademia
+dw velestra
+Pardon?
+
+[-] [3641/3641] [690/690] [200/200] [-]dw iris
+Pardon?
+
+[-] [3641/3641] [690/690] [200/200] [-]uigo sul terzo gradino
+[  UI  ] ent nonritorno
+[  UI  ] Prosegui lungo il percorso andando verso east
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Sanctum .
+
+Il punto di NON RITORNO - Acque Profonde #6658 [S]
+Sei all'estremita' est del grande oceano, ti sembra che l'acqua venga tutta
+attratta verso est dove cade in una specie di grande cascata...se non vuoi
+cascare anche tu vedi di evitare di andare verso est!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - In mare aperto
+East - L'estremo est del mondo
+South - In mare aperto
+West - Isola dei Giganti
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+L'estremo est del mondo - Acque Profonde #6659 [S]
+La corrente e il vento ti trascinano verso il limite est dell'enorme tavola
+che e' il mondo! Non c'e' modo di tornare indietro... stai per
+cadereeeeeeeeeeeeeeeeeeeeee.....
+Uscite: East.
+-----------------
+Uscite visibili:
+East - La terra degli esploratori delusi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+La terra degli esploratori delusi - Sconosciuto #6660 [S]
+Dopo essere caduto oltre il limite est del mondo, sei finito in cio' che
+sembra una sorta di immondezzaio. Vari resti di navi riposano qui in rovina,
+mentre alcuni marinai ed esploratori, che con te si trovano qui, non fanno
+altro che maledire un tale Cristoforo Colombo.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - I corridoi dell'infinito
+South - Sala giochi di Karkas
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+I corridoi dell'infinito - Sconosciuto #6696 [S]
+Sei ovunque, e in nessun luogo. Togliti di qui prima di diventare pazzo.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Sul bordo del Vuoto Astrale
+East - Fiume delle Anime Perdute
+South - Il Foro Imperiale
+West - Un'abitazione privata
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+
+Lasci Sanctum , entrando in Alma.
+
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Dei grandi bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Platea Popolorum - Citta' #3051 [S]
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Alcuni bracieri sono stati accesi per illuminare la piazza.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Platea Quadrata
+East - Un vicolo oscuro
+South - Via Meridionalis
+West - La via dei Gladiatori
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Via Meridionalis - Citta' #3052 [S]
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Alcune fiaccole sono state accese per illuminare la strada.
+Uscite: North, South.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - Platea Popolorum
+South - Via Meridionalis
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Via Meridionalis - Citta' #3053 [S]
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Verso un lato della strada, in basso
+noti una discarica. Senti il rumore dello scorrere dell'acqua verso est, ti
+giri e vedi una stradina che porta verso il fiume Lys.
+Alcune fiaccole sono state accese per illuminare la strada.
+Uscite: North, East, South, Down.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - Via Meridionalis
+East - Scendendo verso il fiume Lys
+South - Il Ponte Bianco
+Down - La discarica
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Il Ponte Bianco - Citta' #3054 [S]
+Sei su di uno splendido ponte di marmo bianco che passa sopra il fiume che
+bagna Alma Civitas. Riccamente decorato da fregi e sculture di vario tipo e'
+diventato nel tempo uno dei monumenti di cui la citta' va piu' orgogliosa.
+Dei bracieri sono stati accesi per illuminare il ponte.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Via Meridionalis
+South - Porta Meridionale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] apri porta s
+[  UI  ] Prosegui lungo il percorso andando verso south
+Porta Meridionale - Citta' #3071 [S]
+Stai passando sotto i bastioni che delimitano la porta meridionale della
+citta'. Sventola la bandiera di Alma sul posto di guardia. Di qui si controlla
+l'entrata sud della citta'. L'edificio e' cupo e fortificato.
+Alcuni bracieri illuminano l'entrata della citta'.
+Uscite: North, East, South [porta], West.
+Una guardia e` qui a proteggere le porte della citta'. [Liv 52] [4]
+-----------------
+Uscite visibili:
+North - Il Ponte Bianco
+East - Le Mura di Alma
+South - Al di fuori delle Porte Meridionali di Alma
+West - Le Mura di Alma
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Al di fuori delle Porte Meridionali di Alma - Pianura #3096 [S]
+Sei fuori delle mura di Alma Civitas. A sud inizia la Via Appia che porta
+nelle zone meridionali dell'Impero.
+Dei bracieri sono stati accesi per illuminare la zona.
+Uscite: North [porta], South.
+-----------------
+Uscite visibili:
+North - Porta Meridionale
+South - La via Appia
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+
+Lasci Alma, entrando in La via Appia.
+
+La via Appia - Pianura #4501 [S]
+Qui inizia la famosa via Appia. E' la piu' grande e meglio pavimentata delle
+strade imperiali per permettere il transito degli eserciti e dei convogli che
+legano Alma con la citta' di Capua, la seconda roccaforta imperiale.
+Nonostante il fitto traffico e pattugliamento, la via Appia e' un posto
+notoriamente pericoloso di notte per le creature che abitano i boschi che essa
+attraversa. Verso ovest, si apre una stradina che serpeggia tra i campi.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Al di fuori delle Porte Meridionali di Alma
+East - La via appia
+West - Una stradina lastricata
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+
+Lasci La via Appia, entrando in L'Accademia Astrale.
+
+Una stradina lastricata - Al chiuso #24505 [S]
+La strada che stai percorrendo e` chiaramente di nuova ed eccellente fattura,
+eppure non ti sembra di aver notato lavori di costruzione recentemente.
+La pavimentazione e` composta di pietre simmetriche e levigate, disposte
+con cura nel formare geometrie dall'estetica complessa e ricercata, quasi
+ad accompagnare il percorso serpeggiante tra le alture disseminate
+nell'agro spazioso che circonda Alma Civitas. Due lunghe file di mattoncini
+bianchi delimitano la carreggiata, guidando il tuo sguardo fino ad un cancello,
+lontano, ma gia` ben distinguibile.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La via Appia
+West - Un cancello su un cortile disadorno
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] open cancello w
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un cancello su un cortile disadorno - Al chiuso #24506 [S]
+Dopo qualche minuto di passeggio, giungi infine di fronte ad un grosso cancello
+in ferro battuto di pregevole fattura, con decorazioni che richiamano gli stessi
+motivi che hai osservato sul lastricato del viottolo percorso fin qui.
+Sembra essere l'unico modo per accedere... ad un cortile completamente vuoto,
+circondato da un alto muro di cinta, anch'esso di nuovissima fattura, evidente
+per il bianco intenso della pittura. Non sembra esserci un meccanismo di
+chiusura, il cancello si puo` aprire semplicemente spingendo con delicatezza.
+Uscite: East, West [cancello] (chiuso).
+-----------------
+Uscite visibili:
+East - Una stradina lastricata
+West - All'interno del cortile (chiuso)
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Sfiori appena il cancello, che risponde immediatamente al tuo gesto.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+All'interno del cortile - Al chiuso #24507 [S]
+Oltrepassi il cancello, entrando nel cortile disadorno, cercando con lo sguardo
+qualcosa che valga la pena di osservare. La pavimentazione, a differenza 
+della stradina, e` qui liscia e regolare, composta da grosse piastre quadrate 
+di pietra levigata, molto piu` adeguata ad un interno che ad un cortile.
+Avanzando, ti rendi conto che questo luogo offre qualcosa in piu` di quel che
+mostra ad un primo sguardo: lievi scariche elettriche attraversano costantemente
+l'aria, densa di un'energia magica che non ricordi di aver percepito altrove.
+Tre gradini in marmo giacciono isolati sul lato sinistro.
+Uscite: North, East.
+-----------------
+Uscite visibili:
+North - Sul terzo gradino
+East - Un cancello su un cortile disadorno
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Sei arrivato alla fine del percorso
+Sul terzo gradino - Al chiuso #24508 [S]
+Non appena poggi i piedi sul terzo gradino, la realta` che ti circonda inizia
+a mutare e distorcersi. Un edificio sembra continuamente materializzarsi 
+di fronte a te, senza mai riuscirci completamente, scomponendosi in molteplici
+copie di se stesso, ognuna leggermente diversa dall'altra, vuoi per forma,
+vuoi per colore, vuoi per i pochi dettagli che riesci appena a distinguere.
+Ogni copia presenta pero` una struttura simile: una ampia base piramidale
+dal cui centro si innalza un'alta torre, circondata da una rampa di scale
+al suo esterno. Davanti ai tuoi occhi si alternano infinite immagini di una
+porta. Potresti provare a varcare la soglia.
+Uscite: South, Soglia.
+-----------------
+Uscite visibili:
+South - All'interno del cortile
+Soglia - Oltre la soglia
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]enter soglia
+Oltre la soglia - Al chiuso #24509 [S]
+Oltrepassi quella che dovrebbe essere la soglia, timoroso che il tuo piede
+affondi nel vuoto, oltre il terzo gradino. Per fortuna, invece, impatta solido.
+Ti trovi in una stanza cubica, bianca da farti stringere gli occhi.
+Un lieve ronzio permea l'aria, non c'e` traccia della porta dietro di te.
+
+[Una voce] annuncia 'Decontaminazione in corso. Si prega di attendere.'
+
+Uscite visibili:
+Nessuna!
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Con uno scatto metallico, due prese d'aria si aprono sui lati opposti
+della stanza, ed un fruscio sostenuto accompagna l'emissione di un fumo
+biancastro, inodore. Un fascio di luce verde attraversa tutta la stanza,
+scorrendo sul tuo corpo da capo a piedi. Puoi percepirne distintamente
+il calore quando ti sfiora la pelle.
+
+Dopo una manciata di lunghissimi secondi, la procedura sembra terminare.
+
+[Una voce] annuncia 'Decontaminazione Completa.'
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Le pareti della stanza si fanno traslucide prima, andando poi a scomparire
+completamente, lasciando spazio ad un ambiente ampio e inaspettatamente
+affollato, di cui inizi a cogliere i dettagli mano a mano che i tuoi occhi si
+riprendono dal bianco abbagliante.
+
+[Una voce] annuncia 'Benvenuto nell'Accademia Astrale.'
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Voci, movimento costante, persone in camice azzurro che si muovono
+indaffarate da una parte all'altra dell'edificio, giovani di diverse razze
+che discutono della prossima lezione. Di tanto in tanto, una persona
+accanto a te appare traslucida per pochi istanti, prima di scomparire,
+mentre altre appaiono accompagnate da un lieve ronzio elettrico. 
+Diversi tempi, diversi mondi, realta`  parallele convergono instancabilmente 
+in questo luogo di studio e ricerca. Un pannello trasparente recante le 
+indicazioni per i vari reparti fluttua poco distante da te.
+Uscite: North, East, South, West.
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La passeggiata per i Laboratori - Piano Astrale #24513 [S]
+A quanto pare, i laboratori si trovano in una sezione distaccata dell'edificio,
+a cui si accede tramite un lungo corridoio. Le pareti vitree offrono una
+vista affascinante sul piano astrale, in continuo movimento. Continui a
+muoverti, ormai consapevole che il corridoio in cui ti trovi non esiste,
+e sara` la realta` a muoversi attorno a te, portandoti dove vuoi arrivare.
+Uscite visibili:
+Nessuna!
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Gamma - Al chiuso #24516 [S]
+Piu` che un laboratorio, questa stanza sembra dedicata alla pianificazione
+strategica riguardante molto da vicino l'impero: una mappa che raffigura
+l'intero territorio del Piano di Alma e` disposta su un tavolo, cosparsa 
+di miniature che probabilmente raffigurano le forze di cui l'Accademia Astrale
+dispone.
+Uscite: West.
+Il Prefetto di Alma sta dormendo qui. [Liv 52]
+-----------------
+Uscite visibili:
+West - Nexus, Crocevia dei Laboratori
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un suono metallico accompagna un gracchiare indistinto per un istante.
+Qualcosa deve aver interferito con gli strumenti, senti solo un frusciare inintelligibile.
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Nexus, Crocevia dei Laboratori - Al chiuso #24514 [S]
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+-----------------
+Uscite visibili:
+North - Laboratorio Kappa
+East - Laboratorio Gamma
+South - Laboratorio Upsilon
+West - Laboratorio Omicron
+Up - Al centro della sala principale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+apri porta s
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Upsilon - Al chiuso #24517 [S]
+Le pareti del laboratorio sono coperte quasi per intero da mappe estremamente
+dettagliate, che raffigurano non l'impero nella sua interezza, ma specifiche
+porzioni di esso, complete di una quantita`  apparentemente inesauribile di
+note, appunti, precisazioni e quant'altro, purtroppo in una lingua sconosciuta.
+Attorno ad un tavolo, due elfi lavorano su nuove cartografie, scambiandosi
+un'occhiata d'intesa ogni tanto.
+Uscite: North [porta].
+Un'elfa acquatica muove costantemente lo sguardo tra le varie mappe. [Liv 54]
+Un elfo dorato e` intento a tracciare i contorni di un nuovo continente. [Liv 54]
+-----------------
+Uscite visibili:
+North - Nexus, Crocevia dei Laboratori
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+apri porta n
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+Nexus, Crocevia dei Laboratori - Al chiuso #24514 [S]
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+-----------------
+Uscite visibili:
+North - Laboratorio Kappa
+East - Laboratorio Gamma
+South - Laboratorio Upsilon
+West - Laboratorio Omicron
+Up - Al centro della sala principale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Gamma - Al chiuso #24516 [S]
+Piu` che un laboratorio, questa stanza sembra dedicata alla pianificazione
+strategica riguardante molto da vicino l'impero: una mappa che raffigura
+l'intero territorio del Piano di Alma e` disposta su un tavolo, cosparsa 
+di miniature che probabilmente raffigurano le forze di cui l'Accademia Astrale
+dispone.
+Uscite: West.
+Il Prefetto di Alma sta dormendo qui. [Liv 52]
+-----------------
+Uscite visibili:
+West - Nexus, Crocevia dei Laboratori
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+Non puoi andare da quella parte.
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Nexus, Crocevia dei Laboratori - Al chiuso #24514 [S]
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+-----------------
+Uscite visibili:
+North - Laboratorio Kappa
+East - Laboratorio Gamma
+South - Laboratorio Upsilon
+West - Laboratorio Omicron
+Up - Al centro della sala principale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+apri porta n
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Kappa - Al chiuso #24515 [S]
+Il laboratorio e` abbastanza semplice e scarno, con gran parte dello spazio
+occupato da uno strano macchinario collegato ad una grossa piattaforma
+metallica, di cui riesci a vedere ben poco: una cupola  di energia astrale
+in continuo movimento la occupa fin quasi al bordo. Una piccola scalinata
+metallica lascia intendere che dovrebbe essere possibile entrarci dentro.
+Una squadra intera e` qui ad occuparsene, ognuno dei componenti dedito
+ad un lavoro ben specifico. Una rampa di scale situata poco distante dalla
+piattaforma scende verso il basso.
+Uscite: South, Down, Piattaforma.
+Una creatura vagamente umanoide armeggia con leve e manopole del macchinario. [Liv 55]
+Un giovane elfo tenta maldestramente di seguire gli ordini che riceve. [Liv 47]
+Un'elfa della luna coordina energicamente le attivita` del laboratorio. [Liv 58]
+-----------------
+Uscite visibili:
+South - Nexus, Crocevia dei Laboratori
+Down - Laboratorio Omega
+Piattaforma - La Piattaforma del Meccanismo
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Nexus, Crocevia dei Laboratori - Al chiuso #24514 [S]
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+-----------------
+Uscite visibili:
+North - Laboratorio Kappa
+East - Laboratorio Gamma
+South - Laboratorio Upsilon
+West - Laboratorio Omicron
+Up - Al centro della sala principale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Omicron - Al chiuso #24522 [S]
+Il laboratorio e` spoglio e semplice. Non c'e` mobilio, ne` personale al suo
+interno. Al centro della piccola sala, pero`, si trova un elemento fondamentale
+per l'Accademia tutta: l'Arcolaio Astrale. Costruito dal Magister sulla base di
+uno schema rintracciato ad Allania, si dice sia il cuore pulsante di tutte le
+esplorazioni dei piani portate avanti dagli allievi e dagli avventurieri. Voci
+di ogni tipo e genere girano intorno alla natura di questo macchinario, qualcuno
+addirittura sostiene che si tratti di una forma di magia nuova e sconosciuta.
+Ma son soltanto dicerie, spesso vaghe e confuse, probabilmente false.
+Quel che e` certo e` che toccandolo tornerai in un luogo a te piu` familiare,
+a prescindere da quale sia la tua locazione presente.
+Uscite: East [porta], West.
+Un complesso arcolaio cristallino avvolge e modula uno splendido filo argenteo.
+L'Arcolaio Argenteo brilla e risplende di una candida luce propria.
+-----------------
+Uscite visibili:
+East - Nexus, Crocevia dei Laboratori
+West - Il Magnete delle Interferenze
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Il Magnete delle Interferenze - Al chiuso #24526 [S]
+Questo stanzino minuscolo e` occupato quasi per intero da un macchinario
+incredibilmente complesso, che copre tutto quanto lo spazio possibile in
+altezza. Una colonna di energia astrale e` visibile al centro dello stesso,
+protetta da una rete di ferro che impedisce agli incauti di avvicinare troppo
+le mani. Di tanto in tanto, con un sonoro *pop*, uno strano cristallo piramidale
+appare dal nulla, circondato da un vortice di energia, e cade tintinnando al
+suolo, in mezzo a diversi suoi simili.
+Uscite: East.
+-----------------
+Uscite visibili:
+East - Laboratorio Omicron
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+Laboratorio Omicron - Al chiuso #24522 [S]
+Il laboratorio e` spoglio e semplice. Non c'e` mobilio, ne` personale al suo
+interno. Al centro della piccola sala, pero`, si trova un elemento fondamentale
+per l'Accademia tutta: l'Arcolaio Astrale. Costruito dal Magister sulla base di
+uno schema rintracciato ad Allania, si dice sia il cuore pulsante di tutte le
+esplorazioni dei piani portate avanti dagli allievi e dagli avventurieri. Voci
+di ogni tipo e genere girano intorno alla natura di questo macchinario, qualcuno
+addirittura sostiene che si tratti di una forma di magia nuova e sconosciuta.
+Ma son soltanto dicerie, spesso vaghe e confuse, probabilmente false.
+Quel che e` certo e` che toccandolo tornerai in un luogo a te piu` familiare,
+a prescindere da quale sia la tua locazione presente.
+Uscite: East [porta], West.
+Un complesso arcolaio cristallino avvolge e modula uno splendido filo argenteo.
+L'Arcolaio Argenteo brilla e risplende di una candida luce propria.
+-----------------
+Uscite visibili:
+East - Nexus, Crocevia dei Laboratori
+West - Il Magnete delle Interferenze
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Nexus, Crocevia dei Laboratori - Al chiuso #24514 [S]
+Ora ti trovi al centro di una piccola sala semi-sferica. Le pareti restano
+traslucide, ma lo scenario e` drasticamente cambiato: la trama astrale
+qui e` percorsa da mastodontici torrentii di energia purissima, in movimento
+costante e continuo: serpeggiano, si attorcigliano l'un l'altro, si fondono,
+si dividono, in una danza ipnotica che probabilmente non ha mai conosciuto
+un inizio ne` conoscera` mai una fine. Di tanto in tanto, un lampo d'energia
+scocca verso la sala, colpendo la cupola traslucida e scuotendola come un
+piccolo terremoto. Sui quattro lati, porte rinforzate conducono al cuore vero
+e proprio dell'Accademia: i Laboratori Astrali, mentre una traslucida scala
+a chiocciola ti riporta verso la sala principale.
+Uscite: North [porta], East [porta], South [porta], West [porta], Up.
+-----------------
+Uscite visibili:
+North - Laboratorio Kappa
+East - Laboratorio Gamma
+South - Laboratorio Upsilon
+West - Laboratorio Omicron
+Up - Al centro della sala principale
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Laboratorio Omicron - Al chiuso #24522 [S]
+Il laboratorio e` spoglio e semplice. Non c'e` mobilio, ne` personale al suo
+interno. Al centro della piccola sala, pero`, si trova un elemento fondamentale
+per l'Accademia tutta: l'Arcolaio Astrale. Costruito dal Magister sulla base di
+uno schema rintracciato ad Allania, si dice sia il cuore pulsante di tutte le
+esplorazioni dei piani portate avanti dagli allievi e dagli avventurieri. Voci
+di ogni tipo e genere girano intorno alla natura di questo macchinario, qualcuno
+addirittura sostiene che si tratti di una forma di magia nuova e sconosciuta.
+Ma son soltanto dicerie, spesso vaghe e confuse, probabilmente false.
+Quel che e` certo e` che toccandolo tornerai in un luogo a te piu` familiare,
+a prescindere da quale sia la tua locazione presente.
+Uscite: East [porta], West.
+Un complesso arcolaio cristallino avvolge e modula uno splendido filo argenteo.
+L'Arcolaio Argenteo brilla e risplende di una candida luce propria.
+-----------------
+Uscite visibili:
+East - Nexus, Crocevia dei Laboratori
+West - Il Magnete delle Interferenze
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un suono metallico accompagna un gracchiare indistinto per un istante.
+Qualcosa deve aver interferito con gli strumenti, senti solo un frusciare inintelligibile.
+
+[-] [3641/3641] [690/690] [200/200] [-]astral
+[  UI  ] astral » mind 'viaggio probabilistico'
+Per qualche motivo non riesci a raggiungere il piano astrale.
+
+[-] [3641/3641] [675/690] [200/200] [-]
+
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3641/3641] [690/690] [200/200] [-]tocca arco
+Appoggi il palmo sulla punta acuminata dell'arcolaio.
+Un filo argenteo si dipana dalla tua mano e viene catturato dalla macchina.
+L'Arcolaio Argenteo inizia ad avvolgere...
+
+Lasci L'Accademia Astrale, entrando in Alma.
+
+...sottraendo la tua anima alla trama, e materializzandoti altrove!
+
+[-] [3641/3641] [690/690] [200/200] [-]look
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+apri porta w
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Alcuni bracieri sono stati accesi per illuminare la via.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+apri porta e
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ ubriaco
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco sorride felice.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco si conta gli spiccioli in tasca.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco saltella felice tutto intorno.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Friedrich, l'oste dice qualcosa a un ubriaco.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco si lecca i baffi e sorride.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ ubriaco
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ spazzino
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ ubriaco
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[-] [3641/3641] [690/690] [200/200] [-]mission
+Diario delle missioni di Kyrus.
+
+Hai 0 missioni attive su un massimo di 25 possibili.
+
+Uso: 
+- missione <numero> per visualizzare dettagli su una missione in corso.
+- missione <riassunto> per visualizzare un riassunto degli obiettivi attuali.
+- missione <abbandona> <numero> per abbandonare una missione in corso.
+- missione <completa> <numero> <ricompensa> per completare una missione.
+- missione <briefing> <bersaglio> <numero> per informazioni su una missione offerta.
+- missione <richiedi> <bersaglio> <numero> per accettare una missione offerta.
+
+Richiedere un briefing senza specificare il numero mostra l'elenco delle missioni possibili.
+Se non specifichi il numero della missione quando la richiedi, accetterai la prima nell'elenco.
+Se non ci sono ricompense da scegliere sul completamento, puoi omettere di specificarla.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+[Seneca] dice 'Tenete quegli animali fuori della citta`!'
+◁ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco sorride felice.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ Seneca
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ ubriaco
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un ubriaco si conta gli spiccioli in tasca.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[-] [3641/3641] [690/690] [200/200] [-]missione richiedi 
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Diario delle missioni di Kyrus.
+
+Hai 0 missioni attive su un massimo di 25 possibili.
+
+Uso: 
+- missione <numero> per visualizzare dettagli su una missione in corso.
+- missione <riassunto> per visualizzare un riassunto degli obiettivi attuali.
+- missione <abbandona> <numero> per abbandonare una missione in corso.
+- missione <completa> <numero> <ricompensa> per completare una missione.
+- missione <briefing> <bersaglio> <numero> per informazioni su una missione offerta.
+- missione <richiedi> <bersaglio> <numero> per accettare una missione offerta.
+
+Richiedere un briefing senza specificare il numero mostra l'elenco delle missioni possibili.
+Se non specifichi il numero della missione quando la richiedi, accetterai la prima nell'elenco.
+Se non ci sono ricompense da scegliere sul completamento, puoi omettere di specificarla.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]l
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco saltella felice tutto intorno.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco sorride felice.
+
+[-] [3641/3641] [690/690] [200/200] [-]missione richiedi fried
+Hai ricevuto una nuova missione: La Prima Missione di ogni buon RPG!
+
+Vorrei avere qualcosa di piu` interessante da dirti, ma sono contrattualmente
+obbligato a farti uccidere mezza dozzina di ragni come primo compito.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Seneca sbadiglia.
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Friedrich, l'oste dice qualcosa a un ubriaco.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ spazzino
+Un ubriaco si conta gli spiccioli in tasca.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]missioni
+Pardon?
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco si lecca i baffi e sorride.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco saltella felice tutto intorno.
+
+[-] [3641/3641] [690/690] [200/200] [-]mission
+Diario delle missioni di Kyrus.
+
+Hai 1 missioni attive su un massimo di 25 possibili.
+1) La Prima Missione di ogni buon RPG (S.A.Q.)
+
+Uso: 
+- missione <numero> per visualizzare dettagli su una missione in corso.
+- missione <riassunto> per visualizzare un riassunto degli obiettivi attuali.
+- missione <abbandona> <numero> per abbandonare una missione in corso.
+- missione <completa> <numero> <ricompensa> per completare una missione.
+- missione <briefing> <bersaglio> <numero> per informazioni su una missione offerta.
+- missione <richiedi> <bersaglio> <numero> per accettare una missione offerta.
+
+Richiedere un briefing senza specificare il numero mostra l'elenco delle missioni possibili.
+Se non specifichi il numero della missione quando la richiedi, accetterai la prima nell'elenco.
+Se non ci sono ricompense da scegliere sul completamento, puoi omettere di specificarla.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ Seneca
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ ubriaco
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+◁ spazzino
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+
+[-] [3641/3641] [690/690] [200/200] [-]scry ragno
+[  UI  ] scry » mind 'visione' #ragno
+
+Friedrich, l'oste dice qualcosa a un ubriaco.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Chiudi gli occhi e osservi il mondo attraverso gli occhi del tuo obiettivo.
+Un filo della ragnatela eterea - Foresta #3007 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+
+[-] [3641/3641] [670/690] [200/200] [-]uisearch Un filo della ragnatela eterea
+
+[  UI  ] Stanze
+---------------
+[ 6735] [I] [T] [G] Un filo della ragnatela eterea Area: Arachnos
+[ 6745] [I] [T] [G] Un filo della ragnatela eterea Area: Arachnos
+[ 6755] [I] [T] [G] Un filo della ragnatela eterea Area: Arachnos
+[ 6765] [I] [T] [G] Un filo della ragnatela eterea Area: Arachnos
+
+[  UI  ] Trovate 4 stanze
+
+Recuperi rapidamente le tue forze. [20] 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+un ubriaco si lecca i baffi e sorride.
+
+[-] [3641/3641] [690/690] [200/200] [-]uigo 6765
+[  UI  ] Prosegui lungo il percorso andando verso west
+[  UI  ] apri porta w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+E` gia` aperta.
+
+[-] [3641/3641] [690/690] [200/200] [-]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+[  UI  ] Prosegui lungo il percorso andando verso west
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Lasci Alma, entrando in Alma (libreria).
+
+Il prato - Prato #100 [S]
+Sei in un piccolo praticello verde. A nord vedi la piccola libreria di Alma.
+Ad est c'e` il Foro imperiale in cima alla collina. Ad ovest puoi vedere una
+grandissima Biblioteca, mentre a sud c'e' il Tribunale della capitale.
+Uscite: North, East, South [portone] (chiuso), West.
+-----------------
+Uscite visibili:
+North - L'ingresso della Libreria
+East - Il Foro Imperiale
+South - Atrio (chiuso)
+West - Piazzale della Biblioteca
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+[  UI  ] Prosegui lungo il percorso andando verso north
+L'ingresso della Libreria - Al chiuso #102 [S]
+Sei in una piccola stanza che funge dal anticamera e sala d'attesa per la
+libreria di Alma. Sulla parete est c'e` appeso un bellissimo quadro.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Libreria
+South - Il prato
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+Libreria - Al chiuso #104 [S]
+Questa e` una piccola libreria con pile e pile di libri. Scaffali pieni di
+libri riempiono le pareti. La libreria continua a nord. A sud esci verso
+l'ingresso.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Ala nord della Libreria
+South - L'ingresso della Libreria
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso up
+Ala nord della Libreria - Al chiuso #105 [S]
+La libreria e` tranquilla e silenziosa. Ci sono libri dappertutto. Una scala
+porta su` al secondo piano. La libreria continua a sud.
+Uscite: South, Up.
+-----------------
+Uscite visibili:
+South - Libreria
+Up - Secondo piano della Libreria
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] spingi pulsante w
+Secondo piano della Libreria - Al chiuso #106 [S]
+Il secondo piano della Libreria e` perfino piu` silenzio e tranquillo del
+sottostante. Ma anche piu` disordinato. Qui, i libri, sono perfino in mezzo
+alla stanza e sulla scala che porta al piano di sotto.
+Uscite: West (segreto), Down.
+-----------------
+Uscite visibili:
+West - La stanza segreta (segreto)
+Down - Ala nord della Libreria
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Spingi il pulsante, liberando il percorso verso ovest.
+[  UI  ] Aggiornata uscita w = spingi pulsante w
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] ent portale
+La stanza segreta - Al chiuso #107 [S]
+Questa stanza e' stranissima ed e' sicuramente stata creata da un grande mago
+se non addirittura un dio. Puoi vedere un portale color verde natura al centro
+della stanza. Le pareti sono scure ed illuminate debolmente, ma non riesci ad
+individuare la fonte di luce. Non sembra esserci altro a parte strani segni
+sulle pareti.
+Uscite: East, Portale.
+-----------------
+Uscite visibili:
+East - Secondo piano della Libreria
+Portale - La Sala dei Ricordi di Benem
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] apri parete w
+[  UI  ] Prosegui lungo il percorso andando verso west
+La Sala dei Ricordi di Benem - Al chiuso #108 [S]
+Una grande pace interiore ti pervade appena giungi in questo luogo. E' una
+vasta sala rettangolare con le bianche pareti meravigliosamente affrescate con
+elementi della natura, animali del bosco, alberi e paesaggi paradisiaci. Ci
+sono varie teche disposte accanto alle pareti e ci sono dei divani al centro
+della sala per far riposare gli ospiti. Puoi tornare indietro dal portale da
+cui provieni. A sud la stanza sembra sfumare in un verdissimo bosco
+rigoglioso, tutto cio' non sembra reale...
+Uscite: South, West (segreto), Portale.
+Una pregiata cassettiera e' disposta in un angolo.
+-----------------
+Uscite visibili:
+South - Il bosco incantato
+West - La frattura dimensionale (segreto)
+Portale - La stanza segreta
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Apri la parete, liberando il percorso verso ovest.
+[  UI  ] Aggiornata uscita w = apri parete w
+
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+La frattura dimensionale - Vuoto cosmico #120 [S]
+Questo luogo e' incredibile, sei come sospeso nel vuoto cosmico eppure puoi
+respirare e muoverti. Qui e' il punto esatto ove Benem scisse l'universo di
+Lumen et Umbra da quello di Shadowdale, strappandone interi tessuti
+spazio-temporali e scagliando cio' che restava di quest'ultimo nell'oblio.
+Tuttavia, l'obliterazione del precedente universo non deve essere stata del
+tutto completa in quanto davanti a te vedi delle immagini di questo mondo
+alieno, tuttavia frammentate ed incomplete. Puoi provare a cercare di
+raggiungerle ma non sei sicuro di poter tornare indietro nel caso in cui tu lo
+faccia.
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - La Sala dei Ricordi di Benem
+West - Perso tra le dimensioni
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] ent shadowdale
+Perso tra le dimensioni - Vuoto cosmico #154 [S]
+Ti senti trascinare via improvvisamente, tutto perde di senso e senti un
+malessere pervaderti ed una profonda angoscia squassarti l'anima; vedi
+immagini senza significato e senti per arrivare in qualche posto... Per un
+attimo pero' il tempo sembra confondersi tra pasato, presente e futuro e vedi
+per un momento le immagini dell'universo di Shadowdale come se fosse nel pieno
+del suo fulgore, ma e' giusto un istante fugace, che pero' potresti cogliere
+se sei abbastanza veloce... Intravedi anche un altro universo ed un pianeta
+molto simile al tuo...
+Uscite: Shadowdale, Terra [terra].
+-----------------
+Uscite visibili:
+Shadowdale - Un altro Universo
+Terra - Un futuro alieno (Terra, A.D. 1453)
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso down
+Un altro Universo - Vuoto cosmico #156 [S]
+Sei sospeso nel vuoto cosmico, ma incredibilmente sei ancora vivo. Senti
+un'energia potente e benefica attorno a te che sta lavorando, non capisci bene
+cosa stia succedendo comunque ti sembra di poter calare su di un pianeta che
+sembra simile a quello dove sei nato. Non sembra in rovina anzi, ma e' come se
+il tuo percorso in questo momento fosse obbligato, puoi scendere sulla
+superficie oppure fermarti sulle nuvole.
+Uscite: West, Down.
+-----------------
+Uscite visibili:
+West - Esterno della residenza di Redferne
+Down - Verso un altro mondo
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Verso un altro mondo - Vuoto cosmico #157 [S]
+Stai dirigendoti magicamente verso la superficie di questo misterioso pianeta.
+Puoi continuare a scendere, dirigerti a nord verso quella che sembra essere
+una zona molto settentrionale e ghiacciata del continente principale, oppure a
+sud verso quella che appare una sinistra foresta ricoperta di ragnatele,
+mentre ad est vedi una caverna da cui promana un'oscurita' terrificante...
+Uscite: North, East, South, Down.
+-----------------
+Uscite visibili:
+North - Un sentiero nel bosco
+East - Entrata a Deadhame
+South - Dentro Mirkwood
+Down - La Sala Giochi di Exxon
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Lasci Alma (libreria), entrando in Arachnos.
+
+Dentro Mirkwood - Foresta #6774 [S]
+Ti trovi nel cuore della foresta di Mirkwood. Il passaggio a sud e' bloccato
+da un largo fiume oscuro. Puoi andare a nord e ad ovest oppure tuffarti nel
+fiume, ma in quella direzione vedi qualcosa di strano. A ben vedere anche a
+nord c'e' qualcosa di anomalo nell'aria.
+Uscite: North, South, West.
+[Obiettivo] Il giovane ragno ti osserva infastidito. [Liv 22] [5]
+-----------------
+Uscite visibili:
+North - Un carro rovesciato
+South - Sul Fiume Oscuro
+West - In Mirkwood
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+[  UI  ] Prosegui lungo il percorso andando verso north
+In Mirkwood - Foresta #6787 [S]
+Ti imbatti in una gigantesca distesa di ragnatele. Appiccicose! Ora capisci
+perche' questa foresdta di chiama Mirkwood , anche se inizi a pensare che
+Arachnos sarebbe un nome migliore... Puoi andare a nord verso Arachnos o
+tornare indietro ad est verso Mirkwood.
+Uscite: North, East.
+[Obiettivo] Il giovane ragno ti osserva infastidito. [Liv 22] [5]
+-----------------
+Uscite visibili:
+North - Accesso appiccicoso
+East - Dentro Mirkwood
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+Accesso appiccicoso - Foresta #6700 [S]
+Appiccicoso , appiccicoso , appiccicoso! Il terreno e' ingombro di foglie e
+pieno di resti in decomposizione di grilli, scarabei, cani, gatti e perfino
+esseri umani. Ti cominci a chiedere quello che ti aspetta... L'aria e' umida
+qui ed anche quel poco di luce che filtra, attraverso la volta composta dai
+fitti rami intrecciati degli alberi della foresta, sembra assorbito dalle
+ragnatele che infestano la zona.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - Passaggio appiccicoso
+South - In Mirkwood
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Passaggio appiccicoso - Foresta #6702 [S]
+Scopri che passeggiare qui e' comodo, quasi troppo comodo ... Noti molti rami
+degli alberi ricoperti da robuste ragnatele .. Riesci a distinguere tre
+sentieri che conducono in altrettante direzioni.. Il sentiero verso est ti
+sembra un po' piu ripido rispetto agli altri. Ad ovest noti un gigantesco
+alveare di vespe, sarebbe bene tenertene alla larga!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Passaggio appiccicoso
+East - Sotto il sentiero ad est
+South - Accesso appiccicoso
+West - L'alveare
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+[  UI  ] Prosegui lungo il percorso andando verso up
+Sotto il sentiero ad est - Foresta #6705 [S]
+Ascolti in lontananza lo strisciare ed il sibilo di quelli che sembrano
+ragni... le orme sparpagliate sul pavimento confermano le tue sensazioni.
+Intravedi una luce brillante verso l'alto.
+Uscite: West, Up.
+Questo schiavo umano lavora incessantemente. [Liv 32]
+-----------------
+Uscite visibili:
+West - Passaggio appiccicoso
+Up - Sentiero appiccicoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Sentiero appiccicoso - Foresta #6706 [S]
+Ragni, ragni ovunque ! Sembrano quasi come un esercito di formiche ben
+organizzato... con la differenza che qui i ragni trasportano resti di cani,
+gatti e... si' hai visto bene... esseri umani...
+Uscite: South, Down.
+-----------------
+Uscite visibili:
+South - Sentiero appiccicoso
+Down - Sotto il sentiero ad est
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+Sentiero appiccicoso - Foresta #6707 [S]
+Ragni, ragni ovunque ! Sembrano quasi come un esercito di formiche ben
+organizzato... con la differenza che qui i ragni trasportano resti di cani,
+gatti e... si' hai visto bene... esseri umani...
+Uscite: North, East.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+-----------------
+Uscite visibili:
+North - Sentiero appiccicoso
+East - Sentiero appiccicoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+Sentiero appiccicoso - Foresta #6708 [S]
+Ragni, ragni ovunque ! Sembrano quasi come un esercito di formiche ben
+organizzato... con la differenza che qui i ragni trasportano resti di cani,
+gatti e... si' hai visto bene... esseri umani...
+Uscite: East, West.
+Questo schiavo umano lavora incessantemente. [Liv 32]
+-----------------
+Uscite visibili:
+East - Il bivio
+West - Sentiero appiccicoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+Il bivio - Foresta #6709 [S]
+All'improvviso trovi una biforcazione davati i tuoi occhi... un sentiero e'
+ricoperto di resti di formiche ed altre creature non ben definite.. l'altro ti
+sembra stranamente abbastanza pulito e libero da tutte le ragnatele che hai
+trovato fin qui...
+Uscite: North, South, West.
+-----------------
+Uscite visibili:
+North - Il ramo dell'albero
+South - Sentiero polveroso
+West - Sentiero appiccicoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+[  UI  ] Prosegui lungo il percorso andando verso west
+Sentiero polveroso - Foresta #6720 [S]
+Strano, niente ragnatele qui e anche i fastidiosi ronzii e strani versi
+avvertiti prima sono spariti.. il sentiero prosegue verso nord e intravedi in
+lontananza quello che sembra un burrone.
+Uscite: North, West.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+-----------------
+Uscite visibili:
+North - Il bivio
+West - Sopra le rovine
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Sopra le rovine - Foresta #6721 [S]
+Sei giunto ai piedi di un burrone che sembra non avere fine ... dall'altra
+parte intravedi un albero bello grande... osservando il fondo del burrone noti
+una gigantesca ragnatela colorata con numerosi resti di creature non ben
+definite.
+Uscite: East, South, Down.
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+[Obiettivo] Il ragno fuco e' qui di guardia. [Liv 22]
+-----------------
+Uscite visibili:
+East - Sentiero polveroso
+South - Foresta appiccicosa #6721 [S]
+Down - La ragnatela arcobaleno
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso down
+Foresta appiccicosa - Foresta #6723 [S]
+Gli alberi qui hanno un aspetto totalmente differente dal solito ... sono
+molto appiccicosi al tatto e sulla loro superficie noti numerose ragnatele ..
+sembrerebbe quasi di trovarsi in una foresta magica.
+Uscite: North, Down.
+-----------------
+Uscite visibili:
+North - Sopra le rovine
+Down - La buca profonda
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+La buca profonda - Foresta #6724 [S]
+Sei entrato in una buca profonda ed oscura ... odi una voce che squilla in
+lontananza .. 'tornate a lavorare viscidi vermi!' ... intravedi numerose
+rotaie e materiali che brillano nell'oscurita' che sembrano proprio oro e
+argento ...
+Uscite: North, Up.
+-----------------
+Uscite visibili:
+North - Il sentiero ripido
+Up - Foresta appiccicosa #6724 [S]
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso east
+Il sentiero ripido - Foresta #6725 [S]
+Ti trovi su di un sentiero che sembra apparentemente simile agli altri se
+non fosse per i riflessi dorati che risplendono dai lati ed illuminano la zona.
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - L'incrocio
+South - La buca profonda
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso up
+L'incrocio - Foresta #6726 [S]
+Sei giunto ad un bivio ... riesci a intravedere un piccolo ammasso di
+ragnatele quasi etereo nella penombra.
+Uscite: West, Up.
+Il Quasit ti guarda in modo minaccioso muovendosi senza sosta. (invisibile) [Liv 26]
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+-----------------
+Uscite visibili:
+West - Il sentiero ripido
+Up - Il filo maestro
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+Il filo maestro - Foresta #6727 [S]
+Questo filo ti sembra piu' pesante e piu' robusto .. risplende di una luce
+strana appena ci cammini sopra ... non riesci a capire bene dove ti trovi, se
+sei in un piano etereo od in un luogo non ben definito... e' ancora possibile
+tornare indietro verso sentieri piu' sicuri.
+Uscite: North, Down.
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+-----------------
+Uscite visibili:
+North - L'ingresso della Ragnatela Eterea
+Down - L'incrocio
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso north
+L'ingresso della Ragnatela Eterea - Foresta #6728 [S]
+Sei all' ingresso della ragnatela eterea ... avverti dei rumori e dei
+tremolii praticamente ovunque ... ogni filo della ragnatela rivela un colore
+diverso, passando dal blu al verde sino al nero piu' oscuro.
+Uscite: North, South.
+Il Quasit ti guarda in modo minaccioso muovendosi senza sosta. (invisibile) [Liv 26]
+-----------------
+Uscite visibili:
+North - La base della ragnatela
+South - Il filo maestro
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+La base della ragnatela - Foresta #6731 [S]
+Numerosi fili della ragnatela convergono in questo punto... i nodi che legano
+questi fili tremano dentro questo etere ... numerose creature volano in questo
+luogo; insetti di ogni tipo, pegasi alati e cuccioli di drago fluttuano in
+questo luogo etereo.. ci sono alcune uscire che vanno in altrettante
+direzioni.
+Uscite: South, West, Up, Down.
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+Questo schiavo umano lavora incessantemente. [Liv 32]
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+[Obiettivo] Il ragno fuco e' qui di guardia. [Liv 22]
+-----------------
+Uscite visibili:
+South - L'ingresso della Ragnatela Eterea
+West - Attraverso gli alberi
+Up - Su una nuvola
+Down - La piccola mangiatoia di vermi
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+▷ ragno lupo
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Attraverso gli alberi - Foresta #6732 [S]
+Questa parte della ragnatela si incrocia con alcuni rami di alcuni alberi
+.. noti sparse un po' ovunque numerose foglie e resti di creature.
+Uscite: East, South.
+Un orco e' bloccato nella ragnatela e non puo' muoversi. [Liv 22]
+-----------------
+Uscite visibili:
+East - La base della ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Attraverso gli alberi
+East - Sopra le nuvole
+West - Il sottile filo
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+South - La stanza principale delle larve
+West - Un altro ramo di albero
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un altro ramo di albero - Foresta #6741 [S]
+Ancora una volta la ragnatela si incrocia con il ramo dell'albero ... riesci a
+intravedere quella che potrebbe essere la dimora di un qualche genere di
+creatura ...
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Il sottile filo
+South - La tana dell'uccello ragno
+West - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un filo della ragnatela eterea - Foresta #6745 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Un altro ramo di albero
+South - La stanza di Ki-Rin
+West - La cima tranquilla dell'albero
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+La cima tranquilla dell'albero - Foresta #6746 [S]
+Ti ritrovi su di una cima abbastanza tranquilla dell'albero ... verso il basso
+intravedi numerosi sentieri familiari che possono ricondurre a Shadowdale,
+anche se effettivamente noti qualcosa di strano in quella direzione...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Sulla ragnatela
+Down - Il sinistro sentiero nella foresta
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso west
+[  UI  ] Prosegui lungo il percorso andando verso west
+Sulla ragnatela - Foresta #6747 [S]
+La ragnatela prosegue fitta tra gli alberi, difficile orientarsi...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - La cima tranquilla dell'albero
+West - Un filo della ragnatela eterea
+Down - La base della ragnatela
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Un filo della ragnatela eterea - Foresta #6755 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati ... verso nord avverti il ruggito imponente di quella che
+sembra una creatura massiccia ...
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Tana di Yevaud
+East - Sulla ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] Sei arrivato alla fine del percorso
+Un filo della ragnatela eterea - Foresta #6765 [S]
+Questo e' un altro filo della ragnatela eterea .. varie creature sembrano
+come ipnotizzate avvolte nei numerosi filamenti appiccicosi .. noti un filo
+piu' sottile verso nord, mentre versi e suoni orribili provengono da sud.
+Uscite: North, South, West, Down.
+-----------------
+Uscite visibili:
+North - Un filo della ragnatela eterea
+South - Ingresso della Fortezza
+West - Il filo della ragnatela
+Down - Ingresso al labirinto di Arachnos
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+Un filo della ragnatela eterea - Foresta #6755 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati ... verso nord avverti il ruggito imponente di quella che
+sembra una creatura massiccia ...
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Tana di Yevaud
+East - Sulla ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+Sulla ragnatela - Foresta #6747 [S]
+La ragnatela prosegue fitta tra gli alberi, difficile orientarsi...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - La cima tranquilla dell'albero
+West - Un filo della ragnatela eterea
+Down - La base della ragnatela
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]e
+La cima tranquilla dell'albero - Foresta #6746 [S]
+Ti ritrovi su di una cima abbastanza tranquilla dell'albero ... verso il basso
+intravedi numerosi sentieri familiari che possono ricondurre a Shadowdale,
+anche se effettivamente noti qualcosa di strano in quella direzione...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Sulla ragnatela
+Down - Il sinistro sentiero nella foresta
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Sulla ragnatela - Foresta #6747 [S]
+La ragnatela prosegue fitta tra gli alberi, difficile orientarsi...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - La cima tranquilla dell'albero
+West - Un filo della ragnatela eterea
+Down - La base della ragnatela
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Un filo della ragnatela eterea - Foresta #6755 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati ... verso nord avverti il ruggito imponente di quella che
+sembra una creatura massiccia ...
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Tana di Yevaud
+East - Sulla ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Un filo della ragnatela eterea - Foresta #6765 [S]
+Questo e' un altro filo della ragnatela eterea .. varie creature sembrano
+come ipnotizzate avvolte nei numerosi filamenti appiccicosi .. noti un filo
+piu' sottile verso nord, mentre versi e suoni orribili provengono da sud.
+Uscite: North, South, West, Down.
+-----------------
+Uscite visibili:
+North - Un filo della ragnatela eterea
+South - Ingresso della Fortezza
+West - Il filo della ragnatela
+Down - Ingresso al labirinto di Arachnos
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]d
+Ingresso al labirinto di Arachnos - Pianura #6790 [S]
+Tutti i fili inevitabilmente portano qui, al centro della ragnatela ovvero
+l'ingresso del labirinto di Arachnos.
+Uscite: East, Up.
+-----------------
+Uscite visibili:
+East - La stanza appiccicosa
+Up - Un filo della ragnatela eterea
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]u
+Un filo della ragnatela eterea - Foresta #6765 [S]
+Questo e' un altro filo della ragnatela eterea .. varie creature sembrano
+come ipnotizzate avvolte nei numerosi filamenti appiccicosi .. noti un filo
+piu' sottile verso nord, mentre versi e suoni orribili provengono da sud.
+Uscite: North, South, West, Down.
+-----------------
+Uscite visibili:
+North - Un filo della ragnatela eterea
+South - Ingresso della Fortezza
+West - Il filo della ragnatela
+Down - Ingresso al labirinto di Arachnos
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Il filo della ragnatela - Foresta #6771 [S]
+Ti ritrovi in bilico su un singolo filo di ragnatela ... guardando avanti noti
+una costruzione davanti i tuoi occhi illuminata da una luce fioca che proviene
+dalla finestra .. avverti una senzazione di grande malvagita' provenire da
+nord ... la tentazione di tornare indietro ti assale ...
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Il filo della ragnatela
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]w
+Il filo della ragnatela - Foresta #6772 [S]
+Il filo della ragnatela sorregge ancora una volta il tuo peso ... noti la
+costruzione sempre piu vicina e sempre piu' forte e' il desiderio di fuggire
+via da questo luogo ...
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - Il filo della ragnatela
+South - Angolo dell'eremita
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Angolo dell'eremita - Pianura #6773 [S]
+Qui sotto puoi notare evidenti tracce di qualcuno che sembrerebbe un
+eremita .. noti la baracca in lontanza verso nord .. sei ancora in tempo per
+tornare indietro ... il cielo sopra e' scuro e forti rumori di tuoni
+squarciano l'aria. Hai un brutto presentimento.
+Uscite: North, South.
+Un vecchio eremita e' qui, malfermo sulle gambe. [Liv 27]
+-----------------
+Uscite visibili:
+North - Il filo della ragnatela
+South - Il sentiero boscoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Il sentiero boscoso - Foresta #6780 [S]
+Improvvisamente cala un grande silenzio attorno a te, mentre percorri questo
+sentiero boscoso.
+Uscite: North, South.
+Percepisci una forma di vita invisibile qui intorno.
+-----------------
+Uscite visibili:
+North - Angolo dell'eremita
+South - Il sentiero boscoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]n
+Angolo dell'eremita - Pianura #6773 [S]
+Qui sotto puoi notare evidenti tracce di qualcuno che sembrerebbe un
+eremita .. noti la baracca in lontanza verso nord .. sei ancora in tempo per
+tornare indietro ... il cielo sopra e' scuro e forti rumori di tuoni
+squarciano l'aria. Hai un brutto presentimento.
+Uscite: North, South.
+Un vecchio eremita e' qui, malfermo sulle gambe. [Liv 27]
+-----------------
+Uscite visibili:
+North - Il filo della ragnatela
+South - Il sentiero boscoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]s
+Il sentiero boscoso - Foresta #6780 [S]
+Improvvisamente cala un grande silenzio attorno a te, mentre percorri questo
+sentiero boscoso.
+Uscite: North, South.
+Percepisci una forma di vita invisibile qui intorno.
+-----------------
+Uscite visibili:
+North - Angolo dell'eremita
+South - Il sentiero boscoso
+-----------------
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[  UI  ] mfe » mind 'manipola fiamme' espandi
+Perdi la tua concentrazione!
+Impari dai tuoi errori! Manipola Fiamme migliora. ( 94 / 100 ) 
+
+[-] [3641/3641] [678/690] [200/200] [-]
+
+Con sorprendente agilita`, Mahathma, il ladro riesce a coglierti di sorpresa! 
+All'improvviso, Mahathma, il ladro conficca un piccolo pugnale nero nella tua schiena! [181r]
+
+[-] [3460/3641] [678/690] [200/200] [C]
+
+Demolisci Mahathma, il ladro impattandolo una volta sulla gamba sinistra. [91 !][200(67x3)]
+Obliteri Mahathma, il ladro impattandolo due volte sulla gamba sinistra. [344(172x2)C2L]
+
+[-] [3460/3641] [678/690] [200/200] [C]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3460/3641] [678/690] [200/200] [C]look
+Il sentiero boscoso - Foresta #6780 [S]
+Improvvisamente cala un grande silenzio attorno a te, mentre percorri questo
+sentiero boscoso.
+Uscite: North, South.
+[Diritto: Kyrus] Mahathma, il ladro sta combattendo contro di te! [Liv 50]
+
+[-] [3460/3641] [678/690] [200/200] [C]
+
+Mahathma, il ladro estrae rapidamente una lama che teneva nascosta! 
+Mahathma, il ladro estrae un piccolo pugnale e lo affonda nel tuo corpo! [187Lr]
+Mahathma, il ladro ti pugnala con molta forza due volte sulla spalla. [55(28x2)Lr2]
+Distruggi Mahathma, il ladro impattandolo tre volte sulla spalla. [434(145x3)C2L][288(96x3)L2S2]
+
+[-] [3218/3641] [678/690] [200/200] [C]
+[  UI  ] autoattack » aa » mahathma
+[  UI  ] bl » mind 'colpo psichico' #mahathma
+l
+
+La tua mente si apre per un istante all'infinito! [Permanente]
+Colpisci la mente di Mahathma, il ladro con un'esplosione di energia psionica! [310LS]
+
+[Lightspeed!] [3218/3641] [678/690] [170/200] [C]
+
+Mahathma, il ladro ti pugnala con molta forza due volte sul braccio destro. [51(26x2)r2]
+Demolisci Mahathma, il ladro impattandolo tre volte sulla gamba sinistra. [273(91x3)][254(85x3)CLS]
+
+[Lightspeed!] [3167/3641] [678/690] [170/200] [C]
+Il sentiero boscoso - Foresta #6780 [S]
+Improvvisamente cala un grande silenzio attorno a te, mentre percorri questo
+sentiero boscoso.
+Uscite: North, South.
+[Diritto: Kyrus] Mahathma, il ladro sta combattendo contro di te! [Liv 50]
+
+[Lightspeed!] [3167/3641] [678/690] [170/200] [C]
+[  UI  ] autoattack » aa » mahathma (LightSpeed)
+[  UI  ] flame » mind 'mantello di fiamme'
+[  UI  ] bl » mind 'colpo psichico' #mahathma
+l
+
+Il tuo pensiero viaggia alla velocita della luce! [Success]
+Convochi un mantello di fiamme ad avvolgerti. {120a Permanente}
+
+[-] [3167/3641] [653/690] [170/200] [F120C]
+Colpisci la mente di Mahathma, il ladro con un'esplosione di energia psionica! [250]
+Hai ucciso Mahathma, il ladro! R.I.P. 
+L'urlo di morte di Mahathma, il ladro ti gela il sangue nelle vene. 
+Ricevi 250000 punti esperienza.
+In un cofanetto di preziosi, trovi 11 Smeraldi, 11 Rubini, 12 Zaffiri.
+
+[60%] [3167/3641] [653/690] [140/200] [F120C]
+[  UI  ] buff[ 1] » mano » mind 'mano di energia'
+[  UI  ] buff[ 2] » minibuff[ 1] » flame » mind 'mantello di fiamme'
+[  UI  ]                    [ 2] » rin » mind 'rinforzo psichico' &stat=int
+[  UI  ]                    [ 3] » shield » mind 'scudo psichico'
+Il sentiero boscoso - Foresta #6780 [S]
+Improvvisamente cala un grande silenzio attorno a te, mentre percorri questo
+sentiero boscoso.
+Uscite: North, South.
+[Diritto: Kyrus] Il cadavere di Mahathma, il ladro giace al suolo.
+
+[60%] [3253/3641] [690/690] [140/200] [F120C]
+Convogli la tua energia mentale, creando una mano gigante di energia! [Permanente]
+uik as remove
+[  UI  ] Nessun tasto rapido assegnato all'alias as da rimuovere.
+
+uik pugno f3
+[  UI  ] Il tasto rapido è stato assegnato all'alias pugno.
+
+
+[H60%] [3253/3641] [640/690] [140/200] [F120c]
+Il tuo manto di fiamme svanisce. 
+Convochi un mantello di fiamme ad avvolgerti. {80a Permanente}
+
+[H60%] [3253/3641] [615/690] [140/200] [F80c]
+Concentri la tua energia mentale per potenziare il tuo fisico. [+6 Intelligenza 20t]
+
+[H60%] [3253/3641] [600/708] [140/200] [F80c]
+Erigi uno scudo mentale intorno al tuo corpo. [+15 Classe Armatura 5t]
+
+[H60%] [3253/3641] [590/708] [140/200] [F80]
+
+Recuperi rapidamente le tue forze. [182] [35] [40] 
+
+[H60%] [3435/3641] [625/708] [180/200] [F80]n
+Angolo dell'eremita - Pianura #6773 [S]
+Qui sotto puoi notare evidenti tracce di qualcuno che sembrerebbe un
+eremita .. noti la baracca in lontanza verso nord .. sei ancora in tempo per
+tornare indietro ... il cielo sopra e' scuro e forti rumori di tuoni
+squarciano l'aria. Hai un brutto presentimento.
+Uscite: North, South.
+Un vecchio eremita e' qui, malfermo sulle gambe. [Liv 27]
+-----------------
+Uscite visibili:
+North - Il filo della ragnatela
+South - Il sentiero boscoso
+-----------------
+
+[H60%] [3435/3641] [625/708] [180/200] [F80]n
+Il filo della ragnatela - Foresta #6772 [S]
+Il filo della ragnatela sorregge ancora una volta il tuo peso ... noti la
+costruzione sempre piu vicina e sempre piu' forte e' il desiderio di fuggire
+via da questo luogo ...
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - Il filo della ragnatela
+South - Angolo dell'eremita
+-----------------
+
+[H60%] [3435/3641] [625/708] [180/200] [F80]e
+Il filo della ragnatela - Foresta #6771 [S]
+Ti ritrovi in bilico su un singolo filo di ragnatela ... guardando avanti noti
+una costruzione davanti i tuoi occhi illuminata da una luce fioca che proviene
+dalla finestra .. avverti una senzazione di grande malvagita' provenire da
+nord ... la tentazione di tornare indietro ti assale ...
+Uscite: East, West.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Il filo della ragnatela
+-----------------
+
+[H60%] [3435/3641] [625/708] [180/200] [F80]
+
+Recuperi rapidamente le tue forze. [182] [35] [20] 
+
+[H60%] [3617/3641] [660/708] [200/200] [F80]e
+Un filo della ragnatela eterea - Foresta #6765 [S]
+Questo e' un altro filo della ragnatela eterea .. varie creature sembrano
+come ipnotizzate avvolte nei numerosi filamenti appiccicosi .. noti un filo
+piu' sottile verso nord, mentre versi e suoni orribili provengono da sud.
+Uscite: North, South, West, Down.
+-----------------
+Uscite visibili:
+North - Un filo della ragnatela eterea
+South - Ingresso della Fortezza
+West - Il filo della ragnatela
+Down - Ingresso al labirinto di Arachnos
+-----------------
+
+[H60%] [3617/3641] [660/708] [200/200] [F80]n
+Un filo della ragnatela eterea - Foresta #6755 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati ... verso nord avverti il ruggito imponente di quella che
+sembra una creatura massiccia ...
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Tana di Yevaud
+East - Sulla ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[H60%] [3617/3641] [660/708] [200/200] [F80]n
+Tana di Yevaud - Foresta #6760 [S]
+Yevaud, l'usurpatore di Shadowdale, risiede qui... una voce riecheggia
+nell'aria... 'Attenzione, l'usurpatore di Shadowdale risiede qui!
+fuggite quando e' ancora possibile!'... ma anche Yevaud pare avere un suo
+superiore... o almeno cosi ti pare di intuire.
+Uscite: South.
+Vedi una piccola fiala piena di liquido color argento. [6]
+C'e` la testa mozzata di il ragno etereo qui in terra.
+Un pezzo della ragnatela giace qui a terra.
+Yevaud, l'usurpatore di Shadowdale e' qui e ti osserva in modo bellicoso. [Liv 42] (o) (o)
+-----------------
+Uscite visibili:
+South - Un filo della ragnatela eterea
+-----------------
+Yevaud ti artiglia con molta forza una volta sul braccio destro. [27r]
+
+[H60%] [3590/3641] [660/708] [200/200] [CF80]
+
+Yevaud tira indietro la testa ed inala...
+Yevaud soffia...
+Yevaud ti brucia. [233r]
+Yevaud prende la rincorsa e si lancia verso di te! 
+Yevaud ti manda a gambe all'aria! [42r]
+Tramortito dagli eventi, avrai bisogno di un po` di tempo per riprenderti. [  UI  ] Trig Auto stand: STAND
+Yevaud ti artiglia per bene tre volte sul collo. [54(18x3)Mr3]
+Impatti Yevaud in pieno tre volte sulla gamba destra. [117(39x3)M2][456(152x3)C3LS3]
+Il tuo attacco attraversa un'immagine illusoria di Yevaud, che svanisce nel nulla! [234(117x2)]
+
+[H60%] [3261/3641] [660/708] [200/200] [CF80]
+[  UI  ] autoattack » aa » Yevaud
+[  UI  ] bash » mind 'schiaffo violento' #Yevaud
+l
+
+
+Yevaud tira indietro la testa ed inala...
+Yevaud soffia...
+Yevaud ti brucia. [212rB]
+Ti proteggi dall'attacco di Yevaud con il tuo scudo! [35(12x3)]
+Yevaud ti artiglia con molta forza tre volte sulla schiena. [88(29x3)Lr3B2]
+Demolisci Yevaud impattandolo tre volte in testa. [386(129x3)C][310(103x3)CLS3]
+
+[H60%] [2961/3641] [660/708] [200/200] [CF80]
+
+Yevaud tira indietro la testa ed inala...
+Yevaud soffia...
+Yevaud ti brucia. [232r]
+Yevaud ti sfiora con il suo tocco incandescente, bruciandoti. [41L]
+Yevaud ti artiglia con molta forza tre volte sul corpo. [85(28x3)r3]
+Impatti Yevaud senza causare danno una volta sul collo. [M][140CS]
+Il tuo attacco attraversa un'immagine illusoria di Yevaud, che svanisce nel nulla! [130]
+Hai ucciso Yevaud! R.I.P. 
+L'urlo di morte di Yevaud ti gela il sangue nelle vene. 
+Ricevi 50000 punti esperienza.
+In un cofanetto di preziosi, trovi 23 Zaffiri.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]
+Sei gia` in piedi.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]
+Tana di Yevaud - Foresta #6760 [S]
+Yevaud, l'usurpatore di Shadowdale, risiede qui... una voce riecheggia
+nell'aria... 'Attenzione, l'usurpatore di Shadowdale risiede qui!
+fuggite quando e' ancora possibile!'... ma anche Yevaud pare avere un suo
+superiore... o almeno cosi ti pare di intuire.
+Uscite: South.
+[Diritto: Kyrus] Il cadavere di Yevaud giace al suolo.
+Vedi una piccola fiala piena di liquido color argento. [6]
+C'e` la testa mozzata di il ragno etereo qui in terra.
+Un pezzo della ragnatela giace qui a terra.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]
+Non c'e` nessuno qui con questo nome.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]
+Tana di Yevaud - Foresta #6760 [S]
+Yevaud, l'usurpatore di Shadowdale, risiede qui... una voce riecheggia
+nell'aria... 'Attenzione, l'usurpatore di Shadowdale risiede qui!
+fuggite quando e' ancora possibile!'... ma anche Yevaud pare avere un suo
+superiore... o almeno cosi ti pare di intuire.
+Uscite: South.
+[Diritto: Kyrus] Il cadavere di Yevaud giace al suolo.
+Vedi una piccola fiala piena di liquido color argento. [6]
+C'e` la testa mozzata di il ragno etereo qui in terra.
+Un pezzo della ragnatela giace qui a terra.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]ll
+get all 1.cadavere
+get all 1.testa
+Prendi una cappa viola da il cadavere di Yevaud.
+Prendi elmo nero da il cadavere di Yevaud.
+Prendi anello azzurro da il cadavere di Yevaud.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]
+La testa mozzata di il ragno etereo non e` un contenitore.
+
+[H60%] [2603/3641] [660/708] [200/200] [CF80]s
+Un filo della ragnatela eterea - Foresta #6755 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati ... verso nord avverti il ruggito imponente di quella che
+sembra una creatura massiccia ...
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Tana di Yevaud
+East - Sulla ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]e
+Sulla ragnatela - Foresta #6747 [S]
+La ragnatela prosegue fitta tra gli alberi, difficile orientarsi...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - La cima tranquilla dell'albero
+West - Un filo della ragnatela eterea
+Down - La base della ragnatela
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]e
+La cima tranquilla dell'albero - Foresta #6746 [S]
+Ti ritrovi su di una cima abbastanza tranquilla dell'albero ... verso il basso
+intravedi numerosi sentieri familiari che possono ricondurre a Shadowdale,
+anche se effettivamente noti qualcosa di strano in quella direzione...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Sulla ragnatela
+Down - Il sinistro sentiero nella foresta
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]e
+Un filo della ragnatela eterea - Foresta #6745 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Un altro ramo di albero
+South - La stanza di Ki-Rin
+West - La cima tranquilla dell'albero
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]e
+Un altro ramo di albero - Foresta #6741 [S]
+Ancora una volta la ragnatela si incrocia con il ramo dell'albero ... riesci a
+intravedere quella che potrebbe essere la dimora di un qualche genere di
+creatura ...
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Il sottile filo
+South - La tana dell'uccello ragno
+West - Un filo della ragnatela eterea
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]e
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+South - La stanza principale delle larve
+West - Un altro ramo di albero
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]s
+La stanza principale delle larve - Foresta #6740 [S]
+Un bozzolo piu' imponente sembra risiedere qui ... ci sono resti di insetti
+e larve sparsi ovunque ... insieme a pezzi e frammenti di armi ed armature ...
+Uscite: North.
+Un dragone che sbuffa nervosamente e' qui e pare infastidito dalla tua presenza. [Liv 29]
+-----------------
+Uscite visibili:
+North - Il sottile filo
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]n
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+South - La stanza principale delle larve
+West - Un altro ramo di albero
+-----------------
+
+[H60%] [2603/3641] [660/708] [200/200] [cF80]
+[  UI  ] autoattack » aa » ragno
+[  UI  ] bash » mind 'schiaffo violento' #ragno
+l
+
+La mano di forza si apre impatta brutalmente il ragno etereo, sbattendolil ragno etereo in terra con uno schiaffo!
+[387S]
+Tramortita dagli eventi, il ragno etereo ha bisogno di un po` di tempo per riprendersi. 
+Hai ucciso il ragno etereo! R.I.P. 
+L'urlo di morte di il ragno etereo ti gela il sangue nelle vene. 
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 1/6
+Ricevi 8500 punti esperienza.
+
+[H660%] [2603/3641] [630/708] [200/200] [CF80]w
+
+Sei di nuovo pienamente vulnerabile al controllo! 
+
+[H560%] [2603/3641] [630/708] [200/200] [cF80]
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Diritto: Kyrus] Il cadavere di il ragno etereo giace al suolo.
+
+[H560%] [2603/3641] [630/708] [200/200] [cF80]
+Un altro ramo di albero - Foresta #6741 [S]
+Ancora una volta la ragnatela si incrocia con il ramo dell'albero ... riesci a
+intravedere quella che potrebbe essere la dimora di un qualche genere di
+creatura ...
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Il sottile filo
+South - La tana dell'uccello ragno
+West - Un filo della ragnatela eterea
+-----------------
+
+[H560%] [2603/3641] [630/708] [200/200] [cF80]e
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Diritto: Kyrus] Il cadavere di il ragno etereo giace al suolo.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+South - La stanza principale delle larve
+West - Un altro ramo di albero
+-----------------
+
+[H560%] [2603/3641] [630/708] [200/200] [cF80]e
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24] [2]
+-----------------
+Uscite visibili:
+North - Attraverso gli alberi
+East - Sopra le nuvole
+West - Il sottile filo
+-----------------
+
+[H560%] [2603/3641] [630/708] [200/200] [cF80]
+[  UI  ] autoattack » aa » ragno
+[  UI  ] bl » mind 'colpo psichico' #ragno
+l
+
+La tua mente si apre per un istante all'infinito! [Permanente]
+Colpisci la mente di il ragno lupo con un'esplosione di energia psionica! [318S]
+Hai ucciso il ragno lupo! R.I.P. 
+L'urlo di morte di il ragno lupo ti gela il sangue nelle vene. 
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 2/6
+Ottieni 90 monete d'oro e ricevi 7700 punti esperienza.
+
+[H5Lightspeed!] [2603/3641] [630/708] [170/200] [CF80]
+[  UI  ] autoattack » aa » ragno (LightSpeed)
+[  UI  ] lampo » mind 'lampo di energia' #ragno
+[  UI  ] bl » mind 'colpo psichico' #ragno
+l
+
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di il ragno lupo giace al suolo.
+[Diritto: Kyrus] [Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+
+[H4Lightspeed!] [2603/3641] [630/708] [170/200] [cF80]
+Il tuo pensiero viaggia alla velocita della luce! [Success]
+Il tuo assalto psionico disintegra la mente di il ragno lupo, definitivamente. [1180S]
+Hai ucciso il ragno lupo! R.I.P. 
+L'urlo di morte di il ragno lupo ti gela il sangue nelle vene. 
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 3/6
+Ricevi 7700 punti esperienza.
+
+[H4] [2603/3641] [605/708] [170/200] [CF80]
+Non c'e` nessuno qui con questo nome.
+
+[H4] [2603/3641] [605/708] [170/200] [CF80]
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di il ragno lupo giace al suolo. [2]
+
+[H4] [2603/3641] [605/708] [170/200] [CF80]look
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di il ragno lupo giace al suolo. [2]
+
+[H4] [2603/3641] [605/708] [170/200] [CF80]n
+Attraverso gli alberi - Foresta #6732 [S]
+Questa parte della ragnatela si incrocia con alcuni rami di alcuni alberi
+.. noti sparse un po' ovunque numerose foglie e resti di creature.
+Uscite: East, South.
+[Obiettivo] Il ragno etereo e' qui, in transito verso universi paralleli. [Liv 25]
+Il Quasit ti guarda in modo minaccioso muovendosi senza sosta. (invisibile) [Liv 26]
+Questo schiavo umano lavora incessantemente. [Liv 32]
+Un orco e' bloccato nella ragnatela e non puo' muoversi. [Liv 22]
+-----------------
+Uscite visibili:
+East - La base della ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[H3] [2603/3641] [605/708] [170/200] [cF80]
+[  UI  ] mfe » mind 'manipola fiamme' espandi
+Le tue fiamme mentali riducono il ragno etereo in un mucchietto di carbone [557LS]
+Le tue fiamme mentali riducono il Quasit in un mucchietto di carbone [724CS]
+La tue fiamme mentali investono lo schiavo di Arachnos bruciandolo [699 !CS]
+Le tue fiamme mentali riducono un orco in un mucchietto di carbone [428S]
+Hai ucciso il ragno etereo! R.I.P. 
+L'urlo di morte di il ragno etereo ti gela il sangue nelle vene. 
+Hai ucciso il Quasit! R.I.P. 
+L'urlo di morte di il Quasit ti gela il sangue nelle vene. 
+Hai ucciso un orco! R.I.P. 
+L'urlo di morte di un orco ti gela il sangue nelle vene. 
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 4/6
+Ottieni 212 monete d'oro e ricevi 23900 punti esperienza.
+
+[H3] [2603/3641] [580/708] [150/200] [CF75]
+
+Lo schiavo di Arachnos ti colpisce con forza una volta sulla gamba destra. [23r]{138CS}
+Hai ucciso lo schiavo di Arachnos! R.I.P. 
+L'urlo di morte di lo schiavo di Arachnos ti gela il sangue nelle vene. 
+Ottieni 118 monete d'oro e ricevi 16500 punti esperienza.
+
+[H2] [2580/3641] [580/708] [150/200] [CF74]look
+Attraverso gli alberi - Foresta #6732 [S]
+Questa parte della ragnatela si incrocia con alcuni rami di alcuni alberi
+.. noti sparse un po' ovunque numerose foglie e resti di creature.
+Uscite: East, South.
+[Diritto: Kyrus] Il cadavere di lo schiavo di Arachnos giace al suolo.
+[Diritto: Kyrus] Il cadavere di il ragno etereo giace al suolo.
+[Diritto: Kyrus] Il cadavere di il Quasit giace al suolo.
+[Diritto: Kyrus] Il cadavere di un orco giace al suolo.
+
+[H2] [2580/3641] [580/708] [150/200] [CF74]e
+La base della ragnatela - Foresta #6731 [S]
+Numerosi fili della ragnatela convergono in questo punto... i nodi che legano
+questi fili tremano dentro questo etere ... numerose creature volano in questo
+luogo; insetti di ogni tipo, pegasi alati e cuccioli di drago fluttuano in
+questo luogo etereo.. ci sono alcune uscire che vanno in altrettante
+direzioni.
+Uscite: South, West, Up, Down.
+[Obiettivo] Il ragno lupo e' qui leccandosi le zampe insanguinate. [Liv 24]
+[Obiettivo] Il ragno fuco e' qui di guardia. [Liv 22]
+-----------------
+Uscite visibili:
+South - L'ingresso della Ragnatela Eterea
+West - Attraverso gli alberi
+Up - Su una nuvola
+Down - La piccola mangiatoia di vermi
+-----------------
+
+[H2] [2580/3641] [580/708] [150/200] [CF74]
+[  UI  ] mfe » mind 'manipola fiamme' espandi
+Le tue fiamme mentali riducono il ragno lupo in un mucchietto di carbone [516S]
+Le tue fiamme mentali riducono il ragno fuco in un mucchietto di carbone [615LS]
+Hai ucciso il ragno lupo! R.I.P. 
+L'urlo di morte di il ragno lupo ti gela il sangue nelle vene. 
+Hai ucciso il ragno fuco! R.I.P. 
+L'urlo di morte di il ragno fuco ti gela il sangue nelle vene. 
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 5/6
+[La Prima Missione di ogni buon RPG] Uccidi gli aracnidi: 6/6
+[La Prima Missione di ogni buon RPG] Hai completato l'obiettivo!
+Hai completato La Prima Missione di ogni buon RPG!
+Ora puoi usare missione <completa> <numero> per ottenere le tue ricompense!
+Ottieni 241 monete d'oro e ricevi 13800 punti esperienza.
+
+[H1] [2580/3641] [555/708] [130/200] [CF69]
+
+Puoi di nuovo utilizzare mano di energia.
+
+[H] [2580/3641] [555/708] [130/200] [cF69]look
+La base della ragnatela - Foresta #6731 [S]
+Numerosi fili della ragnatela convergono in questo punto... i nodi che legano
+questi fili tremano dentro questo etere ... numerose creature volano in questo
+luogo; insetti di ogni tipo, pegasi alati e cuccioli di drago fluttuano in
+questo luogo etereo.. ci sono alcune uscire che vanno in altrettante
+direzioni.
+Uscite: South, West, Up, Down.
+[Diritto: Kyrus] Il cadavere di il ragno lupo giace al suolo.
+[Diritto: Kyrus] Il cadavere di il ragno fuco giace al suolo.
+
+[H] [2580/3641] [555/708] [130/200] [cF69]track ragnouigo 3001
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [2580/3641] [555/708] [130/200] [cF69]
+Non riesci a trovare tracce.
+
+[H] [2580/3641] [555/708] [130/200] [cF69]uigo 3001
+[  UI  ] Prosegui lungo il percorso andando verso west
+[  UI  ] Prosegui lungo il percorso andando verso south
+Attraverso gli alberi - Foresta #6732 [S]
+Questa parte della ragnatela si incrocia con alcuni rami di alcuni alberi
+.. noti sparse un po' ovunque numerose foglie e resti di creature.
+Uscite: East, South.
+[Diritto: Kyrus] Il cadavere di lo schiavo di Arachnos giace al suolo.
+[Diritto: Kyrus] Il cadavere di il ragno etereo giace al suolo.
+[Diritto: Kyrus] Il cadavere di il Quasit giace al suolo.
+[Diritto: Kyrus] Il cadavere di un orco giace al suolo.
+-----------------
+Uscite visibili:
+East - La base della ragnatela
+South - Un filo della ragnatela eterea
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [cF69]
+Un filo della ragnatela eterea - Foresta #6735 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiate.
+Uscite: North, East, West.
+[Diritto: Kyrus] Il cadavere di il ragno lupo giace al suolo. [2]
+-----------------
+Uscite visibili:
+North - Attraverso gli alberi
+East - Sopra le nuvole
+West - Il sottile filo
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso west
+[  UI  ] Prosegui lungo il percorso andando verso west
+Il sottile filo - Foresta #6736 [S]
+E' molto ventoso qui, anche perche' sei molto vicino alle nuvole .. eppure
+ti sembra abbastanza sicuro e solido per muoverti
+Uscite: East, South, West.
+[Diritto: Kyrus] Il cadavere di il ragno etereo giace al suolo.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+South - La stanza principale delle larve
+West - Un altro ramo di albero
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un altro ramo di albero - Foresta #6741 [S]
+Ancora una volta la ragnatela si incrocia con il ramo dell'albero ... riesci a
+intravedere quella che potrebbe essere la dimora di un qualche genere di
+creatura ...
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Il sottile filo
+South - La tana dell'uccello ragno
+West - Un filo della ragnatela eterea
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso west
+Un filo della ragnatela eterea - Foresta #6745 [S]
+Questa e' un'altra intersezione della ragnatela eterea che ti circonda ..
+varie creature sembrano come ipnotizzate dai suoi filamenti e finiscono per
+restarne invischiati
+Uscite: East, South, West.
+-----------------
+Uscite visibili:
+East - Un altro ramo di albero
+South - La stanza di Ki-Rin
+West - La cima tranquilla dell'albero
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso down
+La cima tranquilla dell'albero - Foresta #6746 [S]
+Ti ritrovi su di una cima abbastanza tranquilla dell'albero ... verso il basso
+intravedi numerosi sentieri familiari che possono ricondurre a Shadowdale,
+anche se effettivamente noti qualcosa di strano in quella direzione...
+Uscite: East, West, Down.
+-----------------
+Uscite visibili:
+East - Un filo della ragnatela eterea
+West - Sulla ragnatela
+Down - Il sinistro sentiero nella foresta
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+
+Lasci Arachnos, entrando in Quickling e Rhyiana.
+
+Il sinistro sentiero nella foresta - Foresta #6201 [S]
+Percorri uno strano sentiero che si inoltra nella foresta.
+Sulla sinistra si sviluppa un bellissimo bosco popolato da piccoli animali,
+mentre il sentiero piega verso destra conducendoti ben presto in una realta'
+assai diversa. La fitta vegetazione e' ora molto meno accogliente, e il
+silenzio che ti circonda ti induce a muoverti con prudenza. Al centro del
+sentiero un enorme albero porta sul tronco strani segni.
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - Il sentiero sinistro
+South - Nella palude
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso east
+
+Lasci Quickling e Rhyiana, entrando in Elfo Sgozzato e Warren.
+
+Nella palude - Palude #4412 [S]
+Sei immerso fino alle ginocchia in una melma nerastra. Odi strano sibili ma
+non vedi nulla nella sporca atmosfera che ti circonda...
+Uscite: North, East, South, West.
+Un gigantesco e velenoso ragno e' qui. [Liv 8]
+-----------------
+Uscite visibili:
+North - Il sinistro sentiero nella foresta
+East - Nella palude
+South - Nella palude
+West - Nella palude
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Nella palude - Palude #4409 [S]
+Sei immerso fino alle ginocchia in una melma nerastra. Odi strano sibili ma
+non vedi nulla nella sporca atmosfera che ti circonda...
+Uscite: East, South, West.
+Un pericoloso warg e' qui, ringhiando rabbiosamente contro di te. [Liv 5] [2]
+-----------------
+Uscite visibili:
+East - Nella palude
+South - Nella palude
+West - Nella palude
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+Nella palude - Palude #4408 [S]
+Sei immerso fino alle ginocchia in una melma nerastra. Odi strano sibili ma
+non vedi nulla nella sporca atmosfera che ti circonda...
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Nella palude
+East - Nella palude
+South - Al bordo della palude
+West - Nella palude
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+[  UI  ] Prosegui lungo il percorso andando verso south
+Al bordo della palude - Pianura #4407 [S]
+Mentre verso sud senti il rumore delle acque del Tiberis, verso nord si stende
+una desolata palude nera, immobile e sileziosa... Ad est vedi ergersi sul
+bordo della palude una strana costruzione, da un pennone che si trova nel
+cortile antestante alla costruzione pende qualcosa.
+Uscite: North, East, South.
+-----------------
+Uscite visibili:
+North - Nella palude
+East - L'insegna della Locanda
+South - Il ponte dei disperati
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+Il ponte dei disperati - Pianura #4406 [S]
+Questo antico ponte attraversa il fiume Tiberis in un punto particolarmente
+alto e pericoloso. La corrente scorre veloce e tumultuosa sollevando spruzzi
+di spuma fino al bordo del ponte ove, a causa dell'erosione del tempo, le
+ringhiere sono del tutto mancanti.
+Uscite: North, South, Down.
+-----------------
+Uscite visibili:
+North - Al bordo della palude
+South - La via del mare
+Down - Nel canale
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso west
+La via del mare - Pianura #4405 [S]
+La strada qui costeggia il fiume Tiberis che scorre placido verso 
+ovest. Una biforcazione conduce ad un ponte sul fiume verso nord.
+C'e' un cartello all'incrocio.
+Uscite: North, East, West.
+-----------------
+Uscite visibili:
+North - Il ponte dei disperati
+East - La via del mare
+West - La via del mare
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+La via del mare - Pianura #4422 [S]
+La strada si allontana dalla sponda del fiume inoltrandosi nelle pinete
+circostanti e piegando verso sud ovest.
+Uscite: East, South.
+-----------------
+Uscite visibili:
+East - La via del mare
+South - La via del Mare
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso west
+La via del Mare - Pianura #4423 [S]
+La via per il porto di Alma prosegue ora decisa verso ovest in mezzo a
+coltivazioni e boschi lussureggianti.
+Uscite: North, West.
+-----------------
+Uscite visibili:
+North - La via del mare
+West - La via del Mare
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso north
+La via del Mare - Pianura #4424 [S]
+La via prosegue ora decisa verso ovest in mezzo a coltivazioni e boschi
+lussureggianti Verso nord un buio sentierino si inoltre in una parte piu'
+fitta ed abbandonata del bosco...
+Uscite: North, East, West.
+Cecilio e' qui con la sua ascia a tagliare legna. [Liv 5]
+-----------------
+Uscite visibili:
+North - Il bosco bruciato
+East - La via del Mare
+West - La via del Mare
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso north
+Il bosco bruciato - Foresta #4425 [S]
+Cammini per un po' in un largo sentiero che sbuca in un bosco bruciato e
+silente. Vi sono tracce non recenti del passaggio di molti uomini. Ad est
+intravedi una piccola torre nera.
+Uscite: North, East [porta] (chiuso), South, West.
+-----------------
+Uscite visibili:
+North - L'ingresso alla Gilda di Lama e Pietra
+East - Il Salone della Torre (chiuso)
+South - La via del Mare
+West - I resti della decuria
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso north
+
+Lasci Elfo Sgozzato e Warren, entrando in Le Gilde di Lumen et Umbra.
+
+L'ingresso alla Gilda di Lama e Pietra - Al chiuso #20025 [S]
+Di fronte a te si trova un edificio interamente costruito con grosse pietre
+grigie venate di rosso. Nella parete c'e' una grande entrata, non sbarrata da
+porte o cancelli. Sul lato destro dell'entrata e' scolpito nella roccia il
+regolamento della gilda, mentre sul lato sinistro una lista di nomi e' incisa
+sulla lama di un'enorme spada.
+Uscite: North, South.
+La Spada della gilda di Lama e Pietra e' qui.
+Biff, l'uccisore di Draghi e` qui, in piedi. [Liv 40]
+La bella Alistar e' qui davanti all'ingresso della gilda [Liv 50]
+-----------------
+Uscite visibili:
+North - Il Salone della Gilda di Lama e Pietra
+South - Il bosco bruciato
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso east
+Il Salone della Gilda di Lama e Pietra - Al chiuso #20026 [S]
+Sei in un salone a pianta pentagonale. In ogni angolo si trova uno scranno di
+legno. Sulla parte superiore di ogni parete c'e' posto per un affresco, ma
+solo uno e' realizzato. Sul soffitto la cupola e' dipinta.
+Uscite: East, South, West [porta] (chiuso).
+C'e' una grande bacheca piena di avvisi appesa al muro.
+Il Codice della gilda di Lama e Pietra e' qui. [2]
+Sirea, il saggio, e' pronto a condividere con te le sue conoscenze... [Liv 50]
+-----------------
+Uscite visibili:
+East - Il disco della vita
+South - L'ingresso alla Gilda di Lama e Pietra
+West - Il ripostiglio (chiuso)
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+Il disco della vita - Al chiuso #20027 [S]
+Ti trovi in un semplice salone a pianta rotonda. Al centro si trova un disco
+di pietra in equilibrio su di un fulcro. Sul disco siede uno strano essere
+umanoide. Vedi anche alcune rampe di scale ... una scende verso il basso e una
+sale verso l'alto.
+Uscite: North [porta] (chiuso), East, South, West, Up, Down.
+Valentina, la Maestra Curatrice ti guarda compassionevole... [Liv 50] (o)
+Giano il bifronte e' qui. [Liv 23]
+-----------------
+Uscite visibili:
+North - La bottega della gilda (chiuso)
+East - La Sala dei Portali
+South - La Sala degli Allenamenti
+West - Il Salone della Gilda di Lama e Pietra
+Up - La locanda
+Down - La Forgia di Lama e Pietra
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso east
+[  UI  ] ent nonritorno
+La Sala dei Portali - Al chiuso #20031 [S]
+Dopo pochi gradini entri in una piccola saletta circolare. Il soffitto e'
+stato riccamente affrescato con il firmamento celeste, mentre ai tuoi piedi
+trovi un tappeto soffice di lana grezza. Lungo la liscia parete di marmo
+bianco sono state scavate diverse nicchie. Ogni nicchia e' circondata da un
+portale di basalto viola che funge da cornice ad uno specchio perfettamente
+liscio. Sopra ogni nicchia una piccola placca di metallo color del bronzo
+riporta il nome di una differente localita'. Avvicinandoti ad uno degli
+specchi noti che lentamente la tua immagine riflessa scompare rivelandoti una
+scena nuova che a primo acchito ti sorprende e ti stupisce: e' come se
+guardassi attraverso un telescopio. In questo momento ti ricordi
+l'avvertimento di uno dei passati Capi Gilda....
+Uscite: West, Il punto di NON RITORNO.
+Steve L'Arcimago e' in attesa... [Liv 50] (o) (o) (o)
+-----------------
+Uscite visibili:
+West - Il disco della vita
+Il punto di NON RITORNO - Il punto di NON RITORNO
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+
+Lasci Le Gilde di Lumen et Umbra, entrando in Sanctum .
+
+Il punto di NON RITORNO - Acque Profonde #6658 [S]
+Sei all'estremita' est del grande oceano, ti sembra che l'acqua venga tutta
+attratta verso est dove cade in una specie di grande cascata...se non vuoi
+cascare anche tu vedi di evitare di andare verso est!
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - In mare aperto
+East - L'estremo est del mondo
+South - In mare aperto
+West - Isola dei Giganti
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso east
+[  UI  ] Prosegui lungo il percorso andando verso east
+L'estremo est del mondo - Acque Profonde #6659 [S]
+La corrente e il vento ti trascinano verso il limite est dell'enorme tavola
+che e' il mondo! Non c'e' modo di tornare indietro... stai per
+cadereeeeeeeeeeeeeeeeeeeeee.....
+Uscite: East.
+-----------------
+Uscite visibili:
+East - La terra degli esploratori delusi
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso north
+La terra degli esploratori delusi - Sconosciuto #6660 [S]
+Dopo essere caduto oltre il limite est del mondo, sei finito in cio' che
+sembra una sorta di immondezzaio. Vari resti di navi riposano qui in rovina,
+mentre alcuni marinai ed esploratori, che con te si trovano qui, non fanno
+altro che maledire un tale Cristoforo Colombo.
+Uscite: North, South.
+-----------------
+Uscite visibili:
+North - I corridoi dell'infinito
+South - Sala giochi di Karkas
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Prosegui lungo il percorso andando verso south
+I corridoi dell'infinito - Sconosciuto #6696 [S]
+Sei ovunque, e in nessun luogo. Togliti di qui prima di diventare pazzo.
+Uscite: North, East, South, West.
+-----------------
+Uscite visibili:
+North - Sul bordo del Vuoto Astrale
+East - Fiume delle Anime Perdute
+South - Il Foro Imperiale
+West - Un'abitazione privata
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+[  UI  ] Sei arrivato alla fine del percorso
+
+Lasci Sanctum , entrando in Alma.
+
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[H] [2580/3641] [555/708] [130/200] [F69]
+
+Recuperi rapidamente le tue forze. [182] [35] [40] 
+
+[H] [2762/3641] [590/708] [170/200] [F69]s
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [2762/3641] [590/708] [170/200] [F69]e
+apri porta e
+E` gia` aperta.
+
+[H] [2762/3641] [590/708] [170/200] [F69]e
+apri porta e
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [2762/3641] [590/708] [170/200] [F69]
+Non c'e` nulla da aprire in quella direzione.
+
+[H] [2762/3641] [590/708] [170/200] [F69]
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [2762/3641] [590/708] [170/200] [F69]missione
+
+Recuperi rapidamente le tue forze. [182] [30] 
+
+[H] [3030/3641] [708/708] [200/200] [F69]
+Diario delle missioni di Kyrus.
+
+Hai 1 missioni attive su un massimo di 25 possibili.
+1) La Prima Missione di ogni buon RPG (S.A.Q.) (Completa!)
+
+Uso: 
+- missione <numero> per visualizzare dettagli su una missione in corso.
+- missione <riassunto> per visualizzare un riassunto degli obiettivi attuali.
+- missione <abbandona> <numero> per abbandonare una missione in corso.
+- missione <completa> <numero> <ricompensa> per completare una missione.
+- missione <briefing> <bersaglio> <numero> per informazioni su una missione offerta.
+- missione <richiedi> <bersaglio> <numero> per accettare una missione offerta.
+
+Richiedere un briefing senza specificare il numero mostra l'elenco delle missioni possibili.
+Se non specifichi il numero della missione quando la richiedi, accetterai la prima nell'elenco.
+Se non ci sono ricompense da scegliere sul completamento, puoi omettere di specificarla.
+
+
+[H] [3030/3641] [708/708] [200/200] [F69]
+
+Recuperi rapidamente le tue forze. [182] 
+
+[H] [3212/3641] [708/708] [200/200] [F69]
+
+Recuperi rapidamente le tue forze. [182] 
+
+[H] [3394/3641] [708/708] [200/200] [F69]
+
+Recuperi rapidamente le tue forze. [182] 
+
+[H] [3576/3641] [708/708] [200/200] [F69]
+
+Recuperi rapidamente le tue forze. [65] 
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ legionario
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]missione completa 1
+Ottieni un Sesterzio di Bronzo.
+Ricevi 1000000 punti esperienza.
+
+[H] [3641/3641] [708/708] [200/200] [F69]missione completa 1 ricopensa
+Non hai missioni in corso da completare!
+
+[H] [3641/3641] [708/708] [200/200] [F69]missione
+Diario delle missioni di Kyrus.
+
+Hai 0 missioni attive su un massimo di 25 possibili.
+
+Uso: 
+- missione <numero> per visualizzare dettagli su una missione in corso.
+- missione <riassunto> per visualizzare un riassunto degli obiettivi attuali.
+- missione <abbandona> <numero> per abbandonare una missione in corso.
+- missione <completa> <numero> <ricompensa> per completare una missione.
+- missione <briefing> <bersaglio> <numero> per informazioni su una missione offerta.
+- missione <richiedi> <bersaglio> <numero> per accettare una missione offerta.
+
+Richiedere un briefing senza specificare il numero mostra l'elenco delle missioni possibili.
+Se non specifichi il numero della missione quando la richiedi, accetterai la prima nell'elenco.
+Se non ci sono ricompense da scegliere sul completamento, puoi omettere di specificarla.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [3641/3641] [708/708] [200/200] [F69]missione briefing f
+Friedrich, l'oste puo` offrirti le seguenti missioni:
+1) La Prima Missione di ogni buon RPG Ripetibile tra 0:59:15
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ ubriaco
+
+[H] [3641/3641] [708/708] [200/200] [F69]i
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+◁ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+Stai trasportando:
+[ 1] |U| un Sesterzio di Bronzo...E` indistruttibile!
+[ 2] |T| anello azzurro...E` in condizioni eccellenti
+[ 3] |T| elmo nero (invisibile)...Ha un alone luminoso...E` in condizioni eccellenti
+[ 4] |T| una cappa viola...E` in condizioni eccellenti
+[ 5] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 286 su 900 etti
+Oggetti in inventario : 5 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[H] [3641/3641] [708/708] [200/200] [F69]depo all
+Depositi 1 un Sesterzio di Bronzo.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]i
+Stai trasportando:
+[ 1] |T| anello azzurro...E` in condizioni eccellenti
+[ 2] |T| elmo nero (invisibile)...Ha un alone luminoso...E` in condizioni eccellenti
+[ 3] |T| una cappa viola...E` in condizioni eccellenti
+[ 4] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 285 su 900 etti
+Oggetti in inventario : 4 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco sorride felice.
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+apri porta w
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+apri porta e
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+apri porta w
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]s
+Platea Quadrata - Citta' #3002 [S]
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Uscite: North, East, South, West.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+North - ALMA CIVITAS
+East - La via del Mercato
+South - Platea Popolorum
+West - La via delle Gilde
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+legionario △
+guardia imperiale ◁
+
+[H] [3641/3641] [708/708] [200/200] [F69]n
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un legionario e' in cerca d'impiego. [Liv 34]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+apri porta e
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ ubriaco
+spazzino ◁
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+-----------------
+Uscite visibili:
+West - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco si conta gli spiccioli in tasca.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco saltella felice tutto intorno.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco sorride felice.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Friedrich, l'oste dice qualcosa a un ubriaco.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco si conta gli spiccioli in tasca.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco si lecca i baffi e sorride.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco saltella felice tutto intorno.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ ubriaco
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ legionario
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ legionario
+Friedrich, l'oste dice qualcosa a un ubriaco.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco si lecca i baffi e sorride.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▷ guardia imperiale
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ ubriaco
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+◁ guardia imperiale
+▷ ubriaco
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco guarda il mobile degli alcolici.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco sorride felice.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un ubriaco si conta gli spiccioli in tasca.
+▷ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco saltella felice tutto intorno.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco batte con simpatia la mano sulla spalla di Friedrich, l'oste.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Friedrich, l'oste dice qualcosa a un ubriaco.
+◁ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [3641/3641] [708/708] [200/200] [F69]look
+La taverna della Locanda - Negozio #3007 [S]
+Il locale comune e' molto caldo ed accogliente. Un largo e massiccio bancone
+e' posto lungo il lato nord della stanza, ed un efficiente locandiere serve
+un'assortita compagine di clienti. Molti tavoli in legno scuro e stagionato
+sono sparsi per la stanza ed occupati da avventori di tutti i tipi. Una
+quantita' di incisioni, scritte e arazzi conferisce al tutto un'atmosfera di
+antichita' vissuta inconfondibile. In fondo....ti senti a casa. Sul bancone
+spicca un cartello.
+Uscite: West.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3]
+[!] Friedrich, l'oste sta preparando alcuni vassoi dietro il bancone. [Liv 40]
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco si lecca i baffi e sorride.
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+apri porta w
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un legionario e' in cerca d'impiego. [Liv 34]
+Una nobile guardia imperiale e` qui in pattuglia. [Liv 54][Elite]
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+△ Seneca
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Il sole e` esattamente sopra di te.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+legionario ▷
+spazzino ▷
+△ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Seneca ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+spazzino ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Seneca ◁
+spazzino ◁
+spazzino ◁
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Seneca sta riflettendo sulla situazione.
+[Seneca] dice 'Dove e` scappato quel maledetto scrivano!?'
+▽ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▽ guardia imperiale
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Seneca picchietta il piede per terra con impazienza.
+spazzino ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un lieve vento magico avvolge Alma, per un istante soltanto.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Seneca ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+△ legionario
+ubriaco ◁
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+ubriaco ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+ubriaco ◁
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]i
+Stai trasportando:
+[ 1] |T| anello azzurro...E` in condizioni eccellenti
+[ 2] |T| elmo nero (invisibile)...Ha un alone luminoso...E` in condizioni eccellenti
+[ 3] |T| una cappa viola...E` in condizioni eccellenti
+[ 4] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 285 su 900 etti
+Oggetti in inventario : 4 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+spazzino ◁
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+legionario ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3641/3641] [708/708] [200/200] [F69]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3641/3641] [708/708] [200/200] [F69]ju -
+Distruggi - 
+
+Grazie per aver reso il mondo un po' piu' pulito!
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+ubriaco ▷
+
+[H] [3641/3641] [708/708] [200/200] [F69]i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F69]eq
+Stai usando:
+[ 1] <mano destra>       [T| 88|100%] l'anello degli Angeli
+[ 2] <mano sinistra>     [T| 87|100%] l'anello degli Angeli
+[ 3] <al collo>          [T| 83|100%] un simbolo sacro a Benem
+[ 4] <sul corpo>         [T| 77|100%] una corazza di scaglie di drago
+[ 5] <in testa>          [S| 88|100%] l'Elmo del Manipolatore dei Piani
+[ 6] <sulle gambe>       [A| 75| 99%] dei gambali decorati in oro
+[ 7] <ai piedi>          [S| 91|100%] gli Stivali del Guaritore dei Piani
+[ 8] <sulle mani>        [T| 68|100%] i Guanti degli Inferi
+[ 9] <sulle braccia>     [S| 91|100%] gli Spallacci del Manipolatore dei Piani
+[10] <come scudo>        [S| 95|100%] il Pavese del Difensore dei Piani
+[11] <attorno al corpo>  [T| 41|100%] una cappa di cristallo
+[12] <alla vita>         [S| 91|100%] la Cintura del Guaritore dei Piani
+[13] <polso destro>      [T| 87|100%] il bracciale degli Angeli Astrali
+[14] <polso sinistro>    [T| 87|100%] il bracciale degli Angeli Astrali
+[15] <impugnato>         [T|156|100%] MoonShatter, lo Scettro
+[16] <sulla schiena>     [A| 71|100%] un manto degli antichi tomi
+[17] <orecchio destro>   [A| 47|100%] un gioiello d'oro massiccio
+[18] <orecchio sinistro> [A| 50|100%] un orecchino d'argento brillante
+[19] <sul viso>          [A| 75|100%] una visiera d'oro massiccio
+[20] <come aura>         [T| 80|100%] Uno Strumento Misterioso Multifunzione
+
+Il livello di potenza medio del tuo equipaggiamento e` 78.
+
+Bonus Attivi Guaritore dei Piani:
+(2 pezzi): +8 Potere Magico
+
+Bonus Attivi Manipolatore dei Piani:
+(2 pezzi): +8 Potere Magico
+Puoi usare equipaggiamento <mancante> per visualizzare gli slot vuoti.
+Puoi usare equipaggiamento <statistiche> per una visualizzazione compatta degli effetti.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+▽ spazzino
+
+[H] [3641/3641] [708/708] [200/200] [F69]score
+Hai 133 anni e 15 mesi.
+Sei uno spettro, di classe Psionico.
+Hai 3641/3641 punti ferita, 708/708 mana e 200/200 energia.
+Hai 290224775 punti esperienza, di cui 90224775 volatili.
+Hai 438297 Monete d'Oro, 2987 Astralite, e 95766 Residuum.
+Hai 104296 Diamanti, 27896 Smeraldi, 75175 Rubini, e 75199 Zaffiri.
+Indossi un totale di 30 oggetti limitati, su un massimo di 36.
+Esperienza al prossimo traguardo:      90224775/100000000 (91%)      
+I tuoi livelli attuali sono Psionico:50 
+Ti presenti come Kyrus [Lava&Piega]
+Hai giocato per 46 giorni e 22 ore.
+Sei in piedi.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+Senti qualcuno biascicare qualcosa qui vicino.
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+Il Tempio delle Leggi - Tempio #3010 [S]
+In questa stanza c'e' una grande bacheca dove gli avventurieri di Alma possono
+lasciare i loro messaggi. Al lato della bacheca troneggia una grande statua.
+La stanza e' illuminata da tante piccole candele. Delle scale portano in alto,
+verso la Sala delle Leggi.
+Uscite: East, Up.
+C'e' una grande bacheca piena di avvisi appesa al muro.
+-----------------
+Uscite visibili:
+East - ALMA CIVITAS
+Up - La Sala delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]u
+La Sala delle Leggi - Al chiuso #3005 [S]
+C'e' una grossa placca di marmo che recita:   
+
+          REGOLAMENTO DI GIOCO
+
+Il Regolamento Generale di Lumen et Umbra puo' essere consultato alla voce HELP REGOLAMENTO. 
+Esso e' disponibile anche ai seguenti link:  
+
+ - Forum di LeU: http://leu.uaiz.it/forum/viewtopic.php?f=22&t=483 
+ - Versione PDF: https://tinyurl.com/y9hoajjd 
+
+Per le regole specifiche delle singole quest, digitare HELP REGOLAMENTO QUEST. 
+
+Di seguito si riportano alcune linee guida per il corretto comportamento in gioco.  
+
+Accettazione. Connettendosi su Lumen et Umbra, si e` tenuti a leggere e 
+rispettare il regolamento in corso. 
+Ogni violazione e` passibile di punizioni, piu` o meno severe, a seconda del tipo 
+e della reiterazione.
+
+Civilta`. Attacchi personali, illazioni e insulti riferiti ad altri personaggi e/o 
+ai loro giocatori sono vietati e sanzionabili.  
+E' tollerato unicamente lo sfotto` goliardico se accettato dalla controparte.  
+Sono vietati riferimenti politici o pseudo-politici di qualunque genere nei canali pubblici. 
+
+Turpiloquio. Evitate l'uso di linguaggio volgare, offensivo o blasfemo nei canali pubblici. 
+A tutela dei possibili utenti minori, sono categoricamente vietati nei canali pubblici i 
+riferimenti a link commerciali, pornografici, erotici, razzisti o comunque volgari. 
+
+Pthieving e PvP. E` vietato:
+- rubare e/o distruggere qualsiasi cosa appartenga ad un altro giocatore
+- mettere a rischio altri personaggi e il loro eq
+- lanciare su di loro incantesimi dannosi, inutili o con effetti negativi su altri personaggi
+- lanciare incantesimi benefici sui mob, al fine di danneggiare personaggi altrui. 
+Azioni atte a danneggiare o uccidere altri personaggi sono consentite solo nelle zone di PvP 
+(player versus player) ufficiali (battleground, arena, warzone). 
+
+Bug. L'uso di bug a proprio vantaggio non e' consentito dal regolamento. 
+Se trovate un bug o pensate di averne trovato uno, segnalatelo. 
+
+Pubblicita`. Non e' consentito pubblicizzare altri mud nelle terre di Lumen et Umbra. 
+Esistono molti luoghi per pubblicizzare il proprio mud, come MudinItaly o 
+MudConnect; gli altri mud (LeU compresa) non sono un luogo appropriato per farlo. 
+
+
+      Lo Staff di LeU vi augura una esperienza di gioco divertente, 
+      da vivere in un clima di lealta', correttezza e serenita'.
+          
+
+Uscite: Down.
+-----------------
+Uscite visibili:
+Down - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]d
+Il Tempio delle Leggi - Tempio #3010 [S]
+In questa stanza c'e' una grande bacheca dove gli avventurieri di Alma possono
+lasciare i loro messaggi. Al lato della bacheca troneggia una grande statua.
+La stanza e' illuminata da tante piccole candele. Delle scale portano in alto,
+verso la Sala delle Leggi.
+Uscite: East, Up.
+C'e' una grande bacheca piena di avvisi appesa al muro.
+-----------------
+Uscite visibili:
+East - ALMA CIVITAS
+Up - La Sala delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]n
+Il Foro Imperiale - Citta' #3001 [S]
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: North, East, South, West, Down.
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+-----------------
+Uscite visibili:
+North - La Piazza della Gloria
+East - Il Viale della Gioia
+South - ALMA CIVITAS
+West - Il prato
+Down - L'ingresso al Tempio della Conoscenza
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]uigo
+i
+Stai trasportando:
+[ 1] |T| la borsa della Via Lattea...E` indistruttibile!
+Tot. Peso trasportato  : 274 su 900 etti
+Oggetti in inventario : 1 su 50
+
+[H] [3641/3641] [708/708] [200/200] [F69]s
+ALMA CIVITAS - Citta' #3000 [S]
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: North, East [porta], South, West.
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+North - Il Foro Imperiale
+East - L'ingresso alla Taberna Viatoris
+South - Platea Quadrata
+West - Il Tempio delle Leggi
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+apri porta e
+E` gia` aperta.
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+L'ingresso alla Taberna Viatoris - Al chiuso #3006 [S]
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: East, West [porta], Up.
+Un legionario e' in cerca d'impiego. [Liv 34]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+East - La taverna della Locanda
+West - ALMA CIVITAS
+Up - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]u
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [3]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+-----------------
+Uscite visibili:
+East - L'ufficio dello Scriba
+Down - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+[un ubriaco] dice 'Non mi sento troppo bene...'
+
+[H] [3641/3641] [708/708] [200/200] [F69]e
+L'ufficio dello Scriba - Al chiuso #3009 [S]
+Praticamente una libreria fornitissima. Pile e pile di libri, manoscritti,
+pergamene ed altre strane cose riempiono fino al soffitto gli scaffali di
+legno massiccio. Hai la sensazione che lo scriba intento nel suo lavoro,
+conosca a memoria ogni singolo pezzo di pergamena che vedi. Qui e' dove gli
+avventurieri di passaggio possono lasciare note e messaggi agli altri amici e
+compagni. Un cartello e' poggiato sul banco dello scriba.
+Uscite: West.
+Lo Scriba di Alma smista la posta con efficienza. [Liv 51] (o)
+-----------------
+Uscite visibili:
+West - La Reception
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]w
+La Reception - Al chiuso #3008 [S]
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: East, Down.
+Un ubriaco canta allegro girovagando senza meta. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv 56]
+-----------------
+Uscite visibili:
+East - L'ufficio dello Scriba
+Down - L'ingresso alla Taberna Viatoris
+-----------------
+
+[H] [3641/3641] [708/708] [200/200] [F69]
+
+un ubriaco si lecca i baffi e sorride.
+
+[un ubriaco] dice 'Ho sentito dire che c'e' un grande tempio al di sotto del foro
+ove si nasconde un mago ricchissimo!'
+
+
+[H] [3641/3641] [708/708] [200/200] [F69]rent
+
+[Giulietta] ti dice 'L'affitto e` offerto gratuitamente agli avventurieri!'
+[Giulietta] ti dice 'Hai 39 oggetti con te, puoi conservarne un massimo di 400.'
+[Giulietta] ti dice 'Hai 30 oggetti preziosi, la tua cassaforte puo` ospitarne 51.'
+
+Giulietta mette le tue cose nella cassaforte e ti accompagna in stanza.
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+e
+    
+[ ALERT ] - Socket disconnesso.
+            Motivo: L'host remoto ha chiuso la connessione
+[ INFO ]  - Tempo di connessione: 00:13:29.586

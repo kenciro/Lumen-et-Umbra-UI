@@ -1,0 +1,2633 @@
+Log di sessione a partire 08:32:34 su lunedì, 10 giugno 2024.
+[  OK  ]  - Modulo Lua lfs (Lua File System) caricato.
+[  OK  ]  - Modulo Lua lua-zip caricato.
+[  OK  ]  - Modulo Lua rex_pcre caricato.
+[  OK  ]  - Modulo Lua sqlite3 caricato.
+[  OK  ]  - Modulo Lua lua-utf8 caricato.
+[  OK  ]  - Modulo Lua yajl caricato.
+[ INFO ] - Leggo il file di mappa. Versione: 20. File
+           "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2024-06-09#22-39-53map.dat",
+           attendere...
+[ INFO ]  - File di mappa letto con successo (0.07s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[  LUA  ] - object: <condenseMapLoad> funzione:<condenseMapLoad>
+            <attempt to call a nil value>
+[  OK  ]  - Mappa caricata correttamente (0s).
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[ INFO ] - Leggo il file di mappa. Versione: 20. File
+           "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2024-06-09#22-39-53map.dat",
+           attendere...
+[ INFO ]  - File di mappa letto con successo (0.03s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[  UI  ]  - Digitare [uihelp] per iniziare...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:6667 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:6667 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))        .____         ___________    ____ ___
+                 >-~ \~~/.\.<     |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<    |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<      |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>       |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\                \/            \/
+   ~      .~__________ '--'      .-               
+  '      : =  =  =  = \__   .-  ((    .-
+ :       |_______________\ ((_.-~ ~__((_______________
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  |
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.|
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.'
+
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  N - Entra nell'Accademia dei Newbie
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+Il Foro Imperiale - Citta'
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: Nord Est Sud Ovest Basso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+Placeholder, il famoso stregone maestro del tempo, e` qui pronto ad insegnarti. [Liv ??]
+
+- 508:508 263:263 193:193 193:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+- 508:508 263:263 193:193 193:200 [-] <nessuno>:* <nessuno>:* 251124>
+[  LUA  ] - error in event handler for gmcp.char:
+            <...mp/.mount_MudletncY4ar/mudlet-lua/lua/TableUtils.lua:17: table.is_empty: bad 
+argument #1 type (table expected, got nil!)>
+[  LUA  ] - error in event handler for gmcp.char:
+            <...mp/.mount_MudletncY4ar/mudlet-lua/lua/TableUtils.lua:17: table.is_empty: bad 
+argument #1 type (table expected, got nil!)>
+[  LUA  ] - error in event handler for gmcp.char:
+            <...mp/.mount_MudletncY4ar/mudlet-lua/lua/TableUtils.lua:17: table.is_empty: bad 
+argument #1 type (table expected, got nil!)>
+[  LUA  ] - error in event handler for gmcp.char:
+            <...mp/.mount_MudletncY4ar/mudlet-lua/lua/TableUtils.lua:17: table.is_empty: bad 
+argument #1 type (table expected, got nil!)>
+
+Recuperi rapidamente le tue forze. [7] 
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>who
+
+                            Giocatori su Lumen et Umbra
+                            ---------------------------
+                Iniziato Ps [L&P] : Kyrus uno svirfneblin Veggente
+
+Totale giocatori attivi visibili  : 1
+Massimo giocatori attivi visibili : 5
+
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>uia
+
+[  UI  ] Aliases
+----------------
+[ 1] [X] [as] » mind 'assalto psionico' &target
+[ 2] [X] [bl] » mind 'colpo psichico' &target
+[ 3] [X] [blink] » mind 'cancella la mente' &target
+[ 4] [X] [buff] » flame / lame / mfp / rin / minibuff
+[ 5] [X] [cani] » mind 'cannibalizzare'
+[ 6] [X] [cel] » mind 'riparazione cellulare'
+[ 7] [X] [cham] » mind 'camaleonte'
+[ 8] [X] [chiaro] » mind 'chiaroveggenza'
+[ 9] [X] [cr] » mind 'frantumazione psichica' &target
+[10] [X] [dro] » mind 'scarica di adrenalina'
+[11] [X] [ext] » mind 'percezione extrasensoriale'
+[12] [X] [flame] » mind 'mantello di fiamme'
+[13] [X] [g] » rem &bag=molte-tasche / get # &bag=molte-tasche / wear &bag=molte-tasche
+[14] [X] [ga] » get all
+[15] [X] [lame] » mind 'lame psioniche' / uik schia remove / uik as f3
+[16] [X] [lampo] » mind 'lampo di energia' &target
+[17] [X] [mano] » mind 'mano di energia' / uik as remove / uik schia f3
+[18] [X] [mf] » mind 'manipola fiamme'
+[19] [X] [mfc] » mind 'manipola fiamme' convoglia
+[20] [X] [mfe] » mind 'manipola fiamme' espandi
+[21] [X] [mfp] » mind 'manipola fiamme' potenzia
+[22] [X] [minibuff] » shield / dro / psi
+[23] [X] [morsa] » mind 'morsa brutale' &target
+[24] [X] [over] » mind 'mente oltre il corpo'
+[25] [X] [p] » rem &bag=molte-tasche / put # &bag=molte-tasche / wear &bag=molte-tasche
+[26] [X] [pi] » mind 'pensiero imponente' &target
+[27] [X] [psi] » mind 'invisibilita psichica'
+[28] [X] [pugno] » mind 'pugno serrato' &target
+[29] [X] [rin] » mind 'rinforzo psichico' &stat=des
+[30] [X] [schia] » mind 'schiaffo violento' &target
+[31] [X] [scry] » mind 'visione'
+[32] [X] [sense] » mind 'senso del pericolo'
+[33] [X] [shield] » mind 'scudo psichico'
+[34] [X] [ub] » mind 'colpo superiore'
+[35] [X] [vuoto] » mind 'vuoto mentale' &target
+[36] [X] [x] » exam
+
+uiv
+
+[  UI  ] Variabili predefinite
+------------------------------
+[ 1] &target
+
+[  UI  ] Variabili
+------------------
+[ 1] [X] &bag = molte-tasche
+[ 2] [X] &stat = des
+
+uik
+
+[  UI  ] Keybind associati ai Target
+------------------------------------
+[ 1] [X] <Ctrl+0> » o0 » non configurato
+[ 2] [X] <Ctrl+1> » t1 » &target = grottesca
+[ 3] [X] <Ctrl+2> » t2 » &target = massa
+[ 4] [X] <Ctrl+3> » t3 » &target = forma
+[ 5] [X] <Ctrl+4> » t4 » &target = goblin
+[ 6] [X] <Ctrl+F1> » g1 » non configurato
+[ 7] [X] <Ctrl+F2> » g2 » non configurato
+[ 8] [X] <Ctrl+F3> » g3 » non configurato
+[ 9] [X] <Ctrl+F4> » g4 » non configurato
+[10] [X] <Ctrl+F5> » g5 » non configurato
+[11] [X] <Ctrl+F6> » g6 » non configurato
+[12] [X] <Ctrl+F7> » g7 » non configurato
+[13] [X] <Ctrl+F8> » g8 » non configurato
+[14] [X] <Ctrl+F9> » g9 » non configurato
+[15] [X] <Ctrl+F10> » g0 » non configurato
+
+[  UI  ] Keybind associati agli Aliases
+---------------------------------------
+[ 1] [X] <F1> » [bl] » mind 'colpo psichico' &target
+[ 2] [X] <F2> » [cr] » mind 'frantumazione psichica' &target
+[ 3] [X] <F3> » [as] » mind 'assalto psionico' &target
+[ 4] [X] <F4> » [mfc] » mind 'manipola fiamme' convoglia
+[ 5] [X] <F5> » [mfe] » mind 'manipola fiamme' espandi
+[ 6] [X] <F6> » [ub] » mind 'colpo superiore'
+[ 7] [X] <F7> » [lampo] » mind 'lampo di energia' &target
+[ 8] [X] <F10> » [buff] » flame / lame / mfp / rin / minibuff
+[ 9] [X] <F11> » [minibuff] » shield / dro / psi
+[10] [X] <F12> » [cel] » mind 'riparazione cellulare'
+
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+Il giorno e` iniziato e la luce del sole comincia a splendere.
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+△ Seneca
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+Seneca alza le spalle sconsolatamente
+Seneca △
+
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] buff » flame
+[  UI  ]   » flame » mind 'mantello di fiamme'
+[  UI  ] buff » lame
+[  UI  ]   » lame » mind 'lame psioniche'
+[  UI  ]   » lame » uik schia remove
+[  UI  ] Nessun tasto rapido assegnato all'alias schia da rimuovere.
+
+[  UI  ]   » lame » uik as f3
+[  UI  ] Il tasto rapido è stato assegnato all'alias as.
+
+[  UI  ] buff » mfp
+[  UI  ]   » mfp » mind 'manipola fiamme' potenzia
+[  UI  ] buff » rin
+[  UI  ]   » rin » mind 'rinforzo psichico' &stat=des
+[  UI  ] buff » minibuff
+[  UI  ]   » minibuff » shield
+[  UI  ]       » shield » mind 'scudo psichico'
+[  UI  ]   » minibuff » dro
+[  UI  ]       » dro » mind 'scarica di adrenalina'
+[  UI  ]   » minibuff » psi
+[  UI  ]       » psi » mind 'invisibilita psichica'
+Perdi la tua concentrazione!
+Impari dai tuoi errori! Mantello Di Fiamme migliora. ( 58 / 100 ) 
+
+- 508:508 251:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Perdi la tua concentrazione!
+
+- 508:508 256:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 256:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Perdi la tua concentrazione!
+
+- 508:508 249:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [13] 
+
+- 508:508 262:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 262:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 262:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 262:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [1] 
+
+- 508:508 263:263 193:193 200:200 [-] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] buff » flame
+[  UI  ]   » flame » mind 'mantello di fiamme'
+[  UI  ] buff » lame
+[  UI  ]   » lame » mind 'lame psioniche'
+[  UI  ]   » lame » uik schia remove
+[  UI  ] Nessun tasto rapido assegnato all'alias schia da rimuovere.
+
+[  UI  ]   » lame » uik as f3
+[  UI  ] Il tasto rapido è stato assegnato all'alias as.
+
+[  UI  ] buff » mfp
+[  UI  ]   » mfp » mind 'manipola fiamme' potenzia
+[  UI  ] buff » rin
+[  UI  ]   » rin » mind 'rinforzo psichico' &stat=des
+[  UI  ] buff » minibuff
+[  UI  ]   » minibuff » shield
+[  UI  ]       » shield » mind 'scudo psichico'
+[  UI  ]   » minibuff » dro
+[  UI  ]       » dro » mind 'scarica di adrenalina'
+[  UI  ]   » minibuff » psi
+[  UI  ]       » psi » mind 'invisibilita psichica'
+Convochi un mantello di fiamme ad avvolgerti. {80a Permanente}
+
+- 508:508 238:263 193:193 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [13] 
+
+- 508:508 251:263 193:193 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Perdi la tua concentrazione!
+Impari dai tuoi errori! Lame Psioniche migliora. ( 50 / 100 ) 
+
+- 508:508 244:263 193:193 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [13] 
+
+- 508:508 257:263 193:193 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 257:263 193:193 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Concentri la tua energia mentale per potenziare il tuo fisico. [+2 Destrezza 20t]
+
+- 508:508 242:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 242:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 242:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Non hai ancora imparato questa abilita`!
+
+- 508:508 242:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [13] 
+
+- 508:508 255:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>eq
+Stai usando:
+[ 1] <mano sinistra>     [T|  7|100%] uno scintillante anello d'argento
+[ 2] <al collo>          [T|  3|100%] il mantello elfico
+[ 3] <sul corpo>         [C|  6|100%] un pettorale di piastre
+[ 4] <in testa>          [T|  3|100%] un elmo
+[ 5] <sulle gambe>       [T|  0|100%] un paio di pantaloni pesanti
+[ 6] <ai piedi>          [C|  3|100%] un paio di sandali grezzi
+[ 7] <sulle mani>        [T| 10|100%] un paio di guanti elfici
+[ 8] <sulle braccia>     [C|  1|100%] un leggero guardiabraccia
+[ 9] <alla vita>         [U|  2|100%] una elaborata cintura
+[10] <impugnato>         [U| 10|100%] una spada leggera del gladiatore
+
+Il livello di potenza medio del tuo equipaggiamento e` 2.
+
+
+- 508:508 255:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Recuperi rapidamente le tue forze. [8] 
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>eq stat
+Stai usando:
+[ 1] <mano sinistra>     [T|  7|100%]   5 Arm   1 Prc 
+[ 2] <al collo>          [T|  3|100%]   5 Arm   1 RMg   1 Prc   5 PfR 
+[ 3] <sul corpo>         [C|  6|100%]   6 Arm   5 RFs 
+[ 4] <in testa>          [T|  3|100%]   5 Arm   1 Mag 
+[ 5] <sulle gambe>       [T|  0|100%]   3 Arm 
+[ 6] <ai piedi>          [C|  3|100%]   1 Arm   3 Mv    3 MvR   3 RFs 
+[ 7] <sulle mani>        [T| 10|100%]   5 Arm   4 Prc   1 Prc   5 Arm 
+[ 8] <sulle braccia>     [C|  1|100%]   4 Arm   1 RTa   1 Prc 
+[ 9] <alla vita>         [U|  2|100%]   2 Arm   2 Vit   2 Crt 
+[10] <impugnato>         [U| 10|100%]   2d1     2 DTa   1 Mag   1 Prc   1 DPe   1 BSc 
+
+Il livello di potenza medio del tuo equipaggiamento e` 2.
+
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Senti alcune parole di strane preghiere.
+
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>l
+Il Foro Imperiale - Citta'
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: Nord Est Sud Ovest Basso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+Placeholder, il famoso stregone maestro del tempo, e` qui pronto ad insegnarti. [Liv ??]
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>lua saveMap()
+
+Seneca ▽
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+▽ Seneca
+
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>down
+
+Lasci Alma, entrando in Alma Nord.
+La sensazione di pericolo e` opprimente.
+
+L'ingresso al Tempio della Conoscenza - Citta'
+Di fronte a te si staglia il maestoso Tempio della Conoscenza,
+eretto per volere degli Dei affinche' i novizi potessero acquisire
+le conoscenze di base per sopravvivere ai pericoli del mondo.
+Forti colonne (exa colonne) sostengono l'ingresso di questo
+possente edificio marmoreo. Entra se hai bisogno di apprendere,
+qui sarai al sicuro da ogni minaccia.
+Se vuoi vedere un po' di colore digita: set ansi on.
+I colori sono la parte di LeU, se vuoi saperne di piu' digita
+help colori. Ora per continuare digita west.
+Uscite: Sud Ovest Alto
+-----------------
+Uscite visibili:
+Sud - Uno stretto cunicolo
+Ovest - All'interno del Tempio
+Alto - Il Foro Imperiale
+-----------------
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso south
+[  UI  ] Prosegui il percorso verso south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta! A nord ti sembra di
+scorgere un chiarore.
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - L'ingresso al Tempio della Conoscenza
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 201:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 200:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Sei arrivato alla fine del percorso
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>north
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>north
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>north
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta! A nord ti sembra di
+scorgere un chiarore.
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - L'ingresso al Tempio della Conoscenza
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 196:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 194:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>south
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Sud - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>go 3001
+Pardon?
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>uigo 3301
+[  UI  ] Prosegui il percorso verso south
+[  UI  ] Prosegui il percorso verso east
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta! Qui pero' piega ad
+angolo quasi retto.
+Uscite: Nord Est
+Un grosso ratto e' qui, alla ricerca di cibo. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Est - Uno stretto cunicolo
+-----------------
+grosso ratto △
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+- 508:508 263:263 192:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso east
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Est Ovest
+-----------------
+Uscite visibili:
+Est - Uno stretto cunicolo
+Ovest - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 191:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso east
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta!
+Uscite: Est Ovest
+-----------------
+Uscite visibili:
+Est - Uno stretto cunicolo
+Ovest - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 190:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Uno stretto cunicolo - Sottosuolo
+Un cunicolo prosegue nell'oscurita', chissa' dove porta! Verso sud ti sembra
+di vedere un chiarore.
+Uscite: Sud Ovest
+-----------------
+Uscite visibili:
+Sud - Il basamento nascosto
+Ovest - Uno stretto cunicolo
+-----------------
+
+- 508:508 263:263 189:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso south
+[  UI  ] Prosegui il percorso verso up
+
+Lasci Alma Nord, entrando in Elfo Sgozzato e Warren.
+
+Il basamento nascosto - Dungeon
+Ti trovi in un locale sotterraneo ricavato scavando in grande profondita' nel
+basamento dell'edificio di pietra nera. Comprendi che e' stato ricavato per un
+motivo e che l'edificio e' in realta' solo una copertura. Infatti una grossa
+porta metallica conduce ad ovest da qualche parte. Verso l'alto puoi
+raggiungere l'esterno attraverso una scala che porta ad una botola nascosta.
+Sulla parete orientale c'e' un grosso buco ed una galleria prosegue nel buio,
+mentre un'altra stretta galleria diparte verso nord. Non c'e' altro qui a
+parte una rozza scritta su un muro che attira la tua attenzione.
+Uscite: Nord Est Ovest [porta] (chiuso) Alto [botola] (chiuso)
+-----------------
+Uscite visibili:
+Nord - Uno stretto cunicolo
+Est - Un tunnel buio ed umido
+Ovest - Il cunicolo sotterraneo (chiuso)
+Alto - Dentro l'edificio nero (chiuso)
+-----------------
+
+- 508:508 263:263 188:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La botola e` chiusa.
+open botola 
+
+- 508:508 263:263 188:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+L'idea iniziale non funziona, passi del tempo a trovare la soluzione.
+Spingi la botola, liberando il percorso verso l'alto.
+
+- 508:508 263:263 188:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Speedwalk interrotto.
+uigo 3301
+[  UI  ] Prosegui il percorso verso up
+[  UI  ] Speedwalk interrotto.
+uigo 3301
+[  UI  ] Prosegui il percorso verso up
+[  UI  ] Speedwalk interrotto.
+Dentro l'edificio nero - Al chiuso
+Ti trovi all'interno dell'edificio in pietra nera. Tutto pare abbandonato ed
+anche il pavimento e' tristemente impolverato. Ci sono sparsi i vetri rotti
+delle finestre e senti lo scricchiolio della porta che continua a sbattere per
+il vento.
+Uscite: Ovest [porta] (chiuso) Basso
+-----------------
+Uscite visibili:
+Ovest - Davanti ad un edificio nero (chiuso)
+Basso - Il basamento nascosto
+-----------------
+
+- 508:508 263:263 187:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Non puoi andare da quella parte.
+
+- 508:508 263:263 187:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>uigo 3301
+[  UI  ] open w
+[  UI  ] Prosegui il percorso verso west
+Apri la porta, liberando il percorso verso ovest.
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Lasci Elfo Sgozzato e Warren, entrando in Alma Sud e Terme.
+
+Davanti ad un edificio nero - Citta'
+Ti trovi davanti ad un vecchio edificio di pietra nera che si trova verso est.
+Le finestre sono state divelte dalle loro sedi e alcune di esse giacciono per
+terra. La porta scricchiola al soffiare di un leggero vento. Forse un tempo
+questa costruzione avrebbe potuto ospitare alcune famiglie ma adesso e' solo
+un ammasso di pietre pericolanti disposte una sull'altra. Vedi anche un
+piccolo tempio seminascosto verso nord.
+Uscite: Nord [portone] (chiuso) Est [porta] Ovest
+Un gatto nero si muove agile qui attorno. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Casa del Bianco e del Nero (chiuso)
+Est - Dentro l'edificio nero
+Ovest - Fine del vicolo oscuro
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso west
+[  UI  ] Prosegui il percorso verso north
+Fine del vicolo oscuro - Citta'
+Sei piombato nell'oscurita'. Se possiedi una fonte di luce ora e' proprio il
+momento di usarla. Sei in un vicolo cieco. C'e' un silenzio irreale che ti
+circonda e l'aria si e' fatta molto tersa. "Questo e' il posto giusto per un
+agguato!" continui a ripetere a te stesso. Forse e' meglio andare via di qui.
+Ad est noti un piccolo edificio nero. Ad ovest c'e' una piccola bottega con
+un'insegna sbiadita, quasi non l'avevi notata. A sud c'e' una grossa struttura
+con una sagoma a forma di cavallo appesa alla tettoia di ingresso.
+Uscite: Nord Est Sud [recinto] Ovest [porta] (chiuso)
+Un pipistrello vampiro svolazza qui in giro. [Liv 2]
+[!] Un vecchietto dall'aria oscura e' qui seduto in un angolo a farsi gli affari suoi. [Liv 5]
+-----------------
+Uscite visibili:
+Nord - Una piccola piazza
+Est - Davanti ad un edificio nero
+Sud - Le stalle
+Ovest - La bottega dei ricordi perduti (chiuso)
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Lasci Alma Sud e Terme, entrando in Alma.
+
+Una piccola piazza - Citta'
+Il vicolo scuro che fino ad ora hai percorso arriva ad una piccola piazzetta
+che ospita un mercato diverso dal solito. I mercanti non strillano per
+attirare la gente verso le loro bancarelle, ma aspettano in silenzio che
+qualche curioso si faccia loro vicino. Cosa vendono non riesci proprio a
+immaginarlo anche se pensi che quello che qui si sta' facendo non sia proprio
+legale. Ad ovest sembra esserci un negozio di animali.
+Uscite: Nord Est Sud Ovest [porta]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+[!] Hangor e' qui, allestendo una bancarella per la vendita di cimeli per procura
+dei vari avventurieri. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Un vicolo oscuro
+Est - Il mercato nero
+Sud - Fine del vicolo oscuro
+Ovest - Il negozio degli animali
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso north
+[  UI  ] Prosegui il percorso verso west
+Un vicolo oscuro - Citta'
+Intorno a te c'e' un silenzio irreale, tenebre e freddo. Nell'oscurita' ti
+sembra di vedere dei movimenti furtivi. Verso ovest c'e' l'ingresso ad una
+locanda malfamata, mentre verso sud il vicolo continua immettendosi su di una
+piccola piazza. Una piccola insegna di legno sull'edificio ad est scricchiola
+dondolandosi su di un'asta di ferro. A nord vedi invece la sede della Gilda
+dei Viaggiatori.
+Uscite: Nord [porta] Est Sud Ovest
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+Una ragazza di facili costumi e' qui a mostrare le proprie grazie. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Gilda dei Viaggiatori
+Est - La locanda del Pirata Nero
+Sud - Una piccola piazza
+Ovest - Un vicolo oscuro
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Un vicolo oscuro - Citta'
+Sei entrato in uno scuro vicoletto che continua verso est. Guardando a sud
+vedi l'entrata alla oscura Gilda dei Ladri. Ma la tua attenzione e' attratta
+da altro in questo momento. Intorno a te c'e' un silenzio irreale, tenebre e
+freddo... Nell'oscurita' ti sembra di vedere dei movimenti furtivi... e riesci
+a percepire un cartello contro una parete.
+Uscite: Nord [porta] (chiuso) Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Ingresso (chiuso)
+Est - Un vicolo oscuro
+Sud - L'entrata alla Gilda dei Ladri
+Ovest - Platea Popolorum
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso west
+[  UI  ] Prosegui il percorso verso north
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un legionario e' in cerca d'impiego. [Liv ??]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso north
+Platea Quadrata - Citta'
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Uscite: Nord Est Sud Ovest
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv ??][Elite] (*) (*)
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - ALMA CIVITAS
+Est - La via del Mercato
+Sud - Platea Popolorum
+Ovest - La via delle Gilde
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso north
+ALMA CIVITAS - Citta'
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: Nord Est [porta] Sud Ovest
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+-----------------
+Uscite visibili:
+Nord - Il Foro Imperiale
+Est - L'ingresso alla Taberna Viatoris
+Sud - Platea Quadrata
+Ovest - Il Tempio delle Leggi
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso north
+Il Foro Imperiale - Citta'
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: Nord Est Sud Ovest Basso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+Placeholder, il famoso stregone maestro del tempo, e` qui pronto ad insegnarti. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - La Piazza della Gloria
+Est - Il Viale della Gioia
+Sud - ALMA CIVITAS
+Ovest - Il prato
+Basso - L'ingresso al Tempio della Conoscenza
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso east
+La Piazza della Gloria - Citta'
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Uscite: Nord Est Sud Ovest
+Una guardia cittadina controlla la zona. [Liv ??] [2]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La via della Gloria
+Est - La via Pannonica
+Sud - Il Foro Imperiale
+Ovest - Viale degli Eroi
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Prosegui il percorso verso east
+
+Lasci Alma, entrando in Alma Nord.
+La sensazione di pericolo e` opprimente.
+
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+[  UI  ] Sei arrivato alla fine del percorso
+
+△ guardia pannonica
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+△ pannonico
+▽ guerriero pannonico
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+guardia pannonica ▷
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>l
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [3]
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+▽ pannonico
+
+Una farfalla pannonica ti vola vicino alla testa e poi svanisce.
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+pannonico ▷
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Scopri che un pannonico ha le sue mani nelle tue tasche.
+guardia pannonica ◁
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+▷ guardia pannonica
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+pannonico ◁
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+
+[Un pannonico] vi dice 'Oggi a me, domani a te!'
+
+▽ guardia pannonica
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+△ pannonico
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>l
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [3]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+△ guardia pannonica
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+◁ pannonico
+
+◁ guardia pannonica
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Scopri che un pannonico ha le sue mani nelle tue tasche.
+△ guerriero pannonico
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+guardia pannonica ▷
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+▷ guardia pannonica
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+
+Lasci Alma Nord, entrando in Alma.
+
+La Piazza della Gloria - Citta'
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Uscite: Nord Est Sud Ovest
+Una guardia cittadina controlla la zona. [Liv ??] [3]
+-----------------
+Uscite visibili:
+Nord - La via della Gloria
+Est - La via Pannonica
+Sud - Il Foro Imperiale
+Ovest - Viale degli Eroi
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+
+Lasci Alma, entrando in Alma Nord.
+La sensazione di pericolo e` opprimente.
+
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+
+Senti delle strane risate provenire da qui vicino.
+
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La Stazione di Posta - Al chiuso
+C'e' molta animazione nell'atrio della Stazione di Posta.  Gente
+sorridente ed ammiccante entra nella locazione vicina per
+raggiungere le mete piu' disparate. C'e' un manifesto appeso
+ad una parete ed un elenco appeso ad un'altra parete.
+Non hai mai visto tanta confusione...
+Uscite: Est Ovest
+-----------------
+Uscite visibili:
+Est - L'interno della Stazione di Posta
+Ovest - La piazzetta Pannonica
+-----------------
+
+- 508:508 263:263 201:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+e
+L'interno della Stazione di Posta - Al chiuso
+Sei all'interno della Stazione di Posta. 
+Appeso alla parete c'e' un grande CARTELLO con le
+ISTRUZIONI per utilizzare il servizio di collegamenti
+pannonico-koatto.   Dopo aver seguito le istruzioni puoi
+muoverti verso est nella sezione partenze per raggiungere
+la destinazione prescelta. C'e' parekkia gente e  molto
+movimento.
+Uscite: Est Ovest
+L'addetto alle partenze e' qui ad organizzare e far rispettare gli orari. [Liv 10]
+-----------------
+Uscite visibili:
+Est - Sezione Partenze
+Ovest - La Stazione di Posta
+-----------------
+
+- 508:508 263:263 200:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Sezione Partenze - Al chiuso
+Hai raggiunto la sezione partenze, tra poco ti ritroverai davanti
+alla destinazione prescelta, devi solo stare fermo ed aspettare,
+se hai seguito le istruzioni in maniera corretta non avrai nessun
+problema, solo una piccola attesa perche' il servizio e' in via
+sperimentale e quindi un po' lento.
+Uscite: Ovest
+-----------------
+Uscite visibili:
+Ovest - L'interno della Stazione di Posta
+-----------------
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Il servizio che ti portera' nella zona prescelta e' in 
+funzione, una ulteriore piccola attesa e sarai sano
+e salvo a destinazione!
+Non ti resta che attendere!
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Manca pochissimo alla destinazione, anzi il viaggio
+che stai intraprendendo e' praticamente finito, sei
+quasi arrivato, pazienta ancora un secondo.
+Uscite: Ovest
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Nella latrina - Al chiuso
+KABOOMMM!!!! CRASH!!! SLURP!! BLEAAAAAHHHHH!!
+Una immensa quantita' di letame e di liquame puzzolente
+si rovescia dall'alto su di te! Odi risate sguaiate e motti salaci.
+C'e' mezza popolazione dei bassifondi qui a ridere di te!
+Evidentemente la Stazione di Posta e' poko piu' di uno
+scherzo e tutti si divertono come matti nel vedere intrepidi
+e spavaldi avventurieri come te coperti di schifezze e
+puzzolenti come caproni nelle latrine sotto le stalle. 
+Non ti crucciare, prima o poi ci cascan tutti ed e' sempre meglio
+di una trappola mortale.
+Se comunque ti sentissi un po' idiota.. beh... che dire? 
+Hai perfettamente ragione.....
+Uscite: Alto
+-----------------
+Uscite visibili:
+Alto - Gli Stallaggi
+-----------------
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>u
+Gli Stallaggi - Citta'
+Recinti e grandi stalle accolgono numerorissimi cavalli.
+Un luogo dove regna sovrano un odore acuto di fieno e biada.
+Qui puoi smontare dalla tua cavalcatura o trovarne di nuove.
+Uscite: Ovest
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+-----------------
+Uscite visibili:
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico, se sei una
+persona seriosa e composta te ne viene sconsigliata la frequentazione, se
+invece sei ricco di immaginazione e ben disposto questo posto fa al caso tuo.
+Un pesante obelisco di marmo e' stato eretto all'inizio della strada.
+Uscite: Nord Est Sud
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - La via Pannonica
+Est - Gli Stallaggi
+Sud - La Piazza del Mercato
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La via Pannonica - Citta'
+La strada anche qui e' ..alquanto pittoresca e quasi fastidiosa per gli
+accostamenti cromatici e la forma degli edifici che vi si affacciano. Comunque
+piano piano ti stai abituando a queste 'smargiassate' edilizie che pare vadano
+tanto di moda.
+Uscite: Nord Est Sud
+-----------------
+Uscite visibili:
+Nord - La piazzetta Pannonica
+Est - Il bazar delle Sirene
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La Stazione di Posta - Al chiuso
+C'e' molta animazione nell'atrio della Stazione di Posta.  Gente
+sorridente ed ammiccante entra nella locazione vicina per
+raggiungere le mete piu' disparate. C'e' un manifesto appeso
+ad una parete ed un elenco appeso ad un'altra parete.
+Non hai mai visto tanta confusione...
+Uscite: Est Ovest
+-----------------
+Uscite visibili:
+Est - L'interno della Stazione di Posta
+Ovest - La piazzetta Pannonica
+-----------------
+
+- 508:508 263:263 196:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+L'interno della Stazione di Posta - Al chiuso
+Sei all'interno della Stazione di Posta. 
+Appeso alla parete c'e' un grande CARTELLO con le
+ISTRUZIONI per utilizzare il servizio di collegamenti
+pannonico-koatto.   Dopo aver seguito le istruzioni puoi
+muoverti verso est nella sezione partenze per raggiungere
+la destinazione prescelta. C'e' parekkia gente e  molto
+movimento.
+Uscite: Est Ovest
+L'addetto alle partenze e' qui ad organizzare e far rispettare gli orari. [Liv 10]
+-----------------
+Uscite visibili:
+Est - Sezione Partenze
+Ovest - La Stazione di Posta
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La Stazione di Posta - Al chiuso
+C'e' molta animazione nell'atrio della Stazione di Posta.  Gente
+sorridente ed ammiccante entra nella locazione vicina per
+raggiungere le mete piu' disparate. C'e' un manifesto appeso
+ad una parete ed un elenco appeso ad un'altra parete.
+Non hai mai visto tanta confusione...
+Uscite: Est Ovest
+-----------------
+Uscite visibili:
+Est - L'interno della Stazione di Posta
+Ovest - La piazzetta Pannonica
+-----------------
+
+- 508:508 263:263 194:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La via Pannonica - Citta'
+La strada anche qui e' ..alquanto pittoresca e quasi fastidiosa per gli
+accostamenti cromatici e la forma degli edifici che vi si affacciano. Comunque
+piano piano ti stai abituando a queste 'smargiassate' edilizie che pare vadano
+tanto di moda.
+Uscite: Nord Est Sud
+-----------------
+Uscite visibili:
+Nord - La piazzetta Pannonica
+Est - Il bazar delle Sirene
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Il bazar delle Sirene - Negozio
+Uno strana accozzaglia di merce riunita alla rinfusa.
+Hai l'impressione che ci sia veramente di *tutto* qui.
+Un cartello messo dietro ad un bancone a forma di
+conchiglia attira la tua attenzione. Sulla parete del
+negozio vedi un bellissimo quadro.
+Uscite: Ovest
+L'assistente di Dalila, anche lei vestita da sirena e' qui per servirti. [Liv ??]
+[!] Dalila, vestita da sirena e' qui ad un lato del bancone, con aria pensierosa. [Liv ??]
+-----------------
+Uscite visibili:
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>list
+Shanti ha in vendita:
+1) il canto della Sirena, per 300 Monete d'Oro. 
+2) un po' di sirena sott'olio, per 200 Monete d'Oro. 
+3) una scaglia di sirena, per 500 Monete d'Oro. 
+4) le lacrime di sirena, per 500 Monete d'Oro. 
+
+
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via Pannonica - Citta'
+La strada anche qui e' ..alquanto pittoresca e quasi fastidiosa per gli
+accostamenti cromatici e la forma degli edifici che vi si affacciano. Comunque
+piano piano ti stai abituando a queste 'smargiassate' edilizie che pare vadano
+tanto di moda.
+Uscite: Nord Est Sud
+-----------------
+Uscite visibili:
+Nord - La piazzetta Pannonica
+Est - Il bazar delle Sirene
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Il sole e` esattamente sopra di te.
+Il cielo si sta annuvolando.
+
+n
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 203:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+L'Ambasciata di Pannonia - Al chiuso
+Una strana stanza con una vasta scrivania e delle comode
+poltrone. Alle pareti una grande carta geografica, degli
+stendardi ed un grande quadro.
+Uscite: Nord
+L'ambasciatore e' qui..pare stia facendo finta di lavorare. [Liv 10]
+-----------------
+Uscite visibili:
+Nord - La via Pannonica
+-----------------
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Non puoi andare da quella parte.
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Non puoi andare da quella parte.
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Non puoi andare da quella parte.
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>look
+L'Ambasciata di Pannonia - Al chiuso
+Una strana stanza con una vasta scrivania e delle comode
+poltrone. Alle pareti una grande carta geografica, degli
+stendardi ed un grande quadro.
+Uscite: Nord
+L'ambasciatore e' qui..pare stia facendo finta di lavorare. [Liv 10]
+
+- 508:508 263:263 202:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 201:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Il Museo Pannonico - Al chiuso
+Sei all'interno di un vastissimo museo. E' STRACOLMO di opere di ogni tipo,
+per lo piu' quadri famosi, ma anche disegni con soggetti di vario genere,
+dagli animali ad altri non propriamente... adeguati a questo ambiente
+diciamo... Sono talmente tante che per osservarle tutte prova a scrivere
+parole a caso, magari qualcuna riesci a vederla entro l'anno :-) C'e' un
+grande cartello appeso ad una parete.
+Uscite: Sud
+-----------------
+Uscite visibili:
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 200:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 199:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Il Banco di Pannonia - Al chiuso
+Sembrava una catapecchia e invece pare nientemeno che
+una Banca!  L'interno comunque avrebbe bisogno di una
+buona intonacata e di arredi meno disastrati.
+Non usare i soliti: DEPOSIT, WITHDRAW o BALANCE
+ma leggi il cartello.
+Uscite: Sud
+Il cassiere e' qui a compiere diligentemente il suo lavoro. [Liv 10]
+-----------------
+Uscite visibili:
+Sud - La piazzetta Pannonica
+-----------------
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Non puoi andare da quella parte.
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+
+[Il cassiere pannonico] ti dice 'grazie di aver scelto la nostra banca!'
+
+
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>list
+Mi dispiace, ma non puoi farlo qui!
+
+- 508:508 263:263 198:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+w
+La piazzetta Pannonica - Citta'
+Sei nell'antica piazzetta pannonica. In realta' la piazza e' stata fatta di
+recente ma da allora nessuno si e' mai preoccupato di pulirla. Mentre cammini
+con gli occhi fissi al pavimento per stare attento a cosa pesti... TUMP!!! CHE
+BOTTA! Gli hai preso la targa? Oh Benem! Vedi stelle tutte intorno! Piano le
+stelle svaniskono lasciando posto a strani edifici.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Il Banco di Pannonia
+Est - La Stazione di Posta
+Sud - La via Pannonica
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La via Pannonica - Citta'
+La strada e' piena d'immondizia. Un tanfo orribile. Piano piano pero' ti
+abitui all'olezzo e kominci ad apprezzare le "bellezze" del quartiere
+pannonico. A nord vedi un bel museo, mentre a sud un edificio ospita
+l'ambasciata pannonica.
+Uscite: Nord Est Sud Ovest
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - Il Museo Pannonico
+Est - La piazzetta Pannonica
+Sud - L'Ambasciata di Pannonia
+Ovest - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La Piramide Marmorea - Citta'
+Davanti a te hai una splendida piramide interamente in marmo.  La
+leggenda vuole si trovi qui da prima della fondazione di Alma stessa,
+e che sia comparsa una notte portata qui da qualche demone.
+Ovviamente non c'e' nulla di certo in queste voci.
+Uscite: Sud
+-----------------
+Uscite visibili:
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Non puoi andare da quella parte.
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+Una guardia con le effigi pannonike controlla la zona. [Liv 18]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La piccola piazzetta - Citta'
+La strada pittoresca e colorata termina quasi improvvisamente
+in una piazzetta poco frequentata, non ci sono i colori e il
+chiasso del resto del quartiere Pannonico, anche se gli
+edifici rimangono fedeli al resto del quartiere.
+Un vecchio basamento arreda la piazzetta.
+Uscite: Nord
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10]
+La statua di Edmondo, capo dei Bretoni, e' qui a difendere la citta' dalle forze del male. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+Senti delle strane risate provenire da qui vicino.
+
+guardia pannonica ▽
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La Piramide Marmorea - Citta'
+Davanti a te hai una splendida piramide interamente in marmo.  La
+leggenda vuole si trovi qui da prima della fondazione di Alma stessa,
+e che sia comparsa una notte portata qui da qualche demone.
+Ovviamente non c'e' nulla di certo in queste voci.
+Uscite: Sud
+-----------------
+Uscite visibili:
+Sud - La via Pannonica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Non puoi andare da quella parte.
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Non puoi andare da quella parte.
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Non puoi andare da quella parte.
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+
+Senti delle strane risate provenire da qui vicino.
+
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+La via Pannonica - Citta'
+Qui inizia la via che porta allo "stravagante" quartiere pannonico. Se sei una
+persona ricca di immaginazione e disposta a subire scherzetti, questo posto fa
+al caso tuo. Un pesante obelisco di marmo e' stato eretto all'inizio della
+strada. Verso nord vedi una piramide.
+Uscite: Nord Est Sud Ovest
+Un Guerriero di Pannonia e' qui, grosso e puzzolente. [Liv 15]
+Un abitante della pannonia cammina distrattamente vicino a te. [Liv 10] [2]
+-----------------
+Uscite visibili:
+Nord - La Piramide Marmorea
+Est - La via Pannonica
+Sud - La piccola piazzetta
+Ovest - La Piazza della Gloria
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+
+Lasci Alma Nord, entrando in Alma.
+
+La Piazza della Gloria - Citta'
+La via della Gloria continua a nord e a sud. Le file di colonne e di alberi ai
+lati della strada s'interrompono solo per lasciare spazio all'imbocco di altre
+due strade creando una suggestiva piazza. Verso est inizia la via Pannonika
+che porta al quartiere omonimo, mentre verso ovest inizia il viale degli Eroi.
+Uscite: Nord Est Sud Ovest
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Una guardia cittadina controlla la zona. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - La via della Gloria
+Est - La via Pannonica
+Sud - Il Foro Imperiale
+Ovest - Viale degli Eroi
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Il Foro Imperiale - Citta'
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: Nord Est Sud Ovest Basso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+Placeholder, il famoso stregone maestro del tempo, e` qui pronto ad insegnarti. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - La Piazza della Gloria
+Est - Il Viale della Gioia
+Sud - ALMA CIVITAS
+Ovest - Il prato
+Basso - L'ingresso al Tempio della Conoscenza
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+ALMA CIVITAS - Citta'
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: Nord Est [porta] Sud Ovest
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Seneca sta riposando qui. [Liv ??][Elite] (*) (*)
+-----------------
+Uscite visibili:
+Nord - Il Foro Imperiale
+Est - L'ingresso alla Taberna Viatoris
+Sud - Platea Quadrata
+Ovest - Il Tempio delle Leggi
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Platea Quadrata - Citta'
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Uscite: Nord Est Sud Ovest
+Un legionario e' in cerca d'impiego. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - ALMA CIVITAS
+Est - La via del Mercato
+Sud - Platea Popolorum
+Ovest - La via delle Gilde
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Un legionario e' in cerca d'impiego. [Liv ??]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+
+
+[Nevio lo spazzino] dice 'Ho sentito dire che a nord di Alma ci sono templi e fortezze incredibili
+in cima
+alle montagne fiammeggianti! Si dice anche di una terribile sfida mortale, che nessuno e'
+mai riuscito a vincere! Bah continuiamo a spazzare, magari in un'altra vita, eh?'
+
+legionario △
+
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Uscite: Nord Sud
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+-----------------
+Uscite visibili:
+Nord - Platea Popolorum
+Sud - Via Meridionalis
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Verso un lato della strada, in basso
+noti una discarica. Senti il rumore dello scorrere dell'acqua verso est, ti
+giri e vedi una stradina che porta verso il fiume Lys.
+Uscite: Nord Est Sud Basso
+-----------------
+Uscite visibili:
+Nord - Via Meridionalis
+Est - Scendendo verso il fiume Lys
+Sud - Il Ponte Bianco
+Basso - La discarica
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Uscite: Nord Sud
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+-----------------
+Uscite visibili:
+Nord - Platea Popolorum
+Sud - Via Meridionalis
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Non puoi andare da quella parte.
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2] [2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+
+▽ spazzino
+
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Un vicolo oscuro - Citta'
+Sei entrato in uno scuro vicoletto che continua verso est. Guardando a sud
+vedi l'entrata alla oscura Gilda dei Ladri. Ma la tua attenzione e' attratta
+da altro in questo momento. Intorno a te c'e' un silenzio irreale, tenebre e
+freddo... Nell'oscurita' ti sembra di vedere dei movimenti furtivi... e riesci
+a percepire un cartello contro una parete.
+Uscite: Nord [porta] (chiuso) Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Ingresso (chiuso)
+Est - Un vicolo oscuro
+Sud - L'entrata alla Gilda dei Ladri
+Ovest - Platea Popolorum
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Un vicolo oscuro - Citta'
+Intorno a te c'e' un silenzio irreale, tenebre e freddo. Nell'oscurita' ti
+sembra di vedere dei movimenti furtivi. Verso ovest c'e' l'ingresso ad una
+locanda malfamata, mentre verso sud il vicolo continua immettendosi su di una
+piccola piazza. Una piccola insegna di legno sull'edificio ad est scricchiola
+dondolandosi su di un'asta di ferro. A nord vedi invece la sede della Gilda
+dei Viaggiatori.
+Uscite: Nord [porta] Est Sud Ovest
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+Una ragazza di facili costumi e' qui a mostrare le proprie grazie. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Gilda dei Viaggiatori
+Est - La locanda del Pirata Nero
+Sud - Una piccola piazza
+Ovest - Un vicolo oscuro
+-----------------
+
+- 508:508 263:263 197:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La locanda del Pirata Nero - Al chiuso
+E' una fredda e sporca locanda. Si dice che un po' di tempo fa, questa fosse
+una delle piu' affollate taverne di Alma, ma oggi, e' abbandonata a se stessa.
+A parte qualche ubriaco sdraiato sotto qualche tavolo ed altra gentaglia poco
+raccomandabile, non c'e' granche' in questa locanda.
+Uscite: Ovest
+[!] Una vecchia gitana siede ad un tavolo, mescolando un mazzo di tarocchi. [Liv ??]
+-----------------
+Uscite visibili:
+Ovest - Un vicolo oscuro
+-----------------
+
+- 508:508 263:263 196:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Un vicolo oscuro - Citta'
+Intorno a te c'e' un silenzio irreale, tenebre e freddo. Nell'oscurita' ti
+sembra di vedere dei movimenti furtivi. Verso ovest c'e' l'ingresso ad una
+locanda malfamata, mentre verso sud il vicolo continua immettendosi su di una
+piccola piazza. Una piccola insegna di legno sull'edificio ad est scricchiola
+dondolandosi su di un'asta di ferro. A nord vedi invece la sede della Gilda
+dei Viaggiatori.
+Uscite: Nord [porta] Est Sud Ovest
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+Una ragazza di facili costumi e' qui a mostrare le proprie grazie. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Gilda dei Viaggiatori
+Est - La locanda del Pirata Nero
+Sud - Una piccola piazza
+Ovest - Un vicolo oscuro
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Una piccola piazza - Citta'
+Il vicolo scuro che fino ad ora hai percorso arriva ad una piccola piazzetta
+che ospita un mercato diverso dal solito. I mercanti non strillano per
+attirare la gente verso le loro bancarelle, ma aspettano in silenzio che
+qualche curioso si faccia loro vicino. Cosa vendono non riesci proprio a
+immaginarlo anche se pensi che quello che qui si sta' facendo non sia proprio
+legale. Ad ovest sembra esserci un negozio di animali.
+Uscite: Nord Est Sud Ovest [porta]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+[!] Hangor e' qui, allestendo una bancarella per la vendita di cimeli per procura
+dei vari avventurieri. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Un vicolo oscuro
+Est - Il mercato nero
+Sud - Fine del vicolo oscuro
+Ovest - Il negozio degli animali
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Il negozio degli animali - Negozio
+Un piccolo negozio affollato di animali in gabbie di varia taglia e
+dimensioni. Se vuoi comprare un compagno fedele questo e' il posto giusto.
+C'e' un evidente cartello sul muro.
+Uscite: Est [porta]
+-----------------
+Uscite visibili:
+Est - Una piccola piazza
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Una piccola piazza - Citta'
+Il vicolo scuro che fino ad ora hai percorso arriva ad una piccola piazzetta
+che ospita un mercato diverso dal solito. I mercanti non strillano per
+attirare la gente verso le loro bancarelle, ma aspettano in silenzio che
+qualche curioso si faccia loro vicino. Cosa vendono non riesci proprio a
+immaginarlo anche se pensi che quello che qui si sta' facendo non sia proprio
+legale. Ad ovest sembra esserci un negozio di animali.
+Uscite: Nord Est Sud Ovest [porta]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+[!] Hangor e' qui, allestendo una bancarella per la vendita di cimeli per procura
+dei vari avventurieri. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Un vicolo oscuro
+Est - Il mercato nero
+Sud - Fine del vicolo oscuro
+Ovest - Il negozio degli animali
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+
+Lasci Alma, entrando in Alma Sud e Terme.
+
+Fine del vicolo oscuro - Citta'
+Sei piombato nell'oscurita'. Se possiedi una fonte di luce ora e' proprio il
+momento di usarla. Sei in un vicolo cieco. C'e' un silenzio irreale che ti
+circonda e l'aria si e' fatta molto tersa. "Questo e' il posto giusto per un
+agguato!" continui a ripetere a te stesso. Forse e' meglio andare via di qui.
+Ad est noti un piccolo edificio nero. Ad ovest c'e' una piccola bottega con
+un'insegna sbiadita, quasi non l'avevi notata. A sud c'e' una grossa struttura
+con una sagoma a forma di cavallo appesa alla tettoia di ingresso.
+Uscite: Nord Est Sud [recinto] Ovest [porta] (chiuso)
+[!] Un vecchietto dall'aria oscura e' qui seduto in un angolo a farsi gli affari suoi. [Liv 5]
+-----------------
+Uscite visibili:
+Nord - Una piccola piazza
+Est - Davanti ad un edificio nero
+Sud - Le stalle
+Ovest - La bottega dei ricordi perduti (chiuso)
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La porta e` chiusa.
+open porta w
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+Apri la porta, liberando il percorso verso ovest.
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La bottega dei ricordi perduti - Negozio
+Ti trovi all'interno di una piccolissima bottega. Tutto qui sembra provenire
+da un lontano passato ed e' accatastato in totale disordine. Riesci a stento
+ad accedere al bancone, ostacolato come sei dal gran numero di merci esposte.
+Si tratta comunque di oggetti spesso consumati e di foggia del tutto desueta.
+Il bancone comunque prosegue a sud.
+Uscite: Est [porta] Sud
+Un vecchio gnomo gironzola per il negozio, in cerca di un buon affare. [Liv ??]
+-----------------
+Uscite visibili:
+Est - Fine del vicolo oscuro
+Sud - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La bottega dei ricordi perduti - Negozio
+Il bancone che stai percorrendo sembra allungarsi all'infinito verso sud mano
+mano che cammini! Che tu sia dannato, sembra davvero non avere fine e non
+riesci a vedere il fondo della bottega!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - La bottega dei ricordi perduti
+Sud - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+La bottega dei ricordi perduti - Negozio
+Il bancone che stai percorrendo sembra allungarsi all'infinito verso sud mano
+mano che cammini! Che tu sia dannato, sembra davvero non avere fine e non
+riesci a vedere il fondo della bottega!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La bottega dei ricordi perduti - Negozio
+Il bancone che stai percorrendo sembra allungarsi all'infinito verso sud mano
+mano che cammini! Che tu sia dannato, sembra davvero non avere fine e non
+riesci a vedere il fondo della bottega!
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - La bottega dei ricordi perduti
+Sud - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La bottega dei ricordi perduti - Negozio
+Ti trovi all'interno di una piccolissima bottega. Tutto qui sembra provenire
+da un lontano passato ed e' accatastato in totale disordine. Riesci a stento
+ad accedere al bancone, ostacolato come sei dal gran numero di merci esposte.
+Si tratta comunque di oggetti spesso consumati e di foggia del tutto desueta.
+Il bancone comunque prosegue a sud.
+Uscite: Est [porta] Sud
+Un vecchio gnomo gironzola per il negozio, in cerca di un buon affare. [Liv ??]
+-----------------
+Uscite visibili:
+Est - Fine del vicolo oscuro
+Sud - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Fine del vicolo oscuro - Citta'
+Sei piombato nell'oscurita'. Se possiedi una fonte di luce ora e' proprio il
+momento di usarla. Sei in un vicolo cieco. C'e' un silenzio irreale che ti
+circonda e l'aria si e' fatta molto tersa. "Questo e' il posto giusto per un
+agguato!" continui a ripetere a te stesso. Forse e' meglio andare via di qui.
+Ad est noti un piccolo edificio nero. Ad ovest c'e' una piccola bottega con
+un'insegna sbiadita, quasi non l'avevi notata. A sud c'e' una grossa struttura
+con una sagoma a forma di cavallo appesa alla tettoia di ingresso.
+Uscite: Nord Est Sud [recinto] Ovest [porta]
+[!] Un vecchietto dall'aria oscura e' qui seduto in un angolo a farsi gli affari suoi. [Liv 5]
+-----------------
+Uscite visibili:
+Nord - Una piccola piazza
+Est - Davanti ad un edificio nero
+Sud - Le stalle
+Ovest - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Davanti ad un edificio nero - Citta'
+Ti trovi davanti ad un vecchio edificio di pietra nera che si trova verso est.
+Le finestre sono state divelte dalle loro sedi e alcune di esse giacciono per
+terra. La porta scricchiola al soffiare di un leggero vento. Forse un tempo
+questa costruzione avrebbe potuto ospitare alcune famiglie ma adesso e' solo
+un ammasso di pietre pericolanti disposte una sull'altra. Vedi anche un
+piccolo tempio seminascosto verso nord.
+Uscite: Nord [portone] (chiuso) Est [porta] Ovest
+Un gatto nero si muove agile qui attorno. [Liv 2]
+Un pipistrello vampiro svolazza qui in giro. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Casa del Bianco e del Nero (chiuso)
+Est - Dentro l'edificio nero
+Ovest - Fine del vicolo oscuro
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+◁ pipistrello
+
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Fine del vicolo oscuro - Citta'
+Sei piombato nell'oscurita'. Se possiedi una fonte di luce ora e' proprio il
+momento di usarla. Sei in un vicolo cieco. C'e' un silenzio irreale che ti
+circonda e l'aria si e' fatta molto tersa. "Questo e' il posto giusto per un
+agguato!" continui a ripetere a te stesso. Forse e' meglio andare via di qui.
+Ad est noti un piccolo edificio nero. Ad ovest c'e' una piccola bottega con
+un'insegna sbiadita, quasi non l'avevi notata. A sud c'e' una grossa struttura
+con una sagoma a forma di cavallo appesa alla tettoia di ingresso.
+Uscite: Nord Est Sud [recinto] Ovest [porta]
+Un pipistrello vampiro svolazza qui in giro. [Liv 2]
+[!] Un vecchietto dall'aria oscura e' qui seduto in un angolo a farsi gli affari suoi. [Liv 5]
+-----------------
+Uscite visibili:
+Nord - Una piccola piazza
+Est - Davanti ad un edificio nero
+Sud - Le stalle
+Ovest - La bottega dei ricordi perduti
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+
+Lasci Alma Sud e Terme, entrando in Alma.
+
+Una piccola piazza - Citta'
+Il vicolo scuro che fino ad ora hai percorso arriva ad una piccola piazzetta
+che ospita un mercato diverso dal solito. I mercanti non strillano per
+attirare la gente verso le loro bancarelle, ma aspettano in silenzio che
+qualche curioso si faccia loro vicino. Cosa vendono non riesci proprio a
+immaginarlo anche se pensi che quello che qui si sta' facendo non sia proprio
+legale. Ad ovest sembra esserci un negozio di animali.
+Uscite: Nord Est Sud Ovest [porta]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+[!] Hangor e' qui, allestendo una bancarella per la vendita di cimeli per procura
+dei vari avventurieri. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Un vicolo oscuro
+Est - Il mercato nero
+Sud - Fine del vicolo oscuro
+Ovest - Il negozio degli animali
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Un vicolo oscuro - Citta'
+Intorno a te c'e' un silenzio irreale, tenebre e freddo. Nell'oscurita' ti
+sembra di vedere dei movimenti furtivi. Verso ovest c'e' l'ingresso ad una
+locanda malfamata, mentre verso sud il vicolo continua immettendosi su di una
+piccola piazza. Una piccola insegna di legno sull'edificio ad est scricchiola
+dondolandosi su di un'asta di ferro. A nord vedi invece la sede della Gilda
+dei Viaggiatori.
+Uscite: Nord [porta] Est Sud Ovest
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+Una ragazza di facili costumi e' qui a mostrare le proprie grazie. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Gilda dei Viaggiatori
+Est - La locanda del Pirata Nero
+Sud - Una piccola piazza
+Ovest - Un vicolo oscuro
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Un vicolo oscuro - Citta'
+Sei entrato in uno scuro vicoletto che continua verso est. Guardando a sud
+vedi l'entrata alla oscura Gilda dei Ladri. Ma la tua attenzione e' attratta
+da altro in questo momento. Intorno a te c'e' un silenzio irreale, tenebre e
+freddo... Nell'oscurita' ti sembra di vedere dei movimenti furtivi... e riesci
+a percepire un cartello contro una parete.
+Uscite: Nord [porta] (chiuso) Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Ingresso (chiuso)
+Est - Un vicolo oscuro
+Sud - L'entrata alla Gilda dei Ladri
+Ovest - Platea Popolorum
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+La via dei Gladiatori - Citta'
+Stai camminando su di una piccola strada il cui pavimento e' decorato da
+mosaici raffiguranti scene di lotta tra forti gladiatori e possenti fiere.
+Questa e' la via che porta al Colosseo dove i giovani avventurieri fanno le
+loro prime esperienze di combattimento. A sud vedi una taverna, mentre a nord
+vi e' una torre altissima.
+Uscite: Nord [portone] (chiuso) Est Sud Ovest
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un poveraccio siede qui chiedendoti qualche moneta. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - La Torre del Cielo (chiuso)
+Est - Platea Popolorum
+Sud - Al bar "Tigri e Leoni"
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Uscite: Nord Sud
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Popolorum
+Sud - Via Meridionalis
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Verso un lato della strada, in basso
+noti una discarica. Senti il rumore dello scorrere dell'acqua verso est, ti
+giri e vedi una stradina che porta verso il fiume Lys.
+Uscite: Nord Est Sud Basso
+-----------------
+Uscite visibili:
+Nord - Via Meridionalis
+Est - Scendendo verso il fiume Lys
+Sud - Il Ponte Bianco
+Basso - La discarica
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Il Ponte Bianco - Citta'
+Sei su di uno splendido ponte di marmo bianco che passa sopra il fiume che
+bagna Alma Civitas. Riccamente decorato da fregi e sculture di vario tipo e'
+diventato nel tempo uno dei monumenti di cui la citta' va piu' orgogliosa.
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Via Meridionalis
+Sud - Porta Meridionale
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Porta Meridionale - Citta'
+Stai passando sotto i bastioni che delimitano la porta meridionale della
+citta'. Sventola la bandiera di Alma sul posto di guardia. Di qui si controlla
+l'entrata sud della citta'. L'edificio e' cupo e fortificato.
+Uscite: Nord Est Sud [porta] Ovest
+Una guardia e` qui a proteggere le porte della citta'. [Liv ??] [4]
+-----------------
+Uscite visibili:
+Nord - Il Ponte Bianco
+Est - Le Mura di Alma
+Sud - Al di fuori delle Porte Meridionali di Alma
+Ovest - Le Mura di Alma
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Il Ponte Bianco - Citta'
+Sei su di uno splendido ponte di marmo bianco che passa sopra il fiume che
+bagna Alma Civitas. Riccamente decorato da fregi e sculture di vario tipo e'
+diventato nel tempo uno dei monumenti di cui la citta' va piu' orgogliosa.
+Uscite: Nord Sud
+-----------------
+Uscite visibili:
+Nord - Via Meridionalis
+Sud - Porta Meridionale
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Verso un lato della strada, in basso
+noti una discarica. Senti il rumore dello scorrere dell'acqua verso est, ti
+giri e vedi una stradina che porta verso il fiume Lys.
+Uscite: Nord Est Sud Basso
+-----------------
+Uscite visibili:
+Nord - Via Meridionalis
+Est - Scendendo verso il fiume Lys
+Sud - Il Ponte Bianco
+Basso - La discarica
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Via Meridionalis - Citta'
+Questa antica via e' un pezzo di storia di Alma Civitas. Ai tempi in cui la
+citta' venne ricostruita per accogliere le future generazioni di avventurieri,
+questa strada fu lasciata cosi' come era. Tutta ammantata in porfido, ancora
+oggi e' molto suggestiva e ben tenuta. Oggi e' anche conosciuta come la via
+delle cento fiaccole, per la spettacolare illuminazione che offre di notte.
+Uscite: Nord Sud
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Popolorum
+Sud - Via Meridionalis
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Platea Popolorum - Citta'
+Questa piccola piazza e' la piu' antica della citta'. E' caratteristica per
+il suo colonnato in porfido rosso e per le mattonelle di granito che la
+pavimentano completamente. Un'originale statua e' sita in un lato della piazza
+stessa. A sud inizia la Via Meridionalis.
+Uscite: Nord Est Sud Ovest
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un giovane spazzino si muove qui attorno ripulendo la piazza dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - Platea Quadrata
+Est - Un vicolo oscuro
+Sud - Via Meridionalis
+Ovest - La via dei Gladiatori
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>
+
+guardia imperiale △
+
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Platea Quadrata - Citta'
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Uscite: Nord Est Sud Ovest
+Una nobile guardia imperiale e` qui in pattuglia. [Liv ??][Elite]
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - ALMA CIVITAS
+Est - La via del Mercato
+Sud - Platea Popolorum
+Ovest - La via delle Gilde
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+La via del Mercato - Citta'
+Una stretta via animatissima. Qui comincia il grande quartiere del mercato
+dove si puo' trovare di tutto, basta che sia in quel momento disponibile e si
+abbiano i soldi. C'e' una grande folla che si aggira per questa via alla
+ricerca dei piu' svariati oggetti da comprare. Da nord senti provenire un gran
+profumo di pane appena sfornato, mentre a sud c'e' un Bazar che espone tutta
+la sua merce per invogliare i passanti a fermarsi.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Taberna Pistoris
+Est - La via del Mercato
+Sud - Taberna Mercatoris
+Ovest - Platea Quadrata
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+Taberna Mercatoris - Negozio
+Sei in un bazar ben assortito, molti oggetti di strana fattura sono sparsi
+tutto attorno. Un cartello e' appeso dietro al banco...
+Uscite: Nord
+Mercatore, ti fissa con impazienza da dietro il bancone. [Liv 23]
+-----------------
+Uscite visibili:
+Nord - La via del Mercato
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>list
+Mercatore ha in vendita:
+1) l'attrezzatura da campeggio, per 100 Monete d'Oro. 
+2) una torcia, per 10 Monete d'Oro. 
+3) una lanterna, per 70 Monete d'Oro. 
+4) una borsa, per 10 Monete d'Oro. 
+5) un pezzo di papiro, per 1 Monete d'Oro. 
+6) una piccola pala, per 20 Monete d'Oro. [Non disponibile]
+7) una penna inchiostrata, per 1 Monete d'Oro. [1 disponibile]
+8) un falcetto, per 20 Monete d'Oro. [Non disponibile]
+9) un paio di sandali di cuoio intrecciato, per 100 Monete d'Oro. [1 disponibile]
+
+
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+La via del Mercato - Citta'
+Una stretta via animatissima. Qui comincia il grande quartiere del mercato
+dove si puo' trovare di tutto, basta che sia in quel momento disponibile e si
+abbiano i soldi. C'e' una grande folla che si aggira per questa via alla
+ricerca dei piu' svariati oggetti da comprare. Da nord senti provenire un gran
+profumo di pane appena sfornato, mentre a sud c'e' un Bazar che espone tutta
+la sua merce per invogliare i passanti a fermarsi.
+Uscite: Nord Est Sud Ovest
+-----------------
+Uscite visibili:
+Nord - Taberna Pistoris
+Est - La via del Mercato
+Sud - Taberna Mercatoris
+Ovest - Platea Quadrata
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>w
+Platea Quadrata - Citta'
+Questa piccola piazza lastricata di marmo e' probabilmente il piu' importante
+crocevia di tutto l'Impero. Il vero centro geografico di Alma. Ad ovest c'e'
+la famosa Via delle Gilde dove i giovani avventurieri possono trovare i
+maestri giusti per affinare le loro arti. Verso est si arriva al mercato di
+Alma, ricco di negozi e di gente ansiosa di fare affari.
+Uscite: Nord Est Sud Ovest
+Un legionario e' in cerca d'impiego. [Liv ??]
+Un anziano ubriacone, pieno di acciacchi e puzzolente, borbotta tra se e se. [Liv ??][Elite] (*) (*)
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+-----------------
+Uscite visibili:
+Nord - ALMA CIVITAS
+Est - La via del Mercato
+Sud - Platea Popolorum
+Ovest - La via delle Gilde
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+ALMA CIVITAS - Citta'
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: Nord Est [porta] Sud Ovest
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Un legionario e' in cerca d'impiego. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Il Foro Imperiale
+Est - L'ingresso alla Taberna Viatoris
+Sud - Platea Quadrata
+Ovest - Il Tempio delle Leggi
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>n
+Il Foro Imperiale - Citta'
+Ti trovi su di una collinetta che da sulla piazza centrale di Alma, qui e'
+stato costruito un singolare colonnato circolare, all'interno del quale si
+trovano molte statue di marmo e alcune panchine. Da qui parte la Via della
+Gloria che raggiunge le porte settentrionali di Alma. Un praticello ben tenuto
+in direzione ovest permmette di accedere al Tribunale alla Biblioteca e alla
+Libreria. Verso est c'e' un ampio viale alberato, detto Viale della Gioia dal
+nome dell'altare medesimo, dove un giovane avventuriero puo' trovare
+l'equipaggiamento giusto per iniziare le sue peripezie. A sud c'e' il centro
+della citta'. Da li' puoi raggiungere facilmente sia il Mercato che le Gilde.
+
+Delle scale di marmo scendono verso un edificio piu' appartato. Se e' la prima
+volta che solchi queste terre, oppure se sei appena uscito dall'Accademia,
+c'e' un monolite di marmo bianco che ti puo' aiutare ad orientarti (esamina
+monolite).
+Uscite: Nord Est Sud Ovest Basso
+L'immortale Libro Delle Gilde e' qui su un piedistallo.
+Placeholder, il famoso stregone maestro del tempo, e` qui pronto ad insegnarti. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - La Piazza della Gloria
+Est - Il Viale della Gioia
+Sud - ALMA CIVITAS
+Ovest - Il prato
+Basso - L'ingresso al Tempio della Conoscenza
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>s
+ALMA CIVITAS - Citta'
+Sei nel cuore della citta' di Alma Civitas. La meravigliosa fontana della Pace
+e' stata eretta al centro della piazza a commemorazione dei fasti dell'Impero.
+Vicino alla fontana e' stata posta una pietra di marmo bianco con sopra
+un'incisione in caratteri dorati. Verso nord vedi il Foro imperiale, mentre
+guardando verso sud vedi una piazza non molto distante. Verso ovest c'e' il
+grande Tempio delle Leggi, mentre verso est noti la locanda dove soggiornano
+la maggior parte degli avventurieri dell'Impero.
+Uscite: Nord Est [porta] Sud Ovest
+In mezzo alla piazza sorge la famosa Fontana della Pace.
+Uno spazzino si muove qui attorno ripulendo le strade dai rifiuti. [Liv 2]
+Un legionario e' in cerca d'impiego. [Liv ??]
+-----------------
+Uscite visibili:
+Nord - Il Foro Imperiale
+Est - L'ingresso alla Taberna Viatoris
+Sud - Platea Quadrata
+Ovest - Il Tempio delle Leggi
+-----------------
+
+- 508:508 263:263 195:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>e
+L'ingresso alla Taberna Viatoris - Al chiuso
+Sei all'ingresso della piu' antica e rinomata locanda della citta'. Il locale
+e' saggiamente arredato in modo austero e funzionale. Una scala consente di
+salire verso la Reception. Ad est c'e' una taverna dove puoi trovare qualcosa
+da mettere sotto i denti.
+Uscite: Est Ovest [porta] Alto
+Un legionario e' in cerca d'impiego. [Liv ??]
+Un mimo sta mimando qualcosa. [Liv 3]
+-----------------
+Uscite visibili:
+Est - La taverna della Locanda
+Ovest - ALMA CIVITAS
+Alto - La Reception
+-----------------
+
+- 508:508 263:263 194:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>u
+La Reception - Al chiuso
+Sei alla reception. Un piccolo cartello spicca sul banco. Una scala conduce
+giu' alla locanda, ad est si intravede l'ufficio dello scriba che svolge il
+servizio di posta ad Alma.
+Uscite: Est Basso
+Un ubriaco e` seduto qui, in terra. [Liv 3] [2]
+Giulietta e` qui a prendersi cura dei viandanti. [Liv ??]
+-----------------
+Uscite visibili:
+Est - L'ufficio dello Scriba
+Basso - L'ingresso alla Taberna Viatoris
+-----------------
+
+- 508:508 263:263 193:203 200:200 [F80] <nessuno>:* <nessuno>:* 251124>rent
+
+[Giulietta] ti dice 'L'affitto e` offerto gratuitamente agli avventurieri!'
+[Giulietta] ti dice 'Hai 10 oggetti con te, puoi conservarne un massimo di 400.'
+[Giulietta] ti dice 'Hai 1 oggetti preziosi, la tua cassaforte puo` ospitarne 10.'
+
+Giulietta mette le tue cose nella cassaforte e ti accompagna in stanza.
+
+Bentornato su Lumen et Umbra!
+  N - Entra nell'Accademia dei Newbie
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+e
+    
+[ ALERT ] - Socket disconnesso.
+            Motivo: L'host remoto ha chiuso la connessione
+[ INFO ]  - Tempo di connessione: 00:07:10.340
+                
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:6667 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:6667 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))        .____         ___________    ____ ___
+                 >-~ \~~/.\.<     |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<    |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<      |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>       |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\                \/            \/
+   ~      .~__________ '--'      .-               
+  '      : =  =  =  = \__   .-  ((    .-
+ :       |_______________\ ((_.-~ ~__((_______________
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  |
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.|
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.'
+
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+l
+Mi dispiace ma non ci sono personaggi con questo nome.
+Nome ('nuovo' per nuovo personaggio): 
+    
+[ ALERT ] - Socket disconnesso.
+            Motivo: User Disconnected
+[ INFO ]  - Tempo di connessione: 00:00:09.283

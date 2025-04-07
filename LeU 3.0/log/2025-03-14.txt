@@ -1,0 +1,51 @@
+Log di sessione a partire 16:27:08 su venerdì, 14 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-13#16-26-25map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.07s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.10s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-13#16-26-25map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.09s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 

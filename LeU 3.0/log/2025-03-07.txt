@@ -1,0 +1,192 @@
+Log di sessione a partire 16:22:16 su venerdì, 7 marzo 2025.
+[  OK  ]  - Modulo Lua API & Geyser Layout caricato.
+[  UI  ]  - Cartella dati inizializzata correttamente.
+[  UI  ]  - Cartella settings inizializzata correttamente.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-06#22-36-52map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.07s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.08s). Buon divertimento...
+[  UI  ]  - Caricamento 'Lumen et Umbra UI' (rel. 2024.06.06) completato.
+[ INFO ]  - Leggo il file di mappa. Versione: 20. File
+            "/home/ubuntu/.config/mudlet/profiles/LeU Prova/map/2025-03-06#22-36-52map.dat",
+            attendere...
+[ INFO ]  - File di mappa letto con successo (0.04s), verifico la coerenza di alcuni dati...
+            ...
+[ INFO ]  - Controllo della mappa iniziato...
+[  OK  ]  - Controllo della mappa completato (0.10s). Buon divertimento...
+[ INFO ]  - Ricerca dell'indirizzo IP del server: new-leu.leu.it:7000 ...
+[ INFO ]  - L'indirizzo IP di new-leu.leu.it è stato trovato: 31.220.94.14
+[ INFO ]  - Tentativo di connessione a 31.220.94.14:7000 ...
+[ INFO ]  - La connessione è stata stabilita con successo.
+                
+                
+
+<MXP support enabled>
+                    ..  .
+                   ((   ))       .____         ___________    ____ ___
+                 >-~ \~~/.\.<    |    |        \_   _____/   |    |   \
+        ..-  _.>---  @- @-.--<   |    |         |    __)_    |    |   /
+       ((_- ~   `>-.  / oo;<     |    |___ UMEN |        \ T |    |  / MBRA
+   .. _-~     _.---.\ (\''>      |_______ \    /_______  /   |______/
+  ((_~      _-       \ \_\               \/            \/               *
+   ~      .~__________ '--'      .-          5 Dic 1994 - 5 Dic 2024        .
+  '      : =  =  =  = \__   .-  ((    .-       30esimo Anniversario    .''.
+ :       |_______________\ ((_.-~ ~__((_______________         .      :_\/_:
+ :       |/\ /\  /\    /\ `\ ~   :|  =   =  =  =  =  =   .  .'.:.'.   : /\ :
+ :       |:|_:|_:__|__:__|__|____:|__I  II   II  II  | \ / -=- o -=-   '..'
+ :       |/\ /\  /\    /\    /\    /\`\   /\   /\  /.| -*   '.':'.'
+  \      |:| :| :  |  :  |  :  |  :  | `\|  : |  : |:|   \     .     \|/  *
+    \    |:|_:|_:__|__:__|__:__|__:__|__;|__: |__: |:|       `.-._   /|\
+      \  |/\ /\  /\    /\    /\    /\   | /\   /\  /'|`.       ~-.`.    .
+       ~-|:| :| :  |  :  |  :  |  :  |   \  : |  : |:|  ` .       } |
+         |:|_:|_:__|__:__|__:__|__:__|____`\:_|__:_|:|._   `-..__/  /
+         -----------------------------------------------------~-._.' 
+
+       Raggiungici su Discord presso https://tinyurl.com/leudiscord
+          Per il regolamento, digita 'help regolamento' in gioco.
+
+Inserisci il nome del tuo personaggio, oppure digita nuovo per crearne uno: 
+
+kyrus
+Password: 
+
+Bentornato su Lumen et Umbra!
+  I - Inizia ad Alma Civitas
+  L - Rientra alla tua ultima Locanda.
+  D - Inserisci o aggiorna la tua Descrizione.
+  P - Cambia la tua Password.
+  C - Cancella questo personaggio (Irreversibile).
+  E - Esci da Lumen et Umbra.
+
+Scegli il tuo destino: 
+
+
+Attenzione! Il mud e' crashato! Scrivi HELP CRASH per sapere come comportarti.
+
+
+i
+
+L'affitto della stanza e` gratuito per gli avventurieri di Alma!
+
+Benvenut* nelle terre di Lumen et Umbra. Buon divertimento.
+
+La locanda - Al chiuso [S]
+Il pavimento di questa grande Sala e' composto da diverse lastre levigate di
+pietra con venature gialle e argento che ti ricordano i gioielli di una dama.
+Le pareti sono invece ricoperte da antichi pannelli lisci in legno di rovere
+sulle quali piccoli quadri descrivono ambienti naturali ed alcune scene di
+battaglie. Sulla parete orientale dei semplici drappi colorati adornano una
+serie di ampi finestroni da cui si vede un verde bosco e, pi�lontananza,
+gli sbuffi di fumo dei camini e dei fumaioli dei palazzi di Alma Civitas. Il
+lato occidentale della sala ospita invece al suo centro un enorme camino
+acceso che irradia un piacevole calore ed una serie di comodi divanetti di
+raso e velluto. Diversi avventori sono presenti nella stanza anche se non puoi
+non notare una massiccia figura solitaria seduta nei pressi del camino che ti
+osserva sorseggiando una strana bevanda scura mentre vicino a lui una donna fa
+ruotare agilmente su un tavolino una piccola costruzione fatta con le carte da
+gioco. In fondo alla stanza un largo bancone decorato e' posto al centro tra
+due archi di palissandro bianco decorato: dal delizioso odore indubbiamente da
+uno si accede alla cucina, alla cantina ed alla dispensa, mentre dall'altro si
+vede un corridoio con due file ordinate di porte. Una bella ragazza dai
+capelli rossi con il viso pieno di lentiggini canticchiando gira per la stanza
+servendo boccali di birra, bicchieri di vino e succulente pietanze ai diversi
+ospiti presenti.
+Uscite: Down.
+Simonetta, la locandiera, e' qui per servirti. [Liv 50]
+
+[-] [3641/3641] [690/690] [185/200] [-]
+
+[SYSTEM INFO] MXP version 1.0 detected and enabled.
+
+[-] [3641/3641] [690/690] [185/200] [-]
+[  UI  ]  - Impostazioni per kyrus caricate correttamente.
+[  UI  ]  - Usa il comando [uihelp] per iniziare...
+lua gmcp
+{
+  External = {
+    Discord = {
+      Info = {
+        applicationid = "551423948387123225",
+        inviteurl = "https://tinyurl.com/leudiscord"
+      },
+      Status = {
+        details = "Playing Kyrus",
+        game = "Lumen et Umbra",
+        largeimagetext = "new-leu.leu.it: 6667",
+        partymax = 0,
+        partysize = 0,
+        smallimage = { "server-icon" },
+        smallimagetext = "Lumen et Umbra",
+        starttime = 1741360950,
+        state = "Solo"
+      }
+    }
+  },
+  char = {
+    affects = {},
+    base = {
+      ScreenHeight = 44,
+      class = "Psionico",
+      experience = 200000000,
+      gold = 461957,
+      level = 50,
+      name = "Kyrus",
+      race = "uno spettro",
+      screenWidth = 117,
+      toNext = 0
+    },
+    cooldowns = {},
+    group = {},
+    vitals = {
+      hp = 3641,
+      mana = 690,
+      maxhp = 3641,
+      maxmana = 690,
+      maxpow = 200,
+      pow = 185,
+      roomPos = 5,
+      roundMax = 3,
+      roundTicker = 1,
+      secsToTick = 2
+    }
+  },
+  room = {
+    info = {
+      characters = { {
+          desc = "Simonetta, la locandiera",
+          key = "Simonetta locandiera",
+          level = 50,
+          roomPos = 5
+        } },
+      exits = {
+        down = 20027
+      },
+      name = "La locanda",
+      num = 20032,
+      objects = {},
+      roomPos = 5,
+      terrain = "Al chiuso",
+      zone = "Le Gilde di Lumen et Umbra"
+    }
+  }
+}
+
+Recuperi rapidamente le tue forze. [15] 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+[ INFO ]  - Scorrimento a schermo diviso attivato. Premi <CTRL>+<INVIO> per annullare.
+
+Una creatura di un altro mondo sta deponendo le proprie uova in un antico monumento, va fermata prima che sia troppo
+tardi!
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Un'altra ora della giornata si accinge a trascorrere. 
+
+[-] [3641/3641] [690/690] [200/200] [-]
+
+Il Signore dei Vampiri sta portando morte e distruzione in un luogo di culto!
+
