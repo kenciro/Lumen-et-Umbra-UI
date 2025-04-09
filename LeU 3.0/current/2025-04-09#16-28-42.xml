@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="}|{^]\[?=;:'#&quot;!/.°,+*)(" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;#!':;?[=^{\]|}*+()./°," EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -1887,7 +1887,7 @@ cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..na
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>ToolTip</name>
+				<name>ToolTip Slot</name>
 				<script>local type = matches[1]
 local slot = {
   ["Innato"]      = "Non può essere modificato, è una proprietà base dell'oggetto. Non può essere migliorato. Zero varianza.",
@@ -1898,7 +1898,49 @@ local slot = {
   ["Resiliente"]  = "Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat difensive. Varianza Standard.",
   ["Volatile"]    = "Può essere migliorato, scala, si può cambiare la statistica. Può rollare tutto. Varianza molto alta.",
   ["Profetico"]   = "Specifico degli oggetti Destino.",
-
+}
+--
+echo(" ")
+if (slot[type]) then
+  cechoLink(ui.cLink(type), [[]], type.."= "..slot[type], true)
+else
+  cechoLink(ui.cLink("XXX"), [[]], type.."= ".."Descrizione mancante", true)
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Innato</string>
+					<string>Progressivo</string>
+					<string>Cardinale</string>
+					<string>Incantato</string>
+					<string>Brutale</string>
+					<string>Resiliente</string>
+					<string>Volatile</string>
+					<string>Profetico</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>ToolTip Caratteristica</name>
+				<script>local type = matches[1]
+local slot = {
   ["Precisione"] = "Nuovo nome di Tiro per Colpire, e fa quel che faceva prima: aumenta la % di colpo eccezionale",
   ["Colpo Critico"] = "Equivalente di Extra/Focus, non più diviso tra magico/fisico.",
   ["Letalita`"] = "Aumenta il moltiplicatore al danno dei colpi critici.",
@@ -1933,7 +1975,7 @@ local slot = {
 --
 echo(" ")
 if (slot[type]) then
-  cechoLink(ui.cLink("I"), [[]], type.."= "..slot[type], true)
+  cechoLink(ui.cLink(type), [[]], type.."= "..slot[type], true)
 else
   cechoLink(ui.cLink("XXX"), [[]], type.."= ".."Descrizione mancante", true)
 end</script>
@@ -1948,14 +1990,6 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>Innato</string>
-					<string>Progressivo</string>
-					<string>Cardinale</string>
-					<string>Incantato</string>
-					<string>Brutale</string>
-					<string>Resiliente</string>
-					<string>Volatile</string>
-					<string>Profetico</string>
 					<string>Precisione</string>
 					<string>Colpo Critico</string>
 					<string>Letalita`</string>
@@ -1977,44 +2011,12 @@ end</script>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
 					<integer>1</integer>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Prac chiaro</name>
-				<script>expandAlias("chiaro");</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Puoi di nuovo utilizzare chiaroveggenza.</string>
-					<string>Impari dai tuoi errori! Chiaroveggenza migliora.</string>
-					<string>Perdi la tua concentrazione\!</string>
-				</regexCodeList>
-				<regexCodePropertyList>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
@@ -4174,6 +4176,8 @@ else
   local opponent = '';
   local firstAttack = false;
   local attack = 'bl';
+  local lightSpeed  = ui.affects["velocita` della luce"] or false
+  local mano = (ui.affects["mano di energia"] or false) and (ui.cooldowns["Mano Di Energia"] == nil)
   --
   -- Fuori dal combattimento...
   if (ui.opponent.name == '') then
@@ -4199,11 +4203,11 @@ else
   --
   if (opponent == '') then
     cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
-    if (ui.affects["velocita` della luce"]) then
-      if (ui.affects["mantello di fiamme"] == nil) then
-        expandAlias("flame", false)
-      elseif (perc &lt;= 80) then
+    if (lightSpeed) then
+      if (perc &lt;= 80) then
         expandAlias("cel", false)
+      elseif (ui.affects["mantello di fiamme"] == nil) then
+        expandAlias("flame", false)
       end
     end
     --
@@ -4212,7 +4216,7 @@ else
     cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;red&gt;"..opponent)
     --
     -- LightSpeed
-    if (ui.affects["velocita` della luce"]) then
+    if (lightSpeed) then
       cecho("&lt;green&gt; (LightSpeed)\n")
       --
       -- Hp sotto l'70%
@@ -4231,8 +4235,8 @@ else
       elseif (ui.affects["lame psioniche"]) then
         expandAlias("as "..opponent, false)
       --
-      -- Mano di energia attiva, ma in cooldowns
-      elseif (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
+      -- Mano di energia attiva
+      elseif (mano) and (not firstAttack) then
         expandAlias("morsa "..opponent, false)
       --
       -- 
@@ -4243,7 +4247,7 @@ else
     echo("\n") 
     --
     -- Super cura
-    if (ui.affects["velocita` della luce"]) and (perc &lt;= 20) then
+    if (lightSpeed) and (perc &lt;= 20) then
       expandAlias("cel", false)
     --
     -- Crush
@@ -4251,7 +4255,7 @@ else
       expandAlias("cr "..opponent, false)
     --
     -- Bash
-    elseif (ui.affects["velocita` della luce"] == nil) and (ui.affects["mano di energia"]) and (ui.cooldowns["Mano Di Energia"] == nil) then
+    elseif (firstAttack) and (mano) then
       expandAlias("bash "..opponent, false)
     --
     -- Normal attack

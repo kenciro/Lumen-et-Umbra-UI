@@ -96,3 +96,10 @@ RICETTE
 - i coadiuvanti servono ad indirizzare/modificare/migliorare le ricette (in generale, se qualcosa è una fiala/sacchetto/ampolla/bottiglietta è facile sia un coadiuvante)
 - quando identifichi qualcosa ti dice che tipo di elemento è
 - Una volta completata la ricetta, i coadiuvanti possono rimanere (non sempre vengono consumati completamente), mentre i materiali base spariscono (vengono usati tutti sempre)
+
+
+
+manipola fiamme espandi: non da output quando viene lanciato senza mobs nella stanza
+
+cancella la mente: non da output
+
