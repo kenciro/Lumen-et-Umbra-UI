@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;#!':;?[=^{\]|}*+()./°," EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="}^:;\]?=&quot;#°!'*+()./,{[|" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>381</borderRightWidth>
+			<borderRightWidth>378</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -485,6 +485,8 @@ elseif (matches[2] == "bonus all'Armatura") then
 elseif (matches[2] == "Causa") then
   ui.identification.bonus = ui.identification.bonus or {}
   ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Danno ("..string.trim(matches[4])..")"
+elseif (matches[2] == "Rarita") then
+  ui.identification.rarita = string.trim(matches[3])
 else
   ui.identification.bonus = ui.identification.bonus or {}
   ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." ("..string.trim(matches[2])..")"
@@ -505,9 +507,11 @@ setTriggerStayOpen("Identification", 1)</script>
 						<string>^(Indossabilita)` : ?(.+).$</string>
 						<string>^Garantisce un (bonus all'Armatura) di (.+).$</string>
 						<string>^(Causa) (.+) danni \(Media: .+\) di tipologia (.+).$</string>
+						<string>^(Rarita)`\s*: (.+)$</string>
 						<string>^\[.+\]\[(.+)\] (.+)$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
+						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
@@ -6144,20 +6148,31 @@ function ui.fUpdateEndowment()
         stat = "&lt;lu&gt;"..ansi2string(decho2ansi(ui.equipment[item].stat)).."&lt;/lu&gt;"
         stat = string.gsub(stat, "(-?%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")      -- Numeric value
         stat = string.gsub(stat, "(%d+d%d+)", "&lt;li&gt;▷ %1 Danno&lt;/li&gt;")  -- Dice ('x'd'y')
+        --
         stat = string.gsub(stat, "[a-zA-Z]+", replacements)           -- Stat
       end
       --
       -- ToolTip
-      local toolTip = '&lt;p style="text-align: center;"&gt;&lt;br&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-                      '&lt;i&gt;Indossato &amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'..
+      local toolTip = '&lt;p style="text-align: center;"&gt;'..
+                      '&lt;i&gt;Indossato &amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;'..
+                      '&lt;br&gt;'..
+                      '&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;'..
+                      '&lt;/p&gt;'..
                       stat..
                       '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..t..'&lt;/i&gt; [Liv. '..ui.equipment[item].level..']&lt;/p&gt;'
       --
       -- ToolTip identificated object
       if (ui.identification) then
-        toolTip = toolTip.."&lt;hr&gt;"..
-        '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ui.identification.name or "no name")..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-        '&lt;i&gt;Identificato &amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;&lt;/p&gt;'
+        toolTip = toolTip..
+                  --'&lt;hr&gt;'..
+                  '&lt;p style="text-align: center;"&gt;'..
+                  '- o -'..
+                  '&lt;br&gt;'..
+                  '&lt;i&gt;Identificato &amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;'..
+                  '&lt;br&gt;'..
+                  '&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ui.identification.name or "no name")..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;'..
+                  '&lt;/p&gt;'
+        --
         if (ui.identification.bonus) then
           toolTip = toolTip.."&lt;lu&gt;"
           for _, i in pairs(ui.identification.bonus) do
@@ -6165,7 +6180,7 @@ function ui.fUpdateEndowment()
           end
           toolTip = toolTip.."&lt;/lu&gt;"
         end
-        toolTip = toolTip..'&lt;p style="text-align: right;"&gt;&lt;i&gt;'..'RARITA'..'&lt;/i&gt; [Liv. '..(ui.identification.level or '-')..']&lt;/p&gt;'              
+        toolTip = toolTip..'&lt;p style="text-align: right;"&gt;&lt;i&gt;'..ui.identification.rarita..'&lt;/i&gt; [Liv. '..(ui.identification.level or '-')..']&lt;/p&gt;'              
       end
       --
       GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
@@ -14279,10 +14294,10 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 			<keyCode>33554431</keyCode>
 			<keyModifier>0</keyModifier>
 			<Key isActive="yes" isFolder="no">
-				<name>keypad + 0 (group)</name>
+				<name>keypad + 0 (get all cad)</name>
 				<packageName></packageName>
-				<script></script>
-				<command>group</command>
+				<script>expandAlias("ll")</script>
+				<command></command>
 				<keyCode>48</keyCode>
 				<keyModifier>536870912</keyModifier>
 			</Key>
@@ -14292,14 +14307,6 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<script></script>
 				<command>look</command>
 				<keyCode>53</keyCode>
-				<keyModifier>536870912</keyModifier>
-			</Key>
-			<Key isActive="yes" isFolder="no">
-				<name>keypad + 7 (get all cad)</name>
-				<packageName></packageName>
-				<script>expandAlias("ll")</script>
-				<command></command>
-				<keyCode>55</keyCode>
 				<keyModifier>536870912</keyModifier>
 			</Key>
 			<KeyGroup isActive="yes" isFolder="yes">
