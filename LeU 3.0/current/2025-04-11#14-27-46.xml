@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="}^:;\]?=&quot;#°!'*+()./,{[|" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="{!°#&quot;,/.)(+*=?]\;:^}|['" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -291,8 +291,8 @@ GUI.Chat.Main.All:decho(m)</script>
 --
 local preDefinitedEquipment = {
   ["come luce"]         = { slot = "Luce",      short = "LUC", used = false },
-  ["mano destra"]       = { slot = "Mano",      short = "MAN", used = false },
-  ["mano sinistra"]     = { slot = "Mano",      short = "MAN", used = false },
+  ["mano destra"]       = { slot = "Dita",      short = "MAN", used = false },
+  ["mano sinistra"]     = { slot = "Dita",      short = "MAN", used = false },
   ["al collo 1"]        = { slot = "Collo",     short = "COL", used = false },
   ["al collo 2"]        = { slot = "Collo",     short = "COL", used = false },
   ["sul corpo"]         = { slot = "Corpo",     short = "COR", used = false },
@@ -313,7 +313,8 @@ local preDefinitedEquipment = {
   ["orecchio sinistro"] = { slot = "Orecchie",  short = "ORE", used = false },
   ["sul viso"]          = { slot = "Viso",      short = "VIS", used = false },
   ["incoccato"]         = { slot = "Incoccato", short = "INC", used = false },
-  ["come aura"]         = { slot = "Aura",      short = "AUR", used = false },}
+  ["come aura"]         = { slot = "Aura",      short = "AUR", used = false },
+}
 --
 ui.equipment = ui.equipment or {}
 ui.equipment = table.update(ui.equipment, preDefinitedEquipment)
@@ -362,7 +363,7 @@ if (ui.equipment[location]) then
   --
   -- Con il comando "eq manc" il numero e "X"
   if (slot.number) then
-    slot.type     = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
+    slot.rarity   = string.gsub(copy2decho(matches[4]), ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
     slot.level    = tonumber(string.trim(matches[5]))
     slot.status   = string.trim(matches[6])
     --
@@ -377,17 +378,38 @@ if (ui.equipment[location]) then
       slot.brittle  = ui.fParsingItem(copy2decho(matches[7]))
     end
     --
-    ui.equipment[location].number = slot.number 
-    ui.equipment[location].type = slot.type 
+    ui.equipment[location].number = slot.number
+    -- 
     ui.equipment[location].level = slot.level
+    --
+    slot.rarity = ansi2string(decho2ansi(slot.rarity))
+    if (slot.rarity == "T") then
+      ui.equipment[location].rarity = "Spazzatura"
+    elseif (slot.rarity == "C") then
+      ui.equipment[location].rarity = "Comune"
+    elseif (slot.rarity == "U") then
+      ui.equipment[location].rarity = "Non comune"
+    elseif (slot.rarity == "R") then
+      ui.equipment[location].rarity = "Raro"
+    elseif (slot.rarity == "E") then
+      ui.equipment[location].rarity = "Epico"
+    elseif (slot.rarity == "L") then
+      ui.equipment[location].rarity = "Leggendario"
+    elseif (slot.rarity == "S") then
+      ui.equipment[location].rarity = "Set"
+    elseif (slot.rarity == "A") then
+      ui.equipment[location].rarity = "Astrale"
+    else
+      ui.equipment[location].rarity = "???"
+    end
     --
     slot.name = string.gsub(slot.name, ":0,0,0&gt;", ":"..ui.colors.wBackground.."&gt;")
     if (ui.fIsStatistics(slot.name)) then
       ui.equipment[location].name = ui.equipment[location].name or ui.equipment[location].slot
-      ui.equipment[location].stat = slot.name;
+      ui.equipment[location].powersAsString = slot.name;
     elseif(ui.equipment[location].name == nil) or (slot.name ~= ui.equipment[location].name) then
       ui.equipment[location].name = slot.name;
-      ui.equipment[location].stat = nil;
+      ui.equipment[location].powersAsString = nil;
     end
     --
     ui.equipment[location].status = slot.status
@@ -452,6 +474,9 @@ disableTrigger("equipment_end")</script>
 ui.identification = {}
 ui.identification.name = matches[2]
 ui.identification.type = matches[3]
+ui.identification.slot = {}
+ui.identification.powers = {}
+
 --
 enableTrigger("identification_valid")
 enableTrigger("identification_invalid")
@@ -476,20 +501,44 @@ enableTrigger("identification_end")</script>
 					<name>identification_valid</name>
 					<script>ui.fDebug("[trig] identification_valid")
 --
+matches[2] = string.trim(matches[2])
+matches[3] = string.trim(matches[3])
+matches[4] = string.trim(matches[4])
+--
 if (matches[2] == "Indossabilita") then
-  ui.identification.slot = string.trim(matches[3])
-  if (ui.identification.slot == "") then ui.identification.slot = ui.identification.type end
+  local slot = matches[3]
+  if (slot == "") then 
+    slot = ui.identification.type 
+  end
+  --
+  for s in slot:gmatch("%S+") do
+    ui.identification.slot[s] = true;
+  end
+--
 elseif (matches[2] == "bonus all'Armatura") then
-  ui.identification.bonus = ui.identification.bonus or {}
-  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Classe Armatura"
+  ui.identification.ac = matches[3]
+--
 elseif (matches[2] == "Causa") then
-  ui.identification.bonus = ui.identification.bonus or {}
-  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." Danno ("..string.trim(matches[4])..")"
+  ui.identification.dice = matches[3]
+  ui.identification.damage = matches[4]
+--
 elseif (matches[2] == "Rarita") then
-  ui.identification.rarita = string.trim(matches[3])
+  ui.identification.rarity = string.trim(matches[3])
+--
+elseif (matches[3] == "Incantesimo su Arma") then
+  table.insert(ui.identification.powers, {
+                                           type = matches[2],
+                                           value = matches[4],
+                                           power = matches[3]
+                                         });
+--
 else
-  ui.identification.bonus = ui.identification.bonus or {}
-  ui.identification.bonus[#ui.identification.bonus+1] = string.trim(matches[3]).." ("..string.trim(matches[2])..")"
+  matches[3] = string.gsub(matches[3], "%%", "")
+  table.insert(ui.identification.powers, {
+                                           type = matches[2],
+                                           value = tonumber(matches[3]) or matches[3],
+                                           power = matches[4]
+                                         });
 end
 --
 setTriggerStayOpen("Identification", 1)</script>
@@ -508,9 +557,11 @@ setTriggerStayOpen("Identification", 1)</script>
 						<string>^Garantisce un (bonus all'Armatura) di (.+).$</string>
 						<string>^(Causa) (.+) danni \(Media: .+\) di tipologia (.+).$</string>
 						<string>^(Rarita)`\s*: (.+)$</string>
-						<string>^\[.+\]\[(.+)\] (.+)$</string>
+						<string>^\[.+\]\[(.+)\] (Incantesimo su Arma): (.+)$</string>
+						<string>^\[.+\]\[(.+)\] (\S+) (.+)$</string>
 					</regexCodeList>
 					<regexCodePropertyList>
+						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
 						<integer>1</integer>
@@ -6050,6 +6101,10 @@ function ui.fUpdateEndowment()
     if (r &gt; tot_r) or (i &gt; total) then
       GUI.Endowment.Main["Item"..i]:hide();
     else
+      local BGColor = "grey"
+      local powers = ""
+      local diceOrAc = ""
+      local toolTip = ""
       local item = orderTable[i]
       --
       -- Status color
@@ -6101,34 +6156,25 @@ function ui.fUpdateEndowment()
       -- Slot
       GUI.Endowment.Main["Item"..i].Slot:echo("&lt;center&gt;"..ui.equipment[item].short);
       --
-      -- Type (determinate color)
-      local BGColor = "grey"
-      local t = ansi2string(decho2ansi(ui.equipment[item].type))
-      --
+      -- Rarity (determinate color)
       -- T = Trash, C = common, U = Uncommon, R = Rare, E = Epic, L = Leggend
-      if (t == "C") then
-        t = "&lt;color=white&gt;Comune&lt;/color&gt;"
+      if (ui.equipment[item].rarity == "Spazzatura") then
         BGColor = "white"
-      elseif (t == "U") then
-        t = "Non comune"
+      elseif (ui.equipment[item].rarity == "Comune") then
+        BGColor = "white"
+      elseif (ui.equipment[item].rarity == "Non comune") then
         BGColor = "lime"
-      elseif (t == "R") then
-        t = "Raro"
+      elseif (ui.equipment[item].rarity == "Raro") then
         BGColor = "rgb(58,120,242)"
-      elseif (t == "E") then
-        t = "Epico"
-        BGColor = "blue"
-      elseif (t == "L") then
-        t = "Leggendario"
+      elseif (ui.equipment[item].rarity == "Epico") then
+        BGColor = "purple"
+      elseif (ui.equipment[item].rarity == "Leggendario") then
         BGColor = "orange"
-      elseif (t == "S") then
-        t = "Set astrale"
+      elseif (ui.equipment[item].rarity == "Set") then
         BGColor = "yellow"        
-      elseif (t == "A") then
-        t = "Astrale"
+      elseif (ui.equipment[item].rarity == "Astrale") then
         BGColor = "cyan"        
       else
-        t = "Spazzatura"
         BGColor = "grey"
       end
       --
@@ -6140,50 +6186,150 @@ function ui.fUpdateEndowment()
       GUI.Endowment.Main["Item"..i]:setStyleSheet([[QLabel{
         ]]..GUI.CSS.Item..[[
         background-color: ]]..BGColor..[[;
+      }
+
+      QToolTip {
+        ]]..GUI.CSS.Widget..[[
+        padding: 3px;
       }]])        
       --
-      -- Stat for ToolTip
-      local stat = ""
-      if (ui.equipment[item].stat) and (ui.equipment[item].stat ~= "") then
-        stat = "&lt;lu&gt;"..ansi2string(decho2ansi(ui.equipment[item].stat)).."&lt;/lu&gt;"
-        stat = string.gsub(stat, "(-?%d+ %S+)", "&lt;li&gt;▷ %1&lt;/li&gt;")      -- Numeric value
-        stat = string.gsub(stat, "(%d+d%d+)", "&lt;li&gt;▷ %1 Danno&lt;/li&gt;")  -- Dice ('x'd'y')
+      -- Convert powers from string to table
+      if (ui.equipment[item].powersAsString) and (ui.equipment[item].powersAsString ~= "") then
+        local i = 1;
+        local p = ansi2string(decho2ansi(ui.equipment[item].powersAsString))
         --
-        stat = string.gsub(stat, "[a-zA-Z]+", replacements)           -- Stat
+        ui.equipment[item].powers = {}
+        for value, space, name in p:gmatch("(%S+)([ d])(%S+)") do
+          name = replacements[name] or name
+          space = space or " "
+          value = tonumber(value) or value
+          --
+          if (space == "d") then
+            ui.equipment[item].dice = value..space..name
+          elseif (i == 1) and (name == "Classe Armatura") then
+            ui.equipment[item].ac = value
+          else
+            table.insert(ui.equipment[item].powers, {
+                                                      power = name,
+                                                      value = value
+                                                    })
+            --
+            if (type(value) ~= "number") then
+              powers = powers..'&lt;font color="white"&gt;'..value'&lt;/font&gt; '..name..'&lt;br&gt;'
+            elseif (value &gt; 0) then
+              powers = powers..'&lt;font color="lime"&gt;'..ui.fdigitNumber("+"..value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..name..'&lt;br&gt;'
+            else
+              powers = powers..'&lt;font color="red"&gt;'..ui.fdigitNumber(value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..name..'&lt;br&gt;'
+            end
+          end
+          i = i + 1;
+        end
+      else
+        ui.equipment[item].dice = nil;
+        ui.equipment[item].ac = nil;
+        ui.equipment[item].powers = {}
       end
+      --
+      -- Dice
+      if (ui.equipment[item].ac) then
+        diceOrAc = diceOrAc..
+                   '&lt;div style="text-align: center;"&gt;'..
+                     '&lt;font color="grey"&gt;Classe Armatura&lt;/font&gt; &lt;font color="cyan"&gt;'..ui.equipment[item].ac..'&lt;/font&gt;'..
+                   '&lt;/div&gt;'
+      end
+      --
+      -- AC
+      if (ui.equipment[item].dice) then
+        diceOrAc = diceOrAc..
+                   '&lt;div style="text-align: center;"&gt;'..
+                     '&lt;font color="grey"&gt;Danno&lt;/font&gt; &lt;font color="cyan"&gt;'..ui.equipment[item].dice..'&lt;/font&gt;'..
+                   '&lt;/div&gt;'
+      end
+      diceOrAc = diceOrAc..'&lt;br&gt;'
       --
       -- ToolTip
-      local toolTip = '&lt;p style="text-align: center;"&gt;'..
-                      '&lt;i&gt;Indossato &amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;'..
-                      '&lt;br&gt;'..
-                      '&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;'..
-                      '&lt;/p&gt;'..
-                      stat..
-                      '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..t..'&lt;/i&gt; [Liv. '..ui.equipment[item].level..']&lt;/p&gt;'
+      toolTip = '&lt;div style="text-align: center;"&gt;'..
+                  '&lt;font color="grey"&gt;&lt;i&gt;&amp;lt;'..ui.equipment[item].slot..'&amp;gt;&lt;/i&gt;&lt;/font&gt;&lt;br&gt;'..
+                  '&lt;b&gt;'..string.upper(ansi2string(decho2ansi(ui.equipment[item].name)))..''..
+                '&lt;/div&gt;'..
+                diceOrAc..
+                powers..
+                '&lt;div style="text-align: right;"&gt;'..
+                  '&lt;font color="'..BGColor..'"&gt;&lt;i&gt;'..ui.equipment[item].rarity..'&lt;/i&gt;&lt;/font&gt; &lt;font color="grey"&gt;Liv.&lt;/font&gt; &lt;font color="lime"&gt;'..ui.equipment[item].level..'&lt;/font&gt;'..
+                '&lt;/div&gt;'
       --
-      -- ToolTip identificated object
-      if (ui.identification) then
+      -- Identify object
+      -- ToolTip
+      if (ui.identification) and (ui.identification.slot) and  (ui.identification.slot[ui.equipment[item].slot]) then
         toolTip = toolTip..
-                  --'&lt;hr&gt;'..
-                  '&lt;p style="text-align: center;"&gt;'..
-                  '- o -'..
-                  '&lt;br&gt;'..
-                  '&lt;i&gt;Identificato &amp;lt;'..(ui.identification.slot or '-')..'&amp;gt;&lt;/i&gt;'..
-                  '&lt;br&gt;'..
-                  '&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(ui.identification.name or "no name")..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;'..
-                  '&lt;/p&gt;'
+                  '&lt;hr&gt;'..
+                  '&lt;div style="text-align: center;"&gt;'..
+                    '&lt;font color="grey"&gt;&lt;i&gt;&amp;lt;'..(ui.equipment[item].slot)..'&amp;gt;&lt;/i&gt;&lt;/font&gt;&lt;br&gt;'..
+                    '&lt;b&gt;'..string.upper(ui.identification.name or "no name")..'&lt;/b&gt;'..
+                  '&lt;/div&gt;'
         --
-        if (ui.identification.bonus) then
-          toolTip = toolTip.."&lt;lu&gt;"
-          for _, i in pairs(ui.identification.bonus) do
-            toolTip = toolTip.."&lt;li&gt;▷ "..i.."&lt;/li&gt;"
-          end
-          toolTip = toolTip.."&lt;/lu&gt;"
+        -- Dice
+        if (ui.identification.ac) then
+          toolTip = toolTip..
+                     '&lt;div style="text-align: center;"&gt;'..
+                       '&lt;font color="grey"&gt;Classe Armatura&lt;/font&gt; &lt;font color="cyan"&gt;'..ui.identification.ac..'&lt;/font&gt;'..
+                     '&lt;/div&gt;'
         end
-        toolTip = toolTip..'&lt;p style="text-align: right;"&gt;&lt;i&gt;'..ui.identification.rarita..'&lt;/i&gt; [Liv. '..(ui.identification.level or '-')..']&lt;/p&gt;'              
+        --
+        -- AC
+        if (ui.identification.dice) then
+          toolTip = toolTip..
+                     '&lt;div style="text-align: center;"&gt;'..
+                       '&lt;font color="grey"&gt;Danno&lt;/font&gt; &lt;font color="cyan"&gt;'..ui.identification.dice..'&lt;/font&gt;'..
+                     '&lt;/div&gt;'
+        end
+        toolTip = toolTip..'&lt;br&gt;'
+        --
+        -- Powers
+        for _,p in pairs(ui.identification.powers) do
+          if (type(p.value) ~= "number") then
+            if (p.power == "Incantesimo su Arma") then
+              toolTip = toolTip..'Inc: &lt;font color="lime"&gt;'..p.value..'&lt;/font&gt;&lt;br&gt;'
+            else
+              toolTip = toolTip..'&lt;font color="white"&gt;'..p.value..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+            end
+          elseif (p.value &gt; 0) then
+            toolTip = toolTip..'&lt;font color="lime"&gt;'..ui.fdigitNumber("+"..p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+          else
+            toolTip = toolTip..'&lt;font color="red"&gt;'..ui.fdigitNumber(p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+          end
+        end
+        --
+        -- Rarity and Level
+        if (ui.identification.rarity == "Spazzatura") then
+          BGColor = "white"
+        elseif (ui.identification.rarity == "Comune") then
+          BGColor = "white"
+        elseif (ui.identification.rarity == "Non comune") then
+          BGColor = "lime"
+        elseif (ui.identification.rarity == "Raro") then
+          BGColor = "rgb(58,120,242)"
+        elseif (ui.identification.rarity == "Epico") then
+          BGColor = "purple"
+        elseif (ui.identification.rarity == "Leggendario") then
+          BGColor = "orange"
+        elseif (ui.identification.rarity == "Set") then
+          BGColor = "yellow"        
+        elseif (ui.identification.rarity == "Astrale") then
+          BGColor = "cyan"        
+        else
+          BGColor = "grey"
+        end
+        toolTip = toolTip..
+                  '&lt;div style="text-align: right;"&gt;'..
+                    '&lt;font color="'..BGColor..'"&gt;&lt;i&gt;'..ui.identification.rarity..'&lt;/i&gt;&lt;/font&gt; &lt;font color="grey"&gt;Liv.&lt;/font&gt; &lt;font color="lime"&gt;'..ui.identification.level..'&lt;/font&gt;'..
+                  '&lt;/div&gt;'            
       end
       --
-      GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 10);
+      toolTip = '&lt;pre style="font-family: monospace;"&gt;'..
+                  toolTip..
+                '&lt;/pre&gt;'                
+      GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 0);
       --
       GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
       GUI.Endowment.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
@@ -6328,12 +6474,13 @@ function ui.fTitle(text)
   return title
 end
 --
-function ui.fdigitNumber(number, digit)
+function ui.fdigitNumber(number, digit, spaceChar)
   number = ""..(number or "")
   digit = tonumber(digit or 2) or 2;
+  spaceChar = spaceChar or " "
   --
   for i = string.len(number), digit-1 do
-    number = " "..number
+    number = spaceChar..number
   end
   --
   return number
@@ -11749,7 +11896,8 @@ end</script>
     GUI.Endowment.Button_refresh:echo("&lt;center&gt;Name");
   else
     GUI.Endowment.Button_refresh:echo("&lt;center&gt;Slot");
-  end  --
+  end
+  --
   -- 25x Slot
   for i=1, 25 do
     --
@@ -11758,7 +11906,7 @@ end</script>
       width = 100,
       height = 26,
     }, GUI.Endowment.Main)
-    GUI.Endowment.Main["Item"..i]:setStyleSheet(GUI.CSS.Item);
+    GUI.Endowment.Main["Item"..i]:set(GUI.CSS.Item);
     --
     -- Index
     GUI.Endowment.Main["Item"..i].Index = Geyser.Label:new2({
