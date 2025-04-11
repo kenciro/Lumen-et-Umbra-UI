@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="{!°#&quot;,/.)(+*=?]\;:^}|['" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=";:=?[]\{^}|)(+*,/.!#&quot;°'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -4760,6 +4760,11 @@ function ui.fUpdateAffects()
         GUI.Affects.Main["Affect"..i]:setStyleSheet([[QLabel{
           ]]..GUI.CSS.Item..[[
           background-color: ]]..BGColor..[[;
+        }
+
+        QToolTip {
+          ]]..GUI.CSS.Widget..[[
+          padding: 3px;
         }]])
         --
         GUI.Affects.Main["Affect"..i].duration:setFgColor(durationColor)
@@ -4783,18 +4788,19 @@ function ui.fUpdateAffects()
         if ui.fHasbit(ui.affects[affect].type, 7) then toolTip = toolTip.."Divine " end
         if ui.fHasbit(ui.affects[affect].type, 8) then toolTip = toolTip.."Elemental " end
         if ui.fHasbit(ui.affects[affect].type, 9) then toolTip = toolTip.."Physical " end
-        if (toolTip == "") then toolTip = "-" else toolTip = "&amp;lt;"..string.trim(toolTip).."&amp;gt;" end
+        if (toolTip == "") then toolTip = "-" end
         --
-        toolTip = '&lt;p style="text-align: center;"&gt;&lt;b&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;'..string.upper(affect)..'&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;br&gt;'..
-                        '&lt;i&gt;'..toolTip..'&lt;/i&gt;&lt;/p&gt;'..
-                        '&lt;lu&gt;'..
-                        '&lt;li&gt;▷ '..ui.affects[affect].dispelResistance.. ' resistenza&lt;/li&gt;'..
-                        '&lt;li&gt;▷ '..ui.affects[affect].stacks..' stack&lt;/li&gt;'..
-                        '&lt;/lu&gt;'..
-                        --stat..
-                        '&lt;p style="text-align: right;"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;'
-        GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 10)
-        --
+        toolTip = '&lt;pre style="font-family: monospace;"&gt;'..
+                   '&lt;div style="text-align: center;"&gt;'..
+                      '&lt;font size=1 color="grey"&gt;'..toolTip..'&lt;/font&gt;&lt;br&gt;'..
+                      '&lt;b&gt;'..string.upper(affect)..'&lt;/b&gt;&lt;br&gt;'..
+                      '&lt;font color="'..durationColor..'"&gt;&lt;i&gt;'..duration..'&lt;/i&gt;&lt;/font&gt;'..
+                    '&lt;/div&gt;'..
+                    '&lt;br&gt;'..
+                    '&lt;font color="cyan"&gt;'..ui.affects[affect].dispelResistance.. '&lt;/font&gt; Resistenza&lt;br&gt;'..
+                    '&lt;font color="orange"&gt;'..ui.affects[affect].stacks..'&lt;/font&gt; Stack'..
+                  '&lt;/pre&gt;'
+        GUI.Affects.Main["Affect"..i]:setToolTip(toolTip, 0)
         --
         GUI.Affects.Main["Affect"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
         GUI.Affects.Main["Affect"..i]:resize(w - distance, h - distance)
@@ -11348,7 +11354,7 @@ end</script>
                                                    ui.parameters.widgets.affects.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  GUI.Affects.Button_hide:setToolTip("Transparent", 10)
+  GUI.Affects.Button_hide:setToolTip("Transparent", 0)
   --
   -- 20x Affects
   local i
@@ -11488,7 +11494,7 @@ end</script>
                                                    ui.parameters.widgets.aliasButton.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  GUI.AliasButtons.Button_hide:setToolTip("Transparent", 10)
+  GUI.AliasButtons.Button_hide:setToolTip("Transparent", 0)
   --
   -- Button "A"
   GUI.AliasButtons.Button_a = Geyser.Label:new2({
@@ -11775,7 +11781,7 @@ end</script>
                                             ui.parameters.widgets.cooldowns.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
-  GUI.Cooldowns.Button_hide:setToolTip("Transparent", 10)
+  GUI.Cooldowns.Button_hide:setToolTip("Transparent", 0)
   --
   -- 10x Slot
   for i=1, 10 do
@@ -11879,7 +11885,7 @@ end</script>
                                             ui.parameters.widgets.endowment.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
-  GUI.Endowment.Button_hide:setToolTip("Transparent", 10)
+  GUI.Endowment.Button_hide:setToolTip("Transparent", 0)
   --
   -- Button "Refresh"
   GUI.Endowment.Button_refresh = Geyser.Label:new2({
@@ -11906,7 +11912,7 @@ end</script>
       width = 100,
       height = 26,
     }, GUI.Endowment.Main)
-    GUI.Endowment.Main["Item"..i]:set(GUI.CSS.Item);
+    GUI.Endowment.Main["Item"..i]:setStyleSheet(GUI.CSS.Item);
     --
     -- Index
     GUI.Endowment.Main["Item"..i].Index = Geyser.Label:new2({
@@ -12046,7 +12052,7 @@ end</script>
                                                    ui.parameters.widgets.group.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  GUI.Group.Button_hide:setToolTip("Transparent", 10)
+  GUI.Group.Button_hide:setToolTip("Transparent", 0)
   --
   -- Members
   for i=1, 10 do
@@ -12377,7 +12383,7 @@ end</script>
                                                    ui.parameters.widgets.opponent.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  GUI.Opponent.Button_hide:setToolTip("Transparent", 10)
+  GUI.Opponent.Button_hide:setToolTip("Transparent", 0)
   --
   -- Opponent Level
   GUI.Opponent.Level = Geyser.Label:new2({
@@ -12511,7 +12517,7 @@ end</script>
                                             ui.parameters.widgets.player.transparent = not mode;
                                             ui.fSaveFileParameters()
                                           end)
-  GUI.Player.Button_hide:setToolTip("Transparent", 10)
+  GUI.Player.Button_hide:setToolTip("Transparent", 0)
   --
   -- Tick 
   GUI.Player.Main.Tick = Geyser.Gauge:new2({
@@ -12808,7 +12814,7 @@ end</script>
                                                    ui.parameters.widgets.targets.transparent = not mode;
                                                    ui.fSaveFileParameters()
                                                 end)
-  GUI.TargetButtons.Button_hide:setToolTip("Transparent", 10)
+  GUI.TargetButtons.Button_hide:setToolTip("Transparent", 0)
   --
   -- Target buttons
   for i=1,4 do
