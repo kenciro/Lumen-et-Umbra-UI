@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=";:=?[]\{^}|)(+*,/.!#&quot;°'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="!#&quot;°')(+*,/.[]\{^}|;:=?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>378</borderRightWidth>
+			<borderRightWidth>379</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -476,7 +476,6 @@ ui.identification.name = matches[2]
 ui.identification.type = matches[3]
 ui.identification.slot = {}
 ui.identification.powers = {}
-
 --
 enableTrigger("identification_valid")
 enableTrigger("identification_invalid")
@@ -598,7 +597,7 @@ setTriggerStayOpen("Identification", 1)</script>
 						<string>Puo` contenere .+ etti.</string>
 						<string>Indice di danneggiamento: .+.</string>
 						<string>Causa i seguenti effetti con potenza .+:</string>
-						<string>  .+</string>
+						<string> .+</string>
 					</regexCodeList>
 					<regexCodePropertyList>
 						<integer>1</integer>
@@ -1616,7 +1615,7 @@ elseif (aura == "ghiaccio") then
 elseif (aura == "elettric") then
   cecho(" &lt;blue&gt;(&lt;r&gt;o&lt;blue&gt;)&lt;r&gt;")
 --
-elseif (aura == "fiammeggiante") then
+elseif (aura == "fiamme") then
   cecho(" &lt;red&gt;(&lt;r&gt;o&lt;red&gt;)&lt;r&gt;")
 --
 elseif (aura == "oscurita") then
@@ -1638,13 +1637,15 @@ end</script>
 				<regexCodeList>
 					<string>.* brilla di (luce) propria!</string>
 					<string>.* e` avvolt[oa] da un\'aura (elettric)a.</string>
-					<string>.* e` avvolt[oa] in una luce (fiammeggiante)!</string>
+					<string>.* e` avvolt[oa] in una luce (fiamme)ggiante!</string>
 					<string>.* e` avvolt[oa] nell'(oscurita)`!</string>
 					<string>La pelle di .* ha la consistenza del (ghiaccio)!</string>
 					<string>L'aria attorno a .* e` carica di (elettric)ita`!</string>
 					<string>.* e` accompagnat[oa] da diverse (copie) di se stess[oa]!</string>
+					<string>.* e` avvolto in un manto di (fiamme).</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
@@ -1994,22 +1995,31 @@ end</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>ToolTip Caratteristica</name>
-				<script>local type = matches[1]
+				<script>--[[
+
+Eff. Abilità Fuoco (etc.) = aumenta l'Efficacia (la più alta tra le due) delle abilità tipo Fuoco (etc.)
+Eff. Corpo a Corpo (fisico) = aumenta la % di dam che viene ereditata dall'arma per gli attacchi melee
+Eff. Corpo a Corpo (magico) = aumenta la % di sp che viene ereditata dall'arma per gli attacchi melee (modificato)
+
+]]
+
+local type = matches[1]
 local slot = {
   ["Precisione"] = "Nuovo nome di Tiro per Colpire, e fa quel che faceva prima: aumenta la % di colpo eccezionale",
-  ["Colpo Critico"] = "Equivalente di Extra/Focus, non più diviso tra magico/fisico.",
-  ["Letalita`"] = "Aumenta il moltiplicatore al danno dei colpi critici.",
-  ["Astuzia"] = "Aumenta l'efficacia di consumabili e weaponspell.",
-  ["Penetrazione"] = "Riduce le resistenze dei bersagli al danno che infliggi.",
+  ["Colpo Critico"] = "Aumenta la % di effettuare un colpo critico",
+  ["Letalita`"] = "Aumenta la % di danno bonus guadagnata dai colpi critici",
+  ["Astuzia"] = "Aumenta l'efficacia di consumabili e weaponspell",
+  ["Penetrazione"] = "Riduce le resistenze degli avversari (anche sotto zero)",
   ["Arma (Magico)"] = "Aumenta la % di potere magico che prendono le armi negli attacchi corpo a corpo.",
   ["Arma (Fisico)"] = "Aumenta la % di dam fisico che prendono le armi negli attacchi corpo a corpo.",
   ["Danno (Elettrico)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
+  ["Danno (Fuovo)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
   ["Danno (Psichico)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
-
+  
   ["Armatura"] = "Classe Armatura",
   ["Recupero Punti Ferita"] = "",
   ["Recupero Punti Mana"] = "",
-  ["Bloccare con lo Scudo"] = "",
+  ["Bloccare con lo Scudo"] = "Aumenta la % di riduzione al danno quando blocchi con lo scudo",
   ["Vitalita`"] = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
   ["Riduzione Danno (Fisico)"] = "",
   ["Riduzione Danno (Magico)"] = "",
@@ -6355,10 +6365,10 @@ function ui.fEndowmentTypeClicked()
   --
   if (ui.parameters.widgets.endowment.type == "name") then
     ui.parameters.widgets.endowment.type = "slot"
-    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Name");
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Slot");
   else
     ui.parameters.widgets.endowment.type = "name"
-    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Slot");
+    GUI.Endowment.Button_refresh:echo("&lt;center&gt;Name");
   end
   --
   --
@@ -6936,6 +6946,26 @@ function ui.updateAllWidgets()
   --
   -- Help widget
   GUI.Help:hide()
+end
+--
+function format_number(n)
+  n = tonumber(n)
+  if n then
+    if n &gt;= 1000000000 then
+      return string.format("%.1fB", n / 1000000000)
+    --
+    elseif n &gt;= 1000000 then
+      return string.format("%.1fM", n / 1000000)
+    --
+    elseif n &gt;= 1000 then
+      return string.format("%.1fK", n / 1000)
+    --
+    else
+      return tostring(n)
+    end
+  end
+  --
+  return nil
 end</script>
 					<eventHandlerList />
 				</Script>
@@ -10129,7 +10159,7 @@ function ui.fUpdatePlayer()
   if (ui.player.experience ~= ui.previous.player.experience) or
      (ui.player.toNext  ~= ui.previous.player.toNext) then
     GUI.Player.Main.Experience:setValue(math.min(math.max(0, ui.player.experience), ui.player.toNext), ui.player.toNext, "")
-    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..ui.player.experience.."&lt;/p&gt;")
+    GUI.Player.Main.ExperienceLabel:echo("&lt;p align=right&gt;"..format_number(ui.player.experience).."&lt;/p&gt;")
   end
   --
   hpGaugeWidthDif = GUI.Player.Main.Health.front:get_width() - hpGaugeWidthDif
