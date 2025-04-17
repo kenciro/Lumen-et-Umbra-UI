@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="!#&quot;°')(+*,/.[]\{^}|;:=?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="/!&quot;#':;=?{|}[\](^)*+°,." EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>379</borderRightWidth>
+			<borderRightWidth>378</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -2005,44 +2005,43 @@ Eff. Corpo a Corpo (magico) = aumenta la % di sp che viene ereditata dall'arma p
 
 local type = matches[1]
 local slot = {
-  ["Precisione"] = "Nuovo nome di Tiro per Colpire, e fa quel che faceva prima: aumenta la % di colpo eccezionale",
-  ["Colpo Critico"] = "Aumenta la % di effettuare un colpo critico",
-  ["Letalita`"] = "Aumenta la % di danno bonus guadagnata dai colpi critici",
-  ["Astuzia"] = "Aumenta l'efficacia di consumabili e weaponspell",
-  ["Penetrazione"] = "Riduce le resistenze degli avversari (anche sotto zero)",
-  ["Arma (Magico)"] = "Aumenta la % di potere magico che prendono le armi negli attacchi corpo a corpo.",
-  ["Arma (Fisico)"] = "Aumenta la % di dam fisico che prendono le armi negli attacchi corpo a corpo.",
-  ["Danno (Elettrico)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
-  ["Danno (Fuovo)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
-  ["Danno (Psichico)"] = "Aumenta il danno (come potere magico/bonus al danno), ma solo per istanze di danno di quel tipo. Ad es. +15 danno fuoco viene applicato su una Palla di Fuoco, ma non su una Disintegrazione.",
-  
-  ["Armatura"] = "Classe Armatura",
-  ["Recupero Punti Ferita"] = "",
-  ["Recupero Punti Mana"] = "",
-  ["Bloccare con lo Scudo"] = "Aumenta la % di riduzione al danno quando blocchi con lo scudo",
-  ["Vitalita`"] = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
+  ["Arma (Fisico)"]            = "Aumenta la % di danno fisico che prendono le armi negli attacchi corpo a corpo.",
+  ["Arma (Magico)"]            = "Aumenta la % di potere magico che prendono le armi negli attacchi corpo a corpo.",
+  ["Armatura"]                 = "Classe Armatura",
+  ["Astuzia"]                  = "Aumenta l'efficacia di consumabili e weaponspell",
+  ["Bloccare con lo Scudo"]    = "Aumenta la % di riduzione al danno quando blocchi con lo scudo",
+  ["Colpo Critico"]            = "Aumenta la % di effettuare un colpo critico",
+  ["Danno (Elettrico)"]        = "Aumenta il danno di tipo Elettrico",
+  ["Danno (Fuoco)"]            = "Aumenta il danno di tipo Fuoco",
+  ["Danno (Psichico)"]         = "Aumenta il danno di tipo Psichico",
+  ["Letalita`"]                = "Aumenta la % di danno dei colpi critici",
+  ["Penetrazione"]             = "Riduce le resistenze degli avversari (anche sotto zero)",
+  ["Precisione"]               = "Tiro per Colpire: aumenta la % di effettuare un colpo eccezionale",
+  ["Recupero Punti Ferita"]    = "",
+  ["Recupero Punti Mana"]      = "",
+  ["Resistenza (Acido)"]       = "Aumenta la resistenze al danno di tipo Acido (Showres per dettagli)",
+  ["Resistenza (Elettrico)"]   = "Aumenta la resistenze al danno di tipo Elettrico (Showres per dettagli)",
+  ["Resistenza (Energia)"]     = "Aumenta la resistenze al danno di tipo Energia (Showres per dettagli)",
+  ["Resistenza (Freddo)"]      = "Aumenta la resistenze al danno di tipo Freddo (Showres per dettagli)",
+  ["Resistenza (Fuoco)"]       = "Aumenta la resistenze al danno di tipo Fuoco (Showres per dettagli)",
+  ["Resistenza (Impatto)"]     = "Aumenta la resistenze al danno di tipo Impatto (Showres per dettagli)",
+  ["Resistenza (Lumen)"]       = "Aumenta la resistenze al danno di tipo Lumen (Showres per dettagli)",
+  ["Resistenza (Natura)"]      = "Aumenta la resistenze al danno di tipo Natura (Showres per dettagli)",
+  ["Resistenza (Psichico)"]    = "Aumenta la resistenze al danno di tipo Psichico (Showres per dettagli)",
+  ["Resistenza (Punta)"]       = "Aumenta la resistenze al danno di tipo Punta (Showres per dettagli)",
+  ["Resistenza (Taglio)"]      = "Aumenta la resistenze al danno di tipo Taglio (Showres per dettagli)",
+  ["Resistenza (Trauma)"]      = "Aumenta la resistenze al danno di tipo Trauma (Showres per dettagli)",
+  ["Resistenza (Umbra)"]       = "Aumenta la resistenze al danno di tipo Umbra (Showres per dettagli)",
   ["Riduzione Danno (Fisico)"] = "",
   ["Riduzione Danno (Magico)"] = "",
-  ["Resistenza (Impatto)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Punta)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Taglio)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Trauma)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Fuoco)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Freddo)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Elettrico)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Energia)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Acido)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Natura)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Psichico)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Lumen)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
-  ["Resistenza (Umbra)"] = "Aumenta la resistenze al danno, vedi Showres per dettagli.",
+  ["Vitalita`"]                = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
 }
 --
 echo(" ")
 if (slot[type]) then
-  cechoLink(ui.cLink(type), [[]], type.."= "..slot[type], true)
+  cechoLink(ui.cLink(type), [[]], slot[type], true)
 else
-  cechoLink(ui.cLink("XXX"), [[]], type.."= ".."Descrizione mancante", true)
+  cechoLink(ui.cLink("XXX"), [[]], type.." = ".."Descrizione mancante", true)
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4289,8 +4288,8 @@ else
         expandAlias("cel", false)
       --
       -- Scudo di fiamme scaduto
-      elseif (ui.affects["mantello di fiamme"] == nil) then
-        expandAlias("flame", false)
+      --elseif (ui.affects["mantello di fiamme"] == nil) then
+      --  expandAlias("flame", false)
       --
       -- Ripristino energia
       elseif (ui.player.pow &lt;= 80) then
@@ -4298,7 +4297,11 @@ else
       --
       -- Lame Psioniche attive
       elseif (ui.affects["lame psioniche"]) then
-        expandAlias("as "..opponent, false)
+        if (ui.cooldowns["Chiaroveggenza"] == nil) then
+          expandAlias("chiaro", false)
+        else
+          expandAlias("as "..opponent, false)
+        end
       --
       -- Mano di energia attiva
       elseif (mano) and (not firstAttack) then
@@ -4488,7 +4491,7 @@ local userData = getAllRoomUserData(ui.room.id)
 if (not table.is_empty(userData)) and (userData[ui.direction]) then
   if (userData[ui.direction.."_action"]) then
     send(userData[ui.direction.."_action"].." "..userData[ui.direction].." "..ui.direction)
-    if (userData[ui.direction.."_action"] ~= "apri") then
+    if (userData[ui.direction.."_action"] == "pick") or (userData[ui.direction.."_action"] == "unlock") then
       send("apri "..userData[ui.direction].." "..ui.direction)
     end
   else
@@ -5988,7 +5991,7 @@ end
 					<script>local replacements = {
 	["DAc"] = "Danno Acido",
 	["DCh"] = "Danno Caos",
-	["DEl"] = "Danno Elettricita'",
+	["DEl"] = "Danno Elettrico",
 	["DEn"] = "Danno Energia",
 	["DFr"] = "Danno Freddo",
 	["DFu"] = "Danno Fuoco",
@@ -6002,29 +6005,29 @@ end
 	["DUm"] = "Danno Umbra",
 	["Dmg"] = "Danno Fisico",
 
-	["EEl"] = "Efficacia Elettricita'",
+	["EEl"] = "Efficacia Elettricita`",
 	["EFr"] = "Efficacia Freddo",
 	["EFu"] = "Efficacia Fuoco",
 
-	["RAc"] = "Resistenza Acido",
-	["RCh"] = "Resistenza Caos",
-	["RDi"] = "Resistenza danni Divini",
-	["REl"] = "Resistenza Elettricita'",
-	["REm"] = "Resistenza danni Elementali",
-	["REn"] = "Resistenza Energia",
-	["RFr"] = "Resistenza Freddo",
+	["RAc"] = "Resistenza all'Acido",
+	["RCh"] = "Resistenza al Caos",
+	["RDi"] = "Resistenza al Divino",
+	["REl"] = "Resistenza all'Elettricita`",
+	["REm"] = "Resistenza all'Elementale",
+	["REn"] = "Resistenza all'Energia",
+	["RFr"] = "Resistenza al Freddo",
 	["RFs"] = "Resistenza al Fisico",
-	["RFu"] = "Resistenza Fuoco",
-	["RIm"] = "Resistenza Impatto",
-	["RLu"] = "Resistenza Lumen",
-	["RMg"] = "Resistenza Magici",
-	["RNa"] = "Resistenza Natura",
-	["RPe"] = "Resistenza Perforazione",
-	["RPs"] = "Resistenza danno Psichico",
-	["RTT"] = "Resistenza Tutto",
-	["RTa"] = "Resistenza Taglio",
-	["RTr"] = "Resistenza Trauma",
-	["RUm"] = "Resistenza Umbra",
+	["RFu"] = "Resistenza al Fuoco",
+	["RIm"] = "Resistenza all'Impatto",
+	["RLu"] = "Resistenza a Lumen",
+	["RMg"] = "Resistenza al Magico",
+	["RNa"] = "Resistenza alla Natura",
+	["RPe"] = "Resistenza alla Perforazione",
+	["RPs"] = "Resistenza al Psichico",
+	["RTT"] = "Resistenza a Tutto",
+	["RTa"] = "Resistenza al Taglio",
+	["RTr"] = "Resistenza al Trauma",
+	["RUm"] = "Resistenza a Umbra",
 
 	["For"] = "Forza",
 	["Des"] = "Destrezza",
@@ -6033,22 +6036,22 @@ end
 	["Sag"] = "Saggezza",
 	["Car"] = "Carisma",
 
-	["Let"] = "Letalita'",
+	["Let"] = "Letalita`",
 	["Ast"] = "Astuzia",
-	["Vit"] = "Vitalità",
+	["Vit"] = "Vitalita`",
 	["Per"] = "Percezione",
 	["Prc"] = "Precisione",
 	["Pen"] = "Penetrazione",
 
 	["Arm"] = "Classe Armatura",
 	["Crt"] = "Colpo Critico",
-	["CCF"] = "Corpo a Corpo Fisico",
-	["CCM"] = "Corpo a Corpo Magico",
+	["CCF"] = "Eff. Corpo a Corpo (Fisico)",
+	["CCM"] = "Eff. Corpo a Corpo (Magico)",
 	["IsA"] = "Incantesimo su Arma",
 	["PdG"] = "Pittura di Guerra",
 	["Mag"] = "Potere Magico",
 	["Spc"] = "Potere Speciale",
-	["BSc"] = "Bloccare con lo Scudo",
+	["BSc"] = "Bloccare con lo scudo",
 	["Nms"] = "Nemesi",
 
 	["PfR"] = "Recupero Punti Ferita",
@@ -9552,9 +9555,19 @@ function ui.fUpdateMapper()
       setMapZoom(zoom, ui.room.areaId)
       -- 
       -- if is mutable area
-      if (ui.room.area == 'Il Dungeon di Bosco Verde ') or -- need end space
-         (ui.room.area == 'Instancing') or
-         (ui.room.area == 'Random Dungeons') then 
+      if (ui.room.area == 'Il Dungeon di Bosco Verde ') then -- need end space
+        -- Clear Dungoens exits only
+        for roomId = 29910, 29990 do
+          setExit(roomId, -1, ui.validExit['u'].long)
+          setExit(roomId, -1, ui.validExit['n'].long)
+          setExit(roomId, -1, ui.validExit['e'].long)
+          setExit(roomId, -1, ui.validExit['s'].long)
+          setExit(roomId, -1, ui.validExit['w'].long)
+          setExit(roomId, -1, ui.validExit['d'].long)
+        end
+      --
+      elseif (ui.room.area == 'Instancing') or
+             (ui.room.area == 'Random Dungeons') then 
         local rooms = getAreaRooms(ui.room.areaId)
         --
         -- Clear area
@@ -9564,14 +9577,20 @@ function ui.fUpdateMapper()
       end
     end
     --
-    -- Update color and character from terrain
-    setRoomChar(ui.room.id, "");
+    -- Update color from terrain
     if (terrain_types[ui.room.terrain]) then
       setRoomEnv(ui.room.id, tonumber(terrain_types[ui.room.terrain].id))
-      -- Assign a char if available
-      if (terrain_types[ui.room.terrain].c) then
-        setRoomChar(ui.room.id, terrain_types[ui.room.terrain].c)
-      end
+    else
+      setRoomEnv(ui.room.id, 37);  -- Default: Strada
+    end
+    -- Assign a character
+    local roomChar = getRoomChar(ui.room.id)
+    if (roomChar ~= "") then
+      setRoomChar(ui.room.id, roomChar)
+    elseif (terrain_types[ui.room.terrain].c) and (roomChar == "") then
+      setRoomChar(ui.room.id, terrain_types[ui.room.terrain].c)
+    else
+      setRoomChar(ui.room.id, "")
     end
     --
     -- Update exits
