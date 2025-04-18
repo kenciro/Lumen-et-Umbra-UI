@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="/!&quot;#':;=?{|}[\](^)*+°,." EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="()*+°'!&quot;#=?\]:^;|}[{,./" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -2084,6 +2084,26 @@ end</script>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Un tremore sordo e profondo scuote improvvisamente la terra!</name>
+				<script></script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>transparent</mFgColor>
+				<mBgColor>#ffffff</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Un tremore sordo e profondo scuote improvvisamente la terra! </string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
@@ -9084,7 +9104,14 @@ end
 --
 function ui.fMapAreaChanged(event, areaId, areaId_from)
   areaId = tonumber(areaId);
+  areaId_from = tonumber(areaId_from);
   --
+  local zoom = getMapZoom(areaId_from or areaId)
+  --
+  -- Set map zoom
+  setMapZoom(zoom, areaId)
+  --
+  -- Highlight
   ui.fHighlightArea(areaId);
 end
 --
@@ -9152,16 +9179,6 @@ function ui.fPrepareSpeedWalk(path, dirs)
     -- Go through dirs to find doors that need opened, etc
     -- add in necessary extra commands to dirs table
     for k = 1, #p do
-      --local id, dir = p[k], d[k]
-      --if (ui.validExit[dir]) then
-      --  local userData = getAllRoomUserData(id)
-      --  --
-      --  if (userData[ui.validExit[dir].short]) then
-      --    table.insert(p, k, id)
-      --    table.insert(d, k, userData[ui.validExit[dir].short])
-      --    k = k + 1
-      --  end
-      --end
       p[k] = tonumber(p[k])
     end
   end
@@ -9539,20 +9556,8 @@ function ui.fUpdateMapper()
       ui.room.id = 10; -- not used room
     end
     --
-    -- Create new room if not exist
-    if (not getRoomName(ui.room.id)) then
-      fUpdateRoom(ui.room, ui.previous.room)
-    end
-    --
-    -- Save areaId (after fUpdateRoom() it will surely exist)
-    ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
-    --
     -- if area changed...
     if (ui.room.area ~= ui.previous.room.area) then
-      local zoom = getMapZoom(ui.previous.room.areaId or ui.room.areaId)
-      --
-      -- Set map zoom
-      setMapZoom(zoom, ui.room.areaId)
       -- 
       -- if is mutable area
       if (ui.room.area == 'Il Dungeon di Bosco Verde ') then -- need end space
@@ -9577,12 +9582,21 @@ function ui.fUpdateMapper()
       end
     end
     --
+    -- Create new room if not exist
+    if (not getRoomName(ui.room.id)) then
+      fUpdateRoom(ui.room, ui.previous.room)
+    end
+    --
+    -- Save areaId (after fUpdateRoom() it will surely exist)
+    ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
+    --
     -- Update color from terrain
     if (terrain_types[ui.room.terrain]) then
       setRoomEnv(ui.room.id, tonumber(terrain_types[ui.room.terrain].id))
     else
       setRoomEnv(ui.room.id, 37);  -- Default: Strada
     end
+    --
     -- Assign a character
     local roomChar = getRoomChar(ui.room.id)
     if (roomChar ~= "") then
@@ -9619,16 +9633,10 @@ function ui.fUpdateMapper()
       end
       setExitStub(ui.room.id, "out", true)
     end
-    --
-    -- if area changed...
-    if (ui.room.area ~= ui.previous.room.area) then
-      ui.fHighlightArea(ui.room.areaId);
-    end
     -- 
     -- Redraw Area
-    if (ui.room.area == 'Random Dungeons') then 
-      --
-      -- redraw area
+    if (ui.room.area == 'Instancing') or
+       (ui.room.area == 'Random Dungeons') then 
       ui.fRedrawArea(ui.room.area, true)
     end
     --
@@ -10366,6 +10374,13 @@ local function getExitNumber(exits, number)
   end
   return "";
 end
+--  
+local function fGetCounter(counter)
+  if (counter) and (tonumber(counter) &gt; 1) then
+    return counter;
+  end
+  return '-'
+end
 --
 function ui.fUpdateRoom()
   local token
@@ -10558,6 +10573,9 @@ function ui.fUpdateRoom()
       GUI.Mapper.Main.Overland:hide();
     end
     --
+    -- Room name
+    GUI.Room:setTitle(ui.room.area.." - "..ui.room.terrain)
+    --
     -- Other exits
     if (table.size(ui.room.otherExits) &gt; 0) then
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
@@ -10572,16 +10590,6 @@ function ui.fUpdateRoom()
         end
       end
       GUI.Room.Main.Console:echo("\n")
-    end
-    --
-    -- Room name
-    GUI.Room:setTitle(ui.room.area.." - "..ui.room.terrain)
-    --  
-    local function fGetCounter(counter)
-      if (counter) and (tonumber(counter) &gt; 1) then
-        return counter;
-      end
-      return '-'
     end
     --
     -- Objects
