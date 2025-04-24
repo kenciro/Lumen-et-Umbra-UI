@@ -1,12 +1,15 @@
+------------------------------------------------------------------
+MATERIALI
+nucleo d'aria elementale	#4612	Elementare dell'aria 	La via del Sole
+Droppano quelli sopra l'houer, droppano quelli di Magma, droppano gli abitatori della fiamma....
+------------------------------------------------------------------
 TODO:
 - rimuofere fontsize su endowment
 - importare profile
 - rinonimare il gouge stamina del widget group in power
 - Rimuovere profili e tutto cio' che ne deriva
-
-Aree da salvare:
-
-
+------------------------------------------------------------------
+TESORI
 Room ID	Area		Note
 22851	Torre Oscura		Ci sono 500.000 mo
 22830	Torre Oscura		C'è una panca con dentro 100.000 mo
@@ -25,10 +28,8 @@ Room ID	Area		Note
 
 24740	Deadhame			7500mo (andando al forziere di moria di uigo, forse una teleport)
 4198	Miniere di Moria		forziere
-
 ------------------------------------------------------------------
 TOKEN
-
     eventStrings.insert(std::make_pair(DAMAGE_MISS, "M"));
     eventStrings.insert(std::make_pair(DAMAGE_GLANCE, "G"));
     eventStrings.insert(std::make_pair(DAMAGE_DODGE, "D"));
@@ -42,6 +43,3 @@ TOKEN
     eventStrings.insert(std::make_pair(DAMAGE_SUSC, "S"));
     eventStrings.insert(std::make_pair(DAMAGE_SHIELDBLOCK, "B"));
 ------------------------------------------------------------------
-MATERIALI
-nucleo d'aria elementale	#4612	Elementare dell'aria 	La via del Sole
-Droppano quelli sopra l'houer, droppano quelli di Magma, droppano gli abitatori della fiamma....

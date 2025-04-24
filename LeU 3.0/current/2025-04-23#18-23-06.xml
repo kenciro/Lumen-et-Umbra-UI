@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="()*+°'!&quot;#=?\]:^;|}[{,./" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=":;=?!°&quot;#'()*+,./[\]^{|}" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>378</borderRightWidth>
+			<borderRightWidth>380</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1946,19 +1947,22 @@ cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..na
 				<name>ToolTip Slot</name>
 				<script>local type = matches[1]
 local slot = {
-  ["Innato"]      = "Non può essere modificato, è una proprietà base dell'oggetto. Non può essere migliorato. Zero varianza.",
-  ["Progressivo"] = "Può essere migliorato, scala con il livello dell'oggetto. Non si può cambiare la statistica. Zero varianza.",
-  ["Cardinale"]   = "Può essere solo Potere Magico o Bonus al Danno Fisico. Può essere invertito con una tramsutazione.",
-  ["Incantato"]   = "Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat affini ad un pg SP. Varianza Standard.",
-  ["Brutale"]     = "Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat affini ad un pg Dam. Varianza Standard.",
-  ["Resiliente"]  = "Può essere migliorato, scala, si può cambiare la statistica. Rollerà stat difensive. Varianza Standard.",
-  ["Volatile"]    = "Può essere migliorato, scala, si può cambiare la statistica. Può rollare tutto. Varianza molto alta.",
+  ["Arcano"]      = "Rigenerabile, Migliorabile (I, II, etc), Cambia con il livello.",
+  ["Innato"]      = "Statistica base dell'oggetto: NON Rigenerabile, NON Migliorabile (I, II, etc), NON Aumenta con il livello.",
+  ["Progressivo"] = "NON Rigenerabile, Migliorabile (I, II, etc), Aumenta con il livello",
+  ["Cardinale"]   = "Rigenerabile (*), Migliorabile (I, II, etc), Aumenta con il livello. (*) Può essere invertito con una tramsutazione.",
+  ["Incantato"]   = "Statistica Spell: Rigenerabile, Migliorabile (I, II, etc), Aumenta con il livello",
+  ["Brutale"]     = "Statistica Damm: Rigenerabile, Migliorabile (I, II, etc), Aumenta con il livello",
+  ["Resiliente"]  = "Statistica Difensiva: Rigenerabile, Migliorabile (I, II, etc), Aumenta con il livello",
+  ["Volatile"]    = "Statistica Generica: Rigenerabile, Migliorabile (I, II, etc), Aumenta con il livello",
   ["Profetico"]   = "Specifico degli oggetti Destino.",
 }
 --
-echo(" ")
 if (slot[type]) then
-  cechoLink(ui.cLink(type), [[]], type.."= "..slot[type], true)
+  local pos = selectString(type, 1)
+  replace("")
+  moveCursor(pos, getLineNumber())
+  cinsertLink("&lt;yellow&gt;&lt;u&gt;"..type.."&lt;r&gt;", [[]], slot[type], true)
 else
   cechoLink(ui.cLink("XXX"), [[]], type.."= ".."Descrizione mancante", true)
 end</script>
@@ -1981,8 +1985,10 @@ end</script>
 					<string>Resiliente</string>
 					<string>Volatile</string>
 					<string>Profetico</string>
+					<string>Arcano</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
@@ -1998,48 +2004,23 @@ end</script>
 				<script>--[[
 
 Eff. Abilità Fuoco (etc.) = aumenta l'Efficacia (la più alta tra le due) delle abilità tipo Fuoco (etc.)
-Eff. Corpo a Corpo (fisico) = aumenta la % di dam che viene ereditata dall'arma per gli attacchi melee
-Eff. Corpo a Corpo (magico) = aumenta la % di sp che viene ereditata dall'arma per gli attacchi melee (modificato)
 
 ]]
 
 local type = matches[1]
 local slot = {
-  ["Arma (Fisico)"]            = "Aumenta la % di danno fisico che prendono le armi negli attacchi corpo a corpo.",
-  ["Arma (Magico)"]            = "Aumenta la % di potere magico che prendono le armi negli attacchi corpo a corpo.",
-  ["Armatura"]                 = "Classe Armatura",
   ["Astuzia"]                  = "Aumenta l'efficacia di consumabili e weaponspell",
-  ["Bloccare con lo Scudo"]    = "Aumenta la % di riduzione al danno quando blocchi con lo scudo",
-  ["Colpo Critico"]            = "Aumenta la % di effettuare un colpo critico",
-  ["Danno (Elettrico)"]        = "Aumenta il danno di tipo Elettrico",
-  ["Danno (Fuoco)"]            = "Aumenta il danno di tipo Fuoco",
-  ["Danno (Psichico)"]         = "Aumenta il danno di tipo Psichico",
   ["Letalita`"]                = "Aumenta la % di danno dei colpi critici",
   ["Penetrazione"]             = "Riduce le resistenze degli avversari (anche sotto zero)",
   ["Precisione"]               = "Tiro per Colpire: aumenta la % di effettuare un colpo eccezionale",
-  ["Recupero Punti Ferita"]    = "",
-  ["Recupero Punti Mana"]      = "",
-  ["Resistenza (Acido)"]       = "Aumenta la resistenze al danno di tipo Acido (Showres per dettagli)",
-  ["Resistenza (Elettrico)"]   = "Aumenta la resistenze al danno di tipo Elettrico (Showres per dettagli)",
-  ["Resistenza (Energia)"]     = "Aumenta la resistenze al danno di tipo Energia (Showres per dettagli)",
-  ["Resistenza (Freddo)"]      = "Aumenta la resistenze al danno di tipo Freddo (Showres per dettagli)",
-  ["Resistenza (Fuoco)"]       = "Aumenta la resistenze al danno di tipo Fuoco (Showres per dettagli)",
-  ["Resistenza (Impatto)"]     = "Aumenta la resistenze al danno di tipo Impatto (Showres per dettagli)",
-  ["Resistenza (Lumen)"]       = "Aumenta la resistenze al danno di tipo Lumen (Showres per dettagli)",
-  ["Resistenza (Natura)"]      = "Aumenta la resistenze al danno di tipo Natura (Showres per dettagli)",
-  ["Resistenza (Psichico)"]    = "Aumenta la resistenze al danno di tipo Psichico (Showres per dettagli)",
-  ["Resistenza (Punta)"]       = "Aumenta la resistenze al danno di tipo Punta (Showres per dettagli)",
-  ["Resistenza (Taglio)"]      = "Aumenta la resistenze al danno di tipo Taglio (Showres per dettagli)",
-  ["Resistenza (Trauma)"]      = "Aumenta la resistenze al danno di tipo Trauma (Showres per dettagli)",
-  ["Resistenza (Umbra)"]       = "Aumenta la resistenze al danno di tipo Umbra (Showres per dettagli)",
-  ["Riduzione Danno (Fisico)"] = "",
-  ["Riduzione Danno (Magico)"] = "",
   ["Vitalita`"]                = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
 }
 --
-echo(" ")
 if (slot[type]) then
-  cechoLink(ui.cLink(type), [[]], slot[type], true)
+  local pos = selectString(type, 1)
+  replace("")
+  moveCursor(pos, getLineNumber())
+  cinsertLink("&lt;yellow&gt;&lt;u&gt;"..type.."&lt;r&gt;", [[]], slot[type], true)
 else
   cechoLink(ui.cLink("XXX"), [[]], type.." = ".."Descrizione mancante", true)
 end</script>
@@ -2054,20 +2035,11 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>Precisione</string>
-					<string>Colpo Critico</string>
-					<string>Letalita`</string>
 					<string>Astuzia</string>
+					<string>Letalita`</string>
 					<string>Penetrazione</string>
-					<string>Arma \((\S*)\)</string>
-					<string>Armatura</string>
-					<string>Recupero Punti Ferita</string>
-					<string>Recupero Punti Mana</string>
-					<string>Bloccare con lo Scudo</string>
+					<string>Precisione</string>
 					<string>Vitalita`</string>
-					<string>Riduzione Danno \((.*)\)</string>
-					<string>Resistenza \((.*)\)</string>
-					<string>Danno \((.*)\)</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>0</integer>
@@ -2075,34 +2047,27 @@ end</script>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
-					<integer>1</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>1</integer>
-					<integer>1</integer>
-					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Un tremore sordo e profondo scuote improvvisamente la terra!</name>
+				<name>Evidenzia</name>
 				<script></script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
 				<mCommand></mCommand>
 				<packageName></packageName>
-				<mFgColor>transparent</mFgColor>
-				<mBgColor>#ffffff</mBgColor>
+				<mFgColor>#ffff00</mFgColor>
+				<mBgColor>#424242</mBgColor>
 				<mSoundFile></mSoundFile>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
 					<string>Un tremore sordo e profondo scuote improvvisamente la terra! </string>
+					<string>Non hai piu` idea di dove si trovi Qualcuno. Era qui un momento fa! [Success]</string>
 				</regexCodeList>
 				<regexCodePropertyList>
+					<integer>3</integer>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -3603,7 +3568,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:biancolatte|alma)(?:\s+(.*))?$</regex>
+				<regex>(?i)^biancolatte|^alma(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio blu mezzanotte, Anime perdute</name>
@@ -3614,7 +3579,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)blumezzanotte|animeperdute(?:\s+(.*))?$</regex>
+				<regex>(?i)^blumezzanotte|^animeperdute(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio cangiante, Colosseo</name>
@@ -3625,7 +3590,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)cangiante|colosseo(?:\s+(.*))?$</regex>
+				<regex>(?i)^cangiante|^colosseo(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio giallo e verde, Necrofagi</name>
@@ -3636,7 +3601,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)gialloeverde|necrofagi(?:\s+(.*))?$</regex>
+				<regex>(?i)^gialloeverde|^necrofagi(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio granito, Mani</name>
@@ -3647,7 +3612,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)granito|nani(?:\s+(.*))?$</regex>
+				<regex>(?i)^granito|^nani(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio, Abisso, Manticore</name>
@@ -3658,7 +3623,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:grigio|abisso|manticore)(?:\s+(.*))?$</regex>
+				<regex>(?i)^grigio|^abisso|^manticore(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio fumo, Drow</name>
@@ -3669,7 +3634,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:grigiofumo|drow)(?:\s+(.*))?$</regex>
+				<regex>(?i)(?:^grigiofumo|^drow)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio palude, Orshingal, Enfan</name>
@@ -3680,7 +3645,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:grigiopalude|orshingal|enfan)(?:\s+(.*))?$</regex>
+				<regex>(?i)(?:^grigiopalude|^orshingal|^enfan)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio scuro, Moria</name>
@@ -3691,7 +3656,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)grigioscuro|moria(?:\s+(.*))?$</regex>
+				<regex>(?i)^grigioscuro|^moria(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio marrone sporco, Lycantropia</name>
@@ -3702,7 +3667,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)marronesporco|lycantropia(?:\s+(.*))?$</regex>
+				<regex>(?i)^marronesporco|^lycantropia(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio oro, torre, Torremagia</name>
@@ -3714,7 +3679,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)oro|torremagia(?:\s+(.*))?$</regex>
+				<regex>(?i)^oro|^torremagia(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio rosso bruciato, Old Thalos, Lamie</name>
@@ -3725,7 +3690,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:rossobruciato|oldthalos|thalos|lamie)(?:\s+(.*))?$</regex>
+				<regex>(?i)(?:^rossobruciato|^oldthalos|^thalos|^lamie)(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio turchese, Deserto, Oasi</name>
@@ -3780,7 +3745,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)verdesmeraldo|grecia(?:\s+(.*))?$</regex>
+				<regex>(?i)^verdesmeraldo|^grecia(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Allania</name>
@@ -4308,8 +4273,8 @@ else
         expandAlias("cel", false)
       --
       -- Scudo di fiamme scaduto
-      --elseif (ui.affects["mantello di fiamme"] == nil) then
-      --  expandAlias("flame", false)
+      elseif (ui.affects["mantello di fiamme"] == nil) then
+        expandAlias("flame", false)
       --
       -- Ripristino energia
       elseif (ui.player.pow &lt;= 80) then
@@ -12240,6 +12205,8 @@ end</script>
     GUI.Group.Main["g"..mod].keybind:setStyleSheet(GUI.CSS.Keybind);
     GUI.Group.Main["g"..mod].keybind:setFontSize(ui.parameters.widgets.keybind.fontSize);
     GUI.Group.Main["g"..mod].keybind:echo("keybind")
+    --
+    GUI.Group.Main["g"..mod]:hide()
   end
   --
   -- Wrapping function
@@ -14504,22 +14471,6 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 			<command></command>
 			<keyCode>33554431</keyCode>
 			<keyModifier>0</keyModifier>
-			<Key isActive="yes" isFolder="no">
-				<name>keypad + 0 (get all cad)</name>
-				<packageName></packageName>
-				<script>expandAlias("ll")</script>
-				<command></command>
-				<keyCode>48</keyCode>
-				<keyModifier>536870912</keyModifier>
-			</Key>
-			<Key isActive="yes" isFolder="no">
-				<name>keypad + 5 (look)</name>
-				<packageName></packageName>
-				<script></script>
-				<command>look</command>
-				<keyCode>53</keyCode>
-				<keyModifier>536870912</keyModifier>
-			</Key>
 			<KeyGroup isActive="yes" isFolder="yes">
 				<name>Look at direction</name>
 				<packageName></packageName>
@@ -14648,6 +14599,78 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 					<keyModifier>738197504</keyModifier>
 				</Key>
 			</KeyGroup>
+			<KeyGroup isActive="yes" isFolder="yes">
+				<name>Open direction</name>
+				<packageName></packageName>
+				<script></script>
+				<command></command>
+				<keyCode>33554431</keyCode>
+				<keyModifier>0</keyModifier>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 1</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co down</command>
+					<keyCode>49</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 2</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co south</command>
+					<keyCode>50</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 4</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co west</command>
+					<keyCode>52</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 6</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co east</command>
+					<keyCode>54</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 8</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co north</command>
+					<keyCode>56</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+				<Key isActive="yes" isFolder="no">
+					<name>CTRL + keypad 9</name>
+					<packageName></packageName>
+					<script></script>
+					<command>co up</command>
+					<keyCode>57</keyCode>
+					<keyModifier>603979776</keyModifier>
+				</Key>
+			</KeyGroup>
+			<Key isActive="yes" isFolder="no">
+				<name>keypad + 0 (get all cad)</name>
+				<packageName></packageName>
+				<script></script>
+				<command>ll</command>
+				<keyCode>48</keyCode>
+				<keyModifier>536870912</keyModifier>
+			</Key>
+			<Key isActive="yes" isFolder="no">
+				<name>keypad + 5 (look)</name>
+				<packageName></packageName>
+				<script></script>
+				<command>look</command>
+				<keyCode>53</keyCode>
+				<keyModifier>536870912</keyModifier>
+			</Key>
 		</KeyGroup>
 	</KeyPackage>
 	<VariablePackage>
