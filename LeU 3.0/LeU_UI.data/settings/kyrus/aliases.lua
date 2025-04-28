@@ -46,7 +46,7 @@ return {{[ [[es]] ] = {2},[ [[ident]] ] = {3},[ [[lampo]] ] = {4},[ [[co]] ] = {
 {[ [[text]] ] = [[mind 'senso del pericolo']],},
 {[ [[text]] ] = [[uigo 3001]],},
 {[ [[text]] ] = [[g &bag3/get # &bag3/p &bag3]],},
-{[ [[mod2]] ] = [[]],[ [[key]] ] = [[F10]],[ [[text]] ] = [[mano /minibuff]],[ [[mod1]] ] = [[]],},
+{[ [[mod2]] ] = [[]],[ [[key]] ] = [[F10]],[ [[text]] ] = [[lame/minibuff]],[ [[mod1]] ] = [[]],},
 {[ [[text]] ] = [[mind 'cannibalizzare']],},
 {[ [[text]] ] = [[get all]],},
 {[ [[text]] ] = [[mind 'viaggio probabilistico']],},
