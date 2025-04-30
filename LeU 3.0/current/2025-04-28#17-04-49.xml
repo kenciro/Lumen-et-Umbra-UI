@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="(+*=?]\;:^}|[°'{!#&quot;,/.)" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="/.)(+*=?];\:^}|[°'{!#&quot;," EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -2097,17 +2097,17 @@ elseif (alias == "remove_all") then
 -- Show single alias
 elseif (value == "") then
   if (ui.aliases[alias]) then
-    ui.fEcho2n(ui.fGetAliasFormattedText(alias))
+    ui.fEcho2n(ui.fC_Alias(alias))
   else
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non esiste.")
+    ui.fError("L'alias "..ui.fC_AliasName(alias).." non esiste.")
   end
 --
 -- Remove single alias
 elseif value == "remove" then
   if (ui.fRemoveAlias(alias)) then
-    ui.fEcho2n("L'alias "..ui.fGetAliasNameFormattedText(alias).." e' stato rimosso.")
+    ui.fEcho2n("L'alias "..ui.fC_AliasName(alias).." e' stato rimosso.")
   else
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non esiste.")
+    ui.fError("L'alias "..ui.fC_AliasName(alias).." non esiste.")
   end
 --
 -- Create o modify an alias
@@ -2115,12 +2115,12 @@ else
   local alreadyExist = ui.aliases[alias];
   local result, output = ui.fAddAlias(alias, value)
   if (result == -1) then
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non è stato creato/modificato. La variabile "..ui.fGetVarNameFormattedText(output).." non esiste.")
+    ui.fError("L'alias "..ui.fC_AliasName(alias).." non è stato creato/modificato. La variabile "..ui.fC_VarName(output).." non esiste.")
   elseif (result == 1) then
     if (alreadyExist) then
-      ui.fEcho2n("L'alias "..ui.fGetAliasNameFormattedText(alias).." è stato modificato: "..output..".")
+      ui.fEcho2n("L'alias "..ui.fC_AliasName(alias).." è stato modificato: "..output..".")
     else
-      ui.fEcho2n("L'alias "..ui.fGetAliasNameFormattedText(alias).." è stato creato: "..output..".")
+      ui.fEcho2n("L'alias "..ui.fC_AliasName(alias).." è stato creato: "..output..".")
     end
   else
     ui.fError("Errore non previsto.")
@@ -2158,21 +2158,21 @@ elseif (alias == "") then
       ui.fLinkAliasButton(button)
       echo("\n\n")
     else
-      ui.fEcho2n("Nessun alias associato al pulsante "..ui.fGetAliasButtonFormattedText(button)..".")
+      ui.fEcho2n("Nessun alias associato al pulsante "..ui.fC_AliasButton(button)..".")
     end
   else
-    ui.fError(ui.fGetAliasButtonFormattedText(button).." non è un pulsante valido.")
+    ui.fError(ui.fC_AliasButton(button).." non è un pulsante valido.")
   end
 --
 -- Delete single alias button
 elseif (alias == "remove") then
   local result = ui.fRemoveAliasButton(button)
   if (result == -2) then
-    ui.fEcho2n("Nessun alias da rimuovere per il pulsante "..ui.fGetAliasButtonFormattedText(button)..".")
+    ui.fEcho2n("Nessun alias da rimuovere per il pulsante "..ui.fC_AliasButton(button)..".")
   elseif (result == -1) then
-    ui.fError(ui.fGetAliasButtonFormattedText(button).." non è un pulsante valido.")
+    ui.fError(ui.fC_AliasButton(button).." non è un pulsante valido.")
   elseif (result == 1) then
-    ui.fEcho2n("L'alias associato al pulsante "..ui.fGetAliasButtonFormattedText(button).." è stato rimosso.")
+    ui.fEcho2n("L'alias associato al pulsante "..ui.fC_AliasButton(button).." è stato rimosso.")
   else
     ui.fError("Errore non previsto.")
   end
@@ -2181,11 +2181,11 @@ elseif (alias == "remove") then
 else
   local result = ui.fAssignAliasButton(button, alias)
   if (result == -2) then
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(alias).." non esiste.")
+    ui.fError("L'alias "..ui.fC_AliasName(alias).." non esiste.")
   elseif (result == -1) then
-    ui.fError(ui.fGetAliasButtonFormattedText(button).." non è un pulsante valido.")
+    ui.fError(ui.fC_AliasButton(button).." non è un pulsante valido.")
   elseif (result == 1) then
-    ui.fEcho2n("Il pulsante "..ui.fGetAliasButtonFormattedText(button).." è stato associato all'alias "..ui.fGetAliasNameFormattedText(alias)..".")
+    ui.fEcho2n("Il pulsante "..ui.fC_AliasButton(button).." è stato associato all'alias "..ui.fC_AliasName(alias)..".")
   else
     ui.fError("Errore non previsto.")
   end
@@ -2266,32 +2266,32 @@ if (matches[3]) then
     -- No existing widget
     else
       fontsize = 0
-      ui.fError("Nome widget errato: Usare "..ui.fGetCommandFormattedText("All")..", "
-                                            ..ui.fGetCommandFormattedText("Chat")..", "
-                                            ..ui.fGetCommandFormattedText("Help")..", "
-                                            ..ui.fGetCommandFormattedText("Overland")..", "
-                                            ..ui.fGetCommandFormattedText("Room")..".")
+      ui.fError("Nome widget errato: Usare "..ui.fC_Command("All")..", "
+                                            ..ui.fC_Command("Chat")..", "
+                                            ..ui.fC_Command("Help")..", "
+                                            ..ui.fC_Command("Overland")..", "
+                                            ..ui.fC_Command("Room")..".")
     end
     --
     if (fontsize &gt; 0) then
       if (windows == "all") then
-        ui.fEcho2n("La dimensione del font di tutti i widget e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
+        ui.fEcho2n("La dimensione del font di tutti i widget e' stata impostata a "..ui.fC_Command(fontsize)..".")
       else
-        ui.fEcho2n("La dimensione del font del widget "..ui.fGetCommandFormattedText(windows).." e' stata impostata a "..ui.fGetCommandFormattedText(fontsize)..".")
+        ui.fEcho2n("La dimensione del font del widget "..ui.fC_Command(windows).." e' stata impostata a "..ui.fC_Command(fontsize)..".")
       end 
       ui.fSaveFileParameters()
     end
   else
-    ui.fError("La dimensione del font e' errata: Usare un valore compreso tra "..ui.fGetCommandFormattedText("1").." e "..ui.fGetCommandFormattedText("30")..".")
+    ui.fError("La dimensione del font e' errata: Usare un valore compreso tra "..ui.fC_Command("1").." e "..ui.fC_Command("30")..".")
   end
 --
 else
   cecho(ui.fTitle("Dimensioni font"))
-  cecho(ui.fGetNumberFormattedText(1)..ui.fGetCommandFormattedText(" Chat")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.chat.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(3)..ui.fGetCommandFormattedText(" Help")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.help.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(5)..ui.fGetCommandFormattedText(" Overland")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.overland.fontSize).."\n");
-  cecho(ui.fGetNumberFormattedText(7)..ui.fGetCommandFormattedText(" Room")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.parameters.widgets.room.fontSize).."\n\n");
-  ui.fEcho2n("Usare "..ui.fGetCommandFormattedText("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fGetVarValueFormattedText("&lt;dimensione_font&gt;"))
+  cecho(ui.fC_Number(1)..ui.fC_Command(" Chat")..ui.fC_Operator(" = ")..ui.fC_VarValue(ui.parameters.widgets.chat.fontSize).."\n");
+  cecho(ui.fC_Number(3)..ui.fC_Command(" Help")..ui.fC_Operator(" = ")..ui.fC_VarValue(ui.parameters.widgets.help.fontSize).."\n");
+  cecho(ui.fC_Number(5)..ui.fC_Command(" Overland")..ui.fC_Operator(" = ")..ui.fC_VarValue(ui.parameters.widgets.overland.fontSize).."\n");
+  cecho(ui.fC_Number(7)..ui.fC_Command(" Room")..ui.fC_Operator(" = ")..ui.fC_VarValue(ui.parameters.widgets.room.fontSize).."\n\n");
+  ui.fEcho2n("Usare "..ui.fC_Command("uisetf[ontsize] &lt;nome_finestra&gt; ")..ui.fC_VarValue("&lt;dimensione_font&gt;"))
 end</script>
 				<command></command>
 				<packageName></packageName>
@@ -2445,7 +2445,7 @@ elseif (color == "remove") then
 -- Show single highlight
 elseif (color == "") then
   if (ui.highlights[text]) then
-    ui.fEcho2n(ui.fGetHighlightFormattedText(text))
+    ui.fEcho2n(ui.fC_Highlight(text))
   else
     ui.fError("L'highlight '"..text.."' non esiste.")
   end
@@ -2455,7 +2455,7 @@ else
   local alreadyExist = ui.highlights[text];
   local result = ui.fAddHighlight(text, color)
   if (result == -2) then
-    ui.fError("L'highlight '"..text.."' non è stato creato/modificato. Il colore '"..color.."' non è valido. Usare il comando "..ui.fGetCommandFormattedText("uicolor").." per l'elenco dei colori disponibili.")
+    ui.fError("L'highlight '"..text.."' non è stato creato/modificato. Il colore '"..color.."' non è valido. Usare il comando "..ui.fC_Command("uicolor").." per l'elenco dei colori disponibili.")
   elseif (result == -1) then
     ui.fError("L'highlight '"..text.."' non è stato creato/modificato. Specificare un testo valido.")
   elseif (result == 1) then
@@ -2532,20 +2532,20 @@ elseif (key1 == "") then
   -- Target
   if (ui.targets[element]) then
     if (ui.targets[element].keybId) then
-      ui.fEcho2n(ui.fGetTargetFormattedText(element))
+      ui.fEcho2n(ui.fC_Target(element))
     else
-      ui.fEcho2n("Nessun tasto rapido è assegnato al target "..ui.fGetTargetFormattedText(element)..".")
+      ui.fEcho2n("Nessun tasto rapido è assegnato al target "..ui.fC_Target(element)..".")
     end
   --
   -- Alias
   elseif (ui.aliases[element]) then
     if (ui.aliases[element].keybId) then
-      ui.fEcho2n(ui.fGetAliasFormattedText(element))
+      ui.fEcho2n(ui.fC_Alias(element))
     else
-      ui.fEcho2n("Nessun tasto rapido è assegnato all'alias "..ui.fGetAliasNameFormattedText(element)..".")
+      ui.fEcho2n("Nessun tasto rapido è assegnato all'alias "..ui.fC_AliasName(element)..".")
     end
   else
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(element).." non esiste.")
+    ui.fError("L'alias "..ui.fC_AliasName(element).." non esiste.")
   end
 --
 -- Delete single keybind
@@ -2559,9 +2559,9 @@ elseif key1 == "remove" then
     if (result == -2) then
       ui.fError("Il target non esiste.")
     elseif (result == -1) then
-      ui.fEcho2n("Nessun tasto rapido assegnato al target "..ui.fGetTargetFormattedText(element).." da rimuovere.")
+      ui.fEcho2n("Nessun tasto rapido assegnato al target "..ui.fC_Target(element).." da rimuovere.")
     elseif (result == 1) then
-      ui.fEcho2n("Il tasto rapido "..ui.fGetKeybFormattedText(keybind)..", associato al target "..ui.fGetTargetFormattedText(element)..", e' stato rimosso.")
+      ui.fEcho2n("Il tasto rapido "..ui.fC_Keyb(keybind)..", associato al target "..ui.fC_Target(element)..", e' stato rimosso.")
     else
       ui.fError("Errore non previsto.")
     end
@@ -2573,14 +2573,14 @@ elseif key1 == "remove" then
     if (result == -2) then
       ui.fError("L'alias non esiste.")
     elseif (result == -1) then
-      ui.fEcho2n("Nessun tasto rapido assegnato all'alias "..ui.fGetAliasNameFormattedText(element).." da rimuovere.")
+      ui.fEcho2n("Nessun tasto rapido assegnato all'alias "..ui.fC_AliasName(element).." da rimuovere.")
     elseif (result == 1) then
-      ui.fEcho2n("Il tasto rapido "..ui.fGetKeybFormattedText(keybind)..", associato all'alias "..ui.fGetAliasNameFormattedText(element)..", e' stato rimosso.")
+      ui.fEcho2n("Il tasto rapido "..ui.fC_Keyb(keybind)..", associato all'alias "..ui.fC_AliasName(element)..", e' stato rimosso.")
     else
       ui.fError("Errore non previsto.")
     end
   else
-    ui.fError("L'alias "..ui.fGetAliasNameFormattedText(element).." non esiste o non è associato a nessun tasto rapido.")
+    ui.fError("L'alias "..ui.fC_AliasName(element).." non esiste o non è associato a nessun tasto rapido.")
   end
 --
 -- Create or delete a keybind
@@ -2595,21 +2595,21 @@ else
   end
   --
   if (result == -4) then
-    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fGetKeybFormattedText(keybind).." è già utilizzata in un alias.")
+    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fC_Keyb(keybind).." è già utilizzata in un alias.")
   elseif (result == -3) then
-    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fGetKeybFormattedText(keybind).." è già utilizzata in un target.")
+    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fC_Keyb(keybind).." è già utilizzata in un target.")
   elseif (result == -2) then
-    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fGetKeybFormattedText(keybind).." non è valida.")
+    ui.fError("Il tasto rapido non è stato assegnato. La combinazione di tasti "..ui.fC_Keyb(keybind).." non è valida.")
   elseif (result == -1) then
-    ui.fError("Il tasto rapido non è stato assegnato. L'alias "..ui.fGetAliasNameFormattedText(element).." non esiste.")
+    ui.fError("Il tasto rapido non è stato assegnato. L'alias "..ui.fC_AliasName(element).." non esiste.")
   elseif (result == 1) and (isTarget) then
-    ui.fEcho2n("Il tasto rapido è stato assegnato al target "..ui.fGetTargetFormattedText(element)..".")
+    ui.fEcho2n("Il tasto rapido è stato assegnato al target "..ui.fC_Target(element)..".")
   elseif (result == 1) and (not isTarget) then
-    ui.fEcho2n("Il tasto rapido è stato assegnato all'alias "..ui.fGetAliasNameFormattedText(element)..".")
+    ui.fEcho2n("Il tasto rapido è stato assegnato all'alias "..ui.fC_AliasName(element)..".")
   elseif (result == 2) and (isTarget) then
-    ui.fEcho2n("Il tasto rapido associato al target "..ui.fGetTargetFormattedText(element).." è stato rimosso.")
+    ui.fEcho2n("Il tasto rapido associato al target "..ui.fC_Target(element).." è stato rimosso.")
   elseif (result == 2) and (not isTarget) then
-    ui.fEcho2n("Il tasto rapido associato all'alias "..ui.fGetAliasNameFormattedText(element).." è stato rimosso.")
+    ui.fEcho2n("Il tasto rapido associato all'alias "..ui.fC_AliasName(element).." è stato rimosso.")
   end
 end
 --
@@ -2660,9 +2660,9 @@ if (subCommand == "") then
 -- Import a profile
 elseif (subCommand == "import") then
   if (ui.fImportSetting(setting)) then
-    ui.fEcho2n("Il setting "..ui.fGetSettingNameFormattedText(setting).." e' stato importato.")
+    ui.fEcho2n("Il setting "..ui.fC_SettingName(setting).." e' stato importato.")
   else
-    ui.fError("Il setting "..ui.fGetSettingNameFormattedText(setting).." non e' stato importato.")
+    ui.fError("Il setting "..ui.fC_SettingName(setting).." non e' stato importato.")
   end
 else
   ui.fError("Parametro non previsto ("..subCommand..").")
@@ -2746,9 +2746,9 @@ local button = button_type..button_number
 -- G buttons
 if (button_type == "G") then
   if (button_number&lt;0) or (button_number&gt;9) then
-    ui.fError(ui.fGetTargetFormattedText(button).." non valido. Usare un target compreso tra "..ui.fGetTargetFormattedText("G0").." e "..ui.fGetTargetFormattedText("G9"))
+    ui.fError(ui.fC_Target(button).." non valido. Usare un target compreso tra "..ui.fC_Target("G0").." e "..ui.fC_Target("G9"))
   elseif (value ~= "") then
-    ui.fError(ui.fGetTargetFormattedText(button).." non è possibile assegnare o rimuovere un valore al target avversario "..ui.fGetTargetFormattedText(button))
+    ui.fError(ui.fC_Target(button).." non è possibile assegnare o rimuovere un valore al target avversario "..ui.fC_Target(button))
   else
     ui.fExecuteTargetButton(button)
   end
@@ -2756,9 +2756,9 @@ if (button_type == "G") then
 -- O button
 elseif (button_type == "O") then
   if (button_number~=0)  then
-    ui.fError(ui.fGetTargetFormattedText(button).." non valido. Usare "..ui.fGetTargetFormattedText("T0"))
+    ui.fError(ui.fC_Target(button).." non valido. Usare "..ui.fC_Target("T0"))
   elseif (value ~= "") then
-    ui.fError(ui.fGetTargetFormattedText(button).." non è possibile assegnare o rimuovere un valore al target di gruppo "..ui.fGetTargetFormattedText(button))
+    ui.fError(ui.fC_Target(button).." non è possibile assegnare o rimuovere un valore al target di gruppo "..ui.fC_Target(button))
   else
     ui.fExecuteTargetButton(button)
   end
@@ -2766,24 +2766,24 @@ elseif (button_type == "O") then
 -- T buttons
 elseif (button_type == "T") then
   if (button_number&lt;1) or (button_number&gt;4) then
-    ui.fError(ui.fGetTargetFormattedText(button).." non valido. Usare "..ui.fGetTargetFormattedText("T1")..", "..ui.fGetTargetFormattedText("T2")..", "..ui.fGetTargetFormattedText("T3").." oppure "..ui.fGetTargetFormattedText("T4"))
+    ui.fError(ui.fC_Target(button).." non valido. Usare "..ui.fC_Target("T1")..", "..ui.fC_Target("T2")..", "..ui.fC_Target("T3").." oppure "..ui.fC_Target("T4"))
   elseif (value == "") then
     ui.fExecuteTargetButton(button)
   elseif (value == "remove") then
     if (ui.fAssignTargetButton(button, nil)) then
       ui.fUpdateAllTargetButtons()
       --
-      ui.fEcho2n(ui.fGetTargetFormattedText(button).." valore rimosso.")
+      ui.fEcho2n(ui.fC_Target(button).." valore rimosso.")
     else
-      ui.fError(ui.fGetTargetFormattedText(button).." errore durante la rimozione del valore.")
+      ui.fError(ui.fC_Target(button).." errore durante la rimozione del valore.")
     end
   else
     if (ui.fAssignTargetButton(button, value)) then
-      ui.fEcho2n(ui.fGetTargetFormattedText(button).." valore impostato "..ui.fGetVarValueFormattedText(value)..".")
+      ui.fEcho2n(ui.fC_Target(button).." valore impostato "..ui.fC_VarValue(value)..".")
     else
       ui.fUpdateAllTargetButtons()
       --
-      ui.fError(ui.fGetTargetFormattedText(button).." errore durante il cambio di valore.")
+      ui.fError(ui.fC_Target(button).." errore durante il cambio di valore.")
     end
   end
 end</script>
@@ -2860,31 +2860,31 @@ elseif variable == "remove_all" then
 -- Show single variable
 elseif value == nil or value == "" then
   if ui.variables[variable] then
-    ui.fEcho2n(ui.fGetVarFormattedText(variable))
+    ui.fEcho2n(ui.fC_Var(variable))
   else
-    ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." non esiste.")
+    ui.fEcho2n("La variabile "..ui.fC_VarName(variable).." non esiste.")
   end
 --
 -- Delete single variable
 elseif value == "remove" then
   if not ui.variables[variable] then
-    ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." non esiste.")
+    ui.fEcho2n("La variabile "..ui.fC_VarName(variable).." non esiste.")
   elseif table.contains(ui.fGetPreDefinitedVariables(), variable) then
     ui.variables[variable] = ""
-    ui.fEcho2n("La variabile predefinita "..ui.fGetVarNameFormattedText(variable).." è stata pulita.")
+    ui.fEcho2n("La variabile predefinita "..ui.fC_VarName(variable).." è stata pulita.")
   else
     ui.variables[variable] = nil
-    ui.fEcho2n("La variabile "..ui.fGetVarNameFormattedText(variable).." e' stata rimossa.")
+    ui.fEcho2n("La variabile "..ui.fC_VarName(variable).." e' stata rimossa.")
   end
 --
 -- Create or modify a variable
 else
   if (ui.variables[variable])then
     ui.variables[variable] = value
-    ui.fEcho2n('La variabile è stata aggiornata: '..ui.fGetVarFormattedText(variable))
+    ui.fEcho2n('La variabile è stata aggiornata: '..ui.fC_Var(variable))
   else
     ui.variables[variable] = value
-    ui.fEcho2n('La variabile è stata creata: '..ui.fGetVarFormattedText(variable))
+    ui.fEcho2n('La variabile è stata creata: '..ui.fC_Var(variable))
   end
 end
 --
@@ -2937,7 +2937,7 @@ elseif (widget == "all") then
 elseif (widgets[widget]) then
   widgets[widget]:restore();
   widgets[widget]:show();
-  ui.fEcho2n("Il widget "..ui.fGetCommandFormattedText(widget).." e' stato ripristinato.")
+  ui.fEcho2n("Il widget "..ui.fC_Command(widget).." e' stato ripristinato.")
 --
 -- No widget exist
 else
@@ -4250,7 +4250,7 @@ else
   ui.echoed = nil
   --
   if (opponent == '') then
-    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
+    cecho(" "..ui.fC_Operator("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
     if (lightSpeed) then
       if (perc &lt;= 80) then
         expandAlias("cel", false)
@@ -4261,7 +4261,7 @@ else
     --
   else
     --
-    cecho(" "..ui.fGetOperatorFormattedText("»").." &lt;red&gt;"..opponent)
+    cecho(" "..ui.fC_Operator("»").." &lt;red&gt;"..opponent)
     --
     -- LightSpeed
     if (lightSpeed) then
@@ -4846,7 +4846,7 @@ function ui.fExpandButton(button)
   return nil, nil
 end
 --
-function ui.fGetAliasButtonFormattedText(button)
+function ui.fC_AliasButton(button)
   local cColor = {
     ["a"] = "&lt;red&gt;",
     ["b"] = "&lt;green&gt;",
@@ -4878,8 +4878,8 @@ end
 -- Cecho Alias with link
 function ui.fLinkAliasButton(button)
   local alias = ui.fSearchAliasButton(button)
-  cechoLink(ui.fGetAliasButtonFormattedText(button), [[expandAlias("]]..button..[[")]], "Esegui '"..button.."'", true)
-  cecho(" "..ui.fGetOperatorFormattedText("»").." ")
+  cechoLink(ui.fC_AliasButton(button), [[expandAlias("]]..button..[[")]], "Esegui '"..button.."'", true)
+  cecho(" "..ui.fC_Operator("»").." ")
   if (alias) then
     ui.fLinkAlias(alias)
   else
@@ -4897,7 +4897,7 @@ function ui.fShowAllAliasButtons()
   local button = {"a", "b", "c"}
   for b=1, 3 do
     for i=0, 9 do
-      cecho(ui.fGetNumberFormattedText((b-1)*10 + i +1).." ")
+      cecho(ui.fC_Number((b-1)*10 + i +1).." ")
       cechoLink(ui.cLink("X"), [[expandAlias("uibuttons ]]..button[b]..i..[[ remove")]], "Rimuovi l'alias associato a '"..button[b]..i.."'", true)
       cecho(" ")
       ui.fLinkAliasButton(button[b]..i)
@@ -4974,7 +4974,7 @@ function ui.fExecuteAliasButton(button)
     if (alias) then
       expandAlias(alias, false)
     else
-      ui.fEcho2n(ui.fGetAliasButtonFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;alias&gt;").." per configurare.")
+      ui.fEcho2n(ui.fC_AliasButton(button).." non configurato. Usare il comanto "..ui.fC_Command(button.." &lt;alias&gt;").." per configurare.")
     end
   end
   --
@@ -5097,11 +5097,11 @@ function ui.fExpandVariables(value, toAlias)
   return value, nil
 end
 --
-function ui.fGetAliasNameFormattedText(alias)
+function ui.fC_AliasName(alias)
   return ui.colors.aliasName..alias.."&lt;r&gt;"
 end
 --
-function ui.fGetAliasOutputFormattedText(command, input)
+function ui.fC_AliasOutput(command, input)
   if (command) then
     input = input or ""
     --
@@ -5112,26 +5112,26 @@ function ui.fGetAliasOutputFormattedText(command, input)
     -- Format Aliases
     command = string.gsub(command, "^(%w+)", function(str)
                                                if ui.aliases[str] then
-                                                 return ui.fGetAliasNameFormattedText(str)..ui.colors.aliasOutput
+                                                 return ui.fC_AliasName(str)..ui.colors.aliasOutput
                                                end
                                              end)
     command = string.gsub(command, "/ (%w+)", function(str)
                                                 if ui.aliases[str] then
-                                                  return "/ "..ui.fGetAliasNameFormattedText(str)..ui.colors.aliasOutput
+                                                  return "/ "..ui.fC_AliasName(str)..ui.colors.aliasOutput
                                                 end
                                               end)
     command = string.gsub(command, "; (%w+)", function(str)
                                                 if ui.aliases[str] then
-                                                  return "; "..ui.fGetAliasNameFormattedText(str)..ui.colors.aliasOutput
+                                                  return "; "..ui.fC_AliasName(str)..ui.colors.aliasOutput
                                                 end
                                               end)
     --
     -- Format Variables
     command = string.gsub(command, "["..ui.varID.."@](%w+)", function(str)
                                                         if not ui.variables[str] then
-                                                          return ui.fGetVarNameFormattedText(str)..ui.fGetOperatorFormattedText("(")..ui.colors.error.."Variabile non trovata!"..ui.fGetOperatorFormattedText(")")..ui.colors.aliasOutput
+                                                          return ui.fC_VarName(str)..ui.fC_Operator("(")..ui.colors.error.."Variabile non trovata!"..ui.fC_Operator(")")..ui.colors.aliasOutput
                                                         else
-                                                          return ui.fGetVarFormattedText(str)..ui.colors.aliasOutput
+                                                          return ui.fC_Var(str)..ui.colors.aliasOutput
                                                         end
                                                       end)
     --
@@ -5140,7 +5140,7 @@ function ui.fGetAliasOutputFormattedText(command, input)
     command = string.gsub(command, "/", ui.colors.separator.."/"..ui.colors.aliasOutput)
     --
     -- Format input command
-    command = string.gsub(command, "#", ui.fGetInputFormattedText("#"..input)..ui.colors.aliasOutput)
+    command = string.gsub(command, "#", ui.fC_Input("#"..input)..ui.colors.aliasOutput)
     --
     return ui.colors.aliasOutput..command.."&lt;r&gt;"
   end
@@ -5148,21 +5148,21 @@ function ui.fGetAliasOutputFormattedText(command, input)
   return ""
 end
 --
-function ui.fGetAliasFormattedText(alias)
+function ui.fC_Alias(alias)
   local ret = ""
   --
   if (ui.aliases[alias]) then
-    ret = ui.fGetAliasNameFormattedText(alias)
+    ret = ui.fC_AliasName(alias)
     --
     if (ui.aliases[alias].keybId) then
-      ret = ret.." "..ui.fGetOperatorFormattedText("or").." "..ui.fGetKeybFormattedText(ui.aliases[alias].keybind)
+      ret = ret.." "..ui.fC_Operator("or").." "..ui.fC_Keyb(ui.aliases[alias].keybind)
     end
     --
     if (ui.aliases[alias].button) then
-      ret = ret.." "..ui.fGetOperatorFormattedText("or").." "..ui.fGetAliasButtonFormattedText(ui.aliases[alias].button)
+      ret = ret.." "..ui.fC_Operator("or").." "..ui.fC_AliasButton(ui.aliases[alias].button)
     end
     --
-    ret = ret.." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text)
+    ret = ret.." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(ui.aliases[alias].text)
   end
   --
   return ret
@@ -5171,8 +5171,8 @@ end
 -- Cecho Alias with link
 function ui.fLinkAlias(alias)
   if (ui.aliases[alias]) then
-    cechoLink(ui.cLink(ui.fGetAliasNameFormattedText(alias)), [[expandAlias("]]..alias..[[")]], "Esegui l'alias '"..alias.."'", true)
-    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(ui.aliases[alias].text))
+    cechoLink(ui.cLink(ui.fC_AliasName(alias)), [[expandAlias("]]..alias..[[")]], "Esegui l'alias '"..alias.."'", true)
+    cecho(" "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(ui.aliases[alias].text))
   end
 end
 --
@@ -5183,12 +5183,12 @@ function ui.fShowAllAliases()
   cecho(ui.fTitle("Aliases"))
   --
   if (table.is_empty(ui.aliases)) then
-    cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uialias").."\n\n")
+    cecho("Per maggiori info "..ui.fC_Command("uihelp uialias").."\n\n")
   else
     local idx = 0
     for alias in ui.fOrderedPairs(ui.aliases) do
       idx = idx + 1
-      cecho(ui.fGetNumberFormattedText(idx).." ")
+      cecho(ui.fC_Number(idx).." ")
       cechoLink(ui.cLink("X"), [[expandAlias("uialias ]]..alias..[[ remove")]], "Cancella l'alias '"..alias.."'", true)
       cecho(" ")
       ui.fLinkAlias(alias)
@@ -5225,29 +5225,29 @@ end
 --
 function ui.fExpandAlias(alias, value, mtchs, command)
   if (ui.echoed == "") then
-    ui.echoed = ui.fGetAliasNameFormattedText(alias).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs);
+    ui.echoed = ui.fC_AliasName(alias).." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs);
     ui.fEcho(ui.echoed);
   else
-    cecho(" "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs));
-    ui.echoed = ui.echoed.." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs)
+    cecho(" "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs));
+    ui.echoed = ui.echoed.." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs)
   end
   expandAlias(command, false);
 end
 --
 function ui.fExpandMultiAlias(idx, alias, value, mtchs, command)
   if (ui.echoed == "") then
-    ui.echoed = ui.fGetAliasNameFormattedText(alias)..ui.fGetNumberFormattedText(idx).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs);
+    ui.echoed = ui.fC_AliasName(alias)..ui.fC_Number(idx).." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs);
     if (idx &gt; 1) then echo("\n") end
     ui.fEcho(ui.echoed);
   elseif (idx == 1) then
-    cecho(ui.fGetNumberFormattedText(idx).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs));
-    ui.echoed = ui.echoed..ui.fGetNumberFormattedText(idx).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs);
+    cecho(ui.fC_Number(idx).." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs));
+    ui.echoed = ui.echoed..ui.fC_Number(idx).." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs);
   else
     local s = ui.echoed
     s = string.gsub(s, "\&lt;%w+\&gt;", "")
     s = string.gsub(s, "»", "x");
     s = string.gsub(s, "%S", " ");
-    ui.echoed = s..ui.fGetNumberFormattedText(idx).." "..ui.fGetOperatorFormattedText("»").." "..ui.fGetAliasOutputFormattedText(value, mtchs);
+    ui.echoed = s..ui.fC_Number(idx).." "..ui.fC_Operator("»").." "..ui.fC_AliasOutput(value, mtchs);
     echo("\n")
     ui.fEcho(ui.echoed);
   end
@@ -5411,7 +5411,7 @@ ui.levelCode = math.max(0, ui.levelCode - 1)
     -- Create alias
     ui.aliases[alias].id = tempAlias([[^]]..alias..[[(?: (.*))?$]], code)
     --
-    return 1, ui.fGetAliasFormattedText(alias)
+    return 1, ui.fC_Alias(alias)
   end
   --
   return -1, varNameError  -- Variable not exist
@@ -6425,7 +6425,7 @@ function ui.fFormatEcho(text, level)
     for i=2, level do
       tab = tab.."    "
     end
-    tab = tab..ui.fGetOperatorFormattedText("  » ")
+    tab = tab..ui.fC_Operator("  » ")
   end
   --
   return ui.echo..tab..ui.colors.text..text.."&lt;r&gt;"
@@ -6489,7 +6489,7 @@ function ui.fdigitNumber(number, digit, spaceChar)
   return number
 end
 --
-function ui.fGetNumberFormattedText(number, digit)
+function ui.fC_Number(number, digit)
   return "&lt;ansiMagenta&gt;[&lt;white&gt;"..ui.fdigitNumber(number, digit).."&lt;ansiMagenta&gt;]".."&lt;r&gt;"
 end
 --
@@ -6569,15 +6569,15 @@ function ui.fParsingItem(text)
   return text, good, evil, bright, noisy, brittle
 end
 --
-function ui.fGetCommandFormattedText(command)
+function ui.fC_Command(command)
   return ui.colors.command..command.."&lt;r&gt;"
 end
 --
-function ui.fGetOperatorFormattedText(operator)
+function ui.fC_Operator(operator)
   return ui.colors.operator..operator.."&lt;r&gt;"
 end
 --
-function ui.fGetInputFormattedText(input)
+function ui.fC_Input(input)
   return ui.colors.input..input.."&lt;r&gt;"
 end
 --
@@ -6607,7 +6607,7 @@ function ui.fExecutePath(table, option)
         --
         -- Show all
         for i = 1, #table do
-          cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetAliasOutputFormattedText(table[i]).."\n")
+          cecho(ui.fC_Number(i).." "..ui.fC_AliasOutput(table[i]).."\n")
         end
       elseif (itemNumber &gt;= 1) and (itemNumber &lt;= #table) then
         expandAlias(table[itemNumber])
@@ -7262,15 +7262,15 @@ function ui.fHelp(cmd)
       tag = tag:lower()
       --
       if (tag == "alias") then
-        inside = ui.fGetAliasFormattedText(inside)          
+        inside = ui.fC_Alias(inside)          
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "aliasname") then
-        inside = ui.fGetAliasNameFormattedText(inside)
+        inside = ui.fC_AliasName(inside)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "aliasoutput") then
-        inside = ui.fGetAliasOutputFormattedText(inside)
+        inside = ui.fC_AliasOutput(inside)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "button") then
@@ -7278,7 +7278,7 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "command") then
-        inside = ui.fGetCommandFormattedText(inside)
+        inside = ui.fC_Command(inside)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "exec") then
@@ -7287,7 +7287,7 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:cechoLink(ui.cLink(inside), [[expandAlias("]]..argument..[[")]], argument, true)
       --
       elseif (tag == "input") then
-        inside = ui.fGetInputFormattedText(inside)          
+        inside = ui.fC_Input(inside)          
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "keybind") then
@@ -7300,7 +7300,7 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:cechoLink(ui.cLink(inside), [[ui.fHelp("]]..argument..[[")]], argument, true)
       --
       elseif (tag == "profile") then
-        inside = ui.fGetSettingNameFormattedText(inside)
+        inside = ui.fC_SettingName(inside)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "title") then
@@ -7308,7 +7308,7 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "var") then
-        inside = ui.fGetVarFormattedText(inside)
+        inside = ui.fC_Var(inside)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "varname") then
@@ -7316,7 +7316,7 @@ function ui.fHelp(cmd)
         GUI.Help.Main.Console:cecho(inside)
       --
       elseif (tag == "varvalue") then
-        inside = ui.fGetVarValueFormattedText(inside)          
+        inside = ui.fC_VarValue(inside)          
         GUI.Help.Main.Console:cecho(inside)
       else
         -- Match non riconosciuto
@@ -7356,7 +7356,7 @@ end</script>
 					<name>Highlights</name>
 					<packageName></packageName>
 					<script>--
-function ui.fGetHighlightFormattedText(highlight)
+function ui.fC_Highlight(highlight)
   if (ui.highlights[highlight]) then
     return "&lt;"..ui.highlights[highlight].color.."&gt;"..highlight.."&lt;r&gt;"
   end
@@ -7373,12 +7373,12 @@ function ui.fShowAllHighlights()
   cecho(ui.fTitle("Highlights"))
   for highlight in pairs(ui.highlights) do
     i = i + 1
-    cecho(ui.fGetNumberFormattedText(i).." "..ui.fGetHighlightFormattedText(highlight).."\n")
+    cecho(ui.fC_Number(i).." "..ui.fC_Highlight(highlight).."\n")
   end
   if (i&gt;0) then
     echo("\n")
   else
-    cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uihighlights").."\n\n")
+    cecho("Per maggiori info "..ui.fC_Command("uihelp uihighlights").."\n\n")
   end
 end
 --
@@ -8444,7 +8444,7 @@ end</script>
 					<name>Keybind</name>
 					<packageName></packageName>
 					<script>--
-function ui.fGetKeybFormattedText(keybind)
+function ui.fC_Keyb(keybind)
   if (keybind) then
     return ui.colors.keybind.."&lt;"..keybind.."&gt;".."&lt;r&gt;"
   end
@@ -8548,11 +8548,11 @@ function ui.fShowAllKeyb()
   cecho(ui.fTitle("Keybind associati ai Target"))
   for i,target in ipairs(orderTable) do
     if (ui.targets[target].keybId) then
-      cecho(ui.fGetNumberFormattedText(i).." ")
+      cecho(ui.fC_Number(i).." ")
       cechoLink(ui.cLink("X"), [[expandAlias("uikeybind ]]..target..[[ remove")]], "Rimuovi il keybind associato al target '"..target.."'", true)
-      cecho(" "..ui.fGetTargetFormattedText(target, true)..ui.fGetOperatorFormattedText(" » "))
+      cecho(" "..ui.fC_Target(target, true)..ui.fC_Operator(" » "))
       if (ui.targets[target].target) then
-        cecho(ui.fGetVarNameFormattedText("target")..ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.targets[target].target))
+        cecho(ui.fC_VarName("target")..ui.fC_Operator(" = ")..ui.fC_VarValue(ui.targets[target].target))
       else
         cecho("&lt;r&gt;non configurato")
       end
@@ -8582,14 +8582,14 @@ function ui.fShowAllKeyb()
   -- Show Aliases keybind
   cecho(ui.fTitle("Keybind associati agli Aliases"))
   for i,alias in ipairs(orderTable) do
-      cecho(ui.fGetNumberFormattedText(i).." ")
+      cecho(ui.fC_Number(i).." ")
       cechoLink(ui.cLink("X"), [[expandAlias("uikeybind ]]..alias..[[ remove")]], "Rimuovi il keybind associato all'alias '"..alias.."'", true)
-      cecho(" "..ui.fGetKeybFormattedText(ui.aliases[alias].keybind)..ui.fGetOperatorFormattedText(" » "))
+      cecho(" "..ui.fC_Keyb(ui.aliases[alias].keybind)..ui.fC_Operator(" » "))
     ui.fLinkAlias(alias)
     cecho("\n")
   end
   if (#orderTable==0) then
-    cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uikeybind").."\n\n")
+    cecho("Per maggiori info "..ui.fC_Command("uihelp uikeybind").."\n\n")
   else
     echo("\n")
   end
@@ -8774,7 +8774,7 @@ function ui.fShowRooms(rooms)
   else
     local counter = 0;
     for k, v in ui.fOrderedPairs(rooms) do
-      cecho(ui.fGetNumberFormattedText(k, 5).." ")
+      cecho(ui.fC_Number(k, 5).." ")
       cechoLink(ui.cLink("I"), [[expandAlias("uiinfo ]]..k..[[")]], "Info su '"..v.."'", true)
       echo(" ") 
       cechoLink(ui.cLink("T"), [[expandAlias("uitrack ]]..k..[[")]], "Traccia un sentiero per '"..v.."'", true)
@@ -10643,7 +10643,7 @@ end</script>
 					<name>Settings</name>
 					<packageName></packageName>
 					<script>--
-function ui.fGetSettingNameFormattedText(setting)
+function ui.fC_SettingName(setting)
   return ui.colors.settingName..setting.."&lt;r&gt;"
 end
 --
@@ -10751,7 +10751,7 @@ function ui.fShowAllSettings()
   cecho(ui.fTitle("Settings"))
   for s in ui.fOrderedPairs(settings) do
     n = n + 1
-    cecho(ui.fGetNumberFormattedText(n).." "..ui.fGetSettingNameFormattedText(settings[s].setting).." in &lt;yellow&gt;"..settings[s].profile.."&lt;r&gt;")
+    cecho(ui.fC_Number(n).." "..ui.fC_SettingName(settings[s].setting).." in &lt;yellow&gt;"..settings[s].profile.."&lt;r&gt;")
     if (settings[s].overcome) then
       cecho(" &lt;orange&gt;(overcame)&lt;r&gt;")
     end
@@ -10924,12 +10924,12 @@ function ui.fGetTargetChild(type, number)
   end
 end
 --
-function ui.fGetTargetFormattedText(target, keybind)
+function ui.fC_Target(target, keybind)
   local str = ui.colors.target..target
   keybind = keybind or false
   --
   if (keybind) and (ui.targets[target]) and (ui.targets[target].keybId) then
-    str = ui.fGetKeybFormattedText(ui.targets[target].keybind)..ui.fGetOperatorFormattedText(" » ")..str
+    str = ui.fC_Keyb(ui.targets[target].keybind)..ui.fC_Operator(" » ")..str
   end
   --
   return str.."&lt;r&gt;"
@@ -11124,25 +11124,25 @@ function ui.fExecuteTargetButton(button)
     if (ui.targets[button]) and (ui.targets[button].target) then
       if (ui.variables["target"] == ui.targets[button].target) then
         ui.variables["target"] = ""
-        ui.fEcho2n(ui.fGetTargetFormattedText(button)..ui.fGetOperatorFormattedText(" » ").."nessun "..ui.fGetVarNameFormattedText("target").." selezionato")
+        ui.fEcho2n(ui.fC_Target(button)..ui.fC_Operator(" » ").."nessun "..ui.fC_VarName("target").." selezionato")
       else
         ui.variables["target"] = ui.targets[button].target
-        ui.fEcho2n(ui.fGetTargetFormattedText(button)..ui.fGetOperatorFormattedText(" » ")..ui.fGetVarNameFormattedText("target").." impostato su "..ui.fGetVarValueFormattedText(ui.variables.target).."&lt;r&gt;.")
+        ui.fEcho2n(ui.fC_Target(button)..ui.fC_Operator(" » ")..ui.fC_VarName("target").." impostato su "..ui.fC_VarValue(ui.variables.target).."&lt;r&gt;.")
       end
       ui.fUpdateTargetButtonsTitle()
     elseif (type == "g") then
-      ui.fEcho2n("Nessun componente del gruppo da associare a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun componente del gruppo da associare a "..ui.fC_Target(button)..".")
     elseif (type == "o") then
-      ui.fEcho2n("Nessun avversario ingaggiato da associare a "..ui.fGetTargetFormattedText(button)..".")
+      ui.fEcho2n("Nessun avversario ingaggiato da associare a "..ui.fC_Target(button)..".")
     elseif (type == "t") then
-      ui.fEcho2n(ui.fGetTargetFormattedText(button).." non configurato. Usare il comanto "..ui.fGetCommandFormattedText(button.." &lt;testo&gt;").." per configurare.")
+      ui.fEcho2n(ui.fC_Target(button).." non configurato. Usare il comanto "..ui.fC_Command(button.." &lt;testo&gt;").." per configurare.")
     end
     -- Save target
     ui.fUpdateAllTargetButtons()
     ui.fSaveFileVariables()
     -- ui.fUpdateOpponent()
   else
-    ui.fEcho2n(ui.fGetTargetFormattedText(button).." pulsante non valido.")
+    ui.fEcho2n(ui.fC_Target(button).." pulsante non valido.")
   end
 end
 --
@@ -11221,21 +11221,21 @@ function ui.fGetPreDefinitedVariables()
   }
 end
 --
-function ui.fGetVarNameFormattedText(varName)
+function ui.fC_VarName(varName)
   return ui.colors.varID..ui.varID..ui.colors.varName..varName.."&lt;r&gt;"
 end
 --
-function ui.fGetVarValueFormattedText(varValue)
+function ui.fC_VarValue(varValue)
   return ui.colors.varCont..tostring(varValue)
 end
 --
-function ui.fGetVarFormattedText(variable)
+function ui.fC_Var(variable)
   if (ui.variables[variable]) then
     if (ui.variables[variable] == "") then
-      return ui.fGetVarNameFormattedText(variable)
+      return ui.fC_VarName(variable)
     end
     --
-    return ui.fGetVarNameFormattedText(variable)..ui.fGetOperatorFormattedText("=")..ui.fGetVarValueFormattedText(ui.variables[variable])
+    return ui.fC_VarName(variable)..ui.fC_Operator("=")..ui.fC_VarValue(ui.variables[variable])
   end
   --
   return ""
@@ -11258,9 +11258,9 @@ function ui.fShowAllVar()
   for variable in pairs(ui.variables) do
     if (ui.variables[variable]) and (ui.fGetPreDefinitedVariables()[variable]) then
       idx = idx + 1
-      cecho(ui.fGetNumberFormattedText(idx).." "..ui.fGetVarNameFormattedText(variable))
+      cecho(ui.fC_Number(idx).." "..ui.fC_VarName(variable))
       if (ui.variables[variable]  ~= "") then
-        cecho(ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable]))
+        cecho(ui.fC_Operator(" = ")..ui.fC_VarValue(ui.variables[variable]))
       end
       cecho("\n")
     end
@@ -11271,11 +11271,11 @@ function ui.fShowAllVar()
   for variable in pairs(ui.variables) do
     if (ui.variables[variable]) and (ui.fGetPreDefinitedVariables()[variable] == nil) then
       idx = idx + 1
-      cecho(ui.fGetNumberFormattedText(idx).." ")
+      cecho(ui.fC_Number(idx).." ")
       cechoLink(ui.cLink("X"), [[expandAlias("uiv ]]..variable..[[ remove]]..getCommandSeparator()..[[uiv")]], "Rimuovi la variabile '"..variable.."'", true)
-      checho(" "..ui.fGetVarNameFormattedText(variable))
+      checho(" "..ui.fC_VarName(variable))
       if (ui.variables[variable]  ~= "") then
-        cecho(ui.fGetOperatorFormattedText(" = ")..ui.fGetVarValueFormattedText(ui.variables[variable]))
+        cecho(ui.fC_Operator(" = ")..ui.fC_VarValue(ui.variables[variable]))
       end
       cecho("\n")
     end
@@ -11284,7 +11284,7 @@ function ui.fShowAllVar()
   if (idx &gt; 0) then
     echo("\n")
   else
-    cecho("Per maggiori info "..ui.fGetCommandFormattedText("uihelp uivariables").."\n\n")
+    cecho("Per maggiori info "..ui.fC_Command("uihelp uivariables").."\n\n")
   end
 end
 --
@@ -12920,7 +12920,7 @@ function ui.fLogin(...)
       if (ui.fLoadLocalSetting(newSetting)) then
         ui.setting = newSetting
         --
-        ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fGetSettingNameFormattedText(newSetting).."&lt;orange&gt; caricate correttamente.")
+        ui.fEchon("&lt;orange&gt; - Impostazioni per "..ui.fC_SettingName(newSetting).."&lt;orange&gt; caricate correttamente.")
         --
         loadNewProfile = true;
       --
@@ -12928,7 +12928,7 @@ function ui.fLogin(...)
       elseif (ui.fCreateSetting(newSetting)) then
         ui.setting = newSetting
         --
-        ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fGetSettingNameFormattedText(newSetting).."&lt;orange&gt; create correttamente.")
+        ui.fEchon("&lt;orange&gt; - Nuova connessione. Impostazioni per "..ui.fC_SettingName(newSetting).."&lt;orange&gt; create correttamente.")
         --
         ui.fEcho("&lt;orange&gt; - Usa il comando ");
         cechoLink(ui.cLink("uisetting"), [[expandAlias("uisetting")]], "Esegui il comando 'uisetting'", true) 
@@ -12938,7 +12938,7 @@ function ui.fLogin(...)
       else
         --
         -- Error creating Setting
-        ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fGetSettingNameFormattedText(newSetting)..".")
+        ui.fError("Impossibile caricare/creare le impostazioni per "..ui.fC_SettingName(newSetting)..".")
         --
         -- Kill events
         if (ui.handlers) and (ui.handlers.fUpdateGMCP_char) then
@@ -13097,7 +13097,7 @@ function ui.fInit()
       ui.fEcho("&lt;orange&gt; - Caricamento 'Lumen et Umbra UI' (rel. "..ui.release..") completato.&lt;r&gt;\n")
       --
     else
-      ui.fEcho("&lt;red&gt; - Errore caricamento cartella "..ui.fGetSettingNameFormattedText("setting").."&lt;red&gt;.&lt;r&gt;\n")
+      ui.fEcho("&lt;red&gt; - Errore caricamento cartella "..ui.fC_SettingName("setting").."&lt;red&gt;.&lt;r&gt;\n")
     end
     --
   else
