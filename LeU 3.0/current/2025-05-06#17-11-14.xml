@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="/.)(+*=?];\:^}|[°'{!#&quot;," EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="!}|#&quot;')(+*,/.;:=?[]\°{^" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -73,6 +73,7 @@
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -224,14 +225,15 @@ if (ui.previous.fromPublic) and (ui.previous.fromPublic == from) then
   m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
 else
   m = str
-  m = string.gsub(m, "&gt;Tu",      "&gt;[Tu]")
-  m = string.gsub(m, "] grida ",   "]")
-  m = string.gsub(m, "] esclama ", "]")
-  m = string.gsub(m, "] mormora ", "]")
-  m = string.gsub(m, "] vi dice ", "]")
-  m = string.gsub(m, "] dice ",    "]")
-  m = string.gsub(m, "] dici ",    "]")
-  m = string.gsub(m, "] risuona ", "]")
+  m = string.gsub(m, "&gt;Tu",         "&gt;[Tu]")
+  m = string.gsub(m, "] grida ",    "]")
+  m = string.gsub(m, "] esclama ",  "]")
+  m = string.gsub(m, "] mormora ",  "]")
+  m = string.gsub(m, "] vi dice ",  "]")
+  m = string.gsub(m, "] dice ",     "]")
+  m = string.gsub(m, "] dici ",     "]")
+  m = string.gsub(m, "] risuona ",  "]")
+  m = string.gsub(m, "] annuncia ", "]")
   --
   m = string.gsub(m, "]",          "] &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..color)
   m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
@@ -255,6 +257,7 @@ else
   m = string.gsub(m, "] dice ",    "]")
   m = string.gsub(m, "] dici ",    "]")
   m = string.gsub(m, "] risuona ", "]")
+  m = string.gsub(m, "] annuncia ", "]")
   --
   m = string.gsub(m, "]",          "] &lt;128,128,128:"..ui.colors.wBackground.."&gt;"..os.date("%H:%M:%S").."\n  "..color)
   m = string.gsub(m, ":0,0,0&gt;",    ":"..ui.colors.wBackground.."&gt;")
@@ -274,7 +277,7 @@ GUI.Chat.Main.All:decho(m)</script>
 					<colorTriggerFgColor>#000000</colorTriggerFgColor>
 					<colorTriggerBgColor>#000000</colorTriggerBgColor>
 					<regexCodeList>
-						<string>(^\[)(.*)\] (?:grida|esclama|mormora|vi dice|dice|risuona) (\'.*\')$</string>
+						<string>(^\[)(.*)\] (?:grida|esclama|mormora|vi dice|dice|risuona|annuncia) (\'.*\')$</string>
 						<string>(^(Tu)) (?:gridi|dici) (\'.*\')$</string>
 						<string>(^\[)(.*)\] (\'.*\')$</string>
 					</regexCodeList>
@@ -1943,7 +1946,92 @@ cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..na
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>ToolTip Slot</name>
+				<name>Link Caratteristica</name>
+				<script>--[[
+
+Eff. Abilità Fuoco (etc.) = aumenta l'Efficacia (la più alta tra le due) delle abilità tipo Fuoco (etc.)
+
+]]
+
+local type = matches[1]
+local slot = {
+  ["Astuzia"]                  = "Aumenta l'efficacia di consumabili e weaponspell",
+  ["Letalita`"]                = "Aumenta la % di danno dei colpi critici",
+  ["Penetrazione"]             = "Riduce le resistenze degli avversari (anche sotto zero)",
+  ["Precisione"]               = "Tiro per Colpire: aumenta la % di effettuare un colpo eccezionale",
+  ["Vitalita`"]                = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
+}
+--
+if (slot[type]) then
+  local pos = selectString(type, 1)
+  replace("")
+  moveCursor(pos, getLineNumber())
+  cinsertLink("&lt;yellow&gt;&lt;u&gt;"..type.."&lt;r&gt;", [[]], slot[type], true)
+else
+  cechoLink(ui.cLink("XXX"), [[]], type.." = ".."Descrizione mancante", true)
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Astuzia</string>
+					<string>Letalita`</string>
+					<string>Penetrazione</string>
+					<string>Precisione</string>
+					<string>Vitalita`</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+					<integer>0</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="yes" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Link Deposita</name>
+				<script>local idx = 1
+
+while matches[idx] do
+  local qty = tonumber(matches[idx + 1])
+  if (qty &gt; 0) then
+    local m = matches[idx]
+    
+    local valuta = string.gsub(m, " d'Oro", "") 
+    local pos = selectString(m, 1)
+    --
+    replace("")
+    moveCursor(pos, getLineNumber())
+    cinsertLink("&lt;yellow&gt;&lt;u&gt;"..m.."&lt;r&gt;", [[send("deposita ]]..string.lower(valuta)..[[")]], "Deposita "..m, true)
+  end
+  idx = idx + 3
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>(\d+) (Monete d'Oro|Astralite|Residuum|Diamanti|Smeraldi|Rubini|Zaffiri)</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Link Slot</name>
 				<script>local type = matches[1]
 local slot = {
   ["Arcano"]      = "Rigenerabile, Migliorabile (I, II, etc), Cambia con il livello.",
@@ -1991,56 +2079,6 @@ end</script>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-					<integer>0</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>ToolTip Caratteristica</name>
-				<script>--[[
-
-Eff. Abilità Fuoco (etc.) = aumenta l'Efficacia (la più alta tra le due) delle abilità tipo Fuoco (etc.)
-
-]]
-
-local type = matches[1]
-local slot = {
-  ["Astuzia"]                  = "Aumenta l'efficacia di consumabili e weaponspell",
-  ["Letalita`"]                = "Aumenta la % di danno dei colpi critici",
-  ["Penetrazione"]             = "Riduce le resistenze degli avversari (anche sotto zero)",
-  ["Precisione"]               = "Tiro per Colpire: aumenta la % di effettuare un colpo eccezionale",
-  ["Vitalita`"]                = "Aumenta le cure ricevute, bonus aumentato se lanciate da voi stessi.",
-}
---
-if (slot[type]) then
-  local pos = selectString(type, 1)
-  replace("")
-  moveCursor(pos, getLineNumber())
-  cinsertLink("&lt;yellow&gt;&lt;u&gt;"..type.."&lt;r&gt;", [[]], slot[type], true)
-else
-  cechoLink(ui.cLink("XXX"), [[]], type.." = ".."Descrizione mancante", true)
-end</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>Astuzia</string>
-					<string>Letalita`</string>
-					<string>Penetrazione</string>
-					<string>Precisione</string>
-					<string>Vitalita`</string>
-				</regexCodeList>
-				<regexCodePropertyList>
 					<integer>0</integer>
 					<integer>0</integer>
 					<integer>0</integer>
@@ -8400,6 +8438,9 @@ end</script>
   -- Previous
   ui.previous = {}
   --
+  -- Room
+  ui.room = {}
+  --
   -- Setting
   ui.setting = nil
   -- 
@@ -9040,12 +9081,12 @@ function ui.fHighlightRoom(roomId)
     end
   end  
   --
-  if (table.contains(memberRoom, roomId)) then
+  if (table.index_of(memberRoom, roomId)) then
     --
     -- Highlight a member group in other room...
     highlightRoom(roomId, 0,255,0, 0,255,0, 1.5, 128, 128)
   --
-  elseif (table.contains(ui.speedwalk.path, roomId)) then
+  elseif (table.index_of(ui.speedwalk.path, roomId)) then
     --
     -- Highlight speedWalk path...
     highlightRoom(roomId, 255,255,255, 255,255,255, 1.5, 128, 128)
@@ -9057,11 +9098,11 @@ function ui.fHighlightRoom(roomId)
 end
 --
 -- Highlight Area
-function ui.fHighlightArea(areaID)
-  local rooms = getAreaRooms(areaID)
+function ui.fHighlightArea(areaId)
+  local rooms = getAreaRooms(areaId)
   --
-  for _,id in ipairs(rooms) do
-    ui.fHighlightRoom(id)
+  for _,roomId in ipairs(rooms) do
+    ui.fHighlightRoom(roomId)
   end
 end
 --
@@ -9401,7 +9442,7 @@ end
 local function fUpdateRoom(room, prev)
   local coords = { 0, 0, 0 }
   local areas = getAreaTable()
-  local areaID = areas[string.trim(room.area)]
+  local areaId = areas[string.trim(room.area)]
   local move_vectors = {
     --         X   Y   Z
     north = {  0,  1,  0},
@@ -9422,9 +9463,9 @@ local function fUpdateRoom(room, prev)
   name = string.gsub(name, "$c%d%d%d%d", "")
 	setRoomName(room.id, name)
   --
-  if (not areaID) then
+  if (not areaId) then
     -- Create Area if not exist
-    areaID = addAreaName(room.area)
+    areaId = addAreaName(room.area)
   end
   --
   -- Positions from file
@@ -9481,9 +9522,9 @@ local function fUpdateRoom(room, prev)
     coords[3] = coords[3] - shift[3]
     --
     -- map stretching
-    local overlap = getRoomsByPosition(areaID,coords[1],coords[2],coords[3])
+    local overlap = getRoomsByPosition(areaId,coords[1],coords[2],coords[3])
     if not table.is_empty(overlap) then
-      local rooms = getAreaRooms(areaID)
+      local rooms = getAreaRooms(areaId)
       local rcoords
       for _,id in ipairs(rooms) do
         rcoords = {getRoomCoordinates(id)}
@@ -9498,7 +9539,7 @@ local function fUpdateRoom(room, prev)
   end
   --
   -- Associate area to room
-  setRoomArea(room.id, areaID)
+  setRoomArea(room.id, areaId)
   --
   -- Set coordinates
   setRoomCoordinates(room.id, coords[1], coords[2], coords[3])
@@ -9525,7 +9566,7 @@ function ui.fUpdateMapper()
       -- 
       -- if is mutable area
       if (ui.room.area == 'Il Dungeon di Bosco Verde ') then -- need end space
-        -- Clear Dungoens exits only
+        -- Clear exits only
         for roomId = 29910, 29990 do
           setExit(roomId, -1, ui.validExit['u'].long)
           setExit(roomId, -1, ui.validExit['n'].long)
@@ -9533,16 +9574,14 @@ function ui.fUpdateMapper()
           setExit(roomId, -1, ui.validExit['s'].long)
           setExit(roomId, -1, ui.validExit['w'].long)
           setExit(roomId, -1, ui.validExit['d'].long)
+          --
+          clearSpecialExits(roomId)
         end
       --
       elseif (ui.room.area == 'Instancing') or
              (ui.room.area == 'Random Dungeons') then 
-        local rooms = getAreaRooms(ui.room.areaId)
-        --
         -- Clear area
-        for _, roomId in pairs(rooms) do
-          deleteRoom(roomId)
-        end
+        deleteArea(ui.room.area)
       end
     end
     --
@@ -9552,6 +9591,7 @@ function ui.fUpdateMapper()
     end
     --
     -- Save areaId (after fUpdateRoom() it will surely exist)
+    display(ui.room.area)
     ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
     --
     -- Update color from terrain
@@ -9565,7 +9605,7 @@ function ui.fUpdateMapper()
     local roomChar = getRoomChar(ui.room.id)
     if (roomChar ~= "") then
       setRoomChar(ui.room.id, roomChar)
-    elseif (terrain_types[ui.room.terrain].c) and (roomChar == "") then
+    elseif (terrain_types[ui.room.terrain].c) then
       setRoomChar(ui.room.id, terrain_types[ui.room.terrain].c)
     else
       setRoomChar(ui.room.id, "")
@@ -9580,11 +9620,11 @@ function ui.fUpdateMapper()
     end
     --
     -- Update exit to prew
-    for _, dir in pairs(ui.origins or {}) do
-      if (ui.validExit[dir]) then
-        setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
-      end
-    end
+    --for _, dir in pairs(ui.origins or {}) do
+    --  if (ui.validExit[dir]) then
+    --    setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
+    --  end
+    --end
     --
     -- Update special exits
     setExitStub(ui.room.id, "out", false)
