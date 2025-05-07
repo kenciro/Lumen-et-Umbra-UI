@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=")(+*[,]°/\.!{^#}&quot;|';:=?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="[}|^;]:\?=#&quot;!'°+*)(/.,{" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,7 +72,6 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
@@ -1048,7 +1047,64 @@ expandAlias("open "..matches[2].." "..ui.direction)</script>
 			</TriggerGroup>
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Luogotenenti</name>
-				<script></script>
+				<script>function getPosition(p)
+  if p == 'sud' then
+    return 2
+  elseif p == 'est' then
+    return 6
+  elseif p == 'nord' then
+    return 8
+  elseif p == 'ovest' then
+    return 4
+  elseif p == 'sud-ovest' then
+    return 1
+  elseif p == 'sud-est' then
+    return 3
+  elseif p == 'nord-est' then
+    return 9
+  elseif p == 'nord-ovest' then
+    return 7
+  elseif p == 'centro' then
+    return 5
+  end
+end
+--
+function sposta(pos)
+  if (ui.player.roomPos == pos) then
+    cecho("\n&lt;green&gt;Movimento non necessario.&lt;r&gt;\n")
+  else
+    local single = false
+    --
+    if (ui.player.roomPos == 1) and (pos == 4 or pos == 2) then
+      single = true      
+    elseif (ui.player.roomPos == 2) and (pos == 1 or pos == 3) then
+      single = true      
+    elseif (ui.player.roomPos == 3) and (pos == 2 or pos == 6) then
+      single = true      
+    elseif (ui.player.roomPos == 4) and (pos == 1 or pos == 7) then
+      single = true      
+    elseif (ui.player.roomPos == 5) or (pos == 5) then
+      single = true
+    elseif (ui.player.roomPos == 6) and (pos == 3 or pos == 9) then
+      single = true      
+    elseif (ui.player.roomPos == 7) and (pos == 4 or pos == 8) then
+      single = true      
+    elseif (ui.player.roomPos == 8) and (pos == 6 or pos == 7) then
+      single = true      
+    elseif (ui.player.roomPos == 9) and (pos == 6 or pos == 8) then
+      single = true
+    end
+    
+    if (single) then    
+      cecho("\n&lt;white:orange&gt;Movimento da ("..ui.player.roomPos..") a ("..pos..")&lt;r&gt;\n")      
+      send("sposta "..pos, true)      
+    else
+      cecho("\n&lt;white:red&gt;DOPPIO movimento da ("..ui.player.roomPos..") a (5) a ("..pos..")&lt;r&gt;\n")
+      send("sposta 5", true)
+      send("sposta "..pos, true)
+    end
+  end
+end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1069,10 +1125,13 @@ Basta semplicemente essere nella stessa location in cui lancia il turbine.
 Dovete spostarvi perché tra il lancio del turbine e la special passa solo 1 round. 
 Se al lancio del turbine non sarete nella giusta posizione perdete 1500 hp.
 ]]
-local direzione = matches[2]
-cecho("\n&lt;white:red&gt; * TURBINE * &lt;r&gt; Muoversi a "..direzione.."\n")
-sposta(getPosition(direzione))
-</script>
+local turbinePos = getPosition(matches[2])
+if (turbinePos == ui.player.roomPos) then
+  cecho("\n&lt;white:red&gt;*** TURBINE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
+else
+  cecho("\n&lt;white:red&gt;*** TURBINE *** &lt;r&gt;&lt;red&gt;(Movimento sul lato del Turbine) &lt;r&gt;\n")
+  sposta(turbinePos)
+end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -1100,15 +1159,16 @@ sposta(getPosition(direzione))
 Questo Luogotenente ha come special skill un raggio di energia pura che va evitato (toglie 2500 hp). 
 Per evitarlo basta essere in un positioning diverso da quello dove indirizza il raggio. 
 ]]
-local direction = getPosition(matches[2])
-local actualPosition = ui.player.roomPos or 5
-cecho("\n&lt;white:red&gt; * RAGGIO * &lt;r&gt; Spostarsi da "..matches[2].." ("..direction..") (se uguale)\n")
-if (actualPosition == direction) then
-  if (actualPosition == 5) then
+local raggioPos = getPosition(matches[2])
+if (raggioPos == ui.player.roomPos) then
+  cecho("\n&lt;white:red&gt;*** RAGGIO *** &lt;r&gt;&lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
+  if (raggioPos == 5) then
     sposta(1)
   else
     sposta(5)
   end
+else
+  cecho("\n&lt;white:red&gt;*** RAGGIO *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1142,10 +1202,16 @@ A differenza del turbine singolo, qui il Luogotenente vi concede due round per s
 In pratica lancia il turbine bidirezionale, poi ci sarà un round bonus in cui avete ancora tempo per essere nei giusti positioning, 
 infine lancia a special skill. E via cosi.
 ]]
-local direzioneA = matches[2]
-local direzioneB = matches[2]
-cecho("\n&lt;white:red&gt; * TREMORE (doppio turbine) * &lt;r&gt; Muoversi a "..direzioneA.."\n")
-sposta(getPosition(direzioneA))</script>
+local tremorePos1 = getPosition(matches[2])
+local tremorePos2 = getPosition(matches[3])
+--
+if (tremorePos2 == ui.player.roomPos) then
+  cecho("\n&lt;white:red&gt;*** TREMORE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
+else
+  cecho("\n&lt;white:red&gt;*** TREMORE *** &lt;r&gt;&lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
+  sposta(tremorePos2)
+end
+</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -1185,8 +1251,14 @@ Se si é da soli basta semplicemente restare immobili e fare quanto piu danno po
 ampiamente gestibili. 
 Se siete un gruppo da tre\quattro basta dividersi il positioning e poi restare immobili, continuando a fare dps.
 ]]
-cecho("\n&lt;white:red&gt; * UNIONE * &lt;r&gt; Posizione diversa dal resto del gruppo (settata a 9)\n")
-sposta(9)</script>
+local unionePos = 9
+--
+if (unionePos == ui.player.roomPos) then
+  cecho("\n&lt;white:red&gt;*** UNIONE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario - Posizione scelta 9)&lt;r&gt;\n")
+else
+  cecho("\n&lt;white:red&gt;*** UNIONE *** &lt;r&gt;&lt;red&gt;(Movimento in posizione diversa dal gruppo - Posizione scelta 9)&lt;r&gt;\n")
+  sposta(unionePos)
+end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
 					<mStayOpen>0</mStayOpen>
@@ -1222,7 +1294,7 @@ Potete riprendere a fare dps in modo massiccio. Il combat va via cosi.
 Se c'é un healer in gruppo, quando il Luogotenente casta l'aura di assorbimento (e solo in quel round) tirategli un heal/miracle/seeds, 
 In questo modo avrà un malus il round successivo e perderà hp in base a quanti hp lo curate. 
 ]]
-cecho("\n&lt;white:red&gt; * AURA * &lt;r&gt; Ferma il combattimento\n")
+cecho("\n&lt;white:red&gt;*** AURA *** &lt;r&gt;&lt;red&gt;(STOP)&lt;r&gt;\n")
 send("stop")</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1407,44 +1479,6 @@ end</script>
 					</regexCodePropertyList>
 				</Trigger>
 			</TriggerGroup>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Invasioni</name>
-				<script>local t1 = matches[2] * 60 * 60 + matches[3] * 60 + matches[4]
-local t2 = os.date("%H") * 60 * 60 + os.date("%M") * 60 + os.date("%S")
-local location = matches[5]
-
-t1 = t2 - t1
-if (t1&gt;=1800) then -- 30 minuti
-  t1 = t1 - 1800;
-  t2 = math.floor(t1/60)
-  t1 = t1 - t2*60
-  cecho(" &lt;red&gt;... (CONCLUSA da "..t2..":"..t1.." min)")
-else
-  t1 = 1800 - t1
-  t2 = math.floor(t1/60)
-  t1 = t1 - t2*60
-  cecho(" &lt;green&gt;... -"..t2..":"..t1.." min alla fine")
-  --
-  --sendToDiscordWebhook("Invasione in corso ["..location.."] -"..t2..":"..t1.." min alla fine")
-end
-setTriggerStayOpen("Invasioni", 1)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>1</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^\[.*\] \[Invasione\] \[(.*)\:(.*)\:(.*)\] Il velo tra le realta' si e' assottigliato a \[(.*)\]</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Movimento MOB</name>
 				<script>local str = matches[1]
@@ -1532,77 +1566,6 @@ end</script>
 					<integer>3</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Inversione descrizione &lt;-&gt; danni</name>
-				<script>local des = copy2decho(matches[2])
-local dam = copy2decho(matches[3])
-if (string.find(dam, "&lt;128,0,0:")) then
-  -- Danno inferto
-  dam = string.gsub(dam, "&lt;128,0,0:", "&lt;128,255,255:") -- &lt;255,164,32:
-  dam = "|       "..dam
-else
-  -- Danno subito
-  dam = dam.."       |"
-end
-for i=1, 7-(matches[3]):len() do
-  dam = string.gsub(dam, '%[', '[ ')
-end
-dam = string.gsub(dam, '%[', '| ')
-dam = string.gsub(dam, '%]', ' |')
-deleteLine()
-decho("\n"..dam.." "..des)
-</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>(.*)(\[[+|-]\d*\])$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Inversione Mob &lt;-&gt; Livello</name>
-				<script>local str, liv, qtt
---
-str = copy2decho(matches[2])
-liv = copy2decho(matches[3])
-liv = string.gsub(liv, "%&gt;(%d)%&lt;", "&gt; %1&lt;")
-liv = string.gsub(liv, "%]%[", "] [")
---
-if (matches[4]) then
-  qtt = string.trim(copy2decho(matches[4]))
-else
-  qtt = "&lt;192,192,192:0,0,0&gt;[&lt;r&gt;&lt;0,255,0:0,0,0&gt;1&lt;r&gt;&lt;192,192,192:0,0,0&gt;]&lt;r&gt;"
-end
---
-selectCaptureGroup(1)
-dreplace(qtt.." " ..liv.." "..str)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^(.*) (\[Liv \d*\])(\[Elite\])?( \[\d*\])?$</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="yes" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Aure</name>
 				<script>local aura = matches[2]
@@ -1655,60 +1618,6 @@ end</script>
 					<integer>1</integer>
 					<integer>1</integer>
 					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Cristalli di Ethereum</name>
-				<script>local str = string.lower(matches[2] or "") 
-if (str == "affilato") then
-  str = "+1 a Tiro per Colpire - Max +2";
-elseif (str == "appuntito") then
-  str = "+1 a Danno Fisico - Max +1";
-elseif (str == "brillante") then
-  str = "+1 a Colpire e Potere Magico - Max +1";
-elseif (str == "concentrato") then
-  str = "+1% a Focus Magico - Max +3";
-elseif (str == "contundente") then
-  str = "+1 a Riduzione da Impatto - Max +2";
-elseif (str == "flessibile") then
-  str = "+2 a Recupero Mana - Max +10";
-elseif (str == "fluorescente") then
-  str = "+6 a Punti Mana - Max +30"
-elseif (str == "frastagliato") then
-  str = "+1 a Colpire e Danno Fisico - Max +1";
-elseif (str == "irrequieto") then
-  str = "+1% ad Attacco Extra - Max +3";
-elseif (str == "luminoso") then
-  str = "+1 a Potere Magico - Max +1";
-elseif (str == "pungente") then
-  str = "+1 a Riduzione da Punta - Max +2";
-elseif (str == "rigenerante") then
-  str = "+4 a Recupero Ferita - Max +20";
-elseif (str == "robusto") then
-  str = "+3 a Punti Ferita - Max +45";
-elseif (str == "tagliente") then
-  str = "+1 a Riduzione da Taglio - Max +2";
-end
-str = ".[&lt;cyan&gt;"..str.."&lt;r&gt;]"
-for i = matches[1]:len(), 70 do
-  str = "."..str;
-end
-cecho(str)</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>.*cristallo di Ethereum (\w*).*</string>
-				</regexCodeList>
-				<regexCodePropertyList>
 					<integer>1</integer>
 				</regexCodePropertyList>
 			</Trigger>
@@ -1843,45 +1752,6 @@ ui.fLog(str)</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Lingotti</name>
-				<script>local str = string.lower(matches[2] or "")
-str = string.trim(str);
---
-if (str == "celestiale") or (str == "della natura") or (str == "infernale") or (str == "di vibranio") or (str == "dragonite") or (str == "ithildin") then
-  str = "Fascia A (7)"
-elseif (str == "runiche") or (str == "di palladio") or (str == "di titanio") or (str == "elementale") then
-  str = "Fascia B (6)"
-elseif (str == "di adamantio") or (str == "di ebanite") or (str == "di oricalco") or (str == "di mithril") then
-  str = "Fascia C (5)"
-elseif (str == "d'oro") or (str == "di platino") then
-  str = "Fascia D (4)"
-elseif (str == "d'argento") or (str == "di ossidiana") then
-  str = "Fascia E (3)"
-elseif (str == "d'acciaio") or (str == "di bronzo") or (str == "di rame") then
-  str = "Fascia F (2)"
-elseif (str == "di piombo") or (str == "di ottone") or (str == "di ferro") then
-  str = "Fascia G (1)"
-end
-
-cecho(" [&lt;cyan&gt;"..str.."&lt;r&gt;] ")</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>.*(?:frammento|lingotto) (.*) \(Componente\).*</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Send all vie Telegram</name>
 				<script>local str = matches[1]
 ui.telegramMessage = ui.telegramMessage or ""
@@ -1910,43 +1780,7 @@ end
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Room name</name>
-				<script>local name = matches[2]
---
-if (ui.room) and (ui.room.id) then
-  cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
-end
---
-echo(" ")
-cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
---echo(" ")
---cechoLink(ui.cLink("I"), [[expandAlias("uiinfo ]]..name..[[")]], "Info su '"..name.."'", true)
---echo(" ") 
---cechoLink(ui.cLink("T"), [[expandAlias("uitrack ]]..name..[[")]], "Traccia un sentiero per '"..name.."'", true)
---echo(" ") 
---cechoLink(ui.cLink("G"), [[expandAlias("uigo ]]..name..[[")]], "Vai a '"..name.."'", true)
-</script>
-				<triggerType>0</triggerType>
-				<conditonLineDelta>0</conditonLineDelta>
-				<mStayOpen>0</mStayOpen>
-				<mCommand></mCommand>
-				<packageName></packageName>
-				<mFgColor>#ff0000</mFgColor>
-				<mBgColor>#ffff00</mBgColor>
-				<mSoundFile></mSoundFile>
-				<colorTriggerFgColor>#000000</colorTriggerFgColor>
-				<colorTriggerBgColor>#000000</colorTriggerBgColor>
-				<regexCodeList>
-					<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto|Prato)</string>
-					<string>^(.*) (\[Zona di Guerra\])</string>
-				</regexCodeList>
-				<regexCodePropertyList>
-					<integer>1</integer>
-					<integer>1</integer>
-				</regexCodePropertyList>
-			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Link Caratteristica</name>
+				<name>Link - Caratteristica</name>
 				<script>--[[
 
 Eff. Abilità Fuoco (etc.) = aumenta l'Efficacia (la più alta tra le due) delle abilità tipo Fuoco (etc.)
@@ -1996,7 +1830,7 @@ end</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="yes" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Link Deposita</name>
+				<name>Link - Deposita</name>
 				<script>local idx = 1
 
 while matches[idx] do
@@ -2031,7 +1865,49 @@ end</script>
 				</regexCodePropertyList>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-				<name>Link Slot</name>
+				<name>Link - Room name</name>
+				<script>local name = matches[2]
+local dname = copy2decho(matches[2])
+--
+--if (ui.room) and (ui.room.id) then
+--  cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
+--end
+--
+--echo(" ")
+--cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
+
+
+--
+local pos = selectString(name, 1)
+replace("")
+moveCursor(pos, getLineNumber())
+dinsertLink("&lt;u&gt;"..dname.."&lt;r&gt;", [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
+
+if (ui.room) and (ui.room.id) then
+  cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
+end
+cecho("\n&lt;cyan&gt;----------------------------------------------------------------------------------------------------&lt;r&gt;\n")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto|Prato)</string>
+					<string>^(.*) (\[Zona di Guerra\])</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Link - Slot</name>
 				<script>local type = matches[1]
 local slot = {
   ["Arcano"]      = "Rigenerabile, Migliorabile (I, II, etc), Cambia con il livello.",
@@ -8904,9 +8780,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       end 
       --
       if (infoType == "otherexit") or (infoType == "all") then
-        if (table.is_empty(specialExits)) then
-          outString = outString..iColor["text"].."Non ci sono uscite speciali.\n"
-        else
+        if (not table.is_empty(specialExits)) then
+        --  outString = outString..iColor["text"].."Non ci sono uscite speciali.\n"
+        --else
           outString = outString..iColor["text"].."Uscite speciali:\n"
           for k,v in pairs(specialExits) do
             local exitIdArea = getRoomArea(k)
@@ -8929,9 +8805,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       end
       --
       if (infoType == "door") then
-        if (table.is_empty(doors)) then
-          outString = outString..iColor["text"].."Non ci sono porte.\n"
-        else
+        if (not table.is_empty(doors)) then
+        --  outString = outString..iColor["text"].."Non ci sono porte.\n"
+        --else
           outString = outString..iColor["text"].."Porte:\n"
           for k,v in pairs(doors) do
             outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].token.." "..ui.validExit[k].long
@@ -8949,9 +8825,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       end
       --
       if (infoType == "entrance") or (infoType == "all") then
-        if (table.is_empty(entrances)) then
-          outString = outString..iColor["text"].."Non ci sono entrate.\n"
-        else
+        if (not table.is_empty(entrances)) then
+        --  outString = outString..iColor["text"].."Non ci sono entrate.\n"
+        --else
           outString = outString..iColor["text"].."Entrate:\n"
           for k,v in pairs(entrances) do
             local entranceExits = getRoomExits(v)
@@ -8987,9 +8863,9 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       end
       --
       if (infoType == "data") then
-        if (table.is_empty(userData)) then
-          outString = outString..iColor["text"].."Non ci sono note.\n"
-        else
+        if (not table.is_empty(userData)) then
+        --  outString = outString..iColor["text"].."Non ci sono note.\n"
+        --else
           local function readUserData(userData, direction)
             local dir = 'x';
             local name = '???';
@@ -13767,76 +13643,6 @@ end
   postHTTP(yajl.to_string(data), url, header)
   killAnonymousEventHandler(httpdone)
   killAnonymousEventHandler(httperror)
-end</script>
-					<eventHandlerList />
-				</Script>
-			</ScriptGroup>
-			<ScriptGroup isActive="yes" isFolder="yes">
-				<name>Luogotenenti</name>
-				<packageName></packageName>
-				<script></script>
-				<eventHandlerList />
-				<Script isActive="yes" isFolder="no">
-					<name>luogotenenti</name>
-					<packageName></packageName>
-					<script>function getPosition(direzione)
-  if direzione == 'sud' then
-    return 2
-  elseif direzione == 'est' then
-    return 6
-  elseif direzione == 'nord' then
-    return 8
-  elseif direzione == 'ovest' then
-    return 4
-  elseif direzione == 'sud-ovest' then
-    return 1
-  elseif direzione == 'sud-est' then
-    return 3
-  elseif direzione == 'nord-est' then
-    return 9
-  elseif direzione == 'nord-ovest' then
-    return 7
-  elseif direzione == 'centro' then
-    return 5
-  end
-end
---
-function sposta(direction)
-  local actualPosition = ui.player.roomPos or 5
-  if (actualPosition == direction) then
-    cecho("\n&lt;white:green&gt;Movimento non necessario. Sei gia' in ("..actualPosition..")&lt;r&gt;",false)
-  else
-    if (actualPosition == 1) and (direction == 4 or direction == 2) then
-      onestepmove=true      
-    elseif (actualPosition == 2) and (direction == 1 or direction == 3) then
-      onestepmove=true      
-    elseif (actualPosition == 3) and (direction == 2 or direction == 6) then
-      onestepmove=true      
-    elseif (actualPosition == 4) and (direction == 1 or direction == 7) then
-      onestepmove=true      
-    elseif (actualPosition == 5) or (direction == 5) then
-      onestepmove=true
-    elseif (actualPosition == 6) and (direction == 3 or direction == 9) then
-      onestepmove=true      
-    elseif (actualPosition == 7) and (direction == 4 or direction == 8) then
-      onestepmove=true      
-    elseif (actualPosition == 8) and (direction == 6 or direction == 7) then
-      onestepmove=true      
-    elseif (actualPosition == 9) and (direction == 6 or direction == 8) then
-      onestepmove=true      
-    else
-      onestepmove=false
-    end
-    
-    if onestepmove then    
-      cecho("\n&lt;white:orange&gt;Movimento veloce da ("..actualPosition..") a ("..direction..")&lt;r&gt;\n",false)      
-      send("sposta "..direction, true)      
-    else
-      cecho("\n&lt;white:red&gt;Movimento lento da ("..actualPosition..") a (5) a ("..direction..")&lt;r&gt;\n",false)
-      send("sposta 5", true)
-      send("sposta "..direction, true)
-    end
-  end
 end</script>
 					<eventHandlerList />
 				</Script>
