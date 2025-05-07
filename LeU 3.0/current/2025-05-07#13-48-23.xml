@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="!}|#&quot;')(+*,/.;:=?[]\°{^" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=")(+*[,]°/\.!{^#}&quot;|';:=?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,9 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>Special exits</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -343,7 +343,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -439,7 +439,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -3671,7 +3671,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>(?i)(?:^grigiofumo|^drow)(?:\s+(.*))?$</regex>
+				<regex>(?i)^grigiofumo|^drow(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio palude, Orshingal, Enfan</name>
@@ -3682,7 +3682,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>(?i)(?:^grigiopalude|^orshingal|^enfan)(?:\s+(.*))?$</regex>
+				<regex>(?i)^grigiopalude|^orshingal|^enfan(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio grigio scuro, Moria</name>
@@ -3727,7 +3727,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>(?i)(?:^rossobruciato|^oldthalos|^thalos|^lamie)(?:\s+(.*))?$</regex>
+				<regex>(?i)^rossobruciato|^oldthalos|^thalos|^lamie(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio turchese, Deserto, Oasi</name>
@@ -3738,7 +3738,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:turchese|deserto|oasi)(?:\s+(.*))?$</regex>
+				<regex>(?i)^turchese|^deserto|^oasi(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde erba, Syracusa</name>
@@ -3749,7 +3749,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)verdeerba|syracusa(?:\s+(.*))?$</regex>
+				<regex>(?i)^verdeerba|^syracusa(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde foresta, Barriera</name>
@@ -3760,7 +3760,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:verdeforesta|barriera)(?:\s+(.*))?$</regex>
+				<regex>(?i)^verdeforesta|^barriera(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde scuro, Roo, Aborigeni</name>
@@ -3771,7 +3771,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)(?:verdescuro|roo|aborigeni)(?:\s+(.*))?$</regex>
+				<regex>(?i)^verdescuro|^roo|^aborigeni(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Specchio verde smeraldo, Grecia</name>
@@ -3793,7 +3793,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)allania(?:\s+(.*))?$</regex>
+				<regex>(?i)^allania(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Allania (uscita)</name>
@@ -3803,7 +3803,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)exitallania(?:\s+(.*))?$</regex>
+				<regex>(?i)^exitallania(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Anaconda</name>
@@ -3814,18 +3814,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)anaconda(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>Banca Alma</name>
-				<script>local path = {
-  "dw alma",
-  ".wdwseees",
-}
-ui.fExecutePath(path, matches[2])</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)banca(?:\s+(.*))?$</regex>
+				<regex>(?i)^anaconda(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Camelot</name>
@@ -3841,7 +3830,29 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)camelot(?:\s+(.*))?$</regex>
+				<regex>(?i)^camelot(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>Nuclei</name>
+				<script>local path = {
+  "uigo 4612",
+
+  "uigo 16623",
+  "uigo 16625",
+  "uigo 16627",
+  "uigo 16630",
+
+  "uigo 15563", -- Kas
+
+  "uigo 5250",  -- Beholder
+
+  "uigo 6678",  -- Inverno
+  
+}
+ui.fExecutePath(path, matches[2])</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>(?i)^nuclei(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Ennaheg</name>
@@ -3852,7 +3863,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)ennaheg(?:\s+(.*))?$</regex>
+				<regex>(?i)^ennaheg(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Giganti di Montagna</name>
@@ -3863,7 +3874,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)gigantimontagna(?:\s+(.*))?$</regex>
+				<regex>(?i)^gigantimontagna(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Giganti del Ghiaccio</name>
@@ -3876,18 +3887,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)gigantighiaccio(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>Gilda Lame</name>
-				<script>local path = {
-  "dw cacciatore-_ask",
-  ".s2e3ne",
-}
-ui.fExecutePath(path, matches[2])</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)glame(?:\s+(.*))?$</regex>
+				<regex>(?i)^gigantighiaccio(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Magione</name>
@@ -3898,7 +3898,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)magione(?:\s+(.*))?$</regex>
+				<regex>(?i)^magione(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Olimpo</name>
@@ -3909,7 +3909,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)olimpo(?:\s+(.*))?$</regex>
+				<regex>(?i)^olimpo(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Pennina</name>
@@ -3921,17 +3921,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)pennina(?:\s+(.*))?$</regex>
-			</Alias>
-			<Alias isActive="yes" isFolder="no">
-				<name>Piattaforma accademia</name>
-				<script>local path = {
-  "dw velestra",
-}
-ui.fExecutePath(path, matches[2])</script>
-				<command></command>
-				<packageName></packageName>
-				<regex>^(?i)accademia(?:\s+(.*))?$</regex>
+				<regex>(?i)^pennina(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Plutarco</name>
@@ -3944,7 +3934,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)plutarco(?:\s+(.*))?$</regex>
+				<regex>(?i)^plutarco(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Scacchiera</name>
@@ -3957,9 +3947,9 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)scacchiera(?:\s+(.*))?$</regex>
+				<regex>(?i)^scacchiera(?:\s+(.*))?$</regex>
 			</Alias>
-			<Alias isActive="no" isFolder="no">
+			<Alias isActive="yes" isFolder="no">
 				<name>Spaventapasseri</name>
 				<script>local path = {
   "dw alma",
@@ -3968,7 +3958,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)spaventa|spaventapasseri(?:\s+(.*))?$</regex>
+				<regex>(?i)^spaventa|^spaventapasseri(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Tesoro Re Greylin</name>
@@ -3980,7 +3970,7 @@ send("open forziere")
 send("get lapislazuli forziere")</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(greylin)$</regex>
+				<regex>(?i)^greylin$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Tesoro Re Shik</name>
@@ -3993,7 +3983,7 @@ expandAlias("open cassa")
 expandAlias("get monete cassa")</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(shik)$</regex>
+				<regex>(?i)^shik$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Deadhame</name>
@@ -4006,7 +3996,7 @@ expandAlias("get monete cassa")</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)deadhame(?:\s+(.*))?$</regex>
+				<regex>(?i)^deadhame(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Thor</name>
@@ -4018,7 +4008,7 @@ ui.fExecutePath(path, matches[2])</script>
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)thor(?:\s+(.*))?$</regex>
+				<regex>(?i)^thor(?:\s+(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
