@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="[}|^;]:\?=#&quot;!'°+*)(/.,{" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="?=;:^]\[}|{/.,+*)('#&quot;!°" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -342,7 +342,7 @@ enableTrigger("equipment_end")
 					<integer>1</integer>
 					<integer>1</integer>
 				</regexCodePropertyList>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_valid</name>
 					<script>-- (?:\[(.*)\] )?\&lt;(.*)\&gt;.*\[(.*)\] (?:\|(.*)\| )?(.*)
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
@@ -438,7 +438,7 @@ setTriggerStayOpen("Equipment", 1)
 						<integer>1</integer>
 					</regexCodePropertyList>
 				</Trigger>
-				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>equipment_end</name>
 					<script>ui.fDebug("[trig] Equipment_end")
 --
@@ -1127,9 +1127,9 @@ Se al lancio del turbine non sarete nella giusta posizione perdete 1500 hp.
 ]]
 local turbinePos = getPosition(matches[2])
 if (turbinePos == ui.player.roomPos) then
-  cecho("\n&lt;white:red&gt;*** TURBINE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** TURBINE ***&lt;r&gt; &lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
 else
-  cecho("\n&lt;white:red&gt;*** TURBINE *** &lt;r&gt;&lt;red&gt;(Movimento sul lato del Turbine) &lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** TURBINE ***&lt;r&gt; &lt;red&gt;(Movimento sul lato del Turbine) &lt;r&gt;\n")
   sposta(turbinePos)
 end</script>
 					<triggerType>0</triggerType>
@@ -1161,14 +1161,14 @@ Per evitarlo basta essere in un positioning diverso da quello dove indirizza il 
 ]]
 local raggioPos = getPosition(matches[2])
 if (raggioPos == ui.player.roomPos) then
-  cecho("\n&lt;white:red&gt;*** RAGGIO *** &lt;r&gt;&lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** RAGGIO ***&lt;r&gt; &lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
   if (raggioPos == 5) then
     sposta(1)
   else
     sposta(5)
   end
 else
-  cecho("\n&lt;white:red&gt;*** RAGGIO *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** RAGGIO ***&lt;r&gt; &lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
 end</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1206,9 +1206,9 @@ local tremorePos1 = getPosition(matches[2])
 local tremorePos2 = getPosition(matches[3])
 --
 if (tremorePos2 == ui.player.roomPos) then
-  cecho("\n&lt;white:red&gt;*** TREMORE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** TREMORE ***&lt;r&gt; &lt;green&gt;(Movimento non necessario)&lt;r&gt;\n")
 else
-  cecho("\n&lt;white:red&gt;*** TREMORE *** &lt;r&gt;&lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** TREMORE ***&lt;r&gt; &lt;red&gt;(Movimento su un lato diverso dal Raggio)&lt;r&gt;\n")
   sposta(tremorePos2)
 end
 </script>
@@ -1254,9 +1254,9 @@ Se siete un gruppo da tre\quattro basta dividersi il positioning e poi restare i
 local unionePos = 9
 --
 if (unionePos == ui.player.roomPos) then
-  cecho("\n&lt;white:red&gt;*** UNIONE *** &lt;r&gt;&lt;green&gt;(Movimento non necessario - Posizione scelta 9)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** UNIONE ***&lt;r&gt; &lt;green&gt;(Movimento non necessario - Posizione scelta 9)&lt;r&gt;\n")
 else
-  cecho("\n&lt;white:red&gt;*** UNIONE *** &lt;r&gt;&lt;red&gt;(Movimento in posizione diversa dal gruppo - Posizione scelta 9)&lt;r&gt;\n")
+  cecho("\n&lt;white:red&gt;*** UNIONE ***&lt;r&gt; &lt;red&gt;(Movimento in posizione diversa dal gruppo - Posizione scelta 9)&lt;r&gt;\n")
   sposta(unionePos)
 end</script>
 					<triggerType>0</triggerType>
@@ -1294,7 +1294,7 @@ Potete riprendere a fare dps in modo massiccio. Il combat va via cosi.
 Se c'é un healer in gruppo, quando il Luogotenente casta l'aura di assorbimento (e solo in quel round) tirategli un heal/miracle/seeds, 
 In questo modo avrà un malus il round successivo e perderà hp in base a quanti hp lo curate. 
 ]]
-cecho("\n&lt;white:red&gt;*** AURA *** &lt;r&gt;&lt;red&gt;(STOP)&lt;r&gt;\n")
+cecho("\n&lt;white:red&gt;*** AURA ***&lt;r&gt; &lt;red&gt;(STOP)&lt;r&gt;\n")
 send("stop")</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1316,7 +1316,7 @@ send("stop")</script>
 				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 					<name>Ritorna centro</name>
 					<script>--Sbattendo i piedi, riesci a placare il tremore prima che esploda!
-cecho("\n&lt;white:red&gt;Ritorno al centro&lt;r&gt;\n")
+cecho("\n&lt;white:red&gt;Movimento per tornare al centro&lt;r&gt;\n")
 sposta(5)</script>
 					<triggerType>0</triggerType>
 					<conditonLineDelta>0</conditonLineDelta>
@@ -1868,25 +1868,24 @@ end</script>
 				<name>Link - Room name</name>
 				<script>local name = matches[2]
 local dname = copy2decho(matches[2])
---
---if (ui.room) and (ui.room.id) then
---  cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
---end
---
---echo(" ")
---cechoLink(ui.cLink("S"), [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
-
-
---
 local pos = selectString(name, 1)
+local l =string.len(matches[1])
+
+--
 replace("")
 moveCursor(pos, getLineNumber())
 dinsertLink("&lt;u&gt;"..dname.."&lt;r&gt;", [[expandAlias("uisearch ]]..name..[[")]], "Cerca '"..name.."'", true)
-
+--
 if (ui.room) and (ui.room.id) then
+  local line = "";
   cecho(" &lt;ansiMagenta&gt;#&lt;white&gt;"..ui.room.id.."&lt;r&gt;")
+  for i = l + 10, 118 do
+    line = line.."="
+  end
+  cecho(" &lt;cyan&gt;"..line.."&lt;r&gt;\n")
 end
-cecho("\n&lt;cyan&gt;----------------------------------------------------------------------------------------------------&lt;r&gt;\n")</script>
+--
+--cecho("\n&lt;cyan&gt;----------------------------------------------------------------------------------------------------&lt;r&gt;\n")</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1898,8 +1897,8 @@ cecho("\n&lt;cyan&gt;-----------------------------------------------------------
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
-					<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto|Prato)</string>
-					<string>^(.*) (\[Zona di Guerra\])</string>
+					<string>^(.*) - (Foresta|Al chiuso|Citta'|Deserto|Pianura|Strada|Collina|Montagna|Acque Basse|Acque Profonde|Sott'acqua|A mezz'aria|Tra gli Alberi|Citta' oscura|Sottosuolo|Dungeon|Caverna|Cripta|Castello|Maniero|Tempio|Prigione|Negozio|Giungla|Costa|Spiaggia|Palude|Tundra|Taiga|Ghiacci|Steppa|Savana|Piano Astrale|Piano Esterno|Sigil|Vuoto cosmico|Sconosciuto|Teletrasporto|Prato)$</string>
+					<string>^(.*) (\[Zona di Guerra\])$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
 					<integer>1</integer>
@@ -1971,7 +1970,7 @@ end</script>
 				<mCommand></mCommand>
 				<packageName></packageName>
 				<mFgColor>#ffff00</mFgColor>
-				<mBgColor>#424242</mBgColor>
+				<mBgColor>#2c2c2c</mBgColor>
 				<mSoundFile></mSoundFile>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
@@ -8608,7 +8607,7 @@ local iColor = {
 local terrain_types = {
   -- Used to make rooms of different terrain types have different colors
   -- add a new entry for each terrain type, and set the color with RGB values
-  -- each id value must be unique, terrain types not listed here will use mapper default color
+  -- each id value must be unique, terrain ypes not listed here will use mapper default color
   ["Acque Basse"]      = {id =  18, r =   0, g = 153, b = 153 },
   ["Acque Profonde"]   = {id =  19, r =   0, g =   0, b = 153 },
   ["Costa"]            = {id =  20, r = 153, g = 153, b =   0 },
@@ -9638,8 +9637,8 @@ function ui.fUpdateOpponent()
   --
   if (ui.opponent.name ~= "") then
     --
-    -- Showed name
-    title = ui.opponent.name;
+    -- Showed name in title
+    title = ui.opponent.desc;
     --
     -- Name
     ui.opponent.name = string.gsub(ui.opponent.name, "(\$c%d+)", "")
@@ -10109,6 +10108,7 @@ end</script>
 					<packageName></packageName>
 					<script>local cPo   = "&lt;orange&gt;۩&lt;r&gt;"     -- Portals 
 local cO    = "&lt;DimGrey&gt;o&lt;r&gt;"    -- Objects
+local cC    = "&lt;firebrick&gt;x&lt;r&gt;"    -- Cadavere
 local cM    = "&lt;red&gt;m&lt;r&gt;"        -- Mobs
 local cG    = "&lt;green&gt;g&lt;r&gt;"      -- Groupe member
 local cP    = "&lt;white&gt;◯&lt;r&gt;"      -- Player ●⬤◉◯○◯○◯
@@ -10465,13 +10465,21 @@ function ui.fUpdateRoom()
     -- Objects
     if (table.size(ui.room.objects) &gt; 0) then
       for _, object in pairs(ui.room.objects) do
+        local cLocO = cO
+        local objectTxt = ui.fConvertColorString(object.desc)
+        objectTxt = string.gsub(objectTxt, "(%[.*%])", "")
+        --
+        if (string.find(objectTxt, "il cadavere di") or string.find(objectTxt, "ossa e polvere")) then
+          cLocO = cC
+        end
+        --
         if (object.counter == 1) then
-          GUI.Room.Main.Console:cecho(cO..
-                                      " &lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")
+          GUI.Room.Main.Console:cecho(cLocO..
+                                      " &lt;i&gt;"..objectTxt.."&lt;r&gt;\n")
         else
-          GUI.Room.Main.Console:cecho(cO..
+          GUI.Room.Main.Console:cecho(cLocO..
                                       " &lt;ansiMagenta&gt;[&lt;white&gt;"..fGetCounter(object.counter).."&lt;ansiMagenta&gt;]&lt;r&gt;"..
-                                      " &lt;i&gt;"..ui.fConvertColorString(object.desc).."&lt;r&gt;\n")
+                                      " &lt;i&gt;"..objectTxt.."&lt;r&gt;\n")
         end
       end
     end
