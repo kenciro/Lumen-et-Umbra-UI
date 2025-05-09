@@ -30,16 +30,16 @@ Room ID	Area		Note
 4198	Miniere di Moria		forziere
 ------------------------------------------------------------------
 TOKEN
-    eventStrings.insert(std::make_pair(DAMAGE_MISS, "M"));
-    eventStrings.insert(std::make_pair(DAMAGE_GLANCE, "G"));
-    eventStrings.insert(std::make_pair(DAMAGE_DODGE, "D"));
-    eventStrings.insert(std::make_pair(DAMAGE_PARRY, "P"));
-    eventStrings.insert(std::make_pair(DAMAGE_CRITICAL, "C"));
-    eventStrings.insert(std::make_pair(DAMAGE_EXCEPTIONAL, "L"));
-    eventStrings.insert(std::make_pair(DAMAGE_EVASION, "E"));
-    eventStrings.insert(std::make_pair(DAMAGE_LOW_RES, "r"));
-    eventStrings.insert(std::make_pair(DAMAGE_HIGH_RES, "R"));
-    eventStrings.insert(std::make_pair(DAMAGE_MAX_RES, "X"));
-    eventStrings.insert(std::make_pair(DAMAGE_SUSC, "S"));
-    eventStrings.insert(std::make_pair(DAMAGE_SHIELDBLOCK, "B"));
+"M", MISS
+"G", GLANCE
+"D", DODGE
+"P", PARRY
+"C", CRITICAL
+"L", EXCEPTIONAL
+"E", EVASION
+"r", LOW_RES
+"R", HIGH_RES
+"X", MAX_RES
+"S", SUSC
+"B", SHIELDBLOCK
 ------------------------------------------------------------------

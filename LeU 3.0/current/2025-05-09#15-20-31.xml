@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="?=;:^]\[}|{/.,+*)('#&quot;!°" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="=#&quot;°!'+*)(/.{,[}|^;]:\?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>378</borderRightWidth>
+			<borderRightWidth>374</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,7 +44,7 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,11,-1,5,50,0,0,0,1,0</mDisplayFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
@@ -1488,7 +1488,7 @@ local dir = string.trim(string.lower(matches[3] or ""))
 selectString(str, 1)
 replace("")
 --
-name = string.gsub(name, "(%a)([%w_']*)", ui.fTitleCase)
+name = ui.fTitleCase(name)
 --
 if (string.find(str, "arriva da")) or
    (string.find(str, "arriva volando da")) then
@@ -3710,9 +3710,9 @@ ui.fExecutePath(path, matches[2])</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>Nuclei</name>
 				<script>local path = {
-  "uigo 4612",
+  "uigo 4612",  
 
-  "uigo 16623",
+  "uigo 16623", -- draconia
   "uigo 16625",
   "uigo 16627",
   "uigo 16630",
@@ -3723,6 +3723,8 @@ ui.fExecutePath(path, matches[2])</script>
 
   "uigo 6678",  -- Inverno
   
+  "uigo 5408",  -- Ancalador
+  "uigo 5411",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -4630,7 +4632,7 @@ function ui.fUpdateAffects()
           shortName = ui.fRemoveArticle(affect);
         end
         GUI.Affects.Main["Affect"..i].text:setFgColor(FGColor)
-        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..string.gsub(shortName, "(%a)([%w_']*)", ui.fTitleCase))
+        GUI.Affects.Main["Affect"..i].text:echo("&lt;center&gt;"..ui.fTitleCase(shortName))
         --
         -- Icon
         if (icon) then
@@ -5601,7 +5603,7 @@ function ui.fUpdateCooldowns()
     ui.cooldowns = {}
     --
     for cooldown in pairs(gmcp.char.cooldowns) do
-      local name = string.gsub(gmcp.char.cooldowns[cooldown].name, "(%a)([%w_']*)", ui.fTitleCase)
+      local name = ui.fTitleCase(gmcp.char.cooldowns[cooldown].name)
       --
       ui.cooldowns[name] = {}
       ui.cooldowns[name].duration = tonumber(gmcp.char.cooldowns[cooldown].duration)
@@ -6051,7 +6053,7 @@ function ui.fUpdateEndowment()
       --
       -- Name
       if (ui.parameters.widgets.endowment.type == "name") then
-        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..string.gsub(ui.fRemoveArticle(ui.equipment[item].name), "(%a)([%w_']*)", ui.fTitleCase));
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.fTitleCase(ui.fRemoveArticle(ui.equipment[item].name)));
       else
         GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].slot);
       end
@@ -6492,8 +6494,15 @@ function ui.fExpandCommand(value)
   return string.split(value, "%s*;%s*")
 end
 --
-function ui.fTitleCase(first, rest)
-   return first:upper()..rest:lower()
+function ui.fTitleCase(s)
+  local function upperFirst(first, rest)
+    return first:upper()..rest:lower()
+  end
+  --
+  s = s or "";
+  s = string.gsub(s, "(%a)([%w_']*)", upperFirst)
+  --
+  return s
 end
 --
 function ui.fExecutePath(table, option)
@@ -6655,6 +6664,14 @@ function ui.fGetColor(color)
   end
   --
   return color
+end
+--
+function ui.fRemoveColorString(s)
+  s = s or "";
+  s = string.gsub(s, "\$c%d+", "")
+  s = string.gsub(s, "$crk%d%d%d%d%d%d%d%d", "")
+  --
+  return s
 end
 --
 function ui.fConvertColorString(s)
@@ -6967,10 +6984,12 @@ function ui.fUpdateGMCP(event, ...)
       ui.previous.gmcp.room.info = ui.previous.gmcp.room.info or {}
       ui.previous.gmcp.room.info.exits = ui.previous.gmcp.room.info.exits or {}
       --
-      -- Room
+      -- Player position
       if (gmcp.room.info.roomPos) and (gmcp.room.info.roomPos ~= ui.previous.gmcp.room.info.roomPos) then
         ui.player.roomPos = gmcp.room.info.roomPos -- or gmcp.char.vitals.roomPos or 5
       end
+      --
+      -- Room
       ui.fUpdateRoom()
       --
       -- Mapper (only if change room or exits (ex secret found))
@@ -8402,14 +8421,14 @@ function ui.fGetKeyb(key1, key2, key3)
   end
   --
   if (mod2 ~= "") then
-    keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-              string.gsub(mod2 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-              string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
+    keybind = ui.fTitleCase(mod1 or "").."+"..
+              ui.fTitleCase(mod2 or "").."+"..
+              ui.fTitleCase( key or "")
   elseif (mod1 ~= "") then
-    keybind = string.gsub(mod1 or "", "(%a)([%w_']*)", ui.fTitleCase).."+"..
-              string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
+    keybind = ui.fTitleCase(mod1 or "").."+"..
+              ui.fTitleCase( key or "")
   elseif (key ~= "") then
-    keybind = string.gsub( key or "", "(%a)([%w_']*)", ui.fTitleCase)
+    keybind = ui.fTitleCase( key or "")
   end
   --
   return isValid, mod1, mod2, key, keybind
@@ -9456,7 +9475,7 @@ function ui.fUpdateMapper()
     end
     --
     -- Save areaId (after fUpdateRoom() it will surely exist)
-    display(ui.room.area)
+    display(ui.origins, ui.room.area)
     ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
     --
     -- Update color from terrain
@@ -9484,12 +9503,14 @@ function ui.fUpdateMapper()
       end
     end
     --
-    -- Update exit to prew
-    --for _, dir in pairs(ui.origins or {}) do
-    --  if (ui.validExit[dir]) then
-    --    setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
-    --  end
-    --end
+    -- Update exit to Origin (only if room changed, not if other exith discovered)
+    if (ui.room.id ~= ui.previous.room.id) then
+      for _, dir in pairs(ui.origins or {}) do
+        if (ui.validExit[dir]) then
+          setExit(ui.previous.room.id, ui.room.id, ui.validExit[dir].reverse)
+        end
+      end
+    end
     --
     -- Update special exits
     setExitStub(ui.room.id, "out", false)
@@ -9637,12 +9658,11 @@ function ui.fUpdateOpponent()
   --
   if (ui.opponent.name ~= "") then
     --
-    -- Showed name in title
-    title = ui.opponent.desc;
+    -- Showed name in title    
+    title = ui.fRemoveColorString(ui.opponent.desc)
     --
     -- Name
-    ui.opponent.name = string.gsub(ui.opponent.name, "(\$c%d+)", "")
-    ui.opponent.name = string.gsub(ui.opponent.name, "$crk%d%d%d%d%d%d%d%d", "")
+    ui.opponent.name = ui.fRemoveColorString(ui.opponent.name)
     ui.opponent.name = ui.fRemoveArticle(ui.opponent.name)
     ui.opponent.name = string.gsub(ui.opponent.name, " ", "-")
     --
@@ -10449,7 +10469,7 @@ function ui.fUpdateRoom()
     -- Other exits
     if (table.size(ui.room.otherExits) &gt; 0) then
       for otherExit, idOtherExit in pairs(ui.room.otherExits) do
-        otherExit = string.gsub(otherExit, "(%a)([%w_']*)", ui.fTitleCase)
+        otherExit = ui.fTitleCase(otherExit)
         -- Next step in path
         if (ui.fNextTrack(ui.room.id) == idOtherExit) then
           GUI.Room.Main.Console:cechoLink("&lt;b&gt;&lt;white&gt;(&lt;r&gt;"..cPo.."&lt;b&gt;&lt;white&gt;)".." &lt;orange&gt;"..otherExit.."&lt;r&gt;", [[expandAlias("ent ]]..otherExit..[[")]], "Entra in '"..otherExit.."'", true)
@@ -10467,7 +10487,7 @@ function ui.fUpdateRoom()
       for _, object in pairs(ui.room.objects) do
         local cLocO = cO
         local objectTxt = ui.fConvertColorString(object.desc)
-        objectTxt = string.gsub(objectTxt, "(%[.*%])", "")
+        objectTxt = string.gsub(objectTxt, "%b[]", "") -- Removing content between square brackets 
         --
         if (string.find(objectTxt, "il cadavere di") or string.find(objectTxt, "ossa e polvere")) then
           cLocO = cC
@@ -14230,6 +14250,14 @@ addMouseEvent("investiga", "onMouseCopyExample", "Investiga (Stanza)")
 addMouseEvent("scry",      "onMouseCopyExample", "Scry (Mob/Player)")
 --
 registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Codice di test</name>
+				<packageName></packageName>
+				<script>local input = "0 [1] 1 2 3 4 5 6 [xx xx xxx] 7 8[xxx]"
+local output = string.gsub(input, "%b[]", "")
+</script>
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
