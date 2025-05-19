@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="=#&quot;°!'+*)(/.{,[}|^;]:\?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=".,+*)^(']\[#&quot;}!|{°?=;:/" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -348,8 +348,9 @@ enableTrigger("equipment_end")
 -- match[1] = [2:numero] &lt;3:locazione&gt; [4:livello] |5:tipo| 6:descrizione
 ui.fDebug("[trig] Equipment_valid")
 --
-local location  = string.trim(matches[3])
+local location = string.trim(matches[3])
 local slot = {}
+--
 --
 if (location == "al collo") then
   if (not ui.equipment["al collo 1"].used) then
@@ -5897,6 +5898,7 @@ end
 	["EEl"] = "Efficacia Elettricita`",
 	["EFr"] = "Efficacia Freddo",
 	["EFu"] = "Efficacia Fuoco",
+	["ENa"] = "Eff. Abilita` (Natura)",
 
 	["RAc"] = "Resistenza all'Acido",
 	["RCh"] = "Resistenza al Caos",
@@ -5950,6 +5952,11 @@ end
 	["PF"]	= "Punti Ferita",
 	["Mn"]	= "Mana", 
 	["Mv"]	= "Movimento", 
+}
+--
+local incantesimoSuArma = {
+  [27] = "Dolore",
+  [55] = "Causa ferite leggere";
 }
 --
 function ui.fIsStatistics(s)
@@ -6038,18 +6045,6 @@ function ui.fUpdateEndowment()
       -- Status
       GUI.Endowment.Main["Item"..i].Status:setFgColor(statusColor)
       GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
-
-  --
-  --local ratio = (75 - time_left) / 75
-  --status = 100 - status;
-  --GUI.Endowment.Main["Item"..i].Status:setStyleSheet([[
-  --  border: 1px inset rgb(]]..ui.colors.wBorder..[[);
-  --  border-top: none;
-  --  border-bottom-left-radius: 5px;
-  --  border-bottom-right-radius: 10px;
-  --  background: qconicalgradient(cx:0.5, cy:0.5, angle: 90, stop:0 black, stop:]]..status..[[ transparent stop:]]..status+0.01 ..[[ red);
-  --]])
-  --
       --
       -- Name
       if (ui.parameters.widgets.endowment.type == "name") then
@@ -6118,11 +6113,13 @@ function ui.fUpdateEndowment()
             ui.equipment[item].ac = value
           else
             table.insert(ui.equipment[item].powers, {
+                                                      value = value,
                                                       power = name,
-                                                      value = value
                                                     })
             --
-            if (type(value) ~= "number") then
+            if (name == "Incantesimo su Arma") then
+              powers = powers..'Inc: &lt;font color="lime"&gt;'..(incantesimoSuArma[value] or ("Indice:"..value))..'&lt;/font&gt;&lt;br&gt;'
+            elseif (type(value) ~= "number") then
               powers = powers..'&lt;font color="white"&gt;'..value'&lt;/font&gt; '..name..'&lt;br&gt;'
             elseif (value &gt; 0) then
               powers = powers..'&lt;font color="lime"&gt;'..ui.fdigitNumber("+"..value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..name..'&lt;br&gt;'
@@ -9475,7 +9472,6 @@ function ui.fUpdateMapper()
     end
     --
     -- Save areaId (after fUpdateRoom() it will surely exist)
-    display(ui.origins, ui.room.area)
     ui.room.areaId = getAreaTable()[string.trim(ui.room.area)]
     --
     -- Update color from terrain
