@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore=";:,/.)(+*'}!|#°&quot;]\{^=[?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="}['°{!&quot;#,./()*+=?\]:;^|" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -19,7 +19,7 @@
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
 			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>374</borderRightWidth>
+			<borderRightWidth>375</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -72,8 +72,9 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>Special exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -3726,6 +3727,8 @@ ui.fExecutePath(path, matches[2])</script>
   
   "uigo 5408",  -- Ancalador
   "uigo 5411",
+  
+  "uigo 21196", -- Cobra elite
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -5955,6 +5958,7 @@ end
 local incantesimoSuArma = {
   [27] = "Dolore",
   [55] = "Causa ferite leggere";
+  [56] = "Causa ferite gravi";
 }
 --
 function ui.fIsStatistics(s)
@@ -6116,7 +6120,7 @@ function ui.fUpdateEndowment()
                                                     })
             --
             if (name == "Incantesimo su Arma") then
-              powers = powers..'Inc: &lt;font color="lime"&gt;'..(incantesimoSuArma[value] or ("Indice:"..value))..'&lt;/font&gt;&lt;br&gt;'
+              powers = powers..'Inc: &lt;font color="lime"&gt;'..(incantesimoSuArma[value] or ("Indice "..value))..'&lt;/font&gt;&lt;br&gt;'
             elseif (type(value) ~= "number") then
               powers = powers..'&lt;font color="white"&gt;'..value'&lt;/font&gt; '..name..'&lt;br&gt;'
             elseif (value &gt; 0) then
@@ -8794,8 +8798,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "otherexit") or (infoType == "all") then
         if (not table.is_empty(specialExits)) then
-        --  outString = outString..iColor["text"].."Non ci sono uscite speciali.\n"
-        --else
           outString = outString..iColor["text"].."Uscite speciali:\n"
           for k,v in pairs(specialExits) do
             local exitIdArea = getRoomArea(k)
@@ -8819,8 +8821,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "door") then
         if (not table.is_empty(doors)) then
-        --  outString = outString..iColor["text"].."Non ci sono porte.\n"
-        --else
           outString = outString..iColor["text"].."Porte:\n"
           for k,v in pairs(doors) do
             outString = outString.."  "..ui.validExit[k].color..ui.validExit[k].token.." "..ui.validExit[k].long
@@ -8839,8 +8839,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "entrance") or (infoType == "all") then
         if (not table.is_empty(entrances)) then
-        --  outString = outString..iColor["text"].."Non ci sono entrate.\n"
-        --else
           outString = outString..iColor["text"].."Entrate:\n"
           for k,v in pairs(entrances) do
             local entranceExits = getRoomExits(v)
@@ -8877,8 +8875,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
       --
       if (infoType == "data") then
         if (not table.is_empty(userData)) then
-        --  outString = outString..iColor["text"].."Non ci sono note.\n"
-        --else
           local function readUserData(userData, direction)
             local dir = 'x';
             local name = '???';
@@ -8920,9 +8916,6 @@ function ui.fRoomInfo(id, infoType, onlyReturn)
           if (userData['d']) then
             outString = outString.."  "..readUserData(userData, 'd').."\n"
           end
-          --for k,v in pairs(userData) do
-          --  outString = outString.."  "..iColor["room"]..k..iColor["text"].." = &lt;white&gt;"..v.."&lt;r&gt;\n"
-          --end
         end
       end
     else
@@ -9176,11 +9169,10 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
   -- 
   -- Se la posizione è già occupata da un altra stanza
   if (overlap) or (is_path) then
-    -- TODO: convertire ui.fEchon in ui.fDebug
     if (overlap) then
-      ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP")
+      ui.fDebug("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") OVERLAP")
     else
-      ui.fEchon("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") IS ON PATH")
+      ui.fDebug("&lt;orange&gt;Room "..roomId.." (from "..(entry or "&lt;red&gt;nil&lt;orange&gt;")..") IS ON PATH")
     end
     -- Se la room ha una direzione di entrata valida...
     if (entry ~= nil) and (table.contains(ui.validExit, entry)) then
@@ -9189,16 +9181,16 @@ function ui.fCreateRoomSpace(areaId, roomId, x, y, entry)
         local rd_x, rd_y, rd_z = getRoomCoordinates(rd_id)
         --
         if (entry == "north") and (rd_y &lt;= y) then
-          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." in giu'")          
+          ui.fDebug("  &lt;magenta&gt;Muovo "..rd_id.." in giu'")          
           setRoomCoordinates(rd_id, rd_x, rd_y-1, 0)
         elseif (entry == "south") and (rd_y &gt;= y) then -- ok
-          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." in su")          
+          ui.fDebug("  &lt;magenta&gt;Muovo "..rd_id.." in su")          
           setRoomCoordinates(rd_id, rd_x, rd_y+1, 0)
         elseif (entry == "west") and (rd_x &lt;= x) then -- ok
-          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." a destra")          
+          ui.fDebug("  &lt;magenta&gt;Muovo "..rd_id.." a destra")          
           setRoomCoordinates(rd_id, rd_x-1, rd_y, 0)
         elseif (entry == "east") and (rd_x &gt;= x) then
-          ui.fEchon("  &lt;magenta&gt;Muovo "..rd_id.." a sinistra")          
+          ui.fDebug("  &lt;magenta&gt;Muovo "..rd_id.." a sinistra")          
           setRoomCoordinates(rd_id, rd_x+1, rd_y, 0)
         end
       end
@@ -9380,7 +9372,7 @@ local function fUpdateRoom(room, prev)
       -- Aggiungo direzione di provenienza = ui.origins
       if (#ui.origins &gt; 0) then
         for _, dir in pairs(ui.origins) do
-          if (exitValid[dir]) then
+          if (ui.validExit[dir]) then
             shift[1] = shift[1] + move_vectors[dir][1]
             shift[2] = shift[2] + move_vectors[dir][2]
             shift[3] = shift[3] + move_vectors[dir][3]
