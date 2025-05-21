@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="}['°{!&quot;#,./()*+=?\]:;^|" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="^;:!,#)].+=/('|\[&quot;*{}°?" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>375</borderRightWidth>
+			<borderLeftWidth>305</borderLeftWidth>
+			<borderRightWidth>505</borderRightWidth>
 			<wrapAt>120</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -44,8 +44,8 @@
 			<mLightMagenta>#ff00ff</mLightMagenta>
 			<mWhite>#c0c0c0</mWhite>
 			<mLightWhite>#ffffff</mLightWhite>
-			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,50,0,0,0,1,0</mDisplayFont>
-			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
+			<mDisplayFont>Bitstream Vera Sans Mono,13,-1,5,400,0,0,0,1,0,0,0,0,0,0,192</mDisplayFont>
+			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
 			<mFgColor2>#c0c0c0</mFgColor2>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Special exits</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -3477,7 +3477,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio bianco latte, Alma</name>
 				<script>local path = {
   "astral",
-  ".n;es",
+  ".n",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3488,7 +3489,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio blu mezzanotte, Anime perdute</name>
 				<script>local path = {
   "astral",
-  ".un2w;es",
+  ".un2w",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3499,7 +3501,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio cangiante, Colosseo</name>
 				<script>local path = {
   "astral",
-  ".unw;es",
+  ".unw",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3510,7 +3513,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio giallo e verde, Necrofagi</name>
 				<script>local path = {
   "astral",
-  ".un2wnue;es",
+  ".un2wnue",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3521,7 +3525,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio granito, Mani</name>
 				<script>local path = {
   "astral",
-  ".un2w2n;es",
+  ".un2w2n",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3532,7 +3537,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio grigio, Abisso, Manticore</name>
 				<script>local path = {
   "astral",
-  ".un2wnuw2u;es",
+  ".un2wnuw2u",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3543,7 +3549,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio grigio fumo, Drow</name>
 				<script>local path = {
   "astral",
-  ".un2wn;es",
+  ".un2wn",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3554,7 +3561,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio grigio palude, Orshingal, Enfan</name>
 				<script>local path = {
   "astral",
-  ".une;es",
+  ".une",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3565,7 +3573,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio grigio scuro, Moria</name>
 				<script>local path = {
   "astral",
-  ".un2ws;es",
+  ".un2ws",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3576,7 +3585,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio marrone sporco, Lycantropia</name>
 				<script>local path = {
   "astral",
-  ".un2wnuwun;es",
+  ".un2wnuwun",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3587,7 +3597,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio oro, torre, Torremagia</name>
 				<script>local path = {
   "astral",
-  ".unwn;es",
+  ".unwn",
+  "es",
   ".nneedsssswwwwnnnneeeedssssws"
 }
 ui.fExecutePath(path, matches[2])</script>
@@ -3599,7 +3610,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio rosso bruciato, Old Thalos, Lamie</name>
 				<script>local path = {
   "astral",
-  ".un2wne;es",
+  ".un2wne",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3610,7 +3622,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio turchese, Deserto, Oasi</name>
 				<script>local path = {
   "astral",
-  ".un2wnuwus;es",
+  ".un2wnuwus",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3621,7 +3634,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio verde erba, Syracusa</name>
 				<script>local path = {
   "astral",
-  ".un2wnu;es",
+  ".un2wnu",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3632,7 +3646,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio verde foresta, Barriera</name>
 				<script>local path = {
   "astral",
-  ".unwwnuwuuwds;es",
+  ".unwwnuwuuwds",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3643,7 +3658,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio verde scuro, Roo, Aborigeni</name>
 				<script>local path = {
   "astral",
-  ".un2wnuwuw;es",
+  ".un2wnuwuw",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3654,7 +3670,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Specchio verde smeraldo, Grecia</name>
 				<script>local path = {
   "astral",
-  ".un2wnuw;es",
+  ".un2wnuw",
+  "es",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3697,7 +3714,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Camelot</name>
 				<script>local path = {
   "astral",
-  "n;ent spe;.nu;",
+  "n",
+  "ent spe",
+  ".nu",
   "push pulsante;",
   "w;ent portale;op parete;.2w",
   ".see;bl sace",
@@ -3739,7 +3758,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Ennaheg</name>
 				<script>local path = {
   "astral",
-  ".unwwnuwuu;es;.edddnneeesdn",
+  ".unwwnuwuu",
+  "es",
+  ".edddnneeesdn",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3761,7 +3782,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Giganti del Ghiaccio</name>
 				<script>local path = {
   "astral",
-  ".n;es;.nu;",
+  ".n",
+  "es",
+  ".nu;",
   "push pulsante",
   ".w;ent portale;open parete;.ww;ent shadowdale;.d;run n;op crepa;.n2esdn2e2n",
 }
@@ -3774,7 +3797,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Magione</name>
 				<script>local path = {
   "astral",
-  ".n;es;.2se2s;run e;.nnwwwnwnn"
+  ".n",
+  "es",
+  ".2se2s;run e;.nnwwwnwnn"
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3785,7 +3810,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Olimpo</name>
 				<script>local path = {
   "astral",
-  ".unwwnuw;es;.6en2u",
+  ".unwwnuw",
+  "es",
+  ".6en2u",
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -3808,7 +3835,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Plutarco</name>
 				<script>local path = {
   "astral",
-  ".un2wnuw2u;ent spe;.edddnneeeuu",
+  ".un2wnuw2u",
+  "ent spe",
+  ".edddnneeeuu",
   "push masso",
   ".eenesddww",
 }
@@ -3821,7 +3850,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Scacchiera</name>
 				<script>local path = {
   "astral",
-  ".n;es;.nu;",
+  ".n",
+  "es",
+  ".nu;",
   "push pulsante",
   ".w;ent portale;open parete;.ww;ent shadowdale;.dd;ent scacchiera",
 }
@@ -3870,7 +3901,9 @@ expandAlias("get monete cassa")</script>
 				<name>Deadhame</name>
 				<script>local path = {
   "astral",
-  ".n;es;.nu;",
+  ".n",
+  "es",
+  ".nu;",
   "push pulsante",
   ".w;ent portale;open parete;.ww;ent shadowdale;.de",
 }
@@ -3969,7 +4002,9 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Locuste</name>
 				<script>local path = {
   "astral",
-  ".unwwnu;es;.eswwssed",
+  ".unwwnu",
+  "es",
+  ".eswwssed",
   ".dn;unlock grata;open grata;.nuue;run d ",
   "...da finire..."
 }
@@ -4050,7 +4085,8 @@ ui.fExecutePath(path, matches[2])</script>
 				<name>Pilastri</name>
 				<script>local path = {
   "astral",
-  ".un2wnuw2uwds;es",
+  ".un2wnuw2uwds",
+  "es",
   "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;')",
   ".2ns;lua cecho('Ripeti fino a &lt;red&gt;IL SENTIERO&lt;r&gt;')",
   "s;op monolito;",
