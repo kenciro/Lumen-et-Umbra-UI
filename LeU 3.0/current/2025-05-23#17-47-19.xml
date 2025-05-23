@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="&quot;#':;=?[\]^{|}()*+,°./!" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="[\']^:;=?()*+°,./!{|&quot;}#" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1053,64 +1053,7 @@ expandAlias("open "..matches[2].." "..ui.direction)</script>
 			</TriggerGroup>
 			<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Luogotenenti</name>
-				<script>function getPosition(p)
-  if p == 'sud' then
-    return 2
-  elseif p == 'est' then
-    return 6
-  elseif p == 'nord' then
-    return 8
-  elseif p == 'ovest' then
-    return 4
-  elseif p == 'sud-ovest' then
-    return 1
-  elseif p == 'sud-est' then
-    return 3
-  elseif p == 'nord-est' then
-    return 9
-  elseif p == 'nord-ovest' then
-    return 7
-  elseif p == 'centro' then
-    return 5
-  end
-end
---
-function sposta(pos)
-  if (ui.player.roomPos == pos) then
-    cecho("\n&lt;green&gt;Movimento non necessario.&lt;r&gt;\n")
-  else
-    local single = false
-    --
-    if (ui.player.roomPos == 1) and (pos == 4 or pos == 2) then
-      single = true      
-    elseif (ui.player.roomPos == 2) and (pos == 1 or pos == 3) then
-      single = true      
-    elseif (ui.player.roomPos == 3) and (pos == 2 or pos == 6) then
-      single = true      
-    elseif (ui.player.roomPos == 4) and (pos == 1 or pos == 7) then
-      single = true      
-    elseif (ui.player.roomPos == 5) or (pos == 5) then
-      single = true
-    elseif (ui.player.roomPos == 6) and (pos == 3 or pos == 9) then
-      single = true      
-    elseif (ui.player.roomPos == 7) and (pos == 4 or pos == 8) then
-      single = true      
-    elseif (ui.player.roomPos == 8) and (pos == 6 or pos == 7) then
-      single = true      
-    elseif (ui.player.roomPos == 9) and (pos == 6 or pos == 8) then
-      single = true
-    end
-    
-    if (single) then    
-      cecho("\n&lt;white:orange&gt;Movimento da ("..ui.player.roomPos..") a ("..pos..")&lt;r&gt;\n")      
-      send("sposta "..pos, true)      
-    else
-      cecho("\n&lt;white:red&gt;DOPPIO movimento da ("..ui.player.roomPos..") a (5) a ("..pos..")&lt;r&gt;\n")
-      send("sposta 5", true)
-      send("sposta "..pos, true)
-    end
-  end
-end</script>
+				<script></script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -3755,7 +3698,7 @@ ui.fExecutePath(path, matches[2])</script>
 			<Alias isActive="yes" isFolder="no">
 				<name>Nuclei</name>
 				<script>local path = {
-  "uigo 16732", -- Guardie Duergan
+  "uigo 3110",  -- Petrus
 
   "uigo 4612",  -- Elementale
 
@@ -3763,6 +3706,8 @@ ui.fExecutePath(path, matches[2])</script>
   "uigo 16625",
   "uigo 16627",
   "uigo 16630",
+
+  "uigo 16732", -- Guardie Duergan
 
   "uigo 15563", -- Kas
 
@@ -3776,7 +3721,7 @@ ui.fExecutePath(path, matches[2])</script>
   "uigo 21196", -- Cobra elite
   
   "uigo 13742", -- Basilisco, Grecia
-  "uigo 13742", -- Basilisco, Grecia  
+
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>
@@ -13778,6 +13723,69 @@ end</script>
 				</Script>
 			</ScriptGroup>
 			<Script isActive="yes" isFolder="no">
+				<name>Luogotenenti</name>
+				<packageName></packageName>
+				<script>function getPosition(p)
+  if p == 'sud' then
+    return 2
+  elseif p == 'est' then
+    return 6
+  elseif p == 'nord' then
+    return 8
+  elseif p == 'ovest' then
+    return 4
+  elseif p == 'sud-ovest' then
+    return 1
+  elseif p == 'sud-est' then
+    return 3
+  elseif p == 'nord-est' then
+    return 9
+  elseif p == 'nord-ovest' then
+    return 7
+  elseif p == 'centro' then
+    return 5
+  end
+end
+--
+function sposta(pos)
+  if (ui.player.roomPos == pos) then
+    cecho("\n&lt;green&gt;Movimento non necessario.&lt;r&gt;\n")
+  else
+    local single = false
+    --
+    if (ui.player.roomPos == 1) and (pos == 4 or pos == 2) then
+      single = true      
+    elseif (ui.player.roomPos == 2) and (pos == 1 or pos == 3) then
+      single = true      
+    elseif (ui.player.roomPos == 3) and (pos == 2 or pos == 6) then
+      single = true      
+    elseif (ui.player.roomPos == 4) and (pos == 1 or pos == 7) then
+      single = true      
+    elseif (ui.player.roomPos == 5) or (pos == 5) then
+      single = true
+    elseif (ui.player.roomPos == 6) and (pos == 3 or pos == 9) then
+      single = true      
+    elseif (ui.player.roomPos == 7) and (pos == 4 or pos == 8) then
+      single = true      
+    elseif (ui.player.roomPos == 8) and (pos == 6 or pos == 7) then
+      single = true      
+    elseif (ui.player.roomPos == 9) and (pos == 6 or pos == 8) then
+      single = true
+    end
+    
+    if (single) then    
+      cecho("\n&lt;white:orange&gt;Movimento da ("..ui.player.roomPos..") a ("..pos..")&lt;r&gt;\n")      
+      send("sposta "..pos, true)      
+    else
+      cecho("\n&lt;white:red&gt;DOPPIO movimento da ("..ui.player.roomPos..") a (5) a ("..pos..")&lt;r&gt;\n")
+      send("sposta 5", true)
+      send("sposta "..pos, true)
+    end
+  end
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
 				<name>Mapper utility</name>
 				<packageName></packageName>
 				<script>--
@@ -14352,14 +14360,6 @@ addMouseEvent("investiga", "onMouseCopyExample", "Investiga (Stanza)")
 addMouseEvent("scry",      "onMouseCopyExample", "Scry (Mob/Player)")
 --
 registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</script>
-				<eventHandlerList />
-			</Script>
-			<Script isActive="yes" isFolder="no">
-				<name>Codice di test</name>
-				<packageName></packageName>
-				<script>local input = "0 [1] 1 2 3 4 5 6 [xx xx xxx] 7 8[xxx]"
-local output = string.gsub(input, "%b[]", "")
-</script>
 				<eventHandlerList />
 			</Script>
 		</ScriptGroup>
