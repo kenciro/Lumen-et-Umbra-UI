@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="#|}!{°?=:;./,*+^()\'][&quot;" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="'!°#&quot;,/.)(}+|*]\{^=[?;:" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Doors</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
@@ -1779,7 +1779,7 @@ end</script>
 					<integer>0</integer>
 				</regexCodePropertyList>
 			</Trigger>
-			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="yes" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<Trigger isActive="no" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="yes" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Link - Deposita</name>
 				<script>local idx = 1
 
@@ -6034,6 +6034,7 @@ function ui.fUpdateEndowment()
       local diceOrAc = ""
       local toolTip = ""
       local item = orderTable[i]
+      local uTitle = ""
       --
       -- Status color
       local statusColor = "black"
@@ -6058,13 +6059,6 @@ function ui.fUpdateEndowment()
       -- Status
       GUI.Endowment.Main["Item"..i].Status:setFgColor(statusColor)
       GUI.Endowment.Main["Item"..i].Status:echo("&lt;center&gt;"..ui.equipment[item].status)
-      --
-      -- Name
-      if (ui.parameters.widgets.endowment.type == "name") then
-        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.fTitleCase(ui.fRemoveArticle(ui.equipment[item].name)));
-      else
-        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..ui.equipment[item].slot);
-      end
       --
       -- Level
       GUI.Endowment.Main["Item"..i].Level:echo("&lt;center&gt;"..ui.equipment[item].level);
@@ -6242,12 +6236,21 @@ function ui.fUpdateEndowment()
                   '&lt;div style="text-align: right;"&gt;'..
                     '&lt;font color="'..BGColor..'"&gt;&lt;i&gt;'..ui.identification.rarity..'&lt;/i&gt;&lt;/font&gt; &lt;font color="grey"&gt;Liv.&lt;/font&gt; &lt;font color="lime"&gt;'..ui.identification.level..'&lt;/font&gt;'..
                   '&lt;/div&gt;'            
+        --
+        uTitle = "&lt;u&gt;"
       end
-      --
       toolTip = '&lt;pre style="font-family: monospace;"&gt;'..
                   toolTip..
                 '&lt;/pre&gt;'                
       GUI.Endowment.Main["Item"..i]:setToolTip(toolTip, 0);
+      --
+      -- Name
+      if (ui.parameters.widgets.endowment.type == "name") then
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..uTitle..ui.fTitleCase(ui.fRemoveArticle(ui.equipment[item].name)));
+      else
+        GUI.Endowment.Main["Item"..i].Text:echo("&lt;center&gt;"..uTitle..ui.equipment[item].slot);
+      end
+      --
       --
       GUI.Endowment.Main["Item"..i]:resize(w - distance, h - distance)
       GUI.Endowment.Main["Item"..i]:move(distance + (c-1)*w, distance + (r-1)*h)
@@ -14670,7 +14673,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>South</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>

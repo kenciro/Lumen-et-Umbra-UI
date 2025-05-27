@@ -42,7 +42,4 @@ TOKEN
 "X", MAX_RES
 "S", SUSC
 "B", SHIELDBLOCK
-------------------------------------------------------------------
-[Mistico        ] Incantesimo su Arma: causa ferite leggere
-[Mistico I      ] Incantesimo su Arma: causa ferite serie
-[Mistico II     ] Incantesimo su Arma: causa ferite gravi
+
