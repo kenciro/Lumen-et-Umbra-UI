@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="100" mDoubleClickIgnore="(?=;:^]\[}'|{#&quot;!°/.,+*)" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="&quot;\#]^{'|}:;=?()*+,./[!°" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -48,10 +48,10 @@
 			<mCommandLineFont>Bitstream Vera Sans Mono,14,-1,5,50,0,0,0,0,0</mCommandLineFont>
 			<mCommandSeparator>;</mCommandSeparator>
 			<commandLineMinimumHeight>25</commandLineMinimumHeight>
-			<mFgColor2>#c0c0c0</mFgColor2>
+			<mFgColor2>#cccccc</mFgColor2>
 			<mBgColor2>#1e1818</mBgColor2>
-			<mRoomBorderColor>#c0c0c0</mRoomBorderColor>
-			<mRoomCollisionBorderColor>#ffff00</mRoomCollisionBorderColor>
+			<mRoomBorderColor>#cccccc</mRoomBorderColor>
+			<mRoomCollisionBorderColor>#ff0000</mRoomCollisionBorderColor>
 			<mMapInfoBg alpha="127">#3c3030</mMapInfoBg>
 			<mBlack2>#000000</mBlack2>
 			<mLightBlack2>#808080</mLightBlack2>
@@ -74,6 +74,7 @@
 			<mRoomSize>0.9</mRoomSize>
 			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Room</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -3697,31 +3698,52 @@ ui.fExecutePath(path, matches[2])</script>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>Nuclei</name>
-				<script>local path = {
-  "uigo 3110",  -- Petrus
+				<script>--[[
+Incantamento Maggiore
+  #5421  Ragno di cristallo giallo
+  #25207  Manticora
 
-  "uigo 4612",  -- Elementale
+Acqua
+  #18928  Gigante dei ghiacci
+  #18949  Freistzard, il drago bianco
 
-  "uigo 16623", -- draconia
-  "uigo 16625",
-  "uigo 16627",
-  "uigo 16630",
+Fuoco
+  #4170  Moira, Galb
+  #16703  Infirana
+  #25212  Magma
+  #25215  Elementale del fuoco
 
-  "uigo 16732", -- Guardie Duergan
+Terra
+  #11572  Scaglia Notturna
+]]
+local path = {
+  "uigo 3110",  -- Petrus [Incantamento Minore]
 
-  "uigo 15563", -- Kas
+  "uigo 4612",  -- Elementale dell'aria [Aria]
 
-  "uigo 5250",  -- Beholder
+  "uigo 16623", -- Draconia, Elementale dell'aria [Aria]
+  "uigo 16625", -- Draconia, Elementale del fuoco [Fuoco]
+  "uigo 16627", -- Draconia, Elementale della terra [Terra]
+  "uigo 16630", -- Draconia, Elementale dell'acqua [Acqua]
 
-  "uigo 6678",  -- Inverno
+  "uigo 16732", -- Soldato Duergar [Terra]
+
+  "uigo 15563", -- Kas'sif'athes [Terra]
+
+  "uigo 5250",  -- Potente Beholder [Acqua, Aria, Fuoco, Terra]
+
+  "uigo 6678",  -- Inverno, il drago bianco [Acqua]
   
-  "uigo 5408",  -- Ancalador
-  "uigo 5411",
+  "uigo 5408",  -- Ancalador. Abitatore della fiamma [Fuoco]
+  "uigo 5411",  -- Ancalador. Abitatore della fiamma [Fuoco]
   
-  "uigo 21196", -- Cobra elite
+  "uigo 21196", -- Cobra [Incantamento Minore]
   
-  "uigo 13742", -- Basilisco, Grecia
-
+  "uigo 13742", -- Grecia, Basilisco [Incantamento Minore]
+  
+  "uigo 15454", -- Creatore d'aria [Aria]
+  
+  "uigo 17049", -- Scorpione Elite
 }
 ui.fExecutePath(path, matches[2])</script>
 				<command></command>

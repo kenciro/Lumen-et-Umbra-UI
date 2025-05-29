@@ -1,13 +1,43 @@
-------------------------------------------------------------------
-MATERIALI
-nucleo d'aria elementale	#4612	Elementare dell'aria 	La via del Sole
-Droppano quelli sopra l'houer, droppano quelli di Magma, droppano gli abitatori della fiamma....
-------------------------------------------------------------------
-TODO:
-- rimuofere fontsize su endowment
-- importare profile
-- rinonimare il gouge stamina del widget group in power
-- Rimuovere profili e tutto cio' che ne deriva
+Incantamento Minore
+  #21196	Cobra (Rhyodin (esterno e lago))
+  #3110	Petrus, capitano delle guardie (Alma Sud e Terme)
+  #13742	Basilisco (Grecia)
+
+Incantamento Maggiore
+  #5421	Ragno di cristallo giallo (Ancalador)
+  #25207	Manticora (Il piano del Fuoco)
+
+Acqua
+  #5201	Potente Beholder (Thalos)
+  #6678	Inverno, il drago bianco (Sanctum)
+  #16630	Elementale dell'acqua (Draconia)
+  #18928	Gigante dei ghiacci (Il Lago Ghiacciato)
+  #18949	Freistzard, il drago bianco (Il Lago Ghiacciato)
+
+Aria
+  #4612	Elementale dell'aria (La via del Sole)
+  #5201	Potente Beholder (Thalos)
+  #15459	Creatore d'aria (Caverne del Sottomondo)
+  #16623	Elementale dell'aria (Draconia)
+  #6648	Elminster (Sanctum)
+
+Fuoco
+  #4170	Galb (Miniere di Moria)
+  #5201	Potente Beholder (Thalos)
+  #5408	Abitatore della fiamma (Ancalador)
+  #5411	Abitatore della fiamma (Ancalador)
+  #16625	Elementale del fuoco (Draconia)
+  #16703	Infirana (La Montagna di Dumathoin)
+  #25212	Magma (Il piano del Fuoco)
+  #25215	Elementale del fuoco (Il piano del Fuoco)
+
+Terra
+  #5201	Potente Beholder (Thalos)
+  #11572	Scaglia Notturna (Khundrukar)
+  #15566	Kas'sif'athes (Deserto del sud)
+  #16627	Elementale della terra (Draconia)
+  #16732	Soldato Duergar (La Montagna di Dumathoin)
+
 ------------------------------------------------------------------
 TESORI
 Room ID	Area		Note
@@ -42,4 +72,5 @@ TOKEN
 "X", MAX_RES
 "S", SUSC
 "B", SHIELDBLOCK
+------------------------------------------------------------------
 
