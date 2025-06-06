@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="[&quot;#|}°!{?=:;./,*+^()\']" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="^]\[/.,+*)('°#&quot;!?=;:}|{" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -11,7 +11,6 @@
 				<string>Luogotenenti_triggers</string>
 				<string>Invasioni</string>
 				<string>LeU_UI</string>
-				<string>raven_alias</string>
 			</mInstalledPackages>
 			<url>new-leu.leu.it</url>
 			<serverPackageName>nothing</serverPackageName>
@@ -4068,78 +4067,192 @@ ui.fExecutePath(path, matches[2])
 				<regex>^(?i)oltre(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>Tempio dannati</name>
-				<script>local path = {
-  "dw cane-famelico;.ues2ne4dnw4n",
+				<name>Pilastri</name>
+				<script>local tQuest = {
+  {"inf", "GO Astral;;"},
+  {"cmd", ".un2wnuw2uwds;;"},
+  {"cmd", "ent spe;;"},
+  {"inf", "Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;;;"},
+  {"inf", "Ripeti 6 fino a raggiungere &lt;cyan&gt;IL SENTIERO&lt;r&gt;;;"},
+  {"cmd", ".2ns;;"},
+  {"inf", "NEXT Carceriere;;"},
+  {"cmd", "s;;op monolito;;d;;"},
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;;;"},
+  {"cmd", "get globo cad;;op portale;;n;;"},
+  {"cmd", "ga alterazione;;.su;;op barriera;;"},
+  {"inf", "Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;red&gt;un corpulento Difensore del Caos&lt;r&gt;;;"},
+  {"INF", "Andare alla room &lt;red&gt;Inquietudine....&lt;r&gt;;;"},
+  {"cmd", "op lastra;;"},
+  {"inf", "NEXT Kh'ryf (hide);;"},
+  {"cmd", "d;;"},
+  {"cmd", "ga cad;;.u2s3w;;"},
+
+  {"cmd", "get roccia sacca;;op pilastro;;ent pilastro;;"},
+  {"inf", "Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;red&gt;il Capogilda degli spiriti&lt;r&gt;;;"},
+  {"cmd", "ga cad;;"},
+  {"inf", "Andare alla room &lt;red&gt;La Torre di pietra&lt;r&gt;;;"},
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;;;"},
+  {"cmd", "op n;;n;;op glifo;;d;;"},
+  {"cmd", "ga alterazione;;p scheggia;;.us2e2n;;ent pilastro;;.4n;;"},
+
+  {"cmd", "get trasparente sacca;;op pilastro;;ent pilastro;;"},
+  {"cmd", "track capogilda-lich;;"},
+  {"inf", "Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;red&gt;il Capogilda dei cavalcanubi&lt;r&gt;;;"},
+  {"cmd", "ga cad;;"},
+  {"inf", "Andare alla room &lt;red&gt;Una piccola torre bianca&lt;r&gt;;;"},
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;;;"},
+  {"cmd", "op n;;n;;op glifo;;d;;"},
+  {"cmd", "ga alterazione;;p scheggia;;.us2e2s;;ent pilastro;;.5e;;"},
+
+  {"cmd", "get fuoco sacca;;op pilastro;;ent pilastro;;"},
+  {"cmd", "track capogilda-assassini;;"},
+  {"inf", "Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;red&gt;il Capogilda degli assassini&lt;r&gt;;;"},
+  {"cmd", "ga cad;;"},
+  {"inf", "Andare alla room &lt;red&gt;La Torre Rossa&lt;r&gt;;;"},
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;;;"},
+  {"cmd", "op n;;n;;op glifo;;d;;"},
+  {"cmd", "ga alterazione;;p scheggia;;.us2w2s;;ent pilastro;;.4s;;"},
+
+  {"cmd", "get azzurro sacca;;op pilastro;;ent pilastro;;"},
+  {"cmd", "track capogilda-gnoll;;"},
+  {"inf", "Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;red&gt;il Capogilda gnoll&lt;r&gt;;;"},
+  {"cmd", "ga cad;;"},
+  {"inf", "Andare alla room &lt;red&gt;La Torre Azzurra&lt;r&gt;;;"},
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;;;"},
+  {"cmd", "op n;;n;;op glifo;;d;;"},
+  {"cmd", "ga alterazione;;p scheggia;;.us2w2n;;ent pilastro;;.2w;;"},
+
+  {"inf", "Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;uno strano Vortice&lt;r&gt;;;"},
+  {"cmd", "dig terreno;;d;;g all.scheggia;;join scheggia 2.scheggia 3.scheggia 4.scheggia;;op PORTALE;;s;;"},
+  {"cmd", "ga vortice;;.nunne;;g chiave armonia;;op serratura;;"},
+
+  {"cmd", ".ee;;bl bufalo;;"},
+  {"cmd", ".ee;;op portale;;"},
+  {"cmd", "e;;kill akho;;"},
+  {"cmd", "ll;;cut cespuglio;;d;;op tabernacolo;;ga tabernacolo;;.ue;;op altare e;;"},
+  {"cmd", "get pergamena armonia;;tt pergamena;;"},
+  {"cmd", "e;;"},
+  {"cmd", "recita pergamena qhh"},
+  {"end","END"},
 }
-ui.fExecutePath(path, matches[2])</script>
+--
+ndxQuest = fQuest(tQuest, matches[2], ndxQuest)</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)tempiodannati(?:\s+(.*))?$</regex>
+				<regex>^(?i)_pilastri(?:\s+(.*))?$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
-				<name>Pilastri</name>
-				<script>local path = {
-  "astral",
-  ".un2wnuw2uwds",
-  "es",
-  "track miliziano;lua cecho('Cerca &lt;cyan&gt;una chiave di pietra nera&lt;r&gt; nei &lt;red&gt;Miliziani del Caos&lt;r&gt;')",
-  ".2ns;lua cecho('Ripeti fino a &lt;red&gt;IL SENTIERO&lt;r&gt;')",
-  "s;op monolito;",
-  "d;bl carceriere",
-  "get globo cad;op portale;n",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
-  "ga alterazione;.su;op barriera",
-  "track difensore-caos;lua cecho('Cerca &lt;cyan&gt;un enigmatico oggetto di forma strana&lt;r&gt; dal &lt;red&gt;un corpulento Difensore del Caos&lt;r&gt;')",
-  "lua cecho('Andare alla room &lt;red&gt;Inquietudine....&lt;r&gt;')",
-  "op lastra",
-  "d;bl Kh'ryf",
-  "ga cad;.u2s3w;",
-  
-  "get roccia sacca;op pilastro;ent pilastro",
-  "track capogilda-spiriti;lua cecho('Cerca &lt;cyan&gt;una strana roccia perfettamente sferica&lt;r&gt; dal &lt;red&gt;il Capogilda degli spiriti&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre di pietra&lt;r&gt;')",
-  "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
-  "ga alterazione;p scheggia;.us2e2n;ent pilastro;.4n",
-  
-  "get trasparente sacca;op pilastro;ent pilastro",
-  "track capogilda-lich;lua cecho('Cerca &lt;cyan&gt;una strana sferetta bianca&lt;r&gt; dal &lt;red&gt;il Capogilda dei cavalcanubi&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;Una piccola torre bianca&lt;r&gt;')",
-  "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
-  "ga alterazione;p scheggia;.us2e2s;ent pilastro;.5e",
-  
-  "get fuoco sacca;op pilastro;ent pilastro",
-  "track capogilda-assassini;lua cecho('Cerca &lt;cyan&gt;un curiosa sferetta rossa&lt;r&gt; dal &lt;red&gt;il Capogilda degli assassini&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Rossa&lt;r&gt;')",
-  "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
-  "ga alterazione;p scheggia;.us2w2s;ent pilastro;.4s",
-
-  "get azzurro sacca;op pilastro;ent pilastro",
-  "track capogilda-gnoll;lua cecho('Cerca &lt;cyan&gt;una strana sferetta azzurra&lt;r&gt; dal &lt;red&gt;il Capogilda gnoll&lt;r&gt;')",
-  "ga cad;lua cecho('Andare alla room &lt;red&gt;La Torre Azzurra&lt;r&gt;')",
-  "op n;n;op glifo;d;",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;Alterazione&lt;r&gt;')",
-  "ga alterazione;p scheggia;.us2w2n;ent pilastro;.2w",
-  
-  "dig terreno;d;g all.scheggia;join scheggia 2.scheggia 3.scheggia 4.scheggia;op PORTALE;s",
-  "lua cecho('Attendere la fine dei dialoghi finchè non droppa un &lt;red&gt;uno strano Vortice&lt;r&gt;')",
-  "ga vortice;.nunne;g chiave armonia;op serratura;",
-  
-  ".ee;bl bufalo",
-  ".ee;op portale;",
-  "e;kill akho",
-  "ll;cut cespuglio;d;op tabernacolo;ga tabernacolo;.ue;op altare e;",
-  "get pergamena armonia;tt pergamena";
-  "e",
-  "recita pergamena qhh", 
+				<name>Raven</name>
+				<script>local tQuest = {
+  {"inf","ACT: go Tania"},
+  {"cmd",".dwn3ne3nwe2n2n;;"},
+  {"inf","Zombie - sacchetti - forbicine - chiave oro"},
+  {"inf","ACT: go Antiporta (piu' volte se serve)"},
+  {"cmd",".wewewn;;"},
+  {"cmd",".sswesw;;g chia scalino;;"},
+  {"cmd",".ennwewewn;;"},
+  {"inf","NEED: discover traps"},
+  {"cmd","g all.chia sac;;#uoe no;;#distrap trappola;;#uop no;;"},
+  {"inf","NEXT: Helga - &lt;red&gt;no scrap"},
+  {"cmd",".nenu;;open porticina south;;s;;open w;;w;;push mattone;;w;;open south;;s;;"},
+  {"cmd","get all cada;;g chia ves;;dro ves;;put all.chia sac;;"},
+  {"inf","NEXT: fantasma &lt;grey&gt;(hide)"},
+  {"cmd","n;;open passaggio w;;.wun;;open east;;e;;open east;;"},
+  {"inf","NEXT: statue - &lt;red&gt;procedura DT"},
+  {"cmd","lift tappeto;;lift botola;;.3d;;op south;;s;;"},  
+  {"cmd","#gall 2;;#uop baule;;get sac baule;;get chia baule;;put sac braciere;;op no;;.n3u;;"},
+  {"cmd","turn attizzatoio;;"},
+  {"cmd","n;;#distrap trappola;;"},
+  {"inf","NEXT: tarantola(x5)"},
+  {"cmd","open pannello north;;n;;open mano;;get torcia mano;;put torcia sostegno;;n;;op no;;n;;"},    
+  {"cmd","g all.chia sac;;cut ragnatela;;w;;#uop bau;;g mart bau;;put mart sacchetto;;put all.chia sac;;.e4swsd3endsws;;"},    
+  {"inf","NEXT: scheletri(x10)"},
+  {"cmd",".nen2dwses;;"},
+  {"cmd","#gall 10;;..nen2dwses;;"},
+  {"inf","NEXT: cadavere"},
+  {"cmd",".nen3u;;"},
+  {"inf","NEXT: gatti(x6)"},
+  {"cmd",".sw2us;;"},
+  {"inf","NEXT: Heli Grezelda Gritz (3 streghe)"},
+  {"cmd","e;;op w;;op no;;n;;"},
+  {"cmd","#_mi3_g chia_cad;;"},
+  {"cmd",".swn2den3dswsnenus3wune3ds;;op w;;.wn;;g all.chia sac;;#uop no;;put all.chia sac;;"},
+  {"inf","NEXT: Pidwilk &lt;grey&gt;(hide)"},
+  {"cmd",".nw5n2w;;doorbash lastra;;d;;"},
+  {"cmd","g chia cad;;g amu cad;;op pietra;;g cassetta pietra;;#uop cassetta;;g all.chia cassetta;;dro cassetta;;put amu sac;;"},
+  {"inf","NEXT: Patrina &lt;yellow&gt;(WAIT)&lt;r&gt; [chiave legno fregi]"},
+  {"cmd",".u2e2s;;#uol lastra;;d;;"},
+  {"cmd","g chia cad;;op pietra;;g chia pietra;;put chia sac;;"},
+  {"inf","NEXT: Marya &lt;yellow&gt;(WAIT)&lt;r&gt; [tre piccole avorio]"},
+  {"cmd",".us2e;;#uol lastra;;d;;"},
+  {"inf","NEXT: Sasha &lt;grey&gt;(hide)"},
+  {"cmd","g chia cad;;put chia sac;;.u2w6n;;#uol lastra;;d;;"},
+  {"cmd","g chia cad;;put chia sac;;.une2se;;"},
+  {"cmd",".n3uw;;get all.chia-freg sacc;;#uop porta north;;#uop porta west;;"},
+  {"cmd","n;;get fregio materasso;;put fregio sacc;;.sw;;get chia-ant sac;;#uop mobiletto;;get meta mobiletto;;e;;"},
+  {"inf","NEXT: dove c'era Sasha&lt;r&gt; [join meta'=&gt;teschio]"},
+  {"cmd",".e3dsw2nw8nd;;"},
+  {"cmd","get fregio sacc;;#uop bara;;get meta bara;;join destra sinistra;;put teschio sacc;;"},
+  {"inf","NEXT:&lt;r&gt; [ala][forcina][timbro][piuma]"},
+  {"cmd",".une2sen3uws;;get teschio sac;;#uop porta west;;w;;get all.chia-avo sac;;#uop comodino;;get chia comodino;;#uop scrittoio;;get casset scrittoio;;#uop cassettino;;get ala cassettino;;drop cassettino;;"},
+  {"cmd",".ene2n;;get all.chia-oro sac;;#uop bau;;get forcina baule;;get chia-ferr-arr sac;;#uop 3.baule;;get sbarra 3.baule;;get chia-arg sac;;#uop 4.bau;;get armatura 4.baule;;get timbro armatura;;.2n;;"},
+  {"cmd","#uop listone;;get bauletto listone;;#uop bauletto;;get meda bauletto;;drop bauletto;;#uop medaglione;;get piuma medaglione;;drop medaglione;;put piuma sacc;;put ala sacc;;put forcina sacc;;put timbro sacc;;"},
+  {"inf","NEXT: Aerial&lt;r&gt; [leva]"},
+  {"cmd",".4s3dswnnw5ne;;g all.chia sac;;#uol lastra;;put all.chia sac;;d;;"},
+  {"cmd","g chia cad;;#uop bara;;g leva bara;;"},
+  {"inf","NEXT: spettro fiammeggiante [grappa]"},
+  {"cmd",".u2ne;;#uol lastra;;d;;"},
+  {"cmd","g chia cad;;#uop bara;;g grappa bara;;put grappa sac;;"},
+  {"inf","NEXT: mano morte, spettri (x2)&lt;r&gt; [sacchetto]"},
+  {"cmd",".ue;;#uol lastra;;d;;"},
+  {"cmd","g chia mano;;#uop bara;;g sac bara;;put sac log;;"},
+  {"inf","NEXT: Endorovich&lt;r&gt; [arsenico]"},
+  {"cmd",".u5s;;#uol lastra;;d;;"},
+  {"cmd","g chia cad;;#uop bara;;g arse bara;;put arse log;;"},
+  {"inf","NEXT: Banshee &lt;red&gt;hold teschio!!&lt;r&gt; [chiave pietra]"}, 
+  {"cmd","g teschio sac;;rem scudo;;ho tesch;;.us;;"},
+  {"inf","NEXT: Cavalli&lt;r&gt; [ferro]"},
+  {"cmd","g chia cad;;rem tes;;wea scu;;.n2es;;#uol lastra;;d;;"},
+  {"inf","NEXT: Tasha &lt;red&gt;NO KILL&lt;r&gt; [elisir]"},
+  {"cmd","g ferro cav;;put ferro sac;;.u3n;;#uol lastra;;d;;low lastra;;"},
+  {"cmd","g grap sacc;;gi grap tasha;;g arse sacc;;gi arse tasha;;g ferro-cav sacc;;gi ferro-cav tasha;;g sacc-p sacc;;gi sacc-p tasha;;"},
+  {"inf","NEXT: spettri &lt;grey&gt;(hide)"},
+  {"cmd","put eli sac;;lift lastra;;.u3sese2sen3uwsde2en2usws;;"},
+  {"inf","NEED: discover traps"},
+  {"cmd","e;;clo ea;;clo w;;g ala sac;;unl specchio;;push specchio;;n;;#distrap trappola;;"},
+  {"inf","NEXT: corvo + guardiano&lt;grey&gt;(hide)"},
+  {"cmd","n;;push ali;;ea;;"},
+  {"inf","NEXT: Ireena &lt;red&gt;NO KILL&lt;r&gt;"},
+  {"cmd","#distrap scritta;;g piu sac;;#uop porta;;n;;g eli sac;;gi eli iree;;"},
+  {"cmd",".sw2s;;op w;;.wn2usn2den3dswsnenus3wune3dsw2nw2n;;"},
+  {"inf","NEXT: Primo Strahd &lt;red&gt;hold teschio!!&lt;r&gt;"},
+  {"cmd","g all.chia-pie sac;;rem scu;;ho teschio;;#uop lastra;;d;;"},
+  {"inf","NEXT: Secondo Strahd &lt;cyan&gt;(search)&lt;r&gt;"},
+  {"cmd","g all cad;;.u;;..w2nw2n;;..nenus3wune3ds;;"},
+  {"end","END"} 
 }
-ui.fExecutePath(path, matches[2])</script>
+--
+ndxQuest = fQuest(tQuest, matches[2], ndxQuest)</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(?i)pilastri(?:\s+(.*))?$</regex>
+				<regex>^(?i)_raven(?:\s+(.*))?$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>Tempio dannati</name>
+				<script>--local path = {
+--  "dw cane-famelico;.ues2ne4dnw4n",
+--}
+--ui.fExecutePath(path, matches[2])
+local tQuest = {
+  {"inf", "ACT: go cane-famelico"},
+  {"cmd", ".ues2ne4dnw4n;;"},
+  {"end", "END"} 
+}
+--
+ndxQuest = fQuest(tQuest, matches[2], ndxQuest)</script>
+				<command></command>
+				<packageName></packageName>
+				<regex>^(?i)_tempiodannati(?:\s+(.*))?$</regex>
 			</Alias>
 		</AliasGroup>
 		<AliasGroup isActive="yes" isFolder="yes">
@@ -4443,251 +4556,6 @@ end</script>
 				<packageName></packageName>
 				<regex>^(1|2)(.+)$</regex>
 			</Alias>
-		</AliasGroup>
-		<AliasGroup isActive="yes" isFolder="yes">
-			<name>raven_alias</name>
-			<script></script>
-			<command></command>
-			<packageName>raven_alias</packageName>
-			<regex></regex>
-			<AliasGroup isActive="yes" isFolder="yes">
-				<name>RAVEN</name>
-				<script></script>
-				<command></command>
-				<packageName></packageName>
-				<regex></regex>
-				<Alias isActive="yes" isFolder="no">
-					<name>raven</name>
-					<script>quest_raven=
-{
-  {"inf","ACT: go Tania","00"},
-  {"cmd",".dwn3ne3nwe2n2n;;","01"},
-  {"inf","Zombie - sacchetti - forbicine - chiave oro"},
-  {"inf","ACT: go Antiporta (piu' volte se serve)"},
-  {"cmd",".wewewn;;"},
-  {"cmd",".sswesw;;g chia scalino;;.ennwewewn;;"},
-  {"inf","NEED: discover traps"},
-  {"cmd","g all.chia sac;;#uoe no;;#distrap trappola;;#uop no;;"},
-  {"inf","NEXT: Helga - &lt;red&gt;no scrap"},
-  {"cmd",".nenu;;open porticina south;;s;;open w;;w;;push mattone;;w;;open south;;s;;"},
-  {"cmd","get all cada;;g chia ves;;dro ves;;put all.chia sac;;"},
-  {"inf","NEXT: fantasma &lt;grey&gt;(hide)"},
-  {"cmd","n;;open passaggio w;;.wun;;open east;;e;;open east;;"},
-  {"inf","NEXT: statue - &lt;red&gt;procedura DT"},
-  {"cmd","lift tappeto;;lift botola;;.3d;;op south;;s;;"},  
-  {"cmd","#gall 2;;#uop 2.baule;;get sac 2.baule;;get chia 2.baule;;put sac braciere;;op no;;.n3u;;turn attizzatoio;;n;;#distrap trappola;;"},
-  {"inf","NEXT: tarantola(x5)"},
-  {"cmd","open pannello north;;n;;open mano;;get torcia mano;;put torcia sostegno;;n;;op no;;n;;"},    
-  {"cmd","g all.chia sac;;cut ragnatela;;w;;#uop 2.bau;;g mart 2.bau;;put mart sacchetto;;put all.chia sac;;.e4swsd3endsws;;"},    
-  {"inf","NEXT: scheletri(x10)"},
-  {"cmd",".nen2dwses;;"},
-  {"cmd","#gall 10;;..nen2dwses;;"},
-  {"inf","NEXT: cadavere"},
-  {"cmd",".nen3u;;"},
-  {"inf","NEXT: gatti(x6)"},
-  {"cmd",".sw2us;;"},
-  {"inf","NEXT: Heli Grezelda Gritz (3 streghe)"},
-  {"cmd","e;;op w;;op no;;n;;"},
-  {"cmd","#_mi3_g chia_cad;;"},
-  {"cmd",".swn2den3dswsnenus3wune3ds;;op w;;.wn;;g all.chia sac;;#uop no;;put all.chia sac;;"},
-  {"inf","NEXT: Pidwilk &lt;grey&gt;(hide)"},
-  {"cmd",".nw5n2w;;doorbash lastra;;d;;"},
-  {"cmd","g chia cad;;g amu cad;;op pietra;;g cassetta pietra;;#uop cassetta;;g all.chia cassetta;;dro cassetta;;put amu sac;;"},
-  {"inf","NEXT: Patrina &lt;yellow&gt;(WAIT)&lt;reset&gt; [chiave legno fregi]"},
-  {"cmd",".u2e2s;;#uol lastra;;d;;"},
-  {"cmd","g chia cad;;op pietra;;g chia pietra;;put chia sac;;"},
-  {"inf","NEXT: Marya &lt;yellow&gt;(WAIT)&lt;reset&gt; [tre piccole avorio]"},
-  {"cmd",".us2e;;#uol lastra;;d;;"},
-  {"inf","NEXT: Sasha &lt;grey&gt;(hide)"},
-  {"cmd","g chia cad;;put chia sac;;.u2w6n;;#uol lastra;;d;;"},
-  {"cmd","g chia cad;;put chia sac;;.une2se;;"},
-  {"cmd",".n3uw;;get all.chia-freg sacc;;#uop porta north;;#uop porta west;;"},
-  {"cmd","n;;get fregio materasso;;put fregio sacc;;.sw;;get chia-ant sac;;#uop mobiletto;;get meta mobiletto;;e;;"},
-  {"inf","NEXT: dove c'era Sasha&lt;reset&gt; [join meta'=&gt;teschio]"},
-  {"cmd",".e3dsw2nw8nd;;"},
-  {"cmd","get fregio sacc;;#uop bara;;get meta bara;;join destra sinistra;;put teschio sacc;;"},
-  {"inf","NEXT:&lt;reset&gt; [ala][forcina][timbro][piuma]"},
-  {"cmd",".une2sen3uws;;get teschio sac;;#uop porta west;;w;;get all.chia-avo sac;;#uop comodino;;get chia comodino;;#uop scrittoio;;get casset scrittoio;;#uop cassettino;;get ala cassettino;;drop cassettino;;"},
-  {"cmd",".ene2n;;get all.chia-oro sac;;#uop 2.bau;;get forcina 2.baule;;get chia-ferr-arr sac;;#uop 3.baule;;get sbarra 3.baule;;get chia-arg sac;;#uop 4.bau;;get armatura 4.baule;;get timbro armatura;;.2n;;"},
-  {"cmd","#uop listone;;get bauletto listone;;#uop bauletto;;get meda bauletto;;drop bauletto;;#uop medaglione;;get piuma medaglione;;drop medaglione;;put piuma sacc;;put ala sacc;;put forcina sacc;;put timbro sacc;;"},
-  {"inf","NEXT: Aerial&lt;reset&gt; [leva]"},
-  {"cmd",".4s3dswnnw5ne;;g all.chia sac;;#uol lastra;;put all.chia sac;;d;;"},
-  {"cmd","g chia cad;;#uop bara;;g leva bara;;"},
-  {"inf","NEXT: spettro fiammeggiante [grappa]"},
-  {"cmd",".u2ne;;#uol lastra;;d;;"},
-  {"cmd","g chia cad;;#uop bara;;g grappa bara;;put grappa sac;;"},
-  {"inf","NEXT: mano morte, spettri (x2)&lt;reset&gt; [sacchetto]"},
-  {"cmd",".ue;;#uol lastra;;d;;"},
-  {"cmd","g chia mano;;#uop bara;;g sac bara;;put sac log;;"},
-  {"inf","NEXT: Endorovich&lt;reset&gt; [arsenico]"},
-  {"cmd",".u5s;;#uol lastra;;d;;"},
-  {"cmd","g chia cad;;#uop bara;;g arse bara;;put arse log;;"},
-  {"inf","NEXT: Banshee &lt;red&gt;hold teschio!!&lt;reset&gt; [chiave pietra]"}, 
-  {"cmd","g teschio sac;;rem scudo;;ho tesch;;.us;;"},
-  {"inf","NEXT: Cavalli&lt;reset&gt; [ferro]"},
-  {"cmd","g chia cad;;rem tes;;wea scu;;.n2es;;#uol lastra;;d;;"},
-  {"inf","NEXT: Tasha &lt;red&gt;NO KILL&lt;reset&gt; [elisir]"},
-  {"cmd","g ferro cav;;put ferro sac;;.u3n;;#uol lastra;;d;;low lastra;;"},
-  {"cmd","g grap sacc;;gi grap tasha;;g arse sacc;;gi arse tasha;;g ferro-cav sacc;;gi ferro-cav tasha;;g sacc-p sacc;;gi sacc-p tasha;;"},
-  {"inf","NEXT: spettri &lt;grey&gt;(hide)"},
-  {"cmd","put eli sac;;lift lastra;;.u3sese2sen3uwsde2en2usws;;"},
-  {"inf","NEED: discover traps"},
-  {"cmd","e;;clo ea;;clo w;;g ala sac;;unl specchio;;push specchio;;n;;#distrap trappola;;"},
-  {"inf","NEXT: corvo + guardiano&lt;grey&gt;(hide)"},
-  {"cmd","n;;push ali;;ea;;"},
-  {"inf","NEXT: Ireena &lt;red&gt;NO KILL&lt;reset&gt;"},
-  {"cmd","#distrap scritta;;g piu sac;;#uop porta;;n;;g eli sac;;gi eli iree;;"},
-  {"cmd",".sw2s;;op w;;.wn2usn2den3dswsnenus3wune3dsw2nw2n;;"},
-  {"inf","NEXT: Primo Strahd &lt;red&gt;hold teschio!!&lt;reset&gt;"},
-  {"cmd","g all.chia-pie sac;;rem scu;;ho teschio;;#uop lastra;;d;;"},
-  {"inf","NEXT: Secondo Strahd &lt;cyan&gt;(search)&lt;reset&gt;"},
-  {"cmd","g all cad;;.u;;..w2nw2n;;..nenus3wune3ds;;"},
-  {"end","END"} 
-}
-
-function cmd_parser(toParse)  
-  for cmd in string.gmatch(toParse,"[%w%s%.-#_]+;;") do    
-    --speedwalk
-    if string.sub(cmd,1,1)=="." then
-      if string.sub(cmd,1,2)==".." then
-        cmd_speedwalk(string.sub(cmd,3,cmd:len()-2),true)
-      else
-        cmd_speedwalk(string.sub(cmd,2,cmd:len()-2),false)
-      end
-    
-    --cmds (#)
-    elseif string.sub(cmd,1,1)=="#" then      
-      if string.sub(cmd,2,4)=="uop" then        
-        local arg=string.sub(cmd,6,cmd:len()-2)
-        send("unlock "..arg,true)
-        send("open "..arg,true)
-      
-      elseif string.sub(cmd,2,4)=="uol" then
-        local arg=string.sub(cmd,6,cmd:len()-2)
-        send("unlock "..arg,true)
-        send("lift "..arg,true)
-            
-      elseif string.sub(cmd,2,4)=="uok" then
-        local arg=string.sub(cmd,6,cmd:len()-2)
-        send("pick "..arg,true)
-        send("open "..arg,true)
-      
-      elseif string.sub(cmd,2,4)=="uoe" then
-        local arg=string.sub(cmd,6,cmd:len()-2)
-        send("unlock "..arg,true)
-        send("open "..arg,true)      
-        send("enter "..arg,true)      
-        local arg=string.sub(cmd,6,cmd:len()-2)
-      
-      elseif string.sub(cmd,2,5)=="gall" then
-        local num=tonumber(string.sub(cmd,7,cmd:len()-2))
-        local i
-        for i=1,num do
-          send("get all "..i..".cada")
-        end
-      
-      elseif string.sub(cmd,2,8)=="distrap" then
-        local arg=string.sub(cmd,10,cmd:len()-2)
-        --send("remove moon",true)
-        --send("get attrezzi baule",true)
-        --send("hold attrezzi",true)
-        send("defuse "..arg,true)
-        --send("remove attrezzi",true)
-        --send("put attrezzi baule",true)
-        --send("wie moon",true)
-        
-      elseif string.sub(cmd,2,4)=="_mi" then
-        local tmp=string.match(string.sub(cmd,5,cmd:len()-2),"%d+")
-        local act=string.match(string.sub(cmd,5+tmp:len()+1,cmd:len()-2),"[%w%s]+")
-        local arg=string.sub(cmd,5+tmp:len()+1+act:len()+1,cmd:len()-2)
-        for i=1,tonumber(tmp) do
-          send(act.." "..i.."."..arg)
-        end        
-      
-      elseif string.sub(cmd,2,3)=="_m" then
-        local tmp=string.match(string.sub(cmd,4,cmd:len()-2),"%d+")        
-        local arg=string.sub(cmd,4+tmp:len(),cmd:len()-2)
-        for i=1,tonumber(tmp) do
-          send(arg)
-        end
-      end
-    
-    else
-      send(cmd:sub(1,cmd:len()-2),true)            
-   
-    end    
-  end
-end
-
-
-function cmd_speedwalk(in_path, backwards)
-    local out_path = ""
-    local i=0
-
-    for i=1, in_path:len() do
-      local c = string.lower(in_path:sub(i, i))
-
-      out_path = out_path..c
-
-      if c == "n" or c == "s" or
-         c == "w" or c == "e" or 
-         c == "u" or c == "d" then
-        out_path = out_path.." "
-      end
-    end
-
-    --cecho (out_path)
-    speedwalk(out_path, backwards)
-end
-
-if matches[2]==nil or matches[2]=="" then
-  if quest_raven[QuestIdx_Raven][1]=="end" then
-    cecho("\n&lt;red&gt;** End of Quest **&lt;reset&gt;")
-  else
-    QuestIdx_Raven=QuestIdx_Raven+1
-  end
-elseif tonumber(matches[2])==0 then
-  cecho("\n&lt;blue&gt;** Welcome to RAVEN **&lt;reset&gt;")
-  QuestIdx_Raven=1
-else
-  QuestIdx_Raven=tonumber(matches[2])
-end
-
-cecho("\n&lt;blue&gt;[&lt;reset&gt;"..QuestIdx_Raven.."&lt;blue&gt;]&lt;reset&gt;")
-
-if quest_raven[QuestIdx_Raven][1]=="inf" then
-  cecho(" &lt;yellow:blue&gt; INFO:&lt;reset&gt;&lt;blue&gt; "..quest_raven[QuestIdx_Raven][2].."&lt;reset&gt;\n")
-elseif quest_raven[QuestIdx_Raven][1]=="cmd" then  
-  cecho(" &lt;yellow&gt; CMD:&lt;brown&gt; "..quest_raven[QuestIdx_Raven][2].."&lt;reset&gt;\n")
-  --send(quest_raven[QuestIdx_Raven][2],true)
-  cmd_parser(quest_raven[QuestIdx_Raven][2])  
-elseif quest_raven[QuestIdx_Raven][1]=="end" then
-  cecho("\n&lt;red&gt;** End of Quest **&lt;reset&gt;")
-else  
-  cecho(" &lt;red&gt; ERR:  "..quest_raven[QuestIdx_Raven][1]..": "..quest_raven[QuestIdx_Raven][2].."&lt;reset&gt;\n")
-end
-
---cecho(quest_raven[QuestIdx_Raven][1].." "..quest_raven[QuestIdx_Raven][2])
-</script>
-					<command></command>
-					<packageName></packageName>
-					<regex>_raven(.*)$</regex>
-				</Alias>
-				<Alias isActive="yes" isFolder="no">
-					<name>show idx raven</name>
-					<script>cecho("LAST: &lt;blue&gt;[&lt;reset&gt;"..QuestIdx_Raven.."&lt;blue&gt;]&lt;reset&gt;"..quest_raven[QuestIdx_Raven][1]..": "..quest_raven[QuestIdx_Raven][2].."&lt;reset&gt;\n")</script>
-					<command></command>
-					<packageName></packageName>
-					<regex>^_showRaven$</regex>
-				</Alias>
-				<Alias isActive="yes" isFolder="no">
-					<name>show cmd raven</name>
-					<script>cecho(" &lt;red&gt; SHOW:  "..quest_raven[tonumber(matches[2])][1]..": "..quest_raven[tonumber(matches[2])][2].."&lt;reset&gt;\n")</script>
-					<command></command>
-					<packageName></packageName>
-					<regex>^_showCmdRaven(.*)$</regex>
-				</Alias>
-			</AliasGroup>
 		</AliasGroup>
 	</AliasPackage>
 	<ActionPackage />
@@ -9754,9 +9622,7 @@ function ui.fUpdateMapper()
       elseif (ui.room.area == 'Instancing') or
              (ui.room.area == 'Random Dungeons') then 
         -- Clear area
-        if (false) then
-          deleteArea(ui.room.area)
-        end
+        deleteArea(ui.room.area)
       end
     end
     --
@@ -9803,7 +9669,7 @@ function ui.fUpdateMapper()
     end
     --
     -- Update special exits
-    setExitStub(ui.room.id, "out", false)
+    -- setExitStub(ui.room.id, "out", false)
     if not (table.is_empty(ui.room.otherExits)) then
       for dir, id in pairs(ui.room.otherExits) do
         addSpecialExit(ui.room.id, id, "ent "..dir)
@@ -14403,6 +14269,170 @@ function clearDoor(direction)
   end
   --
   setDoor(ui.room.id, ui.validExit[direction].door, 0)
+end</script>
+				<eventHandlerList />
+			</Script>
+			<Script isActive="yes" isFolder="no">
+				<name>Quest functions</name>
+				<packageName></packageName>
+				<script>--
+--
+local function fExecuteSpeedwalk(in_path, backwards)
+  local out_path = ""
+  --
+  for i = 1, in_path:len() do
+    local c = string.lower(in_path:sub(i, i))
+    --
+    out_path = out_path..c
+    if (c == "n") or (c == "s") or (c == "w") or (c == "e") or (c == "u") or (c == "d") then
+      out_path = out_path.." "
+    end
+  end
+  --
+  speedwalk(out_path, backwards)
+end
+--
+--
+local function fExecuteQuestTableCommand(commands)
+  for cmd in string.gmatch(commands, "[%w%s%.-#_]+;;") do
+    --
+    -- speedwalk
+    --if (string.sub(cmd, 1, 1) == ".") then
+    --  if (string.sub(cmd,1,2) == "..") then
+    --    fExecuteSpeedwalk(string.sub(cmd, 3, cmd:len()-2), true)
+    --  else
+    --    fExecuteSpeedwalk(string.sub(cmd, 2, cmd:len()-2), false)
+    --  end
+    --
+    -- cmds (#)
+    --elseif (string.sub(cmd, 1, 1) == "#") then
+    if (string.sub(cmd, 1, 1) == "#") then
+      --
+      if (string.sub(cmd, 2, 4) == "uop") then
+        local arg = string.sub(cmd, 6, cmd:len()-2)
+        send("unlock "..arg, true)
+        send("open "..arg, true)
+      --
+      elseif (string.sub(cmd, 2, 4) == "uol") then
+        local arg = string.sub(cmd, 6, cmd:len()-2)
+        send("unlock "..arg, true)
+        send("lift "..arg, true)
+      --
+      elseif (string.sub(cmd, 2, 4) == "uok") then
+        local arg = string.sub(cmd, 6, cmd:len()-2)
+        send("pick "..arg, true)
+        send("open "..arg, true)
+      --
+      elseif (string.sub(cmd, 2, 4) == "uoe") then
+        local arg = string.sub(cmd, 6, cmd:len()-2)
+        send("unlock "..arg, true)
+        send("open "..arg, true)
+        send("enter "..arg, true)
+      --
+      elseif (string.sub(cmd, 2, 5) == "gall") then
+        local num = tonumber(string.sub(cmd, 7, cmd:len()-2))
+        local i
+        for i = 1, num do
+          send("get all "..i..".cada")
+        end
+      --
+      elseif (string.sub(cmd, 2, 8) == "distrap") then
+        local arg = string.sub(cmd, 10, cmd:len()-2)
+        send("defuse "..arg, true)
+      --
+      elseif (string.sub(cmd, 2, 4) == "_mi") then
+        local tmp = string.match(string.sub(cmd, 5, cmd:len()-2), "%d+")
+        local act = string.match(string.sub(cmd, 5 + tmp:len() + 1, cmd:len()-2), "[%w%s]+")
+        local arg = string.sub(cmd, 5 + tmp:len() + 1 + act:len() + 1, cmd:len()-2)
+        for i = 1, tonumber(tmp) do
+          send(act.." "..i.."."..arg)
+        end
+      --
+      elseif (string.sub(cmd, 2, 3) == "_m") then
+        local tmp = string.match(string.sub(cmd, 4, cmd:len()-2), "%d+")
+        local arg = string.sub(cmd, 4 + tmp:len(), cmd:len()-2)
+        for i = 1, tonumber(tmp) do
+          send(arg)
+        end
+      end
+    --
+    else
+      expandAlias(cmd:sub(1, cmd:len()-2), true)
+    end
+  end
+end
+--
+--
+local function fEchoCommand(t, ndx)
+  if (t[ndx]) and (t[ndx][1]) and (t[ndx][2]) then
+    --
+    if (t[ndx][1] == "inf") then
+      cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;yellow:blue&gt; INFO &lt;r&gt; &lt;blue&gt;"..t[ndx][2].."&lt;r&gt;\n")
+    --
+    elseif (t[ndx][1] == "cmd") then
+      local txt = string.gsub(t[ndx][2], ";;", "&lt;r&gt;&lt;orange&gt;;;&lt;r&gt; &lt;brown&gt;")
+      cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;yellow&gt;CMD:&lt;r&gt; &lt;brown&gt;"..txt.."&lt;r&gt;\n")
+    --
+    elseif (t[ndx][1] == "end") then
+      cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;red&gt;** END Quest **&lt;r&gt;\n")
+    --
+    else
+      cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;red&gt;UNKNOW:&lt;r&gt; &lt;orange&gt;"..t[ndx][1]..": "..t[ndx][2].."&lt;r&gt;\n")
+    end
+    --
+    return true
+  end
+  --
+  return false
+end
+--
+--
+function fQuest(t, c, ndx)
+  c = string.lower(string.trim((c or "")))
+  ndx = ndx or 0
+  --
+  -- &lt;No command&gt;         - Execute next quest command
+  -- &lt;Command = "number"&gt; - Execute "number" quest command
+  if (tonumber(c)) or (c == "") then
+    ndx = tonumber(c) or (ndx  +  1)
+    --
+    -- Clamp index
+    ndx = math.max(1, ndx)
+    ndx = math.min(ndx, #t)
+    --
+    --
+    if (fEchoCommand(t, ndx)) then
+      if (t[ndx][1] == "cmd") then
+        fExecuteQuestTableCommand(t[ndx][2])
+      end
+    else
+      cecho("&lt;red&gt;ERROR&lt;r&gt; &lt;orange&gt;Invalid index ('"..(ndx or "nil").."') or table[index]&lt;r&gt;\n")
+    end
+  --
+  -- &lt;Other commands&gt;
+  else
+    --
+    -- Last\Prev command
+    if (c == "prev") or (c == "last") then
+      cecho("&lt;blue&gt;** PREVIOUS\\LAST **&lt;r&gt;\n")
+      fEchoCommand(t, ndx-1)
+    --
+    -- List commands
+    elseif (c == "list") then
+      local i = 1
+      cecho("&lt;blue&gt;** LIST **&lt;r&gt;\n")
+      while (fEchoCommand(t, i)) do
+        i = i + 1;
+      end
+    --
+    -- Next command
+    else
+      cecho("&lt;blue&gt;** NEXT **&lt;r&gt;\n")
+      fEchoCommand(t, ndx)
+    end
+  end
+  --
+  return ndx
 end</script>
 				<eventHandlerList />
 			</Script>
