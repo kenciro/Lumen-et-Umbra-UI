@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="^]\[/.,+*)('°#&quot;!?=;:}|{" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="{=?:;'°!&quot;#,\.]^/()*|+}[" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -6041,9 +6041,10 @@ end
 	["DUm"] = "Danno Umbra",
 	["Dmg"] = "Danno Fisico",
 
-	["EEl"] = "Efficacia Elettricita`",
-	["EFr"] = "Efficacia Freddo",
-	["EFu"] = "Efficacia Fuoco",
+	["EEl"] = "Eff. Abilita` (Elettricita`)",
+	["EFr"] = "Eff. Abilita` (Freddo)",
+	["EFu"] = "Eff. Abilita` (Fuoco)",
+  ["EIm"] = "Eff. Abilita` (Impatto)",
 	["ENa"] = "Eff. Abilita` (Natura)",
 
 	["RAc"] = "Resistenza all'Acido",
@@ -6106,6 +6107,20 @@ local incantesimoSuArma = {
   [56] = "Causa ferite gravi";
 }
 --
+local function ui_getDiff(a, b)
+  local dif = (tonumber(a) or 0) - (tonumber(b) or 0);
+  --
+  if (dif &gt; 0) then
+    dif = ' &lt;font color="grey"&gt;(&lt;/font&gt;&lt;font color="green"&gt;+'..dif..'&lt;/font&gt;&lt;font color="grey"&gt;)&lt;/font&gt;'
+  elseif (dif &lt; 0) then
+    dif = ' &lt;font color="grey"&gt;(&lt;/font&gt;&lt;font color="orange"&gt;'..dif..'&lt;/font&gt;&lt;font color="grey"&gt;)&lt;/font&gt;'
+  else
+    dif = ''
+  end
+  --
+  return dif
+end
+--
 function ui.fIsStatistics(s)
   s = ansi2string(decho2ansi(s))
   --
@@ -6120,6 +6135,18 @@ function ui.fIsStatistics(s)
   s = string.gsub(s, " ", "")       -- white space
   --
   return (string.len(s) == 0)
+end
+--
+local function searchPower(tablePowers, name)
+  name = name or ""
+  --
+  for _, p in pairs(tablePowers) do
+    if (p.power == name) then
+      return p
+    end
+  end
+  --
+  return nil
 end
 --
 function ui.fUpdateEndowment()
@@ -6276,7 +6303,7 @@ function ui.fUpdateEndowment()
         ui.equipment[item].powers = {}
       end
       --
-      -- Dice
+      -- AC
       if (ui.equipment[item].ac) then
         diceOrAc = diceOrAc..
                    '&lt;div style="text-align: center;"&gt;'..
@@ -6284,7 +6311,7 @@ function ui.fUpdateEndowment()
                    '&lt;/div&gt;'
       end
       --
-      -- AC
+      -- Dice
       if (ui.equipment[item].dice) then
         diceOrAc = diceOrAc..
                    '&lt;div style="text-align: center;"&gt;'..
@@ -6306,7 +6333,7 @@ function ui.fUpdateEndowment()
       --
       -- Identify object
       -- ToolTip
-      if (ui.identification) and (ui.identification.slot) and  (ui.identification.slot[ui.equipment[item].slot]) then
+      if (ui.identification) and (ui.identification.slot) and (ui.identification.slot[ui.equipment[item].slot]) then
         toolTip = toolTip..
                   '&lt;hr&gt;'..
                   '&lt;div style="text-align: center;"&gt;'..
@@ -6314,15 +6341,16 @@ function ui.fUpdateEndowment()
                     '&lt;b&gt;'..string.upper(ui.identification.name or "no name")..'&lt;/b&gt;'..
                   '&lt;/div&gt;'
         --
-        -- Dice
+        -- AC
         if (ui.identification.ac) then
           toolTip = toolTip..
                      '&lt;div style="text-align: center;"&gt;'..
                        '&lt;font color="grey"&gt;Classe Armatura&lt;/font&gt; &lt;font color="cyan"&gt;'..ui.identification.ac..'&lt;/font&gt;'..
+                       ui_getDiff(ui.identification.ac, ui.equipment[item].ac)..
                      '&lt;/div&gt;'
         end
         --
-        -- AC
+        -- Dice
         if (ui.identification.dice) then
           toolTip = toolTip..
                      '&lt;div style="text-align: center;"&gt;'..
@@ -6335,14 +6363,40 @@ function ui.fUpdateEndowment()
         for _,p in pairs(ui.identification.powers) do
           if (type(p.value) ~= "number") then
             if (p.power == "Incantesimo su Arma") then
-              toolTip = toolTip..'Inc: &lt;font color="lime"&gt;'..p.value..'&lt;/font&gt;&lt;br&gt;'
+              toolTip = toolTip..'Inc: &lt;font color="lime"&gt;'..p.value..'&lt;/font&gt;'
             else
-              toolTip = toolTip..'&lt;font color="white"&gt;'..p.value..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+              toolTip = toolTip..'&lt;font color="white"&gt;'..p.value..'&lt;/font&gt; '..p.power
             end
           elseif (p.value &gt; 0) then
-            toolTip = toolTip..'&lt;font color="lime"&gt;'..ui.fdigitNumber("+"..p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+            toolTip = toolTip..'&lt;font color="lime"&gt;'..ui.fdigitNumber("+"..p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power
           else
-            toolTip = toolTip..'&lt;font color="red"&gt;'..ui.fdigitNumber(p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power..'&lt;br&gt;'
+            toolTip = toolTip..'&lt;font color="red"&gt;'..ui.fdigitNumber(p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power
+          end
+          --
+          -- Different
+          local sp = searchPower(ui.equipment[item].powers, p.power) 
+          if (sp) then
+            if (sp.power == "Incantesimo su Arma") then
+              toolTip = toolTip..' (&lt;font color="orange"&gt;'..(incantesimoSuArma[sp.value] or ("Indice "..sp.value))..'&lt;/font&gt;)'
+            else
+              toolTip = toolTip..ui_getDiff(p.value, sp.value)
+            end
+          end
+          --
+          toolTip = toolTip..'&lt;br&gt;'
+        end
+        --
+        -- Miss
+        for _,p in pairs(ui.equipment[item].powers) do
+          local sp = searchPower(ui.identification.powers, p.power)
+          if (sp == nil) then
+            if (p.power == "Incantesimo su Arma") then
+              toolTip = toolTip..'Inc: &lt;font color="orange"&gt;'..(incantesimoSuArma[p.value] or ("Indice "..p.value))..'&lt;/font&gt;'
+            else
+              toolTip = toolTip..'&lt;font color="orange"&gt;'..ui.fdigitNumber("-"..p.value, 4, "&amp;nbsp;")..'&lt;/font&gt; '..p.power
+            end
+            --
+            toolTip = toolTip..'&lt;br&gt;'
           end
         end
         --
@@ -9617,6 +9671,7 @@ function ui.fUpdateMapper()
           setExit(roomId, -1, ui.validExit['d'].long)
           --
           clearSpecialExits(roomId)
+          setExitStub(roomId, "out", false)
         end
       --
       elseif (ui.room.area == 'Instancing') or
