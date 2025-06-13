@@ -1,2 +1,2 @@
-return {{[ [[bag]] ] = [[via-lattea]],[ [[hold]] ] = [[nervo]],[ [[target]] ] = [[]],[ [[bag2]] ] = [[equilibrio]],[ [[bag3]] ] = [[eroe]],[ [[stat]] ] = [[int]],[ [[weapon]] ] = [[moons]],},
+return {{[ [[bag]] ] = [[via-lattea]],[ [[hold]] ] = [[nervo]],[ [[target]] ] = [[]],[ [[bag2]] ] = [[equilibrio]],[ [[stat]] ] = [[int]],[ [[bag3]] ] = [[eroe]],[ [[weapon]] ] = [[moons]],},
 }

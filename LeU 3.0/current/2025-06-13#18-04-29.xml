@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="/^.]\,#&quot;!'°;:?={[}+|*)(" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="{[}+|*)(/^.]\,#&quot;!°';:?=" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -2209,8 +2209,6 @@ elseif (count == 1) then
   --
   ui.speedwalk.path = {}
   if getPath(getPlayerRoom(), roomId) then
-    walkPath, walkDirs = ui.fPrepareSpeedWalk(speedWalkPath, speedWalkDir)
-    --
     doSpeedWalk()
   else
     ui.fError("Impossibile da raggiungere")
@@ -2557,6 +2555,10 @@ end</script>
 				<name>UI Speedwalk (./..)</name>
 				<script>ui.fDebug("[alias] UI Speedwalk")
 --
+local in_path = string.lower(matches[3] or "")
+local out_path = ""
+local backwards = (matches[2] == ".")
+--
 local function ui_fGetNextNumber(text, index)
   ui.fDebug("[&lt;cyan&gt;call&lt;r&gt;] ui_fGetNextNumber("..(text or "nil")..", "..(index or "nil")..")")
   --
@@ -2575,23 +2577,23 @@ local function ui_fGetNextNumber(text, index)
   return number, index
 end
 --
-local in_path = string.lower(matches[3] or "")
-local out_path = ""
-local backwards = (matches[2] == ".")
---
+ui.speedwalk.path = {}
 if (in_path == "") then
   ui.fEcho2n("Specificare un percorso.")
+--
 else
-  --
-  -- Speedwalk
   local number
   local idx = 1
+  local swPath = {}
+  local swDir = {}
+  local actRoomId = ui.room.id;
   --
   -- Formatting
   while (idx &lt;= in_path:len()) do
     number, idx = ui_fGetNextNumber(in_path, idx)
     if (idx &lt;= in_path:len()) then
       local char = string.lower(in_path:sub(idx, idx))
+      --
       for j = 1, number do
         if (backwards) then
           out_path = ui.validExit[char].reverse..out_path
@@ -2602,18 +2604,34 @@ else
       idx = idx + 1
     end
   end
+  --
+  for idx=1, out_path:len() do
+    local dir = ui.validExit[out_path:sub(idx, idx)].long;
+    --
+    actRoomId = getRoomExits(actRoomId)[dir]; 
+    if (actRoomId) then
+      table.insert(swPath, actRoomId)
+      table.insert(swDir, dir)
+    else
+      break
+    end     
+  end
+  --
+  if (#swPath == out_path:len()) then
+    speedWalkPath, speedWalkDir = ui.fPrepareSpeedWalk(swPath, swDir)
+    --
+    doSpeedWalk()
+  else
+    ui.fError("Impossibile da raggiungere")
+  end
+  --
 end
+ui.fDebug("[alias] UI Speedwalk - in: "..in_path..": out: "..out_path);
 --
-if (backwards) then
-  ui.fDebug("[alias] UI Speedwalk (Back) - in: "..in_path.." - out: "..out_path)
-else
-  ui.fDebug("[alias] UI Speedwalk (Forward) - in: "..in_path.." - out: "..out_path)
-end
---
--- Execute
-for j=1, out_path:len() do
-  expandAlias(out_path:sub(j, j), false); 
-end</script>
+-- In any case update Area
+ui.fHighlightArea(ui.room.areaId)
+ui.fUpdateRoom()
+</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>^\.(\.)?(?i)([nsewdu\d]+)?$</regex>
@@ -3715,26 +3733,42 @@ Fuoco
 Terra
   #11572  Scaglia Notturna
 ]]
-local path = {
-  "uigo 15454", -- Creatore d'aria [Aria]
-  "uigo 4612",  -- Elementale dell'aria [Aria]
-  "uigo 16623", -- Draconia, Elementale dell'aria [Aria]
-  "uigo 16625", -- Draconia, Elementale del fuoco [Fuoco]
-  "uigo 16627", -- Draconia, Elementale della terra [Terra]
-  "uigo 16630", -- Draconia, Elementale dell'acqua [Acqua]
-  "uigo 16732", -- Soldato Duergar [Terra]
-  "uigo 15563", -- Kas'sif'athes [Terra]
-  "uigo 5250",  -- Potente Beholder [Acqua, Aria, Fuoco, Terra]
-  "uigo 5408",  -- Ancalador. Abitatore della fiamma [Fuoco]
-  "uigo 5411",  -- Ancalador. Abitatore della fiamma [Fuoco]
-  "uigo 6678",  -- Inverno, il drago bianco [Acqua]
+local tQuest = {
+  {"inf","Creatore d'aria [Aria]"},
+  {"cmd","uigo 15454;;"},
+  {"inf","Elementale dell'aria [Aria]"},
+  {"cmd","uigo 4612;;"}, 
+  {"inf","Draconia, Elementale dell'aria [Aria]"},
+  {"cmd","uigo 16623;;"},
+  {"inf","Draconia, Elementale del fuoco [Fuoco]"},
+  {"cmd","uigo 16625;;"},
+  {"inf","Draconia, Elementale della terra [Terra]"},
+  {"cmd","uigo 16627;;"},
+  {"inf","Draconia, Elementale dell'acqua [Acqua]"},
+  {"cmd","uigo 16630;;"},
+  {"inf","Soldati Duergar [Terra]"},
+  {"cmd","uigo 16732;;"},
+  {"inf","Kas'sif'athes [Terra]"},
+  {"cmd","uigo 15563;;"},
+  {"inf","Potente Beholder [Acqua, Aria, Fuoco, Terra]"},
+  {"cmd","uigo 5250;;"}, 
+  {"inf","Ancalador. Abitatore della fiamma [Fuoco]"},
+  {"cmd","uigo 5408;;"}, 
+  {"cmd","uigo 5411;;"}, 
+  {"inf","Inverno, il drago bianco [Acqua]"},
+  {"cmd","uigo 6678;;"}, 
 
-  "uigo 21196", -- Cobra [Incantamento Minore]
-  "uigo 13742", -- Grecia, Basilisco [Incantamento Minore]
-  "uigo 17049", -- Scorpione Elite
-  "uigo 3110",  -- Petrus [Incantamento Minore]  
+  {"inf","Cobra [Incantamento Minore]"},
+  {"cmd","uigo 21196;;"},
+  {"inf","Grecia, Basilisco [Incantamento Minore]"},
+  {"cmd","uigo 13742;;"},
+  {"inf","Scorpione Elite"},
+  {"cmd","uigo 17049;;"},
+  {"inf","Petrus [Incantamento Minore]  "},
+  {"cmd","uigo 3110;;"}, 
 }
-ui.fExecutePath(path, matches[2])</script>
+--
+ndxQuest = fQuest(tQuest, matches[2], ndxQuest)</script>
 				<command></command>
 				<packageName></packageName>
 				<regex>(?i)^nuclei(?:\s+(.*))?$</regex>
@@ -9268,8 +9302,7 @@ function ui.fPrepareSpeedWalk(path, dirs)
     -- Insert actual\start position
     table.insert(p, 1, roomId)
     --
-    -- Go through dirs to find doors that need opened, etc
-    -- add in necessary extra commands to dirs table
+    -- Convert in number
     for k = 1, #p do
       p[k] = tonumber(p[k])
     end
@@ -14342,16 +14375,6 @@ end
 local function fExecuteQuestTableCommand(commands)
   for cmd in string.gmatch(commands, "[%w%s%.-#_]+;;") do
     --
-    -- speedwalk
-    --if (string.sub(cmd, 1, 1) == ".") then
-    --  if (string.sub(cmd,1,2) == "..") then
-    --    fExecuteSpeedwalk(string.sub(cmd, 3, cmd:len()-2), true)
-    --  else
-    --    fExecuteSpeedwalk(string.sub(cmd, 2, cmd:len()-2), false)
-    --  end
-    --
-    -- cmds (#)
-    --elseif (string.sub(cmd, 1, 1) == "#") then
     if (string.sub(cmd, 1, 1) == "#") then
       --
       if (string.sub(cmd, 2, 4) == "uop") then
@@ -14410,7 +14433,9 @@ end
 --
 --
 local function fEchoCommand(t, ndx)
-  if (t[ndx]) and (t[ndx][1]) and (t[ndx][2]) then
+  if (ndx &gt; #t) then
+    cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;yellow:blue&gt; FINE &lt;r&gt;\n")
+  elseif (t[ndx]) and (t[ndx][1]) and (t[ndx][2]) then
     --
     if (t[ndx][1] == "inf") then
       cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;yellow:blue&gt; INFO &lt;r&gt; &lt;blue&gt;"..t[ndx][2].."&lt;r&gt;\n")
@@ -14427,6 +14452,9 @@ local function fEchoCommand(t, ndx)
     end
     --
     return true
+
+  else
+    cecho("&lt;blue&gt;[&lt;r&gt;"..ndx.."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt; &lt;red&gt;INVALID:&lt;r&gt; &lt;orange&gt;"..(t[ndx][1] or "nil")..": "..(t[ndx][2] or "nil").."&lt;r&gt;\n")
   end
   --
   return false
@@ -14444,15 +14472,12 @@ function fQuest(t, c, ndx)
     --
     -- Clamp index
     ndx = math.max(1, ndx)
-    ndx = math.min(ndx, #t)
     --
     --
     if (fEchoCommand(t, ndx)) then
       if (t[ndx][1] == "cmd") then
         fExecuteQuestTableCommand(t[ndx][2])
       end
-    else
-      cecho("&lt;red&gt;ERROR&lt;r&gt; &lt;orange&gt;Invalid index ('"..(ndx or "nil").."') or table[index]&lt;r&gt;\n")
     end
   --
   -- &lt;Other commands&gt;
@@ -14460,21 +14485,21 @@ function fQuest(t, c, ndx)
     --
     -- Last\Prev command
     if (c == "prev") or (c == "last") then
-      cecho("&lt;blue&gt;** PREVIOUS\\LAST **&lt;r&gt;\n")
-      fEchoCommand(t, ndx-1)
+      cecho("&lt;blue&gt;L'ultimo comando eseguito e' stato &lt;blue&gt;[&lt;r&gt;"..(ndx).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
+      fEchoCommand(t, ndx)
     --
     -- List commands
     elseif (c == "list") then
       local i = 1
-      cecho("&lt;blue&gt;** LIST **&lt;r&gt;\n")
       while (fEchoCommand(t, i)) do
         i = i + 1;
       end
+      cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt;\n")
     --
     -- Next command
     else
-      cecho("&lt;blue&gt;** NEXT **&lt;r&gt;\n")
-      fEchoCommand(t, ndx)
+      cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
+      fEchoCommand(t, ndx+1)
     end
   end
   --
