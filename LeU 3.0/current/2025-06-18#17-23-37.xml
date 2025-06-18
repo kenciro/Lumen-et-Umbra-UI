@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore=":;?={[|}^\*]+()./,&quot;°#!'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="?=:;'|&quot;}#^°{!./\],*[+()" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>User data</mapInfoContributor>
 			<mapInfoContributor>Short</mapInfoContributor>
+			<mapInfoContributor>User data</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -1819,7 +1819,6 @@ end</script>
 local dname = copy2decho(matches[2])
 local pos = selectString(name, 1)
 local l =string.len(matches[1])
-
 --
 replace("")
 moveCursor(pos, getLineNumber())
@@ -1834,10 +1833,11 @@ if (ui.room) and (ui.room.id) then
   cecho(" &lt;cyan&gt;"..line.."&lt;r&gt;\n")
 end
 --
-if (ui.bot) then
-  -- In attesa nell'accademia
-  if (ui.room.id == 24515) or (ui.room.id == 24528) then
+-- In attesa nell'accademia
+if (ui.room.id == 24515) or (ui.room.id == 24528) then
+  if (ui.autoAttack) and (ui.autoCombact) and (ui.autoWalk) then
     if (ui.affects["[CD] Nuovo Dungeon"] == nil) then
+      ui.fEchon("Ingresso nel Dungen")
       expandAlias("flame", false)
       expandAlias("rin", false)
       expandAlias("shield", false)
@@ -1845,6 +1845,7 @@ if (ui.bot) then
       expandAlias("ent piatta", false)
       expandAlias("say 15", false)
     else
+      ui.fEchon("Attesa fine cooldown nuovo Dungeon... Refresh fine tick ("..ui.player.secsToTick.." sec)")
       if (ui.handlers.fBot) then
         killTimer(ui.handlers.fBot)
         ui.handlers.fBot = nil;
@@ -1852,11 +1853,22 @@ if (ui.bot) then
       --
       ui.handlers.fBot = tempTimer(ui.player.secsToTick + 1, function() expandAlias("l", false); end)
     end
-  elseif (table.is_empty(ui.room.mobs)) then
-    expandAlias("ee", false)  
-  else
-    expandAlias("aa", false)
-  end  
+  end
+--
+-- AutoCombact
+elseif (ui.autoCombact) and (ui.opponent.name ~= "") then
+  ui.fEcho("Combattimanto")
+  expandAlias("aa", false)
+--
+-- AutoAttack
+elseif (ui.autoAttack) and (not table.is_empty(ui.room.mobs)) then
+  ui.fEcho("Attacco")
+  expandAlias("aa", false)
+--
+-- AutoWalk
+elseif (ui.autoWalk) then
+  ui.fEcho("Walk")
+  expandAlias("ee", false)
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -4616,17 +4628,18 @@ end</script>
 			<icon></icon>
 			<orientation>1</orientation>
 			<location>2</location>
-			<posX>0</posX>
-			<posY>0</posY>
+			<posX>135</posX>
+			<posY>304</posY>
 			<mButtonState>1</mButtonState>
 			<sizeX>0</sizeX>
 			<sizeY>0</sizeY>
-			<buttonColumn>1</buttonColumn>
+			<buttonColumn>0</buttonColumn>
 			<buttonRotation>0</buttonRotation>
 			<Action isActive="yes" isFolder="no" isPushButton="yes" isFlatButton="no" useCustomLayout="no">
-				<name>Dummy Plug</name>
+				<name>Auto Attack</name>
 				<packageName></packageName>
-				<script></script>
+				<script>ui.autoAttack = (getButtonState() == 2)
+ui.fEchon("Attacco primo mob entrando in una stanza "..(ui.autoAttack and "&lt;green&gt;ATTIVO" or "&lt;DarkSlateGrey&gt;disabilitato"))</script>
 				<css>QWidget{
   background-color: none;
 }
@@ -4635,8 +4648,60 @@ QWidget:checked{
   background-color: green;
 }
 </css>
-				<commandButtonUp>lua ui.bot = false</commandButtonUp>
-				<commandButtonDown>lua ui.bot = true</commandButtonDown>
+				<commandButtonUp></commandButtonUp>
+				<commandButtonDown></commandButtonDown>
+				<icon></icon>
+				<orientation>1</orientation>
+				<location>0</location>
+				<posX>0</posX>
+				<posY>0</posY>
+				<mButtonState>1</mButtonState>
+				<sizeX>0</sizeX>
+				<sizeY>0</sizeY>
+				<buttonColumn>1</buttonColumn>
+				<buttonRotation>2</buttonRotation>
+			</Action>
+			<Action isActive="yes" isFolder="no" isPushButton="yes" isFlatButton="no" useCustomLayout="no">
+				<name>Auto Combact</name>
+				<packageName></packageName>
+				<script>ui.autoCombact = (getButtonState() == 2)
+ui.fEchon("Combattimento automatico "..(ui.autoCombact and "&lt;green&gt;ATTIVO" or "&lt;DarkSlateGrey&gt;disabilitato"))</script>
+				<css>QWidget{
+  background-color: none;
+}
+
+QWidget:checked{
+  background-color: green;
+}
+</css>
+				<commandButtonUp></commandButtonUp>
+				<commandButtonDown></commandButtonDown>
+				<icon></icon>
+				<orientation>1</orientation>
+				<location>0</location>
+				<posX>0</posX>
+				<posY>0</posY>
+				<mButtonState>1</mButtonState>
+				<sizeX>0</sizeX>
+				<sizeY>0</sizeY>
+				<buttonColumn>1</buttonColumn>
+				<buttonRotation>2</buttonRotation>
+			</Action>
+			<Action isActive="yes" isFolder="no" isPushButton="yes" isFlatButton="no" useCustomLayout="no">
+				<name>Auto Walk</name>
+				<packageName></packageName>
+				<script>ui.autoWalk = (getButtonState() == 2)
+ui.fEchon("Cambio stanza se vuota "..(ui.autoWalk and "&lt;green&gt;ATTIVO" or "&lt;DarkSlateGrey&gt;disabilitato"))</script>
+				<css>QWidget{
+  background-color: none;
+}
+
+QWidget:checked{
+  background-color: green;
+}
+</css>
+				<commandButtonUp></commandButtonUp>
+				<commandButtonDown></commandButtonDown>
 				<icon></icon>
 				<orientation>1</orientation>
 				<location>0</location>
@@ -8445,7 +8510,7 @@ end</script>
     settingName  = "&lt;green&gt;",
     separator    = "&lt;orange_red&gt;",     -- ; or /
     target       = "&lt;orange&gt;",
-    text         = "&lt;r&gt;",
+    text         = "&lt;ansiMagenta&gt;",   -- "&lt;r&gt;",
     title        = "&lt;white&gt;",
     varID        = "&lt;steel_blue&gt;",
     varName      = "&lt;LightBlue&gt;",
@@ -15109,7 +15174,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>West</value>
+					<value>Down</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
