@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="{[}+|*)(/^.]\,#&quot;!°';:?=" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore=":;?={[|}^\*]+()./,&quot;°#!'" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -18,8 +18,8 @@
 			<port>6000</port>
 			<borderTopHeight>0</borderTopHeight>
 			<borderBottomHeight>0</borderBottomHeight>
-			<borderLeftWidth>315</borderLeftWidth>
-			<borderRightWidth>374</borderRightWidth>
+			<borderLeftWidth>311</borderLeftWidth>
+			<borderRightWidth>369</borderRightWidth>
 			<wrapAt>110</wrapAt>
 			<wrapIndentCount>0</wrapIndentCount>
 			<mFgColor>#c0c0c0</mFgColor>
@@ -1834,7 +1834,30 @@ if (ui.room) and (ui.room.id) then
   cecho(" &lt;cyan&gt;"..line.."&lt;r&gt;\n")
 end
 --
---cecho("\n&lt;cyan&gt;----------------------------------------------------------------------------------------------------&lt;r&gt;\n")</script>
+if (ui.bot) then
+  -- In attesa nell'accademia
+  if (ui.room.id == 24515) or (ui.room.id == 24528) then
+    if (ui.affects["[CD] Nuovo Dungeon"] == nil) then
+      expandAlias("flame", false)
+      expandAlias("rin", false)
+      expandAlias("shield", false)
+      expandAlias("psi", false)
+      expandAlias("ent piatta", false)
+      expandAlias("say 15", false)
+    else
+      if (ui.handlers.fBot) then
+        killTimer(ui.handlers.fBot)
+        ui.handlers.fBot = nil;
+      end
+      --
+      ui.handlers.fBot = tempTimer(ui.player.secsToTick + 1, function() expandAlias("l", false); end)
+    end
+  elseif (table.is_empty(ui.room.mobs)) then
+    expandAlias("ee", false)  
+  else
+    expandAlias("aa", false)
+  end  
+end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -4328,7 +4351,6 @@ else
   ui.echoed = nil
   --
   if (opponent == '') then
-    cecho(" "..ui.fC_Operator("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
     if (lightSpeed) then
       if (perc &lt;= 80) then
         expandAlias("cel", false)
@@ -4337,6 +4359,7 @@ else
       end
     end
     --
+    cecho(" "..ui.fC_Operator("»").." &lt;white&gt;Non ci sono mob da attaccare\n")  
   else
     --
     cecho(" "..ui.fC_Operator("»").." &lt;red&gt;"..opponent)
@@ -4350,7 +4373,7 @@ else
         expandAlias("cel", false)
       --
       -- Scudo di fiamme scaduto
-      elseif (ui.affects["mantello di fiamme"] == nil) then
+      elseif (ui.affects["mantello di fiamme"] == nil) or (ui.affects["mantello di fiamme"].stacks &lt; 15) then
         expandAlias("flame", false)
       --
       -- Ripristino energia
@@ -4362,7 +4385,7 @@ else
         if (ui.cooldowns["Chiaroveggenza"] == nil) then
           expandAlias("chiaro", false)
         else
-          expandAlias("as "..opponent, false)
+          expandAlias("mfc "..opponent, false)
         end
       --
       -- Mano di energia attiva
@@ -4371,7 +4394,7 @@ else
       --
       -- 
       else
-        expandAlias("lampo "..opponent, false)
+        expandAlias("mfc "..opponent, false)
       end
     end
     echo("\n") 
@@ -4450,7 +4473,7 @@ local function nextStep(origin)
   return 1
 end
 --
-expandAlias(steps[nextStep(ui.origins[1])])
+expandAlias(steps[nextStep(ui.origins[1] or "n")])
 </script>
 				<command></command>
 				<packageName></packageName>
@@ -4582,7 +4605,51 @@ end</script>
 			</Alias>
 		</AliasGroup>
 	</AliasPackage>
-	<ActionPackage />
+	<ActionPackage>
+		<ActionGroup isActive="yes" isFolder="yes" isPushButton="no" isFlatButton="no" useCustomLayout="no">
+			<name>Barra</name>
+			<packageName></packageName>
+			<script></script>
+			<css></css>
+			<commandButtonUp></commandButtonUp>
+			<commandButtonDown></commandButtonDown>
+			<icon></icon>
+			<orientation>1</orientation>
+			<location>2</location>
+			<posX>0</posX>
+			<posY>0</posY>
+			<mButtonState>1</mButtonState>
+			<sizeX>0</sizeX>
+			<sizeY>0</sizeY>
+			<buttonColumn>1</buttonColumn>
+			<buttonRotation>0</buttonRotation>
+			<Action isActive="yes" isFolder="no" isPushButton="yes" isFlatButton="no" useCustomLayout="no">
+				<name>Dummy Plug</name>
+				<packageName></packageName>
+				<script></script>
+				<css>QWidget{
+  background-color: none;
+}
+
+QWidget:checked{
+  background-color: green;
+}
+</css>
+				<commandButtonUp>lua ui.bot = false</commandButtonUp>
+				<commandButtonDown>lua ui.bot = true</commandButtonDown>
+				<icon></icon>
+				<orientation>1</orientation>
+				<location>0</location>
+				<posX>0</posX>
+				<posY>0</posY>
+				<mButtonState>1</mButtonState>
+				<sizeX>0</sizeX>
+				<sizeY>0</sizeY>
+				<buttonColumn>1</buttonColumn>
+				<buttonRotation>2</buttonRotation>
+			</Action>
+		</ActionGroup>
+	</ActionPackage>
 	<ScriptPackage>
 		<ScriptGroup isActive="yes" isFolder="yes">
 			<name>LeU_UI</name>
@@ -15042,7 +15109,7 @@ registerAnonymousEventHandler("onMouseCopyExample", "onMouseCopyExample")</scrip
 				<Variable>
 					<name>href</name>
 					<keyType>4</keyType>
-					<value>Down</value>
+					<value>West</value>
 					<valueType>4</valueType>
 				</Variable>
 			</VariableGroup>
