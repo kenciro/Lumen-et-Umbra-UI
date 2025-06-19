@@ -2,7 +2,7 @@
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
 	<HostPackage>
-		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="?=:;'|&quot;}#^°{!./\],*[+()" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
+		<Host autoClearCommandLineAfterSend="no" HighlightHistory="yes" printCommand="yes" USE_IRE_DRIVER_BUGFIX="no" mUSE_FORCE_LF_AFTER_PROMPT="no" mUSE_UNIX_EOL="no" mNoAntiAlias="no" mEchoLuaErrors="yes" runAllKeyMatches="no" AmbigousWidthGlyphsToBeWide="no" mRawStreamDump="no" mIsLoggingTimestamps="no" logDirectory="" logFileName="" logFileNameFormat="yyyy-MM-dd" mAlertOnNewData="no" mFORCE_NO_COMPRESSION="no" mFORCE_GA_OFF="no" mFORCE_SAVE_ON_EXIT="yes" mEnableGMCP="yes" mEnableMSSP="yes" mEnableMSDP="yes" mEnableMSP="yes" mEnableMTTS="yes" mEnableMNES="yes" mMapStrongHighlight="no" mEnableSpellCheck="yes" mEnableUserDictionary="yes" mUseSharedDictionary="yes" mAcceptServerGUI="yes" mAcceptServerMedia="yes" mMapperUseAntiAlias="yes" mMapperShowRoomBorders="yes" mFORCE_MXP_NEGOTIATION_OFF="no" mFORCE_CHARSET_NEGOTIATION_OFF="no" forceNewEnvironNegotiationOff="no" enableTextAnalyzer="no" mRoomSize="0.9" mLineSize="20.0" mBubbleMode="no" mMapViewOnly="no" mShowRoomIDs="no" mShowPanel="yes" mHaveMapperScript="yes" mEditorAutoComplete="no" mEditorShowBidi="no" mEditorTheme="super" mEditorThemeFile="super.tmTheme" mThemePreviewItemID="4" mThemePreviewType="trigger" mSearchEngineName="DuckDuckGo" mTimerSupressionInterval="00:00:00.000" mUseProxy="no" mProxyAddress="" mProxyPort="0" mProxyUsername="" mProxyPassword="" mSslTsl="no" mSslIgnoreExpired="no" mSslIgnoreSelfSigned="no" mSslIgnoreAll="no" mAskTlsAvailable="yes" mDiscordAccessFlags="2495" mRequiredDiscordUserName="" mRequiredDiscordUserDiscriminator="" mSGRCodeHasColSpaceId="no" mServerMayRedefineColors="yes" playerRoomPrimaryColor="#ffffffff" playerRoomSecondaryColor="#ffffffff" playerRoomStyle="3" playerRoomOuterDiameter="160" playerRoomInnerDiameter="80" CompactInputLine="no" CommandLineHistorySaveSize="200" mDoubleClickIgnore="°&quot;#!'*+()./,{|[}^:;\]?=" EditorSearchOptions="0" DebugShowAllProblemCodepoints="no" announceIncomingText="yes" advertiseScreenReader="no" caretShortcut="Tab" blankLineBehaviour="Show" NetworkPacketTimeout="10" ShowIDsInEditor="no" Large2DMapAreaExitArrows="yes">
 			<name>LeU 3.0</name>
 			<mInstalledPackages>
 				<string>Telegram Connector</string>
@@ -72,8 +72,8 @@
 			<mSpellDic>it_IT</mSpellDic>
 			<mLineSize>20.0</mLineSize>
 			<mRoomSize>0.9</mRoomSize>
-			<mapInfoContributor>Short</mapInfoContributor>
 			<mapInfoContributor>User data</mapInfoContributor>
+			<mapInfoContributor>Short</mapInfoContributor>
 			<profileShortcut key="Script editor">Alt+E</profileShortcut>
 			<profileShortcut key="Show Map">Alt+M</profileShortcut>
 			<profileShortcut key="Compact input line">Alt+L</profileShortcut>
@@ -4303,8 +4303,7 @@ ndxQuest = fQuest(tQuest, matches[2], ndxQuest)</script>
 --}
 --ui.fExecutePath(path, matches[2])
 local tQuest = {
-  {"inf", "ACT: go cane-famelico"},
-  {"cmd", ".ues2ne4dnw4n;;"},
+  {"cmd", "uigo 10040;;"},
   {"end", "END"} 
 }
 --
@@ -4681,7 +4680,7 @@ QWidget:checked{
 				<location>0</location>
 				<posX>0</posX>
 				<posY>0</posY>
-				<mButtonState>1</mButtonState>
+				<mButtonState>2</mButtonState>
 				<sizeX>0</sizeX>
 				<sizeY>0</sizeY>
 				<buttonColumn>1</buttonColumn>
@@ -14597,9 +14596,36 @@ function fQuest(t, c, ndx)
   c = string.lower(string.trim((c or "")))
   ndx = ndx or 0
   --
+  -- List commands
+  if (c == "l") or (c == "list") then
+    local i = 1
+    while (fEchoCommand(t, i)) do
+      i = i + 1;
+    end
+    cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt;\n")
+  --
+  -- Last\Prev command
+  elseif (c == "p") or (c == "prev") then
+    cecho("&lt;blue&gt;L'ultimo comando eseguito e' stato &lt;blue&gt;[&lt;r&gt;"..(ndx).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
+    fEchoCommand(t, ndx)
+  --
+  -- Next command
+  elseif (c == "n") or (c == "next") then
+    cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
+    fEchoCommand(t, ndx+1)
+  --
+  -- Repeat command
+  elseif (c == "r") or (c == "rep") then
+    cecho("&lt;blue&gt;Ripetizione ")
+    if (fEchoCommand(t, ndx)) then
+      if (t[ndx][1] == "cmd") then
+        fExecuteQuestTableCommand(t[ndx][2])
+      end
+    end
+  --
   -- &lt;No command&gt;         - Execute next quest command
   -- &lt;Command = "number"&gt; - Execute "number" quest command
-  if (tonumber(c)) or (c == "") then
+  elseif (tonumber(c)) or (c == "") then
     ndx = tonumber(c) or (ndx  +  1)
     --
     -- Clamp index
@@ -14611,28 +14637,7 @@ function fQuest(t, c, ndx)
         fExecuteQuestTableCommand(t[ndx][2])
       end
     end
-  --
-  -- &lt;Other commands&gt;
-  else
-    --
-    -- Last\Prev command
-    if (c == "prev") or (c == "last") then
-      cecho("&lt;blue&gt;L'ultimo comando eseguito e' stato &lt;blue&gt;[&lt;r&gt;"..(ndx).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
-      fEchoCommand(t, ndx)
-    --
-    -- List commands
-    elseif (c == "list") then
-      local i = 1
-      while (fEchoCommand(t, i)) do
-        i = i + 1;
-      end
-      cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]&lt;r&gt;\n")
-    --
-    -- Next command
-    else
-      cecho("&lt;blue&gt;Il prossimo comando che verrà eseguito sarà il &lt;blue&gt;[&lt;r&gt;"..(ndx+1).."&lt;blue&gt;/&lt;r&gt;"..#t.."&lt;blue&gt;]:&lt;r&gt;\n")
-      fEchoCommand(t, ndx+1)
-    end
+  
   end
   --
   return ndx
